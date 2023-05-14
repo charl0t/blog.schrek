@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Velo on Schrek.fr</title><link>https://schrek.fr/tags/Velo/</link><description>Recent content in Velo on Schrek.fr</description><generator>Hugo -- gohugo.io</generator><language>fr-fr</language><lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/Velo/index.xml" rel="self" type="application/rss+xml"/><item><title>BRouter Web Client</title><link>https://schrek.fr/posts/2023/03/Brouter/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/Brouter/</guid><description> BRouter Web Client est un service WEB pour Planifier un itinéraire. Le client s’appuie sur OpenStreetMap Brouter est très complet en plus de calculer les itinéraires, les importer, les exporter, on peut ajouter des calques pour visualiser d’autres données comme les campings, hôtels…
+Bonne découverte.
+Liens http://brouter.de/brouter-web/
+https://brouter.m11n.de
+https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-ordinateur/
+https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que
+initComments({ node: document.getElementById("comment-section"), defaultHomeserverUrl: "https://matrix.cactus.chat:8448", serverName: "cactus.chat", siteName: "schrek.fr", commentSectionId: "cactus-comments" })</description></item></channel></rss>

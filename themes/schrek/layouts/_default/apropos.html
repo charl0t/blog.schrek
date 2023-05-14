@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--Page A propos, /content/page/apropos.md -->
+<html lang="fr">
+    {{- partial "head.html" . -}}
+    {{- partial "header.html" . -}}
+        <body>
+            <div class="uk-container uk-container-xlarge uk-background-muted uk-padding-large">
+                <article class="uk-article uk-padding-large">
+                    <h1 class="uk-article-title">{{ .Title }}</h1>
+                    <p class="uk-text-lead">{{ .Content }}</p>
+                </article>
+            </div>
+    {{- partial "footer.html" . -}}
+    {{- partial "scripts.html" . -}}
+         </body>
+</html>
+
+

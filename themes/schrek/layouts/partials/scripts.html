@@ -1,0 +1,16 @@
+{{ $js := resources.Get "js/uikit.min.js" | minify | resources.Fingerprint "sha512"}}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ $js := resources.Get "js/uikit-icons.min.js" | minify }}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ $js := resources.Get "js/jquery.min.js" | minify | resources.Fingerprint "sha512" }}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ $js := resources.Get "js/fuse.min.js" | minify | resources.Fingerprint "sha512" }}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ $js := resources.Get "js/mark.min.js" | minify | resources.Fingerprint "sha512" }}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ $js := resources.Get "js/jquery.mark.min.js" | minify | resources.Fingerprint "sha512" }}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ $js := resources.Get "js/search.js" | minify | resources.Fingerprint "sha512" }}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+
+

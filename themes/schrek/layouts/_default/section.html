@@ -1,0 +1,16 @@
+{{ define "main" }}
+    <main>
+      {{ .Content }}
+        <div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding-large">
+         {{ partial "breadcrumbs.html" . }}
+        <h1>{{ .Title }}</h1>
+            <div class="uk-column-1-2  uk-column-divider">
+                <ul class="sectionlist uk-list uk-list-bullet">            
+                 {{ range .Pages }}
+                    <li class="sectionlist"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+                 </ul>
+            </div>
+          </div>
+    </main>
+{{ end }}

@@ -1,0 +1,12 @@
+<!--
+https://getuikit.com/docs/icon
+https://getuikit.com/docs/label#style-modifiers
+
+-->
+
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $icon := (.Get 0) }}
+{{ $type := (.Get 1) }}
+<badge>
+<span class="badge uk-label-{{ $type }}"><span uk-icon="icon:{{ $icon }}"></span>  {{ .Inner | markdownify }}</span>
+</badge>

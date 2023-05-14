@@ -1,0 +1,23 @@
+<header>
+    <div class="uk-container uk-container-xsmall uk-padding-small">
+        <a href="{{ .Site.BaseURL }}"><h1 classe="uk-heading-small">{{ .Site.Title }}</h1></a>
+        <a href="{{ .Site.BaseURL }}"><h2>{{ .Site.Params.description }}</h2></a>
+        <span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type="button" uk-toggle="target: #offcanvas-overlay"></span>
+    <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-background-primary">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <h3 class="barremenu">Menu</h3>
+                {{- partial "nav.html" . -}}
+                       <hr class="uk-divider-icon">
+                {{- partial "search.html" . -}}
+                     <hr class="uk-divider-icon">
+            <h3 class="barremenu"><a href="{{ .Site.BaseURL }}/categories/">Categories</a></h3>
+                {{- partial "listcategory.html" . -}}
+            <h3 class="barremenu"><a href="{{ .Site.BaseURL }}/tags/">Tags</a></h3>
+                {{- partial "listtags.html" . -}}
+            <h3 class="barremenu"><a href="{{ .Site.BaseURL }}/series/">Series</a></h3>            
+            {{- partial "listseries.html" . -}}
+        </div>
+    </div>
+    </div>
+</header>

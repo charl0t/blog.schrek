@@ -1,0 +1,16 @@
+<!--
+https://getuikit.com/docs/alert)
+- primary 	Give the message a prominent styling. (bleu)
+- success 	Indicates success or a positive message. (vert)
+- warning 	Indicates a message containing a warning. (orange)
+- danger 	Indicates an important or error message. (rouge)
+
+utilisation : 
+bandeau primary 
+
+-->
+
+<div class="uk-alert-{{- .Get 0 -}}" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p>{{ .Inner | markdownify }}</p>
+</div>

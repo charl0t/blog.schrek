@@ -1,0 +1,53 @@
+{{ define "main" }}
+<!--Page affichage des articles-->
+
+<div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding">
+{{ partial "breadcrumbs.html" .}}
+    <article class="uk-article">
+        <h1 class="uk-article-title">{{ .Title }}</h1>
+            <p class="uk-article-meta">{{ .PublishDate.Format "2006-01-02" }} 
+            {{ range .Params.categories }}
+            <span class="labelcat uk-label"><a href="/categories/{{ . | urlize }}">{{ . }}</a></span>
+             {{ end }} <br>
+            <i>Temps de lecture: {{ math.Round (div (countwords .Content) 220.0) }} minutes.</i>
+            </p>
+            
+                <!-- si parametre serie dans entete article alors affiche le nom de la serie -->
+                {{ if .Params.series }}
+                {{ $name := index .Params.series 0 }}
+                <p>Cet article fait partie de la série: <a href="{{ .Site.BaseURL }}/series/{{$name | urlize }}">{{$name}}</a></p>
+                {{ end }} 
+                <br/>
+            <p class="uk-text-lead">
+                <!-- Table des matieres, si true dans parametres article-->
+                {{ if and (.Params.toc) (gt .WordCount .Site.Params.tocMinWordCount ) }}
+                <div class="uk-section uk-align-right">
+                    <div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+                       <h3 class="uk-card-title">Table des matières</h3> 
+                       <p class="toc uk-text-small"> {{ .TableOfContents }}</p>
+                    </div>
+                </div>
+                {{ end }}   
+                    {{ .Content }}
+            </p>
+    </article>
+                    
+                    <hr class="uk-divider-icon">
+            <!-- Liste des tags -->        
+            <div class="uk-grid-small uk-child-width-auto " uk-grid>
+                <div>
+                    <p class="uk-text-light"><span uk-icon="icon:hashtag"></span>TAGS</p>
+                        <ul class="uk-list uk-display-inline-block">
+                            {{ range (.GetTerms "tags") }}
+                            <li>
+                                <a class="uk-button uk-button-default" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    <br>
+                </div>
+            </div>
+            
+    </div>
+
+{{ end }}

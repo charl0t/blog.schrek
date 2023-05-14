@@ -1,0 +1,66 @@
+baseURL = 'https://schrek.fr/'
+languageCode = 'fr-fr'
+title = 'Schrek.fr'
+theme = 'schrek'
+Paginate = 6
+disablePathToLower = 'true'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+description = 'Mon super blog :)'
+googleAnalytics = 'G-8MM0H2W60B'
+
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+   series = "series"
+
+
+[permalinks]
+  '/' = '/:year/:month/:title/'
+
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  pre = 'home'
+  weight = 10
+[[menu.main]]
+  name = 'A Propos'
+  url = '/pages/apropos/'
+  pre = 'info'
+  weight = 20
+[[menu.main]]
+  name = 'Wiki'
+  url = '/wiki/'
+  pre = 'database'
+  weight = 30
+[[menu.main]]
+  name = 'RSS'
+  url = '/index.xml'
+  pre = 'rss'
+  weight = 40
+
+
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 5
+    ordered = false
+
+[param]
+  # Minimum word count to display the Table of Contents
+  tocMinWordCount = 500
+
+
+
+[sitemap]
+  changefreq = 'monthly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+

@@ -1,0 +1,9 @@
+{{ $imgName := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $img := $.Page.Resources.GetMatch $imgName }}
+{{ if $img }}
+	{{ $img := $img.Resize  "x200" }}
+    <img src="{{ $img.RelPermalink }}" alt="{{ $alt }}">
+{{ else }}
+    BROKEN IMAGE LINK
+{{ end }}

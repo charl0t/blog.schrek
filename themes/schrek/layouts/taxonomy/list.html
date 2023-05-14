@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- Liste des rubriques, categories, tags -->
+<html lang="fr">
+  <html>
+      {{- partial "head.html" . -}}
+    <body>
+      {{- partial "header.html" . -}}
+        <div class="uk-container uk-container-small uk-background-muted uk-padding uk-box-shadow-large">
+          <h2 class="uk-text-capitalize">{{ .Data.Plural }}: {{ .Title }}</h2>
+            <div class="uk-child-width-1-3@s uk-grid-match" uk-grid>
+              {{ range .Pages }}
+                <div>
+                    {{ if .Params.image }}
+                       <img class="imgcat uk-align-right uk-margin-medium-right"  src="{{.Permalink}}/{{ .Params.image }}" alt="">
+                     {{ end }}
+                  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                  <i>{{.Date.Format "2006-01-02"}}</i>
+                </div>
+              {{ end }}
+            </div>
+        </div>
+    {{- partial "footer.html" . -}}
+    {{- partial "scripts.html" . -}}
+    </body>
+</html>

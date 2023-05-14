@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main>
+    {{ range .Pages }}
+    <ul class="uk-list">
+    <!-- Ranges through content/post/*.md -->
+        <li>
+            <div class="uk-card uk-card-default ">
+            <div class="uk-card-header">
+                <h2 class="uk-card-title" ><a href="{{.Permalink}}">{{.Title}}</a></h2> 
+                <i>{{.Date.Format "2006-01-02"}}</i>
+            </div>
+            <div class="uk-card-body"> 
+                {{ .Summary }}
+           </div>
+            <div class="uk-card-footer">
+                {{ if .Truncated }}
+                <a href="{{ .RelPermalink }}">Lire plus...</a>
+            </div>
+            {{ end }}
+            </div>
+        </li>
+     {{ end }}
+    </ul>
+</main>
+{{ end }}

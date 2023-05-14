@@ -1,0 +1,10 @@
+{{ $PadName := .Get "PadName" }}
+{{ $showControls := .Get "showControls" | default "false" }}
+{{ $showChat := .Get "showChat" | default "false" }}
+{{ $showLineNumbers := .Get "showLineNumbers" | default "true" }}
+{{ $width := .Get "width" | default "100%" }}
+{{ $height := .Get "height" | default "600" }}
+{{ $height := .Get "height" | default "600" }}
+{{ $useMonospaceFont := .Get "useMonospaceFont" | default "false" }}
+
+<iframe name="embed_readwrite" src="https://hebdo.framapad.org/p/{{- $PadName -}}?showControls={{- $showControls -}}&showChat={{- $showChat -}}&showLineNumbers={{- $showLineNumbers -}}&useMonospaceFont=false" width="{{- $width -}}" height="{{- $height -}}" frameborder="0"></iframe>

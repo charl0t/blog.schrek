@@ -1,0 +1,26 @@
+\documentclass[11pt,a4paper,oneside]{book} % taille de police, taille papier, recto, classe livre 
+\usepackage[utf8]{inputenc} % Encodage 
+\usepackage[french]{babel} % Utilisation du français
+\usepackage[T1]{fontenc} % Les mots accentués
+\usepackage{lmodern} % Police de caractère
+\usepackage{hyperref} % Lien http
+\usepackage{graphicx} % Pour inserer des images
+\pagestyle{empty} % page vide
+\author{Schrek christophe}
+\title{''Le pirate de Rome''}
+\author{''Schrek christophe''}
+\date{\today}
+
+\begin{document}
+\maketitle %Titre
+\tableofcontents %Table des matieres
+\include{notes} % on inclue note.tex
+\include{personnages} % on inclue personnages.tex
+\include{chap1/chapitre1}
+\include{chap2/chapitre2}
+\include{chap3/chapitre3}
+\include{chap4/chapitre4}
+\include{chap5/chapitre5}
+\include{chap6/chapitre6}
+\include{chap7/chapitre7}
+\end{document}

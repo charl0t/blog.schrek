@@ -1,0 +1,7 @@
+<nav>
+        <ul class="uk-iconnav">
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}"><span uk-icon="icon:{{ .Pre }}; ratio: 2"></span></a></li>
+            {{ end }}
+        </ul>
+</nav>

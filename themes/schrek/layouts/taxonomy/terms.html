@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+    {{- partial "header.html" . -}}
+      <div class="uk-container uk-background-muted uk-box-shadow-large">
+        <h2 class="uk-text-capitalize">{{ .Title }}</h2>
+          <div class="uk-child-width-1-4@s uk-grid-match" uk-grid>
+    {{ range .Data.Terms.Alphabetical }}
+            <div>
+              <h3>
+                <a href="{{ .Page.Permalink }}">({{ .Count }}) {{ .Page.Title }}</a>
+              </h3>
+            </div>
+      {{ end }}
+          </div>
+      {{- partial "footer.html" . -}}
+      {{- partial "scripts.html" . -}}
+    </body>
+</html>
