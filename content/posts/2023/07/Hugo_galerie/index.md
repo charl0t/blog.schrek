@@ -10,7 +10,7 @@ toc: true
 ---
 Une petite galerie toute simple, qui utilise Uikit et lightbox.
 
-Dans le dossier de l'article, il faut créer un dossier *images/*.
+Dans le dossier de l'article, il faut créer un dossier *images/* pour y deposer les images.
 
 Hugo va directement chercher les images.
 

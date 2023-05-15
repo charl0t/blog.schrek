@@ -10,6 +10,8 @@ toc: true
 ---
 {{< figure src="hugo.webp" title="" width=200px class="imagearticle" >}}
 
+{{< bandeau success >}} Maj 15/05/2023: Ajout des icones personalisées des bandeaux.{{< / bandeau >}} 
+
 La syntaxe Markdown a des limites, Hugo utilise des « bouts de code » pour passer ces limites. 
 
 L’inconvénient c’est de retenir les balises.
@@ -108,13 +110,27 @@ https://getuikit.com/docs/alert)
 - warning 	Indicates a message containing a warning. (orange)
 - danger 	Indicates an important or error message. (rouge)
 
-Utilisation : 
+utilisation : 
 bandeau primary 
--->
 
-<div class="uk-alert-{{- .Get 0 -}}" uk-alert>
+-->
+{{ $style := (.Get 0) | default "primary" }}
+{{ $icon := .Scratch.Get "icon" }}
+{{ if  eq $style "primary" }} 
+    {{ $.Scratch.Set "icon" "eye" }}
+{{ else if eq $style "success"}}
+    {{ $.Scratch.Set "icon" "info" }}
+{{ else if eq $style "warning"}}
+{{  $.Scratch.Set "icon" "warning" }}
+{{ else if eq $style "danger"}}
+    {{ $.Scratch.Set "icon" "ban" }}
+{{ end }}
+{{ $icon := .Scratch.Get "icon" }}
+
+<div class="uk-alert-{{ $style }}" uk-alert>
+    <span uk-icon="icon: {{ $icon }} ; ratio:2"></span>
     <a class="uk-alert-close" uk-close></a>
-    <p>{{ .Inner | markdownify }}</p>
+    <p class="bandeau">{{ .Inner | markdownify }}</p>
 </div>
 {{< /highlight >}}
 

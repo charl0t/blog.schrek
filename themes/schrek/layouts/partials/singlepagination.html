@@ -1,0 +1,8 @@
+<ul class="uk-pagination">
+    {{with .NextPage}}
+        <li><a class="uk-link-heading" href="{{.Permalink}}"><span class="uk-margin-small-right" uk-pagination-previous></span> {{.Params.Title}}</a></li>
+    {{end}}
+    {{with .PrevPage}}
+        <li class="uk-margin-auto-left"><a class="uk-link-heading" href="{{.Permalink}}">{{.Params.Title}}<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+    {{end}}
+</ul>

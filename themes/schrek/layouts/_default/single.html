@@ -31,7 +31,7 @@
                     {{ .Content }}
             </p>
     </article>
-                    
+    {{ partial "singlepagination.html" .}}
                     <hr class="uk-divider-icon">
             <!-- Liste des tags -->        
             <div class="uk-grid-small uk-child-width-auto " uk-grid>
@@ -45,9 +45,9 @@
                             {{ end }}
                         </ul>
                     <br>
+                    
                 </div>
             </div>
-            
-    </div>
+        </div>
 
 {{ end }}
