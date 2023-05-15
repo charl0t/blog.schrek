@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding">
 <div class="uk-margin">
-  <form class="uk-search uk-search-default" action="{{ "search" | absURL }}">
+  <form class="uk-search uk-search-default" action="{{ "/pages/search" | relURL  }}">
       <span uk-search-icon></span>
       <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" id="search-query" name="s">
   </form>

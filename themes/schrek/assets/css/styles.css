@@ -120,7 +120,12 @@ background-color: #dbe6eb;
 }
 
 .totop {
-     text-align: right;
+     position: -webkit-sticky; /* Safari */  
+     position: sticky;
+     bottom: 20px;
+     float: right;
+     right: 20%; /* added */
+     margin-left:auto; /* push the element to the right */
 }
 
 .imagecenter {

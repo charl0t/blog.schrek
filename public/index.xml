@@ -31,7 +31,8 @@ Résumé Le roman se déroule à la fin des années 2080 et se déroule à Arté
 On va l’utiliser pour créer un page HTML a partir d’un document créer avec les balises Markdown, pour plus de &amp;ldquo;beauté on va y inclure un fichier Css
 Installation Pandoc $ sudo apt install pandoc Utilisation On récupère un fichier css (https://latex.vercel.app/ pour l’exemple). $ wget https://latex.now.sh/style.css J’ai tout ajouté dans le fichier en dessous.</description></item><item><title>A propos</title><link>https://schrek.fr/pages/apropos/</link><pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate><guid>https://schrek.fr/pages/apropos/</guid><description> Pour me contacter XMPP : christ0phe@chapril.org
 Telegram : https://t.me/Christ0phe
-Le site Moteur du blog Hugo, generateur de site statique. Framework Css UiKit. Les sources Github.</description></item><item><title>A faire</title><link>https://schrek.fr/wiki/A_faire/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/A_faire/</guid><description>Optimisations ameliorations, idées d&amp;rsquo;articles &amp;hellip;
+Le site Moteur du blog Hugo, generateur de site statique. Framework Css UiKit. Les sources Github.
+Ce(tte) œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International.</description></item><item><title>A faire</title><link>https://schrek.fr/wiki/A_faire/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/A_faire/</guid><description>Optimisations ameliorations, idées d&amp;rsquo;articles &amp;hellip;
 Optimisation des images.
 Amelioration des bandeaux ( plus lisible, logo).
 Revoir le code du shortcode galerie.
