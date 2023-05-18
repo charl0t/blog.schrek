@@ -9,7 +9,7 @@ toc: false
 
 {{< uicon close >}}  Optimisation des images.
 
-{{< uicon close >}}  Amelioration des bandeaux ( plus lisible, logo).
+{{< uicon check >}}  ~~Amelioration des bandeaux ( plus lisible, logo).~~
 
 {{< uicon close >}}  Revoir le code du shortcode galerie.
 
@@ -20,3 +20,4 @@ toc: false
 {{< uicon close >}} Revoir les fautes d'ortographes.
 
 {{< uicon close >}} Page Wiki plus sympa.
+

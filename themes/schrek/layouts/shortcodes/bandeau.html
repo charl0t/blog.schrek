@@ -1,14 +1,20 @@
-<!--
+{{/*
+https://github.com/charl0t/blog.schrek
+
 https://getuikit.com/docs/alert)
 - primary 	Give the message a prominent styling. (bleu)
 - success 	Indicates success or a positive message. (vert)
 - warning 	Indicates a message containing a warning. (orange)
 - danger 	Indicates an important or error message. (rouge)
 
-utilisation : 
-bandeau primary 
+Utilisation : 
+{{< bandeau primary >}}
+Texte
+{{< /bandeau >}}
 
--->
+*/}}
+
+
 {{ $style := (.Get 0) | default "primary" }}
 {{ $icon := .Scratch.Get "icon" }}
 {{ if  eq $style "primary" }} 

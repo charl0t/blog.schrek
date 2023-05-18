@@ -1,12 +1,23 @@
-<!--
-https://getuikit.com/docs/icon
-https://getuikit.com/docs/label#style-modifiers
+{{/*
+https://github.com/charl0t/blog.schrek
 
--->
+https://getuikit.com/docs/label#style-modifiers
+https://getuikit.com/docs/icon
+
+Style: default, success, warning, danger
+Icone: https://getuikit.com/docs/icon
+
+Utilisation:
+{{< badge Style Icone >}}
+Texte
+{{< /badge >}}
+
+*/}}
 
 {{ $_hugo_config := `{ "version": 1 }` }}
-{{ $icon := (.Get 0) }}
-{{ $type := (.Get 1) }}
+{{ $type := (.Get 0) }}
+{{ $icon := (.Get 1) }}
+
 <badge>
 <span class="badge uk-label-{{ $type }}"><span uk-icon="icon:{{ $icon }}"></span>  {{ .Inner | markdownify }}</span>
 </badge>

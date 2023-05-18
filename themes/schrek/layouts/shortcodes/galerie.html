@@ -1,10 +1,18 @@
-<!--
+{{/*
+https://github.com/charl0t/blog.schrek
+
+Deposer les photos dans un dossier images/ de l 'article
+Ne marche qu avec article bungle (index.md dans dossier) 
+
 Options:
     titre -> Nom de la galerie
-    animation -> Type de transition slide,fade,scale (des exemples sur Uikit:https://getuikit.com/docs/lightbox#animations)
-Exemples:
-galerie titre="super galerie" animation="scale"
--->
+    animation -> Type de transition slide,fade,scale 
+    (des exemples sur Uikit:https://getuikit.com/docs/lightbox#animations)
+
+    Exemples:
+{{< galerie titre="super galerie" animation="scale" >}}
+
+*/}}
 
 {{ $titre := .Get "titre"| default "Galerie" }}
 {{ $animation := .Get "animation" | default "fade"}}

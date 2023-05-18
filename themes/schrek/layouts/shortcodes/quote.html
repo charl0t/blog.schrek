@@ -1,0 +1,5 @@
+{{ $auteur := .Get "auteur" }}
+<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+    <p>"{{.Inner}}"</p>
+    <div class="uk-text-right uk-text-muted">{{ $auteur }}</div>
+</div>

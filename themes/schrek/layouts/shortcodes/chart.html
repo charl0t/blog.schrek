@@ -1,3 +1,14 @@
+{{/*
+https://github.com/charl0t/blog.schrek
+
+https://www.chartjs.org/
+
+Utilisation:
+{{< chart >}}
+Json code
+{{< /chart >}}
+*/}}
+
 {{ $w := default "100" (.Get 0) }}
 {{ $h := default "300" (.Get 1) }}
 {{ $r := ( .Inner | chomp) }}

@@ -107,3 +107,14 @@ https://getuikit.com/docs/label#style-modifiers
 {{</* galerie titre="super galerie" animation="scale" */>}}
 {{< /highlight >}}
 
+## Citations
+
+{{< highlight go-html-template >}}
+{{</* quote auteur="Winston Churchill" */>}}
+Une pomme par jour éloigne le médecin, pourvu que l'on vise bien.
+{{</* /quote */>}}
+{{< /highlight >}}
+
+{{< quote auteur="Winston Churchill" >}}
+Une pomme par jour éloigne le médecin, pourvu que l'on vise bien.
+{{< /quote >}}
