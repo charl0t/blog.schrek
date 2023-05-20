@@ -11,7 +11,7 @@ disablePathToLower = 'true'
 [params]
 description = 'Mon super blog :)'
 googleAnalytics = 'G-8MM0H2W60B'
-
+removePathAccents= 'true'
 
 [taxonomies]
    tag = "tags"
@@ -38,6 +38,11 @@ googleAnalytics = 'G-8MM0H2W60B'
   name = 'Wiki'
   url = '/wiki/'
   pre = 'database'
+  weight = 30
+  [[menu.main]]
+  name = 'Tags'
+  url = '/pages/tagscloud/'
+  pre = 'hashtag'
   weight = 30
 [[menu.main]]
   name = 'RSS'
