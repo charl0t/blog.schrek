@@ -1,0 +1,9 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.17/js/uikit.min.js" integrity="sha512-Q6uq6qad2+bzWFT6SDVx1GbSQzTS20HImFsQq124EkLeuMFd/LQtrbXjEYi+9umR2V4+sSwz3T9N6oPA6oYiKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.17/js/uikit-icons.min.js" integrity="sha512-5J2/N8o06hYpNgzMyufIxSSkGifUQo+zUXbbScnXg0m9/2z+W6KBT2RA7N0jlTVUd3pxdv8hjI8vUiDcfIZ2sA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js" integrity="sha512-Nqw1tH3mpavka9cQCc5zWWEZNfIPdOYyQFjlV1NvflEtQ0/XI6ZQ+H/D3YgJdqSUJlMLAPRj/oXlaHCFbFCjoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{ $js := resources.Get "js/jquery.mark.min.js" | minify | resources.Fingerprint }}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ $js := resources.Get "js/search.js" | minify | resources.Fingerprint "sha512" }}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>

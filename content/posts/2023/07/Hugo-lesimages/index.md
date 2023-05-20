@@ -1,6 +1,6 @@
 ---
 title: "Hugo et les images"
-date: 2023-07-20
+date: 2023-07-10
 draft: false
 tags: ["Shortcode","Hugo","Images"]
 categories: ["Web"]
@@ -62,3 +62,5 @@ toc: true
 ## lien
 
 https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes
+
+{{< chat cactus-comments >}}

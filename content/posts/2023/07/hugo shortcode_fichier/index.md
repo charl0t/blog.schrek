@@ -5,10 +5,10 @@ draft: false
 tags: ["Shortcode","Hugo"]
 categories: ["Web"]
 series: ["Hugo"]
-image: "paper.png"
+image: "paper.webp"
 toc: true
 ---
-{{< figure src="paper.png" title="" width=200px class="imagearticle" >}}
+{{< figure src="paper.webp" title="" width=200px class="imagearticle" >}}
 Ce shortcode liste les fichiers dans une dossier pour permettre leurs téléchargements.
 
 Dans le dossier de l'article, il faut creer un dossier *files/* pour y deposer les fichiers.

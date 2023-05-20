@@ -107,6 +107,13 @@ https://getuikit.com/docs/label#style-modifiers
 {{</* galerie titre="super galerie" animation="scale" */>}}
 {{< /highlight >}}
 
+## Inclure du HTML
+
+{{</* rawhtml */>}}
+<a href="https://fr.wikipedia.org/" target="_blank">Wikipedia</a>
+{{</* /rawhtml */>}}
+
+
 ## Citations
 
 {{< highlight go-html-template >}}

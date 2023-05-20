@@ -4,6 +4,4 @@ L’inconvénient c’est de retenir les balises.
 L&amp;rsquo;avantage est d&amp;rsquo;intégrer des fonctions au sein même du contenu, sans toucher au template.
 Shortcode interne Vous trouverez pleins d&amp;rsquo;exemple sur le site officiel.
 https://gohugo.io/content-management/shortcodes/
-shortcodes personnalisés Des icônes On va se servir des icônes du framework du site.</description></item><item><title>Mes Shortcodes</title><link>https://schrek.fr/wiki/Mes_Shortcodes/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/Mes_Shortcodes/</guid><description>Images {{&amp;lt; figure src=&amp;#34;codepen-logo-8.png&amp;#34; title=&amp;#34;&amp;#34; width=200px class=&amp;#34;imagearticle&amp;#34; &amp;gt;}} Icones https://getuikit.com/docs/icon
-{{&amp;lt; uicon heart 2 &amp;gt;}} est un **gros** coeur. est un gros coeur.
-Bandeaux {{&amp;lt; bandeau primary &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt. {{&amp;lt; / bandeau &amp;gt;}} {{&amp;lt; bandeau success &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt. {{&amp;lt; / bandeau &amp;gt;}} {{&amp;lt; bandeau warning &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt.</description></item></channel></rss>
+shortcodes personnalisés Des icônes On va se servir des icônes du framework du site.</description></item></channel></rss>

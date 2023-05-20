@@ -17,9 +17,9 @@ Genre de livre qui pourrait devenir une série Netflix.
 Le roman se déroule à la fin des années 2080 et se déroule à Artémis, la première et seule ville sur la Lune. 
 Il suit la vie de la coursière et contrebandière Jasmine « Jazz » Bashara alors qu’elle se retrouve prise dans une conspiration pour le contrôle de la ville.
 
-## Détails 
+## Détails
 
- - Traducteur Nenad Savic
+ - Traducteur Nenad Savic 
  - Éditeur Bragelonne
  - Lieu de parution Paris
  - Date de parution 17 janvier 2018

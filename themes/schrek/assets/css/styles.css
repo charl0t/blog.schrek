@@ -49,10 +49,10 @@ figure .imagearticle {
      justify-content: center;
 }
 .pagination span {
-     margin: 1rem;
+     margin: 0.6rem;
 }
 .pagination li {
-     margin: 1rem;
+     margin: 0.6rem;
 }
 
 footer {
@@ -71,7 +71,7 @@ background-color: #5e8db2;
      margin: 0;
 }
 .labelcat {
-     background-color: #5e8db2;
+     background-color: #578eb8;
      padding: 0.2rem;
      margin-left: 2rem;
 
@@ -117,15 +117,6 @@ border-left: solid;
 
 .attachments-files{
 background-color: #dbe6eb;
-}
-
-.totop {
-     position: -webkit-sticky; /* Safari */  
-     position: sticky;
-     bottom: 20px;
-     float: right;
-     right: 20%; /* added */
-     margin-left:auto; /* push the element to the right */
 }
 
 .imagecenter {

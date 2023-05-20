@@ -1,7 +1,7 @@
 ---
 title: "Recherche dans Hugo"
 date: 2023-06-01
-draft: false
+draft: true
 tags: ["Shortcode", "Recherche","Hugo"]
 categories: ["Web"]
 series: ["Hugo"]

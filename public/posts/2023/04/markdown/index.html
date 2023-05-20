@@ -1,237 +1,84 @@
-<!doctype html><html lang=fr>
-<html><head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Blog qui parle de lecture et de web">
-<meta name=keywords content="hugo,html,lecture,web,shortcode">
-<title>Schrek.fr</title><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<meta property="og:title" content="Markdown">
-<meta property="og:description" content="# Menu ## Texte  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ### Gras Lorem ipsum dolor sit amet, consectetur **adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua**. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://schrek.fr/posts/2023/04/markdown/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2023-04-06T00:00:00+00:00">
-<meta property="article:modified_time" content="2023-04-06T00:00:00+00:00">
-<link href=/css/uikit.min.min.510f27bab8b6d9ac120797a365455588af5dd0386b000e1e2e24b05689710039d040475fc901b6c4a99d1a1dda2b295864fb1b9f834dcba0a7ac6691c59ecb5b.css rel=stylesheet integrity="sha512-UQ8nuri22awSB5ejZUVViK9d0DhrAA4eLiSwVolxADnQQEdfyQG2xKmdGh3aKylYZPsbn4NNy6CnrGaRxZ7LWw==" crossorigin=anonymous>
-<link href=/css/styles.min.e85aeab23f3ad0a3b5f008b7aa8df0f8249ecbd8d7f56f5d558985b40a0c3c88cd21753aa129b709ae3ca15ad71118af755cf3b7add524925b76dec942c5b5ce.css rel=stylesheet integrity="sha512-6Frqsj860KO18Ai3qo3w+CSey9jX9W9dVYmFtAoMPIjNIXU6oSm3Ca48oVrXERivdVzzt63VJJJbdt7JQsW1zg==" crossorigin=anonymous>
-</head>
-<body><header>
-<div class="uk-container uk-container-xsmall uk-padding-small">
-<a href=https://schrek.fr/><h1 classe=uk-heading-small>Schrek.fr</h1></a>
-<a href=https://schrek.fr/><h2>Mon super blog :)</h2></a>
-<span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type=button uk-toggle="target: #offcanvas-overlay"></span>
-<div id=offcanvas-overlay uk-offcanvas="overlay: true">
-<div class="uk-offcanvas-bar uk-background-primary">
-<button class=uk-offcanvas-close type=button uk-close></button>
-<h3 class=barremenu>Menu</h3><nav>
-<ul class=uk-iconnav>
-<li><a href=/><span uk-icon="icon:home; ratio: 2"></span></a></li>
-<li><a href=/pages/apropos/><span uk-icon="icon:info; ratio: 2"></span></a></li>
-<li><a href=/wiki/><span uk-icon="icon:database; ratio: 2"></span></a></li>
-<li><a href=/index.xml><span uk-icon="icon:rss; ratio: 2"></span></a></li>
-</ul>
-</nav>
-<hr class=uk-divider-icon> <div class=uk-margin>
-<form class="uk-search uk-search-default" action=https://schrek.fr/pages/search/ method=get>
-<span uk-search-icon></span>
-<input class=uk-search-input type=search placeholder=Search aria-label=Search id=search-query name=s>
-</form>
-</div>
-<hr class=uk-divider-icon>
-<h3 class=barremenu><a href=https://schrek.fr//categories/>Categories</a></h3>
-<li><a href=https://schrek.fr/categories/Lecture/>Lecture</a></li>
-<li><a href=https://schrek.fr/categories/web/>web</a></li>
-<li><a href=https://schrek.fr/categories/Wiki/>Wiki</a></li>
-<li><a href=https://schrek.fr/categories/Markdown/>Markdown</a></li>
-<li><a href=https://schrek.fr/categories/Latex/>Latex</a></li>
-<li><a href=https://schrek.fr/categories/Linux/>Linux</a></li>
-<li><a href=https://schrek.fr/categories/Recette/>Recette</a></li>
-<h3 class=barremenu><a href=https://schrek.fr//tags/>Tags</a></h3>
-<li><a href=https://schrek.fr/tags/Espionnage/>Espionnage</a></li>
-<li><a href=https://schrek.fr/tags/Livre/>Livre</a></li>
-<li><a href=https://schrek.fr/tags/DrawnIO/>DrawnIO</a></li>
-<li><a href=https://schrek.fr/tags/Signalisation/>Signalisation</a></li>
-<li><a href=https://schrek.fr/tags/Sncf/>Sncf</a></li>
-<li><a href=https://schrek.fr/tags/HTML/>HTML</a></li>
-<li><a href=https://schrek.fr/tags/Hugo/>Hugo</a></li>
-<li><a href=https://schrek.fr/tags/Shortcode/>Shortcode</a></li>
-<li><a href=https://schrek.fr/tags/Markdown/>Markdown</a></li>
-<li><a href=https://schrek.fr/tags/Menu/>Menu</a></li>
-<li><a href=https://schrek.fr/tags/S-F/>S-F</a></li>
-<li><a href=https://schrek.fr/tags/Web/>Web</a></li>
-<li><a href=https://schrek.fr/tags/policier/>policier</a></li>
-<li><a href=https://schrek.fr/tags/guerre/>guerre</a></li>
-<li><a href=https://schrek.fr/tags/CSS/>CSS</a></li>
-<li><a href=https://schrek.fr/tags/Framework/>Framework</a></li>
-<li><a href=https://schrek.fr/tags/Linux/>Linux</a></li>
-<li><a href=https://schrek.fr/tags/Pandoc/>Pandoc</a></li>
-<li><a href=https://schrek.fr/tags/ChatGpt/>ChatGpt</a></li>
-<li><a href=https://schrek.fr/tags/Lettre/>Lettre</a></li>
-<li><a href=https://schrek.fr/tags/Carte/>Carte</a></li>
-<li><a href=https://schrek.fr/tags/framacarte/>framacarte</a></li>
-<li><a href=https://schrek.fr/tags/Nano/>Nano</a></li>
-<li><a href=https://schrek.fr/tags/DOA/>DOA</a></li>
-<li><a href=https://schrek.fr/tags/Gimp/>Gimp</a></li>
-<li><a href=https://schrek.fr/tags/Zweig/>Zweig</a></li>
-<li><a href=https://schrek.fr/tags/Diy/>Diy</a></li>
-<li><a href=https://schrek.fr/tags/brouter/>brouter</a></li>
-<li><a href=https://schrek.fr/tags/Velo/>Velo</a></li>
-<li><a href=https://schrek.fr/tags/Zlib/>Zlib</a></li>
-<li><a href=https://schrek.fr/tags/Glace/>Glace</a></li>
-<li><a href=https://schrek.fr/tags/Latex/>Latex</a></li>
-<li><a href=https://schrek.fr/tags/Savon/>Savon</a></li>
-<li><a href=https://schrek.fr/tags/mots-de-passe/>mots de passe</a></li>
-<li><a href=https://schrek.fr/tags/Qrcode/>Qrcode</a></li>
-<li><a href=https://schrek.fr/tags/Ebook/>Ebook</a></li>
-<h3 class=barremenu><a href=https://schrek.fr//series/>Series</a></h3>
-<li><a href=https://schrek.fr/series/Hugo/>Hugo</a></li>
-</div>
-</div>
-</div>
-</header>
-<main>
-<div class="uk-container uk-background-muted uk-box-shadow-large uk-padding">
-<ol class=uk-breadcrumb>
-<li><a href=/>home</a></li>
-<li><a href=https://schrek.fr/posts>posts</a></li>
-<li><a href=https://schrek.fr/posts/2023>2023</a></li>
-<li><a href=https://schrek.fr/posts/2023/04>04</a></li>
-<li><a href=https://schrek.fr/posts/2023/04/markdown>markdown</a></li>
-</ol>
-<article class=uk-article>
-<h1 class=uk-article-title>Markdown</h1>
-<p class=uk-article-meta>2023-04-06
-<span class="labelcat uk-label"><a href=/categories/Markdown>Markdown</a></span>
-<br>
-<i>Temps de lecture: 1 minutes.</i>
-</p>
-<br>
-<p class=uk-text-lead>
-<div class="uk-section uk-align-right">
-<div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
-<h3 class=uk-card-title>Table des matières</h3>
-<p class="toc uk-text-small"> <nav id=TableOfContents></nav></p>
-</div>
-</div>
-<figure class=imagearticle><img src=logo.webp width=200px>
-</figure>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown># Menu
-
-<span style=color:#75715e>## Texte
-</span><span style=color:#75715e></span>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-
-<span style=color:#75715e>### Gras
-</span><span style=color:#75715e></span>Lorem ipsum dolor sit amet, consectetur <span style=font-weight:700>**adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua**</span>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-
-<span style=color:#75715e>### Italique
-</span><span style=color:#75715e></span>Lorem ipsum dolor sit amet, <span style=font-style:italic>*consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.*</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-<span style=color:#75715e>### Barré
-</span><span style=color:#75715e></span>~~Lorem ipsum dolor sit amet,~~ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-<span style=color:#75715e>### Citations
-</span><span style=color:#75715e></span><span style=color:#66d9ef>
-</span><span style=color:#66d9ef>&gt; </span><span style=font-style:italic>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-</span><span style=font-style:italic></span><span style=color:#66d9ef>&gt; </span><span style=font-style:italic>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-</span><span style=font-style:italic></span>
-<span style=color:#75715e>### Lignes horizontales
-</span><span style=color:#75715e></span>___
-
----
-
-<span style=font-style:italic>**</span>*
-
-<span style=color:#75715e>## Listes
-</span><span style=color:#75715e></span>
-<span style=color:#66d9ef>-</span> Liste1
-<span style=color:#66d9ef>-</span> Liste 2
-<span style=color:#66d9ef>-</span> Liste 3
-
-<span style=color:#66d9ef>1.</span> Liste 1
-<span style=color:#66d9ef>2.</span> Liste 2
-<span style=color:#66d9ef>3.</span> Liste 3
-
-[ ] A
-[x] B
-[ ] C
-
-<span style=color:#75715e>## Code
-</span><span style=color:#75715e></span>
-C’est le <span style=color:#e6db74>`code, Lorem ipsum dolor sit amet, consectetur`</span>.
-
-
-``` php
-<span style=color:#75715e>&lt;?php
-</span><span style=color:#75715e>$var = 20;
-</span><span style=color:#75715e>echo &#39;Var=&#39;.$var;
-</span><span style=color:#75715e>?&gt;</span>
-```
-
-
-<span style=color:#75715e>## Liens
-</span><span style=color:#75715e></span>
-[<span style=color:#f92672>Lien</span>](<span style=color:#a6e22e>https://example.com/ &#34;titre de lien optionnel&#34;</span>).
-
-Courriel  &lt;<span style=color:#f92672>test</span><span style=color:#960050;background-color:#1e0010>@</span><span style=color:#a6e22e>example</span><span style=color:#960050;background-color:#1e0010>.</span><span style=color:#a6e22e>com</span>&gt;
-
-<span style=color:#75715e>## Tableau
-</span><span style=color:#75715e></span>
-|cellule 1|cellule 2|
-|--------|--------|
-|    A    |    B    |
-|    C    |    D    |
-
-<span style=color:#75715e>## Images
-</span><span style=color:#75715e></span>
-![<span style=color:#f92672>Text alternatif</span>](<span style=color:#a6e22e>logo.png &#34;Titre image&#34;</span>)
-
-
-
-<span style=color:#75715e>## Notes
-</span><span style=color:#75715e></span>
-In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
-of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
-eat: it was a [hobbit-hole][1], and that means comfort.</code></pre></div>
-</p>
-</article>
-<ul class=uk-pagination>
-<li><a class=uk-link-heading href=https://schrek.fr/posts/2023/04/Hugo-installation/><span class=uk-margin-small-right uk-pagination-previous></span> Hugo CMS</a></li>
-<li class=uk-margin-auto-left><a class=uk-link-heading href=https://schrek.fr/posts/2023/04/Hugo-Les_images/>Hugo et les images<span class=uk-margin-small-left uk-pagination-next></span></a></li>
-</ul>
-<hr class=uk-divider-icon>
-<div class="uk-grid-small uk-child-width-auto" uk-grid>
-<div>
-<p class=uk-text-light><span uk-icon=icon:hashtag></span>TAGS</p>
-<ul class="uk-list uk-display-inline-block">
-<li>
-<a class="uk-button uk-button-default" href=https://schrek.fr/tags/Markdown/>Markdown</a>
-</li>
-<li>
-<a class="uk-button uk-button-default" href=https://schrek.fr/tags/HTML/>HTML</a>
-</li>
-</ul>
-<br>
-</div>
-</div>
-</div>
-<a class=totop href uk-totop></a>
-</main><footer>
-<div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
-2023 - Construit avec <a class=uk-link-muted href=https://gohugo.io/>Hugo</a> et de <a class=uk-link-muted href=https://getuikit.com/>UiKit</a>
-</div>
-</footer>
-<script src=/js/uikit.min.min.375b5b257bd1f887129d6d5f767ba47dfd838d1004ab6714ede6cbc8d97af8887432409fd90db4bcca32d1f47861a49ad94afa2a0e83956367280bc5fffdd120.js integrity="sha512-N1tbJXvR+IcSnW1fdnukff2DjRAEq2cU7ebLyNl6+Ih0MkCf2Q20vMoy0fR4YaSa2Ur6Kg6DlWNnKAvF//3RIA==" crossorigin=anonymous></script>
-<script defer src=/js/uikit-icons.min.min.js integrity crossorigin=anonymous></script>
-<script defer src=/js/jquery.min.min.80e5b4ddb3f8f7838b732cd59862cb2bcff461d4b75556fd01136e5f09151873c44630ea1b8385c053d8819bd9f14b013280a1e7dfe31ad2f500b69e1307dff7.js integrity="sha512-gOW03bP494OLcyzVmGLLK8/0YdS3VVb9ARNuXwkVGHPERjDqG4OFwFPYgZvZ8UsBMoCh59/jGtL1ALaeEwff9w==" crossorigin=anonymous></script>
-<script defer src=/js/fuse.min.min.9fb3d1410440de385b35abf2334918d5c6acbc01b961ec29fae768635de2a83bc86991ba3efde6ff1be85ef0634c7118af775b9667cc039ba42b54b4b69d5c7c.js integrity="sha512-n7PRQQRA3jhbNavyM0kY1casvAG5Yewp+udoY13iqDvIaZG6Pv3m/xvoXvBjTHEYr3dblmfMA5ukK1S0tp1cfA==" crossorigin=anonymous></script>
-<script defer src=/js/mark.min.min.a27d82d04fa3b6221855cb9fdd3f54256cfc0b8df5d438e9f1157bf7c8ac289df51dd28689f067be3634c13b4beb29658c466da43c60152966d6b5cf9252e9df.js integrity="sha512-on2C0E+jtiIYVcuf3T9UJWz8C4311Djp8RV798isKJ31HdKGifBnvjY0wTtL6ylljEZtpDxgFSlm1rXPklLp3w==" crossorigin=anonymous></script>
-<script defer src=/js/jquery.mark.min.min.5796be42b094079bd003dbbfd5c8a126069e4a7b30f462ff4a733a5cdf4c69530e494827b21cb368180f7c8ee60eee77fb9b975c420104eb333103637943a269.js integrity="sha512-V5a+QrCUB5vQA9u/1cihJgaeSnsw9GL/SnM6XN9MaVMOSUgnshyzaBgPfI7mDu53+5uXXEIBBOszMQNjeUOiaQ==" crossorigin=anonymous></script>
-<script defer src=/js/search.min.34b4c6f996b565513f45eb8cabcb4063773d426f56f807a93670b32b3158b049a15eddbcf8a2e628bc8abbfbe58a6cfb0efffe1b4ea4793680efa291932a923d.js integrity="sha512-NLTG+Za1ZVE/ReuMq8tAY3c9Qm9W+AepNnCzKzFYsEmhXt28+KLmKLyKu/vlimz7Dv/+G06keTaA76KRkyqSPQ==" crossorigin=anonymous></script>
-</body>
-</html>
+<!doctype html><html lang=fr><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Blog qui parle de lecture et de web"><meta name=keywords content="hugo,html,lecture,web,shortcode"><title>Schrek.fr</title><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><meta property="og:title" content="Markdown"><meta property="og:description" content="# Menu ## Texte Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ### Gras Lorem ipsum dolor sit amet, consectetur **adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua**. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."><meta property="og:type" content="article"><meta property="og:url" content="https://schrek.fr/posts/2023/04/markdown/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-04-06T00:00:00+00:00"><meta property="article:modified_time" content="2023-04-06T00:00:00+00:00"><link href=/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css rel=stylesheet integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin=anonymous><link href=/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css rel=stylesheet integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp+8kDvTq4rdsbpi6rWUJnq68ImIF+mScfMdRrPd7mRCOJAPMg==" crossorigin=anonymous></head><body><header><div class="uk-container uk-container-xsmall uk-padding-small"><a href=https://schrek.fr/><h1 classe=uk-heading-small>Schrek.fr</h1></a><a href=https://schrek.fr/><h2>Mon super blog :)</h2></a><span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type=button uk-toggle="target: #offcanvas-overlay"></span><div id=offcanvas-overlay uk-offcanvas="overlay: true"><div class="uk-offcanvas-bar uk-background-primary"><button class=uk-offcanvas-close type=button uk-close></button><h3 class=barremenu>Menu</h3><nav><ul class=uk-iconnav><li><a href=/><span uk-icon="icon:home; ratio: 2"></span></a></li><li><a href=/pages/apropos/><span uk-icon="icon:info; ratio: 2"></span></a></li><li><a href=/wiki/><span uk-icon="icon:database; ratio: 2"></span></a></li><li><a href=/index.xml><span uk-icon="icon:rss; ratio: 2"></span></a></li></ul></nav><hr class=uk-divider-icon><h3 class=barremenu><a href=https://schrek.fr//categories/>Categories</a></h3><li><a href=https://schrek.fr/categories/web/>web</a></li><li><a href=https://schrek.fr/categories/Lecture/>Lecture</a></li><li><a href=https://schrek.fr/categories/Wiki/>Wiki</a></li><li><a href=https://schrek.fr/categories/Markdown/>Markdown</a></li><li><a href=https://schrek.fr/categories/Latex/>Latex</a></li><li><a href=https://schrek.fr/categories/Linux/>Linux</a></li><li><a href=https://schrek.fr/categories/Recette/>Recette</a></li><h3 class=barremenu><a href=https://schrek.fr//tags/>Tags</a></h3><li><a href=https://schrek.fr/tags/HTML/>HTML</a></li><li><a href=https://schrek.fr/tags/Hugo/>Hugo</a></li><li><a href=https://schrek.fr/tags/Markdown/>Markdown</a></li><li><a href=https://schrek.fr/tags/Espionnage/>Espionnage</a></li><li><a href=https://schrek.fr/tags/Livre/>Livre</a></li><li><a href=https://schrek.fr/tags/DrawnIO/>DrawnIO</a></li><li><a href=https://schrek.fr/tags/Signalisation/>Signalisation</a></li><li><a href=https://schrek.fr/tags/Sncf/>Sncf</a></li><li><a href=https://schrek.fr/tags/Shortcode/>Shortcode</a></li><li><a href=https://schrek.fr/tags/Menu/>Menu</a></li><li><a href=https://schrek.fr/tags/S-F/>S-F</a></li><li><a href=https://schrek.fr/tags/Web/>Web</a></li><li><a href=https://schrek.fr/tags/policier/>policier</a></li><li><a href=https://schrek.fr/tags/guerre/>guerre</a></li><li><a href=https://schrek.fr/tags/CSS/>CSS</a></li><li><a href=https://schrek.fr/tags/Framework/>Framework</a></li><li><a href=https://schrek.fr/tags/Linux/>Linux</a></li><li><a href=https://schrek.fr/tags/Pandoc/>Pandoc</a></li><li><a href=https://schrek.fr/tags/ChatGpt/>ChatGpt</a></li><li><a href=https://schrek.fr/tags/Lettre/>Lettre</a></li><li><a href=https://schrek.fr/tags/Carte/>Carte</a></li><li><a href=https://schrek.fr/tags/framacarte/>framacarte</a></li><li><a href=https://schrek.fr/tags/Nano/>Nano</a></li><li><a href=https://schrek.fr/tags/DOA/>DOA</a></li><li><a href=https://schrek.fr/tags/Gimp/>Gimp</a></li><li><a href=https://schrek.fr/tags/Zweig/>Zweig</a></li><li><a href=https://schrek.fr/tags/Diy/>Diy</a></li><li><a href=https://schrek.fr/tags/brouter/>brouter</a></li><li><a href=https://schrek.fr/tags/Velo/>Velo</a></li><li><a href=https://schrek.fr/tags/Zlib/>Zlib</a></li><li><a href=https://schrek.fr/tags/Glace/>Glace</a></li><li><a href=https://schrek.fr/tags/Latex/>Latex</a></li><li><a href=https://schrek.fr/tags/Savon/>Savon</a></li><li><a href=https://schrek.fr/tags/mots-de-passe/>mots de passe</a></li><li><a href=https://schrek.fr/tags/Qrcode/>Qrcode</a></li><li><a href=https://schrek.fr/tags/Ebook/>Ebook</a></li><h3 class=barremenu><a href=https://schrek.fr//series/>Series</a></h3><li><a href=https://schrek.fr/series/Hugo/>Hugo</a></li></div></div></div></header><main><div class="uk-container uk-background-muted uk-box-shadow-large uk-padding"><ol class=uk-breadcrumb><li><a href=/>home</a></li><li><a href=https://schrek.fr/posts>posts</a></li><li><a href=https://schrek.fr/posts/2023>2023</a></li><li><a href=https://schrek.fr/posts/2023/04>04</a></li><li><a href=https://schrek.fr/posts/2023/04/markdown>markdown</a></li></ol><article class=uk-article><h1 class=uk-article-title>Markdown</h1><p class=uk-article-meta>2023-04-06
+<span class="labelcat uk-label"><a href=/categories/Markdown>Markdown</a></span><br><i>Temps de lecture: 1 minutes.</i></p><br><p class=uk-text-lead><div class="uk-section uk-align-right"><div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false"><h3 class=uk-card-title>Table des matières</h3><p class="toc uk-text-small"><nav id=TableOfContents></nav></p></div></div><figure class=imagearticle><img src=logo.webp width=200px></figure><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span># Menu
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>## Texte
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>### Gras
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>Lorem ipsum dolor sit amet, consectetur <span style=font-weight:700>**adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua**</span>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>### Italique
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>Lorem ipsum dolor sit amet, <span style=font-style:italic>*consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.*</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>### Barré
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>~~Lorem ipsum dolor sit amet,~~ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>### Citations
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>
+</span></span></span><span style=display:flex><span><span style=color:#66d9ef>&gt; </span><span style=font-style:italic>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+</span></span></span><span style=display:flex><span><span style=font-style:italic></span><span style=color:#66d9ef>&gt; </span><span style=font-style:italic>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+</span></span></span><span style=display:flex><span><span style=font-style:italic></span>
+</span></span><span style=display:flex><span><span style=color:#75715e>### Lignes horizontales
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>___
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>---
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=font-style:italic>**</span>*
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>## Listes
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>-</span> Liste1
+</span></span><span style=display:flex><span><span style=color:#66d9ef>-</span> Liste 2
+</span></span><span style=display:flex><span><span style=color:#66d9ef>-</span> Liste 3
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>1.</span> Liste 1
+</span></span><span style=display:flex><span><span style=color:#66d9ef>2.</span> Liste 2
+</span></span><span style=display:flex><span><span style=color:#66d9ef>3.</span> Liste 3
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[ ] A
+</span></span><span style=display:flex><span>[x] B
+</span></span><span style=display:flex><span>[ ] C
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>## Code
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>C’est le <span style=color:#e6db74>`code, Lorem ipsum dolor sit amet, consectetur`</span>.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>``` php
+</span></span><span style=display:flex><span><span style=color:#75715e>&lt;?php
+</span></span></span><span style=display:flex><span><span style=color:#75715e>$var = 20;
+</span></span></span><span style=display:flex><span><span style=color:#75715e>echo &#39;Var=&#39;.$var;
+</span></span></span><span style=display:flex><span><span style=color:#75715e>?&gt;</span>
+</span></span><span style=display:flex><span>```
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>## Liens
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>[<span style=color:#f92672>Lien</span>](<span style=color:#a6e22e>https://example.com/ &#34;titre de lien optionnel&#34;</span>).
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Courriel  &lt;<span style=color:#f92672>test</span><span style=color:#960050;background-color:#1e0010>@</span><span style=color:#a6e22e>example</span><span style=color:#960050;background-color:#1e0010>.</span><span style=color:#a6e22e>com</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>## Tableau
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>|cellule 1|cellule 2|
+</span></span><span style=display:flex><span>|--------|--------|
+</span></span><span style=display:flex><span>|    A    |    B    |
+</span></span><span style=display:flex><span>|    C    |    D    |
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>## Images
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>![<span style=color:#f92672>Text alternatif</span>](<span style=color:#a6e22e>logo.png &#34;Titre image&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>## Notes
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
+</span></span><span style=display:flex><span>of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
+</span></span><span style=display:flex><span>eat: it was a [hobbit-hole][1], and that means comfort.</span></span></code></pre></div></p></article><ul class=uk-pagination><li><a class=uk-link-heading href=https://schrek.fr/posts/2023/04/Hugo-installation/><span class=uk-margin-small-right uk-pagination-previous></span> Hugo CMS</a></li><li class=uk-margin-auto-left><a class=uk-link-heading href=https://schrek.fr/posts/2023/04/Hugo-Les_images/>Hugo et les images<span class=uk-margin-small-left uk-pagination-next></span></a></li></ul><hr class=uk-divider-icon><div class="uk-grid-small uk-child-width-auto" uk-grid><div><p class=uk-text-light><span uk-icon=icon:hashtag></span>TAGS</p><ul class="uk-list uk-display-inline-block"><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/Markdown/>Markdown</a></li><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/HTML/>HTML</a></li></ul><br></div></div></div></main><footer><div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">2023 - Construit avec <a class=uk-link-muted href=https://gohugo.io/>Hugo</a> et de <a class=uk-link-muted href=https://getuikit.com/>UiKit</a></div></footer><script src=/js/uikit.min.min.1c19c4dee0a02e0f02dce6fdeaed2860d54c4bd6bfeff7aa4184f8b5697a8935.js integrity="sha256-HBnE3uCgLg8C3Ob96u0oYNVMS9a/7/eqQYT4tWl6iTU=" crossorigin=anonymous></script>
+<script defer src=/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin=anonymous></script></body></html>
