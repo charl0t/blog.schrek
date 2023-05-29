@@ -2,7 +2,7 @@
 title: "Hugo et les commentaires"
 date: 2023-05-20
 draft: false
-tags: ["Markdown", "HTML","Hugo"]
+tags: ["Markdown","Html","Hugo","Cactus"]
 categories: ["Web"]
 series: ["Hugo"]
 image: "cactus.wepb"

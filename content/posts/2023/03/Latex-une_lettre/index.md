@@ -2,7 +2,7 @@
 title: "Lettre sous latex"
 date: 2023-03-28
 draft: false
-tags: ["Lettre"]
+tags: ["Lettre","Latex"]
 categories: ["Latex"]
 image: "latex_logo-1ee3e.svg"
 toc: true
@@ -67,9 +67,11 @@ sudo apt-get install texlive-lang-french
     \end{document}
 {{< / highlight >}}
 
+{{< bouton titre="Voir sur overleaf" url="https://www.overleaf.com/read/rtfknsbdvxnt" icone="forward" >}}
+
 Le tampon qui va bien
 
-{{< figure src="tampon-2.webp" title="" width=200px class="imagearticle" >}}
+{{< figure src="tampon.png" title="" width=200px class="imagearticle" >}}
 
 ## Résultat
 

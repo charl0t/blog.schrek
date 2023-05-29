@@ -2,8 +2,8 @@
 title: "Hugo - Création d’un thème"
 date: 2023-05-05
 draft: false
-tags: ["Markdown", "HTML","Hugo"]
-categories: ["web"]
+tags: ["Markdown", "Html","Hugo"]
+categories: ["Web"]
 series: ["Hugo"]
 image: "hugo.webp"
 toc: true
@@ -95,16 +95,21 @@ On va utiliser comme base le [CSS latex](https://latex.vercel.app/)
 <h1 class="titre">{{ .Site.Title }}</h1>
 <h2 class="soustitre">{{ .Site.Params.description }}</h2>
 </header>
-</code>
-themes/hugo-latex/layouts/partials/footer.html
-<code>
+{{< /highlight >}}
+
+{{ .Site.Params.description }} est remplacé par Hugo par le nom du site indiqué dans le fichier de configuration *config.toml*.
+
+## Footer
+*themes/hugo-latex/layouts/partials/footer.html*
+
+{{< highlight html >}}
 <footer>
     © 2023 {{ .Site.Title }}
 <button id="dark-mode-toggle">Toggle dark mode</button>
 </footer>
 {{< /highlight >}}
 
-{{ .Site.Params.description }} est remplacé par Hugo par le nom du site indiqué dans le fichier de configuration config.toml.
+
 
 {{< highlight toml >}}
 [params]

@@ -20,6 +20,13 @@ Jacob est associé à une belle et mystérieuse archéologue, dont l’intellige
 Mais tandis qu’ils s’efforcent de récupérer l’artefact volé, ils se retrouvent bientôt au cœur d’une conspiration plus importante que tout ce qu’ils auraient pu imaginer, et le temps leur est compté.
 
 ## Détails
+
+- ASIN  :  B07YCSPNZW
+- Nombre de pages   : 310 pages
+- Editeur : Jack Mars
+- Date de parution :septembre 2019
+
+## Lien
 https://booknode.com/le_jeu_de_lespion_tome_1_cible_une_03461229
 
 {{< chat cactus-comments >}}

@@ -5,7 +5,7 @@ categories: ["Wiki"]
 layout: wiki
 toc: false
 ---
-{{< bandeau success >}} Optimisations ameliorations, idées d'articles ... {{< / bandeau >}}  
+{{< bandeau success >}} Optimisations ameliorations, idées d'articles ... {{< / bandeau >}}
 
 {{< uicon close >}}  Optimisation des images.
 

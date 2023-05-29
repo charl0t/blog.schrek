@@ -2,7 +2,7 @@
 title: "Les signaux SNCF avec Draw.IO"
 date: 2023-05-14
 draft: false
-tags: ["SNCF", "Signalisation","DrawnIO"]
+tags: ["Sncf", "Signalisation","DrawnIO"]
 categories: ["Web"]
 image: "logo_drawnio.webp"
 toc: true

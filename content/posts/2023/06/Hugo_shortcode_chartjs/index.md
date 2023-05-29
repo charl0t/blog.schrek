@@ -1,7 +1,7 @@
 ---
 title: "Shortcode ChartJS"
 date: 2023-06-07
-tags: ["Shortcode","ChartJS"]
+tags: ["Shortcode","ChartJS","hugo"]
 categories: ["Web"]
 image: "chartjs.webp"
 toc: true
@@ -156,7 +156,7 @@ On va prendre un exemple sur le site [ChartJs](https://www.chartjs.org/docs/late
     labels: ['Anglais','Français','Mathématique','Sport'],
      datasets: [{
     label: 'Note éléve Ducobu',
-    data: [12, 10, 14, 18],    
+    data: [12, 10, 14, 18],
     fill: true,
     backgroundColor: 'rgba(255, 99, 132, 0.2)',
     borderColor: 'rgb(255, 99, 132)',

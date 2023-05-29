@@ -2,7 +2,7 @@
 title: "Hugo shortcode"
 date: 2023-05-10
 draft: false
-tags: ["Shortcode", "HTML","Hugo"]
+tags: ["Shortcode", "Html","Hugo"]
 categories: ["Web"]
 series: ["Hugo"]
 image: "hugo.webp"

@@ -2,7 +2,7 @@
 title: "Nego et L’Organisation - Laurent Combalbert"
 date: 2023-03-20
 draft: false
-tags: ["policier"]
+tags: ["Policier","Livre"]
 categories: ["Lecture"]
 image: "nego-1d734.webp"
 toc: true

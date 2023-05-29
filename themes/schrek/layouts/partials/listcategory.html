@@ -1,3 +1,4 @@
+<!-- liste les categories pour le menu de gauche-->
 {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
 <li><a href="{{.Permalink}}">{{.Title}}</a></li>
 {{end}}

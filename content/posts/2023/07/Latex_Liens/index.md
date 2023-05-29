@@ -3,8 +3,8 @@ title: "Ressources pour Latex"
 date: 2023-07-15
 draft: false
 tags: ["Latex"]
-categories: ["Web"]
-series: [""]
+categories: ["Latex"]
+series: ["Latex"]
 image: "latex_logo.webp"
 toc: true
 ---
@@ -24,7 +24,12 @@ https://framalibre.org/tags/latex
 https://www.gutenberg-asso.fr/
 
 
+
+
 ## Anglais
+
+https://www.overleaf.com/
+
 https://www.latex-project.org/
 
 https://www.ctan.org/

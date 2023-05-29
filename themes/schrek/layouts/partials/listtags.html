@@ -1,3 +1,4 @@
+<!-- liste les tags pour le menu de gauche: deplacé dans une page tagscloud -->
 {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
 <li><a href="{{.Permalink}}">{{.Title}}</a></li>
 {{end}}

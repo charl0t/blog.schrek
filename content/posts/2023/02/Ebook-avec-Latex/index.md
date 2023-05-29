@@ -4,10 +4,13 @@ date: 2023-02-03
 draft: false
 tags: ["Ebook"]
 categories: ["Latex"]
+series: ["Latex"]
 image: "epub.wepb"
 toc: true
 ---
 {{< figure src="epub.wepb" title="" width=200px class="imagearticle" >}}
+
+{{< bandeau success >}} MaJ 29/05/2023 Ajout d'un livre "LaTeX pour litteraires"(Éric Guichard), bouton overleaf.com{{< / bandeau >}} 
 
 J’avais l’idée d’écrire un petit livre sur la Rome antique, une histoire d’un soldat romain qui devient un pirate.
 Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourné vers Latex.
@@ -71,7 +74,7 @@ Code Latex des chapitres :
     \medskip
     %avec mes amis. On s’était donné rendez-vous prêt de la fontaine pour manger et boire mais ça a vite dérape.
     %https://www.histoire-en-questions.fr/antiquite/rome-vie-tavernes.html
-    %https://anticopedie.fr/WordPress/?p=431  
+    %https://anticopedie.fr/WordPress/?p=431 
      
     En fin d’après midi, direction la popina\footnote{Taverne de mauvaise réputation} de Bilius, un vieux et gros Gaulois plein de cicatrices qui dirige cet établissement de "caractère".
     C'est grâce a lui que j'ai pu gagner un peu d'argent en nettoyant tous les matins la taverne des restes de la veille.
@@ -79,6 +82,8 @@ Code Latex des chapitres :
 {{< / highlight >}}
 
 [Télécharger](latex2.txt)
+
+{{< bouton titre="Voir sur overleaf" url="https://www.overleaf.com/read/jsbppgfsrxrw" icone="forward" >}}
 
 ## Création de l’Epub
 J’ai utilisé Tex4ebook qui génère un Epub propre (pour mon cas).

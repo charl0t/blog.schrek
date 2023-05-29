@@ -2,7 +2,7 @@
 title: "Hugo minification"
 date: 2023-07-20
 draft: false
-tags: ["Shortcode","Hugo","minify"]
+tags: ["Shortcode","Hugo","Minify"]
 categories: ["Web"]
 series: ["Hugo"]
 image: "minifycss.webp"

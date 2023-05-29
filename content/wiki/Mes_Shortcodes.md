@@ -40,7 +40,7 @@ https://getuikit.com/docs/icon
 https://codepen.io
 
 {{< highlight go-html-template >}}
-{{</* codepen YzObPmg */>}}  
+{{</* codepen YzObPmg */>}}
 {{< /highlight >}}
 
 
@@ -83,7 +83,7 @@ Creer un dossier *files* dans le dossier de l'article.
 *Sans le /* apres {{*
 
 {{< highlight go-html-template >}}
-{{/*% pj /%}}
+{{/* pj */}}
 {{< /highlight >}}
 
 ## Badges
@@ -91,7 +91,6 @@ https://getuikit.com/docs/icon
 
 https://getuikit.com/docs/label#style-modifiers
 
-{{< chat cactus-comments >}}
 {{< highlight go-html-template >}}
 {{</* badge pencil warning */>}}
 **Mise a jour**
@@ -125,3 +124,16 @@ Une pomme par jour éloigne le médecin, pourvu que l'on vise bien.
 {{< quote auteur="Winston Churchill" >}}
 Une pomme par jour éloigne le médecin, pourvu que l'on vise bien.
 {{< /quote >}}
+
+## Boutons/liens
+
+{{< highlight go-html-template >}}
+{{</* bouton titre="Voir sur overleaf" url="https://www.overleaf.com/read/dgnpzyngzbqk" icone="forward" */>}}
+{{< /highlight >}}
+
+[Icones sur Uikit](https://getuikit.com/docs/icon)
+
+{{< bouton titre="Voir sur overleaf" url="https://www.overleaf.com/read/dgnpzyngzbqk" icone="forward" >}}
+
+{{< chat cactus-comments >}}
+

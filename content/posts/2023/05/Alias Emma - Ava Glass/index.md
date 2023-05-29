@@ -16,10 +16,10 @@ Agente surdouée du MI6 britannique, Emma Makepeace doit exfiltrer en catastroph
 Les Russes ont envoyé leurs meilleurs agents et ils ont piraté les caméras de Londres, la capitale la plus surveillée du monde. Dans la ville endormie commence une folle course poursuite. Emma se bat pour garder Michael en vie, mais les Russes ont toujours une longueur d'avance.
 
 ## Details
-- ASIN ‏ : ‎ B0BQQMVTN8
-- Éditeur ‏ : ‎ Les Arènes (23 mars 2023)
-- Langue ‏ : ‎ Français
-- Broché ‏ : ‎ 379 pages
+- ASIN :  B0BQQMVTN8
+- Éditeur :  Les Arènes (23 mars 2023)
+- Langue  :  Français
+- Broché :  379 pages
 
 ## Lien
 https://www.babelio.com/livres/Glass-Alias-Emma/1445455

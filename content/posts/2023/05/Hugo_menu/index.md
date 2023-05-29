@@ -2,7 +2,7 @@
 title: "Hugo - Création d’un menu"
 date: 2023-05-07
 draft: false
-tags: ["Markdown", "HTML","Hugo","Menu"]
+tags: ["Markdown", "Html","Hugo","Menu"]
 categories: ["Web"]
 series: ["Hugo"]
 image: "hugo.webp"

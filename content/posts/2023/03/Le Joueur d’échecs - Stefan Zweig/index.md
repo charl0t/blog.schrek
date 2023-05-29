@@ -16,8 +16,8 @@ Un des plus beau livre que j'ai lu. Un roman court mais intense.
 Czentowic, champion d'échecs arrogant, esprit borné à outrance, inculte et étonnamment stupide, occupe le premier plan jusqu'à l'entrée en scène de Monsieur B. Dès lors que cet aristocrate autrichien s'intéresse à la partie livrée entre le champion et les passagers amateurs, la direction du texte bascule.
 
 ## Détails
-- Langue ‏ : ‎ Français
-- Broché ‏ : ‎ 128 pages 
+- Langue : Français
+- Broché : 128 pages 
 
 ## Téléchargement
 

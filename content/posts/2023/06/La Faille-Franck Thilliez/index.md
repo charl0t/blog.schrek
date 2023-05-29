@@ -1,12 +1,11 @@
 ---
 title: "La Faille - Franck Thilliez"
 date: 2023-06-20
-tags: ["Policier"]
+tags: ["Policier","Livre"]
 categories: ["Lecture"]
 image: "lafaille.webp"
 toc: true
-series: []
-draft: true
+draft: false
 ---
 {{< figure src="lafaille.webp" title="" width=200px class="imagearticle" >}}
 

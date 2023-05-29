@@ -9,6 +9,7 @@
                     <h1 class="uk-article-title">{{ .Title }}</h1>
                     <p class="uk-text-lead">{{ .Content }}</p>
                 </article>
+        {{- partial "beer.html" . -}}
             </div>
     {{- partial "footer.html" . -}}
     {{- partial "scripts.html" . -}}

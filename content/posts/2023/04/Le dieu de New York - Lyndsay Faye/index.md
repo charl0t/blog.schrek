@@ -2,7 +2,7 @@
 title: "Le dieu de New York - Lyndsay Faye"
 date: 2023-04-28
 draft: false
-tags: ["policier"]
+tags: ["Policier","Livre"]
 categories: ["Lecture"]
 image: "dieu.webp"
 toc: true
@@ -22,10 +22,10 @@ Lors d'une ronde de nuit, sa route croise celle d'une petite fille effrayée, co
 
 ## Détails
 
-- Éditeur ‏ : ‎ Pocket (6 juin 2013)
-- Langue ‏ : ‎ Français
-- Poche ‏ : ‎ 552 pages
-- ISBN-10 ‏ : ‎ 2266238981
+- Éditeur :  Pocket (6 juin 2013)
+- Langue  :  Français
+- Poche  : 552 pages
+- ISBN-10  : 2266238981
 
 ## Liens
 https://fr.wikipedia.org/wiki/Lyndsay_Faye

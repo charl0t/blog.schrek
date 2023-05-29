@@ -2,7 +2,7 @@
 title: "Lier Framacarte a Framacalc"
 date: 2023-03-23
 draft: false
-tags: ["carte","framacarte"]
+tags: ["Carte","Framacarte"]
 categories: ["Web"]
 image: "umap_logo.webp"
 toc: true

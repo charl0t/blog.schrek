@@ -2,8 +2,8 @@
 title: "Markdown"
 date: 2023-04-06
 draft: false
-tags: ["Markdown", "HTML"]
-categories: ["Markdown"]
+tags: ["Markdown", "Html"]
+categories: ["Web"]
 image: "logo.webp"
 toc: true
 ---

@@ -2,8 +2,9 @@
 title: "La Signalisation SNCF avec Latex"
 date: 2023-03-05
 draft: false
-tags: ["Sncf", "Latex"]
-categories: ["Web"]
+tags: ["Sncf", "Latex","Signalisation"]
+categories: ["Latex"]
+series: ["Latex"]
 image: "signal_sncf_carre.webp"
 toc: true
 ---
@@ -22,6 +23,7 @@ Un autre projet [ici](https://geillon.pagesperso-orange.fr/trains/signaux/index.
 
 [Fichier Latex](signaux_sncf.tex)
 
+{{< bouton titre="Voir sur overleaf" url="https://www.overleaf.com/read/yykmgbndgsqt" icone="forward" >}}
 
 ## Lien
 https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France

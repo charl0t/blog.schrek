@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--Page bac a sable, /content/page/bacasable.md -->
+<html lang="fr">
+    {{- partial "head.html" . -}}
+    {{- partial "header.html" . -}}
+        <body>
+            <div class="uk-container uk-container-xlarge uk-background-muted uk-padding-large">
+<!-- Debut code pour test-->
+
+{{ range (where .Site.RegularPages "Section" "posts") }}
+    {{ .Title }} {{ .Date | time.Format ":date_short" }} {{.Permalink}}</br>
+{{ end }}
+
+<!-- Fin code pour test-->
+            </div>
+    {{- partial "footer.html" . -}}
+    {{- partial "scripts.html" . -}}
+         </body>
+</html>

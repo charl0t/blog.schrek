@@ -2,9 +2,8 @@
 title: "Les Chatons"
 date: 2023-04-29
 draft: false
-tags: ["Web"]
+tags: ["Web","Chatons"]
 categories: ["Web"]
-series: 
 image: "logo_chatons.webp"
 toc: true
 ---

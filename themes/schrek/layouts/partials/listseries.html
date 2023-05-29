@@ -1,3 +1,4 @@
+<!-- liste les series pour le menu de gauche-->
 {{range ($.Site.GetPage "taxonomyTerm" "series").Pages }}
 <li><a href="{{.Permalink}}">{{.Title}}</a></li>
 {{end}}

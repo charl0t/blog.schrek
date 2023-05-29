@@ -2,7 +2,7 @@
 title: "Les framework CSS"
 date: 2023-04-22
 draft: false
-tags: ["CSS", "HTML","Framework"]
+tags: ["CSS", "Html","Framework"]
 categories: ["Web"]
 toc: true
 ---

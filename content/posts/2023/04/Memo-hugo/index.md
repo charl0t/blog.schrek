@@ -2,7 +2,7 @@
 title: "Astuces Hugo"
 date: 2023-04-06
 draft: false
-tags: ["Markdown", "HTML","Hugo"]
+tags: ["Markdown", "Html","Hugo"]
 categories: ["Web"]
 series: ["Hugo"]
 image: "hugo.webp"

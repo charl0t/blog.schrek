@@ -2,7 +2,7 @@
 title: "Hugo et les galeries"
 date: 2023-07-25
 draft: false
-tags: ["Shortcode","Hugo","Images"]
+tags: ["Shortcode","Hugo","Images","Galerie"]
 categories: ["Web"]
 series: ["Hugo"]
 image: "gallery.webp"

@@ -2,7 +2,7 @@
 title: "Hugo et les images"
 date: 2023-04-01
 draft: false
-tags: ["Markdown", "HTML","Hugo"]
+tags: ["Markdown", "Html","Hugo","Shortcode"]
 categories: ["Web"]
 series: ["Hugo"]
 image: "hugo.webp"

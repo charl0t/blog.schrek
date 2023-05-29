@@ -2,9 +2,8 @@
 title: "Pandoc html template"
 date: 2023-04-20
 draft: false
-tags: ["Linux","Pandoc"]
-categories: ["web"]
-series: 
+tags: ["Linux","Pandoc","Markdown"]
+categories: ["Web"]
 image: "icon_pandoc_square_small.webp"
 toc: true
 ---

@@ -2,8 +2,9 @@
 title: "Le style Latex"
 date: 2023-03-05
 draft: false
-tags: ["CSS", "HTML"]
+tags: ["CSS", "Html"]
 categories: ["Web"]
+series: ["Latex"]
 image: "latex_logo.webp"
 toc: true
 ---

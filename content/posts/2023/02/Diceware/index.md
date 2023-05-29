@@ -3,8 +3,7 @@ title: "Diceware"
 date: 2023-02-24
 draft: false
 tags: ["Linux","mots de passe"]
-categories: ["web"]
-series: 
+categories: ["Web"]
 image: "one-red-dice-01-a9bf3.webp"
 toc: true
 ---

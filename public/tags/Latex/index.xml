@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Latex on Schrek.fr</title><link>https://schrek.fr/tags/Latex/</link><description>Recent content in Latex on Schrek.fr</description><generator>Hugo -- gohugo.io</generator><language>fr-fr</language><lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/Latex/index.xml" rel="self" type="application/rss+xml"/><item><title>La Signalisation SNCF avec Latex</title><link>https://schrek.fr/posts/2023/03/Signaux_sncf/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/Signaux_sncf/</guid><description>Pour jouer avec tikz qui permet de générer des images, j’ai fait des signaux SNCF.
-C’est perfectible aux niveaux des couleurs et des formes mais ca rend bien. Un cheminot Nicolas Wurtz a fait aussi ce travail mais sous une autre forme, son dépôt git Un autre projet ici à base de gif.
-Mes sources latex Fichier pdf
-Fichier Latex
-Lien https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France</description></item></channel></rss>

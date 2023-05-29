@@ -1,31 +1,32 @@
+<!-- partials page tagscloud -->
 {{ if isset .Site.Taxonomies "tags" }}
 	{{ if not (eq (len .Site.Taxonomies.tags) 0) }}
 	<div class="uk-container uk-container-xsmall uk-background-muted uk-padding">
 		<h1>Nuage de tags</h1>
-			<ul class="uk-list">
+			<ul class="uk-list uk-list-large">
 				{{ range $name, $items := .Site.Taxonomies.tags }}
 					{{ if and (ne $name "radio") (ne $name "about") (ne $name "")}}
 						{{ $len := len $items }}
 						{{ if lt $len 2 }}
-							<li><a style="font-size: 14px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="" style="color: #AAA; font-size: 12px; text-decoration: none;">({{ len $items }})</span></a></li>
+							<li><a style="font-size: 18px" class="uk-text-success" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="uk-text-emphasis" >({{ len $items }})</span></a></li>
 						{{ else if le $len 3}}
-							<li><a style="font-size: 16px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="" style="color: #AAA; font-size: 12px; text-decoration: none;">({{ len $items }})</span></a></li>
+							<li><a style="font-size: 16px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="uk-text-emphasis">({{ len $items }})</span></a></li>
 						{{ else if le $len 5}}
-							<li><a style="font-size: 18px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="" style="color: #AAA; font-size: 12px; text-decoration: none;">({{ len $items }})</span></a></li>
+							<li><a style="font-size: 18px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="uk-text-emphasis">({{ len $items }})</span></a></li>
 						{{ else if le $len 7}}
-							<li><a style="font-size: 20px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize }}"> {{ $name | title }} <span class="" style="color: #AAA; font-size: 12px; text-decoration: none;">({{ len $items }})</span></a></li>
+							<li><a style="font-size: 24px" class="uk-text-danger" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize }}"> {{ $name | title }} <span class="uk-text-emphasis">({{ len $items }})</span></a></li>
 						{{ else if le $len 9}}
-							<li><a style="font-size: 21px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize }}"> {{ $name | title }} <span class="" style="color: #AAA; font-size: 12px; text-decoration: none;">({{ len $items }})</span></a></li>
+							<li><a style="font-size: 21px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize }}"> {{ $name | title }} <span class="uk-text-emphasis" >({{ len $items }})</span></a></li>
 						{{ else if le $len 11}}
-							<li><a style="font-size: 22px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="" style="color: #AAA; font-size: 12px; text-decoration: none;">({{ len $items }})</span></a></li>
+							<li><a style="font-size: 22px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="uk-text-emphasis">({{ len $items }})</span></a></li>
 						{{ else if le $len 15}}
-							<li><a style="font-size: 24px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="" style="color: #AAA; font-size: 12px; text-decoration: none;">({{ len $items }})</span></a></li>
+							<li><a style="font-size: 24px" class="uk-text-warning " href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="uk-text-emphasis">({{ len $items }})</span></a></li>
 						{{ else if le $len 30}}
-							<li><a style="font-size: 26px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="" style="color: #AAA; font-size: 12px; text-decoration: none;">({{ len $items }})</span></a></li>
+							<li><a style="font-size: 30px" class="uk-text-danger" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="uk-text-emphasis">({{ len $items }})</span></a></li>
 						{{ else if le $len 60}}
-							<li><a style="font-size: 21px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="" style="color: #AAA; font-size: 12px; text-decoration: none;">({{ len $items }})</span></a></li>
+							<li><a style="font-size: 21px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize  }}"> {{ $name | title }} <span class="uk-text-emphasis">({{ len $items }})</span></a></li>
 						{{ else if le $len 120}}
-							<li><a style="font-size: 19px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize }}"> {{ $name | title }} <span class="" style="color: #AAA; font-size: 12px; text-decoration: none;">({{ len $items }})</span></a></li>
+							<li><a style="font-size: 19px" class="btn btn-transparent" href="{{ $.Site.BaseURL }}tags/{{ $name | urlize }}"> {{ $name | title }} <span class="uk-text-emphasis">({{ len $items }})</span></a></li>
 						{{end}}
 					{{ end }}
 				{{ end }}

@@ -2,7 +2,7 @@
 title: "L’Entraînement de Luke Stone - jack Mars"
 date: 2023-04-27
 draft: false
-tags: ["guerre"]
+tags: ["Guerre","Livre"]
 categories: ["Lecture"]
 image: "jackmars.webp"
 toc: true

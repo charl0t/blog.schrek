@@ -1,0 +1,20 @@
+{{/*
+https://github.com/charl0t/blog.schrek
+
+bouton avec un titre, un lien et une icone 
+
+Options:
+    url 
+    titre
+    icone (des exemples sur Uikit:https://getuikit.com/docs/icon)
+
+    Exemples:
+{{< bouton titre="Voir sur overleaf" url="https://www.overleaf.com/read/dgnpzyngzbqk" icone="forward" >}}
+
+*/}}
+
+{{ $url := .Get "url" }}
+{{ $titre := .Get "titre" }}
+{{ $icone := .Get "icone" | default "link"}}
+
+<a class="uk-button uk-button-default uk-box-shadow-medium" target="_blank" href="{{ $url }}"><span uk-icon="icon: {{ $icone }}"></span> {{ $titre }}</a>

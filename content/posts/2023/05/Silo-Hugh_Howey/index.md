@@ -1,12 +1,11 @@
 ---
 title: "Silo - Hugh Howey"
 date: 2023-05-06
-tags: ["S-F"]
+tags: ["S-F","Livre"]
 categories: ["Lecture"]
 image: "silo.webp"
 toc: true
 draft: false
-toc: true
 ---
 {{< figure src="silo.webp" title="" width=200px class="imagearticle" >}}
 
