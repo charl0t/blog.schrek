@@ -1,0 +1,34 @@
+\documentclass[a4paper,10pt]{scrartcl} % Koma-script
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel} 
+\usepackage{xcolor} % Import des couleurs dans les textes
+\usepackage{ulem}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} % Marges
+\usepackage{hyperref} 
+\hypersetup{colorlinks=true,
+linkcolor=blue, % Couleurs des liens 
+filecolor=magenta, % Couleur des liens de fichier 
+urlcolor=cyan,% Couleur des Urls
+pdftitle={Hyperref},% Meta titre
+pdfauthor={Christophe},% Meta auteur
+pdfsubject={Les liens avec Latex},% Meta sujet
+pdfkeywords={Latex,Hyperref},% Meta mots clefs 
+pdfproducer = Latex}% Meta generateur du pdf
+\urlstyle{same} % Meme police pour les urls
+\title{$title$}
+\subtitle{$subtitle$}
+\date{$date$}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\begin{document}
+\maketitle
+\tableofcontents
+$body$
+
+\end{document}
+
