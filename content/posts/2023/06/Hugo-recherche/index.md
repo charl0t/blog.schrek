@@ -1,13 +1,16 @@
 ---
 title: "Recherche dans Hugo"
 date: 2023-06-01
-draft: true
+draft: false
 tags: ["Shortcode", "Recherche","Hugo"]
 categories: ["Web"]
 series: ["Hugo"]
 image: "search.webp"
 toc: true
 ---
+
+{{< bandeau warning >}} J'ai desactivé la recherche sur le site. Mais ça marche. {{< / bandeau >}} 
+
 Il me manquait la recherche sur Hugo, *j'en est chié* une histoire de Jquery. 
 
 ## config.toml
@@ -287,8 +290,6 @@ Pour la barre de recherche dans une menu .
 {{< /highlight >}}
 
 ## Liens
-
-https://schrek.fr/search/
 
 https://javifm.com/en/blog/search-in-hugo-with-lunr/
 

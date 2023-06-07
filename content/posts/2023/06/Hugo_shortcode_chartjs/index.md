@@ -5,7 +5,7 @@ tags: ["Shortcode","ChartJS","hugo"]
 categories: ["Web"]
 image: "chartjs.webp"
 toc: true
-draft: true
+draft: false
 serie : "Hugo"
 ---
 

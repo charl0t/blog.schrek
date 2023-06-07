@@ -6,7 +6,7 @@ categories: ["Web"]
 image: "latex.webp"
 toc: true
 series: ["Hugo"]
-draft: true
+draft: false
 ---
 {{< figure src="latex.webp" title="" width=200px class="imagearticle" >}}
 

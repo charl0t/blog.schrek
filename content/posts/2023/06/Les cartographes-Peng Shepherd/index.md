@@ -9,9 +9,13 @@ toc: true
 ---
 {{< figure src="cartographes.webp" title="" width=200px class="imagearticle" >}}
 
-> les cartes servent à rapprocher les gens.
 
-Je me suis plongé dans cette histoire avec une intrigue sympa et du rythme  autour des cartes mais qui tourne vite en rond, beaucoup de « blabla »   sur la cartographie. 
+{{< quote auteur="Peng Shepherd" >}}
+Les cartes servent à rapprocher les gens.
+{{< /quote >}}
+
+
+Je me suis plongé dans cette histoire avec une intrigue sympa et du rythme autour des cartes mais qui tourne vite en rond, beaucoup de « blabla » sur la cartographie. 
  
 ## Résumé
 

@@ -11,142 +11,59 @@ geometry:
 - right=2cm
 - top=2cm
 - bottom=2cm
-hyperrefoptions:
-- linktoc=all
-fontsize: 12
-toc: true
-toc-depth: 5
 colorlinks: true
-
+linkcolor: blue
+urlcolor: blue
+fontsize: 12pt
+toccolor: ProcessBlue
 ---
 
-# h1 Heading 
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+# Menu
+
+## Texte
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
 
-## Horizontal Rules
+### Gras
+Lorem ipsum dolor sit amet, consectetur **adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua**. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
+
+### Italique
+Lorem ipsum dolor sit amet, *consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.* Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+### Barré
+~~Lorem ipsum dolor sit amet,~~ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+### Citations
+
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+### Lignes horizontales
 ___
 
 ---
 
 ***
 
+## Listes
 
-## Typographic replacements
+- Liste1
+- Liste 2
+- Liste 3
 
-Enable typographer option to see result.
+1. Liste 1
+2. Liste 2
+3. Liste 3
 
- 
+[ ] A
+[x] B
+[ ] C
 
-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
-
-"Smartypants, double quotes" and 'single quotes'
-
-
-## Emphasis
-
-**This is bold text**
-
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
-
-## Blockquotes
-> Blockquotes can also be nested...
-
-## Lists
-
-Unordered
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-+ Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-
-
-## Code
-
-Inline `code`
-
-Syntax highlighting
-
-``` js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-Right aligned columns
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-- 19^th^
-- H~2~O
-
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
+## Notes
 Footnote 1 link[^first].
 
 Footnote 2 link[^second].
@@ -161,28 +78,36 @@ Duplicated footnote reference[^second].
 
 [^second]: Footnote text.
 
+## Code
 
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+C’est le `code, Lorem ipsum dolor sit amet, consectetur`.
 
-Term 1
 
-:   Definition 1
-with lazy continuation.
+``` php
+<?php
+$var = 20;
+echo 'Var='.$var;
+?>
+```
 
-Term 2 with *inline markup*
 
-:   Definition 2
+## Liens
 
-        { some code, part of Definition 2 }
+[Lien](https://example.com/ "titre de lien optionnel").
 
-    Third paragraph of definition 2.
+Courriel  <test@example.com>
 
-_Compact style:_
+## Tableau
 
-Term 1
-  ~ Definition 1
+|cellule 1|cellule 2|
+|--------|--------|
+|    A    |    B    |
+|    C    |    D    |
 
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
+## Images
+
+![Text alternatif](logo.png "Titre image")
+
+
+
 
