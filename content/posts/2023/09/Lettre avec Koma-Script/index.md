@@ -8,7 +8,7 @@ series: ["Latex"]
 image: "koma.avif"
 toc: true
 ---
-Création d'un modéle de lettre aux standarts français a l'aide du module [*scrlttr2*](https://www.ctan.org/pkg/scrlttr2) de Koma-script.
+Création d'un modèle de lettre aux standards français a l'aide du module [*scrlttr2*](https://www.ctan.org/pkg/scrlttr2) de Koma-script.
 
 J'ai commenté le code au maximum.
 

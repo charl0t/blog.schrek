@@ -12,7 +12,7 @@ Le module [*minted*](https://ctan.org/pkg/minted) permet de coloriser vos codes.
 
 Minted utilise [Pygments](https://pygments.org/languages/) pour ajouter de la couleurs, vous trouverez la liste des codes supportés sur le site.
 
-Il y a aussi differents [styles](https://pygments.org/styles/)
+Il y a aussi différents [styles](https://pygments.org/styles/)
 
 ## Utilisation
 {{< highlight tex >}}
@@ -32,14 +32,14 @@ print('Hello, World!')
 
 ## Les options
 - style : Changer le [style](https://pygments.org/styles/);
-- linenos : Activer les numerotations des lignes;
+- linenos : Activer les numérotations des lignes;
 - numbers: Côté la numérotation est affichée (left, right ou both pour l’afficher des deux côtés);
-- firstnumber: changer le debut de numerotation;
+- firstnumber: changer le début de numérotation;
 - bg : Couleur de fond;
 - label: Titre;
 - labelposition: Position du titre (none | topline | bottomline | all);
 - frame: ligne d'encadrement (none | topline | bottomline | all);
-- framesep: Epaisseur des traits (framesep=2mm).
+- framesep: Épaisseur des traits (framesep=2mm).
 
 
 Toutes les options dans la [documentation](https://ctan.org/pkg/minted).

@@ -98,7 +98,7 @@ https://getuikit.com/docs/label#style-modifiers
 {{< /highlight >}}
 
 ## Galeries
-- creer un dossier *image/*
+- creer un dossier *images/*
 - titre -> Nom de la galerie
 - animation -> Type de transition *slide,fade,scale* (des exemples sur [Uikit](https://getuikit.com/docs/lightbox#animations))
 

@@ -8,12 +8,13 @@ series: ["Latex"]
 image: "publi.webp"
 toc: true
 ---
-Création d'un modéle de lettre aux standarts français a l'aide du module [*scrlttr2*](https://www.ctan.org/pkg/scrlttr2) de Koma-script.
+On veut réaliser du publipostage, envoyer la même lettre à plusieurs destinataires.
 
+Avec notre modèle de lettre déjà fait, on va y ajouter un carnet d'adresse, et générer plusieurs lettres.
 
 ## Le fichier des adresses
 
-Creation du fichier *adresses.adr*
+Création du fichier *adresses.adr*
 
 {{< highlight tex >}}
 \adrentry{Dupont}{Michel}{12 rue des poules\\13200 Arles}{06 55 22 12 17}{h}{}{}{}{DUPONT}

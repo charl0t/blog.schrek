@@ -1,0 +1,43 @@
+{
+  "lang": "fr",
+  "name": "Schrek.fr",
+  "short_name": "schrek.fr",
+  "description": "Mon super site avec Hugo",
+  "icons": [
+{
+    "src": "/img/favicons/logo-72x72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "/img/favicons/logo-92x92.png",
+    "sizes": "92x92",
+    "type": "image/png"
+  }, {
+    "src": "/img/favicons/logo-128x128.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  }, {
+
+    "src": "/img/favicons/logo-144x144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "/img/favicons/logo-152x152.png",
+    "sizes": "152x152",
+    "type": "image/png"
+  }, {
+    "src": "/img/favicons/logo-256x256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+    }, {
+    "src": "/img/favicons/logo-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+
+  "start_url": "/",
+  "display": "standalone",
+  "orientation" : "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}

@@ -13,7 +13,7 @@ toc: true
 *Vous avez les fichiers en bas de la page.*
 
 ## L'entête du fichier Markdown
-On va configurer le debut du fichier Markdown avec l'aide de la documentation [Pandoc.](https://pandoc.org/MANUAL.html#variables-for-latex)
+On va configurer le début du fichier Markdown avec l'aide de la documentation [Pandoc.](https://pandoc.org/MANUAL.html#variables-for-latex)
 
 {{< highlight toml >}}
 ---

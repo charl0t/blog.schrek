@@ -5,6 +5,7 @@
     <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
     <title>{{ .Site.Title }}</title>
     {{- partial "favicon.html" . -}}
+    {{- partial "pwa.html" . -}}
     {{ template "_internal/google_analytics.html" . }}
     {{ template "_internal/opengraph.html" . }}
     {{ $css := resources.Get "css/uikit.min.css" | minify | resources.Fingerprint "sha512" }}
