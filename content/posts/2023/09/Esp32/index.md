@@ -1,6 +1,6 @@
 ---
 title: "Decouverte de l'Esp32"
-date: 2023-09-01
+date: 2023-09-05
 draft: false
 tags: ["Esp32","MicroPython","Linux"]
 categories: ["IoT"]
@@ -9,7 +9,7 @@ image: "th.webp"
 toc: true
 ---
 
-[Esp32](https://fr.wikipedia.org/wiki/ESP32)est un microcontrôleur qui va nous permettre de faire des objets connectés grâce a son module Wifi et Bluetooth intégré.
+[Esp32](https://fr.wikipedia.org/wiki/ESP32) est un microcontrôleur qui va nous permettre de faire des objets connectés grâce a son module Wifi et Bluetooth intégré.
 Il dispose de plusieurs sorties et entrées pour connecter par exemple des capteurs ou des LED.
 
 On va utiliser [Micropython](https://fr.wikipedia.org/wiki/MicroPython) pour assurer la programmation.
