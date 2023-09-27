@@ -30,7 +30,7 @@ Le contrôleur SSD1306 permet de dialoguer en [I2C](https://fr.wikipedia.org/wik
 
 ## Les scripts
 
-Pour discuter avec l'ecran il va falloir creer un fichier *ssd1306.py* avec [Thonny](https://thonny.org/).
+Pour discuter avec l'ecran, il va falloir creer un fichier *ssd1306.py* avec [Thonny](https://thonny.org/).
 
 C'est le "driver" en gros que l'on va importer pour permetre d'echanger entre l'Esp32 et l'ecran.
 
