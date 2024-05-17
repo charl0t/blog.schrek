@@ -23,4 +23,4 @@ La page de test https://latex.vercel.app/elements
 - https://www.latex-project.org/
 - https://fr.wikibooks.org/wiki/LaTeX
 
-{{< chat cactus-comments >}}
+

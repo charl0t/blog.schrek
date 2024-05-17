@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog qui parle de lecture et de web" />
+    <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
+    <title>Schrek.fr</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes" />
+
+<meta name="apple-mobile-web-app-title" content="My PWA" />
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<script>
+
+if ('serviceWorker' in navigator) {
+
+navigator.serviceWorker.register('/sw.js');
+
+};
+
+</script>
+
+  
+
+
+    <meta property="og:url" content="http://localhost:1313/posts/2023/05/Hugo_creation_theme/">
+  <meta property="og:site_name" content="Schrek.fr">
+  <meta property="og:title" content="Hugo - Création d’un thème">
+  <meta property="og:description" content="Après l’article sur l’installation d’Hugo et la mise en place d’un thème, on va créer notre thème perso.
+On se place dans le dossier de notre projet.
+$ hugo new theme christophe $ cd themes/christophe/ $ tree . ├── archetypes │ └── default.md (modeles pour les articles et les pages) ├── layouts │ ├── 404.html │ ├── _default │ │ ├── baseof.html (page qui structure les autres pages) │ │ ├── list.">
+  <meta property="og:locale" content="fr-fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-05-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-05-05T00:00:00+00:00">
+    <meta property="article:tag" content="Markdown">
+    <meta property="article:tag" content="Html">
+    <meta property="article:tag" content="Hugo">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/3/commentaires/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/2/katex/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/Hugo-Pwa/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/Hugo-shortcode-bouton/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/Hugo-et-nuages-de-tags/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/Hugo-et-les-liens/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/07/Hugo_galerie/">
+
+    
+    <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
+    
+    <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
+    </head>
+<body>
+<header>
+    <div class="uk-container uk-container-xsmall uk-padding-small">
+        <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
+        <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
+        <span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type="button" uk-toggle="target: #offcanvas-overlay"></span>
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-background-primary">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <h3 class="barremenu">Menu</h3>
+<nav>
+        <ul class="uk-iconnav">
+            
+            <li><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
+            
+            <li><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
+            
+            <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
+            
+        </ul>
+</nav>
+<hr class="uk-divider-icon">
+                     
+                <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
+
+<li><a href="http://localhost:1313/categories/Linux/">Linux</a></li>
+
+<li><a href="http://localhost:1313/categories/Lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/Hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/categories/RaspberryPi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/categories/IoT/">IoT</a></li>
+
+<li><a href="http://localhost:1313/categories/Latex/">Latex</a></li>
+
+<li><a href="http://localhost:1313/categories/Web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/Film/">Film</a></li>
+
+<li><a href="http://localhost:1313/categories/Musique/">Musique</a></li>
+
+<li><a href="http://localhost:1313/categories/Wiki/">Wiki</a></li>
+
+<li><a href="http://localhost:1313/categories/Recette/">Recette</a></li>
+
+
+                  
+                <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
+
+<li><a href="http://localhost:1313/series/Pandas/">Pandas</a></li>
+
+<li><a href="http://localhost:1313/series/Hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/RaspberryPi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/series/Domotique/">Domotique</a></li>
+
+<li><a href="http://localhost:1313/series/Esp32/">Esp32</a></li>
+
+<li><a href="http://localhost:1313/series/Latex/">Latex</a></li>
+
+</div>
+        </div>
+    </div>
+</header>
+<main>
+
+
+<div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding">
+
+
+
+<ol class="uk-breadcrumb">
+  <li><a href="/">home</a></li>
+  
+    
+      
+      <li><a href='http://localhost:1313/posts'>posts</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023'>2023</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023/05'>05</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023/05/Hugo_creation_theme'>Hugo_creation_theme</a></li>
+      
+      
+  
+    
+      
+  
+</ol>
+
+
+    <article class="uk-article">
+        <h1 class="uk-article-title">Hugo - Création d’un thème</h1>
+            <p class="uk-article-meta">2023-05-05 
+            
+            <span class="labelcat uk-label"><a href="/categories/Web">Web</a></span>
+              <br>
+            <i>Temps de lecture: 3 minutes.</i>
+            </p>
+            
+                
+                
+                
+                <p>Cet article fait partie de la série: <a href="http://localhost:1313//series/Hugo">Hugo</a></p>
+                 
+                <br/>
+            <p class="uk-text-lead">
+                
+                
+                <div class="uk-section uk-align-right">
+                    <div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+                       <h3 class="uk-card-title">Table des matières</h3> 
+                       <p class="toc uk-text-small"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#petites-explications">Petites explications</a></li>
+    <li><a href="#head">Head</a></li>
+    <li><a href="#header">Header</a></li>
+    <li><a href="#footer">Footer</a></li>
+    <li><a href="#lists">Lists</a></li>
+    <li><a href="#single">Single</a></li>
+    <li><a href="#index">Index</a></li>
+    <li><a href="#css-perso">CSS perso</a></li>
+    <li><a href="#résultat">Résultat</a></li>
+    <li><a href="#liens">Liens</a></li>
+  </ul>
+</nav></p>
+                    </div>
+                </div>
+                   
+                    <figure class="imagearticle"><img src="/posts/2023/05/Hugo_creation_theme/hugo.webp" width="600px">
+</figure>
+
+<p>Après l’article sur l&rsquo;installation d&rsquo;Hugo et la mise en place d’un thème, on va créer notre thème perso.</p>
+<p>On se place dans le dossier de notre projet.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hugo new theme christophe
+</span></span><span style="display:flex;"><span>$ cd themes/christophe/
+</span></span><span style="display:flex;"><span>$ tree
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── archetypes
+</span></span><span style="display:flex;"><span>│   └── default.md <span style="color:#f92672">(</span>modeles pour les articles et les pages<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>├── layouts
+</span></span><span style="display:flex;"><span>│   ├── 404.html
+</span></span><span style="display:flex;"><span>│   ├── _default
+</span></span><span style="display:flex;"><span>│   │   ├── baseof.html <span style="color:#f92672">(</span>page qui structure les autres pages<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>│   │   ├── list.html <span style="color:#f92672">(</span> exemple la liste des articles<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>│   │   └── single.html <span style="color:#f92672">(</span>un article <span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>│   ├── index.html <span style="color:#f92672">(</span>page d<span style="color:#e6db74">&#39;accueil)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">│   └── partials
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">│       ├── footer.html (pied de page)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">│       ├── header.html (haut de page)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">│       └── head.html (entete html)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">├── LICENSE
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">├── static  ( dossier ou l&#39;</span>on met les images/css/java<span style="color:#f92672">)</span> 
+</span></span><span style="display:flex;"><span>│   ├── css
+</span></span><span style="display:flex;"><span>│   └── js
+</span></span><span style="display:flex;"><span>└── theme.toml</span></span></code></pre></div>
+<p>Hugo a créé une organisation minimale pour un projet.</p>
+<h2 id="petites-explications">Petites explications</h2>
+<p>Hugo appel la page <em>baseof.html</em> et la complète avec une autre page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>    {{- partial &#34;head.html&#34; . -}}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>        {{- partial &#34;header.html&#34; . -}}
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        {{- block &#34;main&#34; . }}{{- end }}
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>        {{- partial &#34;footer.html&#34; . -}}
+</span></span><span style="display:flex;"><span>        {{- partial &#34;script.html&#34; . -}}
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;</span></span></code></pre></div>
+<p>Si je prends la page d’accueil, il va rajouter le contenu d’index.html a  {{- block &ldquo;main&rdquo; . }}{{- end }}</p>
+<p>Pour les articles il va ajouter single.html</p>
+<h2 id="head">Head</h2>
+<p><em>themes/hugo-latex/layouts/partials/head.html</em></p>
+<p>On va utiliser comme base le <a href="https://latex.vercel.app/">CSS latex</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fr&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;{{ .Site.Title }}&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://latex.now.sh/style.css&#34;</span>&gt; 
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;MathJax-script&#34;</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://latex.now.sh/prism/prism.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/prismjs/prism.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt; 
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Site.BaseURL }}css/style.css&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;</span></span></code></pre></div>
+<p>{{ .Site.Title }} est remplacé par Hugo par le nom du site indiqué dans le fichier de configuration config.toml “title = &lsquo;schrek.fr&rsquo;”</p>
+<!-- raw HTML omitted -->
+<h2 id="header">Header</h2>
+<p><em>themes/hugo-latex/layouts/partials/header.html</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;titre&#34;</span>&gt;{{ .Site.Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;soustitre&#34;</span>&gt;{{ .Site.Params.description }}&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">header</span>&gt;</span></span></code></pre></div>
+<p>{{ .Site.Params.description }} est remplacé par Hugo par le nom du site indiqué dans le fichier de configuration <em>config.toml</em>.</p>
+<h2 id="footer">Footer</h2>
+<p><em>themes/hugo-latex/layouts/partials/footer.html</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">footer</span>&gt;
+</span></span><span style="display:flex;"><span>    © 2023 {{ .Site.Title }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dark-mode-toggle&#34;</span>&gt;Toggle dark mode&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">footer</span>&gt;</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#39;Mon super site sous hugo&#39;</span></span></span></code></pre></div>
+<h2 id="lists">Lists</h2>
+<p><em>themes/hugo-latex/layouts/_default/list.html</em></p>
+<p>Pour l&rsquo;affichage des listes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ define &#34;main&#34; }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">main</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Ranges through content/post/*.md --&gt;</span>
+</span></span><span style="display:flex;"><span>    {{ range .Pages }}
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">h2</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.Permalink}}&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>           &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt; 
+</span></span><span style="display:flex;"><span>           &lt;<span style="color:#f92672">i</span>&gt;{{.Date.Format &#34;2006-01-02&#34;}}&lt;/<span style="color:#f92672">i</span>&gt;&lt;/<span style="color:#f92672">br</span>&gt;
+</span></span><span style="display:flex;"><span>            {{ .Summary }}
+</span></span><span style="display:flex;"><span>            {{ if .Truncated }}
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;read-more-link&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .RelPermalink }}&#34;</span>&gt;Lire plus...&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>            {{ end }}
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">main</span>&gt;
+</span></span><span style="display:flex;"><span>{{ end }}</span></span></code></pre></div>
+<h2 id="single">Single</h2>
+<p><em>themes/hugo-latex/layouts/_default/single.html</em></p>
+<p>Pour l&rsquo;affichage des articles.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ define &#34;main&#34; }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cartouche&#34;</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">i</span>&gt;{{ .PublishDate.Format &#34;2006-01-02&#34; }}&lt;/<span style="color:#f92672">i</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ range (.GetTerms &#34;tags&#34;) }}
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tag&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;{{ .LinkTitle }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">spam</span>&gt;    
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">article</span>&gt;
+</span></span><span style="display:flex;"><span>{{ .Content }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">article</span>&gt;
+</span></span><span style="display:flex;"><span>{{ end }}</span></span></code></pre></div>
+<h2 id="index">Index</h2>
+<p><em>themes/hugo-latex/layouts/index.html</em></p>
+<p>Page d&rsquo;accueil</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ define &#34;main&#34; -}}
+</span></span><span style="display:flex;"><span>{{ .Content }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>{{- range where .Site.RegularPages &#34;Section&#34; &#34;posts&#34; -}}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">article</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h3</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-title&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">h3</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">time</span> <span style="color:#a6e22e">datetime</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Date.Format &#34;</span><span style="color:#a6e22e">2006-01-02T15:04:05Z0700</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-date&#34;</span>&gt;{{ .Date.Format &#34;Mon, Jan 2, 2006&#34; }}&lt;/<span style="color:#f92672">time</span>&gt;
+</span></span><span style="display:flex;"><span>{{ .Summary }}
+</span></span><span style="display:flex;"><span>{{ if .Truncated }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;read-more-link&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .RelPermalink }}&#34;</span>&gt;Lire plus...&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>{{ end }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">article</span>&gt;
+</span></span><span style="display:flex;"><span>{{- end }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>{{- end }}</span></span></code></pre></div>
+<h2 id="css-perso">CSS perso</h2>
+<p><em>/themes/hugo-latex/static/css/style.css</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">body</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">flex-direction</span>: <span style="color:#66d9ef">column</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">max-width</span>: <span style="color:#ae81ff">140</span><span style="color:#66d9ef">ch</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">main</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">1</span>;	
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">header</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">titre</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">soustitre</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">font-style</span>: <span style="color:#66d9ef">italic</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">cartouche</span> <span style="color:#f92672">ul</span> <span style="color:#f92672">li</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">list-style</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin-left</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0.3</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#e6e5e5</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">footer</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">position</span>:  <span style="color:#66d9ef">initial</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">border-top</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">article</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">left</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h1</span>:<span style="color:#a6e22e">first-child</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">left</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h2 id="résultat">Résultat</h2>
+<p>On se replace à la racine du projet pour lancer, les options permettent de voir les modifications en direct.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hugo serve --noHTTPCache --ignoreCache --disableFastRender</span></span></code></pre></div>
+<p>Cela devrait donner <a href="https://schrek.fr/hugo1/">https://schrek.fr/hugo1/</a></p>
+<h2 id="liens">Liens</h2>
+<p><a href="https://jamstatic.fr/2018/03/10/mettre-en-place-son-premier-site-sous-hugo/#3-personnaliser-votre-site">https://jamstatic.fr/2018/03/10/mettre-en-place-son-premier-site-sous-hugo/#3-personnaliser-votre-site</a></p>
+<p><a href="https://www.goglides.dev/bkpandey/create-a-hugo-theme-from-scratch-20a8">https://www.goglides.dev/bkpandey/create-a-hugo-theme-from-scratch-20a8</a></p>
+<p><a href="https://bout2code.fr/tutos/creer-un-site-avec-hugo/">https://bout2code.fr/tutos/creer-un-site-avec-hugo/</a></p>
+
+            </p>
+    </article>
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "schrek-fr" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <ul class="uk-pagination">
+    
+        <li><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/Silo-Hugh_Howey/"><span class="uk-margin-small-right" uk-pagination-previous></span> Silo - Hugh Howey</a></li>
+    
+    
+        <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/Les_chatons/">Les Chatons<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+    
+</ul>
+                    <hr class="uk-divider-icon">
+                    
+            <div class="uk-grid-small uk-child-width-auto " uk-grid>
+                <div>
+                    <p class="uk-text-light"><span uk-icon="icon:hashtag"></span>TAGS</p>
+                        <ul class="uk-list uk-display-inline-block">
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/Markdown/">Markdown</a>
+                            </li>
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/Html/">Html</a>
+                            </li>
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/Hugo/">Hugo</a>
+                            </li>
+                            
+                        </ul>
+                    <br>
+<a href='https://ko-fi.com/Q5Q7LH0AN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Beer at ko-fi.com' /></a>
+</div>
+
+            </div>
+        </div>
+
+
+
+
+        </main>
+<footer>
+    <div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
+        2023 - Construit avec <a class="uk-link-muted" href="https://gohugo.io/">Hugo</a> et de <a class="uk-link-muted" href="https://getuikit.com/">UiKit</a> 
+    </div>
+</footer>
+
+
+    <script src="/js/uikit.min.min.6b4741df9ca63b1e177fc1d9ef5ba017a37a63f6a3515ab84d9e4e2f51a708fa.js" integrity="sha256-a0dB35ymOx4Xf8HZ71ugF6N6Y/ajUVq4TZ5OL1GnCPo=" crossorigin="anonymous"></script>
+
+    <script defer src="/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js" integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin="anonymous"></script>
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+
+
+  
+
+</body>
+</html>

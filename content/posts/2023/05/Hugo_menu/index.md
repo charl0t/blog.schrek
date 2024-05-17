@@ -95,6 +95,6 @@ https://schrek.fr/hugo1/
 ## Lien
 https://bout2code.fr/tutos/creer-un-site-avec-hugo/
 
-{{< chat cactus-comments >}}
+
 
 

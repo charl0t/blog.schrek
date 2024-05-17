@@ -228,7 +228,7 @@ For instance, this text you are reading now was started with the argument
 https://latex.js.org/playground.html
 
 ## Limitations
-https://latex.js.org/limitations.htm
+https://latex.js.org/limitations.html
 
 
 ## Liens

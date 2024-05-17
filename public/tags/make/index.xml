@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Make on Schrek.fr</title>
+    <link>http://localhost:1313/tags/make/</link>
+    <description>Recent content in Make on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/make/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make, génération de fichiers</title>
+      <link>http://localhost:1313/posts/2024/6/make/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/6/make/</guid>
+      <description>La commande make est un utilitaire de ligne de commande qui permet d&amp;rsquo;automatiser la compilation et la construction de projets logiciels. Cependant, dans le contexte de Pandoc, make est souvent utilisé pour automatiser la conversion de fichiers de différents formats à l&amp;rsquo;aide de Pandoc.&#xA;Pandoc est un outil de conversion de documents qui permet de convertir des fichiers de différents formats, tels que Markdown, HTML, PDF et Microsoft Word, entre autres.</description>
+    </item>
+  </channel>
+</rss>

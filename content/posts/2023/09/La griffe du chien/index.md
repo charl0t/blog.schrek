@@ -17,6 +17,8 @@ C'est le 1er tome de la serie Art Keller.
 - [Cartel](https://fr.wikipedia.org/wiki/Cartel_(roman)) (2015)
 - [La Frontière](https://fr.wikipedia.org/wiki/La_Fronti%C3%A8re_(roman))
 
+<!--more-->
+
 ## Résumé
 L'agent de la DEA Art Keller, Seigneur de la frontière américano-mexicaine, a juré sur la tombe de son adjoint d'employer tous les moyens, légaux ou illégaux, pour mettre un terme au trafic qui inonde son pays. Le Seigneur de la drogue Miguel Ángel Barrera, puis ses neveux Adán et Raúl répliquent dans le sang et écrasent quiconque, ami ou ennemi, leur barre le chemin. Callan, un Irlandais né au cœur de la mafia new-yorkaise, devenu tueur, puis mercenaire, presque malgré lui ; le père Juan Parada, archevêque de Guadalajara, qui lutte auprès des plus hautes autorités de l'Église pour la survie de centaines de milliers d'Indiens anéantis par la guérilla, chassés de leurs terres, empoisonnés par les produits chimiques ; son amie Nora, qui use de ses charmes tarifés et de son tempérament hors du commun pour faire et défaire alliances, marchés et compromis… Tous jouent une partie mortelle sur un échiquier grand comme le monde. Depuis les jungles d'Amérique centrale, la Federación Barrera distille un poison qui conduit à la folie des hommes. Ni la justice ni la foi ne veulent plus rien dire. L'instinct seul s'impose : celui qui tue, celui qui sauve. 
 
@@ -30,4 +32,3 @@ L'agent de la DEA Art Keller, Seigneur de la frontière américano-mexicaine, a 
 https://fr.wikipedia.org/wiki/La_Griffe_du_chien
 
 
-{{< chat cactus-comments >}}

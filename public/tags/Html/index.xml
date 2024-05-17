@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Html on Schrek.fr</title>
+    <link>http://localhost:1313/tags/Html/</link>
+    <description>Recent content in Html on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/Html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shortcode pour integrer le HTML</title>
+      <link>http://localhost:1313/posts/2023/07/Hugo-shortcode-Html/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/07/Hugo-shortcode-Html/</guid>
+      <description>On pourrait ecrire des milliers de shorcode pour integrer du html, mais il y a plus facile.&#xA;Pour l&amp;rsquo;exemple, on va prendre des videos diffusé sur Peertube.fr&#xA;Le code original &amp;lt;iframe title=&amp;#34;GoGoCarto - 1 - Personnalisation du site&amp;#34; src=&amp;#34;https://www.peertube.fr/videos/embed/54509567-9116-4264-ba86-6c2d20cd360b&amp;#34; allowfullscreen=&amp;#34;&amp;#34; sandbox=&amp;#34;allow-same-origin allow-scripts allow-popups&amp;#34; width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; frameborder=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;/iframe&amp;gt; Des idées sur l&amp;rsquo;iframe en mode Hugo ici.&#xA;Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes, un fichier rawhtml.html. Avec seulement ca.</description>
+    </item>
+    <item>
+      <title>Hugo et les commentaires</title>
+      <link>http://localhost:1313/posts/2023/05/Hugo_les_commentaires/</link>
+      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/Hugo_les_commentaires/</guid>
+      <description>Pas facile de choisir un systeme de commentaire pour Hugo, la facilitée c est Disqus avec un template interne.&#xA;Cactus Mon choix c&amp;rsquo;est dirigé vers cactus.chat, déjà pour la doc qui est facile d&amp;rsquo;accés et pour Matrix qui utilise un protocole ouvert (Wikipedia).&#xA;Installation C&amp;rsquo;est bien indiqué ici. The shortcode chat.html must be added to layouts/shortcodes/ and looks like this&#xA;YOUR-SITE-NAME Bien changer cette variable avec le nom de votre site</description>
+    </item>
+    <item>
+      <title>Hugo shortcode</title>
+      <link>http://localhost:1313/posts/2023/05/Hugo_shortcode/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/Hugo_shortcode/</guid>
+      <description>Maj 15/05/2023: Ajout des icones personalisées des bandeaux.&#xA;La syntaxe Markdown a des limites, Hugo utilise des « bouts de code » pour passer ces limites.&#xA;L’inconvénient c’est de retenir les balises.&#xA;L&amp;rsquo;avantage est d&amp;rsquo;intégrer des fonctions au sein même du contenu, sans toucher au template.&#xA;Shortcode interne Vous trouverez pleins d&amp;rsquo;exemple sur le site officiel.&#xA;https://gohugo.io/content-management/shortcodes/&#xA;shortcodes personnalisés Des icônes On va se servir des icônes du framework du site.</description>
+    </item>
+    <item>
+      <title>Hugo - Création d’un menu</title>
+      <link>http://localhost:1313/posts/2023/05/Hugo_menu/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/Hugo_menu/</guid>
+      <description>On va rajouter un menu a notre template.&#xA;Intro On pourrait passer par le HTML en ajoutant dans le header ou dans un fichier partial/nav.html et en l&amp;rsquo;ajoutant dans le base_of.html.&#xA;&amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/about&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/contact&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; Mais Hugo permet de faire plus efficace. il faut créer dans themes/MONTHEME/layouts/partials/ un fichier nav.html.&#xA;&amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; {{ range .Site.Menus.main }} &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;{{ .URL }}&amp;#34;&amp;gt;{{ .Name }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; {{ end }} &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; Explication On demande a Hugo de regarder dans le fichier de configuration config.</description>
+    </item>
+    <item>
+      <title>Hugo - Création d’un thème</title>
+      <link>http://localhost:1313/posts/2023/05/Hugo_creation_theme/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/Hugo_creation_theme/</guid>
+      <description>Après l’article sur l&amp;rsquo;installation d&amp;rsquo;Hugo et la mise en place d’un thème, on va créer notre thème perso.&#xA;On se place dans le dossier de notre projet.&#xA;$ hugo new theme christophe $ cd themes/christophe/ $ tree . ├── archetypes │ └── default.md (modeles pour les articles et les pages) ├── layouts │ ├── 404.html │ ├── _default │ │ ├── baseof.html (page qui structure les autres pages) │ │ ├── list.</description>
+    </item>
+    <item>
+      <title>Les framework CSS</title>
+      <link>http://localhost:1313/posts/2023/04/Css_framework/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/Css_framework/</guid>
+      <description>&lt;p&gt;Les frameworks CSS aident les développeurs Web et autres web-designers à structurer rapidement leurs sites, leur permettant de se concentrer davantage sur les différentes fonctionnalités, plutôt que de passer du temps sur les éléments de style.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Markdown to Html</title>
+      <link>http://localhost:1313/posts/2023/04/Markdown-Html/</link>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/Markdown-Html/</guid>
+      <description>Pandoc est une application en ligne de commande qui permet de convertir des documents dans différents format.&#xA;On va l’utiliser pour créer un page HTML a partir d’un document créer avec les balises Markdown, pour plus de &amp;ldquo;beauté on va y inclure un fichier Css&#xA;Installation Pandoc $ sudo apt install pandoc Utilisation On récupère un fichier css (https://latex.vercel.app/ pour l’exemple). $ wget https://latex.now.sh/style.css J’ai tout ajouté dans le fichier en dessous.</description>
+    </item>
+    <item>
+      <title>Astuces Hugo</title>
+      <link>http://localhost:1313/posts/2023/04/Memo-hugo/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/Memo-hugo/</guid>
+      <description>Organisation ├── pages │ └── apropos │ ├── hugo-logo.png │ └── index.md └── posts ├── css_framework │ └── index.md ├── info │ ├── Capture.png │ ├── hugo.jpg │ └── index.md └── markdown ├── index.md └── logo.png Debut article Avec balise figure&#xA;Images On ajoute la balise Hugo&#xA;Menu config.toml Dans le fichier config.toml et dans le fichier themes/wikischrek/layouts/partials/nav.html&#xA;Les icones ici https://getuikit.com/docs/icon [menu] [[menu.main]] name = &amp;#39;Home&amp;#39; url = &amp;#39;/&amp;#39; pre = &amp;#39;home&amp;#39; weight = 10 [[menu.</description>
+    </item>
+    <item>
+      <title>Hugo CMS</title>
+      <link>http://localhost:1313/posts/2023/04/Hugo-installation/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/Hugo-installation/</guid>
+      <description>Hugo est générateur de site statique. On écrit un article au format Markdown, on fait tourner le logiciel et il fait les fichiers HTML. Il suffira juste de les déposer sur un serveur. Ça semble simple mais ça demande une mise en place.&#xA;Installation $ sudo apt install hugo Créer un site le logiciel va générer un dossier avec les bases (dossiers, fichiers) a l’intérieur. $ hugo new site schrek.</description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/posts/2023/04/markdown/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/markdown/</guid>
+      <description># Menu ## Texte Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ### Gras Lorem ipsum dolor sit amet, consectetur **adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua**. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    <item>
+      <title>Hugo et les images</title>
+      <link>http://localhost:1313/posts/2023/04/Hugo-Les_images/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/Hugo-Les_images/</guid>
+      <description>Comment ca marche? L’organisation des images avec Hugo, c’est un peu particulier.&#xA;Avec Markdown on ajoute une image avec:&#xA;![Text alternatif](image.jpg) Dossier static C&amp;rsquo;est le dossier ou l&amp;rsquo;on pose nos fichiers statique .&#xA;On peut organiser comme ça:&#xA;je fais un post info et je place les images dans un sous dossier static/posts/info&#xA;static/ ├── css ├── img │ └── posts │ └── info │ └── image.jpg └── js Ce qui donne dans un post:</description>
+    </item>
+    <item>
+      <title>Le style Latex</title>
+      <link>http://localhost:1313/posts/2023/03/Css-Style_latex/</link>
+      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/Css-Style_latex/</guid>
+      <description> Style LaTex en CSS Latex le célèbre système de composition de document, qui permet de générer de “belles pages”, a un style bien à lui. Vincent Dörig a créé un style CSS pour l’intégrer facilement dans un site. On y retrouve aussi l’intégration des formules mathématique avec MathJax.&#xA;La page de test https://latex.vercel.app/elements&#xA;Liens https://latex.vercel.app/ https://github.com/vincentdoerig/latex-css https://www.mathjax.org/ https://www.latex-project.org/ https://fr.wikibooks.org/wiki/LaTeX </description>
+    </item>
+  </channel>
+</rss>

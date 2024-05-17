@@ -14,6 +14,8 @@ Minted utilise [Pygments](https://pygments.org/languages/) pour ajouter de la co
 
 Il y a aussi différents [styles](https://pygments.org/styles/)
 
+<!--more-->
+
 ## Utilisation
 {{< highlight tex >}}
 \begin{minted}[Option]{Language}
@@ -54,4 +56,4 @@ https://fr.overleaf.com/learn/latex/Code_Highlighting_with_minted
 
 https://zestedesavoir.com/tutoriels/1848/presenter-du-code-source-dans-un-document-latex/
 
-{{< chat cactus-comments >}}
+

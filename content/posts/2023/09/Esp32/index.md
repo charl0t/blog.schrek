@@ -14,6 +14,8 @@ Il dispose de plusieurs sorties et entrées pour connecter par exemple des capte
 
 On va utiliser [Micropython](https://fr.wikipedia.org/wiki/MicroPython) pour assurer la programmation.
 
+<!--more-->
+
 {{< figure src="esp321.webp" title="" width=400px class="imagearticle" >}}
 
 {{< figure src="esp32.webp" title="" width=400px class="imagearticle" >}}
@@ -154,4 +156,4 @@ https://fr.wikipedia.org/wiki/ESP32
 https://fr.wikipedia.org/wiki/MicroPython
 
 
-{{< chat cactus-comments >}}
+

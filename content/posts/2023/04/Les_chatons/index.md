@@ -12,7 +12,7 @@ toc: true
 J’ai toujours été attiré par le logiciel libre (plus de 20 ans sous Linux) et la protection de mes données.
 Voulant sortir de Google pour mes courriels et le stockage de mes données je me suis un serveur [Kimsufi](https://www.kimsufi.com/fr/), mais je me suis vite rendu compte de la difficulté de gérer un serveur (mise a jour, sécurité, configuration).
 
-Je me suis tourné vers des gens qui savent faire et j’ai découvert les « [CHATONS] (https://www.chatons.org/): pour des services libres et alternatifs.
+Je me suis tourné vers des gens qui savent faire et j’ai découvert les [CHATONS](https://www.chatons.org): pour des services libres et alternatifs.
 c’est là que j’ai découvert  [la mère Zaclys](https://www.zaclys.com/)
 
 {{< figure src="zaclys.webp" title="" width=600px class="imagearticle" >}}
@@ -30,6 +30,5 @@ https://www.syloe.com/services-libres-chatons-et-alternatifs/
 
 https://www.april.org/framasoft-degooglisons-chatons-questions-ethiques-frederic-urbain
 
-{{< chat cactus-comments >}}
 
 

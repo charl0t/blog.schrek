@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog qui parle de lecture et de web" />
+    <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
+    <title>Schrek.fr</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes" />
+
+<meta name="apple-mobile-web-app-title" content="My PWA" />
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<script>
+
+if ('serviceWorker' in navigator) {
+
+navigator.serviceWorker.register('/sw.js');
+
+};
+
+</script>
+
+  
+
+
+    <meta property="og:url" content="http://localhost:1313/posts/2023/07/hugo_shortcode_fichier/">
+  <meta property="og:site_name" content="Schrek.fr">
+  <meta property="og:title" content="Shortcode les fichiers">
+  <meta property="og:description" content="Ce shortcode liste les fichiers dans une dossier pour permettre leurs téléchargements.
+Dans le dossier de l’article, il faut creer un dossier files/ pour y deposer les fichiers.
+Attention, le shortcode ne marche pas si il y a des espaces dans le nom du dossier de l’article
+&lt;–more–&gt;
+Le shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier pj.html
+pj.html {{ $_hugo_config := `{ &#34;version&#34;: 1 }` -}} &lt;div class=&#34;attachments-files uk-card uk-card-small uk-width-1-3@m uk-padding&#34;&gt; &lt;h3 class=&#34;attachments-files-titre&#34;&gt;Téléchargement &lt;span uk-icon=&#34;icon: cloud-download;ratio:2&#34;&gt;&lt;/span&gt;&lt;/h3&gt; &lt;div class=&#34;attachments-files&#34;&gt; {{- $filesName := &#34;files&#34; }} {{- if ne .">
+  <meta property="og:locale" content="fr-fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-07-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-07-15T00:00:00+00:00">
+    <meta property="article:tag" content="Shortcode">
+    <meta property="article:tag" content="Hugo">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/3/commentaires/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/2/katex/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/hugo-pwa/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-les-liens/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/07/hugo_galerie/">
+
+    
+    <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
+    
+    <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
+    </head>
+<body>
+<header>
+    <div class="uk-container uk-container-xsmall uk-padding-small">
+        <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
+        <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
+        <span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type="button" uk-toggle="target: #offcanvas-overlay"></span>
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-background-primary">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <h3 class="barremenu">Menu</h3>
+<nav>
+        <ul class="uk-iconnav">
+            
+            <li><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
+            
+            <li><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
+            
+            <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
+            
+        </ul>
+</nav>
+<hr class="uk-divider-icon">
+                     
+                <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+
+<li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/film/">Film</a></li>
+
+<li><a href="http://localhost:1313/categories/musique/">Musique</a></li>
+
+<li><a href="http://localhost:1313/categories/wiki/">Wiki</a></li>
+
+<li><a href="http://localhost:1313/categories/recette/">Recette</a></li>
+
+
+                  
+                <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
+
+<li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/series/domotique/">Domotique</a></li>
+
+<li><a href="http://localhost:1313/series/esp32/">Esp32</a></li>
+
+<li><a href="http://localhost:1313/series/latex/">Latex</a></li>
+
+</div>
+        </div>
+    </div>
+</header>
+<main>
+
+
+<div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding">
+
+
+
+<ol class="uk-breadcrumb">
+  <li><a href="/">home</a></li>
+  
+    
+      
+      <li><a href='http://localhost:1313/posts'>posts</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023'>2023</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023/07'>07</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023/07/hugo_shortcode_fichier'>hugo_shortcode_fichier</a></li>
+      
+      
+  
+    
+      
+  
+</ol>
+
+
+    <article class="uk-article">
+        <h1 class="uk-article-title">Shortcode les fichiers</h1>
+            <p class="uk-article-meta">2023-07-15 
+            
+            <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+              <br>
+            <i>Temps de lecture: 1 minutes.</i>
+            </p>
+            
+                
+                
+                
+                <p>Cet article fait partie de la série: <a href="http://localhost:1313//series/hugo">Hugo</a></p>
+                 
+                <br/>
+            <p class="uk-text-lead">
+                
+                
+                <div class="uk-section uk-align-right">
+                    <div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+                       <h3 class="uk-card-title">Table des matières</h3> 
+                       <p class="toc uk-text-small"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#le-shortcode">Le shortcode</a>
+      <ul>
+        <li><a href="#pjhtml">pj.html</a></li>
+        <li><a href="#le-css-pour-uikit">le CSS pour uikit</a></li>
+      </ul>
+    </li>
+    <li><a href="#résultat">Résultat</a></li>
+    <li><a href="#liens">Liens</a></li>
+  </ul>
+</nav></p>
+                    </div>
+                </div>
+                   
+                    <p><figure class="imagearticle"><img src="/posts/2023/07/hugo_shortcode_fichier/paper.webp" width="200px">
+</figure>
+
+Ce shortcode liste les fichiers dans une dossier pour permettre leurs téléchargements.</p>
+<p>Dans le dossier de l&rsquo;article, il faut creer un dossier <em>files/</em> pour y deposer les fichiers.</p>
+
+
+
+
+
+
+
+
+
+
+<div class="uk-alert-warning" uk-alert>
+    <span uk-icon="icon: warning ; ratio:2"></span>
+    <a class="uk-alert-close" uk-close></a>
+    <p class="bandeau">Attention, le shortcode ne marche pas si il y a des espaces dans le nom du dossier de l&rsquo;article</p>
+</div>
+
+
+<p>&lt;&ndash;more&ndash;&gt;</p>
+<h2 id="le-shortcode">Le shortcode</h2>
+<p>On va créer dans le dossier des shortcodes <em>/themes/VOTRETHEME/layouts/shortcodes</em> un fichier pj.html</p>
+<h3 id="pjhtml">pj.html</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$_hugo_config</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">`{ &#34;version&#34;: 1 }`</span> <span style="color:#75715e">-}}</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;attachments-files uk-card uk-card-small uk-width-1-3@m uk-padding&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h3</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;attachments-files-titre&#34;</span>&gt;Téléchargement  &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">uk-icon</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;icon: cloud-download;ratio:2&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">h3</span>&gt; 
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;attachments-files&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$filesName</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;files&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">ne</span> <span style="color:#a6e22e">.Page.File.BaseFileName</span> <span style="color:#e6db74">&#34;index&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$filesName</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">printf</span> <span style="color:#e6db74">&#34;%s.files&#34;</span> <span style="color:#a6e22e">.Page.File.BaseFileName</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">end</span><span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$fileDir</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">replace</span> <span style="color:#a6e22e">.Page.File.Dir</span> <span style="color:#e6db74">&#34;\\&#34;</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$pattern</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;pattern&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">range</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">readDir</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">printf</span> <span style="color:#e6db74">&#34;content/%s%s&#34;</span> <span style="color:#a6e22e">.Page.File.Dir</span> <span style="color:#a6e22e">$filesName</span><span style="color:#f92672">)</span> <span style="color:#f92672">)</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">printf</span> <span style="color:#e6db74">&#34;%s%s/%s&#34;</span> <span style="color:#a6e22e">$fileDir</span> <span style="color:#a6e22e">$filesName</span> <span style="color:#a6e22e">.Name</span><span style="color:#f92672">)</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">relLangURL</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;<span style="color:#75715e">{{</span><span style="color:#a6e22e">.Name</span><span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">end</span><span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">.Inner</span><span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;</span></span></code></pre></div>
+<h3 id="le-css-pour-uikit">le CSS pour uikit</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">attachments-files</span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#dbe6eb</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h2 id="résultat">Résultat</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">&lt;</span> <span style="color:#a6e22e">pj</span> <span style="color:#960050;background-color:#1e0010">/&gt;</span><span style="color:#75715e">}}</span></span></span></code></pre></div>
+
+
+<div class="attachments-files uk-card uk-card-small uk-width-1-3@m uk-padding">
+  <h3 class="attachments-files-titre">Téléchargement  <span uk-icon="icon: cloud-download;ratio:2"></span></h3> 
+  <div class="attachments-files">
+    <li>
+      <a href="/posts/2023/07/hugo_shortcode_fichier/files/pj.txt">pj.txt</a>
+    </li>
+    <li>
+      <a href="/posts/2023/07/hugo_shortcode_fichier/files/%c3%89mile_Zola_%28Maupassant%29.epub">Émile_Zola_(Maupassant).epub</a>
+    </li>
+    <li>
+      <a href="/posts/2023/07/hugo_shortcode_fichier/files/%c3%89mile_Zola_%28Maupassant%29.mobi">Émile_Zola_(Maupassant).mobi</a>
+    </li>
+    <li>
+      <a href="/posts/2023/07/hugo_shortcode_fichier/files/%c3%89mile_Zola_%28Maupassant%29.pdf">Émile_Zola_(Maupassant).pdf</a>
+    </li>
+  </div>
+</div>
+
+<h2 id="liens">Liens</h2>
+<p><a href="http://oostens.me/posts/hugo-attachment-shortcode/">http://oostens.me/posts/hugo-attachment-shortcode/</a></p>
+<p><a href="https://fr.wikisource.org/wiki/%C3%89mile_Zola_(Maupassant)">https://fr.wikisource.org/wiki/%C3%89mile_Zola_(Maupassant)</a></p>
+
+            </p>
+    </article>
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "schrek-fr" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <ul class="uk-pagination">
+    
+        <li><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/latex_liens/"><span class="uk-margin-small-right" uk-pagination-previous></span> Ressources pour Latex</a></li>
+    
+    
+        <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/hugo-lesimages/">Hugo et les images<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+    
+</ul>
+                    <hr class="uk-divider-icon">
+                    
+            <div class="uk-grid-small uk-child-width-auto " uk-grid>
+                <div>
+                    <p class="uk-text-light"><span uk-icon="icon:hashtag"></span>TAGS</p>
+                        <ul class="uk-list uk-display-inline-block">
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/shortcode/">Shortcode</a>
+                            </li>
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/hugo/">Hugo</a>
+                            </li>
+                            
+                        </ul>
+                    <br>
+<a href='https://ko-fi.com/Q5Q7LH0AN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Beer at ko-fi.com' /></a>
+</div>
+
+            </div>
+        </div>
+
+
+
+
+        </main>
+<footer>
+    <div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
+        2024 - Construit avec <a class="uk-link-muted" href="https://gohugo.io/">Hugo</a> et de <a class="uk-link-muted" href="https://getuikit.com/">UiKit</a> 
+    </div>
+</footer>
+
+
+    <script src="/js/uikit.min.min.6b4741df9ca63b1e177fc1d9ef5ba017a37a63f6a3515ab84d9e4e2f51a708fa.js" integrity="sha256-a0dB35ymOx4Xf8HZ71ugF6N6Y/ajUVq4TZ5OL1GnCPo=" crossorigin="anonymous"></script>
+
+    <script defer src="/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js" integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin="anonymous"></script>
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+
+
+  
+
+</body>
+</html>

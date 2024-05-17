@@ -293,4 +293,4 @@ Pour la barre de recherche dans une menu .
 
 https://javifm.com/en/blog/search-in-hugo-with-lunr/
 
-{{< chat cactus-comments >}}
+

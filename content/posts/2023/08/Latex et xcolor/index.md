@@ -117,6 +117,6 @@ https://www.lesfichesabebert.fr/TeX/latex/Couleur.html
 
 https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
 
-https://calque.pagesperso-orange.fr/latex/latexps.html
 
-{{< chat cactus-comments >}}
+
+

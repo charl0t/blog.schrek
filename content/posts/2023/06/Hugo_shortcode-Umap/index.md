@@ -118,5 +118,5 @@ https://github.com/Hanzei/hugo-component-osm
 
 https://stackoverflow.com/questions/68036749/embedding-iframe-in-hugo-site
 
-{{< chat cactus-comments >}}
+
 

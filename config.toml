@@ -3,7 +3,7 @@ languageCode = 'fr-fr'
 title = 'Schrek.fr'
 theme = 'schrek'
 Paginate = 6
-disablePathToLower = 'true'
+#disablePathToLower = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -12,6 +12,8 @@ disablePathToLower = 'true'
 description = 'Mon super blog :)'
 googleAnalytics = 'G-8MM0H2W60B'
 removePathAccents= 'true'
+# active katex
+math = true
 
 [taxonomies]
    tag = "tags"
@@ -52,11 +54,22 @@ removePathAccents= 'true'
 
 
 
+
+
+
+
 [markup]
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 5
     ordered = false
+   [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
 
 [param]
   # Minimum word count to display the Table of Contents
@@ -64,8 +77,18 @@ removePathAccents= 'true'
 
 
 
+
 [sitemap]
   changefreq = 'monthly'
   filename = 'sitemap.xml'
   priority = 0.5
+
+
+
+[services]
+  [services.disqus]
+    shortname = 'schrek-fr'
+
+
+
 

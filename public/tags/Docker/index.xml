@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Schrek.fr</title>
+    <link>http://localhost:1313/tags/Docker/</link>
+    <description>Recent content in Docker on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/Docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installation de Portainer sur Rasp5</title>
+      <link>http://localhost:1313/posts/2024/1/Portainer/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/1/Portainer/</guid>
+      <description>&lt;h2 id=&#34;portainer&#34;&gt;Portainer&lt;/h2&gt;&#xA;&lt;p&gt;C&amp;rsquo;est une application web qui permet de gérer docker via son navigateur.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker avec un RaspberryPi 5</title>
+      <link>http://localhost:1313/posts/2024/1/Docker/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/1/Docker/</guid>
+      <description>&lt;h2 id=&#34;docker&#34;&gt;Docker:&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Docker_(logiciel)%5D(https://fr.wikipedia.org/wiki/Docker_(logiciel))&#34;&gt;Docker&lt;/a&gt;  est une plateforme permettant de lancer certaines &lt;a href=&#34;https://fr.wikipedia.org/wiki/Application_(informatique)&#34;&gt;applications&lt;/a&gt; dans des conteneurs. C&amp;rsquo;est différent des  machines virtuels et ca utilise moins de ressource.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

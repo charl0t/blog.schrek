@@ -5,4 +5,7 @@
     <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
 
 
+  {{ if .Param "math" }}
+    {{ partialCached "math.html" . }}
+  {{ end }}
 

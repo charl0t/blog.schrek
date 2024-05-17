@@ -14,6 +14,8 @@ J'ai choisi de déporter les tags dans une page et d'utiliser que du CSS pour le
 
 Il y a la possibilité de bibliothèques JavaScript mais je veux rester *light*.
 
+<!--more-->
+
 ## Les fichiers
 On va créer la page qui va afficher le nuage. 
 
@@ -106,4 +108,4 @@ https://blog.cubieserver.de/2020/adding-a-tag-cloud-to-my-hugo-blog/
 
 https://discourse.gohugo.io/t/tag-cloud-for-hugo/43081/4
 
-{{< chat cactus-comments >}}
+

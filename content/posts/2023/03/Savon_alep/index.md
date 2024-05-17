@@ -58,5 +58,5 @@ https://www.aroma-zone.com/info/calculateur-de-saponification
 
 https://fr.wikihow.com/fabriquer-son-propre-savon
 
-{{< chat cactus-comments >}}
+
 

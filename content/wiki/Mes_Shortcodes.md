@@ -70,12 +70,6 @@ https://www.chartjs.org/
 {{</* /chart */>}}
 {{< /highlight >}}
 
-## Chat
-https://cactus.chat/docs/integrations/hugo/
-
-{{< highlight go-html-template >}}
-{{</* chat cactus-comments */>}}
-{{< /highlight >}}
 
 ## Documents
 Creer un dossier *files* dans le dossier de l'article. 
@@ -109,9 +103,12 @@ https://getuikit.com/docs/label#style-modifiers
 ## Inclure du HTML
 
 {{</* rawhtml */>}}
-<a href="https://fr.wikipedia.org/" target="_blank">Wikipedia</a>
+<p>Welcome to <strong>MakeWithHugo</strong></p>
 {{</* /rawhtml */>}}
 
+{{< rawhtml >}}
+<p>Welcome to <strong>MakeWithHugo</strong></p>
+{{< /rawhtml >}}
 
 ## Citations
 
@@ -135,5 +132,5 @@ Une pomme par jour éloigne le médecin, pourvu que l'on vise bien.
 
 {{< bouton titre="Voir sur overleaf" url="https://www.overleaf.com/read/dgnpzyngzbqk" icone="forward" >}}
 
-{{< chat cactus-comments >}}
+
 

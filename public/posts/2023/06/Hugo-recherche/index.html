@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog qui parle de lecture et de web" />
+    <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
+    <title>Schrek.fr</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes" />
+
+<meta name="apple-mobile-web-app-title" content="My PWA" />
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<script>
+
+if ('serviceWorker' in navigator) {
+
+navigator.serviceWorker.register('/sw.js');
+
+};
+
+</script>
+
+  
+
+
+    <meta property="og:url" content="http://localhost:1313/posts/2023/06/Hugo-recherche/">
+  <meta property="og:site_name" content="Schrek.fr">
+  <meta property="og:title" content="Recherche dans Hugo">
+  <meta property="og:description" content="J’ai desactivé la recherche sur le site. Mais ça marche.
+Il me manquait la recherche sur Hugo, j’en est chié une histoire de Jquery.
+config.toml On va demander a Hugo de générer un fichier JSON, pour récupérer les données du site.
+[outputs] home = [ &#34;HTML&#34;, &#34;JSON&#34;, &#34;RSS&#34;] Quand on lance Hugo, on a droit a une erreur.
+Change of config file detected, rebuilding site. 2023-05-02 11:39:09.348 &#43;0200 WARN 2023/05/02 11:39:09 found no layout file for &#34;JSON&#34; for kind &#34;home&#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.">
+  <meta property="og:locale" content="fr-fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-06-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-06-01T00:00:00+00:00">
+    <meta property="article:tag" content="Shortcode">
+    <meta property="article:tag" content="Recherche">
+    <meta property="article:tag" content="Hugo">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/3/commentaires/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/2/katex/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/Hugo-Pwa/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/Hugo-shortcode-bouton/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/Hugo-et-nuages-de-tags/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/Hugo-et-les-liens/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/07/Hugo_galerie/">
+
+    
+    <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
+    
+    <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
+    </head>
+<body>
+<header>
+    <div class="uk-container uk-container-xsmall uk-padding-small">
+        <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
+        <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
+        <span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type="button" uk-toggle="target: #offcanvas-overlay"></span>
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-background-primary">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <h3 class="barremenu">Menu</h3>
+<nav>
+        <ul class="uk-iconnav">
+            
+            <li><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
+            
+            <li><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
+            
+            <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
+            
+        </ul>
+</nav>
+<hr class="uk-divider-icon">
+                     
+                <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
+
+<li><a href="http://localhost:1313/categories/Linux/">Linux</a></li>
+
+<li><a href="http://localhost:1313/categories/Lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/Hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/categories/RaspberryPi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/categories/IoT/">IoT</a></li>
+
+<li><a href="http://localhost:1313/categories/Latex/">Latex</a></li>
+
+<li><a href="http://localhost:1313/categories/Web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/Film/">Film</a></li>
+
+<li><a href="http://localhost:1313/categories/Musique/">Musique</a></li>
+
+<li><a href="http://localhost:1313/categories/Wiki/">Wiki</a></li>
+
+<li><a href="http://localhost:1313/categories/Recette/">Recette</a></li>
+
+
+                  
+                <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
+
+<li><a href="http://localhost:1313/series/Pandas/">Pandas</a></li>
+
+<li><a href="http://localhost:1313/series/Hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/RaspberryPi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/series/Domotique/">Domotique</a></li>
+
+<li><a href="http://localhost:1313/series/Esp32/">Esp32</a></li>
+
+<li><a href="http://localhost:1313/series/Latex/">Latex</a></li>
+
+</div>
+        </div>
+    </div>
+</header>
+<main>
+
+
+<div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding">
+
+
+
+<ol class="uk-breadcrumb">
+  <li><a href="/">home</a></li>
+  
+    
+      
+      <li><a href='http://localhost:1313/posts'>posts</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023'>2023</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023/06'>06</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023/06/Hugo-recherche'>Hugo-recherche</a></li>
+      
+      
+  
+    
+      
+  
+</ol>
+
+
+    <article class="uk-article">
+        <h1 class="uk-article-title">Recherche dans Hugo</h1>
+            <p class="uk-article-meta">2023-06-01 
+            
+            <span class="labelcat uk-label"><a href="/categories/Web">Web</a></span>
+              <br>
+            <i>Temps de lecture: 4 minutes.</i>
+            </p>
+            
+                
+                
+                
+                <p>Cet article fait partie de la série: <a href="http://localhost:1313//series/Hugo">Hugo</a></p>
+                 
+                <br/>
+            <p class="uk-text-lead">
+                
+                
+                <div class="uk-section uk-align-right">
+                    <div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+                       <h3 class="uk-card-title">Table des matières</h3> 
+                       <p class="toc uk-text-small"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#configtoml">config.toml</a></li>
+    <li><a href="#indexjson">Index.json</a></li>
+    <li><a href="#fichiers-js">Fichiers JS</a></li>
+    <li><a href="#searchjs">Search.js</a></li>
+    <li><a href="#searchhtml">Search.html</a></li>
+    <li><a href="#searchmd">Search.md</a></li>
+    <li><a href="#presque-fini">Presque fini</a></li>
+    <li><a href="#barre-de-recherche">Barre de recherche</a></li>
+    <li><a href="#liens">Liens</a></li>
+  </ul>
+</nav></p>
+                    </div>
+                </div>
+                   
+                    
+
+
+
+
+
+
+
+
+
+<div class="uk-alert-warning" uk-alert>
+    <span uk-icon="icon: warning ; ratio:2"></span>
+    <a class="uk-alert-close" uk-close></a>
+    <p class="bandeau">J&rsquo;ai desactivé la recherche sur le site. Mais ça marche.</p>
+</div>
+
+
+<p>Il me manquait la recherche sur Hugo, <em>j&rsquo;en est chié</em> une histoire de Jquery.</p>
+<h2 id="configtoml">config.toml</h2>
+<p>On va demander a Hugo de générer un fichier JSON, pour récupérer les données du site.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">outputs</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">home</span> = [ <span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;JSON&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>]</span></span></code></pre></div>
+<p>Quand on lance Hugo, on a droit a une erreur.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Change of config file detected, rebuilding site.
+</span></span><span style="display:flex;"><span>2023-05-02 11:39:09.348 +0200
+</span></span><span style="display:flex;"><span>WARN 2023/05/02 11:39:09 found no layout file <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#34;JSON&#34;</span> <span style="color:#66d9ef">for</span> kind <span style="color:#e6db74">&#34;home&#34;</span>: You should create a template file which matches Hugo Layouts Lookup Rules <span style="color:#66d9ef">for</span> this combination.
+</span></span><span style="display:flex;"><span>Rebuilt in <span style="color:#ae81ff">205</span> ms</span></span></code></pre></div>
+<h2 id="indexjson">Index.json</h2>
+<p>il faut créer le fichier <em>index.json</em> dans notre theme <em>themes/schrek/layouts</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{- $.Scratch.Add &#34;index&#34; slice -}}
+</span></span><span style="display:flex;"><span>{{- range .Site.RegularPages -}}
+</span></span><span style="display:flex;"><span>    {{- $.Scratch.Add &#34;index&#34; (dict &#34;title&#34; .Title &#34;tags&#34; .Params.tags &#34;categories&#34; .Params.categories &#34;contents&#34; .Plain &#34;permalink&#34; .Permalink) -}}
+</span></span><span style="display:flex;"><span>{{- end -}}
+</span></span><span style="display:flex;"><span>{{- $.Scratch.Get &#34;index&#34; | jsonify -}}</span></span></code></pre></div>
+<h2 id="fichiers-js">Fichiers JS</h2>
+<ul>
+<li>jquery.min.js</li>
+<li>fuse.min.js</li>
+<li>mark.min.js</li>
+<li>jquery.mark.min</li>
+<li>search.js</li>
+</ul>
+<p>On peux choisir de charger  le footer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span> <span style="color:#a6e22e">referrerpolicy</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no-referrer&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha512-Nqw1tH3mpavka9cQCc5zWWEZNfIPdOYyQFjlV1NvflEtQ0/XI6ZQ+H/D3YgJdqSUJlMLAPRj/oXlaHCFbFCjoQ==&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span> <span style="color:#a6e22e">referrerpolicy</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no-referrer&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span> <span style="color:#a6e22e">referrerpolicy</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no-referrer&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha512-19TrqSGVSwaC2IDGHrD+tAkX59/w5cXy0BHDVwn7OJQXxavORhFSFM7DOO9soXKuo8O7gGNHiG9R2vFrXRBcTQ==&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span> <span style="color:#a6e22e">referrerpolicy</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no-referrer&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/js/search.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div>
+<p>Sinon on les télécharge dans le dossier du thème  <em>themes/schrek/assets/js</em>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ $js := resources.Get &#34;js/jquery.min.js&#34; | minify }}</span></span></code></pre></div></p>
+<p>ca sert a réduire la taille du fichier pour un meilleur chargement.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $js.RelPermalink }}&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>{{ $js := resources.Get &#34;js/jquery.min.js&#34; | minify }}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $js.RelPermalink }}&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>{{ $js := resources.Get &#34;js/fuse.min.js&#34; | minify }}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $js.RelPermalink }}&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>{{ $js := resources.Get &#34;js/mark.min.js&#34; | minify }}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $js.RelPermalink }}&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>{{ $js := resources.Get &#34;js/jquery.mark.min.js&#34; | minify }}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $js.RelPermalink }}&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>{{ $js := resources.Get &#34;js/search.js&#34; | minify }}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $js.RelPermalink }}&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div>
+<h2 id="searchjs">Search.js</h2>
+<p>On va creer le fichier <em>search.js</em> dans /static/js ou bien /asset/js selon ce que vous avez choisi.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">summaryInclude</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">fuseOptions</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">shouldSort</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">includeMatches</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">threshold</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">tokenize</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">location</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">distance</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">maxPatternLength</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">32</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">minMatchCharLength</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">keys</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>        { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;title&#34;</span>, <span style="color:#a6e22e">weight</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0.8</span> },
+</span></span><span style="display:flex;"><span>        { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;contents&#34;</span>, <span style="color:#a6e22e">weight</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0.5</span> },
+</span></span><span style="display:flex;"><span>        { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;tags&#34;</span>, <span style="color:#a6e22e">weight</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0.3</span> },
+</span></span><span style="display:flex;"><span>        { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;categories&#34;</span>, <span style="color:#a6e22e">weight</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0.3</span> },
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">searchQuery</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">param</span>(<span style="color:#e6db74">&#34;s&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">searchQuery</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#search-query&#34;</span>).<span style="color:#a6e22e">val</span>(<span style="color:#a6e22e">searchQuery</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">executeSearch</span>(<span style="color:#a6e22e">searchQuery</span>);
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#search-results&#34;</span>).<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#34;&lt;p&gt;Un mot ou une phrase&lt;/p&gt;&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">executeSearch</span>(<span style="color:#a6e22e">searchQuery</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">getJSON</span>(<span style="color:#e6db74">&#34;/index.json&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">data</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">pages</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">fuse</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Fuse</span>(<span style="color:#a6e22e">pages</span>, <span style="color:#a6e22e">fuseOptions</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fuse</span>.<span style="color:#a6e22e">search</span>(<span style="color:#a6e22e">searchQuery</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>({ <span style="color:#a6e22e">matches</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">result</span> });
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">populateResults</span>(<span style="color:#a6e22e">result</span>);
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#search-results&#34;</span>).<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#34;&lt;h1&gt;Rien Trouvé&lt;/h1&gt;&#34;</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">populateResults</span>(<span style="color:#a6e22e">result</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">each</span>(<span style="color:#a6e22e">result</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">contents</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">contents</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">snippet</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">snippetHighlights</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">tags</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">fuseOptions</span>.<span style="color:#a6e22e">tokenize</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">snippetHighlights</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">searchQuery</span>);
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">each</span>(<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">matches</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">matchKey</span>, <span style="color:#a6e22e">mvalue</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">key</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;tags&#34;</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">key</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;categories&#34;</span>) {
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">snippetHighlights</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">value</span>);
+</span></span><span style="display:flex;"><span>                } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">key</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;contents&#34;</span>) {
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">start</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">indices</span>[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>] <span style="color:#f92672">-</span> <span style="color:#a6e22e">summaryInclude</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">indices</span>[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>] <span style="color:#f92672">-</span> <span style="color:#a6e22e">summaryInclude</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">end</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">indices</span>[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> <span style="color:#a6e22e">summaryInclude</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">contents</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">indices</span>[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> <span style="color:#a6e22e">summaryInclude</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">contents</span>.<span style="color:#a6e22e">length</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">snippet</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">contents</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#a6e22e">start</span>, <span style="color:#a6e22e">end</span>);
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">snippetHighlights</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">indices</span>[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>], <span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">indices</span>[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> <span style="color:#a6e22e">mvalue</span>.<span style="color:#a6e22e">indices</span>[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>));
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            });
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">snippet</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">snippet</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">contents</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">summaryInclude</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">templateDefinition</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#search-result-template&#34;</span>).<span style="color:#a6e22e">html</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">output</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">render</span>(<span style="color:#a6e22e">templateDefinition</span>, { <span style="color:#a6e22e">key</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">link</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">permalink</span>, <span style="color:#a6e22e">tags</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">tags</span>, <span style="color:#a6e22e">categories</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">categories</span>, <span style="color:#a6e22e">snippet</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">snippet</span> });
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#search-results&#34;</span>).<span style="color:#a6e22e">append</span>(<span style="color:#a6e22e">output</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">each</span>(<span style="color:#a6e22e">snippetHighlights</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">snipkey</span>, <span style="color:#a6e22e">snipvalue</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#summary-&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">key</span>).<span style="color:#a6e22e">mark</span>(<span style="color:#a6e22e">snipvalue</span>);
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">param</span>(<span style="color:#a6e22e">name</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> decodeURIComponent((<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">search</span>.<span style="color:#a6e22e">split</span>(<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;=&#34;</span>)[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">||</span> <span style="color:#e6db74">&#34;&#34;</span>).<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;&amp;&#34;</span>)[<span style="color:#ae81ff">0</span>]).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/\+/g</span>, <span style="color:#e6db74">&#34; &#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">render</span>(<span style="color:#a6e22e">templateString</span>, <span style="color:#a6e22e">data</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">conditionalMatches</span>, <span style="color:#a6e22e">conditionalPattern</span>, <span style="color:#a6e22e">copy</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">conditionalPattern</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/\$\{\s*isset ([a-zA-Z]*) \s*\}(.*)\$\{\s*end\s*}/g</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">templateString</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> ((<span style="color:#a6e22e">conditionalMatches</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">conditionalPattern</span>.<span style="color:#a6e22e">exec</span>(<span style="color:#a6e22e">templateString</span>)) <span style="color:#f92672">!==</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">data</span>[<span style="color:#a6e22e">conditionalMatches</span>[<span style="color:#ae81ff">1</span>]]) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">copy</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">conditionalMatches</span>[<span style="color:#ae81ff">0</span>], <span style="color:#a6e22e">conditionalMatches</span>[<span style="color:#ae81ff">2</span>]);
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">copy</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">conditionalMatches</span>[<span style="color:#ae81ff">0</span>], <span style="color:#e6db74">&#34;&#34;</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">templateString</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">copy</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">find</span>, <span style="color:#a6e22e">re</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#a6e22e">key</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">data</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">find</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;\\$\\{\\s*&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">key</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;\\s*\\}&#34;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">re</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RegExp(<span style="color:#a6e22e">find</span>, <span style="color:#e6db74">&#34;g&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">templateString</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">templateString</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">re</span>, <span style="color:#a6e22e">data</span>[<span style="color:#a6e22e">key</span>]);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">templateString</span>;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></p>
+<h2 id="searchhtml">Search.html</h2>
+<p>Toujours dans notre thème dans le dossier <em>/layouts/_default/</em> , ca sera la page de recherche, j&rsquo;utilise uikit comme framework.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ define &#34;main&#34; }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uk-container uk-background-muted  uk-box-shadow-large uk-padding&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uk-margin&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uk-search uk-search-default&#34;</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ &#34;</span><span style="color:#a6e22e">search</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">absURL</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">uk-search-icon</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uk-search-input&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;search&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Search&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Search&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;search-query&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;s&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">form</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;search-results&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h3</span>&gt;Résultats&lt;/<span style="color:#f92672">h3</span>&gt;
+</span></span><span style="display:flex;"><span>   &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- this template is sucked in by search.js and appended to the search-results div above. So editing here will adjust style --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;search-result-template&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/x-js-template&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">article</span> <span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uk-article&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">h3</span> <span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uk-article-title&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#a6e22e">a</span>  <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${link}&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">$</span>{<span style="color:#a6e22e">title</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;&lt;/a&gt;&lt;/h3&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span> <span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uk-article-meta&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">$</span>{ <span style="color:#a6e22e">isset</span> <span style="color:#a6e22e">categories</span> }<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Categories</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">$</span>{<span style="color:#a6e22e">categories</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/p&gt;${ end }</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">$</span>{ <span style="color:#a6e22e">isset</span> <span style="color:#a6e22e">tags</span> }<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Tags</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">$</span>{<span style="color:#a6e22e">tags</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/p&gt;${ end }&lt;/p&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span> <span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uk-text-lead&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">$</span>{<span style="color:#a6e22e">snippet</span>}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/p&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/article&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>{{ end }}</span></span></code></pre></div>
+<h2 id="searchmd">Search.md</h2>
+<p>On revient a la racine du site dans le dossier <em>content/</em>, il faut créer un fichier search.md</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;Search Results&#34;
+</span></span><span style="display:flex;"><span>sitemap:
+</span></span><span style="display:flex;"><span>  priority : 0.1
+</span></span><span style="display:flex;"><span>layout: &#34;search&#34;
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>This file exists solely to respond to /search URL with the related <span style="color:#e6db74">`search`</span> layout template.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>No content shown here is rendered, all content is based in the template layouts/page/search.html
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Setting a very low sitemap priority will tell search engines this is not important content.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>This implementation uses Fusejs, jquery and mark.js
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Initial setup
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Search  depends on additional output content type of JSON in config.toml
+</span></span><span style="display:flex;"><span>\```
+</span></span><span style="display:flex;"><span>[outputs]
+</span></span><span style="display:flex;"><span>  home = [&#34;HTML&#34;, &#34;JSON&#34;]
+</span></span><span style="display:flex;"><span>\```
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Searching additional fileds
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>To search additional fields defined in front matter, you must add it in 2 places.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Edit layouts/_default/index.JSON
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>This exposes the values in /index.json
+</span></span><span style="display:flex;"><span>i.e. add <span style="color:#e6db74">`category`</span>
+</span></span><span style="display:flex;"><span>\```
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>  &#34;contents&#34;:{{ .Content | plainify | jsonify }}
+</span></span><span style="display:flex;"><span>  {{ if .Params.tags }},
+</span></span><span style="display:flex;"><span>  &#34;tags&#34;:{{ .Params.tags | jsonify }}{{end}},
+</span></span><span style="display:flex;"><span>  &#34;categories&#34; : {{ .Params.categories | jsonify }},
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>\```
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Edit fuse.js options to Search
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#e6db74">`static/js/search.js`</span>
+</span></span><span style="display:flex;"><span>\```
+</span></span><span style="display:flex;"><span>keys: [
+</span></span><span style="display:flex;"><span>  &#34;title&#34;,
+</span></span><span style="display:flex;"><span>  &#34;contents&#34;,
+</span></span><span style="display:flex;"><span>  &#34;tags&#34;,
+</span></span><span style="display:flex;"><span>  &#34;categories&#34;
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>\```</span></span></code></pre></div>
+<h2 id="presque-fini">Presque fini</h2>
+<p>On lance hugo</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hugo serve -D -F</span></span></code></pre></div>
+<p>On a deja ca:</p>
+<p>http://localhost:1313/search/</p>
+<h2 id="barre-de-recherche">Barre de recherche</h2>
+<p>Pour la barre de recherche dans une menu .</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uk-margin&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uk-search uk-search-default&#34;</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{{ with .GetPage &#34;/search&#34; }}{{.Permalink}}{{end}}&#39;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;get&#34;</span> &gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">uk-search-icon</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uk-search-input&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;search&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Search&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Search&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;search-query&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;s&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">form</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;</span></span></code></pre></div>
+<h2 id="liens">Liens</h2>
+<p><a href="https://javifm.com/en/blog/search-in-hugo-with-lunr/">https://javifm.com/en/blog/search-in-hugo-with-lunr/</a></p>
+
+            </p>
+    </article>
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "schrek-fr" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <ul class="uk-pagination">
+    
+        <li><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/Hugo_shortcode_latex/"><span class="uk-margin-small-right" uk-pagination-previous></span> Afficher Latex dans Hugo</a></li>
+    
+    
+        <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/Jimmy-Somerville-Smalltown-Boy/">Jimmy Somerville-Smalltown Boy <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+    
+</ul>
+                    <hr class="uk-divider-icon">
+                    
+            <div class="uk-grid-small uk-child-width-auto " uk-grid>
+                <div>
+                    <p class="uk-text-light"><span uk-icon="icon:hashtag"></span>TAGS</p>
+                        <ul class="uk-list uk-display-inline-block">
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/Shortcode/">Shortcode</a>
+                            </li>
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/Recherche/">Recherche</a>
+                            </li>
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/Hugo/">Hugo</a>
+                            </li>
+                            
+                        </ul>
+                    <br>
+<a href='https://ko-fi.com/Q5Q7LH0AN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Beer at ko-fi.com' /></a>
+</div>
+
+            </div>
+        </div>
+
+
+
+
+        </main>
+<footer>
+    <div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
+        2023 - Construit avec <a class="uk-link-muted" href="https://gohugo.io/">Hugo</a> et de <a class="uk-link-muted" href="https://getuikit.com/">UiKit</a> 
+    </div>
+</footer>
+
+
+    <script src="/js/uikit.min.min.6b4741df9ca63b1e177fc1d9ef5ba017a37a63f6a3515ab84d9e4e2f51a708fa.js" integrity="sha256-a0dB35ymOx4Xf8HZ71ugF6N6Y/ajUVq4TZ5OL1GnCPo=" crossorigin="anonymous"></script>
+
+    <script defer src="/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js" integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin="anonymous"></script>
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+
+
+  
+
+</body>
+</html>

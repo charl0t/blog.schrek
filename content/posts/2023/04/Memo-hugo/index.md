@@ -72,6 +72,5 @@ Sans les \
 summaryLength = 40
 
 
-{{< chat cactus-comments >}}
 
  

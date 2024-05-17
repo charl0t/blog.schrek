@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diy on Schrek.fr</title>
+    <link>http://localhost:1313/tags/Diy/</link>
+    <description>Recent content in Diy on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 11 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/Diy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Socca</title>
+      <link>http://localhost:1313/posts/2023/03/Socca/</link>
+      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/Socca/</guid>
+      <description>Socca est le nom donné à une spécialité culinaire à base de farine de pois chiche !&#xA;Ingrédients 250 g de farine de pois chiches 50 cl d’eau 4 cuillères à soupe d’huile d’olive 1 cuillère à café de sel fin poivre Préparation Mélanger la farine de pois chiche et l’eau. Ajouter l’huile d’olive et le sel. La préparation est liquide Laisser reposer 1 heure.&#xA;Faire chauffer le four au maximum, le mieux c’est un four à pizza ou au pire une machine a croque monsieur.</description>
+    </item>
+    <item>
+      <title>Sorbet basilic</title>
+      <link>http://localhost:1313/posts/2023/03/Sorbet_basilic/</link>
+      <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/Sorbet_basilic/</guid>
+      <description>Un super sorbet pour, 4 personnes pour finir vos repas d’été.&#xA;Ingrédients 1/2 litre d’eau ; 1 grosse cuillère de crème fraîche ; 12 plans de basilic ; 2 petits citrons ou 1,5 gros. Préparation Faire un sirop en portant à ébullition l’eau froide avec le sucre et laisser un peu refroidir. Mixer le basilic effeuillé et infuser le 30min. Passer a L’étamine pour filtrer, ajouter le jus de citron et la crème.</description>
+    </item>
+    <item>
+      <title>Fabrication d&#39;un savon d&#39;Alep</title>
+      <link>http://localhost:1313/posts/2023/03/Savon_alep/</link>
+      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/Savon_alep/</guid>
+      <description>&lt;p&gt;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/Savon_alep/logo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;Ici je vais vous décrire rapidement la fabrication maison du savon d’Alep. C’est un savon simple à base d’huile d’olive et d’huile de baie de laurier et d’huile de ricin.&#xA;J’utilise la technique de la saponification a froid.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

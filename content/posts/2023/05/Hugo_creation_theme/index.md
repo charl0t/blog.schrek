@@ -269,4 +269,4 @@ https://www.goglides.dev/bkpandey/create-a-hugo-theme-from-scratch-20a8
 
 https://bout2code.fr/tutos/creer-un-site-avec-hugo/
 
-{{< chat cactus-comments >}}
+

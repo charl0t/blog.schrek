@@ -26,4 +26,4 @@ https://fr.wikipedia.org/wiki/Bronski_Beat
 
 https://www.lacoccinelle.net/255473-bronski-beat-smalltown-boy.html
 
-{{< chat cactus-comments >}}
+

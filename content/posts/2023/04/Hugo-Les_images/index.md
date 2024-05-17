@@ -74,5 +74,5 @@ On peut utiliser aussi le shortcode interne au moteur d’Hugo
 {{< /highlight >}}
 
 
-{{< chat cactus-comments >}}
+
 

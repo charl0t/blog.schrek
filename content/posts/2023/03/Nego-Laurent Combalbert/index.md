@@ -21,4 +21,4 @@ https://fr.wikipedia.org/wiki/Laurent_Combalbert
 
 https://www.laurentcombalbert.com/
 
-{{< chat cactus-comments >}}
+

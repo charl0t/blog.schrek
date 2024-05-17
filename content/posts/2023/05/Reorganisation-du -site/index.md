@@ -45,4 +45,4 @@ Dans mon ficher *config.toml*, j'ai rajouté:
 https://gohugo.io/content-management/urls/
 
 
-{{< chat cactus-comments >}}
+

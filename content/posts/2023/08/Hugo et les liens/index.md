@@ -123,4 +123,4 @@ J'ai trouvé plus facile de recuperer les ancres via le code source de la page g
 
 https://gohugo.io/content-management/cross-references/
 
-{{< chat cactus-comments >}}
+

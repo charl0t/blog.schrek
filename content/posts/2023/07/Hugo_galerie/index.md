@@ -6,7 +6,7 @@ tags: ["Shortcode","Hugo","Images","Galerie"]
 categories: ["Web"]
 series: ["Hugo"]
 image: "gallery.webp"
-toc: true
+toc: false
 ---
 Une petite galerie toute simple, qui utilise Uikit et lightbox.
 
@@ -14,6 +14,7 @@ Dans le dossier de l'article, il faut créer un dossier *images/* pour y deposer
 
 Hugo va directement chercher les images.
 
+{{< bandeau warning >}} Il faut installer la version extended  (exemple:hugo_extended_0.123.7_linux-arm64.deb)  {{< / bandeau >}} 
 
 {{< galerie >}}
 
@@ -44,7 +45,7 @@ galerie titre="super galerie" animation="scale"
     {{ end }}
 {{ end }}
 </div>
-{{< /highlight >}}
+{{< /highlight >}}ding support (and SCSS support).
 
 ## Options
 
@@ -62,5 +63,4 @@ https://getuikit.com/docs/lightbox#animations
 
 https://unsplash.com/pt-br/@neom
 
-{{< chat cactus-comments >}}
 

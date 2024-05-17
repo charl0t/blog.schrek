@@ -1,7 +1,7 @@
 ---
 title: "Tasmota et AM2302"
 date: 2023-10-15
-draft: false
+draft: true
 tags: ["AM2302","Tasmota","Esp8266"]
 categories: ["IoT"]
 series: ["Domotique"]
@@ -42,4 +42,4 @@ Aprés avoir tous connecté et verifié, on va connecter notre wemos en usb sur 
 
 ## Liens
 
-{{< chat cactus-comments >}}
+

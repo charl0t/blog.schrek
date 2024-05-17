@@ -121,6 +121,6 @@ EPUBCheck terminé
 {{%pj /%}}
 
 
-{{< chat cactus-comments >}}
+
 
 

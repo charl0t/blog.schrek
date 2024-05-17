@@ -50,5 +50,4 @@ https://www.peertube.fr/
 https://joinpeertube.org/fr/
 
 
-{{< chat cactus-comments >}}
 

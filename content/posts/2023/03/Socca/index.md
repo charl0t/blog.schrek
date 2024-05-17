@@ -42,4 +42,4 @@ Socca est le nom donné à une spécialité culinaire à base de farine de pois 
 ## Lien
 https://fr.wikipedia.org/wiki/Socca
 
-{{< chat cactus-comments >}}
+

@@ -14,7 +14,7 @@
                                     <h1 class="uk-article-title"><a class="uk-link-heading" href="{{.Permalink}}">{{.Title}}</a></h1>
                                     <p class="uk-article-meta">{{.Date.Format "2006-01-02"}}
                             {{ range .Params.categories }}
-                                    <span class="labelcat uk-label"><a href="/wiki/categories/{{ . | urlize}}">{{ . }}</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/{{ . | urlize}}">{{ . }}</a></span>
                              {{ end }}                            
                                     </p>
                             <p class="uk-text-lead"></p>

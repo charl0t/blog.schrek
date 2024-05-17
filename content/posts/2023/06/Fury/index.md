@@ -24,5 +24,5 @@ https://fr.wikipedia.org/wiki/Fury_(film,_2014)
 
 https://www.senscritique.com/film/fury/8470273
 
-{{< chat cactus-comments >}}
+
 

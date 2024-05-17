@@ -96,6 +96,6 @@ https://github.com/ryangrose/easy-pandoc-templates
 
 https://maehr.github.io/academic-pandoc-template/
 
-{{< chat cactus-comments >}}
+
 
 

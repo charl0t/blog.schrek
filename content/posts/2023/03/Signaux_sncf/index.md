@@ -28,4 +28,3 @@ Un autre projet [ici](https://geillon.pagesperso-orange.fr/trains/signaux/index.
 ## Lien
 https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France
 
-{{< chat cactus-comments >}}

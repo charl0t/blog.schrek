@@ -80,5 +80,5 @@ https://robb.sh/posts/how-to-use-mermaid-diagrams-in-hugo/
 
 https://mermaid.js.org/intro/
 
-{{< chat cactus-comments >}}
+
 

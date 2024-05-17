@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Parquet on Schrek.fr</title>
+    <link>http://localhost:1313/tags/parquet/</link>
+    <description>Recent content in Parquet on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/parquet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Les fichiers Parquet</title>
+      <link>http://localhost:1313/posts/2024/5/parquet/</link>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/parquet/</guid>
+      <description>Les fichiers Parquet sont un format de stockage de données colonnaires open source, souvent utilisé dans le domaine du Big Data et de l&amp;rsquo;analyse de données. Ils sont conçus pour être efficaces en termes de stockage et de traitement, ce qui les rend adaptés à des volumes de données importants. Voici quelques points clés sur les fichiers Parquet :&#xA;Compression: Les fichiers Parquet utilisent des techniques de compression pour réduire la taille des données, ce qui permet d&amp;rsquo;économiser de l&amp;rsquo;espace de stockage et de réduire les temps de transfert sur le réseau.</description>
+    </item>
+  </channel>
+</rss>

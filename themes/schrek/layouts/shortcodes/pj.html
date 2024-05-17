@@ -21,7 +21,7 @@ il faut creer un dossier files/ pour y deposer les fichiers.
   {{- $pattern := .Get "pattern" | default "" }}
   {{- range (readDir (printf "content/%s%s" .Page.File.Dir $filesName) ) }}
     <li>
-      <a href="{{ (printf "%s%s/%s" $fileDir $filesName .Name) | relLangURL }}">{{.Name}}</a>
+      <a href="{{  (printf "%s%s/%s" $fileDir $filesName .Name) | relLangURL }}">{{.Name}}</a>
     </li>
   {{- end}}
   </div>

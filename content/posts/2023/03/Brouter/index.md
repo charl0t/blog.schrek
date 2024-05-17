@@ -2,7 +2,7 @@
 title: "BRouter Web Client"
 date: 2023-03-09
 draft: false
-tags: ["Carte", "Velo","brouter"]
+tags: ["Carte", "Velo","Brouter"]
 categories: ["Web"]
 image: "velo1.webp"
 toc: true
@@ -25,4 +25,4 @@ https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-or
 
 https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que
 
-{{< chat cactus-comments >}}
+

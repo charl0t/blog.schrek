@@ -188,4 +188,4 @@ https://jldblog.eu/post/hugo/hugo_shortcode_font_awesome/
 
 https://jamstatic.fr/2017/10/01/templates-hugo-designers-wordpress/
 
-{{< chat cactus-comments >}}
+

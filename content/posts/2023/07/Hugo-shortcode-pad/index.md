@@ -55,5 +55,5 @@ On va créer dans le dossier des shortcodes */themes/VOTRETHEME/layouts/shortcod
 https://framapad.org/abc/fr/
 
 
-{{< chat cactus-comments >}}
+
 

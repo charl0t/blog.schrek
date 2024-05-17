@@ -61,4 +61,4 @@ Parce qu'il y a trop de léopards !
 
 https://github.com/0xacx/chatGPT-shell-cli
 
-{{< chat cactus-comments >}}
+

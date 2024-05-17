@@ -31,6 +31,7 @@
                     {{ .Content }}
             </p>
     </article>
+    {{ template "_internal/disqus.html" . }}
     {{ partial "singlepagination.html" .}}
                     <hr class="uk-divider-icon">
             <!-- Liste des tags -->        
@@ -47,7 +48,10 @@
                     <br>
                     {{- partial "beer.html" . -}}
                 </div>
+
             </div>
         </div>
+
+
 
 {{ end }}

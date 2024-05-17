@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latex on Schrek.fr</title>
+    <link>http://localhost:1313/categories/Latex/</link>
+    <description>Recent content in Latex on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/Latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Publipostage avec Koma-Script</title>
+      <link>http://localhost:1313/posts/2023/09/Latex-publipostage/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/Latex-publipostage/</guid>
+      <description>&lt;p&gt;On veut réaliser du publipostage, envoyer la même lettre à plusieurs destinataires.&lt;/p&gt;&#xA;&lt;p&gt;Avec notre modèle de lettre déjà fait, on va y ajouter un carnet d&amp;rsquo;adresse, et générer plusieurs lettres.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Une lettre avec Koma-Script</title>
+      <link>http://localhost:1313/posts/2023/09/Koma-Script/</link>
+      <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/Koma-Script/</guid>
+      <description>&lt;p&gt;Création d&amp;rsquo;un modèle de lettre aux standards français a l&amp;rsquo;aide du module &lt;a href=&#34;https://www.ctan.org/pkg/scrlttr2&#34;&gt;&lt;em&gt;scrlttr2&lt;/em&gt;&lt;/a&gt; de Koma-script.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Convertir de Markdown vers Pdf</title>
+      <link>http://localhost:1313/posts/2023/09/Markdown-to-Latex/</link>
+      <pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/Markdown-to-Latex/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://pandoc.org/&#34;&gt;Pandoc&lt;/a&gt; est un super outils de convertion, On va convertir un fichier Markdown en Pdf, en passant par Latex.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Latex de la couleur dans vos codes</title>
+      <link>http://localhost:1313/posts/2023/09/Latex-et-les-codes/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/Latex-et-les-codes/</guid>
+      <description>&lt;p&gt;Le module &lt;a href=&#34;https://ctan.org/pkg/minted&#34;&gt;&lt;em&gt;minted&lt;/em&gt;&lt;/a&gt; permet de coloriser vos codes.&lt;/p&gt;&#xA;&lt;p&gt;Minted utilise &lt;a href=&#34;https://pygments.org/languages/&#34;&gt;Pygments&lt;/a&gt; pour ajouter de la couleurs, vous trouverez la liste des codes supportés sur le site.&lt;/p&gt;&#xA;&lt;p&gt;Il y a aussi différents &lt;a href=&#34;https://pygments.org/styles/&#34;&gt;styles&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Latex et les liens</title>
+      <link>http://localhost:1313/posts/2023/08/Latex-et-les-liens/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/Latex-et-les-liens/</guid>
+      <description>Le module hyperref permet de créer des liens externes et interne sur un PDF.&#xA;On peut changer les couleurs et ajouter des métadonnées&#xA;Son utilisation est facile.&#xA;Utilisation Pour un lien simple: \url{https://wikipedia.fr}&#xA;Pour un un liens dans le texte: \href{https://wikipedia.fr}{Wikipedia.fr} Pour un email: \href{mailto:madame@michu.fr}{madame@michu.fr}&#xA;Pour un document (Attention au chemin): \href{run:./xcolor.pdf}{Voir ce PDF}&#xA;Les exemples \documentclass[a4paper,10pt]{scrartcl} % koma-script \usepackage{graphicx} % Module images \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[T1]{fontenc} \usepackage{parskip} \usepackage[french]{babel} % En francais \usepackage{hyperref} % Module hyperref \hypersetup{colorlinks=true, linkcolor=blue, % Couleurs des liens filecolor=magenta, % Couleur des liens de fichier urlcolor=cyan,% Couleur des Urls pdftitle={Hyperref},% Meta titre pdfauthor={Christophe},% Meta auteur pdfsubject={Les liens avec Latex},% Meta sujet pdfkeywords={Latex,Hyperref},% Meta mots clefs pdfproducer = Latex}% Meta generateur du pdf \urlstyle{same} % Meme police pour les urls \title{Hyperref} \author{Christophe } \date{Juin 2023} \begin{document} \maketitle \section*{Liens simples} \href{https://wikipedia.</description>
+    </item>
+    <item>
+      <title>Latex et xcolor</title>
+      <link>http://localhost:1313/posts/2023/08/Latex-et-xcolor/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/Latex-et-xcolor/</guid>
+      <description>Le paquetage xcolor fait partie des indispensables de Latex pour coloriser les textes.&#xA;Préambule On appelle les couleurs de base de xcolor,&#xA;\usepackage{xcolor} % import des couleurs dans les textes Il y a aussi d&amp;rsquo;autres palettes de couleurs:&#xA;dvipsnames: 68 couleurs (CMYK); svgnames: 151 couleurs (RGB); x11names: 317 couleurs (RGB). \usepackage[dvipsnames]{xcolor} % import des couleurs dans les textes Tous est bien indiqué dans la documentation (page 39).&#xA;Personnalisation des couleurs On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.</description>
+    </item>
+    <item>
+      <title>Latex, PDF éditable</title>
+      <link>http://localhost:1313/posts/2023/08/Latex-PDF-editable/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/Latex-PDF-editable/</guid>
+      <description>Avec la classe hyperref, on peut facilement créer des documents PDF éditable.&#xA;J&amp;rsquo;ai fait un petit exemple avec un attestation d&amp;rsquo;hébergement.&#xA;La documentation est bien faite.&#xA;Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[french]{babel} \usepackage[default]{lato} \usepackage{xcolor} \usepackage{hyperref} \hypersetup{ colorlinks=true, linkcolor=black, } \usepackage{fancyhdr} \pagestyle{empty} \setlength\parindent{0pt} \begin{document} \begin{Form} \begin{center} \textbf{\uppercase{ATTESTATION D&amp;#39;HÉBERGEMENT}} \\ \end{center} \vspace{5mm} Je soussigné(e), \\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \TextField[width=14cm,borderwidth=0pt]{Demeurant :} \\ \vspace{5mm} déclare sur l&amp;#39;honneur héberger à mon domicile,\\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M.</description>
+    </item>
+    <item>
+      <title>Ressources pour Latex</title>
+      <link>http://localhost:1313/posts/2023/07/Latex_Liens/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/07/Latex_Liens/</guid>
+      <description>Une liste de ressources Latex pour apprendre et comprendre&#xA;Francais https://zestedesavoir.com/bibliotheque/?tag=latex&#xA;https://www.learnlatex.org/fr/&#xA;https://fr.wikibooks.org/wiki/LaTeX&#xA;https://framalibre.org/tags/latex&#xA;https://www.gutenberg-asso.fr/&#xA;Anglais https://www.overleaf.com/&#xA;https://www.latex-project.org/&#xA;https://www.ctan.org/&#xA;https://github.com/egeerardyn/awesome-LaTeX</description>
+    </item>
+    <item>
+      <title>Lettre sous latex</title>
+      <link>http://localhost:1313/posts/2023/03/Latex-une_lettre/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/Latex-une_lettre/</guid>
+      <description>Utilisation de la classe lettre avec LaTex.&#xA;J’ai commenté le code pour plus de clarté.&#xA;Petit rajout du tampon fait dans cet article Tampon encreur sous Gimp&#xA;En cas d’erreur babel:&#xA;sudo apt-get install texlive-lang-french Le code \documentclass[12pt]{lettre} %12p taille lettres (10 et 11 possible), déclaration classe lettre \usepackage[utf8]{inputenc} % Encodage \usepackage[T1]{fontenc} % Les mots accentués \usepackage{lmodern} % Type de police \usepackage{eurosym} % Pouvoir écrire le symbole &amp;#34;€&amp;#34; \usepackage[french]{babel} % Utilisation du français \usepackage{numprint} % Séparateur décimal \usepackage{graphicx} % Pour inclure des images \begin{document} \begin{letter}{Service des râleurs\\66, rue du train\\13200 Arles} % Destinataire \basdepage{\pagetotalname{1}} \name{Prénom nom} \signature{Nom Prénom \includegraphics[width=75px, angle=-45]{tampon.</description>
+    </item>
+    <item>
+      <title>La Signalisation SNCF avec Latex</title>
+      <link>http://localhost:1313/posts/2023/03/Signaux_sncf/</link>
+      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/Signaux_sncf/</guid>
+      <description>Pour jouer avec tikz qui permet de générer des images, j’ai fait des signaux SNCF.&#xA;C’est perfectible aux niveaux des couleurs et des formes mais ca rend bien. Un cheminot Nicolas Wurtz a fait aussi ce travail mais sous une autre forme, son dépôt git Un autre projet ici à base de gif.&#xA;Mes sources latex Fichier pdf&#xA;Fichier Latex&#xA;Voir sur overleaf Lien https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France</description>
+    </item>
+    <item>
+      <title>QRcode sous LaTex</title>
+      <link>http://localhost:1313/posts/2023/02/Latex-Qrcode/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/02/Latex-Qrcode/</guid>
+      <description>On peut produire facilement des QRCode sous LaTex.&#xA;Installation On récupère les fichiers qrcode.ins et qrcode.dtx ici. On lance sous Linux:&#xA;$ latex qrcode.ins Il faut ajouter dans l’entête du fichier latex&#xA;\usepackage{hyperref} % Pour avoir les liens \usepackage{qrcode} % Pour générer les QRcode Utilisation \documentclass[12pt,a4paper]{article} \usepackage[utf8]{inputenc} \usepackage[french]{babel} \usepackage[T1]{fontenc} \usepackage{fullpage} \usepackage{hyperref} \usepackage{qrcode} \usepackage{graphicx} % Pour inclure des images %titre \title{QRcode avec \LaTeX} \date{} \begin{document} \maketitle \subsection*{QRcode simple} \begin{verbatim} \qrcode{http://schrek.fr} \end{verbatim} \begin{center} \qrcode{http://schrek.</description>
+    </item>
+    <item>
+      <title>Ecrire un ebook avec Latex</title>
+      <link>http://localhost:1313/posts/2023/02/Ebook-avec-Latex/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/02/Ebook-avec-Latex/</guid>
+      <description>MaJ 29/05/2023 Ajout d&amp;rsquo;un livre &amp;ldquo;LaTeX pour litteraires&amp;rdquo;(Éric Guichard), bouton overleaf.com&#xA;J’avais l’idée d’écrire un petit livre sur la Rome antique, une histoire d’un soldat romain qui devient un pirate. Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourné vers Latex. Pour organiser mes idées et structurer le document j’ai utilisé cette structure. Vous trouverez les sources en bas de l’article.&#xA;J’ai aucun talent littéraire merci d’être indulgent.</description>
+    </item>
+  </channel>
+</rss>

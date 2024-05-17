@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codepen on Schrek.fr</title>
+    <link>http://localhost:1313/tags/Codepen/</link>
+    <description>Recent content in Codepen on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/Codepen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shortcode Codepen</title>
+      <link>http://localhost:1313/posts/2023/05/Hugo_shortcode_codepen/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/Hugo_shortcode_codepen/</guid>
+      <description>On va creer notre shortcode pour le site Codepen, ca qui va nous permetre l&amp;rsquo;afficher dans Hugo.&#xA;Le code Sur le site de Codepen, dans l&amp;rsquo;onglet embeb on va trouver le code Html pour l&amp;rsquo;integrer sur un site.&#xA;&amp;lt;p class=&amp;#34;codepen&amp;#34; data-height=&amp;#34;300&amp;#34; data-theme-id=&amp;#34;light&amp;#34; data-default-tab=&amp;#34;html,result&amp;#34; data-slug-hash=&amp;#34;YzObPmg&amp;#34; data-user=&amp;#34;christ0phe&amp;#34; style=&amp;#34;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&amp;#34;&amp;gt; &amp;lt;span&amp;gt;See the Pen &amp;lt;a href=&amp;#34;https://codepen.io/christ0phe/pen/YzObPmg&amp;#34;&amp;gt; Purecss&amp;lt;/a&amp;gt; by christophe (&amp;lt;a href=&amp;#34;https://codepen.</description>
+    </item>
+  </channel>
+</rss>

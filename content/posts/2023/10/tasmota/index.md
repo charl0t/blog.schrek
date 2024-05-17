@@ -62,4 +62,4 @@ https://tasmota.github.io/docs/
 https://gladysassistant.com/fr/docs/integrations/tasmota/
 
 https://lofurol.fr/joomla/electronique/domotique/317-tasmota-flasher-un-module-esp-32-lolin32-lite
-{{< chat cactus-comments >}}
+

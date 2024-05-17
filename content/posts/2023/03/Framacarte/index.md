@@ -78,5 +78,5 @@ https://framacarte.org/fr/map/test1_149229#15/43.6786/4.6349
 
 https://www.openstreetmap.org/#map=18/43.67685/4.63006
 
-{{< chat cactus-comments >}}
+
  

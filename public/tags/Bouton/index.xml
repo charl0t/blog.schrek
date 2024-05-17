@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bouton on Schrek.fr</title>
+    <link>http://localhost:1313/tags/Bouton/</link>
+    <description>Recent content in Bouton on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 12 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/Bouton/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shortcode bouton</title>
+      <link>http://localhost:1313/posts/2023/08/Hugo-shortcode-bouton/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/Hugo-shortcode-bouton/</guid>
+      <description>J&amp;rsquo;avais besoin d&amp;quot;un bouton pour ouvrir des liens.&#xA;Le shortcode A déposer dans /themes/VOTRETHEME/layouts/shortcodes/bouton.html.&#xA;On peut personaliser l&amp;rsquo;icône grace a Uikit&#xA;{{ $url := .Get &amp;#34;url&amp;#34; }} {{ $titre := .Get &amp;#34;titre&amp;#34; }} {{ $icone := .Get &amp;#34;icone&amp;#34; | default &amp;#34;link&amp;#34;}} &amp;lt;a class=&amp;#34;uk-button uk-button-default uk-box-shadow-medium&amp;#34; target=&amp;#34;_blank&amp;#34; href=&amp;#34;{{ $url }}&amp;#34;&amp;gt;&amp;lt;span uk-icon=&amp;#34;icon: {{ $icone }}&amp;#34;&amp;gt;&amp;lt;/span&amp;gt; {{ $titre }}&amp;lt;/a&amp;gt; Exemples {{&amp;lt; bouton titre=&amp;#34;Voir sur overleaf&amp;#34; url=&amp;#34;https://www.overleaf.com/read/dgnpzyngzbqk&amp;#34; icone=&amp;#34;forward&amp;#34; &amp;gt;}} Voir sur overleaf {{&amp;lt; bouton titre=&amp;#34;Uikit&amp;#34; url=&amp;#34;https://getuikit.</description>
+    </item>
+  </channel>
+</rss>

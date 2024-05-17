@@ -24,6 +24,6 @@ Il existe aussi des miroirs qui permettent un accès direct.
 https://singlelogin.me/
 https://fr.annas-archive.org/
 
-{{< chat cactus-comments >}}
+
 
 

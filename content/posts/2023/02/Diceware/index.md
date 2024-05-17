@@ -2,7 +2,7 @@
 title: "Diceware"
 date: 2023-02-24
 draft: false
-tags: ["Linux","mots de passe"]
+tags: ["Linux","Mots de passe"]
 categories: ["Web"]
 image: "one-red-dice-01-a9bf3.webp"
 toc: true
@@ -86,8 +86,6 @@ https://fr.wikipedia.org/wiki/Diceware
 
 https://github.com/ulif/diceware
 
-https://linuxfr.org/users/mweber/journaux/diceware-liste-de-mots-en-français
-
 https://github.com/mbelivo/diceware-wordlists-fr
 
 http://world.std.com/~reinhold/diceware.html
@@ -96,6 +94,6 @@ https://connect.ed-diamond.com/MISC/MISC-080/Mots-de-passe-le-mieux-est-l-ennemi
 
 https://diceware.readthedocs.io/en/stable/wordlists.html
 
-{{< chat cactus-comments >}}
+
 
 
