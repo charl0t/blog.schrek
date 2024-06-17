@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Juin 2024 on Schrek.fr</title><link>https://schrek.fr/posts/2024/6/</link><description>Recent content in Juin 2024 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate/><atom:link href="https://schrek.fr/posts/2024/6/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Juin 2024 on Schrek.fr</title>
+    <link>http://localhost:1313/posts/2024/6/</link>
+    <description>Recent content in Juin 2024 on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/2024/6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make, génération de fichiers</title>
+      <link>http://localhost:1313/posts/2024/6/make/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/6/make/</guid>
+      <description>La commande make est un utilitaire de ligne de commande qui permet d&amp;rsquo;automatiser la compilation et la construction de projets logiciels. Cependant, dans le contexte de Pandoc, make est souvent utilisé pour automatiser la conversion de fichiers de différents formats à l&amp;rsquo;aide de Pandoc.&#xA;Pandoc est un outil de conversion de documents qui permet de convertir des fichiers de différents formats, tels que Markdown, HTML, PDF et Microsoft Word, entre autres.</description>
+    </item>
+    <item>
+      <title>Pandas- nettoyage des données</title>
+      <link>http://localhost:1313/posts/2024/6/pandas_nettoyage/</link>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/6/pandas_nettoyage/</guid>
+      <description>Le nettoyage des données est une étapes cruciale dans le processus d&amp;rsquo;analyse de données, car les données brutes peuvent contenir des erreurs, des valeurs manquantes et d&amp;rsquo;autres problèmes qui peuvent affecter les résultats de l&amp;rsquo;analyse.&#xA;La bibliothèque Pandas en Python est un outils puissant pour le nettoyage des données, offrant de nombreuses méthodes utiles pour préparer les données pour l&amp;rsquo;analyse.&#xA;L&amp;rsquo;import des données df = pd.read_csv(&amp;#34;data.csv&amp;#34;,skiprows=3, skipfooter=2) skiprows: va permettre de ne pas tenir compte des premières ligne du fichier.</description>
+    </item>
+    <item>
+      <title> Norferville - Franck Thilliez</title>
+      <link>http://localhost:1313/posts/2024/6/norferville-/</link>
+      <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/6/norferville-/</guid>
+      <description>Franck Thilliez, l&amp;rsquo;un des auteurs de thrillers les plus renommés de la littérature française contemporaine, nous revient en 2023 avec Norferville, un roman qui promet de nous plonger une fois de plus dans une intrigue sombre et captivante.&#xA;Le roman explore des thèmes chers à l’auteur, tels que les méandres de la psychologie humaine, les secrets de famille et les conséquences des actes passés. Thilliez utilise avec brio les éléments du thriller pour tisser une intrigue complexe où chaque détail compte et où les retournements de situation sont légion.</description>
+    </item>
+  </channel>
+</rss>

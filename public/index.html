@@ -1,17 +1,313 @@
-<!doctype html><html lang=fr><html><head><meta name=generator content="Hugo 0.125.5"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Blog qui parle de lecture et de web"><meta name=keywords content="hugo,html,lecture,web,shortcode"><title>Schrek.fr</title>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-title content="My PWA"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js")</script><meta property="og:url" content="https://schrek.fr/"><meta property="og:site_name" content="Schrek.fr"><meta property="og:title" content="Schrek.fr"><meta property="og:description" content="Mon super blog :)"><meta property="og:locale" content="fr-fr"><meta property="og:type" content="website"><link href=/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css rel=stylesheet integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin=anonymous><link href=/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css rel=stylesheet integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp+8kDvTq4rdsbpi6rWUJnq68ImIF+mScfMdRrPd7mRCOJAPMg==" crossorigin=anonymous><link rel=alternate type=application/rss+xml href=https://schrek.fr/index.xml title=Schrek.fr><link rel=alternate type=application/json href=https://schrek.fr/index.json title=Schrek.fr></head><body><header><div class="uk-container uk-container-xsmall uk-padding-small"><a href=https://schrek.fr/><h1 classe=uk-heading-small>Schrek.fr</h1></a><a href=https://schrek.fr/><h2>Mon super blog :)</h2></a><span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type=button uk-toggle="target: #offcanvas-overlay"></span><div id=offcanvas-overlay uk-offcanvas="overlay: true"><div class="uk-offcanvas-bar uk-background-primary"><button class=uk-offcanvas-close type=button uk-close></button><h3 class=barremenu>Menu</h3><nav><ul class=uk-iconnav><li><a href=/><span uk-icon="icon:home; ratio: 2"></span></a></li><li><a href=/pages/apropos/><span uk-icon="icon:info; ratio: 2"></span></a></li><li><a href=/pages/tagscloud/><span uk-icon="icon:hashtag; ratio: 2"></span></a></li><li><a href=/wiki/><span uk-icon="icon:database; ratio: 2"></span></a></li><li><a href=/index.xml><span uk-icon="icon:rss; ratio: 2"></span></a></li></ul></nav><hr class=uk-divider-icon><h3 class=barremenu><a href=https://schrek.fr//categories/>Categories</a></h3><li><a href=https://schrek.fr/categories/linux/>Linux</a></li><li><a href=https://schrek.fr/categories/lecture/>Lecture</a></li><li><a href=https://schrek.fr/categories/hugo/>Hugo</a></li><li><a href=https://schrek.fr/categories/raspberrypi/>RaspberryPi</a></li><li><a href=https://schrek.fr/categories/iot/>IoT</a></li><li><a href=https://schrek.fr/categories/latex/>Latex</a></li><li><a href=https://schrek.fr/categories/web/>Web</a></li><li><a href=https://schrek.fr/categories/film/>Film</a></li><li><a href=https://schrek.fr/categories/musique/>Musique</a></li><li><a href=https://schrek.fr/categories/wiki/>Wiki</a></li><li><a href=https://schrek.fr/categories/recette/>Recette</a></li><h3 class=barremenu><a href=https://schrek.fr//series/>Series</a></h3><li><a href=https://schrek.fr/series/pandas/>Pandas</a></li><li><a href=https://schrek.fr/series/hugo/>Hugo</a></li><li><a href=https://schrek.fr/series/raspberrypi/>RaspberryPi</a></li><li><a href=https://schrek.fr/series/domotique/>Domotique</a></li><li><a href=https://schrek.fr/series/esp32/>Esp32</a></li><li><a href=https://schrek.fr/series/latex/>Latex</a></li></div></div></div></header><main><div class=uk-container><div class="uk-child-width-1-2@s uk-grid-match" uk-grid><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2024/5/pandas_import//pandas.webp alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2024/5/pandas_import/>Pandas, importer un fichier csv</a></h1><p class=uk-article-meta>2024-05-10
-<span class="labelcat uk-label"><a href=/categories/linux>Linux</a></span></p><p class=uk-text-lead></p><p>J’avais besoin de traiter des fichiers CSV pour en extraire des données. J’ai commencé à faire cela avec un tableur, mais comme je suis feignant,je voulais automatiser tout cela.
+<!DOCTYPE html>
+
+<html lang="fr">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
+	<meta name="generator" content="Hugo 0.125.5">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog qui parle de lecture et de web" />
+    <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
+    <title>Schrek.fr</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes" />
+
+<meta name="apple-mobile-web-app-title" content="My PWA" />
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<script>
+
+if ('serviceWorker' in navigator) {
+
+navigator.serviceWorker.register('/sw.js');
+
+};
+
+</script>
+
+  
+
+
+    <meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="Schrek.fr">
+  <meta property="og:title" content="Schrek.fr">
+  <meta property="og:description" content="Mon super blog :)">
+  <meta property="og:locale" content="fr-fr">
+  <meta property="og:type" content="website">
+
+    
+    <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
+    
+    <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Schrek.fr" />
+    <link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="Schrek.fr" />
+    </head>
+<body>
+<header>
+    <div class="uk-container uk-container-xsmall uk-padding-small">
+        <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
+        <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
+        <span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type="button" uk-toggle="target: #offcanvas-overlay"></span>
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-background-primary">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <h3 class="barremenu">Menu</h3>
+<nav>
+        <ul class="uk-iconnav">
+            
+            <li><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
+            
+            <li><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
+            
+            <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
+            
+        </ul>
+</nav>
+<hr class="uk-divider-icon">
+                     
+                <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+
+<li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
+
+<li><a href="http://localhost:1313/categories/film/">Film</a></li>
+
+<li><a href="http://localhost:1313/categories/musique/">Musique</a></li>
+
+<li><a href="http://localhost:1313/categories/wiki/">Wiki</a></li>
+
+<li><a href="http://localhost:1313/categories/recette/">Recette</a></li>
+
+
+                  
+                <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
+
+<li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/series/domotique/">Domotique</a></li>
+
+<li><a href="http://localhost:1313/series/esp32/">Esp32</a></li>
+
+<li><a href="http://localhost:1313/series/latex/">Latex</a></li>
+
+</div>
+        </div>
+    </div>
+</header>
+<main>
+
+<div class="uk-container ">
+<div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+
+
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2024/6/make//make.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2024/6/make/">Make, génération de fichiers</a></h1>
+                                    <p class="uk-article-meta">2024-06-20
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/linux">Linux</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p>La commande make est un utilitaire de ligne de commande qui permet d’automatiser la compilation et la construction de projets logiciels. Cependant, dans le contexte de Pandoc, make est souvent utilisé pour automatiser la conversion de fichiers de différents formats à l’aide de Pandoc.
+Pandoc est un outil de conversion de documents qui permet de convertir des fichiers de différents formats, tels que Markdown, HTML, PDF et Microsoft Word, entre autres.</p>
+                            <a href="/posts/2024/6/make/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2024/6/pandas_nettoyage//pandas.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2024/6/pandas_nettoyage/">Pandas- nettoyage des données</a></h1>
+                                    <p class="uk-article-meta">2024-06-15
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/linux">Linux</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p>Le nettoyage des données est une étapes cruciale dans le processus d’analyse de données, car les données brutes peuvent contenir des erreurs, des valeurs manquantes et d’autres problèmes qui peuvent affecter les résultats de l’analyse.
+La bibliothèque Pandas en Python est un outils puissant pour le nettoyage des données, offrant de nombreuses méthodes utiles pour préparer les données pour l’analyse.
+L’import des données df = pd.read_csv(&#34;data.csv&#34;,skiprows=3, skipfooter=2) skiprows: va permettre de ne pas tenir compte des premières ligne du fichier.</p>
+                            <a href="/posts/2024/6/pandas_nettoyage/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2024/6/norferville-//noferville.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2024/6/norferville-/"> Norferville - Franck Thilliez</a></h1>
+                                    <p class="uk-article-meta">2024-06-05
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p>Franck Thilliez, l’un des auteurs de thrillers les plus renommés de la littérature française contemporaine, nous revient en 2023 avec Norferville, un roman qui promet de nous plonger une fois de plus dans une intrigue sombre et captivante.
+Le roman explore des thèmes chers à l’auteur, tels que les méandres de la psychologie humaine, les secrets de famille et les conséquences des actes passés. Thilliez utilise avec brio les éléments du thriller pour tisser une intrigue complexe où chaque détail compte et où les retournements de situation sont légion.</p>
+                            <a href="/posts/2024/6/norferville-/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2024/5/parquet//parquet.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2024/5/parquet/">Les fichiers Parquet</a></h1>
+                                    <p class="uk-article-meta">2024-05-29
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/linux">Linux</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p>Les fichiers Parquet sont un format de stockage de données colonnaires open source, souvent utilisé dans le domaine du Big Data et de l’analyse de données. Ils sont conçus pour être efficaces en termes de stockage et de traitement, ce qui les rend adaptés à des volumes de données importants. Voici quelques points clés sur les fichiers Parquet :
+Compression: Les fichiers Parquet utilisent des techniques de compression pour réduire la taille des données, ce qui permet d’économiser de l’espace de stockage et de réduire les temps de transfert sur le réseau.</p>
+                            <a href="/posts/2024/5/parquet/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2024/5/cit%C3%A9//cite.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2024/5/cit%C3%A9/">La cité en flamme - Don Winslow</a></h1>
+                                    <p class="uk-article-meta">2024-05-20
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p>Don Winslow La Cité en flammes, roman publié en 2021 par Don Winslow, marque le début d’une nouvelle trilogie audacieuse et captivante, qui plonge les lecteurs dans l’univers impitoyable du crime organisé. Inspiré par l’Iliade d’Homère, Winslow transpose l’épopée grecque dans le contexte contemporain des guerres de gangs à Providence, Rhode Island, dans les années 1980.
+Le protagoniste, Danny Ryan, est un homme ordinaire aspirant à une vie tranquille, mais se trouve inexorablement entraîné dans un conflit violent entre deux familles criminelles rivales.</p>
+                            <a href="/posts/2024/5/cit%C3%A9/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2024/5/pandas_import//pandas.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2024/5/pandas_import/">Pandas, importer un fichier csv</a></h1>
+                                    <p class="uk-article-meta">2024-05-10
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/linux">Linux</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p>J’avais besoin de traiter des fichiers CSV pour en extraire des données. J’ai commencé à faire cela avec un tableur, mais comme je suis feignant,je voulais automatiser tout cela.
 Le csv Je dois:
 Importer le fichier CSV Nettoyer des données inutiles Mettre en forme des colonnes Extraire des données Au travail. Pour faire tous ça je vais utiliser le langage Python avec la bibliothèque Pandas
-#!/usr/bin/python import pandas as pd df = pd.</p><a href=/posts/2024/5/pandas_import/>Lire plus...</a></article></div></div><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2024/5/pandas_serie//pandas.webp alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2024/5/pandas_serie/>Pandas et les series</a></h1><p class=uk-article-meta>2024-05-05
-<span class="labelcat uk-label"><a href=/categories/linux>Linux</a></span></p><p class=uk-text-lead></p><p>Les “séries” sur pandas se réfèrent à des objets de données unidimensionnels dans la bibliothèque Python pandas.
-Ils sont similaires aux tableaux unidimensionnels en Python (comme les listes ou les tableaux NumPy), mais avec des fonctionnalités supplémentaires.
-Les séries pandas sont indexées, ce qui signifie que chaque élément a une étiquette ou un identifiant associé, et elles peuvent contenir différents types de données, comme des entiers, des flottants, des chaînes, etc.</p><a href=/posts/2024/5/pandas_serie/>Lire plus...</a></article></div></div><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2024/5/pandas_structures//pandas.webp alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2024/5/pandas_structures/>Pandas et les structures</a></h1><p class=uk-article-meta>2024-05-03
-<span class="labelcat uk-label"><a href=/categories/linux>Linux</a></span></p><p class=uk-text-lead></p><p>La bibliothèque Pandas fournit deux structures de données principales pour manipuler des données structurées : les séries et les dataframes.
-Les séries Une série est un tableau unidimensionnel de données homogènes, indexé par des étiquettes. Les étiquettes peuvent être de n’importe quel type (chaînes de caractères, entiers, dates, etc.), ce qui permet de manipuler des données de manière flexible. Les séries peuvent être créées à partir de listes, de tableaux NumPy, de dictionnaires ou d’autres structures de données.</p><a href=/posts/2024/5/pandas_structures/>Lire plus...</a></article></div></div><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2024/5/pirates//pirates.webp alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2024/5/pirates/>Les pirates de dieu - François-Henri Souli</a></h1><p class=uk-article-meta>2024-05-01
-<span class="labelcat uk-label"><a href=/categories/lecture>Lecture</a></span></p><p class=uk-text-lead></p><p>Les Pirates de Dieu est un livre écrit par François-Henri Souli. Il s’agit d’un roman historique qui se déroule à Byzance au IVe siècle. L’histoire tourne autour de l’empereur Constantinus qui tente d’imposer le christianisme à son peuple et qui voit les pirates comme une menace personnelle. Le livre met en scène des personnages tels que Aurelius, le conseiller de l’empereur, et deux jeunes pirates, Kyros et Galeo, animés par une sombre vengeance .</p><a href=/posts/2024/5/pirates/>Lire plus...</a></article></div></div><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2024/5/pandas//pandas.webp alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2024/5/pandas/>Pandas</a></h1><p class=uk-article-meta>2024-05-01
-<span class="labelcat uk-label"><a href=/categories/linux>Linux</a></span></p><p class=uk-text-lead></p><p>La bibliothèque Pandas est une bibliothèque open-source pour la manipulation et l’analyse de données en Python. Elle fournit des structures de données hautes performances et flexibles pour manipuler des données structurées, telles que des tableaux et des séries temporelles.
-Les principales fonctionnalités de Pandas comprennent la lecture et l’écriture de données à partir de divers formats de fichiers, la manipulation et le nettoyage de données, la fusion et la jointure de données, l’agrégation et le regroupement de données, ainsi que la visualisation de données.</p><a href=/posts/2024/5/pandas/>Lire plus...</a></article></div></div><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2024/4/outresable//outresable.webp alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2024/4/outresable/>Outresable - Hugh Howey</a></h1><p class=uk-article-meta>2024-04-01
-<span class="labelcat uk-label"><a href=/categories/lecture>Lecture</a></span></p><p class=uk-text-lead></p><p>Outresable est le premier volume de la série Sable d’Hugh Howey. J’ai adoré le coté plongeurs des sables, j’attend la suite avec impatience.
-Outresable, Actes Sud, coll. « Exofictions », 2019 Outredune, Actes Sud, coll. « Exofictions », 2023 J’ai adoré le concept de nage dans le sable.
-Sable Résumé Depuis des siècles le sable a englouti le monde. Un autre s’est créé tant bien que mal parmi les dunes mouvantes, et les plongeurs des sables descendent à de grandes profondeurs pour remonter les trésors enfouis dont le troc permet la survie de tous à la surface.</p><a href=/posts/2024/4/outresable/>Lire plus...</a></article></div></div></div><ul class="pagination pagination-default"><li class="page-item disabled"><a aria-disabled=true aria-label=First class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;&#171;</span></a></li><li class="page-item disabled"><a aria-disabled=true aria-label=Previous class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;</span></a></li><li class="page-item active"><a aria-current=page aria-label="Page 1" class=page-link role=button>1</a></li><li class=page-item><a href=/page/2/ aria-label="Page 2" class=page-link role=button>2</a></li><li class=page-item><a href=/page/3/ aria-label="Page 3" class=page-link role=button>3</a></li><li class=page-item><a href=/page/4/ aria-label="Page 4" class=page-link role=button>4</a></li><li class=page-item><a href=/page/5/ aria-label="Page 5" class=page-link role=button>5</a></li><li class=page-item><a href=/page/2/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a></li><li class=page-item><a href=/page/16/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a></li></ul></div></main><footer><div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">2024 - Construit avec <a class=uk-link-muted href=https://gohugo.io/>Hugo</a> et de <a class=uk-link-muted href=https://getuikit.com/>UiKit</a></div></footer><script src=/js/uikit.min.min.6b4741df9ca63b1e177fc1d9ef5ba017a37a63f6a3515ab84d9e4e2f51a708fa.js integrity="sha256-a0dB35ymOx4Xf8HZ71ugF6N6Y/ajUVq4TZ5OL1GnCPo=" crossorigin=anonymous></script><script defer src=/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin=anonymous></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script><script>MathJax={tex:{displayMath:[["\\[","\\]"],["$$","$$"]],inlineMath:[["\\(","\\)"]]}}</script></body></html>
+#!/usr/bin/python import pandas as pd df = pd.</p>
+                            <a href="/posts/2024/5/pandas_import/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+    </div>
+
+
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
+      </li>
+      <li class="page-item">
+        <a href="/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
+      </li>
+      <li class="page-item">
+        <a href="/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
+      </li>
+      <li class="page-item">
+        <a href="/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/page/17/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+</div>
+
+        </main>
+<footer>
+    <div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
+        2024 - Construit avec <a class="uk-link-muted" href="https://gohugo.io/">Hugo</a> et de <a class="uk-link-muted" href="https://getuikit.com/">UiKit</a> 
+    </div>
+</footer>
+
+
+    <script src="/js/uikit.min.min.6b4741df9ca63b1e177fc1d9ef5ba017a37a63f6a3515ab84d9e4e2f51a708fa.js" integrity="sha256-a0dB35ymOx4Xf8HZ71ugF6N6Y/ajUVq4TZ5OL1GnCPo=" crossorigin="anonymous"></script>
+
+    <script defer src="/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js" integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin="anonymous"></script>
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+
+
+  
+
+</body>
+</html>

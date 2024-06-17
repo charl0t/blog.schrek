@@ -1,40 +1,103 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Latex on Schrek.fr</title><link>https://schrek.fr/tags/latex/</link><description>Recent content in Latex on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sat, 10 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/latex/index.xml" rel="self" type="application/rss+xml"/><item><title>Mathématique dans Hugo</title><link>https://schrek.fr/posts/2024/2/katex/</link><pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/2/katex/</guid><description>&lt;p>Dans la version &lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.122.0">v0.122.0&lt;/a>, on peut facilement ajouter le support des formules mathématiques façon &lt;em>LaTex&lt;/em>. Ce tutoriel est juste une retranscription de cette &lt;a href="https://gohugo.io/content-management/mathematics/">page&lt;/a>.&lt;/p>
-$$E=mc^2$$</description></item><item><title>Les icones dans Latex</title><link>https://schrek.fr/posts/2023/09/latex-icones/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/latex-icones/</guid><description>Téléchargement the-comprehensive-latex-symbol-list.pdf Liens https://la-bibliotex.fr/2019/02/10/des-icones-a-infini-dans-latex/
-https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
-https://ctan.org/topic/font-symbol
-https://ctan.org/pkg/simpleicons</description></item><item><title>Publipostage avec Koma-Script</title><link>https://schrek.fr/posts/2023/09/latex-publipostage/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/latex-publipostage/</guid><description>&lt;p>On veut réaliser du publipostage, envoyer la même lettre à plusieurs destinataires.&lt;/p>
-&lt;p>Avec notre modèle de lettre déjà fait, on va y ajouter un carnet d&amp;rsquo;adresse, et générer plusieurs lettres.&lt;/p></description></item><item><title>Une lettre avec Koma-Script</title><link>https://schrek.fr/posts/2023/09/koma-script/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/koma-script/</guid><description>&lt;p>Création d&amp;rsquo;un modèle de lettre aux standards français a l&amp;rsquo;aide du module &lt;a href="https://www.ctan.org/pkg/scrlttr2">&lt;em>scrlttr2&lt;/em>&lt;/a> de Koma-script.&lt;/p></description></item><item><title>Convertir de Markdown vers Pdf</title><link>https://schrek.fr/posts/2023/09/markdown-to-latex/</link><pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/markdown-to-latex/</guid><description>&lt;p>&lt;a href="https://pandoc.org/">Pandoc&lt;/a> est un super outils de convertion, On va convertir un fichier Markdown en Pdf, en passant par Latex.&lt;/p></description></item><item><title>Latex de la couleur dans vos codes</title><link>https://schrek.fr/posts/2023/09/latex-et-les-codes/</link><pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/latex-et-les-codes/</guid><description>&lt;p>Le module &lt;a href="https://ctan.org/pkg/minted">&lt;em>minted&lt;/em>&lt;/a> permet de coloriser vos codes.&lt;/p>
-&lt;p>Minted utilise &lt;a href="https://pygments.org/languages/">Pygments&lt;/a> pour ajouter de la couleurs, vous trouverez la liste des codes supportés sur le site.&lt;/p>
-&lt;p>Il y a aussi différents &lt;a href="https://pygments.org/styles/">styles&lt;/a>&lt;/p></description></item><item><title>Latex et les liens</title><link>https://schrek.fr/posts/2023/08/latex-et-les-liens/</link><pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/latex-et-les-liens/</guid><description>Le module hyperref permet de créer des liens externes et interne sur un PDF.
-On peut changer les couleurs et ajouter des métadonnées
-Son utilisation est facile.
-Utilisation Pour un lien simple: \url{https://wikipedia.fr}
-Pour un un liens dans le texte: \href{https://wikipedia.fr}{Wikipedia.fr} Pour un email: \href{mailto:madame@michu.fr}{madame@michu.fr}
-Pour un document (Attention au chemin): \href{run:./xcolor.pdf}{Voir ce PDF}
-Les exemples \documentclass[a4paper,10pt]{scrartcl} % koma-script \usepackage{graphicx} % Module images \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[T1]{fontenc} \usepackage{parskip} \usepackage[french]{babel} % En francais \usepackage{hyperref} % Module hyperref \hypersetup{colorlinks=true, linkcolor=blue, % Couleurs des liens filecolor=magenta, % Couleur des liens de fichier urlcolor=cyan,% Couleur des Urls pdftitle={Hyperref},% Meta titre pdfauthor={Christophe},% Meta auteur pdfsubject={Les liens avec Latex},% Meta sujet pdfkeywords={Latex,Hyperref},% Meta mots clefs pdfproducer = Latex}% Meta generateur du pdf \urlstyle{same} % Meme police pour les urls \title{Hyperref} \author{Christophe } \date{Juin 2023} \begin{document} \maketitle \section*{Liens simples} \href{https://wikipedia.</description></item><item><title>Latex et xcolor</title><link>https://schrek.fr/posts/2023/08/latex-et-xcolor/</link><pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/latex-et-xcolor/</guid><description>Le paquetage xcolor fait partie des indispensables de Latex pour coloriser les textes.
-Préambule On appelle les couleurs de base de xcolor,
-\usepackage{xcolor} % import des couleurs dans les textes Il y a aussi d&amp;rsquo;autres palettes de couleurs:
-dvipsnames: 68 couleurs (CMYK); svgnames: 151 couleurs (RGB); x11names: 317 couleurs (RGB). \usepackage[dvipsnames]{xcolor} % import des couleurs dans les textes Tous est bien indiqué dans la documentation (page 39).
-Personnalisation des couleurs On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.</description></item><item><title>Latex, PDF éditable</title><link>https://schrek.fr/posts/2023/08/latex-pdf-editable/</link><pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/latex-pdf-editable/</guid><description>Avec la classe hyperref, on peut facilement créer des documents PDF éditable.
-J&amp;rsquo;ai fait un petit exemple avec un attestation d&amp;rsquo;hébergement.
-La documentation est bien faite.
-Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[french]{babel} \usepackage[default]{lato} \usepackage{xcolor} \usepackage{hyperref} \hypersetup{ colorlinks=true, linkcolor=black, } \usepackage{fancyhdr} \pagestyle{empty} \setlength\parindent{0pt} \begin{document} \begin{Form} \begin{center} \textbf{\uppercase{ATTESTATION D&amp;#39;HÉBERGEMENT}} \\ \end{center} \vspace{5mm} Je soussigné(e), \\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \TextField[width=14cm,borderwidth=0pt]{Demeurant :} \\ \vspace{5mm} déclare sur l&amp;#39;honneur héberger à mon domicile,\\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M.</description></item><item><title>Ressources pour Latex</title><link>https://schrek.fr/posts/2023/07/latex_liens/</link><pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/07/latex_liens/</guid><description>Une liste de ressources Latex pour apprendre et comprendre
-Francais https://zestedesavoir.com/bibliotheque/?tag=latex
-https://www.learnlatex.org/fr/
-https://fr.wikibooks.org/wiki/LaTeX
-https://framalibre.org/tags/latex
-https://www.gutenberg-asso.fr/
-Anglais https://www.overleaf.com/
-https://www.latex-project.org/
-https://www.ctan.org/
-https://github.com/egeerardyn/awesome-LaTeX</description></item><item><title>Afficher Latex dans Hugo</title><link>https://schrek.fr/posts/2023/06/hugo_shortcode_latex/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo_shortcode_latex/</guid><description>Le shortcode Fichier latex.html à deposer /themes/VOTRETHEME/layouts/shortcodes
-&amp;lt;script type=&amp;#34;module&amp;#34;&amp;gt; import { LaTeXJSComponent } from &amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs&amp;#34; customElements.define(&amp;#34;latex-js&amp;#34;, LaTeXJSComponent) &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; latex-js { display: inline-block; width: 70%; border: 1px solid black; margin-right: 2em; padding-bottom: 2em; } &amp;lt;/style&amp;gt; &amp;lt;latex-js baseURL=&amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/&amp;#34;&amp;gt; {{ .Inner }} &amp;lt;/latex-js&amp;gt; {{ .Inner }} permet d&amp;rsquo;inserer tous ce qu&amp;rsquo;il se trouve entre les balises.
-Utilisation {{&amp;lt; latex &amp;gt;}} \documentclass{article} \usepackage[latin1]{inputenc} \usepackage{hyperref} \author{Christophe} \date{2023} \title{Un exemple} \usepackage[francais]{babel} \begin{document} \maketitle \section{Début} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description></item><item><title>Lettre sous latex</title><link>https://schrek.fr/posts/2023/03/latex-une_lettre/</link><pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/latex-une_lettre/</guid><description>Utilisation de la classe lettre avec LaTex.
-J’ai commenté le code pour plus de clarté.
-Petit rajout du tampon fait dans cet article Tampon encreur sous Gimp
-En cas d’erreur babel:
-sudo apt-get install texlive-lang-french Le code \documentclass[12pt]{lettre} %12p taille lettres (10 et 11 possible), déclaration classe lettre \usepackage[utf8]{inputenc} % Encodage \usepackage[T1]{fontenc} % Les mots accentués \usepackage{lmodern} % Type de police \usepackage{eurosym} % Pouvoir écrire le symbole &amp;#34;€&amp;#34; \usepackage[french]{babel} % Utilisation du français \usepackage{numprint} % Séparateur décimal \usepackage{graphicx} % Pour inclure des images \begin{document} \begin{letter}{Service des râleurs\\66, rue du train\\13200 Arles} % Destinataire \basdepage{\pagetotalname{1}} \name{Prénom nom} \signature{Nom Prénom \includegraphics[width=75px, angle=-45]{tampon.</description></item><item><title>La Signalisation SNCF avec Latex</title><link>https://schrek.fr/posts/2023/03/signaux_sncf/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/signaux_sncf/</guid><description>Pour jouer avec tikz qui permet de générer des images, j’ai fait des signaux SNCF.
-C’est perfectible aux niveaux des couleurs et des formes mais ca rend bien. Un cheminot Nicolas Wurtz a fait aussi ce travail mais sous une autre forme, son dépôt git Un autre projet ici à base de gif.
-Mes sources latex Fichier pdf
-Fichier Latex
-Voir sur overleaf Lien https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latex on Schrek.fr</title>
+    <link>http://localhost:1313/tags/latex/</link>
+    <description>Recent content in Latex on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 10 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mathématique dans Hugo</title>
+      <link>http://localhost:1313/posts/2024/2/katex/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/2/katex/</guid>
+      <description>&lt;p&gt;Dans la version &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.122.0&#34;&gt;v0.122.0&lt;/a&gt;, on peut facilement ajouter le support des formules mathématiques façon &lt;em&gt;LaTex&lt;/em&gt;. Ce tutoriel est juste une retranscription de cette &lt;a href=&#34;https://gohugo.io/content-management/mathematics/&#34;&gt;page&lt;/a&gt;.&lt;/p&gt;&#xA;$$E=mc^2$$</description>
+    </item>
+    <item>
+      <title>Les icones dans Latex</title>
+      <link>http://localhost:1313/posts/2023/09/latex-icones/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/latex-icones/</guid>
+      <description>Téléchargement the-comprehensive-latex-symbol-list.pdf Liens https://la-bibliotex.fr/2019/02/10/des-icones-a-infini-dans-latex/&#xA;https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols&#xA;https://ctan.org/topic/font-symbol&#xA;https://ctan.org/pkg/simpleicons</description>
+    </item>
+    <item>
+      <title>Publipostage avec Koma-Script</title>
+      <link>http://localhost:1313/posts/2023/09/latex-publipostage/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/latex-publipostage/</guid>
+      <description>&lt;p&gt;On veut réaliser du publipostage, envoyer la même lettre à plusieurs destinataires.&lt;/p&gt;&#xA;&lt;p&gt;Avec notre modèle de lettre déjà fait, on va y ajouter un carnet d&amp;rsquo;adresse, et générer plusieurs lettres.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Une lettre avec Koma-Script</title>
+      <link>http://localhost:1313/posts/2023/09/koma-script/</link>
+      <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/koma-script/</guid>
+      <description>&lt;p&gt;Création d&amp;rsquo;un modèle de lettre aux standards français a l&amp;rsquo;aide du module &lt;a href=&#34;https://www.ctan.org/pkg/scrlttr2&#34;&gt;&lt;em&gt;scrlttr2&lt;/em&gt;&lt;/a&gt; de Koma-script.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Convertir de Markdown vers Pdf</title>
+      <link>http://localhost:1313/posts/2023/09/markdown-to-latex/</link>
+      <pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/markdown-to-latex/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://pandoc.org/&#34;&gt;Pandoc&lt;/a&gt; est un super outils de convertion, On va convertir un fichier Markdown en Pdf, en passant par Latex.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Latex de la couleur dans vos codes</title>
+      <link>http://localhost:1313/posts/2023/09/latex-et-les-codes/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/latex-et-les-codes/</guid>
+      <description>&lt;p&gt;Le module &lt;a href=&#34;https://ctan.org/pkg/minted&#34;&gt;&lt;em&gt;minted&lt;/em&gt;&lt;/a&gt; permet de coloriser vos codes.&lt;/p&gt;&#xA;&lt;p&gt;Minted utilise &lt;a href=&#34;https://pygments.org/languages/&#34;&gt;Pygments&lt;/a&gt; pour ajouter de la couleurs, vous trouverez la liste des codes supportés sur le site.&lt;/p&gt;&#xA;&lt;p&gt;Il y a aussi différents &lt;a href=&#34;https://pygments.org/styles/&#34;&gt;styles&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Latex et les liens</title>
+      <link>http://localhost:1313/posts/2023/08/latex-et-les-liens/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/latex-et-les-liens/</guid>
+      <description>Le module hyperref permet de créer des liens externes et interne sur un PDF.&#xA;On peut changer les couleurs et ajouter des métadonnées&#xA;Son utilisation est facile.&#xA;Utilisation Pour un lien simple: \url{https://wikipedia.fr}&#xA;Pour un un liens dans le texte: \href{https://wikipedia.fr}{Wikipedia.fr} Pour un email: \href{mailto:madame@michu.fr}{madame@michu.fr}&#xA;Pour un document (Attention au chemin): \href{run:./xcolor.pdf}{Voir ce PDF}&#xA;Les exemples \documentclass[a4paper,10pt]{scrartcl} % koma-script \usepackage{graphicx} % Module images \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[T1]{fontenc} \usepackage{parskip} \usepackage[french]{babel} % En francais \usepackage{hyperref} % Module hyperref \hypersetup{colorlinks=true, linkcolor=blue, % Couleurs des liens filecolor=magenta, % Couleur des liens de fichier urlcolor=cyan,% Couleur des Urls pdftitle={Hyperref},% Meta titre pdfauthor={Christophe},% Meta auteur pdfsubject={Les liens avec Latex},% Meta sujet pdfkeywords={Latex,Hyperref},% Meta mots clefs pdfproducer = Latex}% Meta generateur du pdf \urlstyle{same} % Meme police pour les urls \title{Hyperref} \author{Christophe } \date{Juin 2023} \begin{document} \maketitle \section*{Liens simples} \href{https://wikipedia.</description>
+    </item>
+    <item>
+      <title>Latex et xcolor</title>
+      <link>http://localhost:1313/posts/2023/08/latex-et-xcolor/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/latex-et-xcolor/</guid>
+      <description>Le paquetage xcolor fait partie des indispensables de Latex pour coloriser les textes.&#xA;Préambule On appelle les couleurs de base de xcolor,&#xA;\usepackage{xcolor} % import des couleurs dans les textes Il y a aussi d&amp;rsquo;autres palettes de couleurs:&#xA;dvipsnames: 68 couleurs (CMYK); svgnames: 151 couleurs (RGB); x11names: 317 couleurs (RGB). \usepackage[dvipsnames]{xcolor} % import des couleurs dans les textes Tous est bien indiqué dans la documentation (page 39).&#xA;Personnalisation des couleurs On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.</description>
+    </item>
+    <item>
+      <title>Latex, PDF éditable</title>
+      <link>http://localhost:1313/posts/2023/08/latex-pdf-editable/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/latex-pdf-editable/</guid>
+      <description>Avec la classe hyperref, on peut facilement créer des documents PDF éditable.&#xA;J&amp;rsquo;ai fait un petit exemple avec un attestation d&amp;rsquo;hébergement.&#xA;La documentation est bien faite.&#xA;Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[french]{babel} \usepackage[default]{lato} \usepackage{xcolor} \usepackage{hyperref} \hypersetup{ colorlinks=true, linkcolor=black, } \usepackage{fancyhdr} \pagestyle{empty} \setlength\parindent{0pt} \begin{document} \begin{Form} \begin{center} \textbf{\uppercase{ATTESTATION D&amp;#39;HÉBERGEMENT}} \\ \end{center} \vspace{5mm} Je soussigné(e), \\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \TextField[width=14cm,borderwidth=0pt]{Demeurant :} \\ \vspace{5mm} déclare sur l&amp;#39;honneur héberger à mon domicile,\\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M.</description>
+    </item>
+    <item>
+      <title>Ressources pour Latex</title>
+      <link>http://localhost:1313/posts/2023/07/latex_liens/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/07/latex_liens/</guid>
+      <description>Une liste de ressources Latex pour apprendre et comprendre&#xA;Francais https://zestedesavoir.com/bibliotheque/?tag=latex&#xA;https://www.learnlatex.org/fr/&#xA;https://fr.wikibooks.org/wiki/LaTeX&#xA;https://framalibre.org/tags/latex&#xA;https://www.gutenberg-asso.fr/&#xA;Anglais https://www.overleaf.com/&#xA;https://www.latex-project.org/&#xA;https://www.ctan.org/&#xA;https://github.com/egeerardyn/awesome-LaTeX</description>
+    </item>
+    <item>
+      <title>Afficher Latex dans Hugo</title>
+      <link>http://localhost:1313/posts/2023/06/hugo_shortcode_latex/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo_shortcode_latex/</guid>
+      <description>Le shortcode Fichier latex.html à deposer /themes/VOTRETHEME/layouts/shortcodes&#xA;&amp;lt;script type=&amp;#34;module&amp;#34;&amp;gt; import { LaTeXJSComponent } from &amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs&amp;#34; customElements.define(&amp;#34;latex-js&amp;#34;, LaTeXJSComponent) &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; latex-js { display: inline-block; width: 70%; border: 1px solid black; margin-right: 2em; padding-bottom: 2em; } &amp;lt;/style&amp;gt; &amp;lt;latex-js baseURL=&amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/&amp;#34;&amp;gt; {{ .Inner }} &amp;lt;/latex-js&amp;gt; {{ .Inner }} permet d&amp;rsquo;inserer tous ce qu&amp;rsquo;il se trouve entre les balises.&#xA;Utilisation {{&amp;lt; latex &amp;gt;}} \documentclass{article} \usepackage[latin1]{inputenc} \usepackage{hyperref} \author{Christophe} \date{2023} \title{Un exemple} \usepackage[francais]{babel} \begin{document} \maketitle \section{Début} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    <item>
+      <title>Lettre sous latex</title>
+      <link>http://localhost:1313/posts/2023/03/latex-une_lettre/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/latex-une_lettre/</guid>
+      <description>Utilisation de la classe lettre avec LaTex.&#xA;J’ai commenté le code pour plus de clarté.&#xA;Petit rajout du tampon fait dans cet article Tampon encreur sous Gimp&#xA;En cas d’erreur babel:&#xA;sudo apt-get install texlive-lang-french Le code \documentclass[12pt]{lettre} %12p taille lettres (10 et 11 possible), déclaration classe lettre \usepackage[utf8]{inputenc} % Encodage \usepackage[T1]{fontenc} % Les mots accentués \usepackage{lmodern} % Type de police \usepackage{eurosym} % Pouvoir écrire le symbole &amp;#34;€&amp;#34; \usepackage[french]{babel} % Utilisation du français \usepackage{numprint} % Séparateur décimal \usepackage{graphicx} % Pour inclure des images \begin{document} \begin{letter}{Service des râleurs\\66, rue du train\\13200 Arles} % Destinataire \basdepage{\pagetotalname{1}} \name{Prénom nom} \signature{Nom Prénom \includegraphics[width=75px, angle=-45]{tampon.</description>
+    </item>
+    <item>
+      <title>La Signalisation SNCF avec Latex</title>
+      <link>http://localhost:1313/posts/2023/03/signaux_sncf/</link>
+      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/signaux_sncf/</guid>
+      <description>Pour jouer avec tikz qui permet de générer des images, j’ai fait des signaux SNCF.&#xA;C’est perfectible aux niveaux des couleurs et des formes mais ca rend bien. Un cheminot Nicolas Wurtz a fait aussi ce travail mais sous une autre forme, son dépôt git Un autre projet ici à base de gif.&#xA;Mes sources latex Fichier pdf&#xA;Fichier Latex&#xA;Voir sur overleaf Lien https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France</description>
+    </item>
+  </channel>
+</rss>

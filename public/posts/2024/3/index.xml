@@ -1,6 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mars 2024 on Schrek.fr</title><link>https://schrek.fr/posts/2024/3/</link><description>Recent content in Mars 2024 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/posts/2024/3/index.xml" rel="self" type="application/rss+xml"/><item><title>Gestionnaire de fichier Caja</title><link>https://schrek.fr/posts/2024/3/caja/</link><pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/3/caja/</guid><description>Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.
-Script Je voulais ajouter des possibilités de click droit via des scripts.
-C’est assez simple, il suffit de placer une exécutable dans le dossier ./config/caja/script de votre répertoire /home.
-Variables Quelques variables pour utiliser les scripts.
-*$@* Fichiers sélectionnés *$PWD* Répertoire courant *$CAJA_SCRIPT_SELECTED_FILE_PATHS* Chemin des fichiers sélectionnés. *$CAJA_SCRIPT_SELECTED_URI* URI des fichiers sélectionnés, pour les fichiers distants. *$CAJA_SCRIPT_CURRENT_URI* URI du dossier depuis lequel le script est lancé.</description></item><item><title>Outsphere - Guy-Roger Duvert</title><link>https://schrek.fr/posts/2024/3/outsphere/</link><pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/3/outsphere/</guid><description>L&amp;rsquo;histoire d&amp;rsquo;une colonisation qui ne se passe pas très bien. Une planète pas très accueillante, des animaux pas des plus sympathiques.
-pochette Résumé Après avoir quitté une Terre mise à mal par les échecs de nos sociétés, l&amp;rsquo;Arche, premier vaisseau à coloniser une exo planète, arrive au bout d&amp;rsquo;un long voyage de 80 ans. Ce nouveau monde baptisé Eden est synonyme de nouvelle chance pour l&amp;rsquo;humanité. Mais cette planète recèle également de nombreuses surprises.</description></item><item><title>Commentaires dans Hugo</title><link>https://schrek.fr/posts/2024/3/commentaires/</link><pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/3/commentaires/</guid><description>&lt;p>Le systeme de commentaires &lt;a href="https://cactus.chat/docs/integrations/hugo/">Cactus&lt;/a> ne me satisfait plus, j&amp;rsquo;ai décidé de tester &lt;a href="https://disqus.com/">Disqus&lt;/a>.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mars 2024 on Schrek.fr</title>
+    <link>http://localhost:1313/posts/2024/3/</link>
+    <description>Recent content in Mars 2024 on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/2024/3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gestionnaire de fichier Caja</title>
+      <link>http://localhost:1313/posts/2024/3/caja/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/3/caja/</guid>
+      <description>Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.&#xA;Script Je voulais ajouter des possibilités de click droit via des scripts.&#xA;C’est assez simple, il suffit de placer une exécutable dans le dossier ./config/caja/script de votre répertoire /home.&#xA;Variables Quelques variables pour utiliser les scripts.&#xA;*$@* Fichiers sélectionnés *$PWD* Répertoire courant *$CAJA_SCRIPT_SELECTED_FILE_PATHS* Chemin des fichiers sélectionnés. *$CAJA_SCRIPT_SELECTED_URI* URI des fichiers sélectionnés, pour les fichiers distants. *$CAJA_SCRIPT_CURRENT_URI* URI du dossier depuis lequel le script est lancé.</description>
+    </item>
+    <item>
+      <title>Outsphere - Guy-Roger Duvert</title>
+      <link>http://localhost:1313/posts/2024/3/outsphere/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/3/outsphere/</guid>
+      <description>L&amp;rsquo;histoire d&amp;rsquo;une colonisation qui ne se passe pas très bien. Une planète pas très accueillante, des animaux pas des plus sympathiques.&#xA;pochette Résumé Après avoir quitté une Terre mise à mal par les échecs de nos sociétés, l&amp;rsquo;Arche, premier vaisseau à coloniser une exo planète, arrive au bout d&amp;rsquo;un long voyage de 80 ans. Ce nouveau monde baptisé Eden est synonyme de nouvelle chance pour l&amp;rsquo;humanité. Mais cette planète recèle également de nombreuses surprises.</description>
+    </item>
+    <item>
+      <title>Commentaires dans Hugo</title>
+      <link>http://localhost:1313/posts/2024/3/commentaires/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/3/commentaires/</guid>
+      <description>&lt;p&gt;Le systeme de commentaires &lt;a href=&#34;https://cactus.chat/docs/integrations/hugo/&#34;&gt;Cactus&lt;/a&gt; ne me satisfait plus, j&amp;rsquo;ai décidé de tester &lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

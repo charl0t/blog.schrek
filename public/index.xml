@@ -1,261 +1,803 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Schrek.fr</title><link>https://schrek.fr/</link><description>Recent content on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Fri, 10 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/index.xml" rel="self" type="application/rss+xml"/><item><title>Pandas, importer un fichier csv</title><link>https://schrek.fr/posts/2024/5/pandas_import/</link><pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas_import/</guid><description>J’avais besoin de traiter des fichiers CSV pour en extraire des données. J’ai commencé à faire cela avec un tableur, mais comme je suis feignant,je voulais automatiser tout cela.
-Le csv Je dois:
-Importer le fichier CSV Nettoyer des données inutiles Mettre en forme des colonnes Extraire des données Au travail. Pour faire tous ça je vais utiliser le langage Python avec la bibliothèque Pandas
-#!/usr/bin/python import pandas as pd df = pd.</description></item><item><title>Pandas et les series</title><link>https://schrek.fr/posts/2024/5/pandas_serie/</link><pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas_serie/</guid><description>Les &amp;ldquo;séries&amp;rdquo; sur pandas se réfèrent à des objets de données unidimensionnels dans la bibliothèque Python pandas.
-Ils sont similaires aux tableaux unidimensionnels en Python (comme les listes ou les tableaux NumPy), mais avec des fonctionnalités supplémentaires.
-Les séries pandas sont indexées, ce qui signifie que chaque élément a une étiquette ou un identifiant associé, et elles peuvent contenir différents types de données, comme des entiers, des flottants, des chaînes, etc.</description></item><item><title>Pandas et les structures</title><link>https://schrek.fr/posts/2024/5/pandas_structures/</link><pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas_structures/</guid><description>La bibliothèque Pandas fournit deux structures de données principales pour manipuler des données structurées : les séries et les dataframes.
-Les séries Une série est un tableau unidimensionnel de données homogènes, indexé par des étiquettes. Les étiquettes peuvent être de n&amp;rsquo;importe quel type (chaînes de caractères, entiers, dates, etc.), ce qui permet de manipuler des données de manière flexible. Les séries peuvent être créées à partir de listes, de tableaux NumPy, de dictionnaires ou d&amp;rsquo;autres structures de données.</description></item><item><title>Les pirates de dieu - François-Henri Souli</title><link>https://schrek.fr/posts/2024/5/pirates/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pirates/</guid><description>Les Pirates de Dieu est un livre écrit par François-Henri Souli. Il s&amp;rsquo;agit d&amp;rsquo;un roman historique qui se déroule à Byzance au IVe siècle. L&amp;rsquo;histoire tourne autour de l&amp;rsquo;empereur Constantinus qui tente d&amp;rsquo;imposer le christianisme à son peuple et qui voit les pirates comme une menace personnelle. Le livre met en scène des personnages tels que Aurelius, le conseiller de l&amp;rsquo;empereur, et deux jeunes pirates, Kyros et Galeo, animés par une sombre vengeance .</description></item><item><title>Pandas</title><link>https://schrek.fr/posts/2024/5/pandas/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas/</guid><description>La bibliothèque Pandas est une bibliothèque open-source pour la manipulation et l&amp;rsquo;analyse de données en Python. Elle fournit des structures de données hautes performances et flexibles pour manipuler des données structurées, telles que des tableaux et des séries temporelles.
-Les principales fonctionnalités de Pandas comprennent la lecture et l&amp;rsquo;écriture de données à partir de divers formats de fichiers, la manipulation et le nettoyage de données, la fusion et la jointure de données, l&amp;rsquo;agrégation et le regroupement de données, ainsi que la visualisation de données.</description></item><item><title>Outresable - Hugh Howey</title><link>https://schrek.fr/posts/2024/4/outresable/</link><pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/4/outresable/</guid><description>Outresable est le premier volume de la série Sable d&amp;rsquo;Hugh Howey. J&amp;rsquo;ai adoré le coté plongeurs des sables, j&amp;rsquo;attend la suite avec impatience.
-Outresable, Actes Sud, coll. « Exofictions », 2019 Outredune, Actes Sud, coll. « Exofictions », 2023 J&amp;rsquo;ai adoré le concept de nage dans le sable.
-Sable Résumé Depuis des siècles le sable a englouti le monde. Un autre s’est créé tant bien que mal parmi les dunes mouvantes, et les plongeurs des sables descendent à de grandes profondeurs pour remonter les trésors enfouis dont le troc permet la survie de tous à la surface.</description></item><item><title>Gestionnaire de fichier Caja</title><link>https://schrek.fr/posts/2024/3/caja/</link><pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/3/caja/</guid><description>Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.
-Script Je voulais ajouter des possibilités de click droit via des scripts.
-C’est assez simple, il suffit de placer une exécutable dans le dossier ./config/caja/script de votre répertoire /home.
-Variables Quelques variables pour utiliser les scripts.
-*$@* Fichiers sélectionnés *$PWD* Répertoire courant *$CAJA_SCRIPT_SELECTED_FILE_PATHS* Chemin des fichiers sélectionnés. *$CAJA_SCRIPT_SELECTED_URI* URI des fichiers sélectionnés, pour les fichiers distants. *$CAJA_SCRIPT_CURRENT_URI* URI du dossier depuis lequel le script est lancé.</description></item><item><title>Outsphere - Guy-Roger Duvert</title><link>https://schrek.fr/posts/2024/3/outsphere/</link><pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/3/outsphere/</guid><description>L&amp;rsquo;histoire d&amp;rsquo;une colonisation qui ne se passe pas très bien. Une planète pas très accueillante, des animaux pas des plus sympathiques.
-pochette Résumé Après avoir quitté une Terre mise à mal par les échecs de nos sociétés, l&amp;rsquo;Arche, premier vaisseau à coloniser une exo planète, arrive au bout d&amp;rsquo;un long voyage de 80 ans. Ce nouveau monde baptisé Eden est synonyme de nouvelle chance pour l&amp;rsquo;humanité. Mais cette planète recèle également de nombreuses surprises.</description></item><item><title>Commentaires dans Hugo</title><link>https://schrek.fr/posts/2024/3/commentaires/</link><pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/3/commentaires/</guid><description>&lt;p>Le systeme de commentaires &lt;a href="https://cactus.chat/docs/integrations/hugo/">Cactus&lt;/a> ne me satisfait plus, j&amp;rsquo;ai décidé de tester &lt;a href="https://disqus.com/">Disqus&lt;/a>.&lt;/p></description></item><item><title>Ce qui naît des abysses - Sylvie Poulain</title><link>https://schrek.fr/posts/2024/2/abysse/</link><pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/2/abysse/</guid><description>2 livres (Ce qui naît des abysses et Ce qui reste après les tempêtes) qui nous plongent dans un monde post-apocalyptique sous la mer.
-Résumé XXIVe siècle. Après l&amp;rsquo;emballement climatique et l&amp;rsquo;effondrement de la civilisation terrestre, les rescapés tentent de se réinventer sous l&amp;rsquo;eau au sein de cités sous-marines interdépendantes. Hélas, les vieilles tares de l&amp;rsquo;humanité ont plongé avec elle&amp;hellip; En Atlantique Nord, la belliqueuse Atlantis flirte avec les limites de son mandat de protection, poussée par l&amp;rsquo;IA qui la dirige, tandis que les cargos sous-marins de la Hanse participent à de dangereux jeux d&amp;rsquo;influence.</description></item><item><title>Mathématique dans Hugo</title><link>https://schrek.fr/posts/2024/2/katex/</link><pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/2/katex/</guid><description>&lt;p>Dans la version &lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.122.0">v0.122.0&lt;/a>, on peut facilement ajouter le support des formules mathématiques façon &lt;em>LaTex&lt;/em>. Ce tutoriel est juste une retranscription de cette &lt;a href="https://gohugo.io/content-management/mathematics/">page&lt;/a>.&lt;/p>
-$$E=mc^2$$</description></item><item><title>L'ère de la supernova - Liu Cixin</title><link>https://schrek.fr/posts/2024/1/supernova/</link><pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/1/supernova/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2024/1/supernova/th.webp" width="200px">
-&lt;/figure>
-
-&lt;p>Encore un bon livre de Lui Cixien, qui nous envoie dans un monde qui va se renouveler.&lt;/p></description></item><item><title>Installation de Portainer sur Rasp5</title><link>https://schrek.fr/posts/2024/1/portainer/</link><pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/1/portainer/</guid><description>&lt;h2 id="portainer">Portainer&lt;/h2>
-&lt;p>C&amp;rsquo;est une application web qui permet de gérer docker via son navigateur.&lt;/p></description></item><item><title>Docker avec un RaspberryPi 5</title><link>https://schrek.fr/posts/2024/1/docker/</link><pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/1/docker/</guid><description>&lt;h2 id="docker">Docker:&lt;/h2>
-&lt;p>Docker est une plateforme permettant de lancer certaines &lt;a href="https://fr.wikipedia.org/wiki/Application_(informatique)">applications&lt;/a> dans des conteneurs. C&amp;rsquo;est différent des machines virtuels et ca utilise moins de ressource.&lt;/p></description></item><item><title>Raspberrypi 5</title><link>https://schrek.fr/posts/2023/12/rasp5/</link><pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/12/rasp5/</guid><description>Papa Noel m&amp;rsquo;a fait un beau cadeau, un raspberry pi 5. Un belle article sur Framboise314.
-Liens https://fr.wikipedia.org/wiki/Raspberry_Pi</description></item><item><title>MQTT</title><link>https://schrek.fr/posts/2023/10/mqtt/</link><pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/10/mqtt/</guid><description>Créé par Andy Stanford-Clark et Arlen Nipper en 1999, MQTT est un protocole de messagerie qui permet aux objets connectés d’échanger les informations en toutes sécurité et avec une faible bande passante.
-Les termes utilisés Broker: c&amp;rsquo;est le programme qui centralise les informations, il reçoit et envoie des messages comme la température d&amp;rsquo;un capteur. Le broker de référence sous Linux s’appelle Mosquitto. Publish: c&amp;rsquo;est l&amp;rsquo;action d&amp;rsquo;envoyer l&amp;rsquo;information du capteur vers le Broker( programme).</description></item><item><title>Un ecran oled pour Esp32</title><link>https://schrek.fr/posts/2023/10/esp32-et-un-ecran-oled/</link><pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/10/esp32-et-un-ecran-oled/</guid><description>On va utiliser un petit ecran OLED a tous petit prix et au doux nom de SSD1306, il a une diagonale de 0,96&amp;quot;, mais il est très lisible. L&amp;rsquo;écran est composé de 128x64 pixels OLED bleu sur fond noir (on peut choisir d&amp;rsquo;autres couleurs).
-Le contrôleur SSD1306 permet de dialoguer en I2C ou en SPI. L&amp;rsquo;afficheur dispose de son propre régulateur 3,3V (compatible 5V et 3,3V).
-Branchements ESP32 SSD1306 Description 3.</description></item><item><title>Communiquer avec l'Esp32</title><link>https://schrek.fr/posts/2023/10/communiquer-avec-esp32/</link><pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/10/communiquer-avec-esp32/</guid><description>Apres avoir installer Micropython sur notre Esp32, il va falloir communiquer avec.
-Recevoir les informations, envoyer des fichiers pour le configurer.
-Pour cela nous allons utiliser un environnement de développement ou IDE en anglais.
-J&amp;rsquo;ai choisi Thonny
-Installation de Thonny $ bash &amp;lt;(curl -s https://thonny.org/installer-for-linux) Configuration Mon premier code # import bibliotheque time et pin import time from machine import Pin print(&amp;#34;Bonjour ESP32&amp;#34;) # on defini le pin 2 en sortie (led) p2 = Pin(2,Pin.</description></item><item><title>Tasmota</title><link>https://schrek.fr/posts/2023/10/tasmota/</link><pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/10/tasmota/</guid><description>Tasmota est un firmware OpenSource pour des appareils basé sur des ESP8266. Il va permetre de faire communiquer facilement vos projets domotiques.
-Installation Il existe plusieurs façon de flasher, on va choisir la plus simple.
-On va prendre un simple Wemos d1 mini pour l&amp;rsquo;exemple.
-Il faut brancher en Usb sur le pc et on ouvre la page https://tasmota.github.io/install/
-Il faut utiliser Chrome comme navigateur pour etablir la liaison.
-Choisir ESP8266 et Fr</description></item><item><title>La griffe du chien - Don Winslow</title><link>https://schrek.fr/posts/2023/09/la-griffe-du-chien/</link><pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/la-griffe-du-chien/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/09/la-griffe-du-chien/chien.webp" width="200px">
-&lt;/figure>
-
-&lt;p>Si vous avez aimé &lt;a href="https://fr.wikipedia.org/wiki/Narcos">Narcos&lt;/a>, vous allez adorer cette serie de livre.&lt;/p>
-&lt;p>C&amp;rsquo;est le 1er tome de la serie Art Keller.&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://fr.wikipedia.org/wiki/La_Griffe_du_chien">La griffe du chien&lt;/a> (2005)&lt;/li>
-&lt;li>&lt;a href="https://fr.wikipedia.org/wiki/Cartel_(roman)">Cartel&lt;/a> (2015)&lt;/li>
-&lt;li>&lt;a href="https://fr.wikipedia.org/wiki/La_Fronti%C3%A8re_(roman)">La Frontière&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Hugo et Pwa</title><link>https://schrek.fr/posts/2023/09/hugo-pwa/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/hugo-pwa/</guid><description>&lt;p>Le PWA (Progressive Web App) permet de faire ressembler un site a une application.&lt;/p></description></item><item><title>Les icones dans Latex</title><link>https://schrek.fr/posts/2023/09/latex-icones/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/latex-icones/</guid><description>Téléchargement the-comprehensive-latex-symbol-list.pdf Liens https://la-bibliotex.fr/2019/02/10/des-icones-a-infini-dans-latex/
-https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
-https://ctan.org/topic/font-symbol
-https://ctan.org/pkg/simpleicons</description></item><item><title>Publipostage avec Koma-Script</title><link>https://schrek.fr/posts/2023/09/latex-publipostage/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/latex-publipostage/</guid><description>&lt;p>On veut réaliser du publipostage, envoyer la même lettre à plusieurs destinataires.&lt;/p>
-&lt;p>Avec notre modèle de lettre déjà fait, on va y ajouter un carnet d&amp;rsquo;adresse, et générer plusieurs lettres.&lt;/p></description></item><item><title>Une lettre avec Koma-Script</title><link>https://schrek.fr/posts/2023/09/koma-script/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/koma-script/</guid><description>&lt;p>Création d&amp;rsquo;un modèle de lettre aux standards français a l&amp;rsquo;aide du module &lt;a href="https://www.ctan.org/pkg/scrlttr2">&lt;em>scrlttr2&lt;/em>&lt;/a> de Koma-script.&lt;/p></description></item><item><title>Convertir de Markdown vers Pdf</title><link>https://schrek.fr/posts/2023/09/markdown-to-latex/</link><pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/markdown-to-latex/</guid><description>&lt;p>&lt;a href="https://pandoc.org/">Pandoc&lt;/a> est un super outils de convertion, On va convertir un fichier Markdown en Pdf, en passant par Latex.&lt;/p></description></item><item><title>Decouverte de l'Esp32</title><link>https://schrek.fr/posts/2023/09/esp32/</link><pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/esp32/</guid><description>&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/ESP32">Esp32&lt;/a> est un microcontrôleur qui va nous permettre de faire des objets connectés grâce a son module Wifi et Bluetooth intégré.
-Il dispose de plusieurs sorties et entrées pour connecter par exemple des capteurs ou des LED.&lt;/p>
-&lt;p>On va utiliser &lt;a href="https://fr.wikipedia.org/wiki/MicroPython">Micropython&lt;/a> pour assurer la programmation.&lt;/p></description></item><item><title>Latex de la couleur dans vos codes</title><link>https://schrek.fr/posts/2023/09/latex-et-les-codes/</link><pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/latex-et-les-codes/</guid><description>&lt;p>Le module &lt;a href="https://ctan.org/pkg/minted">&lt;em>minted&lt;/em>&lt;/a> permet de coloriser vos codes.&lt;/p>
-&lt;p>Minted utilise &lt;a href="https://pygments.org/languages/">Pygments&lt;/a> pour ajouter de la couleurs, vous trouverez la liste des codes supportés sur le site.&lt;/p>
-&lt;p>Il y a aussi différents &lt;a href="https://pygments.org/styles/">styles&lt;/a>&lt;/p></description></item><item><title>The Gray Man - Mark Greaney</title><link>https://schrek.fr/posts/2023/08/the-grey-man/</link><pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/the-grey-man/</guid><description>Un livre de Mark Greaney, l&amp;rsquo;histoire d&amp;rsquo;un super tueur à gage avec des valeurs.
-Résumé Plus connu sous le pseudonyme de &amp;quot; Gray Man &amp;ldquo;, ce tueur à gages est devenu légendaire pour sa discrétion et son efficacité, il parvient toujours à abattre sa cible avant de disparaître. Jusqu&amp;rsquo;à ce que sa tête soit mise à prix. Coauteur avec Tom Clancy des aventures de Jack Ryan, Mark Greaney signe un thriller dont l&amp;rsquo;adaptation est diffusée sur Netflix en 2022.</description></item><item><title>Latex et les liens</title><link>https://schrek.fr/posts/2023/08/latex-et-les-liens/</link><pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/latex-et-les-liens/</guid><description>Le module hyperref permet de créer des liens externes et interne sur un PDF.
-On peut changer les couleurs et ajouter des métadonnées
-Son utilisation est facile.
-Utilisation Pour un lien simple: \url{https://wikipedia.fr}
-Pour un un liens dans le texte: \href{https://wikipedia.fr}{Wikipedia.fr} Pour un email: \href{mailto:madame@michu.fr}{madame@michu.fr}
-Pour un document (Attention au chemin): \href{run:./xcolor.pdf}{Voir ce PDF}
-Les exemples \documentclass[a4paper,10pt]{scrartcl} % koma-script \usepackage{graphicx} % Module images \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[T1]{fontenc} \usepackage{parskip} \usepackage[french]{babel} % En francais \usepackage{hyperref} % Module hyperref \hypersetup{colorlinks=true, linkcolor=blue, % Couleurs des liens filecolor=magenta, % Couleur des liens de fichier urlcolor=cyan,% Couleur des Urls pdftitle={Hyperref},% Meta titre pdfauthor={Christophe},% Meta auteur pdfsubject={Les liens avec Latex},% Meta sujet pdfkeywords={Latex,Hyperref},% Meta mots clefs pdfproducer = Latex}% Meta generateur du pdf \urlstyle{same} % Meme police pour les urls \title{Hyperref} \author{Christophe } \date{Juin 2023} \begin{document} \maketitle \section*{Liens simples} \href{https://wikipedia.</description></item><item><title>Latex et xcolor</title><link>https://schrek.fr/posts/2023/08/latex-et-xcolor/</link><pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/latex-et-xcolor/</guid><description>Le paquetage xcolor fait partie des indispensables de Latex pour coloriser les textes.
-Préambule On appelle les couleurs de base de xcolor,
-\usepackage{xcolor} % import des couleurs dans les textes Il y a aussi d&amp;rsquo;autres palettes de couleurs:
-dvipsnames: 68 couleurs (CMYK); svgnames: 151 couleurs (RGB); x11names: 317 couleurs (RGB). \usepackage[dvipsnames]{xcolor} % import des couleurs dans les textes Tous est bien indiqué dans la documentation (page 39).
-Personnalisation des couleurs On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.</description></item><item><title>Shortcode bouton</title><link>https://schrek.fr/posts/2023/08/hugo-shortcode-bouton/</link><pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/hugo-shortcode-bouton/</guid><description>J&amp;rsquo;avais besoin d&amp;quot;un bouton pour ouvrir des liens.
-Le shortcode A déposer dans /themes/VOTRETHEME/layouts/shortcodes/bouton.html.
-On peut personaliser l&amp;rsquo;icône grace a Uikit
-{{ $url := .Get &amp;#34;url&amp;#34; }} {{ $titre := .Get &amp;#34;titre&amp;#34; }} {{ $icone := .Get &amp;#34;icone&amp;#34; | default &amp;#34;link&amp;#34;}} &amp;lt;a class=&amp;#34;uk-button uk-button-default uk-box-shadow-medium&amp;#34; target=&amp;#34;_blank&amp;#34; href=&amp;#34;{{ $url }}&amp;#34;&amp;gt;&amp;lt;span uk-icon=&amp;#34;icon: {{ $icone }}&amp;#34;&amp;gt;&amp;lt;/span&amp;gt; {{ $titre }}&amp;lt;/a&amp;gt; Exemples {{&amp;lt; bouton titre=&amp;#34;Voir sur overleaf&amp;#34; url=&amp;#34;https://www.overleaf.com/read/dgnpzyngzbqk&amp;#34; icone=&amp;#34;forward&amp;#34; &amp;gt;}} Voir sur overleaf {{&amp;lt; bouton titre=&amp;#34;Uikit&amp;#34; url=&amp;#34;https://getuikit.</description></item><item><title>Latex, PDF éditable</title><link>https://schrek.fr/posts/2023/08/latex-pdf-editable/</link><pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/latex-pdf-editable/</guid><description>Avec la classe hyperref, on peut facilement créer des documents PDF éditable.
-J&amp;rsquo;ai fait un petit exemple avec un attestation d&amp;rsquo;hébergement.
-La documentation est bien faite.
-Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[french]{babel} \usepackage[default]{lato} \usepackage{xcolor} \usepackage{hyperref} \hypersetup{ colorlinks=true, linkcolor=black, } \usepackage{fancyhdr} \pagestyle{empty} \setlength\parindent{0pt} \begin{document} \begin{Form} \begin{center} \textbf{\uppercase{ATTESTATION D&amp;#39;HÉBERGEMENT}} \\ \end{center} \vspace{5mm} Je soussigné(e), \\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \TextField[width=14cm,borderwidth=0pt]{Demeurant :} \\ \vspace{5mm} déclare sur l&amp;#39;honneur héberger à mon domicile,\\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M.</description></item><item><title>La Griffe du chien - Don Winslow</title><link>https://schrek.fr/posts/2023/08/la-griffe-du-chien/</link><pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/la-griffe-du-chien/</guid><description>Don Winslow retraçe un demi-siècle de lutte contre la drogue aux Etats-Unis et au Mexique.
-3 gros pavets que l&amp;rsquo;on devore facilement. Les personnages s&amp;rsquo;entrecroisent, on append beaucoup sur les dessous du trafics de drogue.
-Serie Art Keller Résumé Seigneur de la frontière américano-mexicaine, Art Keller, agent de la DEA, l’a juré sur la tombe de son adjoint : il emploiera tous les moyens, légaux ou illégaux, pour mettre un terme au trafic qui inonde son pays.</description></item><item><title>Nuage de tags</title><link>https://schrek.fr/posts/2023/08/hugo-et-nuages-de-tags/</link><pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/hugo-et-nuages-de-tags/</guid><description>&lt;p>Dans la barre des menus, j&amp;rsquo;avais trop de tags cela devenait pas trop lisible.&lt;/p>
-&lt;p>J&amp;rsquo;ai choisi de déporter les tags dans une page et d&amp;rsquo;utiliser que du CSS pour le visuel.&lt;/p>
-&lt;p>Il y a la possibilité de bibliothèques JavaScript mais je veux rester &lt;em>light&lt;/em>.&lt;/p></description></item><item><title>Hugo et les liens</title><link>https://schrek.fr/posts/2023/08/hugo-et-les-liens/</link><pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/hugo-et-les-liens/</guid><description>Liens externes En markdown c&amp;rsquo;est facile, mais ça ne gère pas &amp;ldquo;ouvrir dans un nouveau onglet&amp;rdquo;: [wikipedia](https://fr.wikipedia.org/) Wikipedia
-On pourrait aussi utiliser le shortcode rawhtml.
-{{&amp;lt; rawhtml &amp;gt;}} &amp;lt;a href=&amp;#34;https://fr.wikipedia.org/&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;Wikipedia&amp;lt;/a&amp;gt; {{&amp;lt; /rawhtml &amp;gt;}} target=&amp;quot;_blank&amp;quot; &amp;ndash;&amp;gt; nouvelle onglet
-Wikipedia Liens internes Organisation du site: ├── 2023 │ ├── 02 │ │ ├── Diceware │ │ │ ├── diceware.png-369a6.webp │ │ │ ├── index.md │ │ │ └── one-red-dice-01-a9bf3.webp │ │ ├── Ebook-avec-Latex │ │ │ ├── epub.</description></item><item><title>Hugo et les galeries</title><link>https://schrek.fr/posts/2023/07/hugo_galerie/</link><pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/07/hugo_galerie/</guid><description>Une petite galerie toute simple, qui utilise Uikit et lightbox.
-Dans le dossier de l&amp;rsquo;article, il faut créer un dossier images/ pour y deposer les images.
-Hugo va directement chercher les images.
-Il faut installer la version extended (exemple:hugo_extended_0.123.7_linux-arm64.deb)
-Galerie Shortcode &amp;lt;!-- Options: titre -&amp;gt; Nom de la galerie animation -&amp;gt; Type de transition slide,fade,scale (des exemples sur Uikit:https://getuikit.com/docs/lightbox#animations) Exemples: galerie titre=&amp;#34;super galerie&amp;#34; animation=&amp;#34;scale&amp;#34; --&amp;gt; {{ $titre := .Get &amp;#34;titre&amp;#34;| default &amp;#34;Galerie&amp;#34; }} {{ $animation := .</description></item><item><title>Hugo minification</title><link>https://schrek.fr/posts/2023/07/hugo-minify/</link><pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/07/hugo-minify/</guid><description>Hugo est rapide, mais on peut améliorer le chargement des ressources.
-Les images Il faut utiliser des formats modernes comme webp et avoir un bon redimensionnement. J&amp;rsquo;utilise Gimps pour changer la taille et le format.
-Sinon en ligne de commande:
-$ cwebp -q 90 minifycss.png -o minifycss.webp Les CSS Les fichiers CSS sont placés directement dans /themes/VOTRETHEME/assets/css.
-Dans mon partials/head.html, j ai:
-{{ $css := resources.Get &amp;#34;css/uikit.min.css&amp;#34; | minify | resources.</description></item><item><title>Ressources pour Latex</title><link>https://schrek.fr/posts/2023/07/latex_liens/</link><pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/07/latex_liens/</guid><description>Une liste de ressources Latex pour apprendre et comprendre
-Francais https://zestedesavoir.com/bibliotheque/?tag=latex
-https://www.learnlatex.org/fr/
-https://fr.wikibooks.org/wiki/LaTeX
-https://framalibre.org/tags/latex
-https://www.gutenberg-asso.fr/
-Anglais https://www.overleaf.com/
-https://www.latex-project.org/
-https://www.ctan.org/
-https://github.com/egeerardyn/awesome-LaTeX</description></item><item><title>Shortcode les fichiers</title><link>https://schrek.fr/posts/2023/07/fichier/</link><pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/07/fichier/</guid><description>Ce shortcode liste les fichiers dans une dossier pour permettre leurs téléchargements.
-Dans le dossier de l&amp;rsquo;article, il faut creer un dossier files/ pour y deposer les fichiers.
-Attention, le shortcode ne marche pas si il y a des espaces dans le nom du dossier de l&amp;rsquo;article
-&amp;lt;&amp;ndash;more&amp;ndash;&amp;gt;
-Le shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier pj.html
-pj.html {{ $_hugo_config := `{ &amp;#34;version&amp;#34;: 1 }` -}} &amp;lt;div class=&amp;#34;attachments-files uk-card uk-card-small uk-width-1-3@m uk-padding&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;attachments-files-titre&amp;#34;&amp;gt;Téléchargement &amp;lt;span uk-icon=&amp;#34;icon: cloud-download;ratio:2&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;#34;attachments-files&amp;#34;&amp;gt; {{- $filesName := &amp;#34;files&amp;#34; }} {{- if ne .</description></item><item><title>Hugo et les images</title><link>https://schrek.fr/posts/2023/07/hugo-lesimages/</link><pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/07/hugo-lesimages/</guid><description>Minimal {{&amp;lt; figure src=&amp;#34;image.webp&amp;#34; width=200px &amp;gt;}} Grande taille {{/*&amp;lt; figure src=&amp;#34;image.webp&amp;#34; title=&amp;#34;Anita Austvika&amp;#34; caption=&amp;#34;Photo de [Anita Austvika](https://unsplash.com/ko/@anitaaustvika) sur [Unsplash](https://unsplash.com/)&amp;#34; width=800px alt=&amp;#34;Anita Austvika&amp;#34; class=&amp;#34;imagecenter&amp;#34; attrlink=&amp;#34;https://unsplash.com/fr/photos/u9ZFCP8VuvU&amp;#34;*/&amp;gt;}} Anita AustvikaPhoto de Anita Austvika sur Unsplash Images centrée {{&amp;lt; figure src=&amp;#34;image.webp&amp;#34; title=&amp;#34;Anita Austvika&amp;#34; caption=&amp;#34;Photo de [Anita Austvika](https://unsplash.com/ko/@anitaaustvika) sur [Unsplash](https://unsplash.com/)&amp;#34; width=400px alt=&amp;#34;Anita Austvika&amp;#34; class=&amp;#34;imagecenter&amp;#34; &amp;gt;}} Anita AustvikaPhoto de Anita Austvika sur Unsplash
-Images à droite Anita AustvikaPhoto de Anita Austvika sur Unsplash
-&amp;quot; {{&amp;lt; figure src=&amp;#34;image.webp&amp;#34; title=&amp;#34;Anita Austvika&amp;#34; caption=&amp;#34;Photo de [Anita Austvika](https://unsplash.</description></item><item><title>Shortcode pour integrer le HTML</title><link>https://schrek.fr/posts/2023/07/hugo-shortcode-html/</link><pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/07/hugo-shortcode-html/</guid><description>On pourrait ecrire des milliers de shorcode pour integrer du html, mais il y a plus facile.
-Pour l&amp;rsquo;exemple, on va prendre des videos diffusé sur Peertube.fr
-Le code original &amp;lt;iframe title=&amp;#34;GoGoCarto - 1 - Personnalisation du site&amp;#34; src=&amp;#34;https://www.peertube.fr/videos/embed/54509567-9116-4264-ba86-6c2d20cd360b&amp;#34; allowfullscreen=&amp;#34;&amp;#34; sandbox=&amp;#34;allow-same-origin allow-scripts allow-popups&amp;#34; width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; frameborder=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;/iframe&amp;gt; Des idées sur l&amp;rsquo;iframe en mode Hugo ici.
-Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes, un fichier rawhtml.html. Avec seulement ca.</description></item><item><title>Shortcode Framapad</title><link>https://schrek.fr/posts/2023/07/hugo-shortcode-pad/</link><pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/07/hugo-shortcode-pad/</guid><description>Framapad Un « pad » est un éditeur de texte collaboratif en ligne géré par Framasoft.
-Le code original &amp;lt;iframe name=&amp;#34;embed_readwrite&amp;#34; src=&amp;#34;https://hebdo.framapad.org/p/fygijewtbk-a0wa?showControls=true&amp;amp;showChat=true&amp;amp;showLineNumbers=true&amp;amp;useMonospaceFont=false&amp;#34; width=&amp;#34;100%&amp;#34; height=&amp;#34;600&amp;#34; frameborder=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;/iframe&amp;gt; On peut utiliser l&amp;rsquo;import de l&amp;rsquo;iframe.
-Des idées sur l&amp;rsquo;iframe en mode Hugo ici.
-Sinon il y a les shortcodes.
-Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier pad.html {{ $PadName := .Get &amp;#34;PadName&amp;#34; }} {{ $showControls := .Get &amp;#34;showControls&amp;#34; | default &amp;#34;false&amp;#34; }} {{ $showChat := .</description></item><item><title>Shortcode Framacarte</title><link>https://schrek.fr/posts/2023/06/hugo_shortcode-umap/</link><pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo_shortcode-umap/</guid><description>Grace a Framasoft, on peut avoir un service pour créer des cartes personnalisées. Le service s&amp;rsquo;appuie sur Umap.
-Il existe un shortecode pour umap sur GIT, j&amp;rsquo;ai juste modifié l&amp;rsquo;URL dans le code.
-Framacarte Quand on a créer une carte (un super tuto sur cartocite.fr/) sur Framacarte, on aimerait l&amp;rsquo;afficher sur notre site.
-On peut utiliser l&amp;rsquo;import de l&amp;rsquo;iframe.
-On clique sur l&amp;rsquo;icône de partage On récupère le code. Le code original &amp;lt;iframe width=&amp;#34;100%&amp;#34; height=&amp;#34;300px&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen src=&amp;#34;https//framacarte.</description></item><item><title>La Faille - Franck Thilliez</title><link>https://schrek.fr/posts/2023/06/la-faille-franck-thilliez/</link><pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/la-faille-franck-thilliez/</guid><description>Encore un grand livre de Thilliez, une intrigue bien ficelée autour de Franck Sharko et son équipe.
-Chapitre aprés chapitre, la noirceur de l&amp;rsquo;humanité se révéle.
-A lire absolument.
-" Les forces du vent se matérialisent sur l’eau sous forme d’ondes, mais qu’elles ne dépendent pas de l’eau pour exister. "
-Franck Thilliez Résumé La frontière entre la vie et la mort est peut-être plus trouble qu&amp;rsquo;il n&amp;rsquo;y paraît&amp;hellip;</description></item><item><title>Les fantômes de Kiev-Cédric Bannel</title><link>https://schrek.fr/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/</link><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/</guid><description>Résumé La vengeance du maître du Kremlin se mange toujours glacée Punir la France de son soutien à l’Ukraine, telle est la mission assignée par Poutine à ses services de sécurité. Un plan démoniaque que la DGSE doit faire échouer. Mais que pèse son meilleur agent, le brillant « avocat international » Edgar Van Scana, face au rouleau compresseur des renseignements russes ? Surtout quand la moindre action est orchestrée par la générale Olga Ranevskaïa, cheffe des opérations noires du Kremlin.</description></item><item><title>Légende - David Gemmell</title><link>https://schrek.fr/posts/2023/06/l%C3%A9gende---david-gemmell/</link><pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/l%C3%A9gende---david-gemmell/</guid><description>Un roman de David Gemmell , le 1er volume publié du Cycle Drenaï.
-Résumé Druss est une légende. Ses exploits sont connus de tous. Surnommé le Capitaine à la Hache lors de ses plus grandes batailles, il aurait pu devenir riche en tant que mercenaire&amp;hellip; Au contraire, fuyant la célébrité, il a choisi de vivre retiré loin des hommes, perché au sommet d&amp;rsquo;une montagne glacée. Il a remisé son arme, vivant reclus, se contentant de la compagnie de quelques léopards des neiges.</description></item><item><title>Fury</title><link>https://schrek.fr/posts/2023/06/fury/</link><pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/fury/</guid><description>" Les idéaux sont Pacifiques l’histoire est Violente. "
-Brad Pitt, Fury Un trés bon film de guerre, avec des acteurs qui accompagne cette terrible histoire. Un mélange d&amp;rsquo;horreur de la guerre et d&amp;rsquo;humanité.
-Liens https://www.allocine.fr/film/fichefilm_gen_cfilm=218759.html
-https://fr.wikipedia.org/wiki/Fury_(film,_2014)
-https://www.senscritique.com/film/fury/8470273</description></item><item><title>Shortcode ChartJS</title><link>https://schrek.fr/posts/2023/06/hugo_shortcode_chartjs/</link><pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo_shortcode_chartjs/</guid><description>ChartJS est une bibliothèque JavaScript open source gratuite pour la visualisation de données (Wikipédia)
-Le shortcode J&amp;rsquo;ai trouvé le code ici.
-Il y a un problème sur le code (voir ici)
-src=&amp;ldquo;https://cdn.jsdelivr.net/npm/chart.js&amp;quot;
-A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.html {{ $w := default &amp;#34;100&amp;#34; (.Get 0) }} {{ $h := default &amp;#34;300&amp;#34; (.Get 1) }} {{ $r := ( .Inner | chomp) }} {{ $seed := &amp;#34;foo&amp;#34; }} {{ $id := delimit (shuffle (split (md5 $seed) &amp;#34;&amp;#34; )) &amp;#34;&amp;#34; }} &amp;lt;div style=&amp;#34;width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto&amp;#34;&amp;gt; &amp;lt;canvas id=&amp;#34;{{ $id }}&amp;#34;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.</description></item><item><title>Les cartographes - Peng Shepherd</title><link>https://schrek.fr/posts/2023/06/les-cartographes-peng-shepherd/</link><pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/les-cartographes-peng-shepherd/</guid><description>" Les cartes servent à rapprocher les gens. "
-Peng Shepherd Je me suis plongé dans cette histoire avec une intrigue sympa et du rythme autour des cartes mais qui tourne vite en rond, beaucoup de « blabla » sur la cartographie.
-Résumé Nell a perdu ses deux parents. Sa mère trente ans plus tôt, et maintenant son père, le Dr Young, un célèbre cartographe de la New York Public Library qui vient d’être retrouvé mort dans son bureau.</description></item><item><title>Shortcode Mermaid</title><link>https://schrek.fr/posts/2023/06/hugo_shortcode_mermaid/</link><pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo_shortcode_mermaid/</guid><description>On va integrer mermaid dans Hugo.
-Mermaid permet de générer des jolies diagrammes à partir de texte.
-Kroki est une alternative.
-Le code On va creer dans notre dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier mermaid.html
-&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt; {{ .Inner | safeHTML }} &amp;lt;/div&amp;gt; {{ if le (.Page.Scratch.Get &amp;#34;mermaidInserted&amp;#34;) 0 }} {{ .Page.Scratch.Add &amp;#34;mermaidInserted&amp;#34; 1 }} {{ $mermaid := resources.Get &amp;#34;js/mermaid.min.js&amp;#34; | minify | fingerprint }} &amp;lt;script type=&amp;#34;application/javascript&amp;#34; src=&amp;#34;{{ $mermaid.Permalink }}&amp;#34; defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;module&amp;#34;&amp;gt; mermaid.</description></item><item><title>Afficher Latex dans Hugo</title><link>https://schrek.fr/posts/2023/06/hugo_shortcode_latex/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo_shortcode_latex/</guid><description>Le shortcode Fichier latex.html à deposer /themes/VOTRETHEME/layouts/shortcodes
-&amp;lt;script type=&amp;#34;module&amp;#34;&amp;gt; import { LaTeXJSComponent } from &amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs&amp;#34; customElements.define(&amp;#34;latex-js&amp;#34;, LaTeXJSComponent) &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; latex-js { display: inline-block; width: 70%; border: 1px solid black; margin-right: 2em; padding-bottom: 2em; } &amp;lt;/style&amp;gt; &amp;lt;latex-js baseURL=&amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/&amp;#34;&amp;gt; {{ .Inner }} &amp;lt;/latex-js&amp;gt; {{ .Inner }} permet d&amp;rsquo;inserer tous ce qu&amp;rsquo;il se trouve entre les balises.
-Utilisation {{&amp;lt; latex &amp;gt;}} \documentclass{article} \usepackage[latin1]{inputenc} \usepackage{hyperref} \author{Christophe} \date{2023} \title{Un exemple} \usepackage[francais]{babel} \begin{document} \maketitle \section{Début} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description></item><item><title>Recherche dans Hugo</title><link>https://schrek.fr/posts/2023/06/hugo-recherche/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo-recherche/</guid><description>J&amp;rsquo;ai desactivé la recherche sur le site. Mais ça marche.
-Il me manquait la recherche sur Hugo, j&amp;rsquo;en est chié une histoire de Jquery.
-config.toml On va demander a Hugo de générer un fichier JSON, pour récupérer les données du site.
-[outputs] home = [ &amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;, &amp;#34;RSS&amp;#34;] Quand on lance Hugo, on a droit a une erreur.
-Change of config file detected, rebuilding site. 2023-05-02 11:39:09.348 +0200 WARN 2023/05/02 11:39:09 found no layout file for &amp;#34;JSON&amp;#34; for kind &amp;#34;home&amp;#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.</description></item><item><title>Jimmy Somerville-Smalltown Boy</title><link>https://schrek.fr/posts/2023/05/jimmy-somerville--smalltown-boy/</link><pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/jimmy-somerville--smalltown-boy/</guid><description>" Run away, turn away, run away, turn away, run away. Sauve-toi, détourne-toi, sauve-toi, détourne-toi, sauve-toi. "
-Liens https://fr.wikipedia.org/wiki/Smalltown_Boy
-https://fr.wikipedia.org/wiki/Bronski_Beat
-https://www.lacoccinelle.net/255473-bronski-beat-smalltown-boy.html</description></item><item><title>Shortcode Codepen</title><link>https://schrek.fr/posts/2023/05/hugo_shortcode_codepen/</link><pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/hugo_shortcode_codepen/</guid><description>On va creer notre shortcode pour le site Codepen, ca qui va nous permetre l&amp;rsquo;afficher dans Hugo.
-Le code Sur le site de Codepen, dans l&amp;rsquo;onglet embeb on va trouver le code Html pour l&amp;rsquo;integrer sur un site.
-&amp;lt;p class=&amp;#34;codepen&amp;#34; data-height=&amp;#34;300&amp;#34; data-theme-id=&amp;#34;light&amp;#34; data-default-tab=&amp;#34;html,result&amp;#34; data-slug-hash=&amp;#34;YzObPmg&amp;#34; data-user=&amp;#34;christ0phe&amp;#34; style=&amp;#34;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&amp;#34;&amp;gt; &amp;lt;span&amp;gt;See the Pen &amp;lt;a href=&amp;#34;https://codepen.io/christ0phe/pen/YzObPmg&amp;#34;&amp;gt; Purecss&amp;lt;/a&amp;gt; by christophe (&amp;lt;a href=&amp;#34;https://codepen.</description></item><item><title>Hugo et les commentaires</title><link>https://schrek.fr/posts/2023/05/hugo_les_commentaires/</link><pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/hugo_les_commentaires/</guid><description>Pas facile de choisir un systeme de commentaire pour Hugo, la facilitée c est Disqus avec un template interne.
-Cactus Mon choix c&amp;rsquo;est dirigé vers cactus.chat, déjà pour la doc qui est facile d&amp;rsquo;accés et pour Matrix qui utilise un protocole ouvert (Wikipedia).
-Installation C&amp;rsquo;est bien indiqué ici. The shortcode chat.html must be added to layouts/shortcodes/ and looks like this
-YOUR-SITE-NAME Bien changer cette variable avec le nom de votre site</description></item><item><title>Alias Emma - Ava Glass</title><link>https://schrek.fr/posts/2023/05/alias-emma---ava-glass/</link><pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/alias-emma---ava-glass/</guid><description>Un livre plein d&amp;rsquo;action, une histoire qui tient la route. On decouvre Londre a travers differents quartier et des lieux insolites.
-Résumé Agente surdouée du MI6 britannique, Emma Makepeace doit exfiltrer en catastrophe un jeune médecin russe qui travaille dans un hôpital de Londres. Michael Primalov ignore que cette inconnue de vingt-cinq ans a pour mission de le soustraire à une équipe d&amp;rsquo;assassins diligentée par Moscou.
-Les Russes ont envoyé leurs meilleurs agents et ils ont piraté les caméras de Londres, la capitale la plus surveillée du monde.</description></item><item><title>Cible une - Jack Mars</title><link>https://schrek.fr/posts/2023/05/cible-une---jack-mars/</link><pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/cible-une---jack-mars/</guid><description>Un livre d&amp;rsquo;aventure et d&amp;rsquo;espionnage sans surprise, un hero a &amp;ldquo;l&amp;rsquo;americaine&amp;rdquo; indestructible mais avec ces petites failles. Un 007 façon guerrier.
-Résumé Jacob Snow – soldat d’élite recruté par la CIA et hanté par son passé torturé – est l’un des meilleurs atouts de l’Agence, c’est pourquoi il est envoyé sur place lorsque les enjeux sont des plus élevés. Quand une ancienne relique égyptienne disparaît dans des circonstances mystérieuses, Jacob sait qu’il ne s’agit pas d’un vol ordinaire : la relique renferme un secret – un secret qui pourrait tout anéantir.</description></item><item><title>Les signaux SNCF avec Draw.IO</title><link>https://schrek.fr/posts/2023/05/drawio_signauxsncf/</link><pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/drawio_signauxsncf/</guid><description>Nicolas Wurtz un agent SNCF ,qui développe aussi Graou un outil métier qui permet aux agents de s&amp;rsquo;organiser, a ajouté les signaux SNCF sur Drawn.IO. Hey la #teamSNCF ! Besoin de tracer des voies avec des signaux/pancartes et des trains ? c&amp;#39;est galère ? Bon ben j&amp;#39;ai créé une librairie pour draw io !https://t.co/WwHn1Vtb41
-Et tout est opensource sur https://t.co/g21l5UpgkI (les trains viennent de https://t.co/EEcKybvFDN). 💚 pic.twitter.com/OZ6BZ9AJHC
-&amp;mdash; Nicolas Wurtz &amp;amp; Graou (@NicolasW_GRAOU) May 13, 2023 Cela va permettre aux agents de préparer leurs études de ligne.</description></item><item><title>Hugo shortcode</title><link>https://schrek.fr/posts/2023/05/hugo_shortcode/</link><pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/hugo_shortcode/</guid><description>Maj 15/05/2023: Ajout des icones personalisées des bandeaux.
-La syntaxe Markdown a des limites, Hugo utilise des « bouts de code » pour passer ces limites.
-L’inconvénient c’est de retenir les balises.
-L&amp;rsquo;avantage est d&amp;rsquo;intégrer des fonctions au sein même du contenu, sans toucher au template.
-Shortcode interne Vous trouverez pleins d&amp;rsquo;exemple sur le site officiel.
-https://gohugo.io/content-management/shortcodes/
-shortcodes personnalisés Des icônes On va se servir des icônes du framework du site.</description></item><item><title>Re-organisation du site</title><link>https://schrek.fr/posts/2023/05/reorganisation-du--site/</link><pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/reorganisation-du--site/</guid><description>Je commençais à me mêler les pinceaux avec tous les articles, j&amp;rsquo;ai décider de changer l&amp;rsquo;organisation du site.
-Je voulais aussi des URL lisibles
-Nouvelle organisation J&amp;rsquo;ai organisé mon dossier content comme sur le diagramme dessous, les articles seront rangés par date (année, mois).
-flowchart LR A[Schrek.fr]-->B(Pages) B-->F[About] B-->G[search] A-->C[Posts] D-->K[Pages] C-->E[2023] E-->H(01) E-->I(02) E-->J(03) A-->D[Wiki] Les URLs Dans mon ficher config.toml, j&amp;rsquo;ai rajouté:
-[permalinks] &amp;#39;/&amp;#39; = &amp;#39;/:year/:month/:title/&amp;#39; Source Hugo</description></item><item><title>Hugo - Création d’un menu</title><link>https://schrek.fr/posts/2023/05/hugo_menu/</link><pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/hugo_menu/</guid><description>On va rajouter un menu a notre template.
-Intro On pourrait passer par le HTML en ajoutant dans le header ou dans un fichier partial/nav.html et en l&amp;rsquo;ajoutant dans le base_of.html.
-&amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/about&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/contact&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; Mais Hugo permet de faire plus efficace. il faut créer dans themes/MONTHEME/layouts/partials/ un fichier nav.html.
-&amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; {{ range .Site.Menus.main }} &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;{{ .URL }}&amp;#34;&amp;gt;{{ .Name }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; {{ end }} &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; Explication On demande a Hugo de regarder dans le fichier de configuration config.</description></item><item><title>Silo - Hugh Howey</title><link>https://schrek.fr/posts/2023/05/silo-hugh_howey/</link><pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/silo-hugh_howey/</guid><description>Une série post-apocalyptique écrite par Hugh Howey. On suit la vie dans un silo isolé du monde, avec un système de caste et beaucoup d&amp;rsquo;intrigues.
-Pour la lecture des romans, il faut suivre l&amp;rsquo;ordre de publication:
-Silo (2011) Silo: Origine (2013) Silo: Génération (2016) Une série existe Allociné
-Résumé Dans un futur post-apocalyptique indéterminé, quelques milliers de survivants ont établi une société dans un silo souterrain de 144 étages. Les règles de vie sont strictes.</description></item><item><title>Hugo - Création d’un thème</title><link>https://schrek.fr/posts/2023/05/hugo_creation_theme/</link><pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/hugo_creation_theme/</guid><description>Après l’article sur l&amp;rsquo;installation d&amp;rsquo;Hugo et la mise en place d’un thème, on va créer notre thème perso.
-On se place dans le dossier de notre projet.
-$ hugo new theme christophe $ cd themes/christophe/ $ tree . ├── archetypes │ └── default.md (modeles pour les articles et les pages) ├── layouts │ ├── 404.html │ ├── _default │ │ ├── baseof.html (page qui structure les autres pages) │ │ ├── list.</description></item><item><title>Les Chatons</title><link>https://schrek.fr/posts/2023/04/les_chatons/</link><pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/les_chatons/</guid><description>Libre J’ai toujours été attiré par le logiciel libre (plus de 20 ans sous Linux) et la protection de mes données. Voulant sortir de Google pour mes courriels et le stockage de mes données je me suis un serveur Kimsufi, mais je me suis vite rendu compte de la difficulté de gérer un serveur (mise a jour, sécurité, configuration).
-Je me suis tourné vers des gens qui savent faire et j’ai découvert les CHATONS: pour des services libres et alternatifs.</description></item><item><title>Projet Dernière Chance - Andy Weir</title><link>https://schrek.fr/posts/2023/04/projet-derniere-chance---andy-weir/</link><pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/projet-derniere-chance---andy-weir/</guid><description>Par l’auteur de &amp;ldquo;Seul sur Mars&amp;rdquo; ,Andy Weir. Une belle aventure spatial, ou l’on suit Grace dans son vaisseau. Le roman a du rythme avec des flash-back, certaines théories physiques sont un peu compliquées à comprendre mais ça ne ralentit pas la lecture.
-Les Russes sont tous cinglés comme elle ? Demandai-je en me penchant vers Dimitri. Oui, confirma-t-il en souriant. C’est la seule façon d’être russe et heureux à la fois.</description></item><item><title>Le dieu de New York - Lyndsay Faye</title><link>https://schrek.fr/posts/2023/04/le-dieu-de-new-york---lyndsay-faye/</link><pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/le-dieu-de-new-york---lyndsay-faye/</guid><description>Une enquête passionnante dans les bas fonds new-yorkais du 19ᵉ siècle avec un genre de Sherlock comme personnage principal. j’y ai retrouvé l’ambiance du film Gangs of New York
-Intro du film
-A la fin du livre, on y trouve un glossaire des argots du roman.
-Résumé New-York, été 1845. Timothy Wilde, ancien barman, intègre le nouvellement créé NYPD, le département de police de la ville. Un choix de raison : il faut bien gagner sa vie, et c&amp;rsquo;est un travail honnête.</description></item><item><title>L’Entraînement de Luke Stone - jack Mars</title><link>https://schrek.fr/posts/2023/04/lentra%C3%AEnement-de-luke-stone---jack-mars/</link><pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/lentra%C3%AEnement-de-luke-stone---jack-mars/</guid><description>Livre dans le genre Tom Clancy en moins bien, roman d’action au cœur des forces spéciales américaines. Facile a lire avec des héros très américains, ça frôle la caricature mais ça peut plaire. j’ai attaqué le tome 2 qui malheureusement répète certaine scène du tome 1. Peu de chance que je continue la série.
-Résumé Dans CIBLE PRINCIPALE (tome 1), nous assistons à l’entraînement d’un des soldats les plus durs et les plus mortels du monde : Luke Stone.</description></item><item><title>Les framework CSS</title><link>https://schrek.fr/posts/2023/04/css_framework/</link><pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/css_framework/</guid><description>&lt;p>Les frameworks CSS aident les développeurs Web et autres web-designers à structurer rapidement leurs sites, leur permettant de se concentrer davantage sur les différentes fonctionnalités, plutôt que de passer du temps sur les éléments de style.&lt;/p></description></item><item><title>Pandoc html template</title><link>https://schrek.fr/posts/2023/04/pandoc_html_template/</link><pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/pandoc_html_template/</guid><description>Pour gérer les templates avec Pandoc, on va utiliser un système de balises qui sont incluses dans l’entête du fichier Markdown.
---- title: Schrek subtitle: Mon jolie site abstract: Test template abstract-title: test abstract-title author: Schrek christophe date: 2023-03-23 site: https://schrek.fr/ subject: Pandoc template description: utilisation des templates avec Pandoc logo: logo.png lang: fr keywords: pandoc html5 css template category: Web --- Exemple de template &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;html $if(lang)$ lang=&amp;#34;$lang$&amp;#34; $endif$ &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description></item><item><title>Artémis - Andy Weir</title><link>https://schrek.fr/posts/2023/04/art%C3%A9mis/</link><pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/art%C3%A9mis/</guid><description>L’aventure nous plonge la vie de Jazz qui vie dans la cité d’Artémis sur la lune. On découvre la vie dans une cité avec ces avantages et inconvenants. Genre de livre qui pourrait devenir une série Netflix.
-Résumé Le roman se déroule à la fin des années 2080 et se déroule à Artémis, la première et seule ville sur la Lune. Il suit la vie de la coursière et contrebandière Jasmine « Jazz » Bashara alors qu’elle se retrouve prise dans une conspiration pour le contrôle de la ville.</description></item><item><title>Markdown to Html</title><link>https://schrek.fr/posts/2023/04/markdown-html/</link><pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/markdown-html/</guid><description>Pandoc est une application en ligne de commande qui permet de convertir des documents dans différents format.
-On va l’utiliser pour créer un page HTML a partir d’un document créer avec les balises Markdown, pour plus de &amp;ldquo;beauté on va y inclure un fichier Css
-Installation Pandoc $ sudo apt install pandoc Utilisation On récupère un fichier css (https://latex.vercel.app/ pour l’exemple). $ wget https://latex.now.sh/style.css J’ai tout ajouté dans le fichier en dessous.</description></item><item><title>A propos</title><link>https://schrek.fr/pages/apropos/</link><pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate><guid>https://schrek.fr/pages/apropos/</guid><description>Pour me contacter XMPP : christ0phe@chapril.org
-Telegram : https://t.me/Christ0phe
-Le site Moteur du blog Hugo, generateur de site statique. Framework Css UiKit. Les sources Github. Uikit Organisation du site flowchart TD A[Schrek.fr] --> B[Blog] A --> C[Wiki] A --> F[A propos] A --> H[Nuage de tags] A -.-> J(Flux Rss) B --> D[2023] D --> E[Fevrier] D --> I[Mars] D --> K[Avril] K --> L[Article] K --> L1[Article] Licence Ce(tte) œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.</description></item><item><title>Hors ligne</title><link>https://schrek.fr/pages/hors_ligne/</link><pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate><guid>https://schrek.fr/pages/hors_ligne/</guid><description>Hors ligne</description></item><item><title>Nuage de tags</title><link>https://schrek.fr/pages/tagscloud/</link><pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate><guid>https://schrek.fr/pages/tagscloud/</guid><description/></item><item><title>A faire</title><link>https://schrek.fr/wiki/a_faire/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/a_faire/</guid><description>Optimisations ameliorations, idées d&amp;rsquo;articles &amp;hellip;
-Optimisation des images.
-Amelioration des bandeaux ( plus lisible, logo).
-Revoir le code du shortcode galerie.
-rendre plus lisible &amp;ldquo;les cartes articles&amp;rdquo;.
-Icone Wiki non comprehensible.
-Revoir les fautes d&amp;rsquo;ortographes.
-Page Wiki plus sympa.</description></item><item><title>Bas a sable</title><link>https://schrek.fr/wiki/boucle/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/boucle/</guid><description/></item><item><title>Les articles</title><link>https://schrek.fr/wiki/articles/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/articles/</guid><description>{{&amp;lt; bandeau primary &amp;gt;}} A faire. {{&amp;lt; / bandeau &amp;gt;}}
-Deep sleep wemos MQTT MQTT Tastoma {{&amp;lt; bandeau warning &amp;gt;}} En construction / . {{&amp;lt; / bandeau &amp;gt;}}
-Communiquer avec l&amp;rsquo;Esp32 Tasmota</description></item><item><title>Mes commandes</title><link>https://schrek.fr/wiki/mes_commandes/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/mes_commandes/</guid><description>Creer un article archetypes/post-bundle/post.md $ hugo new --kind post-bundle posts/2023/
-Compresser les png $ find content/ -type f -iname &amp;#39;*.png&amp;#39; -exec pngquant --force --quality=40-100 --skip-if-larger --strip --verbose {} --output {} \; Convertir les jpg/png en wepb $ cwebp -q 60 file.jpg -o file.wepb Optimiser un jpg $ jpegoptim *.jpg Voir les futurs articles en local $ hugo serve -D -F Voir le site en local $ hugo serve --noHTTPCache --ignoreCache --buildDrafts Compile le site $ hugo --minify Compresse .</description></item><item><title>Mes Shortcodes</title><link>https://schrek.fr/wiki/mes_shortcodes/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/mes_shortcodes/</guid><description>Images {{&amp;lt; figure src=&amp;#34;codepen-logo-8.png&amp;#34; title=&amp;#34;&amp;#34; width=200px class=&amp;#34;imagearticle&amp;#34; &amp;gt;}} Icones https://getuikit.com/docs/icon
-{{&amp;lt; uicon heart 2 &amp;gt;}} est un **gros** coeur. est un gros coeur.
-Bandeaux {{&amp;lt; bandeau primary &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt. {{&amp;lt; / bandeau &amp;gt;}} {{&amp;lt; bandeau success &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt. {{&amp;lt; / bandeau &amp;gt;}} {{&amp;lt; bandeau warning &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt.</description></item><item><title>Services internet libres</title><link>https://schrek.fr/wiki/services_web_libres/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/services_web_libres/</guid><description>Les listes https://sebsauvage.net/wiki/doku.php?id=services_web
-https://doc.ubuntu-fr.org/liste_de_services_web_libres
-http://www.liensutiles.org/
-https://comptoir-du-libre.org/fr/
-https://entraide.chatons.org/fr/</description></item><item><title>Astuces Hugo</title><link>https://schrek.fr/posts/2023/04/memo-hugo/</link><pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/memo-hugo/</guid><description>Organisation ├── pages │ └── apropos │ ├── hugo-logo.png │ └── index.md └── posts ├── css_framework │ └── index.md ├── info │ ├── Capture.png │ ├── hugo.jpg │ └── index.md └── markdown ├── index.md └── logo.png Debut article Avec balise figure
-Images On ajoute la balise Hugo
-Menu config.toml Dans le fichier config.toml et dans le fichier themes/wikischrek/layouts/partials/nav.html
-Les icones ici https://getuikit.com/docs/icon [menu] [[menu.main]] name = &amp;#39;Home&amp;#39; url = &amp;#39;/&amp;#39; pre = &amp;#39;home&amp;#39; weight = 10 [[menu.</description></item><item><title>Hugo CMS</title><link>https://schrek.fr/posts/2023/04/hugo-installation/</link><pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/hugo-installation/</guid><description>Hugo est générateur de site statique. On écrit un article au format Markdown, on fait tourner le logiciel et il fait les fichiers HTML. Il suffira juste de les déposer sur un serveur. Ça semble simple mais ça demande une mise en place.
-Installation $ sudo apt install hugo Créer un site le logiciel va générer un dossier avec les bases (dossiers, fichiers) a l’intérieur. $ hugo new site schrek.</description></item><item><title>Markdown</title><link>https://schrek.fr/posts/2023/04/markdown/</link><pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/markdown/</guid><description># Menu ## Texte Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ### Gras Lorem ipsum dolor sit amet, consectetur **adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua**. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description></item><item><title>Hugo et les images</title><link>https://schrek.fr/posts/2023/04/hugo-les_images/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/hugo-les_images/</guid><description>Comment ca marche? L’organisation des images avec Hugo, c’est un peu particulier.
-Avec Markdown on ajoute une image avec:
-![Text alternatif](image.jpg) Dossier static C&amp;rsquo;est le dossier ou l&amp;rsquo;on pose nos fichiers statique .
-On peut organiser comme ça:
-je fais un post info et je place les images dans un sous dossier static/posts/info
-static/ ├── css ├── img │ └── posts │ └── info │ └── image.jpg └── js Ce qui donne dans un post:</description></item><item><title>ChatGPT dans un terminal</title><link>https://schrek.fr/posts/2023/03/chatgpt/</link><pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/chatgpt/</guid><description>ChatGPT, le célèbre générateur de texte contrôlé par une intelligence artificielle , peut être utilisé dans un terminal.
-##API key:
-Il faut créer un compte et générer une API KEY ici. ça sera sur la forme.
-sk-qUP3OL6jQ95cXJbxsxyPT3BlbkFJzf3ypT6djfo2ZsjcZwME2 Le script Tout ce trouve sur ce github.
-$ wget https://github.com/0xacx/chatGPT-shell-cli/blob/main/chatgpt.sh $ chmod +x chatgpt.sh $ export OPENAI_KEY=sk-qUP3OL6jdkdlQ95cXJbxsxyPT3Bldkkkff3ypT6Rn1gZsjcZwME2 Remplacez OPENAI_KEY par votre clef.
-Le script a besoin de jq.
-$ sudo apt install jq et pour finir:</description></item><item><title>Lettre sous latex</title><link>https://schrek.fr/posts/2023/03/latex-une_lettre/</link><pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/latex-une_lettre/</guid><description>Utilisation de la classe lettre avec LaTex.
-J’ai commenté le code pour plus de clarté.
-Petit rajout du tampon fait dans cet article Tampon encreur sous Gimp
-En cas d’erreur babel:
-sudo apt-get install texlive-lang-french Le code \documentclass[12pt]{lettre} %12p taille lettres (10 et 11 possible), déclaration classe lettre \usepackage[utf8]{inputenc} % Encodage \usepackage[T1]{fontenc} % Les mots accentués \usepackage{lmodern} % Type de police \usepackage{eurosym} % Pouvoir écrire le symbole &amp;#34;€&amp;#34; \usepackage[french]{babel} % Utilisation du français \usepackage{numprint} % Séparateur décimal \usepackage{graphicx} % Pour inclure des images \begin{document} \begin{letter}{Service des râleurs\\66, rue du train\\13200 Arles} % Destinataire \basdepage{\pagetotalname{1}} \name{Prénom nom} \signature{Nom Prénom \includegraphics[width=75px, angle=-45]{tampon.</description></item><item><title>Lier Framacarte a Framacalc</title><link>https://schrek.fr/posts/2023/03/framacarte/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/framacarte/</guid><description>Il peut être pratique de lier une feuille de tableur avec une carte pour mieux gérer les points . Avec Framacarte et Framacalc c’est possible. Sur le Wiki de Cartocité on trouve plein de ressource sur le sujet.
-Créer et configurer le tableur On va sur Framacalc pour créer notre tableur.
-Sur la 1ᵉʳ colonne on va mettre la latitude en ajoutant &amp;ldquo;lat&amp;rdquo; (case A1 sans les guillemets) 2ᵉ colonne, la longitude &amp;ldquo;lon&amp;rdquo; (case B1 sans les guillemets) 3ᵉ colonne, le nom &amp;ldquo;nom&amp;rdquo; (case C1 sans les guillemets) 4ᵉ colonne, description &amp;ldquo;description&amp;rdquo; (case D1 sans les guillemets) Pour l’exemple on va prendre les arènes d’Arles.</description></item><item><title>Nano</title><link>https://schrek.fr/posts/2023/03/linux-nano/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/linux-nano/</guid><description>Un éditeur de fichier très simple.
-Pour ouvrir un fichier $ nano index.html Créer un fichier $ nano fichier.txt Les raccourcis courants ctrl + G ...... Appeler le menu d’aide ctrl + X ...... Fermer et, le cas échéant, quitter nano ctrl + O ...... Écrire le fichier en cours sur le disque ctrl + J ...... Justifier le paragraphe courant ctrl + R ...... Insérer un autre fichier dans le fichier en cours ctrl + W .</description></item><item><title>Nego et L’Organisation - Laurent Combalbert</title><link>https://schrek.fr/posts/2023/03/nego-laurent-combalbert/</link><pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/nego-laurent-combalbert/</guid><description>2 livres d’un coup. Les tomes 1 et tomes 2 de la série Stanislas Monville. Un mélange de James bond, Jack Ryan avec une intrigue internationale sur fond d’écologie.
-Résumé Stanislas Monville est négociateur professionnel. Il intervient dans les kidnappings, les séquestrations, les extorsions… Ses années de service dans les forces spéciales comme les missions privées qu’il conduit désormais lui ont donné un instinct très sûr pour repérer les situations à risque.</description></item><item><title>Lykaia - DOA</title><link>https://schrek.fr/posts/2023/03/lykaia---doa/</link><pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/lykaia---doa/</guid><description>&amp;ldquo;Dans la Grèce antique, les lykaia sont une fête archaïque avec un rituel secret sur les pentes du mont Lykaion (« montagne du loup ») ou mont Lycée, le plus haut sommet d&amp;rsquo;Arcadie. &amp;quot; Wikipedia
-Livre hyper violent quand meme, ou on decouvre le mileux SM.
-Résumé Berlin Ouest. Le BUNK&amp;rsquo;R est un club discret et sélectif où se pratiquent des séances de sadomasochisme chics et sophistiquées. Un client s&amp;rsquo;apprête à être livré aux mains expertes du narrateur, un ancien chirurgien de haut vol, qui s&amp;rsquo;est reconverti dans la pratique du bondage high-tech, après un grave accident qui le laissa défiguré.</description></item><item><title>Tampon encreur sous Gimp</title><link>https://schrek.fr/posts/2023/03/tampon-encreur/</link><pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/tampon-encreur/</guid><description>C&amp;rsquo;est toujours sympa d&amp;rsquo;avoir une petite image pour simuler un tampon sur un document, une photo.
-J&amp;rsquo;ai listé quelques tuto sous [Gimp-&amp;gt;https://www.gimp.org/]
-C&amp;rsquo;est pas bien compliqué et ça permet de jouer avec les calques et les filtres. Il faut penser à bien enregistrer au format PNG pour garder la transparence.
-Liens http://www.1point2vue.com/tampon-encre-gimp/
-http://abcdugimp.free.fr/gimp/realiser/tutoriels/tampon/tampon.php</description></item><item><title>Le Joueur d’échecs - Stefan Zweig</title><link>https://schrek.fr/posts/2023/03/le-joueur-dchecs-stefan-zweig/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/le-joueur-dchecs-stefan-zweig/</guid><description>Un des plus beau livre que j&amp;rsquo;ai lu. Un roman court mais intense.
-Résumé Czentowic, champion d&amp;rsquo;échecs arrogant, esprit borné à outrance, inculte et étonnamment stupide, occupe le premier plan jusqu&amp;rsquo;à l&amp;rsquo;entrée en scène de Monsieur B. Dès lors que cet aristocrate autrichien s&amp;rsquo;intéresse à la partie livrée entre le champion et les passagers amateurs, la direction du texte bascule.
-Détails Langue : Français Broché : 128 pages Téléchargement Epub libre de droit</description></item><item><title>Rétiaire(s) - DOA</title><link>https://schrek.fr/posts/2023/03/r%C3%A9tiaires_doa/</link><pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/r%C3%A9tiaires_doa/</guid><description>Un bon DOA bien glauque.
-Résumé Une enquêtrice de l’Office anti-stupéfiants, l’élite de la lutte anti-drogue, qui a tout à prouver. Un policier des Stups borderline qui n’a plus rien à perdre. Un clan manouche qui lutte pour son honneur et sa survie. Avec la rigueur qu’on lui connaît, DOA immerge son lecteur dans le quotidien des acteurs du trafic de came ; son indiscutable talent de romancier nous arrime à la destinée de ses personnages, à leurs relations complexes et fragiles ; son style, d’une précision presque brutale, colle au plus près de cet univers de violence et de solitude.</description></item><item><title>Socca</title><link>https://schrek.fr/posts/2023/03/socca/</link><pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/socca/</guid><description>Socca est le nom donné à une spécialité culinaire à base de farine de pois chiche !
-Ingrédients 250 g de farine de pois chiches 50 cl d’eau 4 cuillères à soupe d’huile d’olive 1 cuillère à café de sel fin poivre Préparation Mélanger la farine de pois chiche et l’eau. Ajouter l’huile d’olive et le sel. La préparation est liquide Laisser reposer 1 heure.
-Faire chauffer le four au maximum, le mieux c’est un four à pizza ou au pire une machine a croque monsieur.</description></item><item><title>Poulets grillés - Sophie Hénaff</title><link>https://schrek.fr/posts/2023/03/poulets-grill%C3%A9s---sophie-h%C3%A9naff/</link><pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/poulets-grill%C3%A9s---sophie-h%C3%A9naff/</guid><description>Un roman drôle qui se lit tout seul. Une brigade constituée de bras cassés, quand les pires de la PJ mènent une enquête.
-Il y a 4 tomes dans la série :
-Poulets grillés Rester groupés Art et Décès Drame de pique Résumé Lorsque le divisionnaire Buron décide de faire briller les statistiques du 36, il regroupe dans une brigade dont il confie le commandement à la commissaire Anne Capestan, reine notoire de la bavure, tout ce que la police judiciaire compte d’alcoolos, d’homos, de porte-poisse, d’écrivains, de crétins&amp;hellip; Pour élucider des affaires classées.</description></item><item><title>BRouter Web Client</title><link>https://schrek.fr/posts/2023/03/brouter/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/brouter/</guid><description>BRouter Web Client est un service WEB pour Planifier un itinéraire. Le client s’appuie sur OpenStreetMap Brouter est très complet en plus de calculer les itinéraires, les importer, les exporter, on peut ajouter des calques pour visualiser d’autres données comme les campings, hôtels…
-Bonne découverte.
-Liens http://brouter.de/brouter-web/
-https://brouter.m11n.de
-https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-ordinateur/
-https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que</description></item><item><title>Z-Library</title><link>https://schrek.fr/posts/2023/03/zlibrary/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/zlibrary/</guid><description>Z-Library est une bibliothèque numérique qui vous permet de télécharger des e-books, des livres, des revues scientifiques en ligne.
-Mais pour y accéder, il va falloir passer par [Tor-&amp;gt;https://fr.wikipedia.org/wiki/Tor_(r%C3%A9seau)], rien de bien compliqué. Il suffit d’installer Tor browser. Âpres avoir lancé le navigateur, il suffît de copier ce lien dans le navigateur.
-http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion/
-Il existe aussi des miroirs qui permettent un accès direct.
-Liens https://singlelogin.me/ https://fr.annas-archive.org/</description></item><item><title>Le Problème à trois corps - Liu Cixin</title><link>https://schrek.fr/posts/2023/03/trois-corps/</link><pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/trois-corps/</guid><description>J’ai demandé à chatgpt de me conseiller un livre de SF, je suis pas déçu du choix de l’IA. L’écologie est au cœur du livre, on se retrouve dans le désespoir de l’humanité et des conséquences des choix humains.
-C’est le tome 1 d’une trilogie:
-Le Problème à trois corps La Forêt sombre La Mort immortelle Résumé En pleine Révolution culturelle, le pouvoir chinois construit la base militaire secrète de Côte Rouge, destinée à développer une arme de grand calibre.</description></item><item><title>Sorbet basilic</title><link>https://schrek.fr/posts/2023/03/sorbet_basilic/</link><pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/sorbet_basilic/</guid><description>Un super sorbet pour, 4 personnes pour finir vos repas d’été.
-Ingrédients 1/2 litre d’eau ; 1 grosse cuillère de crème fraîche ; 12 plans de basilic ; 2 petits citrons ou 1,5 gros. Préparation Faire un sirop en portant à ébullition l’eau froide avec le sucre et laisser un peu refroidir. Mixer le basilic effeuillé et infuser le 30min. Passer a L’étamine pour filtrer, ajouter le jus de citron et la crème.</description></item><item><title>Fabrication d'un savon d'Alep</title><link>https://schrek.fr/posts/2023/03/savon_alep/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/savon_alep/</guid><description>&lt;p>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/savon_alep/logo.webp" width="200px">
-&lt;/figure>
-
-Ici je vais vous décrire rapidement la fabrication maison du savon d’Alep. C’est un savon simple à base d’huile d’olive et d’huile de baie de laurier et d’huile de ricin.
-J’utilise la technique de la saponification a froid.&lt;/p></description></item><item><title>La Signalisation SNCF avec Latex</title><link>https://schrek.fr/posts/2023/03/signaux_sncf/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/signaux_sncf/</guid><description>Pour jouer avec tikz qui permet de générer des images, j’ai fait des signaux SNCF.
-C’est perfectible aux niveaux des couleurs et des formes mais ca rend bien. Un cheminot Nicolas Wurtz a fait aussi ce travail mais sous une autre forme, son dépôt git Un autre projet ici à base de gif.
-Mes sources latex Fichier pdf
-Fichier Latex
-Voir sur overleaf Lien https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France</description></item><item><title>Le style Latex</title><link>https://schrek.fr/posts/2023/03/css-style_latex/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/css-style_latex/</guid><description> Style LaTex en CSS Latex le célèbre système de composition de document, qui permet de générer de “belles pages”, a un style bien à lui. Vincent Dörig a créé un style CSS pour l’intégrer facilement dans un site. On y retrouve aussi l’intégration des formules mathématique avec MathJax.
-La page de test https://latex.vercel.app/elements
-Liens https://latex.vercel.app/ https://github.com/vincentdoerig/latex-css https://www.mathjax.org/ https://www.latex-project.org/ https://fr.wikibooks.org/wiki/LaTeX</description></item><item><title>Diceware</title><link>https://schrek.fr/posts/2023/02/diceware/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/diceware/</guid><description>C est fini les mots de passe, il faut passer aux phrases de passe. Plus facile à retenir plus compliquer à casser. Pour les mots de passe, l’avantage est que l’on peut décomplexifier un mot de passe avec tous les caractères MaisonBananeRougeMystereBiere AhdikeJeujenksKjnskodnKshjkskk
-Pour générer une phrase de passe il faut un outil qui crée du « hasard » et un dictionnaire de mot qui va bien.
-Qu’est-ce que Diceware ?</description></item><item><title>QRcode sous LaTex</title><link>https://schrek.fr/posts/2023/02/latex-qrcode/</link><pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/latex-qrcode/</guid><description>On peut produire facilement des QRCode sous LaTex.
-Installation On récupère les fichiers qrcode.ins et qrcode.dtx ici. On lance sous Linux:
-$ latex qrcode.ins Il faut ajouter dans l’entête du fichier latex
-\usepackage{hyperref} % Pour avoir les liens \usepackage{qrcode} % Pour générer les QRcode Utilisation \documentclass[12pt,a4paper]{article} \usepackage[utf8]{inputenc} \usepackage[french]{babel} \usepackage[T1]{fontenc} \usepackage{fullpage} \usepackage{hyperref} \usepackage{qrcode} \usepackage{graphicx} % Pour inclure des images %titre \title{QRcode avec \LaTeX} \date{} \begin{document} \maketitle \subsection*{QRcode simple} \begin{verbatim} \qrcode{http://schrek.fr} \end{verbatim} \begin{center} \qrcode{http://schrek.</description></item><item><title>Ecrire un ebook avec Latex</title><link>https://schrek.fr/posts/2023/02/ebook-avec-latex/</link><pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/ebook-avec-latex/</guid><description>MaJ 29/05/2023 Ajout d&amp;rsquo;un livre &amp;ldquo;LaTeX pour litteraires&amp;rdquo;(Éric Guichard), bouton overleaf.com
-J’avais l’idée d’écrire un petit livre sur la Rome antique, une histoire d’un soldat romain qui devient un pirate. Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourné vers Latex. Pour organiser mes idées et structurer le document j’ai utilisé cette structure. Vous trouverez les sources en bas de l’article.
-J’ai aucun talent littéraire merci d’être indulgent.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Schrek.fr</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make, génération de fichiers</title>
+      <link>http://localhost:1313/posts/2024/6/make/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/6/make/</guid>
+      <description>La commande make est un utilitaire de ligne de commande qui permet d&amp;rsquo;automatiser la compilation et la construction de projets logiciels. Cependant, dans le contexte de Pandoc, make est souvent utilisé pour automatiser la conversion de fichiers de différents formats à l&amp;rsquo;aide de Pandoc.&#xA;Pandoc est un outil de conversion de documents qui permet de convertir des fichiers de différents formats, tels que Markdown, HTML, PDF et Microsoft Word, entre autres.</description>
+    </item>
+    <item>
+      <title>Pandas- nettoyage des données</title>
+      <link>http://localhost:1313/posts/2024/6/pandas_nettoyage/</link>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/6/pandas_nettoyage/</guid>
+      <description>Le nettoyage des données est une étapes cruciale dans le processus d&amp;rsquo;analyse de données, car les données brutes peuvent contenir des erreurs, des valeurs manquantes et d&amp;rsquo;autres problèmes qui peuvent affecter les résultats de l&amp;rsquo;analyse.&#xA;La bibliothèque Pandas en Python est un outils puissant pour le nettoyage des données, offrant de nombreuses méthodes utiles pour préparer les données pour l&amp;rsquo;analyse.&#xA;L&amp;rsquo;import des données df = pd.read_csv(&amp;#34;data.csv&amp;#34;,skiprows=3, skipfooter=2) skiprows: va permettre de ne pas tenir compte des premières ligne du fichier.</description>
+    </item>
+    <item>
+      <title> Norferville - Franck Thilliez</title>
+      <link>http://localhost:1313/posts/2024/6/norferville-/</link>
+      <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/6/norferville-/</guid>
+      <description>Franck Thilliez, l&amp;rsquo;un des auteurs de thrillers les plus renommés de la littérature française contemporaine, nous revient en 2023 avec Norferville, un roman qui promet de nous plonger une fois de plus dans une intrigue sombre et captivante.&#xA;Le roman explore des thèmes chers à l’auteur, tels que les méandres de la psychologie humaine, les secrets de famille et les conséquences des actes passés. Thilliez utilise avec brio les éléments du thriller pour tisser une intrigue complexe où chaque détail compte et où les retournements de situation sont légion.</description>
+    </item>
+    <item>
+      <title>Les fichiers Parquet</title>
+      <link>http://localhost:1313/posts/2024/5/parquet/</link>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/parquet/</guid>
+      <description>Les fichiers Parquet sont un format de stockage de données colonnaires open source, souvent utilisé dans le domaine du Big Data et de l&amp;rsquo;analyse de données. Ils sont conçus pour être efficaces en termes de stockage et de traitement, ce qui les rend adaptés à des volumes de données importants. Voici quelques points clés sur les fichiers Parquet :&#xA;Compression: Les fichiers Parquet utilisent des techniques de compression pour réduire la taille des données, ce qui permet d&amp;rsquo;économiser de l&amp;rsquo;espace de stockage et de réduire les temps de transfert sur le réseau.</description>
+    </item>
+    <item>
+      <title>La cité en flamme - Don Winslow</title>
+      <link>http://localhost:1313/posts/2024/5/cit%C3%A9/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/cit%C3%A9/</guid>
+      <description>Don Winslow La Cité en flammes, roman publié en 2021 par Don Winslow, marque le début d&amp;rsquo;une nouvelle trilogie audacieuse et captivante, qui plonge les lecteurs dans l&amp;rsquo;univers impitoyable du crime organisé. Inspiré par l&amp;rsquo;Iliade d&amp;rsquo;Homère, Winslow transpose l&amp;rsquo;épopée grecque dans le contexte contemporain des guerres de gangs à Providence, Rhode Island, dans les années 1980.&#xA;Le protagoniste, Danny Ryan, est un homme ordinaire aspirant à une vie tranquille, mais se trouve inexorablement entraîné dans un conflit violent entre deux familles criminelles rivales.</description>
+    </item>
+    <item>
+      <title>Pandas, importer un fichier csv</title>
+      <link>http://localhost:1313/posts/2024/5/pandas_import/</link>
+      <pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/pandas_import/</guid>
+      <description>J’avais besoin de traiter des fichiers CSV pour en extraire des données. J’ai commencé à faire cela avec un tableur, mais comme je suis feignant,je voulais automatiser tout cela.&#xA;Le csv Je dois:&#xA;Importer le fichier CSV Nettoyer des données inutiles Mettre en forme des colonnes Extraire des données Au travail. Pour faire tous ça je vais utiliser le langage Python avec la bibliothèque Pandas&#xA;#!/usr/bin/python import pandas as pd df = pd.</description>
+    </item>
+    <item>
+      <title>Pandas et les series</title>
+      <link>http://localhost:1313/posts/2024/5/pandas_serie/</link>
+      <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/pandas_serie/</guid>
+      <description>Les &amp;ldquo;séries&amp;rdquo; sur pandas se réfèrent à des objets de données unidimensionnels dans la bibliothèque Python pandas.&#xA;Ils sont similaires aux tableaux unidimensionnels en Python (comme les listes ou les tableaux NumPy), mais avec des fonctionnalités supplémentaires.&#xA;Les séries pandas sont indexées, ce qui signifie que chaque élément a une étiquette ou un identifiant associé, et elles peuvent contenir différents types de données, comme des entiers, des flottants, des chaînes, etc.</description>
+    </item>
+    <item>
+      <title>Pandas et les structures</title>
+      <link>http://localhost:1313/posts/2024/5/pandas_structures/</link>
+      <pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/pandas_structures/</guid>
+      <description>La bibliothèque Pandas fournit deux structures de données principales pour manipuler des données structurées : les séries et les dataframes.&#xA;Les séries Une série est un tableau unidimensionnel de données homogènes, indexé par des étiquettes. Les étiquettes peuvent être de n&amp;rsquo;importe quel type (chaînes de caractères, entiers, dates, etc.), ce qui permet de manipuler des données de manière flexible. Les séries peuvent être créées à partir de listes, de tableaux NumPy, de dictionnaires ou d&amp;rsquo;autres structures de données.</description>
+    </item>
+    <item>
+      <title>Les pirates de dieu - François-Henri Souli</title>
+      <link>http://localhost:1313/posts/2024/5/pirates/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/pirates/</guid>
+      <description>Les Pirates de Dieu est un livre écrit par François-Henri Souli. Il s&amp;rsquo;agit d&amp;rsquo;un roman historique qui se déroule à Byzance au IVe siècle. L&amp;rsquo;histoire tourne autour de l&amp;rsquo;empereur Constantinus qui tente d&amp;rsquo;imposer le christianisme à son peuple et qui voit les pirates comme une menace personnelle. Le livre met en scène des personnages tels que Aurelius, le conseiller de l&amp;rsquo;empereur, et deux jeunes pirates, Kyros et Galeo, animés par une sombre vengeance .</description>
+    </item>
+    <item>
+      <title>Pandas</title>
+      <link>http://localhost:1313/posts/2024/5/pandas/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/pandas/</guid>
+      <description>La bibliothèque Pandas est une bibliothèque open-source pour la manipulation et l&amp;rsquo;analyse de données en Python. Elle fournit des structures de données hautes performances et flexibles pour manipuler des données structurées, telles que des tableaux et des séries temporelles.&#xA;Les principales fonctionnalités de Pandas comprennent la lecture et l&amp;rsquo;écriture de données à partir de divers formats de fichiers, la manipulation et le nettoyage de données, la fusion et la jointure de données, l&amp;rsquo;agrégation et le regroupement de données, ainsi que la visualisation de données.</description>
+    </item>
+    <item>
+      <title>Outresable - Hugh Howey</title>
+      <link>http://localhost:1313/posts/2024/4/outresable/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/4/outresable/</guid>
+      <description>Outresable est le premier volume de la série Sable d&amp;rsquo;Hugh Howey. J&amp;rsquo;ai adoré le coté plongeurs des sables, j&amp;rsquo;attend la suite avec impatience.&#xA;Outresable, Actes Sud, coll. « Exofictions », 2019 Outredune, Actes Sud, coll. « Exofictions », 2023 J&amp;rsquo;ai adoré le concept de nage dans le sable.&#xA;Sable Résumé Depuis des siècles le sable a englouti le monde. Un autre s’est créé tant bien que mal parmi les dunes mouvantes, et les plongeurs des sables descendent à de grandes profondeurs pour remonter les trésors enfouis dont le troc permet la survie de tous à la surface.</description>
+    </item>
+    <item>
+      <title>Gestionnaire de fichier Caja</title>
+      <link>http://localhost:1313/posts/2024/3/caja/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/3/caja/</guid>
+      <description>Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.&#xA;Script Je voulais ajouter des possibilités de click droit via des scripts.&#xA;C’est assez simple, il suffit de placer une exécutable dans le dossier ./config/caja/script de votre répertoire /home.&#xA;Variables Quelques variables pour utiliser les scripts.&#xA;*$@* Fichiers sélectionnés *$PWD* Répertoire courant *$CAJA_SCRIPT_SELECTED_FILE_PATHS* Chemin des fichiers sélectionnés. *$CAJA_SCRIPT_SELECTED_URI* URI des fichiers sélectionnés, pour les fichiers distants. *$CAJA_SCRIPT_CURRENT_URI* URI du dossier depuis lequel le script est lancé.</description>
+    </item>
+    <item>
+      <title>Outsphere - Guy-Roger Duvert</title>
+      <link>http://localhost:1313/posts/2024/3/outsphere/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/3/outsphere/</guid>
+      <description>L&amp;rsquo;histoire d&amp;rsquo;une colonisation qui ne se passe pas très bien. Une planète pas très accueillante, des animaux pas des plus sympathiques.&#xA;pochette Résumé Après avoir quitté une Terre mise à mal par les échecs de nos sociétés, l&amp;rsquo;Arche, premier vaisseau à coloniser une exo planète, arrive au bout d&amp;rsquo;un long voyage de 80 ans. Ce nouveau monde baptisé Eden est synonyme de nouvelle chance pour l&amp;rsquo;humanité. Mais cette planète recèle également de nombreuses surprises.</description>
+    </item>
+    <item>
+      <title>Commentaires dans Hugo</title>
+      <link>http://localhost:1313/posts/2024/3/commentaires/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/3/commentaires/</guid>
+      <description>&lt;p&gt;Le systeme de commentaires &lt;a href=&#34;https://cactus.chat/docs/integrations/hugo/&#34;&gt;Cactus&lt;/a&gt; ne me satisfait plus, j&amp;rsquo;ai décidé de tester &lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ce qui naît des abysses - Sylvie Poulain</title>
+      <link>http://localhost:1313/posts/2024/2/abysse/</link>
+      <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/2/abysse/</guid>
+      <description>2 livres (Ce qui naît des abysses et Ce qui reste après les tempêtes) qui nous plongent dans un monde post-apocalyptique sous la mer.&#xA;Résumé XXIVe siècle. Après l&amp;rsquo;emballement climatique et l&amp;rsquo;effondrement de la civilisation terrestre, les rescapés tentent de se réinventer sous l&amp;rsquo;eau au sein de cités sous-marines interdépendantes. Hélas, les vieilles tares de l&amp;rsquo;humanité ont plongé avec elle&amp;hellip; En Atlantique Nord, la belliqueuse Atlantis flirte avec les limites de son mandat de protection, poussée par l&amp;rsquo;IA qui la dirige, tandis que les cargos sous-marins de la Hanse participent à de dangereux jeux d&amp;rsquo;influence.</description>
+    </item>
+    <item>
+      <title>Mathématique dans Hugo</title>
+      <link>http://localhost:1313/posts/2024/2/katex/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/2/katex/</guid>
+      <description>&lt;p&gt;Dans la version &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.122.0&#34;&gt;v0.122.0&lt;/a&gt;, on peut facilement ajouter le support des formules mathématiques façon &lt;em&gt;LaTex&lt;/em&gt;. Ce tutoriel est juste une retranscription de cette &lt;a href=&#34;https://gohugo.io/content-management/mathematics/&#34;&gt;page&lt;/a&gt;.&lt;/p&gt;&#xA;$$E=mc^2$$</description>
+    </item>
+    <item>
+      <title>L&#39;ère de la supernova - Liu Cixin</title>
+      <link>http://localhost:1313/posts/2024/1/supernova/</link>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/1/supernova/</guid>
+      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2024/1/supernova/th.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Encore un bon livre de Lui Cixien, qui nous envoie dans un monde qui va se renouveler.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Installation de Portainer sur Rasp5</title>
+      <link>http://localhost:1313/posts/2024/1/portainer/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/1/portainer/</guid>
+      <description>&lt;h2 id=&#34;portainer&#34;&gt;Portainer&lt;/h2&gt;&#xA;&lt;p&gt;C&amp;rsquo;est une application web qui permet de gérer docker via son navigateur.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mkdocs pour le documentation</title>
+      <link>http://localhost:1313/draft/caddy/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/draft/caddy/</guid>
+      <description>&lt;p&gt;On a tous eu besoin a un moment d’écrire de la documentation, &lt;a href=&#34;https://www.mkdocs.org/&#34;&gt;Mkdocs&lt;/a&gt; est une solution facile à mettre en place.&#xA;Écrit en python, il utilise le langage &lt;a href=&#34;https://docs.framasoft.org/fr/grav/markdown.html&#34;&gt;Markdown&lt;/a&gt; pour écrire votre documentation&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mkdocs pour le documentation</title>
+      <link>http://localhost:1313/draft/mkdocks/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/draft/mkdocks/</guid>
+      <description>&lt;p&gt;On a tous eu besoin a un moment d’écrire de la documentation, &lt;a href=&#34;https://www.mkdocs.org/&#34;&gt;Mkdocs&lt;/a&gt; est une solution facile à mettre en place.&#xA;Écrit en python, il utilise le langage &lt;a href=&#34;https://docs.framasoft.org/fr/grav/markdown.html&#34;&gt;Markdown&lt;/a&gt; pour écrire votre documentation&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker avec un RaspberryPi 5</title>
+      <link>http://localhost:1313/posts/2024/1/docker/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/1/docker/</guid>
+      <description>&lt;h2 id=&#34;docker&#34;&gt;Docker:&lt;/h2&gt;&#xA;&lt;p&gt;Docker est une plateforme permettant de lancer certaines &lt;a href=&#34;https://fr.wikipedia.org/wiki/Application_(informatique)&#34;&gt;applications&lt;/a&gt; dans des conteneurs. C&amp;rsquo;est différent des  machines virtuels et ca utilise moins de ressource.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Raspberrypi 5</title>
+      <link>http://localhost:1313/posts/2023/12/rasp5/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/12/rasp5/</guid>
+      <description>Papa Noel m&amp;rsquo;a fait un beau cadeau, un raspberry pi 5. Un belle article sur Framboise314.&#xA;Liens https://fr.wikipedia.org/wiki/Raspberry_Pi</description>
+    </item>
+    <item>
+      <title>MQTT</title>
+      <link>http://localhost:1313/posts/2023/10/mqtt/</link>
+      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/10/mqtt/</guid>
+      <description>Créé par Andy Stanford-Clark et Arlen Nipper en 1999, MQTT est un protocole de messagerie qui permet aux objets connectés d’échanger les informations en toutes sécurité et avec une faible bande passante.&#xA;Les termes utilisés Broker: c&amp;rsquo;est le programme qui centralise les informations, il reçoit et envoie des messages comme la température d&amp;rsquo;un capteur. Le broker de référence sous Linux s’appelle Mosquitto. Publish: c&amp;rsquo;est l&amp;rsquo;action d&amp;rsquo;envoyer l&amp;rsquo;information du capteur vers le Broker( programme).</description>
+    </item>
+    <item>
+      <title>Tasmota et AM2302</title>
+      <link>http://localhost:1313/posts/2023/10/tasmota-et-am2302/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/10/tasmota-et-am2302/</guid>
+      <description>Maintenant que l&amp;rsquo;on sait installer Tasmota sur un Wemos, il va falloir interagir avec. On va utiler des composants simples.&#xA;Wemos d1 mini AM2302 Une platine d&amp;rsquo;essais AM2302 Il s&amp;rsquo;agit d&amp;rsquo;un capteur numérique de température et d&amp;rsquo;humidité de base à faible coût. Le capteur mesure les données de l&amp;rsquo;air environnant et les transmet sous forme de signal numérique à la broche de données.&#xA;Le branchement On branche pas encore le wemos en USB</description>
+    </item>
+    <item>
+      <title>Un ecran oled pour Esp32</title>
+      <link>http://localhost:1313/posts/2023/10/esp32-et-un-ecran-oled/</link>
+      <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/10/esp32-et-un-ecran-oled/</guid>
+      <description>On va utiliser un petit ecran OLED a tous petit prix et au doux nom de SSD1306, il a une diagonale de 0,96&amp;quot;, mais il est très lisible. L&amp;rsquo;écran est composé de 128x64 pixels OLED bleu sur fond noir (on peut choisir d&amp;rsquo;autres couleurs).&#xA;Le contrôleur SSD1306 permet de dialoguer en I2C ou en SPI. L&amp;rsquo;afficheur dispose de son propre régulateur 3,3V (compatible 5V et 3,3V).&#xA;Branchements ESP32 SSD1306 Description 3.</description>
+    </item>
+    <item>
+      <title>Communiquer avec l&#39;Esp32</title>
+      <link>http://localhost:1313/posts/2023/10/communiquer-avec-esp32/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/10/communiquer-avec-esp32/</guid>
+      <description>Apres avoir installer Micropython sur notre Esp32, il va falloir communiquer avec.&#xA;Recevoir les informations, envoyer des fichiers pour le configurer.&#xA;Pour cela nous allons utiliser un environnement de développement ou IDE en anglais.&#xA;J&amp;rsquo;ai choisi Thonny&#xA;Installation de Thonny $ bash &amp;lt;(curl -s https://thonny.org/installer-for-linux) Configuration Mon premier code # import bibliotheque time et pin import time from machine import Pin print(&amp;#34;Bonjour ESP32&amp;#34;) # on defini le pin 2 en sortie (led) p2 = Pin(2,Pin.</description>
+    </item>
+    <item>
+      <title>Tasmota</title>
+      <link>http://localhost:1313/posts/2023/10/tasmota/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/10/tasmota/</guid>
+      <description>Tasmota est un firmware OpenSource pour des appareils basé sur des ESP8266. Il va permetre de faire communiquer facilement vos projets domotiques.&#xA;Installation Il existe plusieurs façon de flasher, on va choisir la plus simple.&#xA;On va prendre un simple Wemos d1 mini pour l&amp;rsquo;exemple.&#xA;Il faut brancher en Usb sur le pc et on ouvre la page https://tasmota.github.io/install/&#xA;Il faut utiliser Chrome comme navigateur pour etablir la liaison.&#xA;Choisir ESP8266 et Fr</description>
+    </item>
+    <item>
+      <title>La griffe du chien - Don Winslow</title>
+      <link>http://localhost:1313/posts/2023/09/la-griffe-du-chien/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/la-griffe-du-chien/</guid>
+      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/09/la-griffe-du-chien/chien.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Si vous avez aimé &lt;a href=&#34;https://fr.wikipedia.org/wiki/Narcos&#34;&gt;Narcos&lt;/a&gt;, vous allez adorer cette serie de livre.&lt;/p&gt;&#xA;&lt;p&gt;C&amp;rsquo;est le 1er tome de la serie Art Keller.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/La_Griffe_du_chien&#34;&gt;La griffe du chien&lt;/a&gt; (2005)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Cartel_(roman)&#34;&gt;Cartel&lt;/a&gt; (2015)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/La_Fronti%C3%A8re_(roman)&#34;&gt;La Frontière&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Hugo et Pwa</title>
+      <link>http://localhost:1313/posts/2023/09/hugo-pwa/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/hugo-pwa/</guid>
+      <description>&lt;p&gt;Le PWA (Progressive Web App) permet de faire ressembler un site a une application.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Les icones dans Latex</title>
+      <link>http://localhost:1313/posts/2023/09/latex-icones/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/latex-icones/</guid>
+      <description>Téléchargement the-comprehensive-latex-symbol-list.pdf Liens https://la-bibliotex.fr/2019/02/10/des-icones-a-infini-dans-latex/&#xA;https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols&#xA;https://ctan.org/topic/font-symbol&#xA;https://ctan.org/pkg/simpleicons</description>
+    </item>
+    <item>
+      <title>Publipostage avec Koma-Script</title>
+      <link>http://localhost:1313/posts/2023/09/latex-publipostage/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/latex-publipostage/</guid>
+      <description>&lt;p&gt;On veut réaliser du publipostage, envoyer la même lettre à plusieurs destinataires.&lt;/p&gt;&#xA;&lt;p&gt;Avec notre modèle de lettre déjà fait, on va y ajouter un carnet d&amp;rsquo;adresse, et générer plusieurs lettres.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Une lettre avec Koma-Script</title>
+      <link>http://localhost:1313/posts/2023/09/koma-script/</link>
+      <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/koma-script/</guid>
+      <description>&lt;p&gt;Création d&amp;rsquo;un modèle de lettre aux standards français a l&amp;rsquo;aide du module &lt;a href=&#34;https://www.ctan.org/pkg/scrlttr2&#34;&gt;&lt;em&gt;scrlttr2&lt;/em&gt;&lt;/a&gt; de Koma-script.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Convertir de Markdown vers Pdf</title>
+      <link>http://localhost:1313/posts/2023/09/markdown-to-latex/</link>
+      <pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/markdown-to-latex/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://pandoc.org/&#34;&gt;Pandoc&lt;/a&gt; est un super outils de convertion, On va convertir un fichier Markdown en Pdf, en passant par Latex.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Decouverte de l&#39;Esp32</title>
+      <link>http://localhost:1313/posts/2023/09/esp32/</link>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/esp32/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/ESP32&#34;&gt;Esp32&lt;/a&gt; est un microcontrôleur qui va nous permettre de faire des objets connectés grâce a son module Wifi et Bluetooth intégré.&#xA;Il dispose de plusieurs sorties et entrées pour connecter par exemple des capteurs ou des LED.&lt;/p&gt;&#xA;&lt;p&gt;On va utiliser &lt;a href=&#34;https://fr.wikipedia.org/wiki/MicroPython&#34;&gt;Micropython&lt;/a&gt; pour assurer la programmation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Latex de la couleur dans vos codes</title>
+      <link>http://localhost:1313/posts/2023/09/latex-et-les-codes/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/latex-et-les-codes/</guid>
+      <description>&lt;p&gt;Le module &lt;a href=&#34;https://ctan.org/pkg/minted&#34;&gt;&lt;em&gt;minted&lt;/em&gt;&lt;/a&gt; permet de coloriser vos codes.&lt;/p&gt;&#xA;&lt;p&gt;Minted utilise &lt;a href=&#34;https://pygments.org/languages/&#34;&gt;Pygments&lt;/a&gt; pour ajouter de la couleurs, vous trouverez la liste des codes supportés sur le site.&lt;/p&gt;&#xA;&lt;p&gt;Il y a aussi différents &lt;a href=&#34;https://pygments.org/styles/&#34;&gt;styles&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Gray Man - Mark Greaney</title>
+      <link>http://localhost:1313/posts/2023/08/the-grey-man/</link>
+      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/the-grey-man/</guid>
+      <description>Un livre de Mark Greaney, l&amp;rsquo;histoire d&amp;rsquo;un super tueur à gage avec des valeurs.&#xA;Résumé Plus connu sous le pseudonyme de &amp;quot; Gray Man &amp;ldquo;, ce tueur à gages est devenu légendaire pour sa discrétion et son efficacité, il parvient toujours à abattre sa cible avant de disparaître. Jusqu&amp;rsquo;à ce que sa tête soit mise à prix. Coauteur avec Tom Clancy des aventures de Jack Ryan, Mark Greaney signe un thriller dont l&amp;rsquo;adaptation est diffusée sur Netflix en 2022.</description>
+    </item>
+    <item>
+      <title>Latex et les liens</title>
+      <link>http://localhost:1313/posts/2023/08/latex-et-les-liens/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/latex-et-les-liens/</guid>
+      <description>Le module hyperref permet de créer des liens externes et interne sur un PDF.&#xA;On peut changer les couleurs et ajouter des métadonnées&#xA;Son utilisation est facile.&#xA;Utilisation Pour un lien simple: \url{https://wikipedia.fr}&#xA;Pour un un liens dans le texte: \href{https://wikipedia.fr}{Wikipedia.fr} Pour un email: \href{mailto:madame@michu.fr}{madame@michu.fr}&#xA;Pour un document (Attention au chemin): \href{run:./xcolor.pdf}{Voir ce PDF}&#xA;Les exemples \documentclass[a4paper,10pt]{scrartcl} % koma-script \usepackage{graphicx} % Module images \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[T1]{fontenc} \usepackage{parskip} \usepackage[french]{babel} % En francais \usepackage{hyperref} % Module hyperref \hypersetup{colorlinks=true, linkcolor=blue, % Couleurs des liens filecolor=magenta, % Couleur des liens de fichier urlcolor=cyan,% Couleur des Urls pdftitle={Hyperref},% Meta titre pdfauthor={Christophe},% Meta auteur pdfsubject={Les liens avec Latex},% Meta sujet pdfkeywords={Latex,Hyperref},% Meta mots clefs pdfproducer = Latex}% Meta generateur du pdf \urlstyle{same} % Meme police pour les urls \title{Hyperref} \author{Christophe } \date{Juin 2023} \begin{document} \maketitle \section*{Liens simples} \href{https://wikipedia.</description>
+    </item>
+    <item>
+      <title>Latex et xcolor</title>
+      <link>http://localhost:1313/posts/2023/08/latex-et-xcolor/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/latex-et-xcolor/</guid>
+      <description>Le paquetage xcolor fait partie des indispensables de Latex pour coloriser les textes.&#xA;Préambule On appelle les couleurs de base de xcolor,&#xA;\usepackage{xcolor} % import des couleurs dans les textes Il y a aussi d&amp;rsquo;autres palettes de couleurs:&#xA;dvipsnames: 68 couleurs (CMYK); svgnames: 151 couleurs (RGB); x11names: 317 couleurs (RGB). \usepackage[dvipsnames]{xcolor} % import des couleurs dans les textes Tous est bien indiqué dans la documentation (page 39).&#xA;Personnalisation des couleurs On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.</description>
+    </item>
+    <item>
+      <title>Shortcode bouton</title>
+      <link>http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/</guid>
+      <description>J&amp;rsquo;avais besoin d&amp;quot;un bouton pour ouvrir des liens.&#xA;Le shortcode A déposer dans /themes/VOTRETHEME/layouts/shortcodes/bouton.html.&#xA;On peut personaliser l&amp;rsquo;icône grace a Uikit&#xA;{{ $url := .Get &amp;#34;url&amp;#34; }} {{ $titre := .Get &amp;#34;titre&amp;#34; }} {{ $icone := .Get &amp;#34;icone&amp;#34; | default &amp;#34;link&amp;#34;}} &amp;lt;a class=&amp;#34;uk-button uk-button-default uk-box-shadow-medium&amp;#34; target=&amp;#34;_blank&amp;#34; href=&amp;#34;{{ $url }}&amp;#34;&amp;gt;&amp;lt;span uk-icon=&amp;#34;icon: {{ $icone }}&amp;#34;&amp;gt;&amp;lt;/span&amp;gt; {{ $titre }}&amp;lt;/a&amp;gt; Exemples {{&amp;lt; bouton titre=&amp;#34;Voir sur overleaf&amp;#34; url=&amp;#34;https://www.overleaf.com/read/dgnpzyngzbqk&amp;#34; icone=&amp;#34;forward&amp;#34; &amp;gt;}} Voir sur overleaf {{&amp;lt; bouton titre=&amp;#34;Uikit&amp;#34; url=&amp;#34;https://getuikit.</description>
+    </item>
+    <item>
+      <title>Latex, PDF éditable</title>
+      <link>http://localhost:1313/posts/2023/08/latex-pdf-editable/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/latex-pdf-editable/</guid>
+      <description>Avec la classe hyperref, on peut facilement créer des documents PDF éditable.&#xA;J&amp;rsquo;ai fait un petit exemple avec un attestation d&amp;rsquo;hébergement.&#xA;La documentation est bien faite.&#xA;Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[french]{babel} \usepackage[default]{lato} \usepackage{xcolor} \usepackage{hyperref} \hypersetup{ colorlinks=true, linkcolor=black, } \usepackage{fancyhdr} \pagestyle{empty} \setlength\parindent{0pt} \begin{document} \begin{Form} \begin{center} \textbf{\uppercase{ATTESTATION D&amp;#39;HÉBERGEMENT}} \\ \end{center} \vspace{5mm} Je soussigné(e), \\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \TextField[width=14cm,borderwidth=0pt]{Demeurant :} \\ \vspace{5mm} déclare sur l&amp;#39;honneur héberger à mon domicile,\\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M.</description>
+    </item>
+    <item>
+      <title>La Griffe du chien - Don Winslow</title>
+      <link>http://localhost:1313/posts/2023/08/la-griffe-du-chien/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/la-griffe-du-chien/</guid>
+      <description>Don Winslow retraçe un demi-siècle de lutte contre la drogue aux Etats-Unis et au Mexique.&#xA;3 gros pavets que l&amp;rsquo;on devore facilement. Les personnages s&amp;rsquo;entrecroisent, on append beaucoup sur les dessous du trafics de drogue.&#xA;Serie Art Keller Résumé Seigneur de la frontière américano-mexicaine, Art Keller, agent de la DEA, l’a juré sur la tombe de son adjoint : il emploiera tous les moyens, légaux ou illégaux, pour mettre un terme au trafic qui inonde son pays.</description>
+    </item>
+    <item>
+      <title>Nuage de tags</title>
+      <link>http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/</link>
+      <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/</guid>
+      <description>&lt;p&gt;Dans la barre des menus, j&amp;rsquo;avais trop de tags cela devenait pas trop lisible.&lt;/p&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai choisi de déporter les tags dans une page et d&amp;rsquo;utiliser que du CSS pour le visuel.&lt;/p&gt;&#xA;&lt;p&gt;Il y a la possibilité de bibliothèques JavaScript mais je veux rester &lt;em&gt;light&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo et les liens</title>
+      <link>http://localhost:1313/posts/2023/08/hugo-et-les-liens/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/hugo-et-les-liens/</guid>
+      <description>Liens externes En markdown c&amp;rsquo;est facile, mais ça ne gère pas &amp;ldquo;ouvrir dans un nouveau onglet&amp;rdquo;: [wikipedia](https://fr.wikipedia.org/) Wikipedia&#xA;On pourrait aussi utiliser le shortcode rawhtml.&#xA;{{&amp;lt; rawhtml &amp;gt;}} &amp;lt;a href=&amp;#34;https://fr.wikipedia.org/&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;Wikipedia&amp;lt;/a&amp;gt; {{&amp;lt; /rawhtml &amp;gt;}} target=&amp;quot;_blank&amp;quot; &amp;ndash;&amp;gt; nouvelle onglet&#xA;Wikipedia Liens internes Organisation du site: ├── 2023 │ ├── 02 │ │ ├── Diceware │ │ │ ├── diceware.png-369a6.webp │ │ │ ├── index.md │ │ │ └── one-red-dice-01-a9bf3.webp │ │ ├── Ebook-avec-Latex │ │ │ ├── epub.</description>
+    </item>
+    <item>
+      <title>Hugo et les galeries</title>
+      <link>http://localhost:1313/posts/2023/07/hugo_galerie/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/07/hugo_galerie/</guid>
+      <description>Une petite galerie toute simple, qui utilise Uikit et lightbox.&#xA;Dans le dossier de l&amp;rsquo;article, il faut créer un dossier images/ pour y deposer les images.&#xA;Hugo va directement chercher les images.&#xA;Il faut installer la version extended (exemple:hugo_extended_0.123.7_linux-arm64.deb)&#xA;Galerie Shortcode &amp;lt;!-- Options: titre -&amp;gt; Nom de la galerie animation -&amp;gt; Type de transition slide,fade,scale (des exemples sur Uikit:https://getuikit.com/docs/lightbox#animations) Exemples: galerie titre=&amp;#34;super galerie&amp;#34; animation=&amp;#34;scale&amp;#34; --&amp;gt; {{ $titre := .Get &amp;#34;titre&amp;#34;| default &amp;#34;Galerie&amp;#34; }} {{ $animation := .</description>
+    </item>
+    <item>
+      <title>Hugo minification</title>
+      <link>http://localhost:1313/posts/2023/07/hugo-minify/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/07/hugo-minify/</guid>
+      <description>Hugo est rapide, mais on peut améliorer le chargement des ressources.&#xA;Les images Il faut utiliser des formats modernes comme webp et avoir un bon redimensionnement. J&amp;rsquo;utilise Gimps pour changer la taille et le format.&#xA;Sinon en ligne de commande:&#xA;$ cwebp -q 90 minifycss.png -o minifycss.webp Les CSS Les fichiers CSS sont placés directement dans /themes/VOTRETHEME/assets/css.&#xA;Dans mon partials/head.html, j ai:&#xA;{{ $css := resources.Get &amp;#34;css/uikit.min.css&amp;#34; | minify | resources.</description>
+    </item>
+    <item>
+      <title>Ressources pour Latex</title>
+      <link>http://localhost:1313/posts/2023/07/latex_liens/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/07/latex_liens/</guid>
+      <description>Une liste de ressources Latex pour apprendre et comprendre&#xA;Francais https://zestedesavoir.com/bibliotheque/?tag=latex&#xA;https://www.learnlatex.org/fr/&#xA;https://fr.wikibooks.org/wiki/LaTeX&#xA;https://framalibre.org/tags/latex&#xA;https://www.gutenberg-asso.fr/&#xA;Anglais https://www.overleaf.com/&#xA;https://www.latex-project.org/&#xA;https://www.ctan.org/&#xA;https://github.com/egeerardyn/awesome-LaTeX</description>
+    </item>
+    <item>
+      <title>Shortcode les fichiers</title>
+      <link>http://localhost:1313/posts/2023/07/fichier/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/07/fichier/</guid>
+      <description>Ce shortcode liste les fichiers dans une dossier pour permettre leurs téléchargements.&#xA;Dans le dossier de l&amp;rsquo;article, il faut creer un dossier files/ pour y deposer les fichiers.&#xA;Attention, le shortcode ne marche pas si il y a des espaces dans le nom du dossier de l&amp;rsquo;article&#xA;&amp;lt;&amp;ndash;more&amp;ndash;&amp;gt;&#xA;Le shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier pj.html&#xA;pj.html {{ $_hugo_config := `{ &amp;#34;version&amp;#34;: 1 }` -}} &amp;lt;div class=&amp;#34;attachments-files uk-card uk-card-small uk-width-1-3@m uk-padding&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;attachments-files-titre&amp;#34;&amp;gt;Téléchargement &amp;lt;span uk-icon=&amp;#34;icon: cloud-download;ratio:2&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;#34;attachments-files&amp;#34;&amp;gt; {{- $filesName := &amp;#34;files&amp;#34; }} {{- if ne .</description>
+    </item>
+    <item>
+      <title>Hugo et les images</title>
+      <link>http://localhost:1313/posts/2023/07/hugo-lesimages/</link>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/07/hugo-lesimages/</guid>
+      <description>Minimal {{&amp;lt; figure src=&amp;#34;image.webp&amp;#34; width=200px &amp;gt;}} Grande taille {{/*&amp;lt; figure src=&amp;#34;image.webp&amp;#34; title=&amp;#34;Anita Austvika&amp;#34; caption=&amp;#34;Photo de [Anita Austvika](https://unsplash.com/ko/@anitaaustvika) sur [Unsplash](https://unsplash.com/)&amp;#34; width=800px alt=&amp;#34;Anita Austvika&amp;#34; class=&amp;#34;imagecenter&amp;#34; attrlink=&amp;#34;https://unsplash.com/fr/photos/u9ZFCP8VuvU&amp;#34;*/&amp;gt;}} Anita AustvikaPhoto de Anita Austvika sur Unsplash Images centrée {{&amp;lt; figure src=&amp;#34;image.webp&amp;#34; title=&amp;#34;Anita Austvika&amp;#34; caption=&amp;#34;Photo de [Anita Austvika](https://unsplash.com/ko/@anitaaustvika) sur [Unsplash](https://unsplash.com/)&amp;#34; width=400px alt=&amp;#34;Anita Austvika&amp;#34; class=&amp;#34;imagecenter&amp;#34; &amp;gt;}} Anita AustvikaPhoto de Anita Austvika sur Unsplash&#xA;Images à droite Anita AustvikaPhoto de Anita Austvika sur Unsplash&#xA;&amp;quot; {{&amp;lt; figure src=&amp;#34;image.webp&amp;#34; title=&amp;#34;Anita Austvika&amp;#34; caption=&amp;#34;Photo de [Anita Austvika](https://unsplash.</description>
+    </item>
+    <item>
+      <title>Shortcode pour integrer le HTML</title>
+      <link>http://localhost:1313/posts/2023/07/hugo-shortcode-html/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/07/hugo-shortcode-html/</guid>
+      <description>On pourrait ecrire des milliers de shorcode pour integrer du html, mais il y a plus facile.&#xA;Pour l&amp;rsquo;exemple, on va prendre des videos diffusé sur Peertube.fr&#xA;Le code original &amp;lt;iframe title=&amp;#34;GoGoCarto - 1 - Personnalisation du site&amp;#34; src=&amp;#34;https://www.peertube.fr/videos/embed/54509567-9116-4264-ba86-6c2d20cd360b&amp;#34; allowfullscreen=&amp;#34;&amp;#34; sandbox=&amp;#34;allow-same-origin allow-scripts allow-popups&amp;#34; width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; frameborder=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;/iframe&amp;gt; Des idées sur l&amp;rsquo;iframe en mode Hugo ici.&#xA;Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes, un fichier rawhtml.html. Avec seulement ca.</description>
+    </item>
+    <item>
+      <title>Shortcode Framapad</title>
+      <link>http://localhost:1313/posts/2023/07/hugo-shortcode-pad/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/07/hugo-shortcode-pad/</guid>
+      <description>Framapad Un « pad » est un éditeur de texte collaboratif en ligne géré par Framasoft.&#xA;Le code original &amp;lt;iframe name=&amp;#34;embed_readwrite&amp;#34; src=&amp;#34;https://hebdo.framapad.org/p/fygijewtbk-a0wa?showControls=true&amp;amp;showChat=true&amp;amp;showLineNumbers=true&amp;amp;useMonospaceFont=false&amp;#34; width=&amp;#34;100%&amp;#34; height=&amp;#34;600&amp;#34; frameborder=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;/iframe&amp;gt; On peut utiliser l&amp;rsquo;import de l&amp;rsquo;iframe.&#xA;Des idées sur l&amp;rsquo;iframe en mode Hugo ici.&#xA;Sinon il y a les shortcodes.&#xA;Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier pad.html {{ $PadName := .Get &amp;#34;PadName&amp;#34; }} {{ $showControls := .Get &amp;#34;showControls&amp;#34; | default &amp;#34;false&amp;#34; }} {{ $showChat := .</description>
+    </item>
+    <item>
+      <title>Shortcode Framacarte</title>
+      <link>http://localhost:1313/posts/2023/06/hugo_shortcode-umap/</link>
+      <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo_shortcode-umap/</guid>
+      <description>Grace a Framasoft, on peut avoir un service pour créer des cartes personnalisées. Le service s&amp;rsquo;appuie sur Umap.&#xA;Il existe un shortecode pour umap sur GIT, j&amp;rsquo;ai juste modifié l&amp;rsquo;URL dans le code.&#xA;Framacarte Quand on a créer une carte (un super tuto sur cartocite.fr/) sur Framacarte, on aimerait l&amp;rsquo;afficher sur notre site.&#xA;On peut utiliser l&amp;rsquo;import de l&amp;rsquo;iframe.&#xA;On clique sur l&amp;rsquo;icône de partage On récupère le code. Le code original &amp;lt;iframe width=&amp;#34;100%&amp;#34; height=&amp;#34;300px&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen src=&amp;#34;https//framacarte.</description>
+    </item>
+    <item>
+      <title>La Faille - Franck Thilliez</title>
+      <link>http://localhost:1313/posts/2023/06/la-faille-franck-thilliez/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/la-faille-franck-thilliez/</guid>
+      <description>Encore un grand livre de Thilliez, une intrigue bien ficelée autour de Franck Sharko et son équipe.&#xA;Chapitre aprés chapitre, la noirceur de l&amp;rsquo;humanité se révéle.&#xA;A lire absolument.&#xA;&#34; Les forces du vent se matérialisent sur l’eau sous forme d’ondes, mais qu’elles ne dépendent pas de l’eau pour exister. &#34;&#xA;Franck Thilliez Résumé La frontière entre la vie et la mort est peut-être plus trouble qu&amp;rsquo;il n&amp;rsquo;y paraît&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Les fantômes de Kiev-Cédric Bannel</title>
+      <link>http://localhost:1313/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/</guid>
+      <description>Résumé La vengeance du maître du Kremlin se mange toujours glacée Punir la France de son soutien à l’Ukraine, telle est la mission assignée par Poutine à ses services de sécurité. Un plan démoniaque que la DGSE doit faire échouer. Mais que pèse son meilleur agent, le brillant « avocat international » Edgar Van Scana, face au rouleau compresseur des renseignements russes ? Surtout quand la moindre action est orchestrée par la générale Olga Ranevskaïa, cheffe des opérations noires du Kremlin.</description>
+    </item>
+    <item>
+      <title>Légende - David Gemmell</title>
+      <link>http://localhost:1313/posts/2023/06/l%C3%A9gende---david-gemmell/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/l%C3%A9gende---david-gemmell/</guid>
+      <description>Un roman de David Gemmell , le 1er volume publié du Cycle Drenaï.&#xA;Résumé Druss est une légende. Ses exploits sont connus de tous. Surnommé le Capitaine à la Hache lors de ses plus grandes batailles, il aurait pu devenir riche en tant que mercenaire&amp;hellip; Au contraire, fuyant la célébrité, il a choisi de vivre retiré loin des hommes, perché au sommet d&amp;rsquo;une montagne glacée. Il a remisé son arme, vivant reclus, se contentant de la compagnie de quelques léopards des neiges.</description>
+    </item>
+    <item>
+      <title>Fury</title>
+      <link>http://localhost:1313/posts/2023/06/fury/</link>
+      <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/fury/</guid>
+      <description>&#34; Les idéaux sont Pacifiques l’histoire est Violente. &#34;&#xA;Brad Pitt, Fury Un trés bon film de guerre, avec des acteurs qui accompagne cette terrible histoire. Un mélange d&amp;rsquo;horreur de la guerre et d&amp;rsquo;humanité.&#xA;Liens https://www.allocine.fr/film/fichefilm_gen_cfilm=218759.html&#xA;https://fr.wikipedia.org/wiki/Fury_(film,_2014)&#xA;https://www.senscritique.com/film/fury/8470273</description>
+    </item>
+    <item>
+      <title>Shortcode ChartJS</title>
+      <link>http://localhost:1313/posts/2023/06/hugo_shortcode_chartjs/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo_shortcode_chartjs/</guid>
+      <description>ChartJS est une bibliothèque JavaScript open source gratuite pour la visualisation de données (Wikipédia)&#xA;Le shortcode J&amp;rsquo;ai trouvé le code ici.&#xA;Il y a un problème sur le code (voir ici)&#xA;src=&amp;ldquo;https://cdn.jsdelivr.net/npm/chart.js&amp;quot;&#xA;A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.html {{ $w := default &amp;#34;100&amp;#34; (.Get 0) }} {{ $h := default &amp;#34;300&amp;#34; (.Get 1) }} {{ $r := ( .Inner | chomp) }} {{ $seed := &amp;#34;foo&amp;#34; }} {{ $id := delimit (shuffle (split (md5 $seed) &amp;#34;&amp;#34; )) &amp;#34;&amp;#34; }} &amp;lt;div style=&amp;#34;width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto&amp;#34;&amp;gt; &amp;lt;canvas id=&amp;#34;{{ $id }}&amp;#34;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.</description>
+    </item>
+    <item>
+      <title>Les cartographes - Peng Shepherd</title>
+      <link>http://localhost:1313/posts/2023/06/les-cartographes-peng-shepherd/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/les-cartographes-peng-shepherd/</guid>
+      <description>&#34; Les cartes servent à rapprocher les gens. &#34;&#xA;Peng Shepherd Je me suis plongé dans cette histoire avec une intrigue sympa et du rythme autour des cartes mais qui tourne vite en rond, beaucoup de « blabla » sur la cartographie.&#xA;Résumé Nell a perdu ses deux parents. Sa mère trente ans plus tôt, et maintenant son père, le Dr Young, un célèbre cartographe de la New York Public Library qui vient d’être retrouvé mort dans son bureau.</description>
+    </item>
+    <item>
+      <title>Shortcode Mermaid</title>
+      <link>http://localhost:1313/posts/2023/06/hugo_shortcode_mermaid/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo_shortcode_mermaid/</guid>
+      <description>On va integrer mermaid dans Hugo.&#xA;Mermaid permet de générer des jolies diagrammes à partir de texte.&#xA;Kroki est une alternative.&#xA;Le code On va creer dans notre dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier mermaid.html&#xA;&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt; {{ .Inner | safeHTML }} &amp;lt;/div&amp;gt; {{ if le (.Page.Scratch.Get &amp;#34;mermaidInserted&amp;#34;) 0 }} {{ .Page.Scratch.Add &amp;#34;mermaidInserted&amp;#34; 1 }} {{ $mermaid := resources.Get &amp;#34;js/mermaid.min.js&amp;#34; | minify | fingerprint }} &amp;lt;script type=&amp;#34;application/javascript&amp;#34; src=&amp;#34;{{ $mermaid.Permalink }}&amp;#34; defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;module&amp;#34;&amp;gt; mermaid.</description>
+    </item>
+    <item>
+      <title>Afficher Latex dans Hugo</title>
+      <link>http://localhost:1313/posts/2023/06/hugo_shortcode_latex/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo_shortcode_latex/</guid>
+      <description>Le shortcode Fichier latex.html à deposer /themes/VOTRETHEME/layouts/shortcodes&#xA;&amp;lt;script type=&amp;#34;module&amp;#34;&amp;gt; import { LaTeXJSComponent } from &amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs&amp;#34; customElements.define(&amp;#34;latex-js&amp;#34;, LaTeXJSComponent) &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; latex-js { display: inline-block; width: 70%; border: 1px solid black; margin-right: 2em; padding-bottom: 2em; } &amp;lt;/style&amp;gt; &amp;lt;latex-js baseURL=&amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/&amp;#34;&amp;gt; {{ .Inner }} &amp;lt;/latex-js&amp;gt; {{ .Inner }} permet d&amp;rsquo;inserer tous ce qu&amp;rsquo;il se trouve entre les balises.&#xA;Utilisation {{&amp;lt; latex &amp;gt;}} \documentclass{article} \usepackage[latin1]{inputenc} \usepackage{hyperref} \author{Christophe} \date{2023} \title{Un exemple} \usepackage[francais]{babel} \begin{document} \maketitle \section{Début} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    <item>
+      <title>Recherche dans Hugo</title>
+      <link>http://localhost:1313/posts/2023/06/hugo-recherche/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo-recherche/</guid>
+      <description>J&amp;rsquo;ai desactivé la recherche sur le site. Mais ça marche.&#xA;Il me manquait la recherche sur Hugo, j&amp;rsquo;en est chié une histoire de Jquery.&#xA;config.toml On va demander a Hugo de générer un fichier JSON, pour récupérer les données du site.&#xA;[outputs] home = [ &amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;, &amp;#34;RSS&amp;#34;] Quand on lance Hugo, on a droit a une erreur.&#xA;Change of config file detected, rebuilding site. 2023-05-02 11:39:09.348 +0200 WARN 2023/05/02 11:39:09 found no layout file for &amp;#34;JSON&amp;#34; for kind &amp;#34;home&amp;#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.</description>
+    </item>
+    <item>
+      <title>Jimmy Somerville-Smalltown Boy </title>
+      <link>http://localhost:1313/posts/2023/05/jimmy-somerville--smalltown-boy/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/jimmy-somerville--smalltown-boy/</guid>
+      <description>&#34; Run away, turn away, run away, turn away, run away. Sauve-toi, détourne-toi, sauve-toi, détourne-toi, sauve-toi. &#34;&#xA;Liens https://fr.wikipedia.org/wiki/Smalltown_Boy&#xA;https://fr.wikipedia.org/wiki/Bronski_Beat&#xA;https://www.lacoccinelle.net/255473-bronski-beat-smalltown-boy.html</description>
+    </item>
+    <item>
+      <title>Shortcode Codepen</title>
+      <link>http://localhost:1313/posts/2023/05/hugo_shortcode_codepen/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/hugo_shortcode_codepen/</guid>
+      <description>On va creer notre shortcode pour le site Codepen, ca qui va nous permetre l&amp;rsquo;afficher dans Hugo.&#xA;Le code Sur le site de Codepen, dans l&amp;rsquo;onglet embeb on va trouver le code Html pour l&amp;rsquo;integrer sur un site.&#xA;&amp;lt;p class=&amp;#34;codepen&amp;#34; data-height=&amp;#34;300&amp;#34; data-theme-id=&amp;#34;light&amp;#34; data-default-tab=&amp;#34;html,result&amp;#34; data-slug-hash=&amp;#34;YzObPmg&amp;#34; data-user=&amp;#34;christ0phe&amp;#34; style=&amp;#34;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&amp;#34;&amp;gt; &amp;lt;span&amp;gt;See the Pen &amp;lt;a href=&amp;#34;https://codepen.io/christ0phe/pen/YzObPmg&amp;#34;&amp;gt; Purecss&amp;lt;/a&amp;gt; by christophe (&amp;lt;a href=&amp;#34;https://codepen.</description>
+    </item>
+    <item>
+      <title>Hugo et les commentaires</title>
+      <link>http://localhost:1313/posts/2023/05/hugo_les_commentaires/</link>
+      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/hugo_les_commentaires/</guid>
+      <description>Pas facile de choisir un systeme de commentaire pour Hugo, la facilitée c est Disqus avec un template interne.&#xA;Cactus Mon choix c&amp;rsquo;est dirigé vers cactus.chat, déjà pour la doc qui est facile d&amp;rsquo;accés et pour Matrix qui utilise un protocole ouvert (Wikipedia).&#xA;Installation C&amp;rsquo;est bien indiqué ici. The shortcode chat.html must be added to layouts/shortcodes/ and looks like this&#xA;YOUR-SITE-NAME Bien changer cette variable avec le nom de votre site</description>
+    </item>
+    <item>
+      <title>Alias Emma - Ava Glass </title>
+      <link>http://localhost:1313/posts/2023/05/alias-emma---ava-glass/</link>
+      <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/alias-emma---ava-glass/</guid>
+      <description>Un livre plein d&amp;rsquo;action, une histoire qui tient la route. On decouvre Londre a travers differents quartier et des lieux insolites.&#xA;Résumé Agente surdouée du MI6 britannique, Emma Makepeace doit exfiltrer en catastrophe un jeune médecin russe qui travaille dans un hôpital de Londres. Michael Primalov ignore que cette inconnue de vingt-cinq ans a pour mission de le soustraire à une équipe d&amp;rsquo;assassins diligentée par Moscou.&#xA;Les Russes ont envoyé leurs meilleurs agents et ils ont piraté les caméras de Londres, la capitale la plus surveillée du monde.</description>
+    </item>
+    <item>
+      <title>Cible une - Jack Mars</title>
+      <link>http://localhost:1313/posts/2023/05/cible-une---jack-mars/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/cible-une---jack-mars/</guid>
+      <description>Un livre d&amp;rsquo;aventure et d&amp;rsquo;espionnage sans surprise, un hero a &amp;ldquo;l&amp;rsquo;americaine&amp;rdquo; indestructible mais avec ces petites failles. Un 007 façon guerrier.&#xA;Résumé Jacob Snow – soldat d’élite recruté par la CIA et hanté par son passé torturé – est l’un des meilleurs atouts de l’Agence, c’est pourquoi il est envoyé sur place lorsque les enjeux sont des plus élevés. Quand une ancienne relique égyptienne disparaît dans des circonstances mystérieuses, Jacob sait qu’il ne s’agit pas d’un vol ordinaire : la relique renferme un secret – un secret qui pourrait tout anéantir.</description>
+    </item>
+    <item>
+      <title>Les signaux SNCF avec Draw.IO</title>
+      <link>http://localhost:1313/posts/2023/05/drawio_signauxsncf/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/drawio_signauxsncf/</guid>
+      <description>Nicolas Wurtz un agent SNCF ,qui développe aussi Graou un outil métier qui permet aux agents de s&amp;rsquo;organiser, a ajouté les signaux SNCF sur Drawn.IO. Hey la #teamSNCF ! Besoin de tracer des voies avec des signaux/pancartes et des trains ? c&amp;#39;est galère ? Bon ben j&amp;#39;ai créé une librairie pour draw io !https://t.co/WwHn1Vtb41&#xA;Et tout est opensource sur https://t.co/g21l5UpgkI (les trains viennent de https://t.co/EEcKybvFDN). 💚 pic.twitter.com/OZ6BZ9AJHC&#xA;&amp;mdash; Nicolas Wurtz &amp;amp; Graou (@NicolasW_GRAOU) May 13, 2023 Cela va permettre aux agents de préparer leurs études de ligne.</description>
+    </item>
+    <item>
+      <title>Hugo shortcode</title>
+      <link>http://localhost:1313/posts/2023/05/hugo_shortcode/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/hugo_shortcode/</guid>
+      <description>Maj 15/05/2023: Ajout des icones personalisées des bandeaux.&#xA;La syntaxe Markdown a des limites, Hugo utilise des « bouts de code » pour passer ces limites.&#xA;L’inconvénient c’est de retenir les balises.&#xA;L&amp;rsquo;avantage est d&amp;rsquo;intégrer des fonctions au sein même du contenu, sans toucher au template.&#xA;Shortcode interne Vous trouverez pleins d&amp;rsquo;exemple sur le site officiel.&#xA;https://gohugo.io/content-management/shortcodes/&#xA;shortcodes personnalisés Des icônes On va se servir des icônes du framework du site.</description>
+    </item>
+    <item>
+      <title>Re-organisation du site</title>
+      <link>http://localhost:1313/posts/2023/05/reorganisation-du--site/</link>
+      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/reorganisation-du--site/</guid>
+      <description>Je commençais à me mêler les pinceaux avec tous les articles, j&amp;rsquo;ai décider de changer l&amp;rsquo;organisation du site.&#xA;Je voulais aussi des URL lisibles&#xA;Nouvelle organisation J&amp;rsquo;ai organisé mon dossier content comme sur le diagramme dessous, les articles seront rangés par date (année, mois).&#xA;flowchart LR A[Schrek.fr]--&gt;B(Pages) B--&gt;F[About] B--&gt;G[search] A--&gt;C[Posts] D--&gt;K[Pages] C--&gt;E[2023] E--&gt;H(01) E--&gt;I(02) E--&gt;J(03) A--&gt;D[Wiki] Les URLs Dans mon ficher config.toml, j&amp;rsquo;ai rajouté:&#xA;[permalinks] &amp;#39;/&amp;#39; = &amp;#39;/:year/:month/:title/&amp;#39; Source Hugo</description>
+    </item>
+    <item>
+      <title>Hugo - Création d’un menu</title>
+      <link>http://localhost:1313/posts/2023/05/hugo_menu/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/hugo_menu/</guid>
+      <description>On va rajouter un menu a notre template.&#xA;Intro On pourrait passer par le HTML en ajoutant dans le header ou dans un fichier partial/nav.html et en l&amp;rsquo;ajoutant dans le base_of.html.&#xA;&amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/about&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;/contact&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; Mais Hugo permet de faire plus efficace. il faut créer dans themes/MONTHEME/layouts/partials/ un fichier nav.html.&#xA;&amp;lt;nav&amp;gt; &amp;lt;ul&amp;gt; {{ range .Site.Menus.main }} &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;{{ .URL }}&amp;#34;&amp;gt;{{ .Name }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; {{ end }} &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; Explication On demande a Hugo de regarder dans le fichier de configuration config.</description>
+    </item>
+    <item>
+      <title>Silo - Hugh Howey</title>
+      <link>http://localhost:1313/posts/2023/05/silo-hugh_howey/</link>
+      <pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/silo-hugh_howey/</guid>
+      <description>Une série post-apocalyptique écrite par Hugh Howey. On suit la vie dans un silo isolé du monde, avec un système de caste et beaucoup d&amp;rsquo;intrigues.&#xA;Pour la lecture des romans, il faut suivre l&amp;rsquo;ordre de publication:&#xA;Silo (2011) Silo: Origine (2013) Silo: Génération (2016) Une série existe Allociné&#xA;Résumé Dans un futur post-apocalyptique indéterminé, quelques milliers de survivants ont établi une société dans un silo souterrain de 144 étages. Les règles de vie sont strictes.</description>
+    </item>
+    <item>
+      <title>Hugo - Création d’un thème</title>
+      <link>http://localhost:1313/posts/2023/05/hugo_creation_theme/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/hugo_creation_theme/</guid>
+      <description>Après l’article sur l&amp;rsquo;installation d&amp;rsquo;Hugo et la mise en place d’un thème, on va créer notre thème perso.&#xA;On se place dans le dossier de notre projet.&#xA;$ hugo new theme christophe $ cd themes/christophe/ $ tree . ├── archetypes │ └── default.md (modeles pour les articles et les pages) ├── layouts │ ├── 404.html │ ├── _default │ │ ├── baseof.html (page qui structure les autres pages) │ │ ├── list.</description>
+    </item>
+    <item>
+      <title>Les Chatons</title>
+      <link>http://localhost:1313/posts/2023/04/les_chatons/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/les_chatons/</guid>
+      <description>Libre J’ai toujours été attiré par le logiciel libre (plus de 20 ans sous Linux) et la protection de mes données. Voulant sortir de Google pour mes courriels et le stockage de mes données je me suis un serveur Kimsufi, mais je me suis vite rendu compte de la difficulté de gérer un serveur (mise a jour, sécurité, configuration).&#xA;Je me suis tourné vers des gens qui savent faire et j’ai découvert les CHATONS: pour des services libres et alternatifs.</description>
+    </item>
+    <item>
+      <title>Projet Dernière Chance - Andy Weir</title>
+      <link>http://localhost:1313/posts/2023/04/projet-derniere-chance---andy-weir/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/projet-derniere-chance---andy-weir/</guid>
+      <description>Par l’auteur de &amp;ldquo;Seul sur Mars&amp;rdquo; ,Andy Weir. Une belle aventure spatial, ou l’on suit Grace dans son vaisseau. Le roman a du rythme avec des flash-back, certaines théories physiques sont un peu compliquées à comprendre mais ça ne ralentit pas la lecture.&#xA;Les Russes sont tous cinglés comme elle ? Demandai-je en me penchant vers Dimitri. Oui, confirma-t-il en souriant. C’est la seule façon d’être russe et heureux à la fois.</description>
+    </item>
+    <item>
+      <title>Le dieu de New York - Lyndsay Faye</title>
+      <link>http://localhost:1313/posts/2023/04/le-dieu-de-new-york---lyndsay-faye/</link>
+      <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/le-dieu-de-new-york---lyndsay-faye/</guid>
+      <description>Une enquête passionnante dans les bas fonds new-yorkais du 19ᵉ siècle avec un genre de Sherlock comme personnage principal. j’y ai retrouvé l’ambiance du film Gangs of New York&#xA;Intro du film&#xA;A la fin du livre, on y trouve un glossaire des argots du roman.&#xA;Résumé New-York, été 1845. Timothy Wilde, ancien barman, intègre le nouvellement créé NYPD, le département de police de la ville. Un choix de raison : il faut bien gagner sa vie, et c&amp;rsquo;est un travail honnête.</description>
+    </item>
+    <item>
+      <title>L’Entraînement de Luke Stone - jack Mars</title>
+      <link>http://localhost:1313/posts/2023/04/lentra%C3%AEnement-de-luke-stone---jack-mars/</link>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/lentra%C3%AEnement-de-luke-stone---jack-mars/</guid>
+      <description>Livre dans le genre Tom Clancy en moins bien, roman d’action au cœur des forces spéciales américaines. Facile a lire avec des héros très américains, ça frôle la caricature mais ça peut plaire. j’ai attaqué le tome 2 qui malheureusement répète certaine scène du tome 1. Peu de chance que je continue la série.&#xA;Résumé Dans CIBLE PRINCIPALE (tome 1), nous assistons à l’entraînement d’un des soldats les plus durs et les plus mortels du monde : Luke Stone.</description>
+    </item>
+    <item>
+      <title>Les framework CSS</title>
+      <link>http://localhost:1313/posts/2023/04/css_framework/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/css_framework/</guid>
+      <description>&lt;p&gt;Les frameworks CSS aident les développeurs Web et autres web-designers à structurer rapidement leurs sites, leur permettant de se concentrer davantage sur les différentes fonctionnalités, plutôt que de passer du temps sur les éléments de style.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pandoc html template</title>
+      <link>http://localhost:1313/posts/2023/04/pandoc_html_template/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/pandoc_html_template/</guid>
+      <description>Pour gérer les templates avec Pandoc, on va utiliser un système de balises qui sont incluses dans l’entête du fichier Markdown.&#xA;--- title: Schrek subtitle: Mon jolie site abstract: Test template abstract-title: test abstract-title author: Schrek christophe date: 2023-03-23 site: https://schrek.fr/ subject: Pandoc template description: utilisation des templates avec Pandoc logo: logo.png lang: fr keywords: pandoc html5 css template category: Web --- Exemple de template &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;html $if(lang)$ lang=&amp;#34;$lang$&amp;#34; $endif$ &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description>
+    </item>
+    <item>
+      <title>Artémis - Andy Weir</title>
+      <link>http://localhost:1313/posts/2023/04/art%C3%A9mis/</link>
+      <pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/art%C3%A9mis/</guid>
+      <description>L’aventure nous plonge la vie de Jazz qui vie dans la cité d’Artémis sur la lune. On découvre la vie dans une cité avec ces avantages et inconvenants. Genre de livre qui pourrait devenir une série Netflix.&#xA;Résumé Le roman se déroule à la fin des années 2080 et se déroule à Artémis, la première et seule ville sur la Lune. Il suit la vie de la coursière et contrebandière Jasmine « Jazz » Bashara alors qu’elle se retrouve prise dans une conspiration pour le contrôle de la ville.</description>
+    </item>
+    <item>
+      <title>Markdown to Html</title>
+      <link>http://localhost:1313/posts/2023/04/markdown-html/</link>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/markdown-html/</guid>
+      <description>Pandoc est une application en ligne de commande qui permet de convertir des documents dans différents format.&#xA;On va l’utiliser pour créer un page HTML a partir d’un document créer avec les balises Markdown, pour plus de &amp;ldquo;beauté on va y inclure un fichier Css&#xA;Installation Pandoc $ sudo apt install pandoc Utilisation On récupère un fichier css (https://latex.vercel.app/ pour l’exemple). $ wget https://latex.now.sh/style.css J’ai tout ajouté dans le fichier en dessous.</description>
+    </item>
+    <item>
+      <title>A propos</title>
+      <link>http://localhost:1313/pages/apropos/</link>
+      <pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate>
+      <guid>http://localhost:1313/pages/apropos/</guid>
+      <description>Pour me contacter XMPP : christ0phe@chapril.org&#xA;Telegram : https://t.me/Christ0phe&#xA;Le site Moteur du blog Hugo, generateur de site statique. Framework Css UiKit. Les sources Github. Uikit Organisation du site flowchart TD A[Schrek.fr] --&gt; B[Blog] A --&gt; C[Wiki] A --&gt; F[A propos] A --&gt; H[Nuage de tags] A -.-&gt; J(Flux Rss) B --&gt; D[2023] D --&gt; E[Fevrier] D --&gt; I[Mars] D --&gt; K[Avril] K --&gt; L[Article] K --&gt; L1[Article] Licence Ce(tte) œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.</description>
+    </item>
+    <item>
+      <title>Hors ligne</title>
+      <link>http://localhost:1313/pages/hors_ligne/</link>
+      <pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate>
+      <guid>http://localhost:1313/pages/hors_ligne/</guid>
+      <description>Hors ligne </description>
+    </item>
+    <item>
+      <title>Nuage de tags</title>
+      <link>http://localhost:1313/pages/tagscloud/</link>
+      <pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate>
+      <guid>http://localhost:1313/pages/tagscloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A faire</title>
+      <link>http://localhost:1313/wiki/a_faire/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/a_faire/</guid>
+      <description>Optimisations ameliorations, idées d&amp;rsquo;articles &amp;hellip;&#xA;Optimisation des images.&#xA;Amelioration des bandeaux ( plus lisible, logo).&#xA;Revoir le code du shortcode galerie.&#xA;rendre plus lisible &amp;ldquo;les cartes articles&amp;rdquo;.&#xA;Icone Wiki non comprehensible.&#xA;Revoir les fautes d&amp;rsquo;ortographes.&#xA;Page Wiki plus sympa.</description>
+    </item>
+    <item>
+      <title>Bas a sable</title>
+      <link>http://localhost:1313/wiki/boucle/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/boucle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Les articles</title>
+      <link>http://localhost:1313/wiki/articles/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/articles/</guid>
+      <description>{{&amp;lt; bandeau primary &amp;gt;}} A faire. {{&amp;lt; / bandeau &amp;gt;}}&#xA;Deep sleep wemos MQTT MQTT Tastoma {{&amp;lt; bandeau warning &amp;gt;}} En construction / . {{&amp;lt; / bandeau &amp;gt;}}&#xA;Communiquer avec l&amp;rsquo;Esp32 Tasmota </description>
+    </item>
+    <item>
+      <title>Mes commandes</title>
+      <link>http://localhost:1313/wiki/mes_commandes/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/mes_commandes/</guid>
+      <description>Creer un article archetypes/post-bundle/post.md $ hugo new --kind post-bundle posts/2023/&#xA;Compresser les png $ find content/ -type f -iname &amp;#39;*.png&amp;#39; -exec pngquant --force --quality=40-100 --skip-if-larger --strip --verbose {} --output {} \; Convertir les jpg/png en wepb $ cwebp -q 60 file.jpg -o file.wepb Optimiser un jpg $ jpegoptim *.jpg Voir les futurs articles en local $ hugo serve -D -F Voir le site en local $ hugo serve --noHTTPCache --ignoreCache --buildDrafts Compile le site $ hugo --minify Compresse .</description>
+    </item>
+    <item>
+      <title>Mes Shortcodes</title>
+      <link>http://localhost:1313/wiki/mes_shortcodes/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/mes_shortcodes/</guid>
+      <description>Images {{&amp;lt; figure src=&amp;#34;codepen-logo-8.png&amp;#34; title=&amp;#34;&amp;#34; width=200px class=&amp;#34;imagearticle&amp;#34; &amp;gt;}} Icones https://getuikit.com/docs/icon&#xA;{{&amp;lt; uicon heart 2 &amp;gt;}} est un **gros** coeur. est un gros coeur.&#xA;Bandeaux {{&amp;lt; bandeau primary &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt. {{&amp;lt; / bandeau &amp;gt;}} {{&amp;lt; bandeau success &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt. {{&amp;lt; / bandeau &amp;gt;}} {{&amp;lt; bandeau warning &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt.</description>
+    </item>
+    <item>
+      <title>Services internet libres</title>
+      <link>http://localhost:1313/wiki/services_web_libres/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/services_web_libres/</guid>
+      <description>Les listes https://sebsauvage.net/wiki/doku.php?id=services_web&#xA;https://doc.ubuntu-fr.org/liste_de_services_web_libres&#xA;http://www.liensutiles.org/&#xA;https://comptoir-du-libre.org/fr/&#xA;https://entraide.chatons.org/fr/</description>
+    </item>
+    <item>
+      <title>Astuces Hugo</title>
+      <link>http://localhost:1313/posts/2023/04/memo-hugo/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/memo-hugo/</guid>
+      <description>Organisation ├── pages │ └── apropos │ ├── hugo-logo.png │ └── index.md └── posts ├── css_framework │ └── index.md ├── info │ ├── Capture.png │ ├── hugo.jpg │ └── index.md └── markdown ├── index.md └── logo.png Debut article Avec balise figure&#xA;Images On ajoute la balise Hugo&#xA;Menu config.toml Dans le fichier config.toml et dans le fichier themes/wikischrek/layouts/partials/nav.html&#xA;Les icones ici https://getuikit.com/docs/icon [menu] [[menu.main]] name = &amp;#39;Home&amp;#39; url = &amp;#39;/&amp;#39; pre = &amp;#39;home&amp;#39; weight = 10 [[menu.</description>
+    </item>
+    <item>
+      <title>Hugo CMS</title>
+      <link>http://localhost:1313/posts/2023/04/hugo-installation/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/hugo-installation/</guid>
+      <description>Hugo est générateur de site statique. On écrit un article au format Markdown, on fait tourner le logiciel et il fait les fichiers HTML. Il suffira juste de les déposer sur un serveur. Ça semble simple mais ça demande une mise en place.&#xA;Installation $ sudo apt install hugo Créer un site le logiciel va générer un dossier avec les bases (dossiers, fichiers) a l’intérieur. $ hugo new site schrek.</description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/posts/2023/04/markdown/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/markdown/</guid>
+      <description># Menu ## Texte Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ### Gras Lorem ipsum dolor sit amet, consectetur **adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua**. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    <item>
+      <title>Hugo et les images</title>
+      <link>http://localhost:1313/posts/2023/04/hugo-les_images/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/hugo-les_images/</guid>
+      <description>Comment ca marche? L’organisation des images avec Hugo, c’est un peu particulier.&#xA;Avec Markdown on ajoute une image avec:&#xA;![Text alternatif](image.jpg) Dossier static C&amp;rsquo;est le dossier ou l&amp;rsquo;on pose nos fichiers statique .&#xA;On peut organiser comme ça:&#xA;je fais un post info et je place les images dans un sous dossier static/posts/info&#xA;static/ ├── css ├── img │ └── posts │ └── info │ └── image.jpg └── js Ce qui donne dans un post:</description>
+    </item>
+    <item>
+      <title>ChatGPT dans un terminal</title>
+      <link>http://localhost:1313/posts/2023/03/chatgpt/</link>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/chatgpt/</guid>
+      <description>ChatGPT, le célèbre générateur de texte contrôlé par une intelligence artificielle , peut être utilisé dans un terminal.&#xA;##API key:&#xA;Il faut créer un compte et générer une API KEY ici. ça sera sur la forme.&#xA;sk-qUP3OL6jQ95cXJbxsxyPT3BlbkFJzf3ypT6djfo2ZsjcZwME2 Le script Tout ce trouve sur ce github.&#xA;$ wget https://github.com/0xacx/chatGPT-shell-cli/blob/main/chatgpt.sh $ chmod +x chatgpt.sh $ export OPENAI_KEY=sk-qUP3OL6jdkdlQ95cXJbxsxyPT3Bldkkkff3ypT6Rn1gZsjcZwME2 Remplacez OPENAI_KEY par votre clef.&#xA;Le script a besoin de jq.&#xA;$ sudo apt install jq et pour finir:</description>
+    </item>
+    <item>
+      <title>Lettre sous latex</title>
+      <link>http://localhost:1313/posts/2023/03/latex-une_lettre/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/latex-une_lettre/</guid>
+      <description>Utilisation de la classe lettre avec LaTex.&#xA;J’ai commenté le code pour plus de clarté.&#xA;Petit rajout du tampon fait dans cet article Tampon encreur sous Gimp&#xA;En cas d’erreur babel:&#xA;sudo apt-get install texlive-lang-french Le code \documentclass[12pt]{lettre} %12p taille lettres (10 et 11 possible), déclaration classe lettre \usepackage[utf8]{inputenc} % Encodage \usepackage[T1]{fontenc} % Les mots accentués \usepackage{lmodern} % Type de police \usepackage{eurosym} % Pouvoir écrire le symbole &amp;#34;€&amp;#34; \usepackage[french]{babel} % Utilisation du français \usepackage{numprint} % Séparateur décimal \usepackage{graphicx} % Pour inclure des images \begin{document} \begin{letter}{Service des râleurs\\66, rue du train\\13200 Arles} % Destinataire \basdepage{\pagetotalname{1}} \name{Prénom nom} \signature{Nom Prénom \includegraphics[width=75px, angle=-45]{tampon.</description>
+    </item>
+    <item>
+      <title>Lier Framacarte a Framacalc</title>
+      <link>http://localhost:1313/posts/2023/03/framacarte/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/framacarte/</guid>
+      <description>Il peut être pratique de lier une feuille de tableur avec une carte pour mieux gérer les points . Avec Framacarte et Framacalc c’est possible. Sur le Wiki de Cartocité on trouve plein de ressource sur le sujet.&#xA;Créer et configurer le tableur On va sur Framacalc pour créer notre tableur.&#xA;Sur la 1ᵉʳ colonne on va mettre la latitude en ajoutant &amp;ldquo;lat&amp;rdquo; (case A1 sans les guillemets) 2ᵉ colonne, la longitude &amp;ldquo;lon&amp;rdquo; (case B1 sans les guillemets) 3ᵉ colonne, le nom &amp;ldquo;nom&amp;rdquo; (case C1 sans les guillemets) 4ᵉ colonne, description &amp;ldquo;description&amp;rdquo; (case D1 sans les guillemets) Pour l’exemple on va prendre les arènes d’Arles.</description>
+    </item>
+    <item>
+      <title>Nano</title>
+      <link>http://localhost:1313/posts/2023/03/linux-nano/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/linux-nano/</guid>
+      <description>Un éditeur de fichier très simple.&#xA;Pour ouvrir un fichier $ nano index.html Créer un fichier $ nano fichier.txt Les raccourcis courants ctrl + G ...... Appeler le menu d’aide ctrl + X ...... Fermer et, le cas échéant, quitter nano ctrl + O ...... Écrire le fichier en cours sur le disque ctrl + J ...... Justifier le paragraphe courant ctrl + R ...... Insérer un autre fichier dans le fichier en cours ctrl + W .</description>
+    </item>
+    <item>
+      <title>Nego et L’Organisation - Laurent Combalbert</title>
+      <link>http://localhost:1313/posts/2023/03/nego-laurent-combalbert/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/nego-laurent-combalbert/</guid>
+      <description>2 livres d’un coup. Les tomes 1 et tomes 2 de la série Stanislas Monville. Un mélange de James bond, Jack Ryan avec une intrigue internationale sur fond d’écologie.&#xA;Résumé Stanislas Monville est négociateur professionnel. Il intervient dans les kidnappings, les séquestrations, les extorsions… Ses années de service dans les forces spéciales comme les missions privées qu’il conduit désormais lui ont donné un instinct très sûr pour repérer les situations à risque.</description>
+    </item>
+    <item>
+      <title>Lykaia - DOA</title>
+      <link>http://localhost:1313/posts/2023/03/lykaia---doa/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/lykaia---doa/</guid>
+      <description>&amp;ldquo;Dans la Grèce antique, les lykaia sont une fête archaïque avec un rituel secret sur les pentes du mont Lykaion (« montagne du loup ») ou mont Lycée, le plus haut sommet d&amp;rsquo;Arcadie. &amp;quot; Wikipedia&#xA;Livre hyper violent quand meme, ou on decouvre le mileux SM.&#xA;Résumé Berlin Ouest. Le BUNK&amp;rsquo;R est un club discret et sélectif où se pratiquent des séances de sadomasochisme chics et sophistiquées. Un client s&amp;rsquo;apprête à être livré aux mains expertes du narrateur, un ancien chirurgien de haut vol, qui s&amp;rsquo;est reconverti dans la pratique du bondage high-tech, après un grave accident qui le laissa défiguré.</description>
+    </item>
+    <item>
+      <title>Tampon encreur sous Gimp</title>
+      <link>http://localhost:1313/posts/2023/03/tampon-encreur/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/tampon-encreur/</guid>
+      <description>C&amp;rsquo;est toujours sympa d&amp;rsquo;avoir une petite image pour simuler un tampon sur un document, une photo.&#xA;J&amp;rsquo;ai listé quelques tuto sous [Gimp-&amp;gt;https://www.gimp.org/]&#xA;C&amp;rsquo;est pas bien compliqué et ça permet de jouer avec les calques et les filtres. Il faut penser à bien enregistrer au format PNG pour garder la transparence.&#xA;Liens http://www.1point2vue.com/tampon-encre-gimp/&#xA;http://abcdugimp.free.fr/gimp/realiser/tutoriels/tampon/tampon.php</description>
+    </item>
+    <item>
+      <title>Le Joueur d’échecs - Stefan Zweig</title>
+      <link>http://localhost:1313/posts/2023/03/le-joueur-dchecs-stefan-zweig/</link>
+      <pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/le-joueur-dchecs-stefan-zweig/</guid>
+      <description>Un des plus beau livre que j&amp;rsquo;ai lu. Un roman court mais intense.&#xA;Résumé Czentowic, champion d&amp;rsquo;échecs arrogant, esprit borné à outrance, inculte et étonnamment stupide, occupe le premier plan jusqu&amp;rsquo;à l&amp;rsquo;entrée en scène de Monsieur B. Dès lors que cet aristocrate autrichien s&amp;rsquo;intéresse à la partie livrée entre le champion et les passagers amateurs, la direction du texte bascule.&#xA;Détails Langue : Français Broché : 128 pages Téléchargement Epub libre de droit</description>
+    </item>
+    <item>
+      <title>Rétiaire(s) - DOA</title>
+      <link>http://localhost:1313/posts/2023/03/r%C3%A9tiaires_doa/</link>
+      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/r%C3%A9tiaires_doa/</guid>
+      <description>Un bon DOA bien glauque.&#xA;Résumé Une enquêtrice de l’Office anti-stupéfiants, l’élite de la lutte anti-drogue, qui a tout à prouver. Un policier des Stups borderline qui n’a plus rien à perdre. Un clan manouche qui lutte pour son honneur et sa survie. Avec la rigueur qu’on lui connaît, DOA immerge son lecteur dans le quotidien des acteurs du trafic de came ; son indiscutable talent de romancier nous arrime à la destinée de ses personnages, à leurs relations complexes et fragiles ; son style, d’une précision presque brutale, colle au plus près de cet univers de violence et de solitude.</description>
+    </item>
+    <item>
+      <title>Socca</title>
+      <link>http://localhost:1313/posts/2023/03/socca/</link>
+      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/socca/</guid>
+      <description>Socca est le nom donné à une spécialité culinaire à base de farine de pois chiche !&#xA;Ingrédients 250 g de farine de pois chiches 50 cl d’eau 4 cuillères à soupe d’huile d’olive 1 cuillère à café de sel fin poivre Préparation Mélanger la farine de pois chiche et l’eau. Ajouter l’huile d’olive et le sel. La préparation est liquide Laisser reposer 1 heure.&#xA;Faire chauffer le four au maximum, le mieux c’est un four à pizza ou au pire une machine a croque monsieur.</description>
+    </item>
+    <item>
+      <title>Poulets grillés - Sophie Hénaff</title>
+      <link>http://localhost:1313/posts/2023/03/poulets-grill%C3%A9s---sophie-h%C3%A9naff/</link>
+      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/poulets-grill%C3%A9s---sophie-h%C3%A9naff/</guid>
+      <description>Un roman drôle qui se lit tout seul. Une brigade constituée de bras cassés, quand les pires de la PJ mènent une enquête.&#xA;Il y a 4 tomes dans la série :&#xA;Poulets grillés Rester groupés Art et Décès Drame de pique Résumé Lorsque le divisionnaire Buron décide de faire briller les statistiques du 36, il regroupe dans une brigade dont il confie le commandement à la commissaire Anne Capestan, reine notoire de la bavure, tout ce que la police judiciaire compte d’alcoolos, d’homos, de porte-poisse, d’écrivains, de crétins&amp;hellip; Pour élucider des affaires classées.</description>
+    </item>
+    <item>
+      <title>BRouter Web Client</title>
+      <link>http://localhost:1313/posts/2023/03/brouter/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/brouter/</guid>
+      <description>BRouter Web Client est un service WEB pour Planifier un itinéraire. Le client s’appuie sur OpenStreetMap Brouter est très complet en plus de calculer les itinéraires, les importer, les exporter, on peut ajouter des calques pour visualiser d’autres données comme les campings, hôtels…&#xA;Bonne découverte.&#xA;Liens http://brouter.de/brouter-web/&#xA;https://brouter.m11n.de&#xA;https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-ordinateur/&#xA;https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que</description>
+    </item>
+    <item>
+      <title>Z-Library</title>
+      <link>http://localhost:1313/posts/2023/03/zlibrary/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/zlibrary/</guid>
+      <description>Z-Library est une bibliothèque numérique qui vous permet de télécharger des e-books, des livres, des revues scientifiques en ligne.&#xA;Mais pour y accéder, il va falloir passer par [Tor-&amp;gt;https://fr.wikipedia.org/wiki/Tor_(r%C3%A9seau)], rien de bien compliqué. Il suffit d’installer Tor browser. Âpres avoir lancé le navigateur, il suffît de copier ce lien dans le navigateur.&#xA;http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion/&#xA;Il existe aussi des miroirs qui permettent un accès direct.&#xA;Liens https://singlelogin.me/ https://fr.annas-archive.org/</description>
+    </item>
+    <item>
+      <title>Le Problème à trois corps - Liu Cixin</title>
+      <link>http://localhost:1313/posts/2023/03/trois-corps/</link>
+      <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/trois-corps/</guid>
+      <description>J’ai demandé à chatgpt de me conseiller un livre de SF, je suis pas déçu du choix de l’IA. L’écologie est au cœur du livre, on se retrouve dans le désespoir de l’humanité et des conséquences des choix humains.&#xA;C’est le tome 1 d’une trilogie:&#xA;Le Problème à trois corps La Forêt sombre La Mort immortelle Résumé En pleine Révolution culturelle, le pouvoir chinois construit la base militaire secrète de Côte Rouge, destinée à développer une arme de grand calibre.</description>
+    </item>
+    <item>
+      <title>Sorbet basilic</title>
+      <link>http://localhost:1313/posts/2023/03/sorbet_basilic/</link>
+      <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/sorbet_basilic/</guid>
+      <description>Un super sorbet pour, 4 personnes pour finir vos repas d’été.&#xA;Ingrédients 1/2 litre d’eau ; 1 grosse cuillère de crème fraîche ; 12 plans de basilic ; 2 petits citrons ou 1,5 gros. Préparation Faire un sirop en portant à ébullition l’eau froide avec le sucre et laisser un peu refroidir. Mixer le basilic effeuillé et infuser le 30min. Passer a L’étamine pour filtrer, ajouter le jus de citron et la crème.</description>
+    </item>
+    <item>
+      <title>Fabrication d&#39;un savon d&#39;Alep</title>
+      <link>http://localhost:1313/posts/2023/03/savon_alep/</link>
+      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/savon_alep/</guid>
+      <description>&lt;p&gt;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/savon_alep/logo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;Ici je vais vous décrire rapidement la fabrication maison du savon d’Alep. C’est un savon simple à base d’huile d’olive et d’huile de baie de laurier et d’huile de ricin.&#xA;J’utilise la technique de la saponification a froid.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La Signalisation SNCF avec Latex</title>
+      <link>http://localhost:1313/posts/2023/03/signaux_sncf/</link>
+      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/signaux_sncf/</guid>
+      <description>Pour jouer avec tikz qui permet de générer des images, j’ai fait des signaux SNCF.&#xA;C’est perfectible aux niveaux des couleurs et des formes mais ca rend bien. Un cheminot Nicolas Wurtz a fait aussi ce travail mais sous une autre forme, son dépôt git Un autre projet ici à base de gif.&#xA;Mes sources latex Fichier pdf&#xA;Fichier Latex&#xA;Voir sur overleaf Lien https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France</description>
+    </item>
+    <item>
+      <title>Le style Latex</title>
+      <link>http://localhost:1313/posts/2023/03/css-style_latex/</link>
+      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/css-style_latex/</guid>
+      <description> Style LaTex en CSS Latex le célèbre système de composition de document, qui permet de générer de “belles pages”, a un style bien à lui. Vincent Dörig a créé un style CSS pour l’intégrer facilement dans un site. On y retrouve aussi l’intégration des formules mathématique avec MathJax.&#xA;La page de test https://latex.vercel.app/elements&#xA;Liens https://latex.vercel.app/ https://github.com/vincentdoerig/latex-css https://www.mathjax.org/ https://www.latex-project.org/ https://fr.wikibooks.org/wiki/LaTeX </description>
+    </item>
+    <item>
+      <title>Diceware</title>
+      <link>http://localhost:1313/posts/2023/02/diceware/</link>
+      <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/02/diceware/</guid>
+      <description>C est fini les mots de passe, il faut passer aux phrases de passe. Plus facile à retenir plus compliquer à casser. Pour les mots de passe, l’avantage est que l’on peut décomplexifier un mot de passe avec tous les caractères MaisonBananeRougeMystereBiere AhdikeJeujenksKjnskodnKshjkskk&#xA;Pour générer une phrase de passe il faut un outil qui crée du « hasard » et un dictionnaire de mot qui va bien.&#xA;Qu’est-ce que Diceware ?</description>
+    </item>
+    <item>
+      <title>QRcode sous LaTex</title>
+      <link>http://localhost:1313/posts/2023/02/latex-qrcode/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/02/latex-qrcode/</guid>
+      <description>On peut produire facilement des QRCode sous LaTex.&#xA;Installation On récupère les fichiers qrcode.ins et qrcode.dtx ici. On lance sous Linux:&#xA;$ latex qrcode.ins Il faut ajouter dans l’entête du fichier latex&#xA;\usepackage{hyperref} % Pour avoir les liens \usepackage{qrcode} % Pour générer les QRcode Utilisation \documentclass[12pt,a4paper]{article} \usepackage[utf8]{inputenc} \usepackage[french]{babel} \usepackage[T1]{fontenc} \usepackage{fullpage} \usepackage{hyperref} \usepackage{qrcode} \usepackage{graphicx} % Pour inclure des images %titre \title{QRcode avec \LaTeX} \date{} \begin{document} \maketitle \subsection*{QRcode simple} \begin{verbatim} \qrcode{http://schrek.fr} \end{verbatim} \begin{center} \qrcode{http://schrek.</description>
+    </item>
+    <item>
+      <title>Ecrire un ebook avec Latex</title>
+      <link>http://localhost:1313/posts/2023/02/ebook-avec-latex/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/02/ebook-avec-latex/</guid>
+      <description>MaJ 29/05/2023 Ajout d&amp;rsquo;un livre &amp;ldquo;LaTeX pour litteraires&amp;rdquo;(Éric Guichard), bouton overleaf.com&#xA;J’avais l’idée d’écrire un petit livre sur la Rome antique, une histoire d’un soldat romain qui devient un pirate. Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourné vers Latex. Pour organiser mes idées et structurer le document j’ai utilisé cette structure. Vous trouverez les sources en bas de l’article.&#xA;J’ai aucun talent littéraire merci d’être indulgent.</description>
+    </item>
+  </channel>
+</rss>

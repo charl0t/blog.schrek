@@ -1,30 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Juin 2023 on Schrek.fr</title><link>https://schrek.fr/posts/2023/06/</link><description>Recent content in Juin 2023 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/posts/2023/06/index.xml" rel="self" type="application/rss+xml"/><item><title>Shortcode Framacarte</title><link>https://schrek.fr/posts/2023/06/hugo_shortcode-umap/</link><pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo_shortcode-umap/</guid><description>Grace a Framasoft, on peut avoir un service pour créer des cartes personnalisées. Le service s&amp;rsquo;appuie sur Umap.
-Il existe un shortecode pour umap sur GIT, j&amp;rsquo;ai juste modifié l&amp;rsquo;URL dans le code.
-Framacarte Quand on a créer une carte (un super tuto sur cartocite.fr/) sur Framacarte, on aimerait l&amp;rsquo;afficher sur notre site.
-On peut utiliser l&amp;rsquo;import de l&amp;rsquo;iframe.
-On clique sur l&amp;rsquo;icône de partage On récupère le code. Le code original &amp;lt;iframe width=&amp;#34;100%&amp;#34; height=&amp;#34;300px&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen src=&amp;#34;https//framacarte.</description></item><item><title>La Faille - Franck Thilliez</title><link>https://schrek.fr/posts/2023/06/la-faille-franck-thilliez/</link><pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/la-faille-franck-thilliez/</guid><description>Encore un grand livre de Thilliez, une intrigue bien ficelée autour de Franck Sharko et son équipe.
-Chapitre aprés chapitre, la noirceur de l&amp;rsquo;humanité se révéle.
-A lire absolument.
-" Les forces du vent se matérialisent sur l’eau sous forme d’ondes, mais qu’elles ne dépendent pas de l’eau pour exister. "
-Franck Thilliez Résumé La frontière entre la vie et la mort est peut-être plus trouble qu&amp;rsquo;il n&amp;rsquo;y paraît&amp;hellip;</description></item><item><title>Les fantômes de Kiev-Cédric Bannel</title><link>https://schrek.fr/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/</link><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/</guid><description>Résumé La vengeance du maître du Kremlin se mange toujours glacée Punir la France de son soutien à l’Ukraine, telle est la mission assignée par Poutine à ses services de sécurité. Un plan démoniaque que la DGSE doit faire échouer. Mais que pèse son meilleur agent, le brillant « avocat international » Edgar Van Scana, face au rouleau compresseur des renseignements russes ? Surtout quand la moindre action est orchestrée par la générale Olga Ranevskaïa, cheffe des opérations noires du Kremlin.</description></item><item><title>Légende - David Gemmell</title><link>https://schrek.fr/posts/2023/06/l%C3%A9gende---david-gemmell/</link><pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/l%C3%A9gende---david-gemmell/</guid><description>Un roman de David Gemmell , le 1er volume publié du Cycle Drenaï.
-Résumé Druss est une légende. Ses exploits sont connus de tous. Surnommé le Capitaine à la Hache lors de ses plus grandes batailles, il aurait pu devenir riche en tant que mercenaire&amp;hellip; Au contraire, fuyant la célébrité, il a choisi de vivre retiré loin des hommes, perché au sommet d&amp;rsquo;une montagne glacée. Il a remisé son arme, vivant reclus, se contentant de la compagnie de quelques léopards des neiges.</description></item><item><title>Fury</title><link>https://schrek.fr/posts/2023/06/fury/</link><pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/fury/</guid><description>" Les idéaux sont Pacifiques l’histoire est Violente. "
-Brad Pitt, Fury Un trés bon film de guerre, avec des acteurs qui accompagne cette terrible histoire. Un mélange d&amp;rsquo;horreur de la guerre et d&amp;rsquo;humanité.
-Liens https://www.allocine.fr/film/fichefilm_gen_cfilm=218759.html
-https://fr.wikipedia.org/wiki/Fury_(film,_2014)
-https://www.senscritique.com/film/fury/8470273</description></item><item><title>Shortcode ChartJS</title><link>https://schrek.fr/posts/2023/06/hugo_shortcode_chartjs/</link><pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo_shortcode_chartjs/</guid><description>ChartJS est une bibliothèque JavaScript open source gratuite pour la visualisation de données (Wikipédia)
-Le shortcode J&amp;rsquo;ai trouvé le code ici.
-Il y a un problème sur le code (voir ici)
-src=&amp;ldquo;https://cdn.jsdelivr.net/npm/chart.js&amp;quot;
-A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.html {{ $w := default &amp;#34;100&amp;#34; (.Get 0) }} {{ $h := default &amp;#34;300&amp;#34; (.Get 1) }} {{ $r := ( .Inner | chomp) }} {{ $seed := &amp;#34;foo&amp;#34; }} {{ $id := delimit (shuffle (split (md5 $seed) &amp;#34;&amp;#34; )) &amp;#34;&amp;#34; }} &amp;lt;div style=&amp;#34;width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto&amp;#34;&amp;gt; &amp;lt;canvas id=&amp;#34;{{ $id }}&amp;#34;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.</description></item><item><title>Les cartographes - Peng Shepherd</title><link>https://schrek.fr/posts/2023/06/les-cartographes-peng-shepherd/</link><pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/les-cartographes-peng-shepherd/</guid><description>" Les cartes servent à rapprocher les gens. "
-Peng Shepherd Je me suis plongé dans cette histoire avec une intrigue sympa et du rythme autour des cartes mais qui tourne vite en rond, beaucoup de « blabla » sur la cartographie.
-Résumé Nell a perdu ses deux parents. Sa mère trente ans plus tôt, et maintenant son père, le Dr Young, un célèbre cartographe de la New York Public Library qui vient d’être retrouvé mort dans son bureau.</description></item><item><title>Shortcode Mermaid</title><link>https://schrek.fr/posts/2023/06/hugo_shortcode_mermaid/</link><pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo_shortcode_mermaid/</guid><description>On va integrer mermaid dans Hugo.
-Mermaid permet de générer des jolies diagrammes à partir de texte.
-Kroki est une alternative.
-Le code On va creer dans notre dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier mermaid.html
-&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt; {{ .Inner | safeHTML }} &amp;lt;/div&amp;gt; {{ if le (.Page.Scratch.Get &amp;#34;mermaidInserted&amp;#34;) 0 }} {{ .Page.Scratch.Add &amp;#34;mermaidInserted&amp;#34; 1 }} {{ $mermaid := resources.Get &amp;#34;js/mermaid.min.js&amp;#34; | minify | fingerprint }} &amp;lt;script type=&amp;#34;application/javascript&amp;#34; src=&amp;#34;{{ $mermaid.Permalink }}&amp;#34; defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;module&amp;#34;&amp;gt; mermaid.</description></item><item><title>Afficher Latex dans Hugo</title><link>https://schrek.fr/posts/2023/06/hugo_shortcode_latex/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo_shortcode_latex/</guid><description>Le shortcode Fichier latex.html à deposer /themes/VOTRETHEME/layouts/shortcodes
-&amp;lt;script type=&amp;#34;module&amp;#34;&amp;gt; import { LaTeXJSComponent } from &amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs&amp;#34; customElements.define(&amp;#34;latex-js&amp;#34;, LaTeXJSComponent) &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; latex-js { display: inline-block; width: 70%; border: 1px solid black; margin-right: 2em; padding-bottom: 2em; } &amp;lt;/style&amp;gt; &amp;lt;latex-js baseURL=&amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/&amp;#34;&amp;gt; {{ .Inner }} &amp;lt;/latex-js&amp;gt; {{ .Inner }} permet d&amp;rsquo;inserer tous ce qu&amp;rsquo;il se trouve entre les balises.
-Utilisation {{&amp;lt; latex &amp;gt;}} \documentclass{article} \usepackage[latin1]{inputenc} \usepackage{hyperref} \author{Christophe} \date{2023} \title{Un exemple} \usepackage[francais]{babel} \begin{document} \maketitle \section{Début} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description></item><item><title>Recherche dans Hugo</title><link>https://schrek.fr/posts/2023/06/hugo-recherche/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo-recherche/</guid><description>J&amp;rsquo;ai desactivé la recherche sur le site. Mais ça marche.
-Il me manquait la recherche sur Hugo, j&amp;rsquo;en est chié une histoire de Jquery.
-config.toml On va demander a Hugo de générer un fichier JSON, pour récupérer les données du site.
-[outputs] home = [ &amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;, &amp;#34;RSS&amp;#34;] Quand on lance Hugo, on a droit a une erreur.
-Change of config file detected, rebuilding site. 2023-05-02 11:39:09.348 +0200 WARN 2023/05/02 11:39:09 found no layout file for &amp;#34;JSON&amp;#34; for kind &amp;#34;home&amp;#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Juin 2023 on Schrek.fr</title>
+    <link>http://localhost:1313/posts/2023/06/</link>
+    <description>Recent content in Juin 2023 on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/2023/06/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shortcode Framacarte</title>
+      <link>http://localhost:1313/posts/2023/06/hugo_shortcode-umap/</link>
+      <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo_shortcode-umap/</guid>
+      <description>Grace a Framasoft, on peut avoir un service pour créer des cartes personnalisées. Le service s&amp;rsquo;appuie sur Umap.&#xA;Il existe un shortecode pour umap sur GIT, j&amp;rsquo;ai juste modifié l&amp;rsquo;URL dans le code.&#xA;Framacarte Quand on a créer une carte (un super tuto sur cartocite.fr/) sur Framacarte, on aimerait l&amp;rsquo;afficher sur notre site.&#xA;On peut utiliser l&amp;rsquo;import de l&amp;rsquo;iframe.&#xA;On clique sur l&amp;rsquo;icône de partage On récupère le code. Le code original &amp;lt;iframe width=&amp;#34;100%&amp;#34; height=&amp;#34;300px&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen src=&amp;#34;https//framacarte.</description>
+    </item>
+    <item>
+      <title>La Faille - Franck Thilliez</title>
+      <link>http://localhost:1313/posts/2023/06/la-faille-franck-thilliez/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/la-faille-franck-thilliez/</guid>
+      <description>Encore un grand livre de Thilliez, une intrigue bien ficelée autour de Franck Sharko et son équipe.&#xA;Chapitre aprés chapitre, la noirceur de l&amp;rsquo;humanité se révéle.&#xA;A lire absolument.&#xA;&#34; Les forces du vent se matérialisent sur l’eau sous forme d’ondes, mais qu’elles ne dépendent pas de l’eau pour exister. &#34;&#xA;Franck Thilliez Résumé La frontière entre la vie et la mort est peut-être plus trouble qu&amp;rsquo;il n&amp;rsquo;y paraît&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Les fantômes de Kiev-Cédric Bannel</title>
+      <link>http://localhost:1313/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/</guid>
+      <description>Résumé La vengeance du maître du Kremlin se mange toujours glacée Punir la France de son soutien à l’Ukraine, telle est la mission assignée par Poutine à ses services de sécurité. Un plan démoniaque que la DGSE doit faire échouer. Mais que pèse son meilleur agent, le brillant « avocat international » Edgar Van Scana, face au rouleau compresseur des renseignements russes ? Surtout quand la moindre action est orchestrée par la générale Olga Ranevskaïa, cheffe des opérations noires du Kremlin.</description>
+    </item>
+    <item>
+      <title>Légende - David Gemmell</title>
+      <link>http://localhost:1313/posts/2023/06/l%C3%A9gende---david-gemmell/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/l%C3%A9gende---david-gemmell/</guid>
+      <description>Un roman de David Gemmell , le 1er volume publié du Cycle Drenaï.&#xA;Résumé Druss est une légende. Ses exploits sont connus de tous. Surnommé le Capitaine à la Hache lors de ses plus grandes batailles, il aurait pu devenir riche en tant que mercenaire&amp;hellip; Au contraire, fuyant la célébrité, il a choisi de vivre retiré loin des hommes, perché au sommet d&amp;rsquo;une montagne glacée. Il a remisé son arme, vivant reclus, se contentant de la compagnie de quelques léopards des neiges.</description>
+    </item>
+    <item>
+      <title>Fury</title>
+      <link>http://localhost:1313/posts/2023/06/fury/</link>
+      <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/fury/</guid>
+      <description>&#34; Les idéaux sont Pacifiques l’histoire est Violente. &#34;&#xA;Brad Pitt, Fury Un trés bon film de guerre, avec des acteurs qui accompagne cette terrible histoire. Un mélange d&amp;rsquo;horreur de la guerre et d&amp;rsquo;humanité.&#xA;Liens https://www.allocine.fr/film/fichefilm_gen_cfilm=218759.html&#xA;https://fr.wikipedia.org/wiki/Fury_(film,_2014)&#xA;https://www.senscritique.com/film/fury/8470273</description>
+    </item>
+    <item>
+      <title>Shortcode ChartJS</title>
+      <link>http://localhost:1313/posts/2023/06/hugo_shortcode_chartjs/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo_shortcode_chartjs/</guid>
+      <description>ChartJS est une bibliothèque JavaScript open source gratuite pour la visualisation de données (Wikipédia)&#xA;Le shortcode J&amp;rsquo;ai trouvé le code ici.&#xA;Il y a un problème sur le code (voir ici)&#xA;src=&amp;ldquo;https://cdn.jsdelivr.net/npm/chart.js&amp;quot;&#xA;A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.html {{ $w := default &amp;#34;100&amp;#34; (.Get 0) }} {{ $h := default &amp;#34;300&amp;#34; (.Get 1) }} {{ $r := ( .Inner | chomp) }} {{ $seed := &amp;#34;foo&amp;#34; }} {{ $id := delimit (shuffle (split (md5 $seed) &amp;#34;&amp;#34; )) &amp;#34;&amp;#34; }} &amp;lt;div style=&amp;#34;width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto&amp;#34;&amp;gt; &amp;lt;canvas id=&amp;#34;{{ $id }}&amp;#34;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.</description>
+    </item>
+    <item>
+      <title>Les cartographes - Peng Shepherd</title>
+      <link>http://localhost:1313/posts/2023/06/les-cartographes-peng-shepherd/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/les-cartographes-peng-shepherd/</guid>
+      <description>&#34; Les cartes servent à rapprocher les gens. &#34;&#xA;Peng Shepherd Je me suis plongé dans cette histoire avec une intrigue sympa et du rythme autour des cartes mais qui tourne vite en rond, beaucoup de « blabla » sur la cartographie.&#xA;Résumé Nell a perdu ses deux parents. Sa mère trente ans plus tôt, et maintenant son père, le Dr Young, un célèbre cartographe de la New York Public Library qui vient d’être retrouvé mort dans son bureau.</description>
+    </item>
+    <item>
+      <title>Shortcode Mermaid</title>
+      <link>http://localhost:1313/posts/2023/06/hugo_shortcode_mermaid/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo_shortcode_mermaid/</guid>
+      <description>On va integrer mermaid dans Hugo.&#xA;Mermaid permet de générer des jolies diagrammes à partir de texte.&#xA;Kroki est une alternative.&#xA;Le code On va creer dans notre dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier mermaid.html&#xA;&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt; {{ .Inner | safeHTML }} &amp;lt;/div&amp;gt; {{ if le (.Page.Scratch.Get &amp;#34;mermaidInserted&amp;#34;) 0 }} {{ .Page.Scratch.Add &amp;#34;mermaidInserted&amp;#34; 1 }} {{ $mermaid := resources.Get &amp;#34;js/mermaid.min.js&amp;#34; | minify | fingerprint }} &amp;lt;script type=&amp;#34;application/javascript&amp;#34; src=&amp;#34;{{ $mermaid.Permalink }}&amp;#34; defer&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;module&amp;#34;&amp;gt; mermaid.</description>
+    </item>
+    <item>
+      <title>Afficher Latex dans Hugo</title>
+      <link>http://localhost:1313/posts/2023/06/hugo_shortcode_latex/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo_shortcode_latex/</guid>
+      <description>Le shortcode Fichier latex.html à deposer /themes/VOTRETHEME/layouts/shortcodes&#xA;&amp;lt;script type=&amp;#34;module&amp;#34;&amp;gt; import { LaTeXJSComponent } from &amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs&amp;#34; customElements.define(&amp;#34;latex-js&amp;#34;, LaTeXJSComponent) &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; latex-js { display: inline-block; width: 70%; border: 1px solid black; margin-right: 2em; padding-bottom: 2em; } &amp;lt;/style&amp;gt; &amp;lt;latex-js baseURL=&amp;#34;https://cdn.jsdelivr.net/npm/latex.js/dist/&amp;#34;&amp;gt; {{ .Inner }} &amp;lt;/latex-js&amp;gt; {{ .Inner }} permet d&amp;rsquo;inserer tous ce qu&amp;rsquo;il se trouve entre les balises.&#xA;Utilisation {{&amp;lt; latex &amp;gt;}} \documentclass{article} \usepackage[latin1]{inputenc} \usepackage{hyperref} \author{Christophe} \date{2023} \title{Un exemple} \usepackage[francais]{babel} \begin{document} \maketitle \section{Début} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    <item>
+      <title>Recherche dans Hugo</title>
+      <link>http://localhost:1313/posts/2023/06/hugo-recherche/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo-recherche/</guid>
+      <description>J&amp;rsquo;ai desactivé la recherche sur le site. Mais ça marche.&#xA;Il me manquait la recherche sur Hugo, j&amp;rsquo;en est chié une histoire de Jquery.&#xA;config.toml On va demander a Hugo de générer un fichier JSON, pour récupérer les données du site.&#xA;[outputs] home = [ &amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;, &amp;#34;RSS&amp;#34;] Quand on lance Hugo, on a droit a une erreur.&#xA;Change of config file detected, rebuilding site. 2023-05-02 11:39:09.348 +0200 WARN 2023/05/02 11:39:09 found no layout file for &amp;#34;JSON&amp;#34; for kind &amp;#34;home&amp;#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.</description>
+    </item>
+  </channel>
+</rss>

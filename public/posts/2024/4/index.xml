@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Avril 2024 on Schrek.fr</title><link>https://schrek.fr/posts/2024/4/</link><description>Recent content in Avril 2024 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/posts/2024/4/index.xml" rel="self" type="application/rss+xml"/><item><title>Outresable - Hugh Howey</title><link>https://schrek.fr/posts/2024/4/outresable/</link><pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/4/outresable/</guid><description>Outresable est le premier volume de la série Sable d&amp;rsquo;Hugh Howey. J&amp;rsquo;ai adoré le coté plongeurs des sables, j&amp;rsquo;attend la suite avec impatience.
-Outresable, Actes Sud, coll. « Exofictions », 2019 Outredune, Actes Sud, coll. « Exofictions », 2023 J&amp;rsquo;ai adoré le concept de nage dans le sable.
-Sable Résumé Depuis des siècles le sable a englouti le monde. Un autre s’est créé tant bien que mal parmi les dunes mouvantes, et les plongeurs des sables descendent à de grandes profondeurs pour remonter les trésors enfouis dont le troc permet la survie de tous à la surface.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Avril 2024 on Schrek.fr</title>
+    <link>http://localhost:1313/posts/2024/4/</link>
+    <description>Recent content in Avril 2024 on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/2024/4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Outresable - Hugh Howey</title>
+      <link>http://localhost:1313/posts/2024/4/outresable/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/4/outresable/</guid>
+      <description>Outresable est le premier volume de la série Sable d&amp;rsquo;Hugh Howey. J&amp;rsquo;ai adoré le coté plongeurs des sables, j&amp;rsquo;attend la suite avec impatience.&#xA;Outresable, Actes Sud, coll. « Exofictions », 2019 Outredune, Actes Sud, coll. « Exofictions », 2023 J&amp;rsquo;ai adoré le concept de nage dans le sable.&#xA;Sable Résumé Depuis des siècles le sable a englouti le monde. Un autre s’est créé tant bien que mal parmi les dunes mouvantes, et les plongeurs des sables descendent à de grandes profondeurs pour remonter les trésors enfouis dont le troc permet la survie de tous à la surface.</description>
+    </item>
+  </channel>
+</rss>

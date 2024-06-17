@@ -1,8 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Février 2023 on Schrek.fr</title><link>https://schrek.fr/posts/2023/02/</link><description>Recent content in Février 2023 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/posts/2023/02/index.xml" rel="self" type="application/rss+xml"/><item><title>Diceware</title><link>https://schrek.fr/posts/2023/02/diceware/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/diceware/</guid><description>C est fini les mots de passe, il faut passer aux phrases de passe. Plus facile à retenir plus compliquer à casser. Pour les mots de passe, l’avantage est que l’on peut décomplexifier un mot de passe avec tous les caractères MaisonBananeRougeMystereBiere AhdikeJeujenksKjnskodnKshjkskk
-Pour générer une phrase de passe il faut un outil qui crée du « hasard » et un dictionnaire de mot qui va bien.
-Qu’est-ce que Diceware ?</description></item><item><title>QRcode sous LaTex</title><link>https://schrek.fr/posts/2023/02/latex-qrcode/</link><pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/latex-qrcode/</guid><description>On peut produire facilement des QRCode sous LaTex.
-Installation On récupère les fichiers qrcode.ins et qrcode.dtx ici. On lance sous Linux:
-$ latex qrcode.ins Il faut ajouter dans l’entête du fichier latex
-\usepackage{hyperref} % Pour avoir les liens \usepackage{qrcode} % Pour générer les QRcode Utilisation \documentclass[12pt,a4paper]{article} \usepackage[utf8]{inputenc} \usepackage[french]{babel} \usepackage[T1]{fontenc} \usepackage{fullpage} \usepackage{hyperref} \usepackage{qrcode} \usepackage{graphicx} % Pour inclure des images %titre \title{QRcode avec \LaTeX} \date{} \begin{document} \maketitle \subsection*{QRcode simple} \begin{verbatim} \qrcode{http://schrek.fr} \end{verbatim} \begin{center} \qrcode{http://schrek.</description></item><item><title>Ecrire un ebook avec Latex</title><link>https://schrek.fr/posts/2023/02/ebook-avec-latex/</link><pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/ebook-avec-latex/</guid><description>MaJ 29/05/2023 Ajout d&amp;rsquo;un livre &amp;ldquo;LaTeX pour litteraires&amp;rdquo;(Éric Guichard), bouton overleaf.com
-J’avais l’idée d’écrire un petit livre sur la Rome antique, une histoire d’un soldat romain qui devient un pirate. Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourné vers Latex. Pour organiser mes idées et structurer le document j’ai utilisé cette structure. Vous trouverez les sources en bas de l’article.
-J’ai aucun talent littéraire merci d’être indulgent.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Février 2023 on Schrek.fr</title>
+    <link>http://localhost:1313/posts/2023/02/</link>
+    <description>Recent content in Février 2023 on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/2023/02/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Diceware</title>
+      <link>http://localhost:1313/posts/2023/02/diceware/</link>
+      <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/02/diceware/</guid>
+      <description>C est fini les mots de passe, il faut passer aux phrases de passe. Plus facile à retenir plus compliquer à casser. Pour les mots de passe, l’avantage est que l’on peut décomplexifier un mot de passe avec tous les caractères MaisonBananeRougeMystereBiere AhdikeJeujenksKjnskodnKshjkskk&#xA;Pour générer une phrase de passe il faut un outil qui crée du « hasard » et un dictionnaire de mot qui va bien.&#xA;Qu’est-ce que Diceware ?</description>
+    </item>
+    <item>
+      <title>QRcode sous LaTex</title>
+      <link>http://localhost:1313/posts/2023/02/latex-qrcode/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/02/latex-qrcode/</guid>
+      <description>On peut produire facilement des QRCode sous LaTex.&#xA;Installation On récupère les fichiers qrcode.ins et qrcode.dtx ici. On lance sous Linux:&#xA;$ latex qrcode.ins Il faut ajouter dans l’entête du fichier latex&#xA;\usepackage{hyperref} % Pour avoir les liens \usepackage{qrcode} % Pour générer les QRcode Utilisation \documentclass[12pt,a4paper]{article} \usepackage[utf8]{inputenc} \usepackage[french]{babel} \usepackage[T1]{fontenc} \usepackage{fullpage} \usepackage{hyperref} \usepackage{qrcode} \usepackage{graphicx} % Pour inclure des images %titre \title{QRcode avec \LaTeX} \date{} \begin{document} \maketitle \subsection*{QRcode simple} \begin{verbatim} \qrcode{http://schrek.fr} \end{verbatim} \begin{center} \qrcode{http://schrek.</description>
+    </item>
+    <item>
+      <title>Ecrire un ebook avec Latex</title>
+      <link>http://localhost:1313/posts/2023/02/ebook-avec-latex/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/02/ebook-avec-latex/</guid>
+      <description>MaJ 29/05/2023 Ajout d&amp;rsquo;un livre &amp;ldquo;LaTeX pour litteraires&amp;rdquo;(Éric Guichard), bouton overleaf.com&#xA;J’avais l’idée d’écrire un petit livre sur la Rome antique, une histoire d’un soldat romain qui devient un pirate. Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourné vers Latex. Pour organiser mes idées et structurer le document j’ai utilisé cette structure. Vous trouverez les sources en bas de l’article.&#xA;J’ai aucun talent littéraire merci d’être indulgent.</description>
+    </item>
+  </channel>
+</rss>

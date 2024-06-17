@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AM2302 on Schrek.fr</title>
-    <link>https://schrek.fr/tags/am2302/</link>
+    <link>http://localhost:1313/tags/am2302/</link>
     <description>Recent content in AM2302 on Schrek.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sun, 15 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://schrek.fr/tags/am2302/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/am2302/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tasmota et AM2302</title>
-      <link>https://schrek.fr/posts/2023/10/tasmota-et-am2302/</link>
+      <link>http://localhost:1313/posts/2023/10/tasmota-et-am2302/</link>
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://schrek.fr/posts/2023/10/tasmota-et-am2302/</guid>
+      <guid>http://localhost:1313/posts/2023/10/tasmota-et-am2302/</guid>
       <description>Maintenant que l&amp;rsquo;on sait installer Tasmota sur un Wemos, il va falloir interagir avec. On va utiler des composants simples.&#xA;Wemos d1 mini AM2302 Une platine d&amp;rsquo;essais AM2302 Il s&amp;rsquo;agit d&amp;rsquo;un capteur numérique de température et d&amp;rsquo;humidité de base à faible coût. Le capteur mesure les données de l&amp;rsquo;air environnant et les transmet sous forme de signal numérique à la broche de données.&#xA;Le branchement On branche pas encore le wemos en USB</description>
     </item>
   </channel>

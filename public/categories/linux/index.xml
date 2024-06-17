@@ -1,13 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Schrek.fr</title><link>https://schrek.fr/categories/linux/</link><description>Recent content in Linux on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Fri, 10 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Pandas, importer un fichier csv</title><link>https://schrek.fr/posts/2024/5/pandas_import/</link><pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas_import/</guid><description>J’avais besoin de traiter des fichiers CSV pour en extraire des données. J’ai commencé à faire cela avec un tableur, mais comme je suis feignant,je voulais automatiser tout cela.
-Le csv Je dois:
-Importer le fichier CSV Nettoyer des données inutiles Mettre en forme des colonnes Extraire des données Au travail. Pour faire tous ça je vais utiliser le langage Python avec la bibliothèque Pandas
-#!/usr/bin/python import pandas as pd df = pd.</description></item><item><title>Pandas et les series</title><link>https://schrek.fr/posts/2024/5/pandas_serie/</link><pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas_serie/</guid><description>Les &amp;ldquo;séries&amp;rdquo; sur pandas se réfèrent à des objets de données unidimensionnels dans la bibliothèque Python pandas.
-Ils sont similaires aux tableaux unidimensionnels en Python (comme les listes ou les tableaux NumPy), mais avec des fonctionnalités supplémentaires.
-Les séries pandas sont indexées, ce qui signifie que chaque élément a une étiquette ou un identifiant associé, et elles peuvent contenir différents types de données, comme des entiers, des flottants, des chaînes, etc.</description></item><item><title>Pandas et les structures</title><link>https://schrek.fr/posts/2024/5/pandas_structures/</link><pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas_structures/</guid><description>La bibliothèque Pandas fournit deux structures de données principales pour manipuler des données structurées : les séries et les dataframes.
-Les séries Une série est un tableau unidimensionnel de données homogènes, indexé par des étiquettes. Les étiquettes peuvent être de n&amp;rsquo;importe quel type (chaînes de caractères, entiers, dates, etc.), ce qui permet de manipuler des données de manière flexible. Les séries peuvent être créées à partir de listes, de tableaux NumPy, de dictionnaires ou d&amp;rsquo;autres structures de données.</description></item><item><title>Pandas</title><link>https://schrek.fr/posts/2024/5/pandas/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas/</guid><description>La bibliothèque Pandas est une bibliothèque open-source pour la manipulation et l&amp;rsquo;analyse de données en Python. Elle fournit des structures de données hautes performances et flexibles pour manipuler des données structurées, telles que des tableaux et des séries temporelles.
-Les principales fonctionnalités de Pandas comprennent la lecture et l&amp;rsquo;écriture de données à partir de divers formats de fichiers, la manipulation et le nettoyage de données, la fusion et la jointure de données, l&amp;rsquo;agrégation et le regroupement de données, ainsi que la visualisation de données.</description></item><item><title>Gestionnaire de fichier Caja</title><link>https://schrek.fr/posts/2024/3/caja/</link><pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/3/caja/</guid><description>Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.
-Script Je voulais ajouter des possibilités de click droit via des scripts.
-C’est assez simple, il suffit de placer une exécutable dans le dossier ./config/caja/script de votre répertoire /home.
-Variables Quelques variables pour utiliser les scripts.
-*$@* Fichiers sélectionnés *$PWD* Répertoire courant *$CAJA_SCRIPT_SELECTED_FILE_PATHS* Chemin des fichiers sélectionnés. *$CAJA_SCRIPT_SELECTED_URI* URI des fichiers sélectionnés, pour les fichiers distants. *$CAJA_SCRIPT_CURRENT_URI* URI du dossier depuis lequel le script est lancé.</description></item><item><title>Nano</title><link>https://schrek.fr/posts/2023/03/linux-nano/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/linux-nano/</guid><description>Un éditeur de fichier très simple.
-Pour ouvrir un fichier $ nano index.html Créer un fichier $ nano fichier.txt Les raccourcis courants ctrl + G ...... Appeler le menu d’aide ctrl + X ...... Fermer et, le cas échéant, quitter nano ctrl + O ...... Écrire le fichier en cours sur le disque ctrl + J ...... Justifier le paragraphe courant ctrl + R ...... Insérer un autre fichier dans le fichier en cours ctrl + W .</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Schrek.fr</title>
+    <link>http://localhost:1313/categories/linux/</link>
+    <description>Recent content in Linux on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make, génération de fichiers</title>
+      <link>http://localhost:1313/posts/2024/6/make/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/6/make/</guid>
+      <description>La commande make est un utilitaire de ligne de commande qui permet d&amp;rsquo;automatiser la compilation et la construction de projets logiciels. Cependant, dans le contexte de Pandoc, make est souvent utilisé pour automatiser la conversion de fichiers de différents formats à l&amp;rsquo;aide de Pandoc.&#xA;Pandoc est un outil de conversion de documents qui permet de convertir des fichiers de différents formats, tels que Markdown, HTML, PDF et Microsoft Word, entre autres.</description>
+    </item>
+    <item>
+      <title>Pandas- nettoyage des données</title>
+      <link>http://localhost:1313/posts/2024/6/pandas_nettoyage/</link>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/6/pandas_nettoyage/</guid>
+      <description>Le nettoyage des données est une étapes cruciale dans le processus d&amp;rsquo;analyse de données, car les données brutes peuvent contenir des erreurs, des valeurs manquantes et d&amp;rsquo;autres problèmes qui peuvent affecter les résultats de l&amp;rsquo;analyse.&#xA;La bibliothèque Pandas en Python est un outils puissant pour le nettoyage des données, offrant de nombreuses méthodes utiles pour préparer les données pour l&amp;rsquo;analyse.&#xA;L&amp;rsquo;import des données df = pd.read_csv(&amp;#34;data.csv&amp;#34;,skiprows=3, skipfooter=2) skiprows: va permettre de ne pas tenir compte des premières ligne du fichier.</description>
+    </item>
+    <item>
+      <title>Les fichiers Parquet</title>
+      <link>http://localhost:1313/posts/2024/5/parquet/</link>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/parquet/</guid>
+      <description>Les fichiers Parquet sont un format de stockage de données colonnaires open source, souvent utilisé dans le domaine du Big Data et de l&amp;rsquo;analyse de données. Ils sont conçus pour être efficaces en termes de stockage et de traitement, ce qui les rend adaptés à des volumes de données importants. Voici quelques points clés sur les fichiers Parquet :&#xA;Compression: Les fichiers Parquet utilisent des techniques de compression pour réduire la taille des données, ce qui permet d&amp;rsquo;économiser de l&amp;rsquo;espace de stockage et de réduire les temps de transfert sur le réseau.</description>
+    </item>
+    <item>
+      <title>Pandas, importer un fichier csv</title>
+      <link>http://localhost:1313/posts/2024/5/pandas_import/</link>
+      <pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/pandas_import/</guid>
+      <description>J’avais besoin de traiter des fichiers CSV pour en extraire des données. J’ai commencé à faire cela avec un tableur, mais comme je suis feignant,je voulais automatiser tout cela.&#xA;Le csv Je dois:&#xA;Importer le fichier CSV Nettoyer des données inutiles Mettre en forme des colonnes Extraire des données Au travail. Pour faire tous ça je vais utiliser le langage Python avec la bibliothèque Pandas&#xA;#!/usr/bin/python import pandas as pd df = pd.</description>
+    </item>
+    <item>
+      <title>Pandas et les series</title>
+      <link>http://localhost:1313/posts/2024/5/pandas_serie/</link>
+      <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/pandas_serie/</guid>
+      <description>Les &amp;ldquo;séries&amp;rdquo; sur pandas se réfèrent à des objets de données unidimensionnels dans la bibliothèque Python pandas.&#xA;Ils sont similaires aux tableaux unidimensionnels en Python (comme les listes ou les tableaux NumPy), mais avec des fonctionnalités supplémentaires.&#xA;Les séries pandas sont indexées, ce qui signifie que chaque élément a une étiquette ou un identifiant associé, et elles peuvent contenir différents types de données, comme des entiers, des flottants, des chaînes, etc.</description>
+    </item>
+    <item>
+      <title>Pandas et les structures</title>
+      <link>http://localhost:1313/posts/2024/5/pandas_structures/</link>
+      <pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/pandas_structures/</guid>
+      <description>La bibliothèque Pandas fournit deux structures de données principales pour manipuler des données structurées : les séries et les dataframes.&#xA;Les séries Une série est un tableau unidimensionnel de données homogènes, indexé par des étiquettes. Les étiquettes peuvent être de n&amp;rsquo;importe quel type (chaînes de caractères, entiers, dates, etc.), ce qui permet de manipuler des données de manière flexible. Les séries peuvent être créées à partir de listes, de tableaux NumPy, de dictionnaires ou d&amp;rsquo;autres structures de données.</description>
+    </item>
+    <item>
+      <title>Pandas</title>
+      <link>http://localhost:1313/posts/2024/5/pandas/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/pandas/</guid>
+      <description>La bibliothèque Pandas est une bibliothèque open-source pour la manipulation et l&amp;rsquo;analyse de données en Python. Elle fournit des structures de données hautes performances et flexibles pour manipuler des données structurées, telles que des tableaux et des séries temporelles.&#xA;Les principales fonctionnalités de Pandas comprennent la lecture et l&amp;rsquo;écriture de données à partir de divers formats de fichiers, la manipulation et le nettoyage de données, la fusion et la jointure de données, l&amp;rsquo;agrégation et le regroupement de données, ainsi que la visualisation de données.</description>
+    </item>
+    <item>
+      <title>Gestionnaire de fichier Caja</title>
+      <link>http://localhost:1313/posts/2024/3/caja/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/3/caja/</guid>
+      <description>Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.&#xA;Script Je voulais ajouter des possibilités de click droit via des scripts.&#xA;C’est assez simple, il suffit de placer une exécutable dans le dossier ./config/caja/script de votre répertoire /home.&#xA;Variables Quelques variables pour utiliser les scripts.&#xA;*$@* Fichiers sélectionnés *$PWD* Répertoire courant *$CAJA_SCRIPT_SELECTED_FILE_PATHS* Chemin des fichiers sélectionnés. *$CAJA_SCRIPT_SELECTED_URI* URI des fichiers sélectionnés, pour les fichiers distants. *$CAJA_SCRIPT_CURRENT_URI* URI du dossier depuis lequel le script est lancé.</description>
+    </item>
+    <item>
+      <title>Nano</title>
+      <link>http://localhost:1313/posts/2023/03/linux-nano/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/linux-nano/</guid>
+      <description>Un éditeur de fichier très simple.&#xA;Pour ouvrir un fichier $ nano index.html Créer un fichier $ nano fichier.txt Les raccourcis courants ctrl + G ...... Appeler le menu d’aide ctrl + X ...... Fermer et, le cas échéant, quitter nano ctrl + O ...... Écrire le fichier en cours sur le disque ctrl + J ...... Justifier le paragraphe courant ctrl + R ...... Insérer un autre fichier dans le fichier en cours ctrl + W .</description>
+    </item>
+  </channel>
+</rss>

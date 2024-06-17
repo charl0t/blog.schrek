@@ -1,31 +1,414 @@
-<!doctype html><html lang=fr><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Blog qui parle de lecture et de web"><meta name=keywords content="hugo,html,lecture,web,shortcode"><title>Schrek.fr</title>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-title content="My PWA"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js")</script><meta property="og:url" content="https://schrek.fr/posts/2023/06/hugo_shortcode-umap/"><meta property="og:site_name" content="Schrek.fr"><meta property="og:title" content="Shortcode Framacarte"><meta property="og:description" content='Grace a Framasoft, on peut avoir un service pour créer des cartes personnalisées. Le service s’appuie sur Umap.
+<!DOCTYPE html>
+
+<html lang="fr">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog qui parle de lecture et de web" />
+    <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
+    <title>Schrek.fr</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes" />
+
+<meta name="apple-mobile-web-app-title" content="My PWA" />
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<script>
+
+if ('serviceWorker' in navigator) {
+
+navigator.serviceWorker.register('/sw.js');
+
+};
+
+</script>
+
+  
+
+
+    <meta property="og:url" content="http://localhost:1313/posts/2023/06/hugo_shortcode-umap/">
+  <meta property="og:site_name" content="Schrek.fr">
+  <meta property="og:title" content="Shortcode Framacarte">
+  <meta property="og:description" content="Grace a Framasoft, on peut avoir un service pour créer des cartes personnalisées. Le service s’appuie sur Umap.
 Il existe un shortecode pour umap sur GIT, j’ai juste modifié l’URL dans le code.
 Framacarte Quand on a créer une carte (un super tuto sur cartocite.fr/) sur Framacarte, on aimerait l’afficher sur notre site.
 On peut utiliser l’import de l’iframe.
-On clique sur l’icône de partage On récupère le code. Le code original <iframe width="100%" height="300px" frameborder="0" allowfullscreen src="https//framacarte.'><meta property="og:locale" content="fr-fr"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-06-25T00:00:00+00:00"><meta property="article:modified_time" content="2023-06-25T00:00:00+00:00"><meta property="article:tag" content="Shortcode"><meta property="article:tag" content="Framacarte"><meta property="article:tag" content="Hugo"><meta property="article:tag" content="Umap"><meta property="og:see_also" content="https://schrek.fr/posts/2024/3/commentaires/"><meta property="og:see_also" content="https://schrek.fr/posts/2024/2/katex/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/09/hugo-pwa/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/08/hugo-shortcode-bouton/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/08/hugo-et-nuages-de-tags/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/08/hugo-et-les-liens/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/07/hugo_galerie/"><link href=/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css rel=stylesheet integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin=anonymous><link href=/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css rel=stylesheet integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp+8kDvTq4rdsbpi6rWUJnq68ImIF+mScfMdRrPd7mRCOJAPMg==" crossorigin=anonymous></head><body><header><div class="uk-container uk-container-xsmall uk-padding-small"><a href=https://schrek.fr/><h1 classe=uk-heading-small>Schrek.fr</h1></a><a href=https://schrek.fr/><h2>Mon super blog :)</h2></a><span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type=button uk-toggle="target: #offcanvas-overlay"></span><div id=offcanvas-overlay uk-offcanvas="overlay: true"><div class="uk-offcanvas-bar uk-background-primary"><button class=uk-offcanvas-close type=button uk-close></button><h3 class=barremenu>Menu</h3><nav><ul class=uk-iconnav><li><a href=/><span uk-icon="icon:home; ratio: 2"></span></a></li><li><a href=/pages/apropos/><span uk-icon="icon:info; ratio: 2"></span></a></li><li><a href=/pages/tagscloud/><span uk-icon="icon:hashtag; ratio: 2"></span></a></li><li><a href=/wiki/><span uk-icon="icon:database; ratio: 2"></span></a></li><li><a href=/index.xml><span uk-icon="icon:rss; ratio: 2"></span></a></li></ul></nav><hr class=uk-divider-icon><h3 class=barremenu><a href=https://schrek.fr//categories/>Categories</a></h3><li><a href=https://schrek.fr/categories/linux/>Linux</a></li><li><a href=https://schrek.fr/categories/lecture/>Lecture</a></li><li><a href=https://schrek.fr/categories/hugo/>Hugo</a></li><li><a href=https://schrek.fr/categories/raspberrypi/>RaspberryPi</a></li><li><a href=https://schrek.fr/categories/iot/>IoT</a></li><li><a href=https://schrek.fr/categories/latex/>Latex</a></li><li><a href=https://schrek.fr/categories/web/>Web</a></li><li><a href=https://schrek.fr/categories/film/>Film</a></li><li><a href=https://schrek.fr/categories/musique/>Musique</a></li><li><a href=https://schrek.fr/categories/wiki/>Wiki</a></li><li><a href=https://schrek.fr/categories/recette/>Recette</a></li><h3 class=barremenu><a href=https://schrek.fr//series/>Series</a></h3><li><a href=https://schrek.fr/series/pandas/>Pandas</a></li><li><a href=https://schrek.fr/series/hugo/>Hugo</a></li><li><a href=https://schrek.fr/series/raspberrypi/>RaspberryPi</a></li><li><a href=https://schrek.fr/series/domotique/>Domotique</a></li><li><a href=https://schrek.fr/series/esp32/>Esp32</a></li><li><a href=https://schrek.fr/series/latex/>Latex</a></li></div></div></div></header><main><div class="uk-container uk-background-muted uk-box-shadow-large uk-padding"><ol class=uk-breadcrumb><li><a href=/>home</a></li><li><a href=https://schrek.fr/posts>posts</a></li><li><a href=https://schrek.fr/posts/2023>2023</a></li><li><a href=https://schrek.fr/posts/2023/06>06</a></li><li><a href=https://schrek.fr/posts/2023/06/hugo_shortcode-umap>hugo_shortcode-umap</a></li></ol><article class=uk-article><h1 class=uk-article-title>Shortcode Framacarte</h1><p class=uk-article-meta>2023-06-25
-<span class="labelcat uk-label"><a href=/categories/web>Web</a></span><br><i>Temps de lecture: 2 minutes.</i></p><p>Cet article fait partie de la série: <a href=https://schrek.fr//series/hugo>Hugo</a></p><br><p class=uk-text-lead><div class="uk-section uk-align-right"><div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false"><h3 class=uk-card-title>Table des matières</h3><p class="toc uk-text-small"><nav id=TableOfContents><ul><li><a href=#framacarte>Framacarte</a></li><li><a href=#le-code-original>Le code original</a></li><li><a href=#le-shortcode>Le Shortcode</a></li><li><a href=#les-paramètres>Les paramètres</a></li><li><a href=#exemple>Exemple</a></li><li><a href=#liens>Liens</a></li></ul></nav></p></div></div><figure class=imagearticle><img src=/posts/2023/06/hugo_shortcode-umap/umap_logo.webp width=200px></figure><p>Grace a <a href=https://framacarte.org/fr/>Framasoft</a>, on peut avoir un service pour créer des cartes personnalisées.
-Le service s&rsquo;appuie sur <a href=https://github.com/umap-project/umap/>Umap</a>.</p><p>Il existe un shortecode pour umap sur <a href=https://github.com/Hanzei/hugo-component-osm>GIT</a>, j&rsquo;ai juste modifié l&rsquo;URL dans le code.</p><h2 id=framacarte>Framacarte</h2><p>Quand on a créer une carte (un super tuto sur <a href="https://wiki.cartocite.fr/doku.php?id=umap:tutoriel_umap">cartocite.fr/</a>) sur <a href=https://framacarte.org/fr/>Framacarte</a>, on aimerait l&rsquo;afficher sur notre site.</p><p>On peut utiliser l&rsquo;import de l&rsquo;iframe.</p><p>On clique sur l&rsquo;icône de partage<figure><img src=/posts/2023/06/hugo_shortcode-umap/partage.webp alt="partage umap" width=60px></figure></p><p>On récupère le code.<figure><img src=/posts/2023/06/hugo_shortcode-umap/iframe.webp alt="iframe umap" width=300px></figure></p><h2 id=le-code-original>Le code original</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>iframe</span> <span style=color:#a6e22e>width</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;100%&#34;</span> <span style=color:#a6e22e>height</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;300px&#34;</span> <span style=color:#a6e22e>frameborder</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;0&#34;</span> <span style=color:#a6e22e>allowfullscreen</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https//framacarte.org/fr/map/carte-de-france_154547?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=undefined&amp;captionBar=false&#34;</span>&gt;&lt;/<span style=color:#f92672>iframe</span>&gt;&lt;<span style=color:#f92672>p</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https//framacarte.org/fr/map/carte-de-france_154547&#34;</span>&gt;Voir en plein écran&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>p</span>&gt;</span></span></code></pre></div><p>Pour que ça marche, il faut ajouter le fichier de configuration du site (<em>config.toml</em>).<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=display:flex><span>[<span style=color:#a6e22e>markup</span>.<span style=color:#a6e22e>goldmark</span>.<span style=color:#a6e22e>renderer</span>]
-</span></span><span style=display:flex><span><span style=color:#a6e22e>unsafe</span> = <span style=color:#66d9ef>true</span></span></span></code></pre></div></p><p>Des idées sur l&rsquo;iframe en mode Hugo <a href=https://stackoverflow.com/questions/68036749/embedding-iframe-in-hugo-site>ici</a>.</p><p>Sinon il y a les shortcodes.</p><h2 id=le-shortcode>Le Shortcode</h2><p>On va créer dans le dossier des shortcodes <em>/themes/VOTRETHEME/layouts/shortcodes</em> un fichier frumap.html</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go-html-template data-lang=go-html-template><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$mapName</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;mapName&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$mapWidth</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;mapWidth&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;100%&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$mapHeight</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;mapHeight&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;600px&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$scaleControl</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;scaleControl&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;true&#34;</span>  <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$miniMap</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;miniMap&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;false&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$scrollWheelZoom</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;scrollWheelZoom&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;true&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$zoomControl</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;zoomControl&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;true&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$allowEdit</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;allowEdit&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;false&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$moreControl</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;moreControl&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;true&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$searchControl</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;searchControl&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;true&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$tilelayersControl</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;tilelayersControl&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;null&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$embedControl</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;embedControl&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;null&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$datalayersControl</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;datalayersControl&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;true&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$onLoadPanel</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;onLoadPanel&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;none&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$captionBar</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;captionBar&#34;</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>default</span> <span style=color:#e6db74>&#34;true&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$scale</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;scale&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$coordX</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;coordX&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$coordY</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>.Get</span> <span style=color:#e6db74>&#34;coordY&#34;</span> <span style=color:#75715e>}}</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>iframe</span> <span style=color:#a6e22e>width</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$mapWidth</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&#34;</span> <span style=color:#a6e22e>height</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$mapHeight</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&#34;</span> <span style=color:#a6e22e>frameBorder</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;0&#34;</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://framacarte.org/fr/map/</span><span style=color:#75715e>{{-</span> <span style=color:#a6e22e>$mapName</span> <span style=color:#75715e>-}}</span><span style=color:#e6db74>?scaleControl=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$scaleControl</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&amp;miniMap=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$miniMap</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&amp;scrollWheelZoom=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$scrollWheelZoom</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&amp;zoomControl=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$zoomControl</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&amp;allowEdit=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$allowEdit</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&amp;moreControl=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$moreControl</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&amp;searchControl=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$searchControl</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&amp;tilelayersControl=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$tilelayersControl</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&amp;embedControl=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$embedControl</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&amp;datalayersControl=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$datalayersControl</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&amp;onLoadPanel=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$onLoadPanel</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&amp;captionBar=</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$captionBar</span> <span style=color:#75715e>}}{{</span> <span style=color:#66d9ef>with</span> <span style=color:#a6e22e>$scale</span><span style=color:#75715e>}}</span><span style=color:#e6db74>#</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>.</span> <span style=color:#75715e>}}{{</span> <span style=color:#66d9ef>end</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>/</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$coordX</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>/</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>$coordY</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&#34;</span>&gt;&lt;/<span style=color:#f92672>iframe</span>&gt;</span></span></code></pre></div><h2 id=les-paramètres>Les paramètres</h2><p>Tous est dans L&rsquo;URL:</p><p>Exemple: <em><a href=https://framacarte.org/fr/map/voyages-a-velo_153439#8/44.582/5.219>https://framacarte.org/fr/map/voyages-a-velo_153439#8/44.582/5.219</a></em></p><ul><li>zoom 8</li><li>coordX 44.582</li><li>coordY 5.219</li></ul><p>Pour la suite:</p><ul><li>coordX (default auto) <strong>Voir dessus</strong></li><li>coordY (default auto) <strong>Vois dessus</strong></li><li>scale (default auto) <strong>Niveau de zoom, voir dessus</strong></li><li>scaleControl (default true) <strong>Plein écran</strong></li><li>miniMap (default false) <strong>La minimap</strong></li><li>scrollWheelZoom (default true) <strong>Zoom Souris</strong></li><li>zoomControl (default true) <strong>Barre du zoom</strong></li><li>allowEdit (default false) <strong>Édition</strong></li><li>moreControl (default true) <strong>Bouton plus</strong></li><li>searchControl (default true) <strong>Recherche</strong></li><li>tilelayersControl (default null) <strong>Changer de fond de carte</strong></li><li>embedControl (default null) <strong>Voir le partage</strong></li><li>datalayersControl (default true) <strong>Voir les calques de données</strong></li><li>onLoadPanel (default none) <strong>Barre de chargement</strong></li><li>captionBar (default true) <strong>Barre des légendes</strong></li></ul><h2 id=exemple>Exemple</h2><p>L&rsquo;URL d&rsquo;une carte <a href=https://framacarte.org/fr/map/voyages-a-velo_153439#10/45.2662/5.2322>https://framacarte.org/fr/map/voyages-a-velo_153439#10/45.2662/5.2322</a></p><p>Le nom c est <em>voyages-a-velo_153439</em> dans le code ça donne *mapName=&ldquo;voyages-a-velo_153439&rdquo;</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go-html-template data-lang=go-html-template><span style=display:flex><span><span style=color:#75715e>{{</span><span style=color:#960050;background-color:#1e0010>&lt;</span> <span style=color:#a6e22e>frumap</span> <span style=color:#a6e22e>mapHeight</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;600&#34;</span> <span style=color:#a6e22e>mapWidth</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;600&#34;</span> <span style=color:#a6e22e>mapName</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;voyages-a-velo_153439&#34;</span> <span style=color:#a6e22e>scale</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;8&#34;</span> <span style=color:#a6e22e>coordX</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;44.582&#34;</span> <span style=color:#a6e22e>coordY</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;5.219&#34;</span> <span style=color:#960050;background-color:#1e0010>&gt;</span><span style=color:#75715e>}}</span></span></span></code></pre></div><iframe width=600 height=600 frameborder=0 src="https://framacarte.org/fr/map/voyages-a-velo_153439?scaleControl=true&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=true#8/44.582/5.219"></iframe><h2 id=liens>Liens</h2><p><a href=https://framacarte.org/fr/>https://framacarte.org/fr/</a></p><p><a href=https://github.com/Hanzei/hugo-component-osm>https://github.com/Hanzei/hugo-component-osm</a></p><p><a href=https://stackoverflow.com/questions/68036749/embedding-iframe-in-hugo-site>https://stackoverflow.com/questions/68036749/embedding-iframe-in-hugo-site</a></p></p></article><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//schrek-fr.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a><ul class=uk-pagination><li><a class=uk-link-heading href=https://schrek.fr/posts/2023/07/hugo-shortcode-pad/><span class=uk-margin-small-right uk-pagination-previous></span> Shortcode Framapad</a></li><li class=uk-margin-auto-left><a class=uk-link-heading href=https://schrek.fr/posts/2023/06/la-faille-franck-thilliez/>La Faille - Franck Thilliez<span class=uk-margin-small-left uk-pagination-next></span></a></li></ul><hr class=uk-divider-icon><div class="uk-grid-small uk-child-width-auto" uk-grid><div><p class=uk-text-light><span uk-icon=icon:hashtag></span>TAGS</p><ul class="uk-list uk-display-inline-block"><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/shortcode/>Shortcode</a></li><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/framacarte/>Framacarte</a></li><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/hugo/>Hugo</a></li><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/umap/>Umap</a></li></ul><br><a href=https://ko-fi.com/Q5Q7LH0AN target=_blank><img height=36 style=border:0;height:36px src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border=0 alt='Buy Me a Beer at ko-fi.com'></a></div></div></div></main><footer><div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">2024 - Construit avec <a class=uk-link-muted href=https://gohugo.io/>Hugo</a> et de <a class=uk-link-muted href=https://getuikit.com/>UiKit</a></div></footer><script src=/js/uikit.min.min.6b4741df9ca63b1e177fc1d9ef5ba017a37a63f6a3515ab84d9e4e2f51a708fa.js integrity="sha256-a0dB35ymOx4Xf8HZ71ugF6N6Y/ajUVq4TZ5OL1GnCPo=" crossorigin=anonymous></script><script defer src=/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin=anonymous></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script><script>MathJax={tex:{displayMath:[["\\[","\\]"],["$$","$$"]],inlineMath:[["\\(","\\)"]]}}</script></body></html>
+On clique sur l’icône de partage On récupère le code. Le code original &lt;iframe width=&#34;100%&#34; height=&#34;300px&#34; frameborder=&#34;0&#34; allowfullscreen src=&#34;https//framacarte.">
+  <meta property="og:locale" content="fr-fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-06-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-06-25T00:00:00+00:00">
+    <meta property="article:tag" content="Shortcode">
+    <meta property="article:tag" content="Framacarte">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Umap">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/3/commentaires/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/2/katex/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/hugo-pwa/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-les-liens/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/07/hugo_galerie/">
+
+    
+    <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
+    
+    <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
+    </head>
+<body>
+<header>
+    <div class="uk-container uk-container-xsmall uk-padding-small">
+        <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
+        <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
+        <span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type="button" uk-toggle="target: #offcanvas-overlay"></span>
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-background-primary">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <h3 class="barremenu">Menu</h3>
+<nav>
+        <ul class="uk-iconnav">
+            
+            <li><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
+            
+            <li><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
+            
+            <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
+            
+        </ul>
+</nav>
+<hr class="uk-divider-icon">
+                     
+                <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+
+<li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
+
+<li><a href="http://localhost:1313/categories/film/">Film</a></li>
+
+<li><a href="http://localhost:1313/categories/musique/">Musique</a></li>
+
+<li><a href="http://localhost:1313/categories/wiki/">Wiki</a></li>
+
+<li><a href="http://localhost:1313/categories/recette/">Recette</a></li>
+
+
+                  
+                <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
+
+<li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/series/domotique/">Domotique</a></li>
+
+<li><a href="http://localhost:1313/series/esp32/">Esp32</a></li>
+
+<li><a href="http://localhost:1313/series/latex/">Latex</a></li>
+
+</div>
+        </div>
+    </div>
+</header>
+<main>
+
+
+<div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding">
+
+
+
+<ol class="uk-breadcrumb">
+  <li><a href="/">home</a></li>
+  
+    
+      
+      <li><a href='http://localhost:1313/posts'>posts</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023'>2023</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023/06'>06</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023/06/hugo_shortcode-umap'>hugo_shortcode-umap</a></li>
+      
+      
+  
+    
+      
+  
+</ol>
+
+
+    <article class="uk-article">
+        <h1 class="uk-article-title">Shortcode Framacarte</h1>
+            <p class="uk-article-meta">2023-06-25 
+            
+            <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+              <br>
+            <i>Temps de lecture: 2 minutes.</i>
+            </p>
+            
+                
+                
+                
+                <p>Cet article fait partie de la série: <a href="http://localhost:1313//series/hugo">Hugo</a></p>
+                 
+                <br/>
+            <p class="uk-text-lead">
+                
+                
+                <div class="uk-section uk-align-right">
+                    <div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+                       <h3 class="uk-card-title">Table des matières</h3> 
+                       <p class="toc uk-text-small"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#framacarte">Framacarte</a></li>
+    <li><a href="#le-code-original">Le code original</a></li>
+    <li><a href="#le-shortcode">Le Shortcode</a></li>
+    <li><a href="#les-paramètres">Les paramètres</a></li>
+    <li><a href="#exemple">Exemple</a></li>
+    <li><a href="#liens">Liens</a></li>
+  </ul>
+</nav></p>
+                    </div>
+                </div>
+                   
+                    <figure class="imagearticle"><img src="/posts/2023/06/hugo_shortcode-umap/umap_logo.webp" width="200px">
+</figure>
+
+<p>Grace a <a href="https://framacarte.org/fr/">Framasoft</a>, on peut avoir un service pour créer des cartes personnalisées.
+Le service s&rsquo;appuie sur <a href="https://github.com/umap-project/umap/">Umap</a>.</p>
+<p>Il existe un shortecode pour umap sur <a href="https://github.com/Hanzei/hugo-component-osm">GIT</a>, j&rsquo;ai juste modifié l&rsquo;URL dans le code.</p>
+<h2 id="framacarte">Framacarte</h2>
+<p>Quand on a créer une carte (un super tuto sur <a href="https://wiki.cartocite.fr/doku.php?id=umap:tutoriel_umap">cartocite.fr/</a>) sur <a href="https://framacarte.org/fr/">Framacarte</a>, on aimerait l&rsquo;afficher sur notre site.</p>
+<p>On peut utiliser l&rsquo;import de l&rsquo;iframe.</p>
+<p>On clique sur l&rsquo;icône de partage <figure><img src="/posts/2023/06/hugo_shortcode-umap/partage.webp"
+    alt="partage umap" width="60px">
+</figure>
+</p>
+<p>On récupère le code.
+<figure><img src="/posts/2023/06/hugo_shortcode-umap/iframe.webp"
+    alt="iframe umap" width="300px">
+</figure>
+</p>
+<h2 id="le-code-original">Le code original</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100%&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;300px&#34;</span> <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">allowfullscreen</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https//framacarte.org/fr/map/carte-de-france_154547?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=undefined&amp;captionBar=false&#34;</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https//framacarte.org/fr/map/carte-de-france_154547&#34;</span>&gt;Voir en plein écran&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;</span></span></code></pre></div>
+<p>Pour que ça marche, il faut ajouter le fichier de configuration du site (<em>config.toml</em>).
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">renderer</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">unsafe</span> = <span style="color:#66d9ef">true</span></span></span></code></pre></div></p>
+<p>Des idées sur l&rsquo;iframe en mode Hugo <a href="https://stackoverflow.com/questions/68036749/embedding-iframe-in-hugo-site">ici</a>.</p>
+<p>Sinon il y a les shortcodes.</p>
+<h2 id="le-shortcode">Le Shortcode</h2>
+<p>On va créer dans le dossier des shortcodes <em>/themes/VOTRETHEME/layouts/shortcodes</em> un fichier frumap.html</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$mapName</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;mapName&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$mapWidth</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;mapWidth&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;100%&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$mapHeight</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;mapHeight&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;600px&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$scaleControl</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;scaleControl&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;true&#34;</span>  <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$miniMap</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;miniMap&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$scrollWheelZoom</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;scrollWheelZoom&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$zoomControl</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;zoomControl&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$allowEdit</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;allowEdit&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$moreControl</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;moreControl&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$searchControl</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;searchControl&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$tilelayersControl</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;tilelayersControl&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;null&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$embedControl</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;embedControl&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;null&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$datalayersControl</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;datalayersControl&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$onLoadPanel</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;onLoadPanel&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$captionBar</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;captionBar&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">default</span> <span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$scale</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;scale&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$coordX</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;coordX&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$coordY</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;coordY&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$mapWidth</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$mapHeight</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span> <span style="color:#a6e22e">frameBorder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://framacarte.org/fr/map/</span><span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$mapName</span> <span style="color:#75715e">-}}</span><span style="color:#e6db74">?scaleControl=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$scaleControl</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&amp;miniMap=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$miniMap</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&amp;scrollWheelZoom=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$scrollWheelZoom</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&amp;zoomControl=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$zoomControl</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&amp;allowEdit=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$allowEdit</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&amp;moreControl=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$moreControl</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&amp;searchControl=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$searchControl</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&amp;tilelayersControl=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$tilelayersControl</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&amp;embedControl=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$embedControl</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&amp;datalayersControl=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$datalayersControl</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&amp;onLoadPanel=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$onLoadPanel</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&amp;captionBar=</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$captionBar</span> <span style="color:#75715e">}}{{</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">$scale</span><span style="color:#75715e">}}</span><span style="color:#e6db74">#</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">.</span> <span style="color:#75715e">}}{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">/</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$coordX</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">/</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$coordY</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;</span></span></code></pre></div>
+<h2 id="les-paramètres">Les paramètres</h2>
+<p>Tous est dans L&rsquo;URL:</p>
+<p>Exemple: <em><a href="https://framacarte.org/fr/map/voyages-a-velo_153439#8/44.582/5.219">https://framacarte.org/fr/map/voyages-a-velo_153439#8/44.582/5.219</a></em></p>
+<ul>
+<li>zoom 8</li>
+<li>coordX 44.582</li>
+<li>coordY 5.219</li>
+</ul>
+<p>Pour la suite:</p>
+<ul>
+<li>coordX (default auto) <strong>Voir dessus</strong></li>
+<li>coordY (default auto) <strong>Vois dessus</strong></li>
+<li>scale (default auto) <strong>Niveau de zoom, voir dessus</strong></li>
+<li>scaleControl (default true) <strong>Plein écran</strong></li>
+<li>miniMap (default false)  <strong>La minimap</strong></li>
+<li>scrollWheelZoom (default true) <strong>Zoom Souris</strong></li>
+<li>zoomControl (default true)  <strong>Barre du zoom</strong></li>
+<li>allowEdit (default false) <strong>Édition</strong></li>
+<li>moreControl (default true) <strong>Bouton plus</strong></li>
+<li>searchControl (default true) <strong>Recherche</strong></li>
+<li>tilelayersControl (default null) <strong>Changer de fond de carte</strong></li>
+<li>embedControl (default null) <strong>Voir le partage</strong></li>
+<li>datalayersControl (default true) <strong>Voir les calques de données</strong></li>
+<li>onLoadPanel (default none) <strong>Barre de chargement</strong></li>
+<li>captionBar (default true) <strong>Barre des légendes</strong></li>
+</ul>
+<h2 id="exemple">Exemple</h2>
+<p>L&rsquo;URL d&rsquo;une carte  <a href="https://framacarte.org/fr/map/voyages-a-velo_153439#10/45.2662/5.2322">https://framacarte.org/fr/map/voyages-a-velo_153439#10/45.2662/5.2322</a></p>
+<p>Le nom c est <em>voyages-a-velo_153439</em> dans le code ça donne *mapName=&ldquo;voyages-a-velo_153439&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">&lt;</span> <span style="color:#a6e22e">frumap</span> <span style="color:#a6e22e">mapHeight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;600&#34;</span> <span style="color:#a6e22e">mapWidth</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;600&#34;</span> <span style="color:#a6e22e">mapName</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;voyages-a-velo_153439&#34;</span> <span style="color:#a6e22e">scale</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#a6e22e">coordX</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;44.582&#34;</span> <span style="color:#a6e22e">coordY</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;5.219&#34;</span> <span style="color:#960050;background-color:#1e0010">&gt;</span><span style="color:#75715e">}}</span></span></span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iframe width="600" height="600" frameBorder="0" src="https://framacarte.org/fr/map/voyages-a-velo_153439?scaleControl=true&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=true#8/44.582/5.219"></iframe>
+
+
+
+<h2 id="liens">Liens</h2>
+<p><a href="https://framacarte.org/fr/">https://framacarte.org/fr/</a></p>
+<p><a href="https://github.com/Hanzei/hugo-component-osm">https://github.com/Hanzei/hugo-component-osm</a></p>
+<p><a href="https://stackoverflow.com/questions/68036749/embedding-iframe-in-hugo-site">https://stackoverflow.com/questions/68036749/embedding-iframe-in-hugo-site</a></p>
+
+            </p>
+    </article>
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "schrek-fr" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <ul class="uk-pagination">
+    
+        <li><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/hugo-shortcode-pad/"><span class="uk-margin-small-right" uk-pagination-previous></span> Shortcode Framapad</a></li>
+    
+    
+        <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/la-faille-franck-thilliez/">La Faille - Franck Thilliez<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+    
+</ul>
+                    <hr class="uk-divider-icon">
+                    
+            <div class="uk-grid-small uk-child-width-auto " uk-grid>
+                <div>
+                    <p class="uk-text-light"><span uk-icon="icon:hashtag"></span>TAGS</p>
+                        <ul class="uk-list uk-display-inline-block">
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/shortcode/">Shortcode</a>
+                            </li>
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/framacarte/">Framacarte</a>
+                            </li>
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/hugo/">Hugo</a>
+                            </li>
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/umap/">Umap</a>
+                            </li>
+                            
+                        </ul>
+                    <br>
+<a href='https://ko-fi.com/Q5Q7LH0AN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Beer at ko-fi.com' /></a>
+</div>
+
+            </div>
+        </div>
+
+
+
+
+        </main>
+<footer>
+    <div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
+        2024 - Construit avec <a class="uk-link-muted" href="https://gohugo.io/">Hugo</a> et de <a class="uk-link-muted" href="https://getuikit.com/">UiKit</a> 
+    </div>
+</footer>
+
+
+    <script src="/js/uikit.min.min.6b4741df9ca63b1e177fc1d9ef5ba017a37a63f6a3515ab84d9e4e2f51a708fa.js" integrity="sha256-a0dB35ymOx4Xf8HZ71ugF6N6Y/ajUVq4TZ5OL1GnCPo=" crossorigin="anonymous"></script>
+
+    <script defer src="/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js" integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin="anonymous"></script>
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+
+
+  
+
+</body>
+</html>

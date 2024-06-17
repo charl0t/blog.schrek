@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Decembre 2023 on Schrek.fr</title><link>https://schrek.fr/posts/2023/12/</link><description>Recent content in Decembre 2023 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Mon, 25 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/posts/2023/12/index.xml" rel="self" type="application/rss+xml"/><item><title>Raspberrypi 5</title><link>https://schrek.fr/posts/2023/12/rasp5/</link><pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/12/rasp5/</guid><description>Papa Noel m&amp;rsquo;a fait un beau cadeau, un raspberry pi 5. Un belle article sur Framboise314.
-Liens https://fr.wikipedia.org/wiki/Raspberry_Pi</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decembre 2023 on Schrek.fr</title>
+    <link>http://localhost:1313/posts/2023/12/</link>
+    <description>Recent content in Decembre 2023 on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Mon, 25 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/2023/12/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberrypi 5</title>
+      <link>http://localhost:1313/posts/2023/12/rasp5/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/12/rasp5/</guid>
+      <description>Papa Noel m&amp;rsquo;a fait un beau cadeau, un raspberry pi 5. Un belle article sur Framboise314.&#xA;Liens https://fr.wikipedia.org/wiki/Raspberry_Pi</description>
+    </item>
+  </channel>
+</rss>

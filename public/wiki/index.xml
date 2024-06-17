@@ -1,17 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wikis on Schrek.fr</title><link>https://schrek.fr/wiki/</link><description>Recent content in Wikis on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Fri, 07 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/wiki/index.xml" rel="self" type="application/rss+xml"/><item><title>A faire</title><link>https://schrek.fr/wiki/a_faire/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/a_faire/</guid><description>Optimisations ameliorations, idées d&amp;rsquo;articles &amp;hellip;
-Optimisation des images.
-Amelioration des bandeaux ( plus lisible, logo).
-Revoir le code du shortcode galerie.
-rendre plus lisible &amp;ldquo;les cartes articles&amp;rdquo;.
-Icone Wiki non comprehensible.
-Revoir les fautes d&amp;rsquo;ortographes.
-Page Wiki plus sympa.</description></item><item><title>Bas a sable</title><link>https://schrek.fr/wiki/boucle/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/boucle/</guid><description/></item><item><title>Les articles</title><link>https://schrek.fr/wiki/articles/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/articles/</guid><description>{{&amp;lt; bandeau primary &amp;gt;}} A faire. {{&amp;lt; / bandeau &amp;gt;}}
-Deep sleep wemos MQTT MQTT Tastoma {{&amp;lt; bandeau warning &amp;gt;}} En construction / . {{&amp;lt; / bandeau &amp;gt;}}
-Communiquer avec l&amp;rsquo;Esp32 Tasmota</description></item><item><title>Mes commandes</title><link>https://schrek.fr/wiki/mes_commandes/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/mes_commandes/</guid><description>Creer un article archetypes/post-bundle/post.md $ hugo new --kind post-bundle posts/2023/
-Compresser les png $ find content/ -type f -iname &amp;#39;*.png&amp;#39; -exec pngquant --force --quality=40-100 --skip-if-larger --strip --verbose {} --output {} \; Convertir les jpg/png en wepb $ cwebp -q 60 file.jpg -o file.wepb Optimiser un jpg $ jpegoptim *.jpg Voir les futurs articles en local $ hugo serve -D -F Voir le site en local $ hugo serve --noHTTPCache --ignoreCache --buildDrafts Compile le site $ hugo --minify Compresse .</description></item><item><title>Mes Shortcodes</title><link>https://schrek.fr/wiki/mes_shortcodes/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/mes_shortcodes/</guid><description>Images {{&amp;lt; figure src=&amp;#34;codepen-logo-8.png&amp;#34; title=&amp;#34;&amp;#34; width=200px class=&amp;#34;imagearticle&amp;#34; &amp;gt;}} Icones https://getuikit.com/docs/icon
-{{&amp;lt; uicon heart 2 &amp;gt;}} est un **gros** coeur. est un gros coeur.
-Bandeaux {{&amp;lt; bandeau primary &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt. {{&amp;lt; / bandeau &amp;gt;}} {{&amp;lt; bandeau success &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt. {{&amp;lt; / bandeau &amp;gt;}} {{&amp;lt; bandeau warning &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt.</description></item><item><title>Services internet libres</title><link>https://schrek.fr/wiki/services_web_libres/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/wiki/services_web_libres/</guid><description>Les listes https://sebsauvage.net/wiki/doku.php?id=services_web
-https://doc.ubuntu-fr.org/liste_de_services_web_libres
-http://www.liensutiles.org/
-https://comptoir-du-libre.org/fr/
-https://entraide.chatons.org/fr/</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wikis on Schrek.fr</title>
+    <link>http://localhost:1313/wiki/</link>
+    <description>Recent content in Wikis on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 07 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/wiki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A faire</title>
+      <link>http://localhost:1313/wiki/a_faire/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/a_faire/</guid>
+      <description>Optimisations ameliorations, idées d&amp;rsquo;articles &amp;hellip;&#xA;Optimisation des images.&#xA;Amelioration des bandeaux ( plus lisible, logo).&#xA;Revoir le code du shortcode galerie.&#xA;rendre plus lisible &amp;ldquo;les cartes articles&amp;rdquo;.&#xA;Icone Wiki non comprehensible.&#xA;Revoir les fautes d&amp;rsquo;ortographes.&#xA;Page Wiki plus sympa.</description>
+    </item>
+    <item>
+      <title>Bas a sable</title>
+      <link>http://localhost:1313/wiki/boucle/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/boucle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Les articles</title>
+      <link>http://localhost:1313/wiki/articles/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/articles/</guid>
+      <description>{{&amp;lt; bandeau primary &amp;gt;}} A faire. {{&amp;lt; / bandeau &amp;gt;}}&#xA;Deep sleep wemos MQTT MQTT Tastoma {{&amp;lt; bandeau warning &amp;gt;}} En construction / . {{&amp;lt; / bandeau &amp;gt;}}&#xA;Communiquer avec l&amp;rsquo;Esp32 Tasmota </description>
+    </item>
+    <item>
+      <title>Mes commandes</title>
+      <link>http://localhost:1313/wiki/mes_commandes/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/mes_commandes/</guid>
+      <description>Creer un article archetypes/post-bundle/post.md $ hugo new --kind post-bundle posts/2023/&#xA;Compresser les png $ find content/ -type f -iname &amp;#39;*.png&amp;#39; -exec pngquant --force --quality=40-100 --skip-if-larger --strip --verbose {} --output {} \; Convertir les jpg/png en wepb $ cwebp -q 60 file.jpg -o file.wepb Optimiser un jpg $ jpegoptim *.jpg Voir les futurs articles en local $ hugo serve -D -F Voir le site en local $ hugo serve --noHTTPCache --ignoreCache --buildDrafts Compile le site $ hugo --minify Compresse .</description>
+    </item>
+    <item>
+      <title>Mes Shortcodes</title>
+      <link>http://localhost:1313/wiki/mes_shortcodes/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/mes_shortcodes/</guid>
+      <description>Images {{&amp;lt; figure src=&amp;#34;codepen-logo-8.png&amp;#34; title=&amp;#34;&amp;#34; width=200px class=&amp;#34;imagearticle&amp;#34; &amp;gt;}} Icones https://getuikit.com/docs/icon&#xA;{{&amp;lt; uicon heart 2 &amp;gt;}} est un **gros** coeur. est un gros coeur.&#xA;Bandeaux {{&amp;lt; bandeau primary &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt. {{&amp;lt; / bandeau &amp;gt;}} {{&amp;lt; bandeau success &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt. {{&amp;lt; / bandeau &amp;gt;}} {{&amp;lt; bandeau warning &amp;gt;}} Lorem **ipsum** dolor sit amet, *consectetur* adipiscing elit, sed do eiusmod tempor incididunt.</description>
+    </item>
+    <item>
+      <title>Services internet libres</title>
+      <link>http://localhost:1313/wiki/services_web_libres/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/wiki/services_web_libres/</guid>
+      <description>Les listes https://sebsauvage.net/wiki/doku.php?id=services_web&#xA;https://doc.ubuntu-fr.org/liste_de_services_web_libres&#xA;http://www.liensutiles.org/&#xA;https://comptoir-du-libre.org/fr/&#xA;https://entraide.chatons.org/fr/</description>
+    </item>
+  </channel>
+</rss>

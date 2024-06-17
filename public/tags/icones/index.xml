@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icones on Schrek.fr</title><link>https://schrek.fr/tags/icones/</link><description>Recent content in Icones on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/icones/index.xml" rel="self" type="application/rss+xml"/><item><title>Les icones dans Latex</title><link>https://schrek.fr/posts/2023/09/latex-icones/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/latex-icones/</guid><description>Téléchargement the-comprehensive-latex-symbol-list.pdf Liens https://la-bibliotex.fr/2019/02/10/des-icones-a-infini-dans-latex/
-https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
-https://ctan.org/topic/font-symbol
-https://ctan.org/pkg/simpleicons</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Icones on Schrek.fr</title>
+    <link>http://localhost:1313/tags/icones/</link>
+    <description>Recent content in Icones on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/icones/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Les icones dans Latex</title>
+      <link>http://localhost:1313/posts/2023/09/latex-icones/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/latex-icones/</guid>
+      <description>Téléchargement the-comprehensive-latex-symbol-list.pdf Liens https://la-bibliotex.fr/2019/02/10/des-icones-a-infini-dans-latex/&#xA;https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols&#xA;https://ctan.org/topic/font-symbol&#xA;https://ctan.org/pkg/simpleicons</description>
+    </item>
+  </channel>
+</rss>

@@ -1,61 +1,396 @@
-<!doctype html><html lang=fr><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Blog qui parle de lecture et de web"><meta name=keywords content="hugo,html,lecture,web,shortcode"><title>Schrek.fr</title>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-title content="My PWA"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js")</script><meta property="og:url" content="https://schrek.fr/posts/2023/04/hugo-installation/"><meta property="og:site_name" content="Schrek.fr"><meta property="og:title" content="Hugo CMS"><meta property="og:description" content="Hugo est générateur de site statique. On écrit un article au format Markdown, on fait tourner le logiciel et il fait les fichiers HTML. Il suffira juste de les déposer sur un serveur. Ça semble simple mais ça demande une mise en place.
-Installation $ sudo apt install hugo Créer un site le logiciel va générer un dossier avec les bases (dossiers, fichiers) a l’intérieur. $ hugo new site schrek."><meta property="og:locale" content="fr-fr"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-04-06T00:00:00+00:00"><meta property="article:modified_time" content="2023-04-06T00:00:00+00:00"><meta property="article:tag" content="Markdown"><meta property="article:tag" content="Html"><meta property="article:tag" content="Hugo"><meta property="og:see_also" content="https://schrek.fr/posts/2024/3/commentaires/"><meta property="og:see_also" content="https://schrek.fr/posts/2024/2/katex/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/09/hugo-pwa/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/08/hugo-shortcode-bouton/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/08/hugo-et-nuages-de-tags/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/08/hugo-et-les-liens/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/07/hugo_galerie/"><link href=/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css rel=stylesheet integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin=anonymous><link href=/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css rel=stylesheet integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp+8kDvTq4rdsbpi6rWUJnq68ImIF+mScfMdRrPd7mRCOJAPMg==" crossorigin=anonymous></head><body><header><div class="uk-container uk-container-xsmall uk-padding-small"><a href=https://schrek.fr/><h1 classe=uk-heading-small>Schrek.fr</h1></a><a href=https://schrek.fr/><h2>Mon super blog :)</h2></a><span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type=button uk-toggle="target: #offcanvas-overlay"></span><div id=offcanvas-overlay uk-offcanvas="overlay: true"><div class="uk-offcanvas-bar uk-background-primary"><button class=uk-offcanvas-close type=button uk-close></button><h3 class=barremenu>Menu</h3><nav><ul class=uk-iconnav><li><a href=/><span uk-icon="icon:home; ratio: 2"></span></a></li><li><a href=/pages/apropos/><span uk-icon="icon:info; ratio: 2"></span></a></li><li><a href=/pages/tagscloud/><span uk-icon="icon:hashtag; ratio: 2"></span></a></li><li><a href=/wiki/><span uk-icon="icon:database; ratio: 2"></span></a></li><li><a href=/index.xml><span uk-icon="icon:rss; ratio: 2"></span></a></li></ul></nav><hr class=uk-divider-icon><h3 class=barremenu><a href=https://schrek.fr//categories/>Categories</a></h3><li><a href=https://schrek.fr/categories/linux/>Linux</a></li><li><a href=https://schrek.fr/categories/lecture/>Lecture</a></li><li><a href=https://schrek.fr/categories/hugo/>Hugo</a></li><li><a href=https://schrek.fr/categories/raspberrypi/>RaspberryPi</a></li><li><a href=https://schrek.fr/categories/iot/>IoT</a></li><li><a href=https://schrek.fr/categories/latex/>Latex</a></li><li><a href=https://schrek.fr/categories/web/>Web</a></li><li><a href=https://schrek.fr/categories/film/>Film</a></li><li><a href=https://schrek.fr/categories/musique/>Musique</a></li><li><a href=https://schrek.fr/categories/wiki/>Wiki</a></li><li><a href=https://schrek.fr/categories/recette/>Recette</a></li><h3 class=barremenu><a href=https://schrek.fr//series/>Series</a></h3><li><a href=https://schrek.fr/series/pandas/>Pandas</a></li><li><a href=https://schrek.fr/series/hugo/>Hugo</a></li><li><a href=https://schrek.fr/series/raspberrypi/>RaspberryPi</a></li><li><a href=https://schrek.fr/series/domotique/>Domotique</a></li><li><a href=https://schrek.fr/series/esp32/>Esp32</a></li><li><a href=https://schrek.fr/series/latex/>Latex</a></li></div></div></div></header><main><div class="uk-container uk-background-muted uk-box-shadow-large uk-padding"><ol class=uk-breadcrumb><li><a href=/>home</a></li><li><a href=https://schrek.fr/posts>posts</a></li><li><a href=https://schrek.fr/posts/2023>2023</a></li><li><a href=https://schrek.fr/posts/2023/04>04</a></li><li><a href=https://schrek.fr/posts/2023/04/hugo-installation>hugo-installation</a></li></ol><article class=uk-article><h1 class=uk-article-title>Hugo CMS</h1><p class=uk-article-meta>2023-04-06
-<span class="labelcat uk-label"><a href=/categories/web>Web</a></span><br><i>Temps de lecture: 2 minutes.</i></p><p>Cet article fait partie de la série: <a href=https://schrek.fr//series/hugo>Hugo</a></p><br><p class=uk-text-lead><div class="uk-section uk-align-right"><div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false"><h3 class=uk-card-title>Table des matières</h3><p class="toc uk-text-small"><nav id=TableOfContents><ul><li><a href=#installation>Installation</a></li><li><a href=#créer-un-site>Créer un site</a></li><li><a href=#thème>Thème</a></li><li><a href=#1ᵉʳ-article>1ᵉʳ article</a></li><li><a href=#2ᵉ-article>2ᵉ article</a></li><li><a href=#configuration>Configuration</a></li><li><a href=#résultat>Résultat</a></li><li><a href=#liens>Liens</a></li></ul></nav></p></div></div><figure class=imagearticle><img src=/posts/2023/04/hugo-installation/hugo.webp width=200px></figure><p><a href=https://gohugo.io/>Hugo</a> est générateur de site statique. On écrit un article au format <a href=https://fr.wikipedia.org/wiki/Markdown>Markdown</a>, on fait tourner le logiciel et il fait les fichiers HTML.
+<!DOCTYPE html>
+
+<html lang="fr">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog qui parle de lecture et de web" />
+    <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
+    <title>Schrek.fr</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes" />
+
+<meta name="apple-mobile-web-app-title" content="My PWA" />
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<script>
+
+if ('serviceWorker' in navigator) {
+
+navigator.serviceWorker.register('/sw.js');
+
+};
+
+</script>
+
+  
+
+
+    <meta property="og:url" content="http://localhost:1313/posts/2023/04/hugo-installation/">
+  <meta property="og:site_name" content="Schrek.fr">
+  <meta property="og:title" content="Hugo CMS">
+  <meta property="og:description" content="Hugo est générateur de site statique. On écrit un article au format Markdown, on fait tourner le logiciel et il fait les fichiers HTML. Il suffira juste de les déposer sur un serveur. Ça semble simple mais ça demande une mise en place.
+Installation $ sudo apt install hugo Créer un site le logiciel va générer un dossier avec les bases (dossiers, fichiers) a l’intérieur. $ hugo new site schrek.">
+  <meta property="og:locale" content="fr-fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-04-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-04-06T00:00:00+00:00">
+    <meta property="article:tag" content="Markdown">
+    <meta property="article:tag" content="Html">
+    <meta property="article:tag" content="Hugo">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/3/commentaires/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/2/katex/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/hugo-pwa/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-les-liens/">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2023/07/hugo_galerie/">
+
+    
+    <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
+    
+    <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
+    </head>
+<body>
+<header>
+    <div class="uk-container uk-container-xsmall uk-padding-small">
+        <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
+        <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
+        <span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type="button" uk-toggle="target: #offcanvas-overlay"></span>
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-background-primary">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <h3 class="barremenu">Menu</h3>
+<nav>
+        <ul class="uk-iconnav">
+            
+            <li><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
+            
+            <li><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
+            
+            <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
+            
+        </ul>
+</nav>
+<hr class="uk-divider-icon">
+                     
+                <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+
+<li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
+
+<li><a href="http://localhost:1313/categories/film/">Film</a></li>
+
+<li><a href="http://localhost:1313/categories/musique/">Musique</a></li>
+
+<li><a href="http://localhost:1313/categories/wiki/">Wiki</a></li>
+
+<li><a href="http://localhost:1313/categories/recette/">Recette</a></li>
+
+
+                  
+                <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
+
+<li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/series/domotique/">Domotique</a></li>
+
+<li><a href="http://localhost:1313/series/esp32/">Esp32</a></li>
+
+<li><a href="http://localhost:1313/series/latex/">Latex</a></li>
+
+</div>
+        </div>
+    </div>
+</header>
+<main>
+
+
+<div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding">
+
+
+
+<ol class="uk-breadcrumb">
+  <li><a href="/">home</a></li>
+  
+    
+      
+      <li><a href='http://localhost:1313/posts'>posts</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023'>2023</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023/04'>04</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2023/04/hugo-installation'>hugo-installation</a></li>
+      
+      
+  
+    
+      
+  
+</ol>
+
+
+    <article class="uk-article">
+        <h1 class="uk-article-title">Hugo CMS</h1>
+            <p class="uk-article-meta">2023-04-06 
+            
+            <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+              <br>
+            <i>Temps de lecture: 2 minutes.</i>
+            </p>
+            
+                
+                
+                
+                <p>Cet article fait partie de la série: <a href="http://localhost:1313//series/hugo">Hugo</a></p>
+                 
+                <br/>
+            <p class="uk-text-lead">
+                
+                
+                <div class="uk-section uk-align-right">
+                    <div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+                       <h3 class="uk-card-title">Table des matières</h3> 
+                       <p class="toc uk-text-small"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#créer-un-site">Créer un site</a></li>
+    <li><a href="#thème">Thème</a></li>
+    <li><a href="#1ᵉʳ-article">1ᵉʳ article</a></li>
+    <li><a href="#2ᵉ-article">2ᵉ article</a></li>
+    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#résultat">Résultat</a></li>
+    <li><a href="#liens">Liens</a></li>
+  </ul>
+</nav></p>
+                    </div>
+                </div>
+                   
+                    <figure class="imagearticle"><img src="/posts/2023/04/hugo-installation/hugo.webp" width="200px">
+</figure>
+
+<p><a href="https://gohugo.io/">Hugo</a> est générateur de site statique. On écrit un article au format  <a href="https://fr.wikipedia.org/wiki/Markdown">Markdown</a>, on fait tourner le logiciel et il fait les fichiers HTML.
 Il suffira juste de les déposer sur un serveur.
-Ça semble simple mais ça demande une mise en place.</p><h2 id=installation>Installation</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ sudo apt install hugo</span></span></code></pre></div><h2 id=créer-un-site>Créer un site</h2><p>le logiciel va générer un dossier avec les bases (dossiers, fichiers) a l’intérieur.<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ hugo new site schrek.fr
-</span></span><span style=display:flex><span>$ cd schrek.fr</span></span></code></pre></div></p><h2 id=thème>Thème</h2><p>Par défaut, il y a pas de thème, On va en installer un. C’est plus ou moins la même procédure pour tous les <a href=https://themes.gohugo.io/>thèmes Hugo</a>.
-On va utiliser le thème <a href=https://github.com/theNewDynamic/gohugo-theme-ananke>Ananke</a><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ git init
-</span></span><span style=display:flex><span>$ git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke themes/ananke
-</span></span><span style=display:flex><span>$ echo <span style=color:#e6db74>&#34;theme = &#39;ananke&#39;&#34;</span> &gt;&gt; config.toml</span></span></code></pre></div></p><h2 id=1ᵉʳ-article>1ᵉʳ article</h2><p>c’est la méthode pour créer des articles.<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ hugo new posts/info.md
-</span></span><span style=display:flex><span>$ nano content/posts/info.md</span></span></code></pre></div></p><p>draft indique si l’article est en mode brouillon</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span>---
-</span></span><span style=display:flex><span>title: &#34;Lorem ipsum&#34;
-</span></span><span style=display:flex><span>date: 2023-04-06T20:13:42+02:00
-</span></span><span style=display:flex><span>draft: true
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-</span></span><span style=display:flex><span>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-</span></span><span style=display:flex><span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></span></code></pre></div><h2 id=2ᵉ-article>2ᵉ article</h2><p>On dépose ce fichier dans le dossier /content/posts. C’est le dossier des articles .</p><p><a href=markdown.md.txt>markdown.md</a></p><p>à renomer markdown.md</p><h2 id=configuration>Configuration</h2><p>Le fichier de configuration (config.toml) se trouve à la racine du site.
-Sur le site du thème il y a un exemple de fichier de <a href=https://github.com/theNewDynamic/gohugo-theme-ananke/blob/master/exampleSite/config.toml>configuration</a></p><p>on dépose un logo dans le dossier static/img .
-{{Attention de bien mettre le bon lien dans BaseURL}}</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ nano config.toml</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=display:flex><span><span style=color:#a6e22e>baseURL</span> = <span style=color:#e6db74>&#39;https://schrek.fr/hugo&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>languageCode</span> = <span style=color:#e6db74>&#39;fr-FR&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>title</span> = <span style=color:#e6db74>&#39;schrek.fr&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>theme</span> = <span style=color:#e6db74>&#39;ananke&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>DefaultContentLanguage</span> = <span style=color:#e6db74>&#34;fr&#34;</span>
-</span></span><span style=display:flex><span>[<span style=color:#a6e22e>params</span>]
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>site_logo</span> = <span style=color:#e6db74>&#34;img/logo.svg&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>text_color</span> = <span style=color:#e6db74>&#34;&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>author</span> = <span style=color:#e6db74>&#34;christophe&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>favicon</span> = <span style=color:#e6db74>&#34;&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>description</span> = <span style=color:#e6db74>&#34;The last theme you&#39;ll ever need. Maybe.&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#75715e># choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with &#34;bg-&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>background_color_class</span> = <span style=color:#e6db74>&#34;bg-black&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>recent_posts_number</span> = <span style=color:#ae81ff>3</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Liens sociaux</span>
-</span></span><span style=display:flex><span>[[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>ananke_socials</span>]]
-</span></span><span style=display:flex><span><span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;twitter&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;https://twitter.com/theNewDynamic&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>[[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>ananke_socials</span>]]
-</span></span><span style=display:flex><span><span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;github&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;https://github.com/theNewDynamic&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>[[<span style=color:#a6e22e>params</span>.<span style=color:#a6e22e>ananke_socials</span>]]
-</span></span><span style=display:flex><span><span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;mastodon&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;https://social.example.com/@username&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>rel</span> = <span style=color:#e6db74>&#34;me noopener&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>## Traduction </span>
-</span></span><span style=display:flex><span>[<span style=color:#a6e22e>languages</span>.<span style=color:#a6e22e>fr</span>]
-</span></span><span style=display:flex><span><span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;Français&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>weight</span> = <span style=color:#ae81ff>2</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  [<span style=color:#a6e22e>languages</span>.<span style=color:#a6e22e>fr</span>.<span style=color:#a6e22e>params</span>]
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>read_more_copy</span> = <span style=color:#e6db74>&#34;En savoir plus à ce sujet&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>[<span style=color:#a6e22e>sitemap</span>]
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>changefreq</span> = <span style=color:#e6db74>&#34;monthly&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>priority</span> = <span style=color:#ae81ff>0.5</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>filename</span> = <span style=color:#e6db74>&#34;sitemap.xml&#34;</span></span></span></code></pre></div><p>On lance le serveur<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ hugo server -D</span></span></code></pre></div></p><p>http://localhost:1313/</p><p>pour générer le site, on lance.
-Il suffira d’envoyer le contenu du dossier public/ sur le serveur.<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ hugo</span></span></code></pre></div></p><h2 id=résultat>Résultat</h2><p><a href=https://schrek.fr/hugo/>https://schrek.fr/hugo/</a></p><h2 id=liens>Liens</h2><p><a href=https://gohugo.io/>https://gohugo.io/</a></p><p><a href=https://bout2code.fr/tutos/creer-un-site-avec-hugo/>https://bout2code.fr/tutos/creer-un-site-avec-hugo/</a></p><p><a href=https://fr.wikipedia.org/wiki/Hugo_(logiciel)>https://fr.wikipedia.org/wiki/Hugo_(logiciel)</a></p><p><a href=https://themes.gohugo.io/>https://themes.gohugo.io/</a></p><p><a href=https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/>https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/</a></p><p><a href=https://transform.tools/yaml-to-toml>https://transform.tools/yaml-to-toml</a></p><p><a href=https://kinsta.com/fr/blog/hugo-site-statique/>https://kinsta.com/fr/blog/hugo-site-statique/</a></p></p></article><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//schrek-fr.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a><ul class=uk-pagination><li><a class=uk-link-heading href=https://schrek.fr/posts/2023/04/memo-hugo/><span class=uk-margin-small-right uk-pagination-previous></span> Astuces Hugo</a></li><li class=uk-margin-auto-left><a class=uk-link-heading href=https://schrek.fr/posts/2023/04/markdown/>Markdown<span class=uk-margin-small-left uk-pagination-next></span></a></li></ul><hr class=uk-divider-icon><div class="uk-grid-small uk-child-width-auto" uk-grid><div><p class=uk-text-light><span uk-icon=icon:hashtag></span>TAGS</p><ul class="uk-list uk-display-inline-block"><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/markdown/>Markdown</a></li><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/html/>Html</a></li><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/hugo/>Hugo</a></li></ul><br><a href=https://ko-fi.com/Q5Q7LH0AN target=_blank><img height=36 style=border:0;height:36px src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border=0 alt='Buy Me a Beer at ko-fi.com'></a></div></div></div></main><footer><div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">2024 - Construit avec <a class=uk-link-muted href=https://gohugo.io/>Hugo</a> et de <a class=uk-link-muted href=https://getuikit.com/>UiKit</a></div></footer><script src=/js/uikit.min.min.6b4741df9ca63b1e177fc1d9ef5ba017a37a63f6a3515ab84d9e4e2f51a708fa.js integrity="sha256-a0dB35ymOx4Xf8HZ71ugF6N6Y/ajUVq4TZ5OL1GnCPo=" crossorigin=anonymous></script><script defer src=/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin=anonymous></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script><script>MathJax={tex:{displayMath:[["\\[","\\]"],["$$","$$"]],inlineMath:[["\\(","\\)"]]}}</script></body></html>
+Ça semble simple  mais ça demande une mise en place.</p>
+<h2 id="installation">Installation</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo apt install hugo</span></span></code></pre></div>
+<h2 id="créer-un-site">Créer un site</h2>
+<p>le logiciel va générer un dossier avec les bases (dossiers, fichiers) a l’intérieur.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hugo new site schrek.fr
+</span></span><span style="display:flex;"><span>$ cd schrek.fr</span></span></code></pre></div></p>
+<h2 id="thème">Thème</h2>
+<p>Par défaut, il y a pas de thème, On va en installer un. C’est plus ou moins la même procédure pour tous les <a href="https://themes.gohugo.io/">thèmes Hugo</a>.
+On va utiliser le thème <a href="https://github.com/theNewDynamic/gohugo-theme-ananke">Ananke</a>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git init
+</span></span><span style="display:flex;"><span>$ git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke themes/ananke
+</span></span><span style="display:flex;"><span>$ echo <span style="color:#e6db74">&#34;theme = &#39;ananke&#39;&#34;</span> &gt;&gt; config.toml</span></span></code></pre></div></p>
+<h2 id="1ᵉʳ-article">1ᵉʳ article</h2>
+<p>c’est la méthode pour créer des articles.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hugo new posts/info.md
+</span></span><span style="display:flex;"><span>$ nano content/posts/info.md</span></span></code></pre></div></p>
+<p>draft indique si l’article est en mode brouillon</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;Lorem ipsum&#34;
+</span></span><span style="display:flex;"><span>date: 2023-04-06T20:13:42+02:00
+</span></span><span style="display:flex;"><span>draft: true
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+</span></span><span style="display:flex;"><span>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+</span></span><span style="display:flex;"><span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></span></code></pre></div>
+<h2 id="2ᵉ-article">2ᵉ article</h2>
+<p>On dépose ce fichier dans le dossier /content/posts. C’est le dossier des articles .</p>
+<p><a href="markdown.md.txt">markdown.md</a></p>
+<p>à renomer markdown.md</p>
+<h2 id="configuration">Configuration</h2>
+<p>Le fichier de configuration (config.toml) se trouve à la racine du site.
+Sur le site du thème il y a un exemple de fichier de <a href="https://github.com/theNewDynamic/gohugo-theme-ananke/blob/master/exampleSite/config.toml">configuration</a></p>
+<p>on dépose un logo dans le dossier static/img .
+{{Attention de bien mettre le bon lien dans BaseURL}}</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ nano config.toml</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://schrek.fr/hugo&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;fr-FR&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;schrek.fr&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;ananke&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">DefaultContentLanguage</span> = <span style="color:#e6db74">&#34;fr&#34;</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">site_logo</span> = <span style="color:#e6db74">&#34;img/logo.svg&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">text_color</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">author</span> = <span style="color:#e6db74">&#34;christophe&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">favicon</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;The last theme you&#39;ll ever need. Maybe.&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with &#34;bg-&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">background_color_class</span> = <span style="color:#e6db74">&#34;bg-black&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">recent_posts_number</span> = <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Liens sociaux</span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">ananke_socials</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;twitter&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;https://twitter.com/theNewDynamic&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">ananke_socials</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;github&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;https://github.com/theNewDynamic&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">ananke_socials</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;mastodon&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;https://social.example.com/@username&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rel</span> = <span style="color:#e6db74">&#34;me noopener&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Traduction </span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">fr</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Français&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">fr</span>.<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">read_more_copy</span> = <span style="color:#e6db74">&#34;En savoir plus à ce sujet&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">sitemap</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">changefreq</span> = <span style="color:#e6db74">&#34;monthly&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">priority</span> = <span style="color:#ae81ff">0.5</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filename</span> = <span style="color:#e6db74">&#34;sitemap.xml&#34;</span></span></span></code></pre></div>
+<p>On lance le serveur
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hugo server -D</span></span></code></pre></div></p>
+<p>http://localhost:1313/</p>
+<p>pour générer le site, on lance.
+Il suffira d’envoyer le contenu du dossier public/ sur le serveur.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hugo</span></span></code></pre></div></p>
+<h2 id="résultat">Résultat</h2>
+<p><a href="https://schrek.fr/hugo/">https://schrek.fr/hugo/</a></p>
+<h2 id="liens">Liens</h2>
+<p><a href="https://gohugo.io/">https://gohugo.io/</a></p>
+<p><a href="https://bout2code.fr/tutos/creer-un-site-avec-hugo/">https://bout2code.fr/tutos/creer-un-site-avec-hugo/</a></p>
+<p><a href="https://fr.wikipedia.org/wiki/Hugo_(logiciel)">https://fr.wikipedia.org/wiki/Hugo_(logiciel)</a></p>
+<p><a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
+<p><a href="https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/">https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/</a></p>
+<p><a href="https://transform.tools/yaml-to-toml">https://transform.tools/yaml-to-toml</a></p>
+<p><a href="https://kinsta.com/fr/blog/hugo-site-statique/">https://kinsta.com/fr/blog/hugo-site-statique/</a></p>
+
+            </p>
+    </article>
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "schrek-fr" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <ul class="uk-pagination">
+    
+        <li><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/memo-hugo/"><span class="uk-margin-small-right" uk-pagination-previous></span> Astuces Hugo</a></li>
+    
+    
+        <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/markdown/">Markdown<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+    
+</ul>
+                    <hr class="uk-divider-icon">
+                    
+            <div class="uk-grid-small uk-child-width-auto " uk-grid>
+                <div>
+                    <p class="uk-text-light"><span uk-icon="icon:hashtag"></span>TAGS</p>
+                        <ul class="uk-list uk-display-inline-block">
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/markdown/">Markdown</a>
+                            </li>
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/html/">Html</a>
+                            </li>
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/hugo/">Hugo</a>
+                            </li>
+                            
+                        </ul>
+                    <br>
+<a href='https://ko-fi.com/Q5Q7LH0AN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Beer at ko-fi.com' /></a>
+</div>
+
+            </div>
+        </div>
+
+
+
+
+        </main>
+<footer>
+    <div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
+        2024 - Construit avec <a class="uk-link-muted" href="https://gohugo.io/">Hugo</a> et de <a class="uk-link-muted" href="https://getuikit.com/">UiKit</a> 
+    </div>
+</footer>
+
+
+    <script src="/js/uikit.min.min.6b4741df9ca63b1e177fc1d9ef5ba017a37a63f6a3515ab84d9e4e2f51a708fa.js" integrity="sha256-a0dB35ymOx4Xf8HZ71ugF6N6Y/ajUVq4TZ5OL1GnCPo=" crossorigin="anonymous"></script>
+
+    <script defer src="/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js" integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin="anonymous"></script>
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+
+
+  
+
+</body>
+</html>

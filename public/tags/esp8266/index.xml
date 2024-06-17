@@ -1,6 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Esp8266 on Schrek.fr</title><link>https://schrek.fr/tags/esp8266/</link><description>Recent content in Esp8266 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/esp8266/index.xml" rel="self" type="application/rss+xml"/><item><title>Tasmota</title><link>https://schrek.fr/posts/2023/10/tasmota/</link><pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/10/tasmota/</guid><description>Tasmota est un firmware OpenSource pour des appareils basé sur des ESP8266. Il va permetre de faire communiquer facilement vos projets domotiques.
-Installation Il existe plusieurs façon de flasher, on va choisir la plus simple.
-On va prendre un simple Wemos d1 mini pour l&amp;rsquo;exemple.
-Il faut brancher en Usb sur le pc et on ouvre la page https://tasmota.github.io/install/
-Il faut utiliser Chrome comme navigateur pour etablir la liaison.
-Choisir ESP8266 et Fr</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Esp8266 on Schrek.fr</title>
+    <link>http://localhost:1313/tags/esp8266/</link>
+    <description>Recent content in Esp8266 on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 15 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/esp8266/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tasmota et AM2302</title>
+      <link>http://localhost:1313/posts/2023/10/tasmota-et-am2302/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/10/tasmota-et-am2302/</guid>
+      <description>Maintenant que l&amp;rsquo;on sait installer Tasmota sur un Wemos, il va falloir interagir avec. On va utiler des composants simples.&#xA;Wemos d1 mini AM2302 Une platine d&amp;rsquo;essais AM2302 Il s&amp;rsquo;agit d&amp;rsquo;un capteur numérique de température et d&amp;rsquo;humidité de base à faible coût. Le capteur mesure les données de l&amp;rsquo;air environnant et les transmet sous forme de signal numérique à la broche de données.&#xA;Le branchement On branche pas encore le wemos en USB</description>
+    </item>
+    <item>
+      <title>Tasmota</title>
+      <link>http://localhost:1313/posts/2023/10/tasmota/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/10/tasmota/</guid>
+      <description>Tasmota est un firmware OpenSource pour des appareils basé sur des ESP8266. Il va permetre de faire communiquer facilement vos projets domotiques.&#xA;Installation Il existe plusieurs façon de flasher, on va choisir la plus simple.&#xA;On va prendre un simple Wemos d1 mini pour l&amp;rsquo;exemple.&#xA;Il faut brancher en Usb sur le pc et on ouvre la page https://tasmota.github.io/install/&#xA;Il faut utiliser Chrome comme navigateur pour etablir la liaison.&#xA;Choisir ESP8266 et Fr</description>
+    </item>
+  </channel>
+</rss>

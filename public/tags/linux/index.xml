@@ -1,10 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Schrek.fr</title><link>https://schrek.fr/tags/linux/</link><description>Recent content in Linux on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Gestionnaire de fichier Caja</title><link>https://schrek.fr/posts/2024/3/caja/</link><pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/3/caja/</guid><description>Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.
-Script Je voulais ajouter des possibilités de click droit via des scripts.
-C’est assez simple, il suffit de placer une exécutable dans le dossier ./config/caja/script de votre répertoire /home.
-Variables Quelques variables pour utiliser les scripts.
-*$@* Fichiers sélectionnés *$PWD* Répertoire courant *$CAJA_SCRIPT_SELECTED_FILE_PATHS* Chemin des fichiers sélectionnés. *$CAJA_SCRIPT_SELECTED_URI* URI des fichiers sélectionnés, pour les fichiers distants. *$CAJA_SCRIPT_CURRENT_URI* URI du dossier depuis lequel le script est lancé.</description></item><item><title>Decouverte de l'Esp32</title><link>https://schrek.fr/posts/2023/09/esp32/</link><pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/esp32/</guid><description>&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/ESP32">Esp32&lt;/a> est un microcontrôleur qui va nous permettre de faire des objets connectés grâce a son module Wifi et Bluetooth intégré.
-Il dispose de plusieurs sorties et entrées pour connecter par exemple des capteurs ou des LED.&lt;/p>
-&lt;p>On va utiliser &lt;a href="https://fr.wikipedia.org/wiki/MicroPython">Micropython&lt;/a> pour assurer la programmation.&lt;/p></description></item><item><title>Pandoc html template</title><link>https://schrek.fr/posts/2023/04/pandoc_html_template/</link><pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/pandoc_html_template/</guid><description>Pour gérer les templates avec Pandoc, on va utiliser un système de balises qui sont incluses dans l’entête du fichier Markdown.
---- title: Schrek subtitle: Mon jolie site abstract: Test template abstract-title: test abstract-title author: Schrek christophe date: 2023-03-23 site: https://schrek.fr/ subject: Pandoc template description: utilisation des templates avec Pandoc logo: logo.png lang: fr keywords: pandoc html5 css template category: Web --- Exemple de template &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;html $if(lang)$ lang=&amp;#34;$lang$&amp;#34; $endif$ &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description></item><item><title>Diceware</title><link>https://schrek.fr/posts/2023/02/diceware/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/diceware/</guid><description>C est fini les mots de passe, il faut passer aux phrases de passe. Plus facile à retenir plus compliquer à casser. Pour les mots de passe, l’avantage est que l’on peut décomplexifier un mot de passe avec tous les caractères MaisonBananeRougeMystereBiere AhdikeJeujenksKjnskodnKshjkskk
-Pour générer une phrase de passe il faut un outil qui crée du « hasard » et un dictionnaire de mot qui va bien.
-Qu’est-ce que Diceware ?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Schrek.fr</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gestionnaire de fichier Caja</title>
+      <link>http://localhost:1313/posts/2024/3/caja/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/3/caja/</guid>
+      <description>Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.&#xA;Script Je voulais ajouter des possibilités de click droit via des scripts.&#xA;C’est assez simple, il suffit de placer une exécutable dans le dossier ./config/caja/script de votre répertoire /home.&#xA;Variables Quelques variables pour utiliser les scripts.&#xA;*$@* Fichiers sélectionnés *$PWD* Répertoire courant *$CAJA_SCRIPT_SELECTED_FILE_PATHS* Chemin des fichiers sélectionnés. *$CAJA_SCRIPT_SELECTED_URI* URI des fichiers sélectionnés, pour les fichiers distants. *$CAJA_SCRIPT_CURRENT_URI* URI du dossier depuis lequel le script est lancé.</description>
+    </item>
+    <item>
+      <title>Decouverte de l&#39;Esp32</title>
+      <link>http://localhost:1313/posts/2023/09/esp32/</link>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/esp32/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/ESP32&#34;&gt;Esp32&lt;/a&gt; est un microcontrôleur qui va nous permettre de faire des objets connectés grâce a son module Wifi et Bluetooth intégré.&#xA;Il dispose de plusieurs sorties et entrées pour connecter par exemple des capteurs ou des LED.&lt;/p&gt;&#xA;&lt;p&gt;On va utiliser &lt;a href=&#34;https://fr.wikipedia.org/wiki/MicroPython&#34;&gt;Micropython&lt;/a&gt; pour assurer la programmation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pandoc html template</title>
+      <link>http://localhost:1313/posts/2023/04/pandoc_html_template/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/04/pandoc_html_template/</guid>
+      <description>Pour gérer les templates avec Pandoc, on va utiliser un système de balises qui sont incluses dans l’entête du fichier Markdown.&#xA;--- title: Schrek subtitle: Mon jolie site abstract: Test template abstract-title: test abstract-title author: Schrek christophe date: 2023-03-23 site: https://schrek.fr/ subject: Pandoc template description: utilisation des templates avec Pandoc logo: logo.png lang: fr keywords: pandoc html5 css template category: Web --- Exemple de template &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;html $if(lang)$ lang=&amp;#34;$lang$&amp;#34; $endif$ &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description>
+    </item>
+    <item>
+      <title>Diceware</title>
+      <link>http://localhost:1313/posts/2023/02/diceware/</link>
+      <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/02/diceware/</guid>
+      <description>C est fini les mots de passe, il faut passer aux phrases de passe. Plus facile à retenir plus compliquer à casser. Pour les mots de passe, l’avantage est que l’on peut décomplexifier un mot de passe avec tous les caractères MaisonBananeRougeMystereBiere AhdikeJeujenksKjnskodnKshjkskk&#xA;Pour générer une phrase de passe il faut un outil qui crée du « hasard » et un dictionnaire de mot qui va bien.&#xA;Qu’est-ce que Diceware ?</description>
+    </item>
+  </channel>
+</rss>

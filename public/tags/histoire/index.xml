@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Histoire on Schrek.fr</title><link>https://schrek.fr/tags/histoire/</link><description>Recent content in Histoire on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/histoire/index.xml" rel="self" type="application/rss+xml"/><item><title>Les pirates de dieu - François-Henri Souli</title><link>https://schrek.fr/posts/2024/5/pirates/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pirates/</guid><description>Les Pirates de Dieu est un livre écrit par François-Henri Souli. Il s&amp;rsquo;agit d&amp;rsquo;un roman historique qui se déroule à Byzance au IVe siècle. L&amp;rsquo;histoire tourne autour de l&amp;rsquo;empereur Constantinus qui tente d&amp;rsquo;imposer le christianisme à son peuple et qui voit les pirates comme une menace personnelle. Le livre met en scène des personnages tels que Aurelius, le conseiller de l&amp;rsquo;empereur, et deux jeunes pirates, Kyros et Galeo, animés par une sombre vengeance .</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Histoire on Schrek.fr</title>
+    <link>http://localhost:1313/tags/histoire/</link>
+    <description>Recent content in Histoire on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 05 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/histoire/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Norferville - Franck Thilliez</title>
+      <link>http://localhost:1313/posts/2024/6/norferville-/</link>
+      <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/6/norferville-/</guid>
+      <description>Franck Thilliez, l&amp;rsquo;un des auteurs de thrillers les plus renommés de la littérature française contemporaine, nous revient en 2023 avec Norferville, un roman qui promet de nous plonger une fois de plus dans une intrigue sombre et captivante.&#xA;Le roman explore des thèmes chers à l’auteur, tels que les méandres de la psychologie humaine, les secrets de famille et les conséquences des actes passés. Thilliez utilise avec brio les éléments du thriller pour tisser une intrigue complexe où chaque détail compte et où les retournements de situation sont légion.</description>
+    </item>
+    <item>
+      <title>La cité en flamme - Don Winslow</title>
+      <link>http://localhost:1313/posts/2024/5/cit%C3%A9/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/cit%C3%A9/</guid>
+      <description>Don Winslow La Cité en flammes, roman publié en 2021 par Don Winslow, marque le début d&amp;rsquo;une nouvelle trilogie audacieuse et captivante, qui plonge les lecteurs dans l&amp;rsquo;univers impitoyable du crime organisé. Inspiré par l&amp;rsquo;Iliade d&amp;rsquo;Homère, Winslow transpose l&amp;rsquo;épopée grecque dans le contexte contemporain des guerres de gangs à Providence, Rhode Island, dans les années 1980.&#xA;Le protagoniste, Danny Ryan, est un homme ordinaire aspirant à une vie tranquille, mais se trouve inexorablement entraîné dans un conflit violent entre deux familles criminelles rivales.</description>
+    </item>
+    <item>
+      <title>Les pirates de dieu - François-Henri Souli</title>
+      <link>http://localhost:1313/posts/2024/5/pirates/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/pirates/</guid>
+      <description>Les Pirates de Dieu est un livre écrit par François-Henri Souli. Il s&amp;rsquo;agit d&amp;rsquo;un roman historique qui se déroule à Byzance au IVe siècle. L&amp;rsquo;histoire tourne autour de l&amp;rsquo;empereur Constantinus qui tente d&amp;rsquo;imposer le christianisme à son peuple et qui voit les pirates comme une menace personnelle. Le livre met en scène des personnages tels que Aurelius, le conseiller de l&amp;rsquo;empereur, et deux jeunes pirates, Kyros et Galeo, animés par une sombre vengeance .</description>
+    </item>
+  </channel>
+</rss>

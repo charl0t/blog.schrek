@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zlib on Schrek.fr</title><link>https://schrek.fr/tags/zlib/</link><description>Recent content in Zlib on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/zlib/index.xml" rel="self" type="application/rss+xml"/><item><title>Z-Library</title><link>https://schrek.fr/posts/2023/03/zlibrary/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/zlibrary/</guid><description>Z-Library est une bibliothèque numérique qui vous permet de télécharger des e-books, des livres, des revues scientifiques en ligne.
-Mais pour y accéder, il va falloir passer par [Tor-&amp;gt;https://fr.wikipedia.org/wiki/Tor_(r%C3%A9seau)], rien de bien compliqué. Il suffit d’installer Tor browser. Âpres avoir lancé le navigateur, il suffît de copier ce lien dans le navigateur.
-http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion/
-Il existe aussi des miroirs qui permettent un accès direct.
-Liens https://singlelogin.me/ https://fr.annas-archive.org/</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zlib on Schrek.fr</title>
+    <link>http://localhost:1313/tags/zlib/</link>
+    <description>Recent content in Zlib on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/zlib/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Z-Library</title>
+      <link>http://localhost:1313/posts/2023/03/zlibrary/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/zlibrary/</guid>
+      <description>Z-Library est une bibliothèque numérique qui vous permet de télécharger des e-books, des livres, des revues scientifiques en ligne.&#xA;Mais pour y accéder, il va falloir passer par [Tor-&amp;gt;https://fr.wikipedia.org/wiki/Tor_(r%C3%A9seau)], rien de bien compliqué. Il suffit d’installer Tor browser. Âpres avoir lancé le navigateur, il suffît de copier ce lien dans le navigateur.&#xA;http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion/&#xA;Il existe aussi des miroirs qui permettent un accès direct.&#xA;Liens https://singlelogin.me/ https://fr.annas-archive.org/</description>
+    </item>
+  </channel>
+</rss>

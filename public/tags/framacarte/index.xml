@@ -1,7 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Framacarte on Schrek.fr</title><link>https://schrek.fr/tags/framacarte/</link><description>Recent content in Framacarte on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/framacarte/index.xml" rel="self" type="application/rss+xml"/><item><title>Shortcode Framacarte</title><link>https://schrek.fr/posts/2023/06/hugo_shortcode-umap/</link><pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo_shortcode-umap/</guid><description>Grace a Framasoft, on peut avoir un service pour créer des cartes personnalisées. Le service s&amp;rsquo;appuie sur Umap.
-Il existe un shortecode pour umap sur GIT, j&amp;rsquo;ai juste modifié l&amp;rsquo;URL dans le code.
-Framacarte Quand on a créer une carte (un super tuto sur cartocite.fr/) sur Framacarte, on aimerait l&amp;rsquo;afficher sur notre site.
-On peut utiliser l&amp;rsquo;import de l&amp;rsquo;iframe.
-On clique sur l&amp;rsquo;icône de partage On récupère le code. Le code original &amp;lt;iframe width=&amp;#34;100%&amp;#34; height=&amp;#34;300px&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen src=&amp;#34;https//framacarte.</description></item><item><title>Lier Framacarte a Framacalc</title><link>https://schrek.fr/posts/2023/03/framacarte/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/framacarte/</guid><description>Il peut être pratique de lier une feuille de tableur avec une carte pour mieux gérer les points . Avec Framacarte et Framacalc c’est possible. Sur le Wiki de Cartocité on trouve plein de ressource sur le sujet.
-Créer et configurer le tableur On va sur Framacalc pour créer notre tableur.
-Sur la 1ᵉʳ colonne on va mettre la latitude en ajoutant &amp;ldquo;lat&amp;rdquo; (case A1 sans les guillemets) 2ᵉ colonne, la longitude &amp;ldquo;lon&amp;rdquo; (case B1 sans les guillemets) 3ᵉ colonne, le nom &amp;ldquo;nom&amp;rdquo; (case C1 sans les guillemets) 4ᵉ colonne, description &amp;ldquo;description&amp;rdquo; (case D1 sans les guillemets) Pour l’exemple on va prendre les arènes d’Arles.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Framacarte on Schrek.fr</title>
+    <link>http://localhost:1313/tags/framacarte/</link>
+    <description>Recent content in Framacarte on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/framacarte/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shortcode Framacarte</title>
+      <link>http://localhost:1313/posts/2023/06/hugo_shortcode-umap/</link>
+      <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/06/hugo_shortcode-umap/</guid>
+      <description>Grace a Framasoft, on peut avoir un service pour créer des cartes personnalisées. Le service s&amp;rsquo;appuie sur Umap.&#xA;Il existe un shortecode pour umap sur GIT, j&amp;rsquo;ai juste modifié l&amp;rsquo;URL dans le code.&#xA;Framacarte Quand on a créer une carte (un super tuto sur cartocite.fr/) sur Framacarte, on aimerait l&amp;rsquo;afficher sur notre site.&#xA;On peut utiliser l&amp;rsquo;import de l&amp;rsquo;iframe.&#xA;On clique sur l&amp;rsquo;icône de partage On récupère le code. Le code original &amp;lt;iframe width=&amp;#34;100%&amp;#34; height=&amp;#34;300px&amp;#34; frameborder=&amp;#34;0&amp;#34; allowfullscreen src=&amp;#34;https//framacarte.</description>
+    </item>
+    <item>
+      <title>Lier Framacarte a Framacalc</title>
+      <link>http://localhost:1313/posts/2023/03/framacarte/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/framacarte/</guid>
+      <description>Il peut être pratique de lier une feuille de tableur avec une carte pour mieux gérer les points . Avec Framacarte et Framacalc c’est possible. Sur le Wiki de Cartocité on trouve plein de ressource sur le sujet.&#xA;Créer et configurer le tableur On va sur Framacalc pour créer notre tableur.&#xA;Sur la 1ᵉʳ colonne on va mettre la latitude en ajoutant &amp;ldquo;lat&amp;rdquo; (case A1 sans les guillemets) 2ᵉ colonne, la longitude &amp;ldquo;lon&amp;rdquo; (case B1 sans les guillemets) 3ᵉ colonne, le nom &amp;ldquo;nom&amp;rdquo; (case C1 sans les guillemets) 4ᵉ colonne, description &amp;ldquo;description&amp;rdquo; (case D1 sans les guillemets) Pour l’exemple on va prendre les arènes d’Arles.</description>
+    </item>
+  </channel>
+</rss>

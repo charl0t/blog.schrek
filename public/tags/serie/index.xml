@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Serie on Schrek.fr</title><link>https://schrek.fr/tags/serie/</link><description>Recent content in Serie on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sun, 05 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/serie/index.xml" rel="self" type="application/rss+xml"/><item><title>Pandas et les series</title><link>https://schrek.fr/posts/2024/5/pandas_serie/</link><pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas_serie/</guid><description>Les &amp;ldquo;séries&amp;rdquo; sur pandas se réfèrent à des objets de données unidimensionnels dans la bibliothèque Python pandas.
-Ils sont similaires aux tableaux unidimensionnels en Python (comme les listes ou les tableaux NumPy), mais avec des fonctionnalités supplémentaires.
-Les séries pandas sont indexées, ce qui signifie que chaque élément a une étiquette ou un identifiant associé, et elles peuvent contenir différents types de données, comme des entiers, des flottants, des chaînes, etc.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Serie on Schrek.fr</title>
+    <link>http://localhost:1313/tags/serie/</link>
+    <description>Recent content in Serie on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 05 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/serie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas et les series</title>
+      <link>http://localhost:1313/posts/2024/5/pandas_serie/</link>
+      <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/5/pandas_serie/</guid>
+      <description>Les &amp;ldquo;séries&amp;rdquo; sur pandas se réfèrent à des objets de données unidimensionnels dans la bibliothèque Python pandas.&#xA;Ils sont similaires aux tableaux unidimensionnels en Python (comme les listes ou les tableaux NumPy), mais avec des fonctionnalités supplémentaires.&#xA;Les séries pandas sont indexées, ce qui signifie que chaque élément a une étiquette ou un identifiant associé, et elles peuvent contenir différents types de données, comme des entiers, des flottants, des chaînes, etc.</description>
+    </item>
+  </channel>
+</rss>

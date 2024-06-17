@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Musique on Schrek.fr</title><link>https://schrek.fr/tags/musique/</link><description>Recent content in Musique on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/musique/index.xml" rel="self" type="application/rss+xml"/><item><title>Jimmy Somerville-Smalltown Boy</title><link>https://schrek.fr/posts/2023/05/jimmy-somerville--smalltown-boy/</link><pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/jimmy-somerville--smalltown-boy/</guid><description>" Run away, turn away, run away, turn away, run away. Sauve-toi, détourne-toi, sauve-toi, détourne-toi, sauve-toi. "
-Liens https://fr.wikipedia.org/wiki/Smalltown_Boy
-https://fr.wikipedia.org/wiki/Bronski_Beat
-https://www.lacoccinelle.net/255473-bronski-beat-smalltown-boy.html</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Musique on Schrek.fr</title>
+    <link>http://localhost:1313/tags/musique/</link>
+    <description>Recent content in Musique on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/musique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jimmy Somerville-Smalltown Boy </title>
+      <link>http://localhost:1313/posts/2023/05/jimmy-somerville--smalltown-boy/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/05/jimmy-somerville--smalltown-boy/</guid>
+      <description>&#34; Run away, turn away, run away, turn away, run away. Sauve-toi, détourne-toi, sauve-toi, détourne-toi, sauve-toi. &#34;&#xA;Liens https://fr.wikipedia.org/wiki/Smalltown_Boy&#xA;https://fr.wikipedia.org/wiki/Bronski_Beat&#xA;https://www.lacoccinelle.net/255473-bronski-beat-smalltown-boy.html</description>
+    </item>
+  </channel>
+</rss>

@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Schrek.fr</title><link>https://schrek.fr/tags/tags/</link><description>Recent content in Tags on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sat, 05 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>Nuage de tags</title><link>https://schrek.fr/posts/2023/08/hugo-et-nuages-de-tags/</link><pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/hugo-et-nuages-de-tags/</guid><description>&lt;p>Dans la barre des menus, j&amp;rsquo;avais trop de tags cela devenait pas trop lisible.&lt;/p>
-&lt;p>J&amp;rsquo;ai choisi de déporter les tags dans une page et d&amp;rsquo;utiliser que du CSS pour le visuel.&lt;/p>
-&lt;p>Il y a la possibilité de bibliothèques JavaScript mais je veux rester &lt;em>light&lt;/em>.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Schrek.fr</title>
+    <link>http://localhost:1313/tags/tags/</link>
+    <description>Recent content in Tags on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 05 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nuage de tags</title>
+      <link>http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/</link>
+      <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/</guid>
+      <description>&lt;p&gt;Dans la barre des menus, j&amp;rsquo;avais trop de tags cela devenait pas trop lisible.&lt;/p&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai choisi de déporter les tags dans une page et d&amp;rsquo;utiliser que du CSS pour le visuel.&lt;/p&gt;&#xA;&lt;p&gt;Il y a la possibilité de bibliothèques JavaScript mais je veux rester &lt;em&gt;light&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
