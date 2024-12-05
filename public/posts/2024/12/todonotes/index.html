@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog qui parle de lecture et de web" />
+    <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
+    <title>Schrek.fr</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes" />
+
+<meta name="apple-mobile-web-app-title" content="My PWA" />
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<script>
+
+if ('serviceWorker' in navigator) {
+
+navigator.serviceWorker.register('/sw.js');
+
+};
+
+</script>
+
+    <meta property="og:url" content="http://localhost:1313/posts/2024/12/todonotes/">
+  <meta property="og:site_name" content="Schrek.fr">
+  <meta property="og:title" content="Notes dans Latex">
+  <meta property="og:description" content="Le package todonotes est un outil puissant pour gérer des annotations et des commentaires dans un document LaTeX. Très pratique pour collaborer ou pour organiser le processus de rédaction, il permet d’insérer des notes visuelles dans la marge ou directement dans le texte.">
+  <meta property="og:locale" content="fr_fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-01T00:00:00+00:00">
+    <meta property="article:tag" content="Latex">
+    <meta property="article:tag" content="Notes">
+
+    
+    <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
+    
+    <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
+    </head>
+<body>
+<header>
+    <div class="uk-container uk-container-xsmall uk-padding-small">
+        <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
+        <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
+        <span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type="button" uk-toggle="target: #offcanvas-overlay"></span>
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-background-primary">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <h3 class="barremenu">Menu</h3>
+<nav>
+        <ul class="uk-iconnav">
+            
+            <li><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
+            
+            <li><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
+            
+            <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
+            
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
+        </ul>
+</nav>
+<hr class="uk-divider-icon">
+                     
+                <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
+
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
+
+<li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+
+<li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
+
+<li><a href="http://localhost:1313/categories/film/">Film</a></li>
+
+<li><a href="http://localhost:1313/categories/musique/">Musique</a></li>
+
+<li><a href="http://localhost:1313/categories/wiki/">Wiki</a></li>
+
+<li><a href="http://localhost:1313/categories/recette/">Recette</a></li>
+
+
+                  
+                <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
+
+<li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
+
+<li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
+
+<li><a href="http://localhost:1313/series/domotique/">Domotique</a></li>
+
+<li><a href="http://localhost:1313/series/esp32/">Esp32</a></li>
+
+<li><a href="http://localhost:1313/series/latex/">Latex</a></li>
+
+</div>
+        </div>
+    </div>
+</header>
+<main>
+
+
+<div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding">
+
+
+
+<ol class="uk-breadcrumb">
+  <li><a href="/">home</a></li>
+  
+    
+      
+      <li><a href='http://localhost:1313/posts'>posts</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2024'>2024</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2024/12'>12</a></li>
+      
+      
+  
+    
+      
+      <li><a href='http://localhost:1313/posts/2024/12/todonotes'>todonotes</a></li>
+      
+      
+  
+    
+      
+  
+
+</ol>
+
+
+    <article class="uk-article">
+        <h1 class="uk-article-title">Notes dans Latex</h1>
+            <p class="uk-article-meta">2024-12-01 
+            
+            <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
+              <br>
+            <i>Temps de lecture: 1 minutes.</i>
+            </p>
+            
+                
+                 
+                <br/>
+            <p class="uk-text-lead">
+                
+                
+                <div class="uk-section uk-align-right">
+                    <div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+                       <h3 class="uk-card-title">Table des matières</h3> 
+                       <p class="toc uk-text-small"> <nav id="TableOfContents">
+  <ul>
+    <li><a href="#installation-et-préambule">Installation et préambule</a></li>
+    <li><a href="#fonctions-principales">Fonctions principales</a>
+      <ul>
+        <li><a href="#ajouter-une-note-dans-la-marge">Ajouter une note dans la marge:</a></li>
+        <li><a href="#insertion-dune-note-dans-le-texte">Insertion d’une note dans le texte:</a></li>
+        <li><a href="#personaliser-des-notes">Personaliser des notes</a></li>
+        <li><a href="#désactivation-des-notes">Désactivation des notes</a></li>
+      </ul>
+    </li>
+    <li><a href="#fichiers">Fichiers</a></li>
+    <li><a href="#liens">Liens</a></li>
+  </ul>
+</nav></p>
+                    </div>
+                </div>
+                   
+                    <p>Le package todonotes est un outil puissant pour gérer des annotations et des commentaires dans un document LaTeX. Très pratique pour collaborer ou pour organiser le processus de rédaction, il permet d’insérer des notes visuelles dans la marge ou directement dans le texte.</p>
+<h2 id="installation-et-préambule">Installation et préambule</h2>
+<p>Pour utiliser todonotes, ajoutez simplement cette ligne dans le préambule de votre document LaTeX :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{todonotes}</span></span></code></pre></div>
+<h2 id="fonctions-principales">Fonctions principales</h2>
+<h3 id="ajouter-une-note-dans-la-marge">Ajouter une note dans la marge:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\todo</span>{Texte de la note}</span></span></code></pre></div>
+<h3 id="insertion-dune-note-dans-le-texte">Insertion d’une note dans le texte:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\todo</span><span style="color:#a6e22e">[inline]</span>{Texte de la note}</span></span></code></pre></div>
+<h3 id="personaliser-des-notes">Personaliser des notes</h3>
+<p>Vous pouvez personnaliser la couleur ou l’apparence des annotations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\todo</span><span style="color:#a6e22e">[color=red!50]</span>{Note urgente.}</span></span></code></pre></div>
+<h3 id="désactivation-des-notes">Désactivation des notes</h3>
+<p>Pour produire une version finale sans notes, désactivez simplement les commandes du package avec :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[disable]</span>{todonotes}</span></span></code></pre></div>
+<h2 id="fichiers">Fichiers</h2>
+<p>D&rsquo;autres exemple dans les fichiers.</p>
+
+
+<div class="attachments-files uk-card uk-card-small uk-width-1-3@m uk-padding">
+  <h3 class="attachments-files-titre">Téléchargement  <span uk-icon="icon: cloud-download;ratio:2"></span></h3> 
+  <div class="attachments-files">
+    <li>
+      <a href="/posts/2024/12/todonotes/files/main.tex">main.tex</a>
+    </li>
+    <li>
+      <a href="/posts/2024/12/todonotes/files/todo.pdf">todo.pdf</a>
+    </li>
+  </div>
+</div>
+
+<h2 id="liens">Liens</h2>
+<p><a href="https://tug.ctan.org/macros/latex/contrib/todonotes/todonotes.pdf">https://tug.ctan.org/macros/latex/contrib/todonotes/todonotes.pdf</a></p>
+<p><a href="https://fr.overleaf.com/latex/examples/example-formatted-todonotes/qmpbkcqxfgmg">https://fr.overleaf.com/latex/examples/example-formatted-todonotes/qmpbkcqxfgmg</a></p>
+<p><a href="https://latex-tutorial.com/boost-latex-productivity-todo-notes/">https://latex-tutorial.com/boost-latex-productivity-todo-notes/</a></p>
+            </p>
+    </article>
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "schrek-fr" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <ul class="uk-pagination">
+    
+        <li><a class="uk-link-heading" href="http://localhost:1313/posts/2024/12/constantinople/"><span class="uk-margin-small-right" uk-pagination-previous></span> Constantinople 1453</a></li>
+    
+    
+        <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2024/11/mealie/">Mealie<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+    
+</ul>
+
+                    <hr class="uk-divider-icon">
+                    
+            <div class="uk-grid-small uk-child-width-auto " uk-grid>
+                <div>
+                    <p class="uk-text-light"><span uk-icon="icon:hashtag"></span>TAGS</p>
+                        <ul class="uk-list uk-display-inline-block">
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/latex/">Latex</a>
+                            </li>
+                            
+                            <li>
+                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/notes/">Notes</a>
+                            </li>
+                            
+                        </ul>
+                    <br>
+<a href='https://ko-fi.com/Q5Q7LH0AN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Beer at ko-fi.com' /></a>
+</div>
+
+            </div>
+        </div>
+
+
+        </main>
+<footer>
+    <div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
+        2024 - Construit avec <a class="uk-link-muted" href="https://gohugo.io/">Hugo</a> et de <a class="uk-link-muted" href="https://getuikit.com/">UiKit</a> 
+    </div>
+</footer>
+
+
+    <script src="/js/uikit.min.min.6b4741df9ca63b1e177fc1d9ef5ba017a37a63f6a3515ab84d9e4e2f51a708fa.js" integrity="sha256-a0dB35ymOx4Xf8HZ71ugF6N6Y/ajUVq4TZ5OL1GnCPo=" crossorigin="anonymous"></script>
+
+    <script defer src="/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js" integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin="anonymous"></script>
+
+
+  
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+
+
+  
+
+</body>
+</html>

@@ -29,15 +29,12 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/posts/2023/04/hugo-installation/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Hugo CMS">
   <meta property="og:description" content="Hugo est générateur de site statique. On écrit un article au format Markdown, on fait tourner le logiciel et il fait les fichiers HTML. Il suffira juste de les déposer sur un serveur. Ça semble simple mais ça demande une mise en place.
-Installation $ sudo apt install hugo Créer un site le logiciel va générer un dossier avec les bases (dossiers, fichiers) a l’intérieur. $ hugo new site schrek.">
-  <meta property="og:locale" content="fr-fr">
+Installation $ sudo apt install hugo Créer un site le logiciel va générer un dossier avec les bases (dossiers, fichiers) a l’intérieur. $ hugo new site schrek.fr $ cd schrek.fr">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2023-04-06T00:00:00+00:00">
@@ -45,13 +42,13 @@ Installation $ sudo apt install hugo Créer un site le logiciel va générer un 
     <meta property="article:tag" content="Markdown">
     <meta property="article:tag" content="Html">
     <meta property="article:tag" content="Hugo">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/12/hugo-recherche/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2024/3/commentaires/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2024/2/katex/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/hugo-pwa/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-les-liens/">
-      <meta property="og:see_also" content="http://localhost:1313/posts/2023/07/hugo_galerie/">
 
     
     <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
@@ -81,25 +78,33 @@ Installation $ sudo apt install hugo Créer un site le logiciel va générer un 
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -113,9 +118,9 @@ Installation $ sudo apt install hugo Créer un site le logiciel va générer un 
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -166,6 +171,7 @@ Installation $ sudo apt install hugo Créer un site le logiciel va générer un 
     
       
   
+
 </ol>
 
 
@@ -334,6 +340,7 @@ Il suffira d’envoyer le contenu du dossier public/ sur le serveur.
         <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/markdown/">Markdown<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
     
 </ul>
+
                     <hr class="uk-divider-icon">
                     
             <div class="uk-grid-small uk-child-width-auto " uk-grid>
@@ -360,8 +367,6 @@ Il suffira d’envoyer le contenu du dossier public/ sur le serveur.
 
             </div>
         </div>
-
-
 
 
         </main>

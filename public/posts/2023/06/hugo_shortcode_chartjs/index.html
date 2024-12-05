@@ -29,9 +29,6 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/posts/2023/06/hugo_shortcode_chartjs/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Shortcode ChartJS">
@@ -39,8 +36,9 @@ navigator.serviceWorker.register('/sw.js');
 Le shortcode J’ai trouvé le code ici.
 Il y a un problème sur le code (voir ici)
 src=“https://cdn.jsdelivr.net/npm/chart.js&#34;
-A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.html {{ $w := default &#34;100&#34; (.Get 0) }} {{ $h := default &#34;300&#34; (.Get 1) }} {{ $r := ( .Inner | chomp) }} {{ $seed := &#34;foo&#34; }} {{ $id := delimit (shuffle (split (md5 $seed) &#34;&#34; )) &#34;&#34; }} &lt;div style=&#34;width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto&#34;&gt; &lt;canvas id=&#34;{{ $id }}&#34;&gt;&lt;/canvas&gt; &lt;/div&gt; &lt;script src=&#34;https://cdn.">
-  <meta property="og:locale" content="fr-fr">
+A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.html {{ $w := default &#34;100&#34; (.Get 0) }} {{ $h := default &#34;300&#34; (.Get 1) }} {{ $r := ( .Inner | chomp) }} {{ $seed := &#34;foo&#34; }} {{ $id := delimit (shuffle (split (md5 $seed) &#34;&#34; )) &#34;&#34; }} &lt;div style=&#34;width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto&#34;&gt; &lt;canvas id=&#34;{{ $id }}&#34;&gt;&lt;/canvas&gt; &lt;/div&gt; &lt;script src=&#34;https://cdn.jsdelivr.net/npm/chart.js&#34;&gt;&lt;/script&gt; &lt;script type=&#34;text/javascript&#34;&gt; var ctx = document.getElementById(&#39;{{ $id }}&#39;).getContext(&#39;2d&#39;); var options = {{ $r | safeJS }}; new Chart(ctx, options); &lt;/script&gt;
+Exemple {{&lt; chart 90 200 &gt;}} { type: &#39;bar&#39;, data: { labels: [&#39;Red&#39;, &#39;Blue&#39;, &#39;Yellow&#39;, &#39;Green&#39;, &#39;Purple&#39;, &#39;Orange&#39;], datasets: [{ label: &#39;Bar Chart&#39;, data: [12, 19, 18, 16, 13, 14], backgroundColor: [ &#39;rgba(255, 99, 132, 0.2)&#39;, &#39;rgba(54, 162, 235, 0.2)&#39;, &#39;rgba(255, 206, 86, 0.2)&#39;, &#39;rgba(75, 192, 192, 0.2)&#39;, &#39;rgba(153, 102, 255, 0.2)&#39;, &#39;rgba(255, 159, 64, 0.2)&#39; ], borderColor: [ &#39;rgba(255, 99, 132, 1)&#39;, &#39;rgba(54, 162, 235, 1)&#39;, &#39;rgba(255, 206, 86, 1)&#39;, &#39;rgba(75, 192, 192, 1)&#39;, &#39;rgba(153, 102, 255, 1)&#39;, &#39;rgba(255, 159, 64, 1)&#39; ], borderWidth: 1 }] }, options: { maintainAspectRatio: false, scales: { yAxes: [{ ticks: { beginAtZero: true } }] } } } {{&lt; /chart &gt;}} Explications On va prendre un exemple sur le site ChartJs.">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2023-06-07T00:00:00+00:00">
@@ -77,25 +75,33 @@ A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -109,9 +115,9 @@ A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -162,6 +168,7 @@ A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.
     
       
   
+
 </ol>
 
 
@@ -289,11 +296,11 @@ A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.
 
 
 <div style="width: 90%;height: 200px;margin: 0 auto">
-    <canvas id="1854d48cd8fc4cc4bccf5da6a2dcbefe"></canvas>
+    <canvas id="dcce648ed8bacccdd48ff4ca514cf25b"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('1854d48cd8fc4cc4bccf5da6a2dcbefe').getContext('2d');
+    var ctx = document.getElementById('dcce648ed8bacccdd48ff4ca514cf25b').getContext('2d');
     var options = 
 {
     type: 'bar',
@@ -381,11 +388,11 @@ A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.
 
 
 <div style="width: 100%;height: 300px;margin: 0 auto">
-    <canvas id="cea5dbfffabccdd865ce4424c8c4cd18"></canvas>
+    <canvas id="e882ce6fc44cddd8f5acfc451d4cabcb"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('cea5dbfffabccdd865ce4424c8c4cd18').getContext('2d');
+    var ctx = document.getElementById('e882ce6fc44cddd8f5acfc451d4cabcb').getContext('2d');
     var options = 
 {
   type: 'radar',
@@ -438,11 +445,11 @@ A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.
 
 
 <div style="width: 300%;height: 500px;margin: 0 auto">
-    <canvas id="e6addcc8de2c8c5c5db4b414f8a4cfcf"></canvas>
+    <canvas id="dc5fa6b44d4c8f1a8cdccfe28c4eb5dc"></canvas>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script type="text/javascript">
-    var ctx = document.getElementById('e6addcc8de2c8c5c5db4b414f8a4cfcf').getContext('2d');
+    var ctx = document.getElementById('dc5fa6b44d4c8f1a8cdccfe28c4eb5dc').getContext('2d');
     var options = 
 {
   type: 'radar',
@@ -512,6 +519,7 @@ A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.
         <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/les-cartographes-peng-shepherd/">Les cartographes - Peng Shepherd<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
     
 </ul>
+
                     <hr class="uk-divider-icon">
                     
             <div class="uk-grid-small uk-child-width-auto " uk-grid>
@@ -538,8 +546,6 @@ A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.
 
             </div>
         </div>
-
-
 
 
         </main>

@@ -96,11 +96,7 @@ dtypes: object(3)
 memory usage: 11.8+ KB
 
 ```
-- Convertir le type de données.
 
-```python
-
-```
 
 
 ## Liens

@@ -2,7 +2,8 @@ baseURL = 'https://schrek.fr/'
 languageCode = 'fr-fr'
 title = 'Schrek.fr'
 theme = 'schrek'
-Paginate = 6
+#Paginate = 6
+pagination.pagerSize = 6
 #disablePathToLower = true
 
 [outputs]
@@ -51,6 +52,11 @@ math = true
   url = '/index.xml'
   pre = 'rss'
   weight = 40
+[[menu.main]]
+  name = 'Recherche'
+  url = '/pages/search/'
+  pre = 'search'
+  weight = 50
 
 
 
@@ -64,6 +70,7 @@ math = true
     endLevel = 5
     ordered = false
    [markup.goldmark]
+    renderer.unsafe = true
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]
         enable = true

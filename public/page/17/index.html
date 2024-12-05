@@ -2,7 +2,7 @@
 
 <html lang="fr">
 <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
-	<meta name="generator" content="Hugo 0.125.5">
+	<meta name="generator" content="Hugo 0.138.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog qui parle de lecture et de web" />
@@ -30,14 +30,11 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Schrek.fr">
   <meta property="og:description" content="Mon super blog :)">
-  <meta property="og:locale" content="fr-fr">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="website">
 
     
@@ -70,25 +67,33 @@ navigator.serviceWorker.register('/sw.js');
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -102,9 +107,9 @@ navigator.serviceWorker.register('/sw.js');
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -128,18 +133,22 @@ navigator.serviceWorker.register('/sw.js');
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/savon_alep//logo.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/latex-une_lettre//latex_logo-1ee3e.svg" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/savon_alep/">Fabrication d&#39;un savon d&#39;Alep</a></h1>
-                                    <p class="uk-article-meta">2023-03-05
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/latex-une_lettre/">Lettre sous latex</a></h1>
+                                    <p class="uk-article-meta">2023-03-28
                             
-                                    <span class="labelcat uk-label"><a href="/categories/recette">Recette</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p> Ici je vais vous décrire rapidement la fabrication maison du savon d’Alep. C’est un savon simple à base d’huile d’olive et d’huile de baie de laurier et d’huile de ricin. J’utilise la technique de la saponification a froid.
+                            <p> Utilisation de la classe lettre avec LaTex.
+J’ai commenté le code pour plus de clarté.
+Petit rajout du tampon fait dans cet article Tampon encreur sous Gimp
+En cas d’erreur babel:
+sudo apt-get install texlive-lang-french Le code \documentclass[12pt]{lettre} %12p taille lettres (10 et 11 possible), déclaration classe lettre \usepackage[utf8]{inputenc} % Encodage \usepackage[T1]{fontenc} % Les mots accentués \usepackage{lmodern} % Type de police \usepackage{eurosym} % Pouvoir écrire le symbole &#34;€&#34; \usepackage[french]{babel} % Utilisation du français \usepackage{numprint} % Séparateur décimal \usepackage{graphicx} % Pour inclure des images \begin{document} \begin{letter}{Service des râleurs\\66, rue du train\\13200 Arles} % Destinataire \basdepage{\pagetotalname{1}} \name{Prénom nom} \signature{Nom Prénom \includegraphics[width=75px, angle=-45]{tampon.png}} % Si different de l&#39;expediteur a commenter sinon, ajout du tampon \location{htextei} \address{Prenom Nom \\13, rue du cheval\\13200 Arles} \lieu{Arles} \date {le 10 mai 2023} % Sinon \nodate \lieu{lieu envoi} % Sinon \nolieu \telephone{01 02 03 04 05} \email{prenom.nom@fai.fr} \nofax % Pas de fax sinon fax{} \Vref{3456678} % Reference du destinataire a commenter sinon \Nref{6654334} % Reference de l&#39;envoyeur a commenter sinon \def\concname{Objet :~} % On définit l’objet \conc{rétractation} \opening{Madame, Monsieur,} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \numprint{2000}~\euro. \closing{Je vous prie d’agréer, Madame, Monsieur, mes salutations distinguées.} \ps{PS :}{Lorem ipsum dolor sit amet, consectetur adipiscing elit.} \cc{Nom des autres destinataires} \encl{Pièces jointes} \end{letter} \end{document} Voir sur overleaf Le tampon qui va bien
 </p>
-                            <a href="/posts/2023/03/savon_alep/">Lire plus...</a>
+                            <a href="/posts/2023/03/latex-une_lettre/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -148,42 +157,20 @@ navigator.serviceWorker.register('/sw.js');
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/signaux_sncf//signal_sncf_carre.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/framacarte//umap_logo.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/signaux_sncf/">La Signalisation SNCF avec Latex</a></h1>
-                                    <p class="uk-article-meta">2023-03-05
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Pour jouer avec tikz qui permet de générer des images, j’ai fait des signaux SNCF.
-C’est perfectible aux niveaux des couleurs et des formes mais ca rend bien. Un cheminot Nicolas Wurtz a fait aussi ce travail mais sous une autre forme, son dépôt git Un autre projet ici à base de gif.
-Mes sources latex Fichier pdf
-Fichier Latex
-Voir sur overleaf Lien https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France</p>
-                            <a href="/posts/2023/03/signaux_sncf/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/css-style_latex//latex_logo.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/css-style_latex/">Le style Latex</a></h1>
-                                    <p class="uk-article-meta">2023-03-05
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/framacarte/">Lier Framacarte a Framacalc</a></h1>
+                                    <p class="uk-article-meta">2023-03-23
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p> Style LaTex en CSS Latex le célèbre système de composition de document, qui permet de générer de “belles pages”, a un style bien à lui. Vincent Dörig a créé un style CSS pour l’intégrer facilement dans un site. On y retrouve aussi l’intégration des formules mathématique avec MathJax.
-La page de test https://latex.vercel.app/elements
-Liens https://latex.vercel.app/ https://github.com/vincentdoerig/latex-css https://www.mathjax.org/ https://www.latex-project.org/ https://fr.wikibooks.org/wiki/LaTeX </p>
-                            <a href="/posts/2023/03/css-style_latex/">Lire plus...</a>
+                            <p> Il peut être pratique de lier une feuille de tableur avec une carte pour mieux gérer les points . Avec Framacarte et Framacalc c’est possible. Sur le Wiki de Cartocité on trouve plein de ressource sur le sujet.
+Créer et configurer le tableur On va sur Framacalc pour créer notre tableur.
+Sur la 1ᵉʳ colonne on va mettre la latitude en ajoutant “lat” (case A1 sans les guillemets) 2ᵉ colonne, la longitude “lon” (case B1 sans les guillemets) 3ᵉ colonne, le nom “nom” (case C1 sans les guillemets) 4ᵉ colonne, description “description” (case D1 sans les guillemets) Pour l’exemple on va prendre les arènes d’Arles. https://www.openstreetmap.org/#map=19/43.67773/4.63103 L’URL nous indique le niveau de zoom, la latitude et la longitude. On récupère les données pour remplir notre tableau.
+</p>
+                            <a href="/posts/2023/03/framacarte/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -192,62 +179,86 @@ Liens https://latex.vercel.app/ https://github.com/vincentdoerig/latex-css https
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/02/diceware//one-red-dice-01-a9bf3.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/linux-nano//nano.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/02/diceware/">Diceware</a></h1>
-                                    <p class="uk-article-meta">2023-02-24
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/linux-nano/">Nano</a></h1>
+                                    <p class="uk-article-meta">2023-03-23
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/linux">Linux</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p> Un éditeur de fichier très simple.
+Pour ouvrir un fichier $ nano index.html Créer un fichier $ nano fichier.txt Les raccourcis courants ctrl &#43; G ...... Appeler le menu d’aide ctrl &#43; X ...... Fermer et, le cas échéant, quitter nano ctrl &#43; O ...... Écrire le fichier en cours sur le disque ctrl &#43; J ...... Justifier le paragraphe courant ctrl &#43; R ...... Insérer un autre fichier dans le fichier en cours ctrl &#43; W ...... Rechercher une chaîne dans l’éditeur ctrl &#43; Y ...... Aller à l’écran précédent ctrl &#43; V...... Aller à l’écran suivant ctrl &#43; K ...... Couper la ligne courante vers le presse-papiers ctrl &#43; U ...... Coller le presse-papiers à partir de la ligne courante ctrl &#43; C ...... Indiquer la position du curseur Coloration syntaxique J’ai trouvé un petit script sympa ici qui modifie le nanorc(fichier de configuration) pour avoir un peu de couleurs .
+</p>
+                            <a href="/posts/2023/03/linux-nano/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/nego-laurent-combalbert//nego-1d734.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/nego-laurent-combalbert/">Nego et L’Organisation - Laurent Combalbert</a></h1>
+                                    <p class="uk-article-meta">2023-03-20
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p> 2 livres d’un coup. Les tomes 1 et tomes 2 de la série Stanislas Monville. Un mélange de James bond, Jack Ryan avec une intrigue internationale sur fond d’écologie.
+Résumé Stanislas Monville est négociateur professionnel. Il intervient dans les kidnappings, les séquestrations, les extorsions… Ses années de service dans les forces spéciales comme les missions privées qu’il conduit désormais lui ont donné un instinct très sûr pour repérer les situations à risque.
+</p>
+                            <a href="/posts/2023/03/nego-laurent-combalbert/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/lykaia---doa//lykaia.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/lykaia---doa/">Lykaia - DOA</a></h1>
+                                    <p class="uk-article-meta">2023-03-19
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p> “Dans la Grèce antique, les lykaia sont une fête archaïque avec un rituel secret sur les pentes du mont Lykaion (« montagne du loup ») ou mont Lycée, le plus haut sommet d’Arcadie. &#34; Wikipedia
+Livre hyper violent quand meme, ou on decouvre le mileux SM.
+Résumé Berlin Ouest. Le BUNK’R est un club discret et sélectif où se pratiquent des séances de sadomasochisme chics et sophistiquées. Un client s’apprête à être livré aux mains expertes du narrateur, un ancien chirurgien de haut vol, qui s’est reconverti dans la pratique du bondage high-tech, après un grave accident qui le laissa défiguré. Telle est la laideur de son visage qu’il doit porter un masque en latex : parfois il aime se recouvrir la tête d’un postiche de Loup, dont il ne se sépare jamais vraiment.
+</p>
+                            <a href="/posts/2023/03/lykaia---doa/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/tampon-encreur//tampon-20450.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/tampon-encreur/">Tampon encreur sous Gimp</a></h1>
+                                    <p class="uk-article-meta">2023-03-15
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>C est fini les mots de passe, il faut passer aux phrases de passe. Plus facile à retenir plus compliquer à casser. Pour les mots de passe, l’avantage est que l’on peut décomplexifier un mot de passe avec tous les caractères MaisonBananeRougeMystereBiere AhdikeJeujenksKjnskodnKshjkskk
-Pour générer une phrase de passe il faut un outil qui crée du « hasard » et un dictionnaire de mot qui va bien.
-Qu’est-ce que Diceware ?</p>
-                            <a href="/posts/2023/02/diceware/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/02/latex-qrcode//qrcode_wikipedia.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/02/latex-qrcode/">QRcode sous LaTex</a></h1>
-                                    <p class="uk-article-meta">2023-02-20
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>On peut produire facilement des QRCode sous LaTex.
-Installation On récupère les fichiers qrcode.ins et qrcode.dtx ici. On lance sous Linux:
-$ latex qrcode.ins Il faut ajouter dans l’entête du fichier latex
-\usepackage{hyperref} % Pour avoir les liens \usepackage{qrcode} % Pour générer les QRcode Utilisation \documentclass[12pt,a4paper]{article} \usepackage[utf8]{inputenc} \usepackage[french]{babel} \usepackage[T1]{fontenc} \usepackage{fullpage} \usepackage{hyperref} \usepackage{qrcode} \usepackage{graphicx} % Pour inclure des images %titre \title{QRcode avec \LaTeX} \date{} \begin{document} \maketitle \subsection*{QRcode simple} \begin{verbatim} \qrcode{http://schrek.fr} \end{verbatim} \begin{center} \qrcode{http://schrek.</p>
-                            <a href="/posts/2023/02/latex-qrcode/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/02/ebook-avec-latex//epub.wepb" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/02/ebook-avec-latex/">Ecrire un ebook avec Latex</a></h1>
-                                    <p class="uk-article-meta">2023-02-03
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>MaJ 29/05/2023 Ajout d’un livre “LaTeX pour litteraires”(Éric Guichard), bouton overleaf.com
-J’avais l’idée d’écrire un petit livre sur la Rome antique, une histoire d’un soldat romain qui devient un pirate. Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourné vers Latex. Pour organiser mes idées et structurer le document j’ai utilisé cette structure. Vous trouverez les sources en bas de l’article.
-J’ai aucun talent littéraire merci d’être indulgent.</p>
-                            <a href="/posts/2023/02/ebook-avec-latex/">Lire plus...</a>
+                            <p> C’est toujours sympa d’avoir une petite image pour simuler un tampon sur un document, une photo.
+J’ai listé quelques tuto sous [Gimp-&gt;https://www.gimp.org/]
+C’est pas bien compliqué et ça permet de jouer avec les calques et les filtres. Il faut penser à bien enregistrer au format PNG pour garder la transparence.
+Liens http://www.1point2vue.com/tampon-encre-gimp/
+http://abcdugimp.free.fr/gimp/realiser/tutoriels/tampon/tampon.php
+</p>
+                            <a href="/posts/2023/03/tampon-encreur/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -263,12 +274,6 @@ J’ai aucun talent littéraire merci d’être indulgent.</p>
         <a href="/page/16/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/page/13/" aria-label="Page 13" class="page-link" role="button">13</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/14/" aria-label="Page 14" class="page-link" role="button">14</a>
-      </li>
-      <li class="page-item">
         <a href="/page/15/" aria-label="Page 15" class="page-link" role="button">15</a>
       </li>
       <li class="page-item">
@@ -277,11 +282,17 @@ J’ai aucun talent littéraire merci d’être indulgent.</p>
       <li class="page-item active">
         <a aria-current="page" aria-label="Page 17" class="page-link" role="button">17</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      <li class="page-item">
+        <a href="/page/18/" aria-label="Page 18" class="page-link" role="button">18</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item">
+        <a href="/page/19/" aria-label="Page 19" class="page-link" role="button">19</a>
+      </li>
+      <li class="page-item">
+        <a href="/page/18/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/page/20/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
 </div>

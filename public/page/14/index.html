@@ -2,7 +2,7 @@
 
 <html lang="fr">
 <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
-	<meta name="generator" content="Hugo 0.125.5">
+	<meta name="generator" content="Hugo 0.138.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog qui parle de lecture et de web" />
@@ -30,14 +30,11 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Schrek.fr">
   <meta property="og:description" content="Mon super blog :)">
-  <meta property="og:locale" content="fr-fr">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="website">
 
     
@@ -70,25 +67,33 @@ navigator.serviceWorker.register('/sw.js');
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -102,9 +107,9 @@ navigator.serviceWorker.register('/sw.js');
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -128,18 +133,24 @@ navigator.serviceWorker.register('/sw.js');
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/04/hugo-installation//hugo.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/hugo_shortcode//hugo.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/hugo-installation/">Hugo CMS</a></h1>
-                                    <p class="uk-article-meta">2023-04-06
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/hugo_shortcode/">Hugo shortcode</a></h1>
+                                    <p class="uk-article-meta">2023-05-10
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Hugo est générateur de site statique. On écrit un article au format Markdown, on fait tourner le logiciel et il fait les fichiers HTML. Il suffira juste de les déposer sur un serveur. Ça semble simple mais ça demande une mise en place.
-Installation $ sudo apt install hugo Créer un site le logiciel va générer un dossier avec les bases (dossiers, fichiers) a l’intérieur. $ hugo new site schrek.</p>
-                            <a href="/posts/2023/04/hugo-installation/">Lire plus...</a>
+                            <p> Maj 15/05/2023: Ajout des icones personalisées des bandeaux.
+La syntaxe Markdown a des limites, Hugo utilise des « bouts de code » pour passer ces limites.
+L’inconvénient c’est de retenir les balises.
+L’avantage est d’intégrer des fonctions au sein même du contenu, sans toucher au template.
+Shortcode interne Vous trouverez pleins d’exemple sur le site officiel.
+https://gohugo.io/content-management/shortcodes/
+shortcodes personnalisés Des icônes On va se servir des icônes du framework du site. https://getuikit.com/docs/icon Pour afficher une icône en HTML c est: &lt;span uk-icon=&#34;icon: check&#34;&gt;&lt;/span&gt;
+</p>
+                            <a href="/posts/2023/05/hugo_shortcode/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -148,17 +159,22 @@ Installation $ sudo apt install hugo Créer un site le logiciel va générer un 
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/04/markdown//logo.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/reorganisation-du--site//hugo.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/markdown/">Markdown</a></h1>
-                                    <p class="uk-article-meta">2023-04-06
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/reorganisation-du--site/">Re-organisation du site</a></h1>
+                                    <p class="uk-article-meta">2023-05-08
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p># Menu ## Texte Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ### Gras Lorem ipsum dolor sit amet, consectetur **adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua**. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <a href="/posts/2023/04/markdown/">Lire plus...</a>
+                            <p>Je commençais à me mêler les pinceaux avec tous les articles, j’ai décider de changer l’organisation du site.
+Je voulais aussi des URL lisibles
+Nouvelle organisation J’ai organisé mon dossier content comme sur le diagramme dessous, les articles seront rangés par date (année, mois).
+flowchart LR A[Schrek.fr]--&gt;B(Pages) B--&gt;F[About] B--&gt;G[search] A--&gt;C[Posts] D--&gt;K[Pages] C--&gt;E[2023] E--&gt;H(01) E--&gt;I(02) E--&gt;J(03) A--&gt;D[Wiki] Les URLs Dans mon ficher config.toml, j’ai rajouté:
+[permalinks] &#39;/&#39; = &#39;/:year/:month/:title/&#39; Source Hugo
+</p>
+                            <a href="/posts/2023/05/reorganisation-du--site/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -167,22 +183,21 @@ Installation $ sudo apt install hugo Créer un site le logiciel va générer un 
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/04/hugo-les_images//hugo.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/hugo_menu//hugo.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/hugo-les_images/">Hugo et les images</a></h1>
-                                    <p class="uk-article-meta">2023-04-01
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/hugo_menu/">Hugo - Création d’un menu</a></h1>
+                                    <p class="uk-article-meta">2023-05-07
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Comment ca marche? L’organisation des images avec Hugo, c’est un peu particulier.
-Avec Markdown on ajoute une image avec:
-![Text alternatif](image.jpg) Dossier static C’est le dossier ou l’on pose nos fichiers statique .
-On peut organiser comme ça:
-je fais un post info et je place les images dans un sous dossier static/posts/info
-static/ ├── css ├── img │ └── posts │ └── info │ └── image.jpg └── js Ce qui donne dans un post:</p>
-                            <a href="/posts/2023/04/hugo-les_images/">Lire plus...</a>
+                            <p> On va rajouter un menu a notre template.
+Intro On pourrait passer par le HTML en ajoutant dans le header ou dans un fichier partial/nav.html et en l’ajoutant dans le base_of.html.
+&lt;nav&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&#34;/&#34;&gt;Home&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&#34;/about&#34;&gt;About&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&#34;/contact&#34;&gt;Contact&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; Mais Hugo permet de faire plus efficace. il faut créer dans themes/MONTHEME/layouts/partials/ un fichier nav.html.
+&lt;nav&gt; &lt;ul&gt; {{ range .Site.Menus.main }} &lt;li&gt;&lt;a href=&#34;{{ .URL }}&#34;&gt;{{ .Name }}&lt;/a&gt;&lt;/li&gt; {{ end }} &lt;/ul&gt; &lt;/nav&gt; Explication On demande a Hugo de regarder dans le fichier de configuration config.toml, s’il y a un Menus.main et de lister ce qu’il y a en argument.
+</p>
+                            <a href="/posts/2023/05/hugo_menu/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -191,23 +206,21 @@ static/ ├── css ├── img │ └── posts │ └── info │
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/chatgpt//chatgpt_logo.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/silo-hugh_howey//silo.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/chatgpt/">ChatGPT dans un terminal</a></h1>
-                                    <p class="uk-article-meta">2023-03-30
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/silo-hugh_howey/">Silo - Hugh Howey</a></h1>
+                                    <p class="uk-article-meta">2023-05-06
                             
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>ChatGPT, le célèbre générateur de texte contrôlé par une intelligence artificielle , peut être utilisé dans un terminal.
-##API key:
-Il faut créer un compte et générer une API KEY ici. ça sera sur la forme.
-sk-qUP3OL6jQ95cXJbxsxyPT3BlbkFJzf3ypT6djfo2ZsjcZwME2 Le script Tout ce trouve sur ce github.
-$ wget https://github.com/0xacx/chatGPT-shell-cli/blob/main/chatgpt.sh $ chmod &#43;x chatgpt.sh $ export OPENAI_KEY=sk-qUP3OL6jdkdlQ95cXJbxsxyPT3Bldkkkff3ypT6Rn1gZsjcZwME2 Remplacez OPENAI_KEY par votre clef.
-Le script a besoin de jq.
-$ sudo apt install jq et pour finir:</p>
-                            <a href="/posts/2023/03/chatgpt/">Lire plus...</a>
+                            <p> Une série post-apocalyptique écrite par Hugh Howey. On suit la vie dans un silo isolé du monde, avec un système de caste et beaucoup d’intrigues.
+Pour la lecture des romans, il faut suivre l’ordre de publication:
+Silo (2011) Silo: Origine (2013) Silo: Génération (2016) Une série existe Allociné
+Résumé Dans un futur post-apocalyptique indéterminé, quelques milliers de survivants ont établi une société dans un silo souterrain de 144 étages. Les règles de vie sont strictes. Pour avoir le droit de faire un enfant, les couples doivent s’inscrire à une loterie. Mais les tickets de naissance des uns ne sont redistribués qu’en fonction de la mort des autres.
+</p>
+                            <a href="/posts/2023/05/silo-hugh_howey/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -216,21 +229,20 @@ $ sudo apt install jq et pour finir:</p>
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/latex-une_lettre//latex_logo-1ee3e.svg" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/hugo_creation_theme//hugo.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/latex-une_lettre/">Lettre sous latex</a></h1>
-                                    <p class="uk-article-meta">2023-03-28
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/hugo_creation_theme/">Hugo - Création d’un thème</a></h1>
+                                    <p class="uk-article-meta">2023-05-05
                             
-                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Utilisation de la classe lettre avec LaTex.
-J’ai commenté le code pour plus de clarté.
-Petit rajout du tampon fait dans cet article Tampon encreur sous Gimp
-En cas d’erreur babel:
-sudo apt-get install texlive-lang-french Le code \documentclass[12pt]{lettre} %12p taille lettres (10 et 11 possible), déclaration classe lettre \usepackage[utf8]{inputenc} % Encodage \usepackage[T1]{fontenc} % Les mots accentués \usepackage{lmodern} % Type de police \usepackage{eurosym} % Pouvoir écrire le symbole &#34;€&#34; \usepackage[french]{babel} % Utilisation du français \usepackage{numprint} % Séparateur décimal \usepackage{graphicx} % Pour inclure des images \begin{document} \begin{letter}{Service des râleurs\\66, rue du train\\13200 Arles} % Destinataire \basdepage{\pagetotalname{1}} \name{Prénom nom} \signature{Nom Prénom \includegraphics[width=75px, angle=-45]{tampon.</p>
-                            <a href="/posts/2023/03/latex-une_lettre/">Lire plus...</a>
+                            <p> Après l’article sur l’installation d’Hugo et la mise en place d’un thème, on va créer notre thème perso.
+On se place dans le dossier de notre projet.
+$ hugo new theme christophe $ cd themes/christophe/ $ tree . ├── archetypes │ └── default.md (modeles pour les articles et les pages) ├── layouts │ ├── 404.html │ ├── _default │ │ ├── baseof.html (page qui structure les autres pages) │ │ ├── list.html ( exemple la liste des articles) │ │ └── single.html (un article ) │ ├── index.html (page d&#39;accueil) │ └── partials │ ├── footer.html (pied de page) │ ├── header.html (haut de page) │ └── head.html (entete html) ├── LICENSE ├── static ( dossier ou l&#39;on met les images/css/java) │ ├── css │ └── js └── theme.toml Hugo a créé une organisation minimale pour un projet.
+</p>
+                            <a href="/posts/2023/05/hugo_creation_theme/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -239,19 +251,19 @@ sudo apt-get install texlive-lang-french Le code \documentclass[12pt]{lettre} %1
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/03/framacarte//umap_logo.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/04/les_chatons//logo_chatons.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/03/framacarte/">Lier Framacarte a Framacalc</a></h1>
-                                    <p class="uk-article-meta">2023-03-23
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/les_chatons/">Les Chatons</a></h1>
+                                    <p class="uk-article-meta">2023-04-29
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Il peut être pratique de lier une feuille de tableur avec une carte pour mieux gérer les points . Avec Framacarte et Framacalc c’est possible. Sur le Wiki de Cartocité on trouve plein de ressource sur le sujet.
-Créer et configurer le tableur On va sur Framacalc pour créer notre tableur.
-Sur la 1ᵉʳ colonne on va mettre la latitude en ajoutant “lat” (case A1 sans les guillemets) 2ᵉ colonne, la longitude “lon” (case B1 sans les guillemets) 3ᵉ colonne, le nom “nom” (case C1 sans les guillemets) 4ᵉ colonne, description “description” (case D1 sans les guillemets) Pour l’exemple on va prendre les arènes d’Arles.</p>
-                            <a href="/posts/2023/03/framacarte/">Lire plus...</a>
+                            <p> Libre J’ai toujours été attiré par le logiciel libre (plus de 20 ans sous Linux) et la protection de mes données. Voulant sortir de Google pour mes courriels et le stockage de mes données je me suis un serveur Kimsufi, mais je me suis vite rendu compte de la difficulté de gérer un serveur (mise a jour, sécurité, configuration).
+Je me suis tourné vers des gens qui savent faire et j’ai découvert les CHATONS: pour des services libres et alternatifs. c’est là que j’ai découvert la mère Zaclys
+</p>
+                            <a href="/posts/2023/04/les_chatons/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -285,7 +297,7 @@ Sur la 1ᵉʳ colonne on va mettre la latitude en ajoutant “lat” (case A1 sa
         <a href="/page/15/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/page/17/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/20/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
 </div>

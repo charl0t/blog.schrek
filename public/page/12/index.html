@@ -2,7 +2,7 @@
 
 <html lang="fr">
 <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
-	<meta name="generator" content="Hugo 0.125.5">
+	<meta name="generator" content="Hugo 0.138.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog qui parle de lecture et de web" />
@@ -30,14 +30,11 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Schrek.fr">
   <meta property="og:description" content="Mon super blog :)">
-  <meta property="og:locale" content="fr-fr">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="website">
 
     
@@ -70,25 +67,33 @@ navigator.serviceWorker.register('/sw.js');
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -102,9 +107,9 @@ navigator.serviceWorker.register('/sw.js');
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -128,20 +133,47 @@ navigator.serviceWorker.register('/sw.js');
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/hugo_menu//hugo.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/fury//fury.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/hugo_menu/">Hugo - Création d’un menu</a></h1>
-                                    <p class="uk-article-meta">2023-05-07
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/fury/">Fury</a></h1>
+                                    <p class="uk-article-meta">2023-06-08
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/film">Film</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p> &#34; Les idéaux sont Pacifiques l’histoire est Violente. &#34;
+Brad Pitt, Fury Un trés bon film de guerre, avec des acteurs qui accompagne cette terrible histoire. Un mélange d’horreur de la guerre et d’humanité.
+Liens https://www.allocine.fr/film/fichefilm_gen_cfilm=218759.html
+https://fr.wikipedia.org/wiki/Fury_(film,_2014)
+https://www.senscritique.com/film/fury/8470273
+</p>
+                            <a href="/posts/2023/06/fury/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/hugo_shortcode_chartjs//chartjs.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/hugo_shortcode_chartjs/">Shortcode ChartJS</a></h1>
+                                    <p class="uk-article-meta">2023-06-07
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>On va rajouter un menu a notre template.
-Intro On pourrait passer par le HTML en ajoutant dans le header ou dans un fichier partial/nav.html et en l’ajoutant dans le base_of.html.
-&lt;nav&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&#34;/&#34;&gt;Home&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&#34;/about&#34;&gt;About&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&#34;/contact&#34;&gt;Contact&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; Mais Hugo permet de faire plus efficace. il faut créer dans themes/MONTHEME/layouts/partials/ un fichier nav.html.
-&lt;nav&gt; &lt;ul&gt; {{ range .Site.Menus.main }} &lt;li&gt;&lt;a href=&#34;{{ .URL }}&#34;&gt;{{ .Name }}&lt;/a&gt;&lt;/li&gt; {{ end }} &lt;/ul&gt; &lt;/nav&gt; Explication On demande a Hugo de regarder dans le fichier de configuration config.</p>
-                            <a href="/posts/2023/05/hugo_menu/">Lire plus...</a>
+                            <p> ChartJS est une bibliothèque JavaScript open source gratuite pour la visualisation de données (Wikipédia)
+Le shortcode J’ai trouvé le code ici.
+Il y a un problème sur le code (voir ici)
+src=“https://cdn.jsdelivr.net/npm/chart.js&#34;
+A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.html {{ $w := default &#34;100&#34; (.Get 0) }} {{ $h := default &#34;300&#34; (.Get 1) }} {{ $r := ( .Inner | chomp) }} {{ $seed := &#34;foo&#34; }} {{ $id := delimit (shuffle (split (md5 $seed) &#34;&#34; )) &#34;&#34; }} &lt;div style=&#34;width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto&#34;&gt; &lt;canvas id=&#34;{{ $id }}&#34;&gt;&lt;/canvas&gt; &lt;/div&gt; &lt;script src=&#34;https://cdn.jsdelivr.net/npm/chart.js&#34;&gt;&lt;/script&gt; &lt;script type=&#34;text/javascript&#34;&gt; var ctx = document.getElementById(&#39;{{ $id }}&#39;).getContext(&#39;2d&#39;); var options = {{ $r | safeJS }}; new Chart(ctx, options); &lt;/script&gt;
+Exemple {{&lt; chart 90 200 &gt;}} { type: &#39;bar&#39;, data: { labels: [&#39;Red&#39;, &#39;Blue&#39;, &#39;Yellow&#39;, &#39;Green&#39;, &#39;Purple&#39;, &#39;Orange&#39;], datasets: [{ label: &#39;Bar Chart&#39;, data: [12, 19, 18, 16, 13, 14], backgroundColor: [ &#39;rgba(255, 99, 132, 0.2)&#39;, &#39;rgba(54, 162, 235, 0.2)&#39;, &#39;rgba(255, 206, 86, 0.2)&#39;, &#39;rgba(75, 192, 192, 0.2)&#39;, &#39;rgba(153, 102, 255, 0.2)&#39;, &#39;rgba(255, 159, 64, 0.2)&#39; ], borderColor: [ &#39;rgba(255, 99, 132, 1)&#39;, &#39;rgba(54, 162, 235, 1)&#39;, &#39;rgba(255, 206, 86, 1)&#39;, &#39;rgba(75, 192, 192, 1)&#39;, &#39;rgba(153, 102, 255, 1)&#39;, &#39;rgba(255, 159, 64, 1)&#39; ], borderWidth: 1 }] }, options: { maintainAspectRatio: false, scales: { yAxes: [{ ticks: { beginAtZero: true } }] } } } {{&lt; /chart &gt;}} Explications On va prendre un exemple sur le site ChartJs.
+</p>
+                            <a href="/posts/2023/06/hugo_shortcode_chartjs/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -150,20 +182,20 @@ Intro On pourrait passer par le HTML en ajoutant dans le header ou dans un fichi
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/silo-hugh_howey//silo.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/les-cartographes-peng-shepherd//cartographes.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/silo-hugh_howey/">Silo - Hugh Howey</a></h1>
-                                    <p class="uk-article-meta">2023-05-06
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/les-cartographes-peng-shepherd/">Les cartographes - Peng Shepherd</a></h1>
+                                    <p class="uk-article-meta">2023-06-05
                             
                                     <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Une série post-apocalyptique écrite par Hugh Howey. On suit la vie dans un silo isolé du monde, avec un système de caste et beaucoup d’intrigues.
-Pour la lecture des romans, il faut suivre l’ordre de publication:
-Silo (2011) Silo: Origine (2013) Silo: Génération (2016) Une série existe Allociné
-Résumé Dans un futur post-apocalyptique indéterminé, quelques milliers de survivants ont établi une société dans un silo souterrain de 144 étages. Les règles de vie sont strictes.</p>
-                            <a href="/posts/2023/05/silo-hugh_howey/">Lire plus...</a>
+                            <p> &#34; Les cartes servent à rapprocher les gens. &#34;
+Peng Shepherd Je me suis plongé dans cette histoire avec une intrigue sympa et du rythme autour des cartes mais qui tourne vite en rond, beaucoup de « blabla » sur la cartographie.
+Résumé Nell a perdu ses deux parents. Sa mère trente ans plus tôt, et maintenant son père, le Dr Young, un célèbre cartographe de la New York Public Library qui vient d’être retrouvé mort dans son bureau.
+</p>
+                            <a href="/posts/2023/06/les-cartographes-peng-shepherd/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -172,19 +204,22 @@ Résumé Dans un futur post-apocalyptique indéterminé, quelques milliers de su
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/hugo_creation_theme//hugo.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/hugo_shortcode_mermaid//mermaid.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/hugo_creation_theme/">Hugo - Création d’un thème</a></h1>
-                                    <p class="uk-article-meta">2023-05-05
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/hugo_shortcode_mermaid/">Shortcode Mermaid</a></h1>
+                                    <p class="uk-article-meta">2023-06-05
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Après l’article sur l’installation d’Hugo et la mise en place d’un thème, on va créer notre thème perso.
-On se place dans le dossier de notre projet.
-$ hugo new theme christophe $ cd themes/christophe/ $ tree . ├── archetypes │ └── default.md (modeles pour les articles et les pages) ├── layouts │ ├── 404.html │ ├── _default │ │ ├── baseof.html (page qui structure les autres pages) │ │ ├── list.</p>
-                            <a href="/posts/2023/05/hugo_creation_theme/">Lire plus...</a>
+                            <p> On va integrer mermaid dans Hugo.
+Mermaid permet de générer des jolies diagrammes à partir de texte.
+Kroki est une alternative.
+Le code On va creer dans notre dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier mermaid.html
+&lt;div class=&#34;mermaid&#34;&gt; {{ .Inner | safeHTML }} &lt;/div&gt; {{ if le (.Page.Scratch.Get &#34;mermaidInserted&#34;) 0 }} {{ .Page.Scratch.Add &#34;mermaidInserted&#34; 1 }} {{ $mermaid := resources.Get &#34;js/mermaid.min.js&#34; | minify | fingerprint }} &lt;script type=&#34;application/javascript&#34; src=&#34;{{ $mermaid.Permalink }}&#34; defer&gt;&lt;/script&gt; &lt;script type=&#34;module&#34;&gt; mermaid.initialize({}); &lt;/script&gt; {{ end }} mermaid.min.js On recupere le fichier mermaid.min.js pour le placer dans le dossier /themes/VOTRETHEME/assets/js
+</p>
+                            <a href="/posts/2023/06/hugo_shortcode_mermaid/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -193,18 +228,20 @@ $ hugo new theme christophe $ cd themes/christophe/ $ tree . ├── archetype
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/04/les_chatons//logo_chatons.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/hugo_shortcode_latex//latex.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/les_chatons/">Les Chatons</a></h1>
-                                    <p class="uk-article-meta">2023-04-29
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/hugo_shortcode_latex/">Afficher Latex dans Hugo</a></h1>
+                                    <p class="uk-article-meta">2023-06-01
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Libre J’ai toujours été attiré par le logiciel libre (plus de 20 ans sous Linux) et la protection de mes données. Voulant sortir de Google pour mes courriels et le stockage de mes données je me suis un serveur Kimsufi, mais je me suis vite rendu compte de la difficulté de gérer un serveur (mise a jour, sécurité, configuration).
-Je me suis tourné vers des gens qui savent faire et j’ai découvert les CHATONS: pour des services libres et alternatifs.</p>
-                            <a href="/posts/2023/04/les_chatons/">Lire plus...</a>
+                            <p> Le shortcode Fichier latex.html à deposer /themes/VOTRETHEME/layouts/shortcodes
+&lt;script type=&#34;module&#34;&gt; import { LaTeXJSComponent } from &#34;https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs&#34; customElements.define(&#34;latex-js&#34;, LaTeXJSComponent) &lt;/script&gt; &lt;style&gt; latex-js { display: inline-block; width: 70%; border: 1px solid black; margin-right: 2em; padding-bottom: 2em; } &lt;/style&gt; &lt;latex-js baseURL=&#34;https://cdn.jsdelivr.net/npm/latex.js/dist/&#34;&gt; {{ .Inner }} &lt;/latex-js&gt; {{ .Inner }} permet d’inserer tous ce qu’il se trouve entre les balises.
+Utilisation {{&lt; latex &gt;}} \documentclass{article} \usepackage[latin1]{inputenc} \usepackage{hyperref} \author{Christophe} \date{2023} \title{Un exemple} \usepackage[francais]{babel} \begin{document} \maketitle \section{Début} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \section{Suite} Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \section{Fin} Egestas integer eget aliquet nibh praesent tristique magna sit amet. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque \section{Source} The source of \LaTeX.js is here on GitHub: \url{https://github.com/michael-brade/LaTeX.js} \end{document} {{&lt; /latex &gt;}} \documentclass{article} \usepackage[latin1]{inputenc} \usepackage{hyperref} \author{Christophe} \date{2023} \title{Un exemple} \usepackage[francais]{babel} \begin{document} \maketitle \section*{Début} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \section*{Suite} Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \section*{Fin} Egestas integer eget aliquet nibh praesent tristique magna sit amet. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque \section*{Source} The source of \LaTeX.js is here on GitHub: \url{https://github.com/michael-brade/LaTeX.js} \end{document} Exemple https://latex.js.org/playground.html
+</p>
+                            <a href="/posts/2023/06/hugo_shortcode_latex/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -213,40 +250,22 @@ Je me suis tourné vers des gens qui savent faire et j’ai découvert les CHATO
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/04/projet-derniere-chance---andy-weir//51kmlwwdjws.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/hugo-recherche//search.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/projet-derniere-chance---andy-weir/">Projet Dernière Chance - Andy Weir</a></h1>
-                                    <p class="uk-article-meta">2023-04-29
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/hugo-recherche/">Recherche dans Hugo</a></h1>
+                                    <p class="uk-article-meta">2023-06-01
                             
-                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Par l’auteur de “Seul sur Mars” ,Andy Weir. Une belle aventure spatial, ou l’on suit Grace dans son vaisseau. Le roman a du rythme avec des flash-back, certaines théories physiques sont un peu compliquées à comprendre mais ça ne ralentit pas la lecture.
-Les Russes sont tous cinglés comme elle ? Demandai-je en me penchant vers Dimitri. Oui, confirma-t-il en souriant. C’est la seule façon d’être russe et heureux à la fois.</p>
-                            <a href="/posts/2023/04/projet-derniere-chance---andy-weir/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/04/le-dieu-de-new-york---lyndsay-faye//dieu.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/le-dieu-de-new-york---lyndsay-faye/">Le dieu de New York - Lyndsay Faye</a></h1>
-                                    <p class="uk-article-meta">2023-04-28
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Une enquête passionnante dans les bas fonds new-yorkais du 19ᵉ siècle avec un genre de Sherlock comme personnage principal. j’y ai retrouvé l’ambiance du film Gangs of New York
-Intro du film
-A la fin du livre, on y trouve un glossaire des argots du roman.
-Résumé New-York, été 1845. Timothy Wilde, ancien barman, intègre le nouvellement créé NYPD, le département de police de la ville. Un choix de raison : il faut bien gagner sa vie, et c’est un travail honnête.</p>
-                            <a href="/posts/2023/04/le-dieu-de-new-york---lyndsay-faye/">Lire plus...</a>
+                            <p> J’ai desactivé la recherche sur le site. Mais ça marche.
+Il me manquait la recherche sur Hugo, j’en est chié une histoire de Jquery.
+config.toml On va demander a Hugo de générer un fichier JSON, pour récupérer les données du site.
+[outputs] home = [ &#34;HTML&#34;, &#34;JSON&#34;, &#34;RSS&#34;] Quand on lance Hugo, on a droit a une erreur.
+Change of config file detected, rebuilding site. 2023-05-02 11:39:09.348 &#43;0200 WARN 2023/05/02 11:39:09 found no layout file for &#34;JSON&#34; for kind &#34;home&#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination. Rebuilt in 205 ms Index.json il faut créer le fichier index.json dans notre theme themes/schrek/layouts
+</p>
+                            <a href="/posts/2023/06/hugo-recherche/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -280,7 +299,7 @@ Résumé New-York, été 1845. Timothy Wilde, ancien barman, intègre le nouvell
         <a href="/page/13/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/page/17/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/20/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
 </div>

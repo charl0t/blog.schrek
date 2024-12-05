@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eisvogel on Schrek.fr</title>
+    <link>http://localhost:1313/tags/eisvogel/</link>
+    <description>Recent content in Eisvogel on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/eisvogel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Template Eisvogel</title>
+      <link>http://localhost:1313/posts/2025/1/eisvogel/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025/1/eisvogel/</guid>
+      <description>&lt;p&gt;Le template Eisvogel est un modèle populaire pour créer des documents PDF de haute qualité avec Pandoc, un convertisseur universel de documents. Ce modèle est spécialement conçu pour produire des documents au format LaTeX qui se distinguent par leur esthétique professionnelle et leur mise en page élégante.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

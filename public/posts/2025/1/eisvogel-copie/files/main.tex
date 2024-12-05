@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{xargs}
+\usepackage[pdftex,dvipsnames]{xcolor} 
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny,french]{todonotes}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+%
+\begin{document}
+\tableofcontents
+\newpage
+\section{Chapitre 1}
+\lipsum[11]\unsure{Correct?}\unsure{Je suis sur}\unsure{ok}
+\lipsum[11]\change{A changer}
+
+\missingfigure{Image à ajouter}
+
+\section{Chapitre 2}
+\lipsum[11]\info{Plus d'info!}
+\lipsum[11]\improvement{Note de page}
+\lipsum[11]
+\lipsum[11]\unsure{a voir }
+\improvement[inline]{A finir!}
+\lipsum[11]
+\todo[fancyline]{Teste ligne courbe}
+\lipsum[4]
+\newpage
+\todototoc
+\listoftodos[Notes]
+\end{document}

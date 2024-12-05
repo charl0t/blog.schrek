@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/2024/6/make/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2024/6/make/</guid>
-      <description>La commande make est un utilitaire de ligne de commande qui permet d&amp;rsquo;automatiser la compilation et la construction de projets logiciels. Cependant, dans le contexte de Pandoc, make est souvent utilisé pour automatiser la conversion de fichiers de différents formats à l&amp;rsquo;aide de Pandoc.&#xA;Pandoc est un outil de conversion de documents qui permet de convertir des fichiers de différents formats, tels que Markdown, HTML, PDF et Microsoft Word, entre autres.</description>
+      <description>&lt;p&gt;La commande make est un utilitaire de ligne de commande qui permet d&amp;rsquo;automatiser la compilation et la construction de projets logiciels. Cependant, dans le contexte de Pandoc, make est souvent utilisé pour automatiser la conversion de fichiers de différents formats à l&amp;rsquo;aide de Pandoc.&lt;/p&gt;&#xA;&lt;p&gt;Pandoc est un outil de conversion de documents qui permet de convertir des fichiers de différents formats, tels que Markdown, HTML, PDF et Microsoft Word, entre autres. Pour convertir un fichier à l&amp;rsquo;aide de Pandoc, vous pouvez utiliser une commande de ligne de commande telle que :pandoc input.md -o output.pdf&#xA;Cette commande convertit le fichier input.md en format Markdown en un fichier output.pdf en format PDF.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

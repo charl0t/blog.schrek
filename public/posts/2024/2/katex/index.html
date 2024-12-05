@@ -29,15 +29,12 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/posts/2024/2/katex/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Mathématique dans Hugo">
   <meta property="og:description" content="Dans la version v0.122.0, on peut facilement ajouter le support des formules mathématiques façon LaTex. Ce tutoriel est juste une retranscription de cette page.
 $$E=mc^2$$">
-  <meta property="og:locale" content="fr-fr">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-02-10T00:00:00+00:00">
@@ -46,12 +43,12 @@ $$E=mc^2$$">
     <meta property="article:tag" content="Katex">
     <meta property="article:tag" content="Latex">
     <meta property="article:tag" content="Mathjax">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/12/hugo-recherche/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2024/3/commentaires/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/hugo-pwa/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-les-liens/">
-      <meta property="og:see_also" content="http://localhost:1313/posts/2023/07/hugo_galerie/">
 
     
     <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
@@ -81,25 +78,33 @@ $$E=mc^2$$">
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -113,9 +118,9 @@ $$E=mc^2$$">
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -166,6 +171,7 @@ $$E=mc^2$$">
     
       
   
+
 </ol>
 
 
@@ -202,8 +208,7 @@ $$E=mc^2$$">
                 </div>
                    
                     <p>Dans la version <a href="https://github.com/gohugoio/hugo/releases/tag/v0.122.0">v0.122.0</a>, on peut facilement ajouter le support des formules mathématiques façon <em>LaTex</em>. Ce tutoriel est juste une retranscription de cette <a href="https://gohugo.io/content-management/mathematics/">page</a>.</p>
-$$E=mc^2$$
-<h2 id="installation">Installation:</h2>
+$$E=mc^2$$<h2 id="installation">Installation:</h2>
 <p>Modification du ficher de configuration du blog.</p>
 <p><em>config.toml</em>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>]
@@ -236,10 +241,8 @@ $$E=mc^2$$
 </span></span><span style="display:flex;"><span>...</span></span></code></pre></div>
 <h2 id="utilisation-simple">Utilisation simple</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$$ a^*=x-b^* $$</span></span></code></pre></div>
-$$ a^*=x-b^* $$
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$$ \frac{1}{2}$, $\left(-\frac{1}{2}\right)^n $$</span></span></code></pre></div>
-$$ \frac{1}{2}\left(-\frac{1}{2}\right)^n $$
-<h2 id="utilisation-complexe">Utilisation complexe</h2>
+$$ a^*=x-b^* $$<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$$ \frac{1}{2}$, $\left(-\frac{1}{2}\right)^n $$</span></span></code></pre></div>
+$$ \frac{1}{2}\left(-\frac{1}{2}\right)^n $$<h2 id="utilisation-complexe">Utilisation complexe</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$$\begin{align}
 </span></span><span style="display:flex;"><span>{V} <span style="color:#960050;background-color:#1e0010">&amp;</span> = \int_{-r}^{r} \pi(r^2-h^2) \mathrm{d}h \\[2ex]
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">&amp;</span> = \left[ \pi(hr^2-\tfrac{1}{3}h^3) \right]_{-r}^{r} \\[2ex]
@@ -253,8 +256,7 @@ $$\begin{align}
 & = \pi \left(r^3-\tfrac{1}{3}r^3 \right) - \pi \left(-r^3-\tfrac{1}{3}r^3 \right) \\[2ex]
 & = \tfrac{2}{3} \pi r^3 + \tfrac{2}{3} \pi r^3 \\[2ex]
 {V} & = \tfrac{4}{3} \pi r^3
-\end{align}$$
-<h2 id="liens">Liens</h2>
+\end{align}$$<h2 id="liens">Liens</h2>
 <p><a href="https://github.com/gohugoio/hugo/releases/tag/v0.122.0">https://github.com/gohugoio/hugo/releases/tag/v0.122.0</a></p>
 <p><a href="https://gohugo.io/content-management/mathematics/">https://gohugo.io/content-management/mathematics/</a></p>
 <p><a href="https://www.mathjax.org/">https://www.mathjax.org/</a></p>
@@ -292,6 +294,7 @@ $$\begin{align}
         <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2024/1/supernova/">L&#39;ère de la supernova - Liu Cixin<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
     
 </ul>
+
                     <hr class="uk-divider-icon">
                     
             <div class="uk-grid-small uk-child-width-auto " uk-grid>
@@ -322,8 +325,6 @@ $$\begin{align}
 
             </div>
         </div>
-
-
 
 
         </main>

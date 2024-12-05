@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/2024/5/pandas_serie/</link>
       <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2024/5/pandas_serie/</guid>
-      <description>Les &amp;ldquo;séries&amp;rdquo; sur pandas se réfèrent à des objets de données unidimensionnels dans la bibliothèque Python pandas.&#xA;Ils sont similaires aux tableaux unidimensionnels en Python (comme les listes ou les tableaux NumPy), mais avec des fonctionnalités supplémentaires.&#xA;Les séries pandas sont indexées, ce qui signifie que chaque élément a une étiquette ou un identifiant associé, et elles peuvent contenir différents types de données, comme des entiers, des flottants, des chaînes, etc.</description>
+      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2024/5/pandas_serie/pandas.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Les &amp;ldquo;séries&amp;rdquo; sur pandas se réfèrent à des objets de données unidimensionnels dans la bibliothèque Python pandas.&lt;/p&gt;&#xA;&lt;p&gt;Ils sont similaires aux tableaux unidimensionnels en Python (comme les listes ou les tableaux NumPy), mais avec des fonctionnalités supplémentaires.&lt;/p&gt;&#xA;&lt;p&gt;Les séries pandas sont indexées, ce qui signifie que chaque élément a une étiquette ou un identifiant associé, et elles peuvent contenir différents types de données, comme des entiers, des flottants, des chaînes, etc.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

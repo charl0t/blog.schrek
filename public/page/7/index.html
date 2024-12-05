@@ -2,7 +2,7 @@
 
 <html lang="fr">
 <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
-	<meta name="generator" content="Hugo 0.125.5">
+	<meta name="generator" content="Hugo 0.138.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog qui parle de lecture et de web" />
@@ -30,14 +30,11 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Schrek.fr">
   <meta property="og:description" content="Mon super blog :)">
-  <meta property="og:locale" content="fr-fr">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="website">
 
     
@@ -70,25 +67,33 @@ navigator.serviceWorker.register('/sw.js');
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -102,9 +107,9 @@ navigator.serviceWorker.register('/sw.js');
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -128,20 +133,20 @@ navigator.serviceWorker.register('/sw.js');
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton//lien.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/10/esp32-et-un-ecran-oled//th.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/">Shortcode bouton</a></h1>
-                                    <p class="uk-article-meta">2023-08-12
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/10/esp32-et-un-ecran-oled/">Un ecran oled pour Esp32</a></h1>
+                                    <p class="uk-article-meta">2023-10-14
                             
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/iot">IoT</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>J’avais besoin d&#34;un bouton pour ouvrir des liens.
-Le shortcode A déposer dans /themes/VOTRETHEME/layouts/shortcodes/bouton.html.
-On peut personaliser l’icône grace a Uikit
-{{ $url := .Get &#34;url&#34; }} {{ $titre := .Get &#34;titre&#34; }} {{ $icone := .Get &#34;icone&#34; | default &#34;link&#34;}} &lt;a class=&#34;uk-button uk-button-default uk-box-shadow-medium&#34; target=&#34;_blank&#34; href=&#34;{{ $url }}&#34;&gt;&lt;span uk-icon=&#34;icon: {{ $icone }}&#34;&gt;&lt;/span&gt; {{ $titre }}&lt;/a&gt; Exemples {{&lt; bouton titre=&#34;Voir sur overleaf&#34; url=&#34;https://www.overleaf.com/read/dgnpzyngzbqk&#34; icone=&#34;forward&#34; &gt;}} Voir sur overleaf {{&lt; bouton titre=&#34;Uikit&#34; url=&#34;https://getuikit.</p>
-                            <a href="/posts/2023/08/hugo-shortcode-bouton/">Lire plus...</a>
+                            <p>On va utiliser un petit ecran OLED a tous petit prix et au doux nom de SSD1306, il a une diagonale de 0,96&#34;, mais il est très lisible. L’écran est composé de 128x64 pixels OLED bleu sur fond noir (on peut choisir d’autres couleurs).
+Le contrôleur SSD1306 permet de dialoguer en I2C ou en SPI. L’afficheur dispose de son propre régulateur 3,3V (compatible 5V et 3,3V).
+Branchements ESP32 SSD1306 Description 3.3v Vcc &#43; GDN GDN - D21 SDA Data D22 SCL Clock Les scripts Pour discuter avec l’ecran, il va falloir creer un fichier ssd1306.py avec Thonny.
+</p>
+                            <a href="/posts/2023/10/esp32-et-un-ecran-oled/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -150,20 +155,22 @@ On peut personaliser l’icône grace a Uikit
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/latex-pdf-editable//latex_logo.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/10/communiquer-avec-esp32//th.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/latex-pdf-editable/">Latex, PDF éditable</a></h1>
-                                    <p class="uk-article-meta">2023-08-10
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/10/communiquer-avec-esp32/">Communiquer avec l&#39;Esp32</a></h1>
+                                    <p class="uk-article-meta">2023-10-01
                             
-                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/iot">IoT</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Avec la classe hyperref, on peut facilement créer des documents PDF éditable.
-J’ai fait un petit exemple avec un attestation d’hébergement.
-La documentation est bien faite.
-Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[french]{babel} \usepackage[default]{lato} \usepackage{xcolor} \usepackage{hyperref} \hypersetup{ colorlinks=true, linkcolor=black, } \usepackage{fancyhdr} \pagestyle{empty} \setlength\parindent{0pt} \begin{document} \begin{Form} \begin{center} \textbf{\uppercase{ATTESTATION D&#39;HÉBERGEMENT}} \\ \end{center} \vspace{5mm} Je soussigné(e), \\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \TextField[width=14cm,borderwidth=0pt]{Demeurant :} \\ \vspace{5mm} déclare sur l&#39;honneur héberger à mon domicile,\\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M.</p>
-                            <a href="/posts/2023/08/latex-pdf-editable/">Lire plus...</a>
+                            <p>Apres avoir installer Micropython sur notre Esp32, il va falloir communiquer avec.
+Recevoir les informations, envoyer des fichiers pour le configurer.
+Pour cela nous allons utiliser un environnement de développement ou IDE en anglais.
+J’ai choisi Thonny
+Installation de Thonny $ bash &lt;(curl -s https://thonny.org/installer-for-linux) Configuration Mon premier code # import bibliotheque time et pin import time from machine import Pin print(&#34;Bonjour ESP32&#34;) # on defini le pin 2 en sortie (led) p2 = Pin(2,Pin.OUT) # faire clignoter la led while True: p2.on() time.sleep_ms(500) p2.off() time.sleep_ms(500) Liens https://gcworks.fr/tutoriel/esp/LogicielThonny.html
+</p>
+                            <a href="/posts/2023/10/communiquer-avec-esp32/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -172,19 +179,43 @@ Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/la-griffe-du-chien//griffe.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/10/tasmota//tasmota.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/la-griffe-du-chien/">La Griffe du chien - Don Winslow</a></h1>
-                                    <p class="uk-article-meta">2023-08-07
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/10/tasmota/">Tasmota</a></h1>
+                                    <p class="uk-article-meta">2023-10-01
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/iot">IoT</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p>Tasmota est un firmware OpenSource pour des appareils basé sur des ESP8266. Il va permetre de faire communiquer facilement vos projets domotiques.
+Installation Il existe plusieurs façon de flasher, on va choisir la plus simple.
+On va prendre un simple Wemos d1 mini pour l’exemple.
+Il faut brancher en Usb sur le pc et on ouvre la page https://tasmota.github.io/install/
+Il faut utiliser Chrome comme navigateur pour etablir la liaison.
+</p>
+                            <a href="/posts/2023/10/tasmota/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/09/la-griffe-du-chien//chien.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/09/la-griffe-du-chien/">La griffe du chien - Don Winslow</a></h1>
+                                    <p class="uk-article-meta">2023-09-25
                             
                                     <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Don Winslow retraçe un demi-siècle de lutte contre la drogue aux Etats-Unis et au Mexique.
-3 gros pavets que l’on devore facilement. Les personnages s’entrecroisent, on append beaucoup sur les dessous du trafics de drogue.
-Serie Art Keller Résumé Seigneur de la frontière américano-mexicaine, Art Keller, agent de la DEA, l’a juré sur la tombe de son adjoint : il emploiera tous les moyens, légaux ou illégaux, pour mettre un terme au trafic qui inonde son pays.</p>
-                            <a href="/posts/2023/08/la-griffe-du-chien/">Lire plus...</a>
+                            <p> Si vous avez aimé Narcos, vous allez adorer cette serie de livre.
+C’est le 1er tome de la serie Art Keller.
+La griffe du chien (2005) Cartel (2015) La Frontière </p>
+                            <a href="/posts/2023/09/la-griffe-du-chien/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -193,20 +224,18 @@ Serie Art Keller Résumé Seigneur de la frontière américano-mexicaine, Art Ke
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags//cloud.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/09/hugo-pwa//pwa.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/">Nuage de tags</a></h1>
-                                    <p class="uk-article-meta">2023-08-05
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/09/hugo-pwa/">Hugo et Pwa</a></h1>
+                                    <p class="uk-article-meta">2023-09-20
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Dans la barre des menus, j’avais trop de tags cela devenait pas trop lisible.
-J’ai choisi de déporter les tags dans une page et d’utiliser que du CSS pour le visuel.
-Il y a la possibilité de bibliothèques JavaScript mais je veux rester light.
+                            <p>Le PWA (Progressive Web App) permet de faire ressembler un site a une application.
 </p>
-                            <a href="/posts/2023/08/hugo-et-nuages-de-tags/">Lire plus...</a>
+                            <a href="/posts/2023/09/hugo-pwa/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -215,43 +244,21 @@ Il y a la possibilité de bibliothèques JavaScript mais je veux rester light.
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/hugo-et-les-liens//lien.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/09/latex-icones//icone.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/hugo-et-les-liens/">Hugo et les liens</a></h1>
-                                    <p class="uk-article-meta">2023-08-01
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Liens externes En markdown c’est facile, mais ça ne gère pas “ouvrir dans un nouveau onglet”: [wikipedia](https://fr.wikipedia.org/) Wikipedia
-On pourrait aussi utiliser le shortcode rawhtml.
-{{&lt; rawhtml &gt;}} &lt;a href=&#34;https://fr.wikipedia.org/&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt; {{&lt; /rawhtml &gt;}} target=&#34;_blank&#34; –&gt; nouvelle onglet
-Wikipedia Liens internes Organisation du site: ├── 2023 │ ├── 02 │ │ ├── Diceware │ │ │ ├── diceware.png-369a6.webp │ │ │ ├── index.md │ │ │ └── one-red-dice-01-a9bf3.webp │ │ ├── Ebook-avec-Latex │ │ │ ├── epub.</p>
-                            <a href="/posts/2023/08/hugo-et-les-liens/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/07/hugo_galerie//gallery.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/hugo_galerie/">Hugo et les galeries</a></h1>
-                                    <p class="uk-article-meta">2023-07-25
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/09/latex-icones/">Les icones dans Latex</a></h1>
+                                    <p class="uk-article-meta">2023-09-20
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Une petite galerie toute simple, qui utilise Uikit et lightbox.
-Dans le dossier de l’article, il faut créer un dossier images/ pour y deposer les images.
-Hugo va directement chercher les images.
-Il faut installer la version extended (exemple:hugo_extended_0.123.7_linux-arm64.deb)
-Galerie Shortcode &lt;!-- Options: titre -&gt; Nom de la galerie animation -&gt; Type de transition slide,fade,scale (des exemples sur Uikit:https://getuikit.com/docs/lightbox#animations) Exemples: galerie titre=&#34;super galerie&#34; animation=&#34;scale&#34; --&gt; {{ $titre := .Get &#34;titre&#34;| default &#34;Galerie&#34; }} {{ $animation := .</p>
-                            <a href="/posts/2023/07/hugo_galerie/">Lire plus...</a>
+                            <p> Téléchargement the-comprehensive-latex-symbol-list.pdf Liens https://la-bibliotex.fr/2019/02/10/des-icones-a-infini-dans-latex/
+https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+https://ctan.org/topic/font-symbol
+https://ctan.org/pkg/simpleicons
+</p>
+                            <a href="/posts/2023/09/latex-icones/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -285,7 +292,7 @@ Galerie Shortcode &lt;!-- Options: titre -&gt; Nom de la galerie animation -&gt;
         <a href="/page/8/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/page/17/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/20/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
 </div>

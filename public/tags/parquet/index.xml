@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/2024/5/parquet/</link>
       <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2024/5/parquet/</guid>
-      <description>Les fichiers Parquet sont un format de stockage de données colonnaires open source, souvent utilisé dans le domaine du Big Data et de l&amp;rsquo;analyse de données. Ils sont conçus pour être efficaces en termes de stockage et de traitement, ce qui les rend adaptés à des volumes de données importants. Voici quelques points clés sur les fichiers Parquet :&#xA;Compression: Les fichiers Parquet utilisent des techniques de compression pour réduire la taille des données, ce qui permet d&amp;rsquo;économiser de l&amp;rsquo;espace de stockage et de réduire les temps de transfert sur le réseau.</description>
+      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2024/5/parquet/parquet.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Les fichiers Parquet sont un format de stockage de données colonnaires open source, souvent utilisé dans le domaine du Big Data et de l&amp;rsquo;analyse de données. Ils sont conçus pour être efficaces en termes de stockage et de traitement, ce qui les rend adaptés à des volumes de données importants. Voici quelques points clés sur les fichiers Parquet :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Compression&lt;/strong&gt;: Les fichiers Parquet utilisent des techniques de compression pour réduire la taille des données, ce qui permet d&amp;rsquo;économiser de l&amp;rsquo;espace de stockage et de réduire les temps de transfert sur le réseau.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

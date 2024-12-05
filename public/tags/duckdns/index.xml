@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Duckdns on Schrek.fr</title>
+    <link>http://localhost:1313/tags/duckdns/</link>
+    <description>Recent content in Duckdns on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/duckdns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Duckdns et Caddy</title>
+      <link>http://localhost:1313/posts/2025/2/duckdns/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025/2/duckdns/</guid>
+      <description>&lt;p&gt;DuckDNS est un service gratuit et open source de DNS dynamique (Dynamic DNS) qui permet d’associer une adresse IP dynamique à un nom de domaine fixe. Idéal pour les utilisateurs ayant des connexions Internet avec des adresses IP changeantes, DuckDNS simplifie l’accès à des serveurs ou des services auto-hébergés.&lt;/p&gt;&#xA;&lt;h2 id=&#34;fonctionnement&#34;&gt;Fonctionnement&lt;/h2&gt;&#xA;&lt;p&gt;DuckDNS fonctionne en actualisant automatiquement l’adresse IP associée à un domaine personnalisé (souvent en sous-domaine de duckdns.org). Cela se fait grâce à des scripts ou des intégrations dans des routeurs, serveurs ou services comme Linux, Windows, ou Docker.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

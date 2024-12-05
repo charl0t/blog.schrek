@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/2024/3/caja/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2024/3/caja/</guid>
-      <description>Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.&#xA;Script Je voulais ajouter des possibilités de click droit via des scripts.&#xA;C’est assez simple, il suffit de placer une exécutable dans le dossier ./config/caja/script de votre répertoire /home.&#xA;Variables Quelques variables pour utiliser les scripts.&#xA;*$@* Fichiers sélectionnés *$PWD* Répertoire courant *$CAJA_SCRIPT_SELECTED_FILE_PATHS* Chemin des fichiers sélectionnés. *$CAJA_SCRIPT_SELECTED_URI* URI des fichiers sélectionnés, pour les fichiers distants. *$CAJA_SCRIPT_CURRENT_URI* URI du dossier depuis lequel le script est lancé.</description>
+      <description>&lt;p&gt;Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.&lt;/p&gt;&#xA;&lt;h2 id=&#34;script&#34;&gt;Script&lt;/h2&gt;&#xA;&lt;p&gt;Je voulais ajouter des possibilités de click droit via des scripts.&lt;/p&gt;&#xA;&lt;p&gt;C’est assez simple, il suffit de placer une exécutable dans le dossier &lt;em&gt;./config/caja/script&lt;/em&gt; de votre répertoire &lt;em&gt;/home&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

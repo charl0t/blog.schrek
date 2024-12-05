@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Schrek.fr</title>
+    <link>http://localhost:1313/tags/notes/</link>
+    <description>Recent content in Notes on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes dans Latex</title>
+      <link>http://localhost:1313/posts/2024/12/todonotes/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/12/todonotes/</guid>
+      <description>&lt;p&gt;Le package todonotes est un outil puissant pour gérer des annotations et des commentaires dans un document LaTeX. Très pratique pour collaborer ou pour organiser le processus de rédaction, il permet d’insérer des notes visuelles dans la marge ou directement dans le texte.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

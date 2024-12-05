@@ -13,14 +13,14 @@
       <link>http://localhost:1313/pages/apropos/</link>
       <pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate>
       <guid>http://localhost:1313/pages/apropos/</guid>
-      <description>Pour me contacter XMPP : christ0phe@chapril.org&#xA;Telegram : https://t.me/Christ0phe&#xA;Le site Moteur du blog Hugo, generateur de site statique. Framework Css UiKit. Les sources Github. Uikit Organisation du site flowchart TD A[Schrek.fr] --&gt; B[Blog] A --&gt; C[Wiki] A --&gt; F[A propos] A --&gt; H[Nuage de tags] A -.-&gt; J(Flux Rss) B --&gt; D[2023] D --&gt; E[Fevrier] D --&gt; I[Mars] D --&gt; K[Avril] K --&gt; L[Article] K --&gt; L1[Article] Licence Ce(tte) œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.</description>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/pages/apropos/hugo-logo.webp&#34; width=&#34;100px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;pour-me-contacter&#34;&gt;Pour me contacter&lt;/h2&gt;&#xA;&lt;p&gt;XMPP : &lt;a href=&#34;mailto:christ0phe@chapril.org&#34;&gt;christ0phe@chapril.org&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Telegram : &lt;a href=&#34;https://t.me/Christ0phe&#34;&gt;https://t.me/Christ0phe&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;le-site&#34;&gt;Le site&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Moteur du blog &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, generateur de site statique.&lt;/li&gt;&#xA;&lt;li&gt;Framework Css &lt;a href=&#34;https://getuikit.com/&#34;&gt;UiKit&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Les sources &lt;a href=&#34;https://github.com/charl0t/blog.schrek&#34;&gt;Github&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/pages/apropos/uikit.webp&#34; width=&#34;100px&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Uikit&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;organisation-du-site&#34;&gt;Organisation du site&lt;/h2&gt;&#xA;&lt;div class=&#34;mermaid&#34;&gt;&#xA;&#xA;    &#xA;flowchart TD&#xA;    A[Schrek.fr] --&gt; B[Blog]&#xA;    A --&gt; C[Wiki]&#xA;    A --&gt; F[A propos]&#xA;    A --&gt; H[Nuage de tags]&#xA;    A -.-&gt; J(Flux Rss)&#xA;    B --&gt; D[2023]&#xA;    D --&gt; E[Fevrier]&#xA;    D --&gt; I[Mars]&#xA;    D --&gt; K[Avril]&#xA;    K --&gt; L[Article]&#xA;    K --&gt; L1[Article]&#xA;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;script type=&#34;application/javascript&#34; src=&#34;http://localhost:1313/js/mermaid.min.min.1e7e5b9d4c8acb893fab3cbf54de057c59f7ecaff89afb3e239a9f8be53cca99.js&#34; defer&gt;&lt;/script&gt;&#xA;&#xA;&lt;script type=&#34;module&#34;&gt;&#xA;&#xA;    mermaid.initialize({});&#xA;&#xA;&lt;/script&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;licence&#34;&gt;Licence&lt;/h2&gt;&#xA;&#xA;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;Licence Creative Commons&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;Ce(tte) œuvre est mise à disposition selon les termes de la &lt;br&gt;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International&lt;/a&gt;.</description>
     </item>
     <item>
       <title>Hors ligne</title>
       <link>http://localhost:1313/pages/hors_ligne/</link>
       <pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate>
       <guid>http://localhost:1313/pages/hors_ligne/</guid>
-      <description>Hors ligne </description>
+      <description>&lt;p&gt;&lt;strong&gt;Hors ligne&lt;/strong&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/pages/hors_ligne/wifi.png&#34; width=&#34;100px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nuage de tags</title>
@@ -28,6 +28,13 @@
       <pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate>
       <guid>http://localhost:1313/pages/tagscloud/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Recherche</title>
+      <link>http://localhost:1313/pages/search/</link>
+      <pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate>
+      <guid>http://localhost:1313/pages/search/</guid>
+      <description>&lt;!--Recherche--&gt;&#xA;&lt;script src=&#34;http://localhost:1313/pagefind/pagefind-ui.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&#xA;&lt;script&gt;&#xA;  window.addEventListener(&#39;DOMContentLoaded&#39;, (event) =&gt; {&#xA;    new PagefindUI({&#xA;      baseUrl: &#34;/&#34;,&#xA;      // search element id&#xA;      element: &#34;#search&#34;,&#xA;      // do not show images&#xA;      showImages: false,&#xA;      // I want to use my own CSS&#xA;      resetStyles: true,&#xA;      // do not show subresults of the same page&#xA;      showSubResults: false,&#xA;    excerptLength: 15,&#xA;&#xA;    });&#xA;  });&#xA;&lt;/script&gt;&#xA;&lt;div class=&#34;uk-container-large&#34;&gt;&#xA;&#x9;&lt;div id=&#34;search&#34; &lt;/div&gt; &#xA;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

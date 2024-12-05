@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pagefind on Schrek.fr</title>
+    <link>http://localhost:1313/tags/pagefind/</link>
+    <description>Recent content in Pagefind on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 25 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pagefind/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo et les recherches</title>
+      <link>http://localhost:1313/posts/2024/12/hugo-recherche/</link>
+      <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/12/hugo-recherche/</guid>
+      <description>&lt;p&gt;Pour faciliter les recherches sur mon site, j&amp;rsquo;ai ajouté Pagefind&lt;/p&gt;&#xA;&lt;p&gt;Pagefind est un outil de recherche rapide et efficace conçu pour les sites web statiques. Contrairement aux solutions classiques qui nécessitent un serveur ou une base de données, Pagefind indexe les contenus directement lors de la compilation du site et permet une recherche instantanée via JavaScript, sans dépendance serveur.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

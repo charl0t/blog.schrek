@@ -29,16 +29,13 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/posts/2024/6/pandas_nettoyage/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Pandas- nettoyage des données">
   <meta property="og:description" content="Le nettoyage des données est une étapes cruciale dans le processus d’analyse de données, car les données brutes peuvent contenir des erreurs, des valeurs manquantes et d’autres problèmes qui peuvent affecter les résultats de l’analyse.
 La bibliothèque Pandas en Python est un outils puissant pour le nettoyage des données, offrant de nombreuses méthodes utiles pour préparer les données pour l’analyse.
-L’import des données df = pd.read_csv(&#34;data.csv&#34;,skiprows=3, skipfooter=2) skiprows: va permettre de ne pas tenir compte des premières ligne du fichier.">
-  <meta property="og:locale" content="fr-fr">
+L’import des données df = pd.read_csv(&#34;data.csv&#34;,skiprows=3, skipfooter=2) skiprows: va permettre de ne pas tenir compte des premières ligne du fichier. skifooter: ne pa tenir compte des dernières ligne. Affichage des infos La methode .info(), va nous retourner toutes les information du dataframe.">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-06-15T00:00:00+00:00">
@@ -79,25 +76,33 @@ L’import des données df = pd.read_csv(&#34;data.csv&#34;,skiprows=3, skipfoot
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -111,9 +116,9 @@ L’import des données df = pd.read_csv(&#34;data.csv&#34;,skiprows=3, skipfoot
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -164,6 +169,7 @@ L’import des données df = pd.read_csv(&#34;data.csv&#34;,skiprows=3, skipfoot
     
       
   
+
 </ol>
 
 
@@ -267,10 +273,7 @@ L’import des données df = pd.read_csv(&#34;data.csv&#34;,skiprows=3, skipfoot
 </span></span><span style="display:flex;"><span> <span style="color:#ae81ff">2</span>   courriel   <span style="color:#ae81ff">500</span> non<span style="color:#f92672">-</span>null    object
 </span></span><span style="display:flex;"><span>dtypes: object(<span style="color:#ae81ff">3</span>)
 </span></span><span style="display:flex;"><span>memory usage: <span style="color:#ae81ff">11.8</span><span style="color:#f92672">+</span> KB
-</span></span></code></pre></div><ul>
-<li>Convertir le type de données.</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"></code></pre></div><h2 id="liens">Liens</h2>
+</span></span></code></pre></div><h2 id="liens">Liens</h2>
 <p><a href="https://www.osedea.com/fr/blogue/nettoyage-donnees-python-pandas">https://www.osedea.com/fr/blogue/nettoyage-donnees-python-pandas</a></p>
 <p><a href="https://www.delftstack.com/fr/api/python-pandas/">https://www.delftstack.com/fr/api/python-pandas/</a></p>
 <p><a href="https://openclassrooms.com/fr/courses/7410486-nettoyez-et-analysez-votre-jeu-de-donnees/7451506-nettoyez-vos-donnees-avec-python">https://openclassrooms.com/fr/courses/7410486-nettoyez-et-analysez-votre-jeu-de-donnees/7451506-nettoyez-vos-donnees-avec-python</a></p>
@@ -305,6 +308,7 @@ L’import des données df = pd.read_csv(&#34;data.csv&#34;,skiprows=3, skipfoot
         <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2024/6/norferville-/"> Norferville - Franck Thilliez<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
     
 </ul>
+
                     <hr class="uk-divider-icon">
                     
             <div class="uk-grid-small uk-child-width-auto " uk-grid>
@@ -327,8 +331,6 @@ L’import des données df = pd.read_csv(&#34;data.csv&#34;,skiprows=3, skipfoot
 
             </div>
         </div>
-
-
 
 
         </main>

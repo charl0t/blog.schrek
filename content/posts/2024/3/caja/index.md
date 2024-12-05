@@ -15,6 +15,8 @@ Je voulais ajouter des possibilités de click droit via des scripts.
 
 C’est assez simple, il suffit de placer une exécutable dans le dossier *./config/caja/script* de votre répertoire */home*.
 
+<!--more-->
+
 ## Variables
 
 Quelques variables pour utiliser les scripts.

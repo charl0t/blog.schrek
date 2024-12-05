@@ -29,9 +29,6 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/posts/2023/07/hugo-minify/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Hugo minification">
@@ -40,8 +37,8 @@ Les images Il faut utiliser des formats modernes comme webp et avoir un bon redi
 Sinon en ligne de commande:
 $ cwebp -q 90 minifycss.png -o minifycss.webp Les CSS Les fichiers CSS sont placés directement dans /themes/VOTRETHEME/assets/css.
 Dans mon partials/head.html, j ai:
-{{ $css := resources.Get &#34;css/uikit.min.css&#34; | minify | resources.">
-  <meta property="og:locale" content="fr-fr">
+{{ $css := resources.Get &#34;css/uikit.min.css&#34; | minify | resources.Fingerprint &#34;sha512&#34; }} &lt;link href=&#34;{{ $css.RelPermalink }}&#34; rel=&#34;stylesheet&#34; integrity=&#34;{{ $css.Data.Integrity }}&#34; crossorigin=&#34;anonymous&#34;&gt; {{ $css := resources.Get &#34;css/styles.css&#34; | minify | resources.Fingerprint &#34;sha512&#34; }} &lt;link href=&#34;{{ $css.RelPermalink }}&#34; rel=&#34;stylesheet&#34; integrity=&#34;{{ $css.Data.Integrity }}&#34; crossorigin=&#34;anonymous&#34;&gt; Récupère le fichier CSS, compresse(minify) et créer une empreinte pour vérifier les changements (ca évite de recharger dans le cache si c’est le même fichier)">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2023-07-20T00:00:00+00:00">
@@ -49,13 +46,13 @@ Dans mon partials/head.html, j ai:
     <meta property="article:tag" content="Shortcode">
     <meta property="article:tag" content="Hugo">
     <meta property="article:tag" content="Minify">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/12/hugo-recherche/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2024/3/commentaires/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2024/2/katex/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/hugo-pwa/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-les-liens/">
-      <meta property="og:see_also" content="http://localhost:1313/posts/2023/07/hugo_galerie/">
 
     
     <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
@@ -85,25 +82,33 @@ Dans mon partials/head.html, j ai:
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -117,9 +122,9 @@ Dans mon partials/head.html, j ai:
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -170,6 +175,7 @@ Dans mon partials/head.html, j ai:
     
       
   
+
 </ol>
 
 
@@ -221,7 +227,7 @@ J&rsquo;utilise <a href="https://www.gimp.org/">Gimps</a> pour changer la taille
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span>  <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$css</span><span style="color:#a6e22e">.RelPermalink</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span>  <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$css</span><span style="color:#a6e22e">.Data.Integrity</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;</span></span></code></pre></div>
 <p>Récupère le fichier CSS, compresse(minify) et créer une empreinte pour vérifier les changements (ca évite de recharger dans le cache si c&rsquo;est le même fichier)</p>
 <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$css</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">resources</span><span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;css/uikit.min.css&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">minify</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">resources</span><span style="color:#a6e22e">.Fingerprint</span> <span style="color:#e6db74">&#34;sha512&#34;</span> <span style="color:#75715e">}}</span></span></span></code></pre></div>
-Hugo remplace les valeurs dans le <!-- raw HTML omitted -->
+Hugo remplace les valeurs dans le <link>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span>  <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$css</span><span style="color:#a6e22e">.RelPermalink</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span>  <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$css</span><span style="color:#a6e22e">.Data.Integrity</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;</span></span></code></pre></div></p>
 <h2 id="les-js">Les JS</h2>
 <p>Les fichiers JS sont placés directement dans <em>/themes/VOTRETHEME/assets/js</em>.</p>
@@ -287,6 +293,7 @@ Hugo remplace les valeurs dans le <!-- raw HTML omitted -->
         <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/latex_liens/">Ressources pour Latex<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
     
 </ul>
+
                     <hr class="uk-divider-icon">
                     
             <div class="uk-grid-small uk-child-width-auto " uk-grid>
@@ -313,8 +320,6 @@ Hugo remplace les valeurs dans le <!-- raw HTML omitted -->
 
             </div>
         </div>
-
-
 
 
         </main>

@@ -29,7 +29,7 @@ Ensemble, ces deux êtres éprouvés par la vie vont se démener pour trouver de
 ## Détails
 
 - EAN : 9782265157798
-- Pages: 
+- Pages: 456
 - Fleuve Editions (02/05/2024) 
 
 # Liens

@@ -29,9 +29,6 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/posts/2023/10/communiquer-avec-esp32/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Communiquer avec l&#39;Esp32">
@@ -39,8 +36,8 @@ navigator.serviceWorker.register('/sw.js');
 Recevoir les informations, envoyer des fichiers pour le configurer.
 Pour cela nous allons utiliser un environnement de développement ou IDE en anglais.
 J’ai choisi Thonny
-Installation de Thonny $ bash &lt;(curl -s https://thonny.org/installer-for-linux) Configuration Mon premier code # import bibliotheque time et pin import time from machine import Pin print(&#34;Bonjour ESP32&#34;) # on defini le pin 2 en sortie (led) p2 = Pin(2,Pin.">
-  <meta property="og:locale" content="fr-fr">
+Installation de Thonny $ bash &lt;(curl -s https://thonny.org/installer-for-linux) Configuration Mon premier code # import bibliotheque time et pin import time from machine import Pin print(&#34;Bonjour ESP32&#34;) # on defini le pin 2 en sortie (led) p2 = Pin(2,Pin.OUT) # faire clignoter la led while True: p2.on() time.sleep_ms(500) p2.off() time.sleep_ms(500) Liens https://gcworks.fr/tutoriel/esp/LogicielThonny.html">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2023-10-01T00:00:00+00:00">
@@ -79,25 +76,33 @@ Installation de Thonny $ bash &lt;(curl -s https://thonny.org/installer-for-linu
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -111,9 +116,9 @@ Installation de Thonny $ bash &lt;(curl -s https://thonny.org/installer-for-linu
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -164,6 +169,7 @@ Installation de Thonny $ bash &lt;(curl -s https://thonny.org/installer-for-linu
     
       
   
+
 </ol>
 
 
@@ -256,6 +262,7 @@ Installation de Thonny $ bash &lt;(curl -s https://thonny.org/installer-for-linu
         <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/10/tasmota/">Tasmota<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
     
 </ul>
+
                     <hr class="uk-divider-icon">
                     
             <div class="uk-grid-small uk-child-width-auto " uk-grid>
@@ -282,8 +289,6 @@ Installation de Thonny $ bash &lt;(curl -s https://thonny.org/installer-for-linu
 
             </div>
         </div>
-
-
 
 
         </main>

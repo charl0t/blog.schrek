@@ -29,17 +29,15 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Shortcode bouton">
   <meta property="og:description" content="J’avais besoin d&#34;un bouton pour ouvrir des liens.
 Le shortcode A déposer dans /themes/VOTRETHEME/layouts/shortcodes/bouton.html.
 On peut personaliser l’icône grace a Uikit
-{{ $url := .Get &#34;url&#34; }} {{ $titre := .Get &#34;titre&#34; }} {{ $icone := .Get &#34;icone&#34; | default &#34;link&#34;}} &lt;a class=&#34;uk-button uk-button-default uk-box-shadow-medium&#34; target=&#34;_blank&#34; href=&#34;{{ $url }}&#34;&gt;&lt;span uk-icon=&#34;icon: {{ $icone }}&#34;&gt;&lt;/span&gt; {{ $titre }}&lt;/a&gt; Exemples {{&lt; bouton titre=&#34;Voir sur overleaf&#34; url=&#34;https://www.overleaf.com/read/dgnpzyngzbqk&#34; icone=&#34;forward&#34; &gt;}} Voir sur overleaf {{&lt; bouton titre=&#34;Uikit&#34; url=&#34;https://getuikit.">
-  <meta property="og:locale" content="fr-fr">
+{{ $url := .Get &#34;url&#34; }} {{ $titre := .Get &#34;titre&#34; }} {{ $icone := .Get &#34;icone&#34; | default &#34;link&#34;}} &lt;a class=&#34;uk-button uk-button-default uk-box-shadow-medium&#34; target=&#34;_blank&#34; href=&#34;{{ $url }}&#34;&gt;&lt;span uk-icon=&#34;icon: {{ $icone }}&#34;&gt;&lt;/span&gt; {{ $titre }}&lt;/a&gt; Exemples {{&lt; bouton titre=&#34;Voir sur overleaf&#34; url=&#34;https://www.overleaf.com/read/dgnpzyngzbqk&#34; icone=&#34;forward&#34; &gt;}} Voir sur overleaf {{&lt; bouton titre=&#34;Uikit&#34; url=&#34;https://getuikit.com&#34; icone=&#34;uikit&#34; &gt;}} Uikit Liens https://getuikit.com/docs/button
+https://getuikit.com/docs/icon">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2023-08-12T00:00:00+00:00">
@@ -47,12 +45,12 @@ On peut personaliser l’icône grace a Uikit
     <meta property="article:tag" content="Shortcode">
     <meta property="article:tag" content="Bouton">
     <meta property="article:tag" content="Uikit">
+      <meta property="og:see_also" content="http://localhost:1313/posts/2024/12/hugo-recherche/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2024/3/commentaires/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2024/2/katex/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/hugo-pwa/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/">
       <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/hugo-et-les-liens/">
-      <meta property="og:see_also" content="http://localhost:1313/posts/2023/07/hugo_galerie/">
 
     
     <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
@@ -82,25 +80,33 @@ On peut personaliser l’icône grace a Uikit
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -114,9 +120,9 @@ On peut personaliser l’icône grace a Uikit
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -167,6 +173,7 @@ On peut personaliser l’icône grace a Uikit
     
       
   
+
 </ol>
 
 
@@ -263,6 +270,7 @@ On peut personaliser l’icône grace a Uikit
         <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/latex-pdf-editable/">Latex, PDF éditable<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
     
 </ul>
+
                     <hr class="uk-divider-icon">
                     
             <div class="uk-grid-small uk-child-width-auto " uk-grid>
@@ -289,8 +297,6 @@ On peut personaliser l’icône grace a Uikit
 
             </div>
         </div>
-
-
 
 
         </main>

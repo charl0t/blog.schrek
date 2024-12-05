@@ -2,7 +2,7 @@
 
 <html lang="fr">
 <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
-	<meta name="generator" content="Hugo 0.125.5">
+	<meta name="generator" content="Hugo 0.138.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog qui parle de lecture et de web" />
@@ -30,14 +30,11 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Schrek.fr">
   <meta property="og:description" content="Mon super blog :)">
-  <meta property="og:locale" content="fr-fr">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="website">
 
     
@@ -70,25 +67,33 @@ navigator.serviceWorker.register('/sw.js');
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -102,9 +107,9 @@ navigator.serviceWorker.register('/sw.js');
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -128,21 +133,72 @@ navigator.serviceWorker.register('/sw.js');
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/hugo_shortcode-umap//umap_logo.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/latex-et-les-liens//lien.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/hugo_shortcode-umap/">Shortcode Framacarte</a></h1>
-                                    <p class="uk-article-meta">2023-06-25
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/latex-et-les-liens/">Latex et les liens</a></h1>
+                                    <p class="uk-article-meta">2023-08-20
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p>Le module hyperref permet de créer des liens externes et interne sur un PDF.
+On peut changer les couleurs et ajouter des métadonnées
+Son utilisation est facile.
+Utilisation Pour un lien simple: \url{https://wikipedia.fr}
+Pour un un liens dans le texte: \href{https://wikipedia.fr}{Wikipedia.fr} Pour un email: \href{mailto:madame@michu.fr}{madame@michu.fr}
+Pour un document (Attention au chemin): \href{run:./xcolor.pdf}{Voir ce PDF}
+Les exemples \documentclass[a4paper,10pt]{scrartcl} % koma-script \usepackage{graphicx} % Module images \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[T1]{fontenc} \usepackage{parskip} \usepackage[french]{babel} % En francais \usepackage{hyperref} % Module hyperref \hypersetup{colorlinks=true, linkcolor=blue, % Couleurs des liens filecolor=magenta, % Couleur des liens de fichier urlcolor=cyan,% Couleur des Urls pdftitle={Hyperref},% Meta titre pdfauthor={Christophe},% Meta auteur pdfsubject={Les liens avec Latex},% Meta sujet pdfkeywords={Latex,Hyperref},% Meta mots clefs pdfproducer = Latex}% Meta generateur du pdf \urlstyle{same} % Meme police pour les urls \title{Hyperref} \author{Christophe } \date{Juin 2023} \begin{document} \maketitle \section*{Liens simples} \href{https://wikipedia.fr}{Wikipedia.fr} \par \url{https://wikipedia.fr} \par \href{mailto:madame@michu.fr}{madame@michu.fr} \par \href{run:./xcolor.pdf}{Voir ce PDF} \end{document} Lien dans un document Pour créer le lien: \hyperlink{ID}{TEXT}
+</p>
+                            <a href="/posts/2023/08/latex-et-les-liens/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/latex-et-xcolor//xcolor.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/latex-et-xcolor/">Latex et xcolor</a></h1>
+                                    <p class="uk-article-meta">2023-08-15
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p>Le paquetage xcolor fait partie des indispensables de Latex pour coloriser les textes.
+Préambule On appelle les couleurs de base de xcolor,
+\usepackage{xcolor} % import des couleurs dans les textes Il y a aussi d’autres palettes de couleurs:
+dvipsnames: 68 couleurs (CMYK); svgnames: 151 couleurs (RGB); x11names: 317 couleurs (RGB). \usepackage[dvipsnames]{xcolor} % import des couleurs dans les textes Tous est bien indiqué dans la documentation (page 39).
+Personnalisation des couleurs On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.
+</p>
+                            <a href="/posts/2023/08/latex-et-xcolor/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton//lien.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/">Shortcode bouton</a></h1>
+                                    <p class="uk-article-meta">2023-08-12
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Grace a Framasoft, on peut avoir un service pour créer des cartes personnalisées. Le service s’appuie sur Umap.
-Il existe un shortecode pour umap sur GIT, j’ai juste modifié l’URL dans le code.
-Framacarte Quand on a créer une carte (un super tuto sur cartocite.fr/) sur Framacarte, on aimerait l’afficher sur notre site.
-On peut utiliser l’import de l’iframe.
-On clique sur l’icône de partage On récupère le code. Le code original &lt;iframe width=&#34;100%&#34; height=&#34;300px&#34; frameborder=&#34;0&#34; allowfullscreen src=&#34;https//framacarte.</p>
-                            <a href="/posts/2023/06/hugo_shortcode-umap/">Lire plus...</a>
+                            <p>J’avais besoin d&#34;un bouton pour ouvrir des liens.
+Le shortcode A déposer dans /themes/VOTRETHEME/layouts/shortcodes/bouton.html.
+On peut personaliser l’icône grace a Uikit
+{{ $url := .Get &#34;url&#34; }} {{ $titre := .Get &#34;titre&#34; }} {{ $icone := .Get &#34;icone&#34; | default &#34;link&#34;}} &lt;a class=&#34;uk-button uk-button-default uk-box-shadow-medium&#34; target=&#34;_blank&#34; href=&#34;{{ $url }}&#34;&gt;&lt;span uk-icon=&#34;icon: {{ $icone }}&#34;&gt;&lt;/span&gt; {{ $titre }}&lt;/a&gt; Exemples {{&lt; bouton titre=&#34;Voir sur overleaf&#34; url=&#34;https://www.overleaf.com/read/dgnpzyngzbqk&#34; icone=&#34;forward&#34; &gt;}} Voir sur overleaf {{&lt; bouton titre=&#34;Uikit&#34; url=&#34;https://getuikit.com&#34; icone=&#34;uikit&#34; &gt;}} Uikit Liens https://getuikit.com/docs/button
+https://getuikit.com/docs/icon
+</p>
+                            <a href="/posts/2023/08/hugo-shortcode-bouton/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -151,21 +207,43 @@ On clique sur l’icône de partage On récupère le code. Le code original &lt;
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/la-faille-franck-thilliez//lafaille.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/latex-pdf-editable//latex_logo.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/la-faille-franck-thilliez/">La Faille - Franck Thilliez</a></h1>
-                                    <p class="uk-article-meta">2023-06-20
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/latex-pdf-editable/">Latex, PDF éditable</a></h1>
+                                    <p class="uk-article-meta">2023-08-10
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p>Avec la classe hyperref, on peut facilement créer des documents PDF éditable.
+J’ai fait un petit exemple avec un attestation d’hébergement.
+La documentation est bien faite.
+Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[french]{babel} \usepackage[default]{lato} \usepackage{xcolor} \usepackage{hyperref} \hypersetup{ colorlinks=true, linkcolor=black, } \usepackage{fancyhdr} \pagestyle{empty} \setlength\parindent{0pt} \begin{document} \begin{Form} \begin{center} \textbf{\uppercase{ATTESTATION D&#39;HÉBERGEMENT}} \\ \end{center} \vspace{5mm} Je soussigné(e), \\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \TextField[width=14cm,borderwidth=0pt]{Demeurant :} \\ \vspace{5mm} déclare sur l&#39;honneur héberger à mon domicile,\\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \vspace{5mm} depuis le\\ \vspace{5mm} \TextField[width=8cm,borderwidth=0pt]{Date de début d&#39;hébergement:}\\ \vspace{5mm} \TextField[width=14cm,borderwidth=0pt]{à l&#39;adresse suivante :} \TextField[width=8cm,borderwidth=0pt]{Fait à :} \\ \\ \TextField[width=4cm,borderwidth=0pt]{Le :} \TextField[width=1cm,borderwidth=0pt,maxlen=2]{à} \TextField[width=1cm,borderwidth=0pt,maxlen=2]{h} \\ \TextField[width=14cm,borderwidth=0pt]{Signature :} \end{Form} \end{document} Voir sur overleaf Explications On ouvre le formulaire avec la balise \begin{Form} \TextField[width=4cm,borderwidth=0pt]{Le :} Ajoute la partie à completer On ferme le formulaire avec la balise \end{Form} En vrac Voir en bas dans les liens de téléchargements.
+</p>
+                            <a href="/posts/2023/08/latex-pdf-editable/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/la-griffe-du-chien//griffe.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/la-griffe-du-chien/">La Griffe du chien - Don Winslow</a></h1>
+                                    <p class="uk-article-meta">2023-08-07
                             
                                     <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Encore un grand livre de Thilliez, une intrigue bien ficelée autour de Franck Sharko et son équipe.
-Chapitre aprés chapitre, la noirceur de l’humanité se révéle.
-A lire absolument.
-&#34; Les forces du vent se matérialisent sur l’eau sous forme d’ondes, mais qu’elles ne dépendent pas de l’eau pour exister. &#34;
-Franck Thilliez Résumé La frontière entre la vie et la mort est peut-être plus trouble qu’il n’y paraît…</p>
-                            <a href="/posts/2023/06/la-faille-franck-thilliez/">Lire plus...</a>
+                            <p>Don Winslow retraçe un demi-siècle de lutte contre la drogue aux Etats-Unis et au Mexique.
+3 gros pavets que l’on devore facilement. Les personnages s’entrecroisent, on append beaucoup sur les dessous du trafics de drogue.
+Serie Art Keller Résumé Seigneur de la frontière américano-mexicaine, Art Keller, agent de la DEA, l’a juré sur la tombe de son adjoint : il emploiera tous les moyens, légaux ou illégaux, pour mettre un terme au trafic qui inonde son pays. Face à lui, Adán Barrera règne sans partage sur les sicarios.
+</p>
+                            <a href="/posts/2023/08/la-griffe-du-chien/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -174,83 +252,20 @@ Franck Thilliez Résumé La frontière entre la vie et la mort est peut-être pl
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/les-fantomes-de-kiev---cedric-bannel//kiev.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags//cloud.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/">Les fantômes de Kiev-Cédric Bannel</a></h1>
-                                    <p class="uk-article-meta">2023-06-15
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Résumé La vengeance du maître du Kremlin se mange toujours glacée Punir la France de son soutien à l’Ukraine, telle est la mission assignée par Poutine à ses services de sécurité. Un plan démoniaque que la DGSE doit faire échouer. Mais que pèse son meilleur agent, le brillant « avocat international » Edgar Van Scana, face au rouleau compresseur des renseignements russes ? Surtout quand la moindre action est orchestrée par la générale Olga Ranevskaïa, cheffe des opérations noires du Kremlin.</p>
-                            <a href="/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/l%C3%A9gende---david-gemmell//legende.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/l%C3%A9gende---david-gemmell/">Légende - David Gemmell</a></h1>
-                                    <p class="uk-article-meta">2023-06-10
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Un roman de David Gemmell , le 1er volume publié du Cycle Drenaï.
-Résumé Druss est une légende. Ses exploits sont connus de tous. Surnommé le Capitaine à la Hache lors de ses plus grandes batailles, il aurait pu devenir riche en tant que mercenaire… Au contraire, fuyant la célébrité, il a choisi de vivre retiré loin des hommes, perché au sommet d’une montagne glacée. Il a remisé son arme, vivant reclus, se contentant de la compagnie de quelques léopards des neiges.</p>
-                            <a href="/posts/2023/06/l%C3%A9gende---david-gemmell/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/fury//fury.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/fury/">Fury</a></h1>
-                                    <p class="uk-article-meta">2023-06-08
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/film">Film</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>&#34; Les idéaux sont Pacifiques l’histoire est Violente. &#34;
-Brad Pitt, Fury Un trés bon film de guerre, avec des acteurs qui accompagne cette terrible histoire. Un mélange d’horreur de la guerre et d’humanité.
-Liens https://www.allocine.fr/film/fichefilm_gen_cfilm=218759.html
-https://fr.wikipedia.org/wiki/Fury_(film,_2014)
-https://www.senscritique.com/film/fury/8470273</p>
-                            <a href="/posts/2023/06/fury/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/hugo_shortcode_chartjs//chartjs.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/hugo_shortcode_chartjs/">Shortcode ChartJS</a></h1>
-                                    <p class="uk-article-meta">2023-06-07
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/">Nuage de tags</a></h1>
+                                    <p class="uk-article-meta">2023-08-05
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>ChartJS est une bibliothèque JavaScript open source gratuite pour la visualisation de données (Wikipédia)
-Le shortcode J’ai trouvé le code ici.
-Il y a un problème sur le code (voir ici)
-src=“https://cdn.jsdelivr.net/npm/chart.js&#34;
-A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.html {{ $w := default &#34;100&#34; (.Get 0) }} {{ $h := default &#34;300&#34; (.Get 1) }} {{ $r := ( .Inner | chomp) }} {{ $seed := &#34;foo&#34; }} {{ $id := delimit (shuffle (split (md5 $seed) &#34;&#34; )) &#34;&#34; }} &lt;div style=&#34;width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto&#34;&gt; &lt;canvas id=&#34;{{ $id }}&#34;&gt;&lt;/canvas&gt; &lt;/div&gt; &lt;script src=&#34;https://cdn.</p>
-                            <a href="/posts/2023/06/hugo_shortcode_chartjs/">Lire plus...</a>
+                            <p>Dans la barre des menus, j’avais trop de tags cela devenait pas trop lisible.
+J’ai choisi de déporter les tags dans une page et d’utiliser que du CSS pour le visuel.
+Il y a la possibilité de bibliothèques JavaScript mais je veux rester light.
+</p>
+                            <a href="/posts/2023/08/hugo-et-nuages-de-tags/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -284,7 +299,7 @@ A placer dans le dossier themes/MONTHEME/layouts/shortcodes/ et à nommer chart.
         <a href="/page/10/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/page/17/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/20/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
 </div>

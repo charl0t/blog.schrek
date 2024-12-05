@@ -2,7 +2,7 @@
 
 <html lang="fr">
 <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
-	<meta name="generator" content="Hugo 0.125.5">
+	<meta name="generator" content="Hugo 0.138.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog qui parle de lecture et de web" />
@@ -30,14 +30,11 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Schrek.fr">
   <meta property="og:description" content="Mon super blog :)">
-  <meta property="og:locale" content="fr-fr">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="website">
 
     
@@ -70,25 +67,33 @@ navigator.serviceWorker.register('/sw.js');
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -102,9 +107,9 @@ navigator.serviceWorker.register('/sw.js');
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -128,50 +133,19 @@ navigator.serviceWorker.register('/sw.js');
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/07/hugo-minify//minifycss.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/09/latex-publipostage//publi.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/hugo-minify/">Hugo minification</a></h1>
-                                    <p class="uk-article-meta">2023-07-20
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Hugo est rapide, mais on peut améliorer le chargement des ressources.
-Les images Il faut utiliser des formats modernes comme webp et avoir un bon redimensionnement. J’utilise Gimps pour changer la taille et le format.
-Sinon en ligne de commande:
-$ cwebp -q 90 minifycss.png -o minifycss.webp Les CSS Les fichiers CSS sont placés directement dans /themes/VOTRETHEME/assets/css.
-Dans mon partials/head.html, j ai:
-{{ $css := resources.Get &#34;css/uikit.min.css&#34; | minify | resources.</p>
-                            <a href="/posts/2023/07/hugo-minify/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/07/latex_liens//latex_logo.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/latex_liens/">Ressources pour Latex</a></h1>
-                                    <p class="uk-article-meta">2023-07-15
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/09/latex-publipostage/">Publipostage avec Koma-Script</a></h1>
+                                    <p class="uk-article-meta">2023-09-20
                             
                                     <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Une liste de ressources Latex pour apprendre et comprendre
-Francais https://zestedesavoir.com/bibliotheque/?tag=latex
-https://www.learnlatex.org/fr/
-https://fr.wikibooks.org/wiki/LaTeX
-https://framalibre.org/tags/latex
-https://www.gutenberg-asso.fr/
-Anglais https://www.overleaf.com/
-https://www.latex-project.org/
-https://www.ctan.org/
-https://github.com/egeerardyn/awesome-LaTeX</p>
-                            <a href="/posts/2023/07/latex_liens/">Lire plus...</a>
+                            <p>On veut réaliser du publipostage, envoyer la même lettre à plusieurs destinataires.
+Avec notre modèle de lettre déjà fait, on va y ajouter un carnet d’adresse, et générer plusieurs lettres.
+</p>
+                            <a href="/posts/2023/09/latex-publipostage/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -180,22 +154,18 @@ https://github.com/egeerardyn/awesome-LaTeX</p>
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/07/fichier//paper.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/09/koma-script//koma.avif" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/fichier/">Shortcode les fichiers</a></h1>
-                                    <p class="uk-article-meta">2023-07-15
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/09/koma-script/">Une lettre avec Koma-Script</a></h1>
+                                    <p class="uk-article-meta">2023-09-15
                             
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Ce shortcode liste les fichiers dans une dossier pour permettre leurs téléchargements.
-Dans le dossier de l’article, il faut creer un dossier files/ pour y deposer les fichiers.
-Attention, le shortcode ne marche pas si il y a des espaces dans le nom du dossier de l’article
-&lt;–more–&gt;
-Le shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier pj.html
-pj.html {{ $_hugo_config := `{ &#34;version&#34;: 1 }` -}} &lt;div class=&#34;attachments-files uk-card uk-card-small uk-width-1-3@m uk-padding&#34;&gt; &lt;h3 class=&#34;attachments-files-titre&#34;&gt;Téléchargement &lt;span uk-icon=&#34;icon: cloud-download;ratio:2&#34;&gt;&lt;/span&gt;&lt;/h3&gt; &lt;div class=&#34;attachments-files&#34;&gt; {{- $filesName := &#34;files&#34; }} {{- if ne .</p>
-                            <a href="/posts/2023/07/fichier/">Lire plus...</a>
+                            <p>Création d’un modèle de lettre aux standards français a l’aide du module scrlttr2 de Koma-script.
+</p>
+                            <a href="/posts/2023/09/koma-script/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -204,19 +174,18 @@ pj.html {{ $_hugo_config := `{ &#34;version&#34;: 1 }` -}} &lt;div class=&#34;at
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/07/hugo-lesimages//image.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/09/markdown-to-latex//logo.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/hugo-lesimages/">Hugo et les images</a></h1>
-                                    <p class="uk-article-meta">2023-07-10
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/09/markdown-to-latex/">Convertir de Markdown vers Pdf</a></h1>
+                                    <p class="uk-article-meta">2023-09-10
                             
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Minimal {{&lt; figure src=&#34;image.webp&#34; width=200px &gt;}} Grande taille {{/*&lt; figure src=&#34;image.webp&#34; title=&#34;Anita Austvika&#34; caption=&#34;Photo de [Anita Austvika](https://unsplash.com/ko/@anitaaustvika) sur [Unsplash](https://unsplash.com/)&#34; width=800px alt=&#34;Anita Austvika&#34; class=&#34;imagecenter&#34; attrlink=&#34;https://unsplash.com/fr/photos/u9ZFCP8VuvU&#34;*/&gt;}} Anita AustvikaPhoto de Anita Austvika sur Unsplash Images centrée {{&lt; figure src=&#34;image.webp&#34; title=&#34;Anita Austvika&#34; caption=&#34;Photo de [Anita Austvika](https://unsplash.com/ko/@anitaaustvika) sur [Unsplash](https://unsplash.com/)&#34; width=400px alt=&#34;Anita Austvika&#34; class=&#34;imagecenter&#34; &gt;}} Anita AustvikaPhoto de Anita Austvika sur Unsplash
-Images à droite Anita AustvikaPhoto de Anita Austvika sur Unsplash
-&#34; {{&lt; figure src=&#34;image.webp&#34; title=&#34;Anita Austvika&#34; caption=&#34;Photo de [Anita Austvika](https://unsplash.</p>
-                            <a href="/posts/2023/07/hugo-lesimages/">Lire plus...</a>
+                            <p>Pandoc est un super outils de convertion, On va convertir un fichier Markdown en Pdf, en passant par Latex.
+</p>
+                            <a href="/posts/2023/09/markdown-to-latex/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -225,20 +194,19 @@ Images à droite Anita AustvikaPhoto de Anita Austvika sur Unsplash
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/07/hugo-shortcode-html//peertube.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/09/esp32//th.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/hugo-shortcode-html/">Shortcode pour integrer le HTML</a></h1>
-                                    <p class="uk-article-meta">2023-07-05
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/09/esp32/">Decouverte de l&#39;Esp32</a></h1>
+                                    <p class="uk-article-meta">2023-09-05
                             
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/iot">IoT</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>On pourrait ecrire des milliers de shorcode pour integrer du html, mais il y a plus facile.
-Pour l’exemple, on va prendre des videos diffusé sur Peertube.fr
-Le code original &lt;iframe title=&#34;GoGoCarto - 1 - Personnalisation du site&#34; src=&#34;https://www.peertube.fr/videos/embed/54509567-9116-4264-ba86-6c2d20cd360b&#34; allowfullscreen=&#34;&#34; sandbox=&#34;allow-same-origin allow-scripts allow-popups&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt; Des idées sur l’iframe en mode Hugo ici.
-Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes, un fichier rawhtml.html. Avec seulement ca.</p>
-                            <a href="/posts/2023/07/hugo-shortcode-html/">Lire plus...</a>
+                            <p>Esp32 est un microcontrôleur qui va nous permettre de faire des objets connectés grâce a son module Wifi et Bluetooth intégré. Il dispose de plusieurs sorties et entrées pour connecter par exemple des capteurs ou des LED.
+On va utiliser Micropython pour assurer la programmation.
+</p>
+                            <a href="/posts/2023/09/esp32/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -247,21 +215,41 @@ Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layo
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/07/hugo-shortcode-pad//pad.wepb" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/09/latex-et-les-codes//minted.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/hugo-shortcode-pad/">Shortcode Framapad</a></h1>
-                                    <p class="uk-article-meta">2023-07-01
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/09/latex-et-les-codes/">Latex de la couleur dans vos codes</a></h1>
+                                    <p class="uk-article-meta">2023-09-01
                             
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Framapad Un « pad » est un éditeur de texte collaboratif en ligne géré par Framasoft.
-Le code original &lt;iframe name=&#34;embed_readwrite&#34; src=&#34;https://hebdo.framapad.org/p/fygijewtbk-a0wa?showControls=true&amp;showChat=true&amp;showLineNumbers=true&amp;useMonospaceFont=false&#34; width=&#34;100%&#34; height=&#34;600&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt; On peut utiliser l’import de l’iframe.
-Des idées sur l’iframe en mode Hugo ici.
-Sinon il y a les shortcodes.
-Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier pad.html {{ $PadName := .Get &#34;PadName&#34; }} {{ $showControls := .Get &#34;showControls&#34; | default &#34;false&#34; }} {{ $showChat := .</p>
-                            <a href="/posts/2023/07/hugo-shortcode-pad/">Lire plus...</a>
+                            <p>Le module minted permet de coloriser vos codes.
+Minted utilise Pygments pour ajouter de la couleurs, vous trouverez la liste des codes supportés sur le site.
+Il y a aussi différents styles
+</p>
+                            <a href="/posts/2023/09/latex-et-les-codes/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/the-grey-man//greyman.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/the-grey-man/">The Gray Man - Mark Greaney</a></h1>
+                                    <p class="uk-article-meta">2023-08-25
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p> Un livre de Mark Greaney, l’histoire d’un super tueur à gage avec des valeurs.
+Résumé Plus connu sous le pseudonyme de &#34; Gray Man “, ce tueur à gages est devenu légendaire pour sa discrétion et son efficacité, il parvient toujours à abattre sa cible avant de disparaître. Jusqu’à ce que sa tête soit mise à prix. Coauteur avec Tom Clancy des aventures de Jack Ryan, Mark Greaney signe un thriller dont l’adaptation est diffusée sur Netflix en 2022. Ceux qui oeuvrent dans l’ombre le connaissent sous le nom de Gray Man. Tueur à gages implacable devenu une légende pour sa discrétion et sa terrible efficacité, il enchaîne les missions et parvient toujours à abattre sa cible avant de disparaître.
+</p>
+                            <a href="/posts/2023/08/the-grey-man/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -295,7 +283,7 @@ Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layo
         <a href="/page/9/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/page/17/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/20/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
 </div>

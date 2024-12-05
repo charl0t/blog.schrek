@@ -18,6 +18,8 @@ Je dois:
 - Mettre en forme des colonnes
 - Extraire des données
 
+<!--more-->
+
 ## Au travail.
 Pour faire tous ça je vais utiliser le langage Python avec la bibliothèque [Pandas](https://fr.wikipedia.org/wiki/Pandas)
 

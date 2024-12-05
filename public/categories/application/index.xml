@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Application on Schrek.fr</title>
+    <link>http://localhost:1313/categories/application/</link>
+    <description>Recent content in Application on Schrek.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/application/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Syncthing</title>
+      <link>http://localhost:1313/posts/2024/12/syncthing/</link>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/12/syncthing/</guid>
+      <description>&lt;p&gt;Syncthing est une application open source de synchronisation de fichiers en pair-à-pair (P2P) qui permet aux utilisateurs de synchroniser leurs données entre plusieurs appareils de manière sécurisée et décentralisée. Développée en open source, elle est disponible sur Windows, macOS, Linux, Android et BSD.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mealie</title>
+      <link>http://localhost:1313/posts/2024/11/mealie/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/11/mealie/</guid>
+      <description>&lt;p&gt;Mealie est une application open-source conçue pour centraliser, organiser et partager vos recettes de cuisine. Que vous soyez un chef en herbe ou un passionné de gastronomie cherchant à simplifier la gestion de vos idées culinaires, Mealie propose une interface intuitive et des fonctionnalités puissantes pour créer votre propre bibliothèque numérique de recettes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Grammalecte</title>
+      <link>http://localhost:1313/posts/2024/11/grammalecte/</link>
+      <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024/11/grammalecte/</guid>
+      <description>&lt;p&gt;Grammalecte est une extension logicielle gratuite et open-source dédiée à la correction grammaticale, orthographique et typographique de la langue française. Conçue pour accompagner les écrivains, journalistes, étudiants et tous ceux qui souhaitent perfectionner leur écriture, Grammalecte s’intègre facilement dans divers outils et plateformes de traitement de texte.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -2,7 +2,7 @@
 
 <html lang="fr">
 <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
-	<meta name="generator" content="Hugo 0.125.5">
+	<meta name="generator" content="Hugo 0.138.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog qui parle de lecture et de web" />
@@ -30,14 +30,11 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Schrek.fr">
   <meta property="og:description" content="Mon super blog :)">
-  <meta property="og:locale" content="fr-fr">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="website">
 
     
@@ -70,25 +67,33 @@ navigator.serviceWorker.register('/sw.js');
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -102,9 +107,9 @@ navigator.serviceWorker.register('/sw.js');
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -128,20 +133,22 @@ navigator.serviceWorker.register('/sw.js');
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/hugo_les_commentaires//cactus.wepb" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/07/hugo-shortcode-html//peertube.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/hugo_les_commentaires/">Hugo et les commentaires</a></h1>
-                                    <p class="uk-article-meta">2023-05-20
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/hugo-shortcode-html/">Shortcode pour integrer le HTML</a></h1>
+                                    <p class="uk-article-meta">2023-07-05
                             
                                     <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Pas facile de choisir un systeme de commentaire pour Hugo, la facilitée c est Disqus avec un template interne.
-Cactus Mon choix c’est dirigé vers cactus.chat, déjà pour la doc qui est facile d’accés et pour Matrix qui utilise un protocole ouvert (Wikipedia).
-Installation C’est bien indiqué ici. The shortcode chat.html must be added to layouts/shortcodes/ and looks like this
-YOUR-SITE-NAME Bien changer cette variable avec le nom de votre site</p>
-                            <a href="/posts/2023/05/hugo_les_commentaires/">Lire plus...</a>
+                            <p> On pourrait ecrire des milliers de shorcode pour integrer du html, mais il y a plus facile.
+Pour l’exemple, on va prendre des videos diffusé sur Peertube.fr
+Le code original &lt;iframe title=&#34;GoGoCarto - 1 - Personnalisation du site&#34; src=&#34;https://www.peertube.fr/videos/embed/54509567-9116-4264-ba86-6c2d20cd360b&#34; allowfullscreen=&#34;&#34; sandbox=&#34;allow-same-origin allow-scripts allow-popups&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt; Des idées sur l’iframe en mode Hugo ici.
+Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes, un fichier rawhtml.html. Avec seulement ca.
+{{.Inner}} Exemple Il suffit de coller l’iframe entre nos 2 balises.
+</p>
+                            <a href="/posts/2023/07/hugo-shortcode-html/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -150,19 +157,70 @@ YOUR-SITE-NAME Bien changer cette variable avec le nom de votre site</p>
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/alias-emma---ava-glass//aliasemma.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/07/hugo-shortcode-pad//pad.wepb" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/alias-emma---ava-glass/">Alias Emma - Ava Glass </a></h1>
-                                    <p class="uk-article-meta">2023-05-19
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/07/hugo-shortcode-pad/">Shortcode Framapad</a></h1>
+                                    <p class="uk-article-meta">2023-07-01
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p> Framapad Un « pad » est un éditeur de texte collaboratif en ligne géré par Framasoft.
+Le code original &lt;iframe name=&#34;embed_readwrite&#34; src=&#34;https://hebdo.framapad.org/p/fygijewtbk-a0wa?showControls=true&amp;showChat=true&amp;showLineNumbers=true&amp;useMonospaceFont=false&#34; width=&#34;100%&#34; height=&#34;600&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt; On peut utiliser l’import de l’iframe.
+Des idées sur l’iframe en mode Hugo ici.
+Sinon il y a les shortcodes.
+Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier pad.html {{ $PadName := .Get &#34;PadName&#34; }} {{ $showControls := .Get &#34;showControls&#34; | default &#34;false&#34; }} {{ $showChat := .Get &#34;showChat&#34; | default &#34;false&#34; }} {{ $showLineNumbers := .Get &#34;showLineNumbers&#34; | default &#34;true&#34; }} {{ $width := .Get &#34;width&#34; | default &#34;100%&#34; }} {{ $height := .Get &#34;height&#34; | default &#34;600&#34; }} {{ $height := .Get &#34;height&#34; | default &#34;600&#34; }} {{ $useMonospaceFont := .Get &#34;useMonospaceFont&#34; | default &#34;false&#34; }} &lt;iframe name=&#34;embed_readwrite&#34; src=&#34;https://hebdo.framapad.org/p/{{- $PadName -}}?showControls={{- $showControls -}}&amp;showChat={{- $showChat -}}&amp;showLineNumbers={{- $showLineNumbers -}}&amp;useMonospaceFont=false&#34; width=&#34;{{- $width -}}&#34; height=&#34;{{- $height -}}&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+</p>
+                            <a href="/posts/2023/07/hugo-shortcode-pad/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/hugo_shortcode-umap//umap_logo.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/hugo_shortcode-umap/">Shortcode Framacarte</a></h1>
+                                    <p class="uk-article-meta">2023-06-25
+                            
+                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+                                                         
+                                    </p>
+                            <p class="uk-text-lead"></p>
+                            <p> Grace a Framasoft, on peut avoir un service pour créer des cartes personnalisées. Le service s’appuie sur Umap.
+Il existe un shortecode pour umap sur GIT, j’ai juste modifié l’URL dans le code.
+Framacarte Quand on a créer une carte (un super tuto sur cartocite.fr/) sur Framacarte, on aimerait l’afficher sur notre site.
+On peut utiliser l’import de l’iframe.
+On clique sur l’icône de partage On récupère le code. Le code original &lt;iframe width=&#34;100%&#34; height=&#34;300px&#34; frameborder=&#34;0&#34; allowfullscreen src=&#34;https//framacarte.org/fr/map/carte-de-france_154547?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=undefined&amp;captionBar=false&#34;&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href=&#34;https//framacarte.org/fr/map/carte-de-france_154547&#34;&gt;Voir en plein écran&lt;/a&gt;&lt;/p&gt; Pour que ça marche, il faut ajouter le fichier de configuration du site (config.toml). [markup.goldmark.renderer] unsafe = true
+</p>
+                            <a href="/posts/2023/06/hugo_shortcode-umap/">Lire plus...</a>
+                    </article>
+              </div>
+</div>
+        
+<div>
+            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
+                        <article class="uk-article">
+                            
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/la-faille-franck-thilliez//lafaille.webp" alt="logo">
+                            
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/la-faille-franck-thilliez/">La Faille - Franck Thilliez</a></h1>
+                                    <p class="uk-article-meta">2023-06-20
                             
                                     <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Un livre plein d’action, une histoire qui tient la route. On decouvre Londre a travers differents quartier et des lieux insolites.
-Résumé Agente surdouée du MI6 britannique, Emma Makepeace doit exfiltrer en catastrophe un jeune médecin russe qui travaille dans un hôpital de Londres. Michael Primalov ignore que cette inconnue de vingt-cinq ans a pour mission de le soustraire à une équipe d’assassins diligentée par Moscou.
-Les Russes ont envoyé leurs meilleurs agents et ils ont piraté les caméras de Londres, la capitale la plus surveillée du monde.</p>
-                            <a href="/posts/2023/05/alias-emma---ava-glass/">Lire plus...</a>
+                            <p> Encore un grand livre de Thilliez, une intrigue bien ficelée autour de Franck Sharko et son équipe.
+Chapitre aprés chapitre, la noirceur de l’humanité se révéle.
+A lire absolument.
+&#34; Les forces du vent se matérialisent sur l’eau sous forme d’ondes, mais qu’elles ne dépendent pas de l’eau pour exister. &#34;
+Franck Thilliez Résumé La frontière entre la vie et la mort est peut-être plus trouble qu’il n’y paraît…
+</p>
+                            <a href="/posts/2023/06/la-faille-franck-thilliez/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -171,18 +229,18 @@ Les Russes ont envoyé leurs meilleurs agents et ils ont piraté les caméras de
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/cible-une---jack-mars//cibleune.jpg" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/les-fantomes-de-kiev---cedric-bannel//kiev.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/cible-une---jack-mars/">Cible une - Jack Mars</a></h1>
-                                    <p class="uk-article-meta">2023-05-15
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/">Les fantômes de Kiev-Cédric Bannel</a></h1>
+                                    <p class="uk-article-meta">2023-06-15
                             
                                     <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Un livre d’aventure et d’espionnage sans surprise, un hero a “l’americaine” indestructible mais avec ces petites failles. Un 007 façon guerrier.
-Résumé Jacob Snow – soldat d’élite recruté par la CIA et hanté par son passé torturé – est l’un des meilleurs atouts de l’Agence, c’est pourquoi il est envoyé sur place lorsque les enjeux sont des plus élevés. Quand une ancienne relique égyptienne disparaît dans des circonstances mystérieuses, Jacob sait qu’il ne s’agit pas d’un vol ordinaire : la relique renferme un secret – un secret qui pourrait tout anéantir.</p>
-                            <a href="/posts/2023/05/cible-une---jack-mars/">Lire plus...</a>
+                            <p> Résumé La vengeance du maître du Kremlin se mange toujours glacée Punir la France de son soutien à l’Ukraine, telle est la mission assignée par Poutine à ses services de sécurité. Un plan démoniaque que la DGSE doit faire échouer. Mais que pèse son meilleur agent, le brillant « avocat international » Edgar Van Scana, face au rouleau compresseur des renseignements russes ? Surtout quand la moindre action est orchestrée par la générale Olga Ranevskaïa, cheffe des opérations noires du Kremlin. Sur les routes de Roumanie et d’Ukraine, Edgar s’apprête à mener la mission la plus dangereuse de son existence. Il devra avancer comme un fantôme. Avec, pour seuls éléments, le nom de code du plan russe – Ouragan de feu – et une photo d’armes inquiétantes. Sans indication de date ou de lieu.
+</p>
+                            <a href="/posts/2023/06/les-fantomes-de-kiev---cedric-bannel/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -191,63 +249,19 @@ Résumé Jacob Snow – soldat d’élite recruté par la CIA et hanté par son 
             <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
                         <article class="uk-article">
                             
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/drawio_signauxsncf//logo_drawnio.webp" alt="logo">
+                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/06/l%C3%A9gende---david-gemmell//legende.webp" alt="logo">
                             
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/drawio_signauxsncf/">Les signaux SNCF avec Draw.IO</a></h1>
-                                    <p class="uk-article-meta">2023-05-14
+                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/06/l%C3%A9gende---david-gemmell/">Légende - David Gemmell</a></h1>
+                                    <p class="uk-article-meta">2023-06-10
                             
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
+                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
                                                          
                                     </p>
                             <p class="uk-text-lead"></p>
-                            <p>Nicolas Wurtz un agent SNCF ,qui développe aussi Graou un outil métier qui permet aux agents de s’organiser, a ajouté les signaux SNCF sur Drawn.IO. Hey la #teamSNCF ! Besoin de tracer des voies avec des signaux/pancartes et des trains ? c&#39;est galère ? Bon ben j&#39;ai créé une librairie pour draw io !https://t.co/WwHn1Vtb41
-Et tout est opensource sur https://t.co/g21l5UpgkI (les trains viennent de https://t.co/EEcKybvFDN). 💚 pic.twitter.com/OZ6BZ9AJHC
-— Nicolas Wurtz &amp; Graou (@NicolasW_GRAOU) May 13, 2023 Cela va permettre aux agents de préparer leurs études de ligne.</p>
-                            <a href="/posts/2023/05/drawio_signauxsncf/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/hugo_shortcode//hugo.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/hugo_shortcode/">Hugo shortcode</a></h1>
-                                    <p class="uk-article-meta">2023-05-10
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Maj 15/05/2023: Ajout des icones personalisées des bandeaux.
-La syntaxe Markdown a des limites, Hugo utilise des « bouts de code » pour passer ces limites.
-L’inconvénient c’est de retenir les balises.
-L’avantage est d’intégrer des fonctions au sein même du contenu, sans toucher au template.
-Shortcode interne Vous trouverez pleins d’exemple sur le site officiel.
-https://gohugo.io/content-management/shortcodes/
-shortcodes personnalisés Des icônes On va se servir des icônes du framework du site.</p>
-                            <a href="/posts/2023/05/hugo_shortcode/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/05/reorganisation-du--site//hugo.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/05/reorganisation-du--site/">Re-organisation du site</a></h1>
-                                    <p class="uk-article-meta">2023-05-08
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Je commençais à me mêler les pinceaux avec tous les articles, j’ai décider de changer l’organisation du site. Je voulais aussi des URL lisibles Nouvelle organisation J’ai organisé mon dossier content comme sur le diagramme dessous, les articles seront rangés par date (année, mois). flowchart LR A[Schrek.fr]--&gt;B(Pages) B--&gt;F[About] B--&gt;G[search] A--&gt;C[Posts] D--&gt;K[Pages] C--&gt;E[2023] E--&gt;H(01) E--&gt;I(02) E--&gt;J(03) A--&gt;D[Wiki] Les URLs Dans mon ficher config.toml, j’ai rajouté: [permalinks] &#39;/&#39; = &#39;/:year/:month/:title/&#39; Source Hugo</p>
-                            <a href="/posts/2023/05/reorganisation-du--site/">Lire plus...</a>
+                            <p> Un roman de David Gemmell , le 1er volume publié du Cycle Drenaï.
+Résumé Druss est une légende. Ses exploits sont connus de tous. Surnommé le Capitaine à la Hache lors de ses plus grandes batailles, il aurait pu devenir riche en tant que mercenaire… Au contraire, fuyant la célébrité, il a choisi de vivre retiré loin des hommes, perché au sommet d’une montagne glacée. Il a remisé son arme, vivant reclus, se contentant de la compagnie de quelques léopards des neiges. Il attend patiemment son ennemie de toujours: la Mort. Dros Delnoch est une forteresse imprenable. Passage indispensable à la frontière de deux mondes, c’est l’ultime limite qu’une armée doit impérativement franchir si elle veut envahir l’Empire drenaï. Protégée par six remparts, elle est la place forte mythique. C’est aussi le dernier foyer d’une résistance désespérée, car tous sont déjà tombés devant l’envahisseur nadir. Il lui faudrait un atout déterminant, un chef charismatique : Druss, le vieux guerrier. Quand Conan rejoint Fort Alamo, un demi-million d’envahisseurs barbares face à huit mille guerriers barricadés… Druss pourra-t-il faire la différence ? Deux mains ancrées à une hache pour empêcher une tragédie…
+</p>
+                            <a href="/posts/2023/06/l%C3%A9gende---david-gemmell/">Lire plus...</a>
                     </article>
               </div>
 </div>
@@ -281,7 +295,7 @@ shortcodes personnalisés Des icônes On va se servir des icônes du framework d
         <a href="/page/12/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/page/17/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/20/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
 </div>

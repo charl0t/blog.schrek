@@ -29,17 +29,14 @@ navigator.serviceWorker.register('/sw.js');
 
 </script>
 
-  
-
-
     <meta property="og:url" content="http://localhost:1313/posts/2023/08/latex-pdf-editable/">
   <meta property="og:site_name" content="Schrek.fr">
   <meta property="og:title" content="Latex, PDF éditable">
   <meta property="og:description" content="Avec la classe hyperref, on peut facilement créer des documents PDF éditable.
 J’ai fait un petit exemple avec un attestation d’hébergement.
 La documentation est bien faite.
-Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[french]{babel} \usepackage[default]{lato} \usepackage{xcolor} \usepackage{hyperref} \hypersetup{ colorlinks=true, linkcolor=black, } \usepackage{fancyhdr} \pagestyle{empty} \setlength\parindent{0pt} \begin{document} \begin{Form} \begin{center} \textbf{\uppercase{ATTESTATION D&#39;HÉBERGEMENT}} \\ \end{center} \vspace{5mm} Je soussigné(e), \\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \TextField[width=14cm,borderwidth=0pt]{Demeurant :} \\ \vspace{5mm} déclare sur l&#39;honneur héberger à mon domicile,\\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M.">
-  <meta property="og:locale" content="fr-fr">
+Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[french]{babel} \usepackage[default]{lato} \usepackage{xcolor} \usepackage{hyperref} \hypersetup{ colorlinks=true, linkcolor=black, } \usepackage{fancyhdr} \pagestyle{empty} \setlength\parindent{0pt} \begin{document} \begin{Form} \begin{center} \textbf{\uppercase{ATTESTATION D&#39;HÉBERGEMENT}} \\ \end{center} \vspace{5mm} Je soussigné(e), \\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \TextField[width=14cm,borderwidth=0pt]{Demeurant :} \\ \vspace{5mm} déclare sur l&#39;honneur héberger à mon domicile,\\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \vspace{5mm} depuis le\\ \vspace{5mm} \TextField[width=8cm,borderwidth=0pt]{Date de début d&#39;hébergement:}\\ \vspace{5mm} \TextField[width=14cm,borderwidth=0pt]{à l&#39;adresse suivante :} \TextField[width=8cm,borderwidth=0pt]{Fait à :} \\ \\ \TextField[width=4cm,borderwidth=0pt]{Le :} \TextField[width=1cm,borderwidth=0pt,maxlen=2]{à} \TextField[width=1cm,borderwidth=0pt,maxlen=2]{h} \\ \TextField[width=14cm,borderwidth=0pt]{Signature :} \end{Form} \end{document} Voir sur overleaf Explications On ouvre le formulaire avec la balise \begin{Form} \TextField[width=4cm,borderwidth=0pt]{Le :} Ajoute la partie à completer On ferme le formulaire avec la balise \end{Form} En vrac Voir en bas dans les liens de téléchargements.">
+  <meta property="og:locale" content="fr_fr">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2023-08-10T00:00:00+00:00">
@@ -83,25 +80,33 @@ Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top
             
             <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
+            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
         </ul>
 </nav>
 <hr class="uk-divider-icon">
                      
                 <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
 
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
+<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
+
+<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
+
+<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
+
+<li><a href="http://localhost:1313/categories/web/">Web</a></li>
+
+<li><a href="http://localhost:1313/categories/application/">Application</a></li>
+
+<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
 
 <li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
 
 <li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
 
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
 <li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
 
 <li><a href="http://localhost:1313/categories/film/">Film</a></li>
 
@@ -115,9 +120,9 @@ Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top
                   
                 <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
 
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
 <li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
+
+<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
 
 <li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
 
@@ -168,6 +173,7 @@ Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top
     
       
   
+
 </ol>
 
 
@@ -207,7 +213,7 @@ Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top
                     <p>Avec la classe <em><a href="https://ctan.org/pkg/hyperref">hyperref</a></em>, on peut facilement créer des documents PDF éditable.</p>
 <p>J&rsquo;ai fait un petit exemple avec un attestation d&rsquo;hébergement.</p>
 <p>La <a href="https://texlive.mycozy.space/macros/latex/contrib/hyperref/doc/hyperref-doc.html#x1-590009">documentation</a> est bien faite.</p>
-<!-- raw HTML omitted -->
+<!-- more -->
 <h2 id="exemple">Exemple</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\documentclass</span><span style="color:#a6e22e">[12pt,a4paper]</span>{article}
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[right=2cm,left=2cm,top=2cm,bottom=2cm]</span>{geometry}
@@ -389,6 +395,7 @@ Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top
         <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/la-griffe-du-chien/">La Griffe du chien - Don Winslow<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
     
 </ul>
+
                     <hr class="uk-divider-icon">
                     
             <div class="uk-grid-small uk-child-width-auto " uk-grid>
@@ -415,8 +422,6 @@ Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top
 
             </div>
         </div>
-
-
 
 
         </main>

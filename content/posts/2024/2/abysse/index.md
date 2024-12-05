@@ -11,6 +11,8 @@ draft: false
 
 2 livres (Ce qui naît des abysses et Ce qui reste après les tempêtes) qui nous plongent dans un monde post-apocalyptique sous la mer.
 
+<!--more-->
+
 ## Résumé
 XXIVe siècle. Après l'emballement climatique et l'effondrement de la civilisation terrestre, les rescapés tentent de se réinventer sous l'eau au sein de cités sous-marines interdépendantes. Hélas, les vieilles tares de l'humanité ont plongé avec elle... En Atlantique Nord, la belliqueuse Atlantis flirte avec les limites de son mandat de protection, poussée par l'IA qui la dirige, tandis que les cargos sous-marins de la Hanse participent à de dangereux jeux d'influence. Les tensions se cristallisent autour de Providence, une mystérieuse colonie abyssale refusant de se soumettre.
 Alors qu'une invasion tourne au désastre et que les secrets de Providence échappent aux Atlantes, un sous-officier, Wolf Douglas, découvre une jeune survivante nommée Jihane, qui ne ressemble à rien de ce qu'il connaît. Malgré tout ce qui les sépare, Wolf et Jihane sont forcés de coopérer pour survivre aux abysses, pendant qu'un sous-marin hanséatique s'efforce de récupérer les miettes du conflit. Pris dans un jeu de pouvoir qui les dépasse, le militaire et l'adolescente doivent bientôt faire des choix lourds de conséquences...
