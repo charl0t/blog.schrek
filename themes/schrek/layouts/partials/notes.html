@@ -1,0 +1,3 @@
+{{ $p := where site.RegularPages "Type" "notes" }}
+{{ range (.Paginate $p).Pages }}
+{{ end }}

@@ -1426,5 +1426,20 @@
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/notes/2024/12/</loc>
+    <lastmod>1970-08-23T07:33:35+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/notes/</loc>
+    <lastmod>1970-08-23T07:33:35+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/notes/</loc>
+    <lastmod>1970-08-23T07:33:35+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

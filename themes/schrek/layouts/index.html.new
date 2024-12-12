@@ -1,0 +1,36 @@
+{{ define "main" -}}
+<!--Page d'acceuil inclu dans baseof.html, liste les derniers articles et notes-->
+<!-- listes des dernieres notes -->
+<div class="uk-container ">
+<article class="uk-article">
+<h1><span uk-icon="bell"></span> Notes</h1>
+{{ range (where .Site.Pages "Section" "notes") }}
+   {{ range .Pages }}
+      <p class="uk-article-meta" > <a href = "{{- .RelPermalink -}}">
+      {{ .Title }} 
+	  </a> {{ .Summary }} </p>
+   {{ end }}
+{{ end }}
+</article>
+
+<!-- listes des derniers articles -->
+
+<article class="uk-article">
+<h1> <span uk-icon="pencil"></span> Articles</h1>
+{{ $p := where site.RegularPages "Type" "posts" }}
+{{ range (.Paginate $p).Pages }}
+    <h3 class="uk-article-title">
+      <a href = "{{- .RelPermalink -}}">
+        {{- .Title -}}
+      </a>
+     <p class="uk-article-meta" >{{.Date.Format "2006-01-02"}}</p>
+    </h3>
+	 <p>{{ .Summary | plainify | htmlUnescape }}</p>
+     <a href="{{ .RelPermalink }}">Lire plus...</a>
+{{- end -}}
+</article>
+
+<!-- Pagination -->
+{{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

@@ -42,21 +42,26 @@ math = true
   url = '/wiki/'
   pre = 'database'
   weight = 30
+[[menu.main]]
+  name = 'Notes'
+  url = '/notes/'
+  pre = 'pencil'
+  weight = 40
   [[menu.main]]
   name = 'Tags'
   url = '/pages/tagscloud/'
   pre = 'hashtag'
-  weight = 30
+  weight = 50
 [[menu.main]]
   name = 'RSS'
   url = '/index.xml'
   pre = 'rss'
-  weight = 40
+  weight = 60
 [[menu.main]]
   name = 'Recherche'
   url = '/pages/search/'
   pre = 'search'
-  weight = 50
+  weight = 60
 
 
 
@@ -92,9 +97,9 @@ math = true
 
 
 
-[services]
-  [services.disqus]
-    shortname = 'schrek-fr'
+#[services]
+#  [services.disqus]
+#    shortname = 'schrek-fr'
 
 
 

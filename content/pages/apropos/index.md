@@ -28,6 +28,7 @@ flowchart TD
     A --> C[Wiki]
     A --> F[A propos]
     A --> H[Nuage de tags]
+	A --> M[Notes]
     A -.-> J(Flux Rss)
     B --> D[2023]
     D --> E[Fevrier]

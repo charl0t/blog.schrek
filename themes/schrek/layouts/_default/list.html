@@ -1,16 +1,14 @@
 {{ define "main" }}
 <main>
     {{ range .Pages }}
-    <ul class="uk-list">
+    <ul class="pure-menu-list">
     <!-- Ranges through content/post/*.md -->
         <li>
-            <div class="uk-card uk-card-default ">
-            <div class="uk-card-header">
-                <h2 class="uk-card-title" ><a href="{{.Permalink}}">{{.Title}}</a></h2> 
+            <div class="posts">
+                <h2 class="post-title" ><a href="{{.Permalink}}">{{.Title}}</a></h2> 
                 <i>{{.Date.Format "2006-01-02"}}</i>
-            </div>
             <div class="uk-card-body"> 
-                {{ .Summary }}
+                {{ .Summary | plainify }}
            </div>
             <div class="uk-card-footer">
                 {{ if .Truncated }}

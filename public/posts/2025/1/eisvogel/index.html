@@ -42,7 +42,7 @@ navigator.serviceWorker.register('/sw.js');
     <meta property="article:tag" content="Eisvogel">
 
     
-    <link  href="/css/uikit.min.min.b924c44a28cc05c880d4953f5e2914f634adbe31063436d591eca0954542a19b69e81657f5b85a9a6bef3d5dd73ebabbac5fcae0aa876263e24f51bcbb6a99b9.css" rel="stylesheet"  integrity="sha512-uSTESijMBciA1JU/XikU9jStvjEGNDbVkeyglUVCoZtp6BZX9bhammvvPV3XPrq7rF/K4KqHYmPiT1G8u2qZuQ==" crossorigin="anonymous">
+    <link  href="/css/uikit.min.min.74065b0cc0cc771b6d0c8cdd1571f95022330dbe057cfe7f5c22ddf003313c6715e6047ab88bb5766ca27342b6d7b572f78f0fa2110438c5a0edeb269788d553.css" rel="stylesheet"  integrity="sha512-dAZbDMDMdxttDIzdFXH5UCIzDb4FfP5/XCLd8AMxPGcV5gR6uIu1dmyic0K217Vy948PohEEOMWg7esml4jVUw==" crossorigin="anonymous">
     
     <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
     </head>
@@ -51,79 +51,30 @@ navigator.serviceWorker.register('/sw.js');
     <div class="uk-container uk-container-xsmall uk-padding-small">
         <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
         <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
-        <span uk-icon="icon: menu" class="menudroite uk-button uk-button-default uk-align-right" type="button" uk-toggle="target: #offcanvas-overlay"></span>
-        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-            <div class="uk-offcanvas-bar uk-background-primary">
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
-                <h3 class="barremenu">Menu</h3>
-<nav>
-        <ul class="uk-iconnav">
+    </div>
+
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-center ">
+        <ul class="uk-navbar-nav">
             
-            <li><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
+            <li class="uk-active"><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
             
-            <li><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
+            <li class="uk-active"><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
             
-            <li><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
+            <li class="uk-active"><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
             
-            <li><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
+            <li class="uk-active"><a href="/notes/"><span uk-icon="icon:pencil; ratio: 2"></span></a></li>
             
-            <li><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
+            <li class="uk-active"><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
             
-            <li><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            <li class="uk-active"><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
+            
+            <li class="uk-active"><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
             
         </ul>
+    </div>
 </nav>
 <hr class="uk-divider-icon">
-                     
-                <h3 class="barremenu"><a href="http://localhost:1313//categories/">Categories</a></h3>
-
-<li><a href="http://localhost:1313/categories/culture/">Culture</a></li>
-
-<li><a href="http://localhost:1313/categories/logiciel/">Logiciel</a></li>
-
-<li><a href="http://localhost:1313/categories/latex/">Latex</a></li>
-
-<li><a href="http://localhost:1313/categories/lecture/">Lecture</a></li>
-
-<li><a href="http://localhost:1313/categories/web/">Web</a></li>
-
-<li><a href="http://localhost:1313/categories/application/">Application</a></li>
-
-<li><a href="http://localhost:1313/categories/linux/">Linux</a></li>
-
-<li><a href="http://localhost:1313/categories/hugo/">Hugo</a></li>
-
-<li><a href="http://localhost:1313/categories/raspberrypi/">RaspberryPi</a></li>
-
-<li><a href="http://localhost:1313/categories/iot/">IoT</a></li>
-
-<li><a href="http://localhost:1313/categories/film/">Film</a></li>
-
-<li><a href="http://localhost:1313/categories/musique/">Musique</a></li>
-
-<li><a href="http://localhost:1313/categories/wiki/">Wiki</a></li>
-
-<li><a href="http://localhost:1313/categories/recette/">Recette</a></li>
-
-
-                  
-                <h3 class="barremenu"><a href="http://localhost:1313//series/">Series</a></h3>
-
-<li><a href="http://localhost:1313/series/hugo/">Hugo</a></li>
-
-<li><a href="http://localhost:1313/series/pandas/">Pandas</a></li>
-
-<li><a href="http://localhost:1313/series/raspberrypi/">RaspberryPi</a></li>
-
-<li><a href="http://localhost:1313/series/domotique/">Domotique</a></li>
-
-<li><a href="http://localhost:1313/series/esp32/">Esp32</a></li>
-
-<li><a href="http://localhost:1313/series/latex/">Latex</a></li>
-
-</div>
-        </div>
-    </div>
 </header>
 <main>
 
@@ -239,26 +190,7 @@ navigator.serviceWorker.register('/sw.js');
 <p><a href="https://github.com/martinbjeldbak/ultimate-beamer-theme-list">https://github.com/martinbjeldbak/ultimate-beamer-theme-list</a></p>
             </p>
     </article>
-    <div id="disqus_thread"></div>
-<script>
-    window.disqus_config = function () {
     
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "schrek-fr" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     <ul class="uk-pagination">
     
         <li><a class="uk-link-heading" href="http://localhost:1313/posts/2025/1/dokuwiki/"><span class="uk-margin-small-right" uk-pagination-previous></span> Dokuwiki</a></li>
@@ -300,9 +232,9 @@ navigator.serviceWorker.register('/sw.js');
 </footer>
 
 
-    <script src="/js/uikit.min.min.6b4741df9ca63b1e177fc1d9ef5ba017a37a63f6a3515ab84d9e4e2f51a708fa.js" integrity="sha256-a0dB35ymOx4Xf8HZ71ugF6N6Y/ajUVq4TZ5OL1GnCPo=" crossorigin="anonymous"></script>
+    <script src="/js/uikit.min.min.b795e52a95a6766546e08686e5d002243ef20e0fb3c22c860b7bd2adb02129b7.js" integrity="sha256-t5XlKpWmdmVG4IaG5dACJD7yDg&#43;zwiyGC3vSrbAhKbc=" crossorigin="anonymous"></script>
 
-    <script defer src="/js/uikit-icons.min.min.3ec067d2be0049ec3aeadb26bee214a6700dac475b797cbfd59a0a8cf6fdde8b.js" integrity="sha256-PsBn0r4ASew66tsmvuIUpnANrEdbeXy/1ZoKjPb93os=" crossorigin="anonymous"></script>
+    <script defer src="/js/uikit-icons.min.min.992015e15d0a403b809bb04d0599e2873818150584953ed5864664037c6b4333.js" integrity="sha256-mSAV4V0KQDuAm7BNBZnihzgYFQWElT7VhkZkA3xrQzM=" crossorigin="anonymous"></script>
 
 
   

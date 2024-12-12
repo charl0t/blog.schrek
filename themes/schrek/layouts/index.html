@@ -1,6 +1,7 @@
 {{ define "main" -}}
 <!--Page d'acceuil inclu dans baseof.html, liste les derniers articles-->
 <!-- pagination et listes des derniers articles -->
+
 <div class="uk-container ">
 <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
 {{ $p := where site.RegularPages "Type" "posts" }}
@@ -27,5 +28,14 @@
     </div>
 <!-- Pagination -->
 {{ template "_internal/pagination.html" . }}
+<article class="uk-comment uk-comment-primary">
+<h4 class="uk-comment-title"><span uk-icon="bell"></span> Notes</h4>
+{{ range (where .Site.Pages "Section" "notes") }}
+   {{ range .Pages }}
+	  </a> {{ .Summary }} </p>
+   {{ end }}
+{{ end }}
+</article>
 </div>
+
 {{ end }}
