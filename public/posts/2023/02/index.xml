@@ -1,33 +1,90 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Février 2023 on Schrek.fr</title>
-    <link>http://localhost:1313/posts/2023/02/</link>
-    <description>Recent content in Février 2023 on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/2023/02/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Diceware</title>
-      <link>http://localhost:1313/posts/2023/02/diceware/</link>
-      <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/02/diceware/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/02/diceware/one-red-dice-01-a9bf3.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;C est fini les mots de passe, il faut passer aux phrases de passe.&#xA;Plus facile à retenir plus compliquer à casser.&#xA;Pour les mots de passe, l’avantage est que l’on peut décomplexifier un mot de passe avec tous les caractères&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MaisonBananeRougeMystereBiere &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;AhdikeJeujenksKjnskodnKshjkskk&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/02/diceware/diceware.png-369a6.webp&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Pour générer une phrase de passe il faut un outil qui crée du « hasard » et un dictionnaire de mot qui va bien.&lt;/p&gt;&#xA;&lt;h2 id=&#34;quest-ce-que--diceware-&#34;&gt;Qu’est-ce que  Diceware ?&lt;/h2&gt;&#xA;&lt;p&gt;Diceware est une méthode pour construire une phrase de passe qui utilise des dés pour choisir au hasard des mots parmi une liste.&#xA;Chaque mot de la liste est précédé par un nombre à cinq chiffres.&#xA;On lance un dé cinq fois ou une fois cinq dés, le résultat donne un mot dans la liste.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>QRcode sous LaTex</title>
-      <link>http://localhost:1313/posts/2023/02/latex-qrcode/</link>
-      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/02/latex-qrcode/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/02/latex-qrcode/qrcode_wikipedia.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;On peut produire facilement des &lt;a href=&#34;https://fr.wikipedia.org/wiki/Code_QR&#34;&gt;QRCode&lt;/a&gt; sous LaTex.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;On récupère les fichiers  qrcode.ins et qrcode.dtx &lt;a href=&#34;https://www.ctan.org/tex-archive/macros/latex/contrib/qrcode&#34;&gt;ici&lt;/a&gt;.&#xA;On lance sous Linux:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ latex qrcode.ins&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;p&gt;Il faut ajouter dans l’entête du fichier latex&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;{hyperref} &lt;span style=&#34;color:#75715e&#34;&gt;% Pour avoir les liens&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;{qrcode} &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;%&lt;/span&gt; Pour générer les QRcode&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;utilisation&#34;&gt;Utilisation&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\documentclass&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[12pt,a4paper]&lt;/span&gt;{article}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[utf8]&lt;/span&gt;{inputenc}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[french]&lt;/span&gt;{babel}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[T1]&lt;/span&gt;{fontenc}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;{fullpage}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;{hyperref}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;{qrcode}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;{graphicx} &lt;span style=&#34;color:#75715e&#34;&gt;% Pour inclure des images&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;%titre&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\title&lt;/span&gt;{QRcode avec &lt;span style=&#34;color:#66d9ef&#34;&gt;\LaTeX&lt;/span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\date&lt;/span&gt;{}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\begin&lt;/span&gt;{document}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\maketitle&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\subsection*&lt;/span&gt;{QRcode simple}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\begin&lt;/span&gt;{verbatim}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\qrcode&lt;/span&gt;{http://schrek.fr}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\end&lt;/span&gt;{verbatim}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\begin&lt;/span&gt;{center}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\qrcode&lt;/span&gt;{http://schrek.fr}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\end&lt;/span&gt;{center}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\subsection*&lt;/span&gt;{QRcode simple avec la version 3 qui permet plus de caractères.}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\includegraphics&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[width=7cm]&lt;/span&gt;{QR-Code-versions.jpg}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\begin&lt;/span&gt;{verbatim}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\qrcode&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[nolink,version=3]&lt;/span&gt;{j&amp;#39;aime pas la soupe}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\end&lt;/span&gt;{verbatim}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\begin&lt;/span&gt;{center}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\qrcode&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[nolink,version=3]&lt;/span&gt;{j&amp;#39;aime pas la soupe}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\end&lt;/span&gt;{center}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\subsection*&lt;/span&gt;{QRcode avec lien et taille(1,5cm.}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\begin&lt;/span&gt;{verbatim}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\qrcode&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[link, version=3, height=1.5cm]&lt;/span&gt;{http://schrek.fr}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\end&lt;/span&gt;{verbatim}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\begin&lt;/span&gt;{center}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\qrcode&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[hyperlink,height=2cm]&lt;/span&gt;{http://schrek.fr}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\end&lt;/span&gt;{center}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\end&lt;/span&gt;{document}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;résultat-pdf&#34;&gt;Résultat PDF&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;exemple2.pdf&#34;&gt;Téléchargement&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ecrire un ebook avec Latex</title>
-      <link>http://localhost:1313/posts/2023/02/ebook-avec-latex/</link>
-      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/02/ebook-avec-latex/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/02/ebook-avec-latex/epub.wepb&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;uk-alert-success&#34; uk-alert&gt;&#xA;    &lt;span uk-icon=&#34;icon: info ; ratio:2&#34;&gt;&lt;/span&gt;&#xA;    &lt;a class=&#34;uk-alert-close&#34; uk-close&gt;&lt;/a&gt;&#xA;    &lt;p class=&#34;bandeau&#34;&gt;MaJ 29/05/2023 Ajout d&amp;rsquo;un livre &amp;ldquo;LaTeX pour litteraires&amp;rdquo;(Éric Guichard), bouton overleaf.com&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;p&gt;J’avais l’idée d’écrire un petit livre sur la Rome antique, une histoire d’un soldat romain qui devient un pirate.&#xA;Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourné vers Latex.&#xA;Pour organiser mes idées et structurer le document j’ai utilisé cette structure.&#xA;Vous trouverez les sources en bas de l’article.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Février 2023 on Schrek.fr</title><link>https://schrek.fr/posts/2023/02/</link><description>Recent content in Février 2023 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/posts/2023/02/index.xml" rel="self" type="application/rss+xml"/><item><title>Diceware</title><link>https://schrek.fr/posts/2023/02/diceware/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/diceware/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/02/diceware/one-red-dice-01-a9bf3.webp" width="200px">
+&lt;/figure>
+
+&lt;p>C est fini les mots de passe, il faut passer aux phrases de passe.
+Plus facile à retenir plus compliquer à casser.
+Pour les mots de passe, l’avantage est que l’on peut décomplexifier un mot de passe avec tous les caractères
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>MaisonBananeRougeMystereBiere 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>AhdikeJeujenksKjnskodnKshjkskk&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/p>
+&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/02/diceware/diceware.png-369a6.webp" width="600px">
+&lt;/figure>
+
+&lt;p>Pour générer une phrase de passe il faut un outil qui crée du « hasard » et un dictionnaire de mot qui va bien.&lt;/p>
+&lt;h2 id="quest-ce-que--diceware-">Qu’est-ce que Diceware ?&lt;/h2>
+&lt;p>Diceware est une méthode pour construire une phrase de passe qui utilise des dés pour choisir au hasard des mots parmi une liste.
+Chaque mot de la liste est précédé par un nombre à cinq chiffres.
+On lance un dé cinq fois ou une fois cinq dés, le résultat donne un mot dans la liste.&lt;/p></description></item><item><title>QRcode sous LaTex</title><link>https://schrek.fr/posts/2023/02/latex-qrcode/</link><pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/latex-qrcode/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/02/latex-qrcode/qrcode_wikipedia.webp" width="200px">
+&lt;/figure>
+
+&lt;p>On peut produire facilement des &lt;a href="https://fr.wikipedia.org/wiki/Code_QR">QRCode&lt;/a> sous LaTex.&lt;/p>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;p>On récupère les fichiers qrcode.ins et qrcode.dtx &lt;a href="https://www.ctan.org/tex-archive/macros/latex/contrib/qrcode">ici&lt;/a>.
+On lance sous Linux:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ latex qrcode.ins&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>Il faut ajouter dans l’entête du fichier latex&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-tex" data-lang="tex">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\usepackage&lt;/span>{hyperref} &lt;span style="color:#75715e">% Pour avoir les liens
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">\usepackage&lt;/span>{qrcode} &lt;span style="color:#960050;background-color:#1e0010">%&lt;/span> Pour générer les QRcode&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="utilisation">Utilisation&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-tex" data-lang="tex">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\documentclass&lt;/span>&lt;span style="color:#a6e22e">[12pt,a4paper]&lt;/span>{article}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\usepackage&lt;/span>&lt;span style="color:#a6e22e">[utf8]&lt;/span>{inputenc}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\usepackage&lt;/span>&lt;span style="color:#a6e22e">[french]&lt;/span>{babel}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\usepackage&lt;/span>&lt;span style="color:#a6e22e">[T1]&lt;/span>{fontenc}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\usepackage&lt;/span>{fullpage}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\usepackage&lt;/span>{hyperref}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\usepackage&lt;/span>{qrcode}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\usepackage&lt;/span>{graphicx} &lt;span style="color:#75715e">% Pour inclure des images
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">%titre
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">\title&lt;/span>{QRcode avec &lt;span style="color:#66d9ef">\LaTeX&lt;/span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\date&lt;/span>{}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\begin&lt;/span>{document}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\maketitle&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\subsection*&lt;/span>{QRcode simple}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\begin&lt;/span>{verbatim}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\qrcode&lt;/span>{http://schrek.fr}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\end&lt;/span>{verbatim}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\begin&lt;/span>{center}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\qrcode&lt;/span>{http://schrek.fr}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\end&lt;/span>{center}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\subsection*&lt;/span>{QRcode simple avec la version 3 qui permet plus de caractères.}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\includegraphics&lt;/span>&lt;span style="color:#a6e22e">[width=7cm]&lt;/span>{QR-Code-versions.jpg}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\begin&lt;/span>{verbatim}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\qrcode&lt;/span>&lt;span style="color:#a6e22e">[nolink,version=3]&lt;/span>{j&amp;#39;aime pas la soupe}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\end&lt;/span>{verbatim}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\begin&lt;/span>{center}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\qrcode&lt;/span>&lt;span style="color:#a6e22e">[nolink,version=3]&lt;/span>{j&amp;#39;aime pas la soupe}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\end&lt;/span>{center}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\subsection*&lt;/span>{QRcode avec lien et taille(1,5cm.}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\begin&lt;/span>{verbatim}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\qrcode&lt;/span>&lt;span style="color:#a6e22e">[link, version=3, height=1.5cm]&lt;/span>{http://schrek.fr}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\end&lt;/span>{verbatim}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\begin&lt;/span>{center}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\qrcode&lt;/span>&lt;span style="color:#a6e22e">[hyperlink,height=2cm]&lt;/span>{http://schrek.fr}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\end&lt;/span>{center}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\end&lt;/span>{document}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="résultat-pdf">Résultat PDF&lt;/h2>
+&lt;p>&lt;a href="exemple2.pdf">Téléchargement&lt;/a>&lt;/p></description></item><item><title>Ecrire un ebook avec Latex</title><link>https://schrek.fr/posts/2023/02/ebook-avec-latex/</link><pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/ebook-avec-latex/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/02/ebook-avec-latex/epub.wepb" width="200px">
+&lt;/figure>
+
+
+
+
+
+
+
+ 
+
+
+
+&lt;div class="uk-alert-success" uk-alert>
+ &lt;span uk-icon="icon: info ; ratio:2">&lt;/span>
+ &lt;a class="uk-alert-close" uk-close>&lt;/a>
+ &lt;p class="bandeau">MaJ 29/05/2023 Ajout d&amp;rsquo;un livre &amp;ldquo;LaTeX pour litteraires&amp;rdquo;(Éric Guichard), bouton overleaf.com&lt;/p>
+&lt;/div>
+
+
+&lt;p>J’avais l’idée d’écrire un petit livre sur la Rome antique, une histoire d’un soldat romain qui devient un pirate.
+Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourné vers Latex.
+Pour organiser mes idées et structurer le document j’ai utilisé cette structure.
+Vous trouverez les sources en bas de l’article.&lt;/p></description></item></channel></rss>

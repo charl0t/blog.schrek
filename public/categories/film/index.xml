@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Film on Schrek.fr</title>
-    <link>http://localhost:1313/categories/film/</link>
-    <description>Recent content in Film on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Thu, 08 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/film/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Fury</title>
-      <link>http://localhost:1313/posts/2023/06/fury/</link>
-      <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/06/fury/</guid>
-      <description>&lt;div class=&#34;uk-card uk-card-default uk-card-body uk-width-1-2@m&#34;&gt;&#xA;    &lt;p&gt;&#34;&#xA;Les idéaux sont Pacifiques l’histoire est Violente.&#xA;&#34;&lt;/p&gt;&#xA;    &lt;div class=&#34;uk-text-right uk-text-muted&#34;&gt; Brad Pitt, Fury&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Un trés bon film de guerre, avec des acteurs qui accompagne cette terrible histoire. Un mélange d&amp;rsquo;horreur de la guerre et d&amp;rsquo;humanité.&lt;/p&gt;&#xA;&#xA;&#xA;    &#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/PJTkKIxNJAg?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&#xA;      &gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.allocine.fr/film/fichefilm_gen_cfilm=218759.html&#34;&gt;https://www.allocine.fr/film/fichefilm_gen_cfilm=218759.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Fury_(film,_2014)&#34;&gt;https://fr.wikipedia.org/wiki/Fury_(film,_2014)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.senscritique.com/film/fury/8470273&#34;&gt;https://www.senscritique.com/film/fury/8470273&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Film on Schrek.fr</title><link>https://schrek.fr/categories/film/</link><description>Recent content in Film on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Thu, 08 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/categories/film/index.xml" rel="self" type="application/rss+xml"/><item><title>Fury</title><link>https://schrek.fr/posts/2023/06/fury/</link><pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/fury/</guid><description>&lt;div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+ &lt;p>"
+Les idéaux sont Pacifiques l’histoire est Violente.
+"&lt;/p>
+ &lt;div class="uk-text-right uk-text-muted"> Brad Pitt, Fury&lt;/div>
+&lt;/div>
+
+&lt;p>Un trés bon film de guerre, avec des acteurs qui accompagne cette terrible histoire. Un mélange d&amp;rsquo;horreur de la guerre et d&amp;rsquo;humanité.&lt;/p>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PJTkKIxNJAg?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="liens">Liens&lt;/h2>
+&lt;p>&lt;a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=218759.html">https://www.allocine.fr/film/fichefilm_gen_cfilm=218759.html&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/Fury_(film,_2014)">https://fr.wikipedia.org/wiki/Fury_(film,_2014)&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.senscritique.com/film/fury/8470273">https://www.senscritique.com/film/fury/8470273&lt;/a>&lt;/p></description></item></channel></rss>

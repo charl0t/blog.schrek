@@ -1,33 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Janvier 2024 on Schrek.fr</title>
-    <link>http://localhost:1313/posts/2024/1/</link>
-    <description>Recent content in Janvier 2024 on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/2024/1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>L&#39;ère de la supernova - Liu Cixin</title>
-      <link>http://localhost:1313/posts/2024/1/supernova/</link>
-      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/1/supernova/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2024/1/supernova/th.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Encore un bon livre de Lui Cixien, qui nous envoie dans un monde qui va se renouveler.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Installation de Portainer sur Rasp5</title>
-      <link>http://localhost:1313/posts/2024/1/portainer/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/1/portainer/</guid>
-      <description>&lt;h2 id=&#34;portainer&#34;&gt;Portainer&lt;/h2&gt;&#xA;&lt;p&gt;C&amp;rsquo;est une application web qui permet de gérer docker via son navigateur.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Docker avec un RaspberryPi 5</title>
-      <link>http://localhost:1313/posts/2024/1/docker/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/1/docker/</guid>
-      <description>&lt;h2 id=&#34;docker&#34;&gt;Docker:&lt;/h2&gt;&#xA;&lt;p&gt;Docker est une plateforme permettant de lancer certaines &lt;a href=&#34;https://fr.wikipedia.org/wiki/Application_(informatique)&#34;&gt;applications&lt;/a&gt; dans des conteneurs. C&amp;rsquo;est différent des  machines virtuels et ca utilise moins de ressource.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Janvier 2024 on Schrek.fr</title><link>https://schrek.fr/posts/2024/1/</link><description>Recent content in Janvier 2024 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/posts/2024/1/index.xml" rel="self" type="application/rss+xml"/><item><title>L'ère de la supernova - Liu Cixin</title><link>https://schrek.fr/posts/2024/1/supernova/</link><pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/1/supernova/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2024/1/supernova/th.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Encore un bon livre de Lui Cixien, qui nous envoie dans un monde qui va se renouveler.&lt;/p></description></item><item><title>Installation de Portainer sur Rasp5</title><link>https://schrek.fr/posts/2024/1/portainer/</link><pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/1/portainer/</guid><description>&lt;h2 id="portainer">Portainer&lt;/h2>
+&lt;p>C&amp;rsquo;est une application web qui permet de gérer docker via son navigateur.&lt;/p></description></item><item><title>Docker avec un RaspberryPi 5</title><link>https://schrek.fr/posts/2024/1/docker/</link><pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/1/docker/</guid><description>&lt;h2 id="docker">Docker:&lt;/h2>
+&lt;p>Docker est une plateforme permettant de lancer certaines &lt;a href="https://fr.wikipedia.org/wiki/Application_(informatique)">applications&lt;/a> dans des conteneurs. C&amp;rsquo;est différent des machines virtuels et ca utilise moins de ressource.&lt;/p></description></item></channel></rss>

@@ -1,296 +1,70 @@
-<!DOCTYPE html>
-
-<html lang="fr">
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Blog qui parle de lecture et de web" />
-    <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
-    <title>Schrek.fr</title>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-<link rel="manifest" href="/manifest.json">
-
-<meta name="mobile-web-app-capable" content="yes" />
-
-<meta name="apple-mobile-web-app-title" content="My PWA" />
-
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-<script>
-
-if ('serviceWorker' in navigator) {
-
-navigator.serviceWorker.register('/sw.js');
-
-};
-
-</script>
-
-    <meta property="og:url" content="http://localhost:1313/posts/2024/6/make/">
-  <meta property="og:site_name" content="Schrek.fr">
-  <meta property="og:title" content="Make, génération de fichiers">
-  <meta property="og:description" content="La commande make est un utilitaire de ligne de commande qui permet d’automatiser la compilation et la construction de projets logiciels. Cependant, dans le contexte de Pandoc, make est souvent utilisé pour automatiser la conversion de fichiers de différents formats à l’aide de Pandoc.
-Pandoc est un outil de conversion de documents qui permet de convertir des fichiers de différents formats, tels que Markdown, HTML, PDF et Microsoft Word, entre autres. Pour convertir un fichier à l’aide de Pandoc, vous pouvez utiliser une commande de ligne de commande telle que :pandoc input.md -o output.pdf Cette commande convertit le fichier input.md en format Markdown en un fichier output.pdf en format PDF.">
-  <meta property="og:locale" content="fr_fr">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-06-20T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-20T00:00:00+00:00">
-    <meta property="article:tag" content="Make">
-    <meta property="article:tag" content="Markdown">
-
-    
-    <link  href="/css/uikit.min.min.74065b0cc0cc771b6d0c8cdd1571f95022330dbe057cfe7f5c22ddf003313c6715e6047ab88bb5766ca27342b6d7b572f78f0fa2110438c5a0edeb269788d553.css" rel="stylesheet"  integrity="sha512-dAZbDMDMdxttDIzdFXH5UCIzDb4FfP5/XCLd8AMxPGcV5gR6uIu1dmyic0K217Vy948PohEEOMWg7esml4jVUw==" crossorigin="anonymous">
-    
-    <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
-    </head>
-<body>
-<header>
-    <div class="uk-container uk-container-xsmall uk-padding-small">
-        <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
-        <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
-    </div>
-
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-    <div class="uk-navbar-center ">
-        <ul class="uk-navbar-nav">
-            
-            <li class="uk-active"><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/notes/"><span uk-icon="icon:pencil; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
-            
-        </ul>
-    </div>
-</nav>
-<hr class="uk-divider-icon">
-</header>
-<main>
-
-
-<div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding">
-
-
-
-<ol class="uk-breadcrumb">
-  <li><a href="/">home</a></li>
-  
-    
-      
-      <li><a href='http://localhost:1313/posts'>posts</a></li>
-      
-      
-  
-    
-      
-      <li><a href='http://localhost:1313/posts/2024'>2024</a></li>
-      
-      
-  
-    
-      
-      <li><a href='http://localhost:1313/posts/2024/6'>6</a></li>
-      
-      
-  
-    
-      
-      <li><a href='http://localhost:1313/posts/2024/6/make'>make</a></li>
-      
-      
-  
-    
-      
-  
-
-</ol>
-
-
-    <article class="uk-article">
-        <h1 class="uk-article-title">Make, génération de fichiers</h1>
-            <p class="uk-article-meta">2024-06-20 
-            
-            <span class="labelcat uk-label"><a href="/categories/linux">Linux</a></span>
-              <br>
-            <i>Temps de lecture: 2 minutes.</i>
-            </p>
-            
-                
-                 
-                <br/>
-            <p class="uk-text-lead">
-                
-                
-                <div class="uk-section uk-align-right">
-                    <div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
-                       <h3 class="uk-card-title">Table des matières</h3> 
-                       <p class="toc uk-text-small"> <nav id="TableOfContents">
-  <ul>
-    <li><a href="#plusieurs-types-de-sortie">Plusieurs types de sortie</a></li>
-    <li><a href="#plusieurs-fichiers-sources">Plusieurs fichiers sources</a></li>
-    <li><a href="#liens">Liens</a></li>
-  </ul>
-</nav></p>
-                    </div>
-                </div>
-                   
-                    <p>La commande make est un utilitaire de ligne de commande qui permet d&rsquo;automatiser la compilation et la construction de projets logiciels. Cependant, dans le contexte de Pandoc, make est souvent utilisé pour automatiser la conversion de fichiers de différents formats à l&rsquo;aide de Pandoc.</p>
-<p>Pandoc est un outil de conversion de documents qui permet de convertir des fichiers de différents formats, tels que Markdown, HTML, PDF et Microsoft Word, entre autres. Pour convertir un fichier à l&rsquo;aide de Pandoc, vous pouvez utiliser une commande de ligne de commande telle que :pandoc input.md -o output.pdf
-Cette commande convertit le fichier input.md en format Markdown en un fichier output.pdf en format PDF.</p>
-<p>Cependant, si vous avez de nombreux fichiers à convertir ou si vous devez effectuer plusieurs étapes de conversion, l&rsquo;utilisation de la commande make peut simplifier le processus. Par exemple, vous pouvez créer un fichier Makefile qui contient des règles pour la conversion de fichiers à l&rsquo;aide de Pandoc.
-Voici un exemple de fichier:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e"># Nom du fichier d&#39;entrée
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>SRC :<span style="color:#f92672">=</span> pandoc_make.md
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Nom du fichier de sortie
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>OUT :<span style="color:#f92672">=</span> document.pdf
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commande pour convertir le fichier md en PDF avec PANDOC
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>all:
-</span></span><span style="display:flex;"><span>	pandoc <span style="color:#960050;background-color:#1e0010">$</span>(SRC) <span style="color:#f92672">-</span>o <span style="color:#960050;background-color:#1e0010">$</span>(OUT)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Règle pour nettoyer les fichiers
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>clean:
-</span></span><span style="display:flex;"><span>	rm <span style="color:#f92672">-</span>rf <span style="color:#960050;background-color:#1e0010">$</span>(OUT)
-</span></span></code></pre></div><p>Pour utiliser ce fichier Makefile, vous pouvez simplement exécuter la commande make dans le répertoire où se trouve le fichier Makefile. La commande make lira le fichier Makefile et exécutera les règles appropriées pour générer les fichiers spécifiés.</p>
-<p>Dans cet exemple, on indique que le fichier <em>document.pdf</em> doit être généré. La commande <em>all</em> indique comment générer ces fichiers à partir du fichier pandoc_make.md à l&rsquo;aide de Pandoc.</p>
-<p>La règle <em>clean</em> permet de supprimer les fichiers générés.</p>
-<h2 id="plusieurs-types-de-sortie">Plusieurs types de sortie</h2>
-<p>On reprend l&rsquo;exemple du dessus</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e"># Nom du fichier d&#39;entrée
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>SRC :<span style="color:#f92672">=</span> pandoc_make.md
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Nom du fichier de sortie
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>OUTPDF :<span style="color:#f92672">=</span> document.pdf
-</span></span><span style="display:flex;"><span>OUTHTML :<span style="color:#f92672">=</span> document.html
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>.PHONY: all pdf html clean
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commande pour tous convertir
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>all: pdf html
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commande pour convertir le fichier md en PDF avec PANDOC
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>pdf : <span style="color:#960050;background-color:#1e0010">$</span>(SRC)
-</span></span><span style="display:flex;"><span>	pandoc <span style="color:#960050;background-color:#1e0010">$</span>(SRC) <span style="color:#f92672">-</span>o <span style="color:#960050;background-color:#1e0010">$</span>(OUTPDF)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commande pour convertir le fichier md en HTML avec PANDOC
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>html : <span style="color:#960050;background-color:#1e0010">$</span>(SRC)
-</span></span><span style="display:flex;"><span>	pandoc <span style="color:#960050;background-color:#1e0010">$</span>(SRC) <span style="color:#f92672">-</span>o <span style="color:#960050;background-color:#1e0010">$</span>(OUTHTML)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Règle pour nettoyer les fichiers
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>clean:
-</span></span><span style="display:flex;"><span>	rm <span style="color:#f92672">-</span>rf <span style="color:#960050;background-color:#1e0010">$</span>(OUTPDF)
-</span></span><span style="display:flex;"><span>	rm <span style="color:#f92672">-</span>rf <span style="color:#960050;background-color:#1e0010">$</span>(OUTHTML)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ make all
-</span></span><span style="display:flex;"><span>pandoc pandoc_make.md -o document.pdf
-</span></span><span style="display:flex;"><span>pandoc pandoc_make.md -o document.html
-</span></span></code></pre></div><h2 id="plusieurs-fichiers-sources">Plusieurs fichiers sources</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e"># on va lister les fichiers md dans le dossier md/
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>SRC <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">$</span>(sort <span style="color:#960050;background-color:#1e0010">$</span>(shell find md<span style="color:#f92672">/</span> <span style="color:#f92672">-</span>type f <span style="color:#f92672">-</span>iname <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">*</span>.md<span style="color:#960050;background-color:#1e0010">&#39;</span>))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Nom du fichier de sortie
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>OUTPDF :<span style="color:#f92672">=</span> document.pdf
-</span></span><span style="display:flex;"><span>OUTHTML :<span style="color:#f92672">=</span> document.html
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>.PHONY: all pdf html clean
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commande pour tous convertir
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>all: pdf html
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commande pour convertir le fichier md en PDF avec PANDOC
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>pdf : <span style="color:#960050;background-color:#1e0010">$</span>(SRC)
-</span></span><span style="display:flex;"><span>	pandoc <span style="color:#f92672">-</span>o <span style="color:#960050;background-color:#1e0010">$</span>(OUTPDF) <span style="color:#960050;background-color:#1e0010">$</span>(SRC)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commande pour convertir le fichier md en HTML avec PANDOC
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>html : <span style="color:#960050;background-color:#1e0010">$</span>(SRC)
-</span></span><span style="display:flex;"><span>	pandoc <span style="color:#960050;background-color:#1e0010">$</span>(SRC) <span style="color:#f92672">-</span>o <span style="color:#960050;background-color:#1e0010">$</span>(OUTHTML)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Règle pour nettoyer les fichiers
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>clean:
-</span></span><span style="display:flex;"><span>	rm <span style="color:#f92672">-</span>rf <span style="color:#960050;background-color:#1e0010">$</span>(OUTPDF)
-</span></span><span style="display:flex;"><span>	rm <span style="color:#f92672">-</span>rf <span style="color:#960050;background-color:#1e0010">$</span>(OUTHTML)
-</span></span></code></pre></div><p>La commande make est souvent utilisée avec Pandoc pour automatiser la conversion de fichiers de différents formats. En créant un fichier Makefile contenant des règles pour la conversion de fichiers, vous pouvez simplifier le processus de conversion et gagner du temps.</p>
-<h2 id="liens">Liens</h2>
-<p><a href="https://sites.uclouvain.be/SystInfo/notes/Outils/make.html">https://sites.uclouvain.be/SystInfo/notes/Outils/make.html</a></p>
-<p><a href="https://www.arthurperret.fr/cours/pandoc.html">https://www.arthurperret.fr/cours/pandoc.html</a></p>
-<p><a href="https://www.arthurperret.fr/blog/2022-06-22-publication-multiformats-pandoc-make.htm">https://www.arthurperret.fr/blog/2022-06-22-publication-multiformats-pandoc-make.htm</a></p>
-<p><a href="https://gitlab.com/cestabrupt/gabarit-abrupt">https://gitlab.com/cestabrupt/gabarit-abrupt</a></p>
-
-            </p>
-    </article>
-    
-    <ul class="uk-pagination">
-    
-        <li><a class="uk-link-heading" href="http://localhost:1313/posts/2024/7/sauterelle/"><span class="uk-margin-small-right" uk-pagination-previous></span>  L&#39;Année de la sauterelle - Terry Hayes</a></li>
-    
-    
-        <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2024/6/pandas_nettoyage/">Pandas- nettoyage des données<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-    
-</ul>
-
-                    <hr class="uk-divider-icon">
-                    
-            <div class="uk-grid-small uk-child-width-auto " uk-grid>
-                <div>
-                    <p class="uk-text-light"><span uk-icon="icon:hashtag"></span>TAGS</p>
-                        <ul class="uk-list uk-display-inline-block">
-                            
-                            <li>
-                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/make/">Make</a>
-                            </li>
-                            
-                            <li>
-                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/markdown/">Markdown</a>
-                            </li>
-                            
-                        </ul>
-                    <br>
-<a href='https://ko-fi.com/Q5Q7LH0AN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Beer at ko-fi.com' /></a>
-</div>
-
-            </div>
-        </div>
-
-
-        </main>
-<footer>
-    <div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
-        2024 - Construit avec <a class="uk-link-muted" href="https://gohugo.io/">Hugo</a> et de <a class="uk-link-muted" href="https://getuikit.com/">UiKit</a> 
-    </div>
-</footer>
-
-
-    <script src="/js/uikit.min.min.b795e52a95a6766546e08686e5d002243ef20e0fb3c22c860b7bd2adb02129b7.js" integrity="sha256-t5XlKpWmdmVG4IaG5dACJD7yDg&#43;zwiyGC3vSrbAhKbc=" crossorigin="anonymous"></script>
-
-    <script defer src="/js/uikit-icons.min.min.992015e15d0a403b809bb04d0599e2873818150584953ed5864664037c6b4333.js" integrity="sha256-mSAV4V0KQDuAm7BNBZnihzgYFQWElT7VhkZkA3xrQzM=" crossorigin="anonymous"></script>
-
-
-  
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-<script>
-  MathJax = {
-    tex: {
-      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
-      inlineMath: [['\\(', '\\)']]                  
-    }
-  };
-</script>
-
-
-
-  
-
-</body>
-</html>
+<!doctype html><html lang=fr><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Blog qui parle de lecture et de web"><meta name=keywords content="hugo,html,lecture,web,shortcode"><title>Schrek.fr</title>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-title content="My PWA"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js")</script><meta property="og:url" content="https://schrek.fr/posts/2024/6/make/"><meta property="og:site_name" content="Schrek.fr"><meta property="og:title" content="Make, génération de fichiers"><meta property="og:description" content="La commande make est un utilitaire de ligne de commande qui permet d’automatiser la compilation et la construction de projets logiciels. Cependant, dans le contexte de Pandoc, make est souvent utilisé pour automatiser la conversion de fichiers de différents formats à l’aide de Pandoc.
+Pandoc est un outil de conversion de documents qui permet de convertir des fichiers de différents formats, tels que Markdown, HTML, PDF et Microsoft Word, entre autres. Pour convertir un fichier à l’aide de Pandoc, vous pouvez utiliser une commande de ligne de commande telle que :pandoc input.md -o output.pdf Cette commande convertit le fichier input.md en format Markdown en un fichier output.pdf en format PDF."><meta property="og:locale" content="fr_fr"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-06-20T00:00:00+00:00"><meta property="article:modified_time" content="2024-06-20T00:00:00+00:00"><meta property="article:tag" content="Make"><meta property="article:tag" content="Markdown"><link href=/css/uikit.min.min.74065b0cc0cc771b6d0c8cdd1571f95022330dbe057cfe7f5c22ddf003313c6715e6047ab88bb5766ca27342b6d7b572f78f0fa2110438c5a0edeb269788d553.css rel=stylesheet integrity="sha512-dAZbDMDMdxttDIzdFXH5UCIzDb4FfP5/XCLd8AMxPGcV5gR6uIu1dmyic0K217Vy948PohEEOMWg7esml4jVUw==" crossorigin=anonymous><link href=/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css rel=stylesheet integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp+8kDvTq4rdsbpi6rWUJnq68ImIF+mScfMdRrPd7mRCOJAPMg==" crossorigin=anonymous></head><body><header><div class="uk-container uk-container-xsmall uk-padding-small"><a href=https://schrek.fr/><h1 classe=uk-heading-small>Schrek.fr</h1></a><a href=https://schrek.fr/><h2>Mon super blog :)</h2></a></div><nav class="uk-navbar-container uk-navbar-transparent" uk-navbar><div class=uk-navbar-center><ul class=uk-navbar-nav><li class=uk-active><a href=/><span uk-icon="icon:home; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/apropos/><span uk-icon="icon:info; ratio: 2"></span></a></li><li class=uk-active><a href=/wiki/><span uk-icon="icon:database; ratio: 2"></span></a></li><li class=uk-active><a href=/notes/><span uk-icon="icon:pencil; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/tagscloud/><span uk-icon="icon:hashtag; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/search/><span uk-icon="icon:search; ratio: 2"></span></a></li><li class=uk-active><a href=/index.xml><span uk-icon="icon:rss; ratio: 2"></span></a></li></ul></div></nav><hr class=uk-divider-icon></header><main><div class="uk-container uk-background-muted uk-box-shadow-large uk-padding"><ol class=uk-breadcrumb><li><a href=/>home</a></li><li><a href=https://schrek.fr/posts>posts</a></li><li><a href=https://schrek.fr/posts/2024>2024</a></li><li><a href=https://schrek.fr/posts/2024/6>6</a></li><li><a href=https://schrek.fr/posts/2024/6/make>make</a></li></ol><article class=uk-article><h1 class=uk-article-title>Make, génération de fichiers</h1><p class=uk-article-meta>2024-06-20
+<span class="labelcat uk-label"><a href=/categories/linux>Linux</a></span><br><i>Temps de lecture: 2 minutes.</i></p><br><p class=uk-text-lead><div class="uk-section uk-align-right"><div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false"><h3 class=uk-card-title>Table des matières</h3><p class="toc uk-text-small"><nav id=TableOfContents><ul><li><a href=#plusieurs-types-de-sortie>Plusieurs types de sortie</a></li><li><a href=#plusieurs-fichiers-sources>Plusieurs fichiers sources</a></li><li><a href=#liens>Liens</a></li></ul></nav></p></div></div><p>La commande make est un utilitaire de ligne de commande qui permet d&rsquo;automatiser la compilation et la construction de projets logiciels. Cependant, dans le contexte de Pandoc, make est souvent utilisé pour automatiser la conversion de fichiers de différents formats à l&rsquo;aide de Pandoc.</p><p>Pandoc est un outil de conversion de documents qui permet de convertir des fichiers de différents formats, tels que Markdown, HTML, PDF et Microsoft Word, entre autres. Pour convertir un fichier à l&rsquo;aide de Pandoc, vous pouvez utiliser une commande de ligne de commande telle que :pandoc input.md -o output.pdf
+Cette commande convertit le fichier input.md en format Markdown en un fichier output.pdf en format PDF.</p><p>Cependant, si vous avez de nombreux fichiers à convertir ou si vous devez effectuer plusieurs étapes de conversion, l&rsquo;utilisation de la commande make peut simplifier le processus. Par exemple, vous pouvez créer un fichier Makefile qui contient des règles pour la conversion de fichiers à l&rsquo;aide de Pandoc.
+Voici un exemple de fichier:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#75715e># Nom du fichier d&#39;entrée
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>SRC :<span style=color:#f92672>=</span> pandoc_make.md
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Nom du fichier de sortie
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>OUT :<span style=color:#f92672>=</span> document.pdf
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Commande pour convertir le fichier md en PDF avec PANDOC
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>all:
+</span></span><span style=display:flex><span>	pandoc <span style=color:#960050;background-color:#1e0010>$</span>(SRC) <span style=color:#f92672>-</span>o <span style=color:#960050;background-color:#1e0010>$</span>(OUT)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Règle pour nettoyer les fichiers
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>clean:
+</span></span><span style=display:flex><span>	rm <span style=color:#f92672>-</span>rf <span style=color:#960050;background-color:#1e0010>$</span>(OUT)
+</span></span></code></pre></div><p>Pour utiliser ce fichier Makefile, vous pouvez simplement exécuter la commande make dans le répertoire où se trouve le fichier Makefile. La commande make lira le fichier Makefile et exécutera les règles appropriées pour générer les fichiers spécifiés.</p><p>Dans cet exemple, on indique que le fichier <em>document.pdf</em> doit être généré. La commande <em>all</em> indique comment générer ces fichiers à partir du fichier pandoc_make.md à l&rsquo;aide de Pandoc.</p><p>La règle <em>clean</em> permet de supprimer les fichiers générés.</p><h2 id=plusieurs-types-de-sortie>Plusieurs types de sortie</h2><p>On reprend l&rsquo;exemple du dessus</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#75715e># Nom du fichier d&#39;entrée
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>SRC :<span style=color:#f92672>=</span> pandoc_make.md
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Nom du fichier de sortie
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>OUTPDF :<span style=color:#f92672>=</span> document.pdf
+</span></span><span style=display:flex><span>OUTHTML :<span style=color:#f92672>=</span> document.html
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>.PHONY: all pdf html clean
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Commande pour tous convertir
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>all: pdf html
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Commande pour convertir le fichier md en PDF avec PANDOC
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>pdf : <span style=color:#960050;background-color:#1e0010>$</span>(SRC)
+</span></span><span style=display:flex><span>	pandoc <span style=color:#960050;background-color:#1e0010>$</span>(SRC) <span style=color:#f92672>-</span>o <span style=color:#960050;background-color:#1e0010>$</span>(OUTPDF)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Commande pour convertir le fichier md en HTML avec PANDOC
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>html : <span style=color:#960050;background-color:#1e0010>$</span>(SRC)
+</span></span><span style=display:flex><span>	pandoc <span style=color:#960050;background-color:#1e0010>$</span>(SRC) <span style=color:#f92672>-</span>o <span style=color:#960050;background-color:#1e0010>$</span>(OUTHTML)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Règle pour nettoyer les fichiers
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>clean:
+</span></span><span style=display:flex><span>	rm <span style=color:#f92672>-</span>rf <span style=color:#960050;background-color:#1e0010>$</span>(OUTPDF)
+</span></span><span style=display:flex><span>	rm <span style=color:#f92672>-</span>rf <span style=color:#960050;background-color:#1e0010>$</span>(OUTHTML)
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ make all
+</span></span><span style=display:flex><span>pandoc pandoc_make.md -o document.pdf
+</span></span><span style=display:flex><span>pandoc pandoc_make.md -o document.html
+</span></span></code></pre></div><h2 id=plusieurs-fichiers-sources>Plusieurs fichiers sources</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#75715e># on va lister les fichiers md dans le dossier md/
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>SRC <span style=color:#f92672>=</span> <span style=color:#960050;background-color:#1e0010>$</span>(sort <span style=color:#960050;background-color:#1e0010>$</span>(shell find md<span style=color:#f92672>/</span> <span style=color:#f92672>-</span>type f <span style=color:#f92672>-</span>iname <span style=color:#960050;background-color:#1e0010>&#39;</span><span style=color:#f92672>*</span>.md<span style=color:#960050;background-color:#1e0010>&#39;</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Nom du fichier de sortie
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>OUTPDF :<span style=color:#f92672>=</span> document.pdf
+</span></span><span style=display:flex><span>OUTHTML :<span style=color:#f92672>=</span> document.html
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>.PHONY: all pdf html clean
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Commande pour tous convertir
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>all: pdf html
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Commande pour convertir le fichier md en PDF avec PANDOC
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>pdf : <span style=color:#960050;background-color:#1e0010>$</span>(SRC)
+</span></span><span style=display:flex><span>	pandoc <span style=color:#f92672>-</span>o <span style=color:#960050;background-color:#1e0010>$</span>(OUTPDF) <span style=color:#960050;background-color:#1e0010>$</span>(SRC)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Commande pour convertir le fichier md en HTML avec PANDOC
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>html : <span style=color:#960050;background-color:#1e0010>$</span>(SRC)
+</span></span><span style=display:flex><span>	pandoc <span style=color:#960050;background-color:#1e0010>$</span>(SRC) <span style=color:#f92672>-</span>o <span style=color:#960050;background-color:#1e0010>$</span>(OUTHTML)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Règle pour nettoyer les fichiers
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>clean:
+</span></span><span style=display:flex><span>	rm <span style=color:#f92672>-</span>rf <span style=color:#960050;background-color:#1e0010>$</span>(OUTPDF)
+</span></span><span style=display:flex><span>	rm <span style=color:#f92672>-</span>rf <span style=color:#960050;background-color:#1e0010>$</span>(OUTHTML)
+</span></span></code></pre></div><p>La commande make est souvent utilisée avec Pandoc pour automatiser la conversion de fichiers de différents formats. En créant un fichier Makefile contenant des règles pour la conversion de fichiers, vous pouvez simplifier le processus de conversion et gagner du temps.</p><h2 id=liens>Liens</h2><p><a href=https://sites.uclouvain.be/SystInfo/notes/Outils/make.html>https://sites.uclouvain.be/SystInfo/notes/Outils/make.html</a></p><p><a href=https://www.arthurperret.fr/cours/pandoc.html>https://www.arthurperret.fr/cours/pandoc.html</a></p><p><a href=https://www.arthurperret.fr/blog/2022-06-22-publication-multiformats-pandoc-make.htm>https://www.arthurperret.fr/blog/2022-06-22-publication-multiformats-pandoc-make.htm</a></p><p><a href=https://gitlab.com/cestabrupt/gabarit-abrupt>https://gitlab.com/cestabrupt/gabarit-abrupt</a></p></p></article><ul class=uk-pagination><li><a class=uk-link-heading href=https://schrek.fr/posts/2024/7/sauterelle/><span class=uk-margin-small-right uk-pagination-previous></span> L'Année de la sauterelle - Terry Hayes</a></li><li class=uk-margin-auto-left><a class=uk-link-heading href=https://schrek.fr/posts/2024/6/pandas_nettoyage/>Pandas- nettoyage des données<span class=uk-margin-small-left uk-pagination-next></span></a></li></ul><hr class=uk-divider-icon><div class="uk-grid-small uk-child-width-auto" uk-grid><div><p class=uk-text-light><span uk-icon=icon:hashtag></span>TAGS</p><ul class="uk-list uk-display-inline-block"><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/make/>Make</a></li><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/markdown/>Markdown</a></li></ul><br><a href=https://ko-fi.com/Q5Q7LH0AN target=_blank><img height=36 style=border:0;height:36px src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border=0 alt='Buy Me a Beer at ko-fi.com'></a></div></div></div></main><footer><div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">2024 - Construit avec <a class=uk-link-muted href=https://gohugo.io/>Hugo</a> et de <a class=uk-link-muted href=https://getuikit.com/>UiKit</a></div></footer><script src=/js/uikit.min.min.b795e52a95a6766546e08686e5d002243ef20e0fb3c22c860b7bd2adb02129b7.js integrity="sha256-t5XlKpWmdmVG4IaG5dACJD7yDg+zwiyGC3vSrbAhKbc=" crossorigin=anonymous></script><script defer src=/js/uikit-icons.min.min.992015e15d0a403b809bb04d0599e2873818150584953ed5864664037c6b4333.js integrity="sha256-mSAV4V0KQDuAm7BNBZnihzgYFQWElT7VhkZkA3xrQzM=" crossorigin=anonymous></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script><script>MathJax={tex:{displayMath:[["\\[","\\]"],["$$","$$"]],inlineMath:[["\\(","\\)"]]}}</script></body></html>

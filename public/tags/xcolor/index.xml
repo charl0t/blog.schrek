@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Xcolor on Schrek.fr</title>
-    <link>http://localhost:1313/tags/xcolor/</link>
-    <description>Recent content in Xcolor on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/xcolor/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Latex et xcolor</title>
-      <link>http://localhost:1313/posts/2023/08/latex-et-xcolor/</link>
-      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/08/latex-et-xcolor/</guid>
-      <description>&lt;p&gt;Le paquetage &lt;em&gt;xcolor&lt;/em&gt; fait partie des indispensables de Latex pour coloriser les textes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;préambule&#34;&gt;Préambule&lt;/h2&gt;&#xA;&lt;p&gt;On appelle les couleurs de base de &lt;em&gt;xcolor&lt;/em&gt;,&lt;/p&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/08/latex-et-xcolor/xcolor1.webp&#34; width=&#34;500px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;{xcolor} &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;%&lt;/span&gt; import des couleurs dans les textes&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;p&gt;Il y a aussi d&amp;rsquo;autres palettes de couleurs:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;dvipsnames: 68 couleurs (CMYK);&lt;/li&gt;&#xA;&lt;li&gt;svgnames: 151 couleurs (RGB);&lt;/li&gt;&#xA;&lt;li&gt;x11names: 317 couleurs (RGB).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[dvipsnames]&lt;/span&gt;{xcolor} &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;%&lt;/span&gt; import des couleurs dans les textes&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;p&gt;Tous est bien indiqué dans la &lt;a href=&#34;https://www.ctan.org/pkg/xcolor&#34;&gt;documentation (page 39)&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;personnalisation-des-couleurs&#34;&gt;Personnalisation des couleurs&lt;/h2&gt;&#xA;&lt;p&gt;On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xcolor on Schrek.fr</title><link>https://schrek.fr/tags/xcolor/</link><description>Recent content in Xcolor on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/xcolor/index.xml" rel="self" type="application/rss+xml"/><item><title>Latex et xcolor</title><link>https://schrek.fr/posts/2023/08/latex-et-xcolor/</link><pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/08/latex-et-xcolor/</guid><description>&lt;p>Le paquetage &lt;em>xcolor&lt;/em> fait partie des indispensables de Latex pour coloriser les textes.&lt;/p>
+&lt;h2 id="préambule">Préambule&lt;/h2>
+&lt;p>On appelle les couleurs de base de &lt;em>xcolor&lt;/em>,&lt;/p>
+&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/08/latex-et-xcolor/xcolor1.webp" width="500px">
+&lt;/figure>
+
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-tex" data-lang="tex">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\usepackage&lt;/span>{xcolor} &lt;span style="color:#960050;background-color:#1e0010">%&lt;/span> import des couleurs dans les textes&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>Il y a aussi d&amp;rsquo;autres palettes de couleurs:&lt;/p>
+&lt;ul>
+&lt;li>dvipsnames: 68 couleurs (CMYK);&lt;/li>
+&lt;li>svgnames: 151 couleurs (RGB);&lt;/li>
+&lt;li>x11names: 317 couleurs (RGB).&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-tex" data-lang="tex">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">\usepackage&lt;/span>&lt;span style="color:#a6e22e">[dvipsnames]&lt;/span>{xcolor} &lt;span style="color:#960050;background-color:#1e0010">%&lt;/span> import des couleurs dans les textes&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>Tous est bien indiqué dans la &lt;a href="https://www.ctan.org/pkg/xcolor">documentation (page 39)&lt;/a>.&lt;/p>
+&lt;h2 id="personnalisation-des-couleurs">Personnalisation des couleurs&lt;/h2>
+&lt;p>On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.&lt;/p></description></item></channel></rss>

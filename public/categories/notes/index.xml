@@ -1,19 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>NOTES on Schrek.fr</title>
-    <link>http://localhost:1313/categories/notes/</link>
-    <description>Recent content in NOTES on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Sun, 23 Aug 1970 07:33:35 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/notes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2024/12/15</title>
-      <link>http://localhost:1313/notes/2024/12/</link>
-      <pubDate>Sun, 23 Aug 1970 07:33:35 +0100</pubDate>
-      <guid>http://localhost:1313/notes/2024/12/</guid>
-      <description>&lt;h2 id=&#34;decembre-2025&#34;&gt;Decembre 2025&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Guide de survie Hugo: &lt;a href=&#34;https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81&#34;&gt;https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Analyse de fichiers Mardown avec Python: &lt;a href=&#34;https://github.com/yannbanas/mrkdwn_analysis&#34;&gt;https://github.com/yannbanas/mrkdwn_analysis&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Générer des stats sur Hugo: &lt;a href=&#34;https://bacardi55.io/2024/03/07/generating-basic-content-statistics-for-static-site-generator/&#34;&gt;https://bacardi55.io/2024/03/07/generating-basic-content-statistics-for-static-site-generator/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;« Il n’y a qu’un problème philosophique vraiment sérieux : c’est le suicide. Juger que la vie vaut ou ne vaut pas la peine d’être vécue, c’est répondre à la question fondamentale de la philosophie. » – Camus&lt;/li&gt;&#xA;&lt;li&gt;Lecture: Sanderson, Brandon - Vers les étoiles (Skyward 1)&lt;/li&gt;&#xA;&lt;li&gt;Illustration pour médiation numérique &lt;a href=&#34;https://grisebouille.net/illustrations-pour-mediation-numerique/&#34;&gt;https://grisebouille.net/illustrations-pour-mediation-numerique/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Boost rasp 5 &lt;a href=&#34;https://korben.info/raspberry-pi-5-optimisation-performances-sdram.html&#34;&gt;https://korben.info/raspberry-pi-5-optimisation-performances-sdram.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NOTES on Schrek.fr</title><link>https://schrek.fr/categories/notes/</link><description>Recent content in NOTES on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sun, 23 Aug 1970 07:33:35 +0100</lastBuildDate><atom:link href="https://schrek.fr/categories/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>2024/12/15</title><link>https://schrek.fr/notes/2024/12/</link><pubDate>Sun, 23 Aug 1970 07:33:35 +0100</pubDate><guid>https://schrek.fr/notes/2024/12/</guid><description>&lt;h2 id="decembre-2025">Decembre 2025&lt;/h2>
+&lt;ul>
+&lt;li>Guide de survie Hugo: &lt;a href="https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81">https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81&lt;/a>&lt;/li>
+&lt;li>Analyse de fichiers Mardown avec Python: &lt;a href="https://github.com/yannbanas/mrkdwn_analysis">https://github.com/yannbanas/mrkdwn_analysis&lt;/a>&lt;/li>
+&lt;li>Générer des stats sur Hugo: &lt;a href="https://bacardi55.io/2024/03/07/generating-basic-content-statistics-for-static-site-generator/">https://bacardi55.io/2024/03/07/generating-basic-content-statistics-for-static-site-generator/&lt;/a>&lt;/li>
+&lt;li>« Il n’y a qu’un problème philosophique vraiment sérieux : c’est le suicide. Juger que la vie vaut ou ne vaut pas la peine d’être vécue, c’est répondre à la question fondamentale de la philosophie. » – Camus&lt;/li>
+&lt;li>Lecture: Sanderson, Brandon - Vers les étoiles (Skyward 1)&lt;/li>
+&lt;li>Illustration pour médiation numérique &lt;a href="https://grisebouille.net/illustrations-pour-mediation-numerique/">https://grisebouille.net/illustrations-pour-mediation-numerique/&lt;/a>&lt;/li>
+&lt;li>Boost rasp 5 &lt;a href="https://korben.info/raspberry-pi-5-optimisation-performances-sdram.html">https://korben.info/raspberry-pi-5-optimisation-performances-sdram.html&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

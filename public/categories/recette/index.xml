@@ -1,33 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Recette on Schrek.fr</title>
-    <link>http://localhost:1313/categories/recette/</link>
-    <description>Recent content in Recette on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Sat, 11 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/recette/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Socca</title>
-      <link>http://localhost:1313/posts/2023/03/socca/</link>
-      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/socca/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/socca/socca2.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Socca est le nom donné à une spécialité culinaire à base de farine de pois chiche !&lt;/p&gt;&#xA;&lt;h2 id=&#34;ingrédients&#34;&gt;Ingrédients&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;250 g de farine de pois chiches&lt;/li&gt;&#xA;&lt;li&gt;50 cl d’eau&lt;/li&gt;&#xA;&lt;li&gt;4 cuillères à soupe d’huile d’olive&lt;/li&gt;&#xA;&lt;li&gt;1 cuillère à café de sel fin&lt;/li&gt;&#xA;&lt;li&gt;poivre&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;préparation&#34;&gt;Préparation&lt;/h2&gt;&#xA;&lt;p&gt;Mélanger la farine de pois chiche et l’eau. Ajouter l’huile d’olive et le sel. La préparation est liquide&#xA;Laisser reposer 1 heure.&lt;/p&gt;&#xA;&lt;p&gt;Faire chauffer le four au maximum, le mieux c’est un four à pizza ou au pire une machine a croque monsieur.&#xA;Huiler un plat de type a paella et mettre au four pour qu’il prenne la température.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sorbet basilic</title>
-      <link>http://localhost:1313/posts/2023/03/sorbet_basilic/</link>
-      <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/sorbet_basilic/</guid>
-      <description>&lt;p&gt;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/sorbet_basilic/logo_basilic.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;Un super sorbet pour, 4 personnes pour finir vos repas d’été.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ingrédients&#34;&gt;Ingrédients&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1/2 litre d’eau ;&lt;/li&gt;&#xA;&lt;li&gt;1 grosse cuillère de crème fraîche ;&lt;/li&gt;&#xA;&lt;li&gt;12 plans de basilic ;&lt;/li&gt;&#xA;&lt;li&gt;2 petits citrons ou 1,5 gros.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;basilic.webp&#34; width=&#34;400px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;préparation&#34;&gt;Préparation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Faire un sirop en portant à ébullition  l’eau froide avec le sucre et laisser un peu refroidir.&lt;/li&gt;&#xA;&lt;li&gt;Mixer le basilic effeuillé et infuser le 30min.&lt;/li&gt;&#xA;&lt;li&gt;Passer a L’étamine pour filtrer, ajouter le jus de citron et la crème. Mettre ensorbetière.&lt;/li&gt;&#xA;&lt;li&gt;Vous servirez en boule dans des verres givrés, le sorbet doit rester moelleux.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Fabrication d&#39;un savon d&#39;Alep</title>
-      <link>http://localhost:1313/posts/2023/03/savon_alep/</link>
-      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/savon_alep/</guid>
-      <description>&lt;p&gt;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/savon_alep/logo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;Ici je vais vous décrire rapidement la fabrication maison du savon d’Alep. C’est un savon simple à base d’huile d’olive et d’huile de baie de laurier et d’huile de ricin.&#xA;J’utilise la technique de la saponification a froid.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recette on Schrek.fr</title><link>https://schrek.fr/categories/recette/</link><description>Recent content in Recette on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sat, 11 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/categories/recette/index.xml" rel="self" type="application/rss+xml"/><item><title>Socca</title><link>https://schrek.fr/posts/2023/03/socca/</link><pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/socca/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/socca/socca2.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Socca est le nom donné à une spécialité culinaire à base de farine de pois chiche !&lt;/p>
+&lt;h2 id="ingrédients">Ingrédients&lt;/h2>
+&lt;ul>
+&lt;li>250 g de farine de pois chiches&lt;/li>
+&lt;li>50 cl d’eau&lt;/li>
+&lt;li>4 cuillères à soupe d’huile d’olive&lt;/li>
+&lt;li>1 cuillère à café de sel fin&lt;/li>
+&lt;li>poivre&lt;/li>
+&lt;/ul>
+&lt;h2 id="préparation">Préparation&lt;/h2>
+&lt;p>Mélanger la farine de pois chiche et l’eau. Ajouter l’huile d’olive et le sel. La préparation est liquide
+Laisser reposer 1 heure.&lt;/p>
+&lt;p>Faire chauffer le four au maximum, le mieux c’est un four à pizza ou au pire une machine a croque monsieur.
+Huiler un plat de type a paella et mettre au four pour qu’il prenne la température.&lt;/p></description></item><item><title>Sorbet basilic</title><link>https://schrek.fr/posts/2023/03/sorbet_basilic/</link><pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/sorbet_basilic/</guid><description>&lt;p>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/sorbet_basilic/logo_basilic.webp" width="200px">
+&lt;/figure>
+
+Un super sorbet pour, 4 personnes pour finir vos repas d’été.&lt;/p>
+&lt;h2 id="ingrédients">Ingrédients&lt;/h2>
+&lt;ul>
+&lt;li>1/2 litre d’eau ;&lt;/li>
+&lt;li>1 grosse cuillère de crème fraîche ;&lt;/li>
+&lt;li>12 plans de basilic ;&lt;/li>
+&lt;li>2 petits citrons ou 1,5 gros.&lt;/li>
+&lt;/ul>
+&lt;figure class="imagearticle">&lt;img src="basilic.webp" width="400px">
+&lt;/figure>
+
+&lt;h2 id="préparation">Préparation&lt;/h2>
+&lt;ul>
+&lt;li>Faire un sirop en portant à ébullition l’eau froide avec le sucre et laisser un peu refroidir.&lt;/li>
+&lt;li>Mixer le basilic effeuillé et infuser le 30min.&lt;/li>
+&lt;li>Passer a L’étamine pour filtrer, ajouter le jus de citron et la crème. Mettre ensorbetière.&lt;/li>
+&lt;li>Vous servirez en boule dans des verres givrés, le sorbet doit rester moelleux.&lt;/li>
+&lt;/ul></description></item><item><title>Fabrication d'un savon d'Alep</title><link>https://schrek.fr/posts/2023/03/savon_alep/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/savon_alep/</guid><description>&lt;p>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/savon_alep/logo.webp" width="200px">
+&lt;/figure>
+
+Ici je vais vous décrire rapidement la fabrication maison du savon d’Alep. C’est un savon simple à base d’huile d’olive et d’huile de baie de laurier et d’huile de ricin.
+J’utilise la technique de la saponification a froid.&lt;/p></description></item></channel></rss>

@@ -1,33 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>RaspberryPi on Schrek.fr</title>
-    <link>http://localhost:1313/categories/raspberrypi/</link>
-    <description>Recent content in RaspberryPi on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installation de Portainer sur Rasp5</title>
-      <link>http://localhost:1313/posts/2024/1/portainer/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/1/portainer/</guid>
-      <description>&lt;h2 id=&#34;portainer&#34;&gt;Portainer&lt;/h2&gt;&#xA;&lt;p&gt;C&amp;rsquo;est une application web qui permet de gérer docker via son navigateur.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Docker avec un RaspberryPi 5</title>
-      <link>http://localhost:1313/posts/2024/1/docker/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/1/docker/</guid>
-      <description>&lt;h2 id=&#34;docker&#34;&gt;Docker:&lt;/h2&gt;&#xA;&lt;p&gt;Docker est une plateforme permettant de lancer certaines &lt;a href=&#34;https://fr.wikipedia.org/wiki/Application_(informatique)&#34;&gt;applications&lt;/a&gt; dans des conteneurs. C&amp;rsquo;est différent des  machines virtuels et ca utilise moins de ressource.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Raspberrypi 5</title>
-      <link>http://localhost:1313/posts/2023/12/rasp5/</link>
-      <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/12/rasp5/</guid>
-      <description>&lt;p&gt;Papa Noel m&amp;rsquo;a fait un beau cadeau, un &lt;a href=&#34;https://www.raspberrypi.com/news/introducing-raspberry-pi-5/&#34;&gt;raspberry pi 5&lt;/a&gt;.&#xA;Un belle article sur &lt;a href=&#34;https://www.framboise314.fr/enfin-le-voici-la-sortie-du-raspberry-pi-5-annoncee-ce-matin/&#34;&gt;Framboise314&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Raspberry_Pi&#34;&gt;https://fr.wikipedia.org/wiki/Raspberry_Pi&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RaspberryPi on Schrek.fr</title><link>https://schrek.fr/categories/raspberrypi/</link><description>Recent content in RaspberryPi on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/categories/raspberrypi/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation de Portainer sur Rasp5</title><link>https://schrek.fr/posts/2024/1/portainer/</link><pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/1/portainer/</guid><description>&lt;h2 id="portainer">Portainer&lt;/h2>
+&lt;p>C&amp;rsquo;est une application web qui permet de gérer docker via son navigateur.&lt;/p></description></item><item><title>Docker avec un RaspberryPi 5</title><link>https://schrek.fr/posts/2024/1/docker/</link><pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/1/docker/</guid><description>&lt;h2 id="docker">Docker:&lt;/h2>
+&lt;p>Docker est une plateforme permettant de lancer certaines &lt;a href="https://fr.wikipedia.org/wiki/Application_(informatique)">applications&lt;/a> dans des conteneurs. C&amp;rsquo;est différent des machines virtuels et ca utilise moins de ressource.&lt;/p></description></item><item><title>Raspberrypi 5</title><link>https://schrek.fr/posts/2023/12/rasp5/</link><pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/12/rasp5/</guid><description>&lt;p>Papa Noel m&amp;rsquo;a fait un beau cadeau, un &lt;a href="https://www.raspberrypi.com/news/introducing-raspberry-pi-5/">raspberry pi 5&lt;/a>.
+Un belle article sur &lt;a href="https://www.framboise314.fr/enfin-le-voici-la-sortie-du-raspberry-pi-5-annoncee-ce-matin/">Framboise314&lt;/a>.&lt;/p>
+&lt;h2 id="liens">Liens&lt;/h2>
+&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/Raspberry_Pi">https://fr.wikipedia.org/wiki/Raspberry_Pi&lt;/a>&lt;/p></description></item></channel></rss>

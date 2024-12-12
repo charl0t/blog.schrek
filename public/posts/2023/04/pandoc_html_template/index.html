@@ -1,285 +1,50 @@
-<!DOCTYPE html>
-
-<html lang="fr">
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Blog qui parle de lecture et de web" />
-    <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
-    <title>Schrek.fr</title>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-<link rel="manifest" href="/manifest.json">
-
-<meta name="mobile-web-app-capable" content="yes" />
-
-<meta name="apple-mobile-web-app-title" content="My PWA" />
-
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-<script>
-
-if ('serviceWorker' in navigator) {
-
-navigator.serviceWorker.register('/sw.js');
-
-};
-
-</script>
-
-    <meta property="og:url" content="http://localhost:1313/posts/2023/04/pandoc_html_template/">
-  <meta property="og:site_name" content="Schrek.fr">
-  <meta property="og:title" content="Pandoc html template">
-  <meta property="og:description" content="Pour gérer les templates avec Pandoc, on va utiliser un système de balises qui sont incluses dans l’entête du fichier Markdown.
---- title: Schrek subtitle: Mon jolie site abstract: Test template abstract-title: test abstract-title author: Schrek christophe date: 2023-03-23 site: https://schrek.fr/ subject: Pandoc template description: utilisation des templates avec Pandoc logo: logo.png lang: fr keywords: pandoc html5 css template category: Web --- Exemple de template &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;html $if(lang)$ lang=&#34;$lang$&#34; $endif$ &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt; $for(description)$&lt;meta name=&#34;description&#34; content=&#34;$description$&#34;&gt;$endfor$ &lt;title&gt;$if(title)$$title$$endif$&lt;/title&gt; $for(keywords)$&lt;meta name=&#34;keywords&#34; content=&#34;$keywords$&#34;&gt;$endfor$ $for(author)$&lt;meta name=&#34;author&#34; content=&#34;$author$&#34;/&gt;$endfor$ $if(date)$&lt;meta name=&#34;date&#34; content=&#34;$date$&#34;/&gt;$endif$ &lt;link rel=&#34;stylesheet&#34; href=&#34;styles.css&#34;&gt; &lt;/head&gt; &lt;header&gt; $if(title)$&lt;h1&gt;$title$&lt;/h1&gt;$endif$ $if(date)$&lt;h3&gt;$date$&lt;/h3&gt;$endif$ $if(author)$&lt;p&gt;$author$&lt;/p&gt;$endif$ &lt;/header&gt; &lt;main&gt; $if(subject)$&lt;h3&gt;$subject$&lt;/h3&gt;$endif$ $if(description)$&lt;p&gt;$description$&lt;/p&gt;$endif$ $if(category)$&lt;p&gt;$category$&lt;/p&gt;$endif$ &lt;nav&gt; $if(toc)$ $toc$ $endif$ &lt;/nav&gt; &lt;article&gt; $body$ &lt;/article&gt; &lt;/main&gt; &lt;/html&gt; Compilation du document html J’ai fait un petit exemple avec plein de balises Markdown. On peut remarquer que les cases à cocher ça marche pas.">
-  <meta property="og:locale" content="fr_fr">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2023-04-20T00:00:00+00:00">
-    <meta property="article:modified_time" content="2023-04-20T00:00:00+00:00">
-    <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="Pandoc">
-    <meta property="article:tag" content="Markdown">
-
-    
-    <link  href="/css/uikit.min.min.74065b0cc0cc771b6d0c8cdd1571f95022330dbe057cfe7f5c22ddf003313c6715e6047ab88bb5766ca27342b6d7b572f78f0fa2110438c5a0edeb269788d553.css" rel="stylesheet"  integrity="sha512-dAZbDMDMdxttDIzdFXH5UCIzDb4FfP5/XCLd8AMxPGcV5gR6uIu1dmyic0K217Vy948PohEEOMWg7esml4jVUw==" crossorigin="anonymous">
-    
-    <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
-    </head>
-<body>
-<header>
-    <div class="uk-container uk-container-xsmall uk-padding-small">
-        <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
-        <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
-    </div>
-
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-    <div class="uk-navbar-center ">
-        <ul class="uk-navbar-nav">
-            
-            <li class="uk-active"><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/notes/"><span uk-icon="icon:pencil; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
-            
-        </ul>
-    </div>
-</nav>
-<hr class="uk-divider-icon">
-</header>
-<main>
-
-
-<div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding">
-
-
-
-<ol class="uk-breadcrumb">
-  <li><a href="/">home</a></li>
-  
-    
-      
-      <li><a href='http://localhost:1313/posts'>posts</a></li>
-      
-      
-  
-    
-      
-      <li><a href='http://localhost:1313/posts/2023'>2023</a></li>
-      
-      
-  
-    
-      
-      <li><a href='http://localhost:1313/posts/2023/04'>04</a></li>
-      
-      
-  
-    
-      
-      <li><a href='http://localhost:1313/posts/2023/04/pandoc_html_template'>pandoc_html_template</a></li>
-      
-      
-  
-    
-      
-  
-
-</ol>
-
-
-    <article class="uk-article">
-        <h1 class="uk-article-title">Pandoc html template</h1>
-            <p class="uk-article-meta">2023-04-20 
-            
-            <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
-              <br>
-            <i>Temps de lecture: 1 minutes.</i>
-            </p>
-            
-                
-                 
-                <br/>
-            <p class="uk-text-lead">
-                
-                
-                <div class="uk-section uk-align-right">
-                    <div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
-                       <h3 class="uk-card-title">Table des matières</h3> 
-                       <p class="toc uk-text-small"> <nav id="TableOfContents">
-  <ul>
-    <li><a href="#exemple-de-template">Exemple de template</a></li>
-    <li><a href="#compilation-du-document-html">Compilation du document html</a></li>
-    <li><a href="#liens">Liens</a></li>
-  </ul>
-</nav></p>
-                    </div>
-                </div>
-                   
-                    <figure class="imagearticle"><img src="/posts/2023/04/pandoc_html_template/icon_pandoc_square_small.webp" width="200px">
-</figure>
-
-<p>Pour  gérer les templates avec Pandoc, on va utiliser un système de balises qui sont incluses dans l’entête du  fichier Markdown.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">---</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">Schrek</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">subtitle</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">Mon</span> <span style="color:#a6e22e">jolie</span> <span style="color:#a6e22e">site</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">abstract</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">Test</span> <span style="color:#a6e22e">template</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">abstract-title</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">test</span> <span style="color:#a6e22e">abstract-title</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">author</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">Schrek</span> <span style="color:#a6e22e">christophe</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">date</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#ae81ff">2023-03-23</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">site</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">https</span><span style="color:#960050;background-color:#1e0010">://</span><span style="color:#a6e22e">schrek</span>.<span style="color:#a6e22e">fr</span><span style="color:#960050;background-color:#1e0010">/</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">subject</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">Pandoc</span> <span style="color:#a6e22e">template</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">description</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">utilisation</span> <span style="color:#a6e22e">des</span> <span style="color:#a6e22e">templates</span> <span style="color:#a6e22e">avec</span> <span style="color:#a6e22e">Pandoc</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">logo</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">logo</span>.<span style="color:#a6e22e">png</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lang</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">fr</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">keywords</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">pandoc</span> <span style="color:#a6e22e">html5</span> <span style="color:#a6e22e">css</span> <span style="color:#a6e22e">template</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">category</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">Web</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">---</span></span></span></code></pre></div>
-<h2 id="exemple-de-template">Exemple de template</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt; 
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">html</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">if</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">lang</span><span style="color:#960050;background-color:#1e0010">)$</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;$lang$&#34;</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">endif</span><span style="color:#960050;background-color:#1e0010">$</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>    $for(description)$&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;description&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;$description$&#34;</span>&gt;$endfor$
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;$if(title)$$title$$endif$&lt;/<span style="color:#f92672">title</span>&gt;
-</span></span><span style="display:flex;"><span>    $for(keywords)$&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;keywords&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;$keywords$&#34;</span>&gt;$endfor$
-</span></span><span style="display:flex;"><span>    $for(author)$&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;author&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;$author$&#34;</span>/&gt;$endfor$
-</span></span><span style="display:flex;"><span>    $if(date)$&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;date&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;$date$&#34;</span>/&gt;$endif$
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;styles.css&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">header</span>&gt;
-</span></span><span style="display:flex;"><span>    $if(title)$&lt;<span style="color:#f92672">h1</span>&gt;$title$&lt;/<span style="color:#f92672">h1</span>&gt;$endif$
-</span></span><span style="display:flex;"><span>    $if(date)$&lt;<span style="color:#f92672">h3</span>&gt;$date$&lt;/<span style="color:#f92672">h3</span>&gt;$endif$
-</span></span><span style="display:flex;"><span>    $if(author)$&lt;<span style="color:#f92672">p</span>&gt;$author$&lt;/<span style="color:#f92672">p</span>&gt;$endif$
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">header</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">main</span>&gt;
-</span></span><span style="display:flex;"><span>    $if(subject)$&lt;<span style="color:#f92672">h3</span>&gt;$subject$&lt;/<span style="color:#f92672">h3</span>&gt;$endif$
-</span></span><span style="display:flex;"><span>    $if(description)$&lt;<span style="color:#f92672">p</span>&gt;$description$&lt;/<span style="color:#f92672">p</span>&gt;$endif$
-</span></span><span style="display:flex;"><span>    $if(category)$&lt;<span style="color:#f92672">p</span>&gt;$category$&lt;/<span style="color:#f92672">p</span>&gt;$endif$
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">nav</span>&gt;
-</span></span><span style="display:flex;"><span>$if(toc)$
-</span></span><span style="display:flex;"><span>$toc$
-</span></span><span style="display:flex;"><span>$endif$
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">nav</span>&gt;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">article</span>&gt;
-</span></span><span style="display:flex;"><span>$body$
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">article</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">main</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;</span></span></code></pre></div>
-<h2 id="compilation-du-document-html">Compilation du document html</h2>
-<p>J’ai fait un petit exemple avec plein de balises Markdown. On peut remarquer que les cases à cocher ça marche pas.</p>
-<p><a href="test.md.txt">test.md.txt <em>(clic droit enregistrer sous)</em></a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pandoc -s -f markdown+smart  --template template.html --toc --metadata  --to<span style="color:#f92672">=</span>html5 test.md -o index.html</span></span></code></pre></div>
-<p>Ça donne un fichier HTML brut.</p>
-<p><a href="index.html">index.html <em>(clic droit enregistrer sous)</em></a></p>
-<p>Il reste l’habillage avec du CSS (vite fait avec bootstrap), il faut recompiler le fichier a chaque modification du template.</p>
-<p><a href="index-2.html">index-2.html <em>(clic droit enregistrer sous)</em></a></p>
-<h2 id="liens">Liens</h2>
-<p><a href="https://pandoc.org/MANUAL.html#using-variables-in-templates">https://pandoc.org/MANUAL.html#using-variables-in-templates</a></p>
-<p><a href="https://github.com/ryangrose/easy-pandoc-templates">https://github.com/ryangrose/easy-pandoc-templates</a></p>
-<p><a href="https://maehr.github.io/academic-pandoc-template/">https://maehr.github.io/academic-pandoc-template/</a></p>
-
-            </p>
-    </article>
-    
-    <ul class="uk-pagination">
-    
-        <li><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/css_framework/"><span class="uk-margin-small-right" uk-pagination-previous></span> Les framework CSS</a></li>
-    
-    
-        <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/04/art%C3%A9mis/">Artémis - Andy Weir<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-    
-</ul>
-
-                    <hr class="uk-divider-icon">
-                    
-            <div class="uk-grid-small uk-child-width-auto " uk-grid>
-                <div>
-                    <p class="uk-text-light"><span uk-icon="icon:hashtag"></span>TAGS</p>
-                        <ul class="uk-list uk-display-inline-block">
-                            
-                            <li>
-                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/linux/">Linux</a>
-                            </li>
-                            
-                            <li>
-                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/pandoc/">Pandoc</a>
-                            </li>
-                            
-                            <li>
-                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/markdown/">Markdown</a>
-                            </li>
-                            
-                        </ul>
-                    <br>
-<a href='https://ko-fi.com/Q5Q7LH0AN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Beer at ko-fi.com' /></a>
-</div>
-
-            </div>
-        </div>
-
-
-        </main>
-<footer>
-    <div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
-        2024 - Construit avec <a class="uk-link-muted" href="https://gohugo.io/">Hugo</a> et de <a class="uk-link-muted" href="https://getuikit.com/">UiKit</a> 
-    </div>
-</footer>
-
-
-    <script src="/js/uikit.min.min.b795e52a95a6766546e08686e5d002243ef20e0fb3c22c860b7bd2adb02129b7.js" integrity="sha256-t5XlKpWmdmVG4IaG5dACJD7yDg&#43;zwiyGC3vSrbAhKbc=" crossorigin="anonymous"></script>
-
-    <script defer src="/js/uikit-icons.min.min.992015e15d0a403b809bb04d0599e2873818150584953ed5864664037c6b4333.js" integrity="sha256-mSAV4V0KQDuAm7BNBZnihzgYFQWElT7VhkZkA3xrQzM=" crossorigin="anonymous"></script>
-
-
-  
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-<script>
-  MathJax = {
-    tex: {
-      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
-      inlineMath: [['\\(', '\\)']]                  
-    }
-  };
-</script>
-
-
-
-  
-
-</body>
-</html>
+<!doctype html><html lang=fr><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Blog qui parle de lecture et de web"><meta name=keywords content="hugo,html,lecture,web,shortcode"><title>Schrek.fr</title>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-title content="My PWA"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js")</script><meta property="og:url" content="https://schrek.fr/posts/2023/04/pandoc_html_template/"><meta property="og:site_name" content="Schrek.fr"><meta property="og:title" content="Pandoc html template"><meta property="og:description" content='Pour gérer les templates avec Pandoc, on va utiliser un système de balises qui sont incluses dans l’entête du fichier Markdown.
+--- title: Schrek subtitle: Mon jolie site abstract: Test template abstract-title: test abstract-title author: Schrek christophe date: 2023-03-23 site: https://schrek.fr/ subject: Pandoc template description: utilisation des templates avec Pandoc logo: logo.png lang: fr keywords: pandoc html5 css template category: Web --- Exemple de template <!DOCTYPE html> <html> <head> <meta charset="utf-8"> <html $if(lang)$ lang="$lang$" $endif$ <meta name="viewport" content="width=device-width, initial-scale=1.0"> $for(description)$<meta name="description" content="$description$">$endfor$ <title>$if(title)$$title$$endif$</title> $for(keywords)$<meta name="keywords" content="$keywords$">$endfor$ $for(author)$<meta name="author" content="$author$"/>$endfor$ $if(date)$<meta name="date" content="$date$"/>$endif$ <link rel="stylesheet" href="styles.css"> </head> <header> $if(title)$<h1>$title$</h1>$endif$ $if(date)$<h3>$date$</h3>$endif$ $if(author)$<p>$author$</p>$endif$ </header> <main> $if(subject)$<h3>$subject$</h3>$endif$ $if(description)$<p>$description$</p>$endif$ $if(category)$<p>$category$</p>$endif$ <nav> $if(toc)$ $toc$ $endif$ </nav> <article> $body$ </article> </main> </html> Compilation du document html J’ai fait un petit exemple avec plein de balises Markdown. On peut remarquer que les cases à cocher ça marche pas.'><meta property="og:locale" content="fr_fr"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-04-20T00:00:00+00:00"><meta property="article:modified_time" content="2023-04-20T00:00:00+00:00"><meta property="article:tag" content="Linux"><meta property="article:tag" content="Pandoc"><meta property="article:tag" content="Markdown"><link href=/css/uikit.min.min.74065b0cc0cc771b6d0c8cdd1571f95022330dbe057cfe7f5c22ddf003313c6715e6047ab88bb5766ca27342b6d7b572f78f0fa2110438c5a0edeb269788d553.css rel=stylesheet integrity="sha512-dAZbDMDMdxttDIzdFXH5UCIzDb4FfP5/XCLd8AMxPGcV5gR6uIu1dmyic0K217Vy948PohEEOMWg7esml4jVUw==" crossorigin=anonymous><link href=/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css rel=stylesheet integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp+8kDvTq4rdsbpi6rWUJnq68ImIF+mScfMdRrPd7mRCOJAPMg==" crossorigin=anonymous></head><body><header><div class="uk-container uk-container-xsmall uk-padding-small"><a href=https://schrek.fr/><h1 classe=uk-heading-small>Schrek.fr</h1></a><a href=https://schrek.fr/><h2>Mon super blog :)</h2></a></div><nav class="uk-navbar-container uk-navbar-transparent" uk-navbar><div class=uk-navbar-center><ul class=uk-navbar-nav><li class=uk-active><a href=/><span uk-icon="icon:home; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/apropos/><span uk-icon="icon:info; ratio: 2"></span></a></li><li class=uk-active><a href=/wiki/><span uk-icon="icon:database; ratio: 2"></span></a></li><li class=uk-active><a href=/notes/><span uk-icon="icon:pencil; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/tagscloud/><span uk-icon="icon:hashtag; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/search/><span uk-icon="icon:search; ratio: 2"></span></a></li><li class=uk-active><a href=/index.xml><span uk-icon="icon:rss; ratio: 2"></span></a></li></ul></div></nav><hr class=uk-divider-icon></header><main><div class="uk-container uk-background-muted uk-box-shadow-large uk-padding"><ol class=uk-breadcrumb><li><a href=/>home</a></li><li><a href=https://schrek.fr/posts>posts</a></li><li><a href=https://schrek.fr/posts/2023>2023</a></li><li><a href=https://schrek.fr/posts/2023/04>04</a></li><li><a href=https://schrek.fr/posts/2023/04/pandoc_html_template>pandoc_html_template</a></li></ol><article class=uk-article><h1 class=uk-article-title>Pandoc html template</h1><p class=uk-article-meta>2023-04-20
+<span class="labelcat uk-label"><a href=/categories/web>Web</a></span><br><i>Temps de lecture: 1 minutes.</i></p><br><p class=uk-text-lead><div class="uk-section uk-align-right"><div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false"><h3 class=uk-card-title>Table des matières</h3><p class="toc uk-text-small"><nav id=TableOfContents><ul><li><a href=#exemple-de-template>Exemple de template</a></li><li><a href=#compilation-du-document-html>Compilation du document html</a></li><li><a href=#liens>Liens</a></li></ul></nav></p></div></div><figure class=imagearticle><img src=/posts/2023/04/pandoc_html_template/icon_pandoc_square_small.webp width=200px></figure><p>Pour gérer les templates avec Pandoc, on va utiliser un système de balises qui sont incluses dans l’entête du fichier Markdown.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=display:flex><span><span style=color:#a6e22e>---</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>title</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>Schrek</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>subtitle</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>Mon</span> <span style=color:#a6e22e>jolie</span> <span style=color:#a6e22e>site</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>abstract</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>Test</span> <span style=color:#a6e22e>template</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>abstract-title</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>test</span> <span style=color:#a6e22e>abstract-title</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>author</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>Schrek</span> <span style=color:#a6e22e>christophe</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>date</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#ae81ff>2023-03-23</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>site</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>https</span><span style=color:#960050;background-color:#1e0010>://</span><span style=color:#a6e22e>schrek</span>.<span style=color:#a6e22e>fr</span><span style=color:#960050;background-color:#1e0010>/</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>subject</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>Pandoc</span> <span style=color:#a6e22e>template</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>description</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>utilisation</span> <span style=color:#a6e22e>des</span> <span style=color:#a6e22e>templates</span> <span style=color:#a6e22e>avec</span> <span style=color:#a6e22e>Pandoc</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>logo</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>logo</span>.<span style=color:#a6e22e>png</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>lang</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>fr</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>keywords</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>pandoc</span> <span style=color:#a6e22e>html5</span> <span style=color:#a6e22e>css</span> <span style=color:#a6e22e>template</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>category</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#a6e22e>Web</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>---</span></span></span></code></pre></div><h2 id=exemple-de-template>Exemple de template</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span>&gt; 
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;utf-8&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>html</span> <span style=color:#960050;background-color:#1e0010>$</span><span style=color:#a6e22e>if</span><span style=color:#960050;background-color:#1e0010>(</span><span style=color:#a6e22e>lang</span><span style=color:#960050;background-color:#1e0010>)$</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;$lang$&#34;</span> <span style=color:#960050;background-color:#1e0010>$</span><span style=color:#a6e22e>endif</span><span style=color:#960050;background-color:#1e0010>$</span>
+</span></span><span style=display:flex><span>    <span style=color:#960050;background-color:#1e0010>&lt;</span><span style=color:#a6e22e>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;viewport&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style=display:flex><span>    $for(description)$&lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;description&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;$description$&#34;</span>&gt;$endfor$
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>title</span>&gt;$if(title)$$title$$endif$&lt;/<span style=color:#f92672>title</span>&gt;
+</span></span><span style=display:flex><span>    $for(keywords)$&lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;keywords&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;$keywords$&#34;</span>&gt;$endfor$
+</span></span><span style=display:flex><span>    $for(author)$&lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;author&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;$author$&#34;</span>/&gt;$endfor$
+</span></span><span style=display:flex><span>    $if(date)$&lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;date&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;$date$&#34;</span>/&gt;$endif$
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;stylesheet&#34;</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;styles.css&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>header</span>&gt;
+</span></span><span style=display:flex><span>    $if(title)$&lt;<span style=color:#f92672>h1</span>&gt;$title$&lt;/<span style=color:#f92672>h1</span>&gt;$endif$
+</span></span><span style=display:flex><span>    $if(date)$&lt;<span style=color:#f92672>h3</span>&gt;$date$&lt;/<span style=color:#f92672>h3</span>&gt;$endif$
+</span></span><span style=display:flex><span>    $if(author)$&lt;<span style=color:#f92672>p</span>&gt;$author$&lt;/<span style=color:#f92672>p</span>&gt;$endif$
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>header</span>&gt;
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>main</span>&gt;
+</span></span><span style=display:flex><span>    $if(subject)$&lt;<span style=color:#f92672>h3</span>&gt;$subject$&lt;/<span style=color:#f92672>h3</span>&gt;$endif$
+</span></span><span style=display:flex><span>    $if(description)$&lt;<span style=color:#f92672>p</span>&gt;$description$&lt;/<span style=color:#f92672>p</span>&gt;$endif$
+</span></span><span style=display:flex><span>    $if(category)$&lt;<span style=color:#f92672>p</span>&gt;$category$&lt;/<span style=color:#f92672>p</span>&gt;$endif$
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>nav</span>&gt;
+</span></span><span style=display:flex><span>$if(toc)$
+</span></span><span style=display:flex><span>$toc$
+</span></span><span style=display:flex><span>$endif$
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>nav</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>article</span>&gt;
+</span></span><span style=display:flex><span>$body$
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>article</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>main</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;</span></span></code></pre></div><h2 id=compilation-du-document-html>Compilation du document html</h2><p>J’ai fait un petit exemple avec plein de balises Markdown. On peut remarquer que les cases à cocher ça marche pas.</p><p><a href=test.md.txt>test.md.txt <em>(clic droit enregistrer sous)</em></a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>pandoc -s -f markdown+smart  --template template.html --toc --metadata  --to<span style=color:#f92672>=</span>html5 test.md -o index.html</span></span></code></pre></div><p>Ça donne un fichier HTML brut.</p><p><a href=index.html>index.html <em>(clic droit enregistrer sous)</em></a></p><p>Il reste l’habillage avec du CSS (vite fait avec bootstrap), il faut recompiler le fichier a chaque modification du template.</p><p><a href=index-2.html>index-2.html <em>(clic droit enregistrer sous)</em></a></p><h2 id=liens>Liens</h2><p><a href=https://pandoc.org/MANUAL.html#using-variables-in-templates>https://pandoc.org/MANUAL.html#using-variables-in-templates</a></p><p><a href=https://github.com/ryangrose/easy-pandoc-templates>https://github.com/ryangrose/easy-pandoc-templates</a></p><p><a href=https://maehr.github.io/academic-pandoc-template/>https://maehr.github.io/academic-pandoc-template/</a></p></p></article><ul class=uk-pagination><li><a class=uk-link-heading href=https://schrek.fr/posts/2023/04/css_framework/><span class=uk-margin-small-right uk-pagination-previous></span> Les framework CSS</a></li><li class=uk-margin-auto-left><a class=uk-link-heading href=https://schrek.fr/posts/2023/04/art%C3%A9mis/>Artémis - Andy Weir<span class=uk-margin-small-left uk-pagination-next></span></a></li></ul><hr class=uk-divider-icon><div class="uk-grid-small uk-child-width-auto" uk-grid><div><p class=uk-text-light><span uk-icon=icon:hashtag></span>TAGS</p><ul class="uk-list uk-display-inline-block"><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/linux/>Linux</a></li><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/pandoc/>Pandoc</a></li><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/markdown/>Markdown</a></li></ul><br><a href=https://ko-fi.com/Q5Q7LH0AN target=_blank><img height=36 style=border:0;height:36px src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border=0 alt='Buy Me a Beer at ko-fi.com'></a></div></div></div></main><footer><div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">2024 - Construit avec <a class=uk-link-muted href=https://gohugo.io/>Hugo</a> et de <a class=uk-link-muted href=https://getuikit.com/>UiKit</a></div></footer><script src=/js/uikit.min.min.b795e52a95a6766546e08686e5d002243ef20e0fb3c22c860b7bd2adb02129b7.js integrity="sha256-t5XlKpWmdmVG4IaG5dACJD7yDg+zwiyGC3vSrbAhKbc=" crossorigin=anonymous></script><script defer src=/js/uikit-icons.min.min.992015e15d0a403b809bb04d0599e2873818150584953ed5864664037c6b4333.js integrity="sha256-mSAV4V0KQDuAm7BNBZnihzgYFQWElT7VhkZkA3xrQzM=" crossorigin=anonymous></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script><script>MathJax={tex:{displayMath:[["\\[","\\]"],["$$","$$"]],inlineMath:[["\\(","\\)"]]}}</script></body></html>

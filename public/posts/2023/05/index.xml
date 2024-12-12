@@ -1,89 +1,235 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Mai 2023 on Schrek.fr</title>
-    <link>http://localhost:1313/posts/2023/05/</link>
-    <description>Recent content in Mai 2023 on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/2023/05/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Jimmy Somerville-Smalltown Boy </title>
-      <link>http://localhost:1313/posts/2023/05/jimmy-somerville--smalltown-boy/</link>
-      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/jimmy-somerville--smalltown-boy/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/jimmy-somerville--smalltown-boy/somerville.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;uk-card uk-card-default uk-card-body uk-width-1-2@m&#34;&gt;&#xA;    &lt;p&gt;&#34;&#xA;Run away, turn away, run away, turn away, run away.&#xA;Sauve-toi, détourne-toi, sauve-toi, détourne-toi, sauve-toi.&#xA;&#xA;&#34;&lt;/p&gt;&#xA;    &lt;div class=&#34;uk-text-right uk-text-muted&#34;&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;    &#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/CNhLOfUPHa8?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&#xA;      &gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Smalltown_Boy&#34;&gt;https://fr.wikipedia.org/wiki/Smalltown_Boy&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Bronski_Beat&#34;&gt;https://fr.wikipedia.org/wiki/Bronski_Beat&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.lacoccinelle.net/255473-bronski-beat-smalltown-boy.html&#34;&gt;https://www.lacoccinelle.net/255473-bronski-beat-smalltown-boy.html&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Shortcode Codepen</title>
-      <link>http://localhost:1313/posts/2023/05/hugo_shortcode_codepen/</link>
-      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/hugo_shortcode_codepen/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/hugo_shortcode_codepen/codepen-logo-8.png&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;On va creer notre shortcode pour le site &lt;a href=&#34;https://codepen.io/&#34;&gt;Codepen&lt;/a&gt;, ca qui va nous permetre l&amp;rsquo;afficher dans Hugo.&lt;/p&gt;&#xA;&lt;h2 id=&#34;le-code&#34;&gt;Le code&lt;/h2&gt;&#xA;&lt;p&gt;Sur le site de Codepen, dans l&amp;rsquo;onglet embeb on va trouver le code Html pour l&amp;rsquo;integrer sur un site.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;codepen&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data-height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;300&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data-theme-id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;light&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data-default-tab&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;html,result&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data-slug-hash&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;YzObPmg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data-user&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;christ0phe&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;See the Pen &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://codepen.io/christ0phe/pen/YzObPmg&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Purecss&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt; by christophe (&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://codepen.io/christ0phe&amp;#34;&lt;/span&gt;&amp;gt;@christ0phe&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  on &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://codepen.io&amp;#34;&lt;/span&gt;&amp;gt;CodePen&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;.&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://cpwebassets.codepen.io/assets/embed/ei.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;le-shortcode&#34;&gt;Le Shortcode&lt;/h2&gt;&#xA;&lt;p&gt;Dans le lien de Codepen on a l&amp;rsquo;identifiant a la fin  &lt;em&gt;YzObPmg&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hugo et les commentaires</title>
-      <link>http://localhost:1313/posts/2023/05/hugo_les_commentaires/</link>
-      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/hugo_les_commentaires/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/hugo_les_commentaires/cactus.wepb&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Pas facile de choisir un systeme de commentaire pour &lt;a href=&#34;https://gohugo.io/content-management/comments/&#34;&gt;Hugo&lt;/a&gt;, la facilitée c est &lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt; avec un template &lt;a href=&#34;https://gohugo.io/content-management/comments/#add-disqus&#34;&gt;interne&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cactus&#34;&gt;Cactus&lt;/h2&gt;&#xA;&lt;p&gt;Mon choix c&amp;rsquo;est dirigé vers &lt;a href=&#34;https://cactus.chat/&#34;&gt;cactus.chat&lt;/a&gt;, déjà pour la doc qui est facile d&amp;rsquo;accés et pour &lt;a href=&#34;https://matrix.org/&#34;&gt;Matrix&lt;/a&gt; qui utilise un protocole ouvert (&lt;a href=&#34;https://fr.wikipedia.org/wiki/Matrix_(protocole)&#34;&gt;Wikipedia&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;C&amp;rsquo;est bien indiqué &lt;a href=&#34;https://cactus.chat/docs/integrations/hugo/&#34;&gt;ici&lt;/a&gt;.&#xA;&lt;em&gt;The shortcode chat.html must be added to layouts/shortcodes/ and looks like this&lt;/em&gt;&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;uk-alert-warning&#34; uk-alert&gt;&#xA;    &lt;span uk-icon=&#34;icon: warning ; ratio:2&#34;&gt;&lt;/span&gt;&#xA;    &lt;a class=&#34;uk-alert-close&#34; uk-close&gt;&lt;/a&gt;&#xA;    &lt;p class=&#34;bandeau&#34;&gt;YOUR-SITE-NAME Bien changer cette variable avec le nom de votre site&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Alias Emma - Ava Glass </title>
-      <link>http://localhost:1313/posts/2023/05/alias-emma---ava-glass/</link>
-      <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/alias-emma---ava-glass/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/alias-emma---ava-glass/aliasemma.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Un livre plein d&amp;rsquo;action, une histoire qui tient la route. On decouvre Londre a travers differents quartier et des lieux insolites.&lt;/p&gt;&#xA;&lt;h2 id=&#34;résumé&#34;&gt;Résumé&lt;/h2&gt;&#xA;&lt;p&gt;Agente surdouée du MI6 britannique, Emma Makepeace doit exfiltrer en catastrophe un jeune médecin russe qui travaille dans un hôpital de Londres. Michael Primalov ignore que cette inconnue de vingt-cinq ans a pour mission de le soustraire à une équipe d&amp;rsquo;assassins diligentée par Moscou.&lt;br&gt;&#xA;Les Russes ont envoyé leurs meilleurs agents et ils ont piraté les caméras de Londres, la capitale la plus surveillée du monde. Dans la ville endormie commence une folle course poursuite. Emma se bat pour garder Michael en vie, mais les Russes ont toujours une longueur d&amp;rsquo;avance.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cible une - Jack Mars</title>
-      <link>http://localhost:1313/posts/2023/05/cible-une---jack-mars/</link>
-      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/cible-une---jack-mars/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/cible-une---jack-mars/cibleune.jpg&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Un livre d&amp;rsquo;aventure et d&amp;rsquo;espionnage sans surprise, un hero a &amp;ldquo;l&amp;rsquo;americaine&amp;rdquo; indestructible mais avec ces petites failles.&#xA;Un 007 façon guerrier.&lt;/p&gt;&#xA;&lt;h2 id=&#34;résumé&#34;&gt;Résumé&lt;/h2&gt;&#xA;&lt;p&gt;Jacob Snow – soldat d’élite recruté par la CIA et hanté par son passé torturé – est l’un des meilleurs atouts de l’Agence, c’est pourquoi il est envoyé sur place lorsque les enjeux sont des plus élevés. Quand une ancienne relique égyptienne disparaît dans des circonstances mystérieuses, Jacob sait qu’il ne s’agit pas d’un vol ordinaire : la relique renferme un secret – un secret qui pourrait tout anéantir.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Les signaux SNCF avec Draw.IO</title>
-      <link>http://localhost:1313/posts/2023/05/drawio_signauxsncf/</link>
-      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/drawio_signauxsncf/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/drawio_signauxsncf/drawnio.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/nicolaswurtz&#34;&gt;Nicolas Wurtz&lt;/a&gt; un agent SNCF ,qui développe aussi &lt;a href=&#34;https://graou.info/apropos/index.html&#34;&gt;Graou&lt;/a&gt; un outil métier qui permet aux agents de s&amp;rsquo;organiser, a ajouté les signaux SNCF sur &lt;a href=&#34;https://www.drawio.com/&#34;&gt;Drawn.IO&lt;/a&gt;.&#xA;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;fr&#34; dir=&#34;ltr&#34;&gt;Hey la &lt;a href=&#34;https://twitter.com/hashtag/teamSNCF?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#teamSNCF&lt;/a&gt; ! Besoin de tracer des voies avec des signaux/pancartes et des trains ? c&amp;#39;est galère ? Bon ben j&amp;#39;ai créé une librairie pour draw io !&lt;a href=&#34;https://t.co/WwHn1Vtb41&#34;&gt;https://t.co/WwHn1Vtb41&lt;/a&gt;&lt;br&gt;&lt;br&gt;Et tout est opensource sur &lt;a href=&#34;https://t.co/g21l5UpgkI&#34;&gt;https://t.co/g21l5UpgkI&lt;/a&gt; (les trains viennent de &lt;a href=&#34;https://t.co/EEcKybvFDN&#34;&gt;https://t.co/EEcKybvFDN&lt;/a&gt;). 💚 &lt;a href=&#34;https://t.co/OZ6BZ9AJHC&#34;&gt;pic.twitter.com/OZ6BZ9AJHC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Nicolas Wurtz (@NicolasW_GRAOU) &lt;a href=&#34;https://twitter.com/NicolasW_GRAOU/status/1657310776909000704?ref_src=twsrc%5Etfw&#34;&gt;May 13, 2023&lt;/a&gt;&lt;/blockquote&gt;&#xA;&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Cela va permettre aux agents de préparer leurs études de ligne.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hugo shortcode</title>
-      <link>http://localhost:1313/posts/2023/05/hugo_shortcode/</link>
-      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/hugo_shortcode/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/hugo_shortcode/hugo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;uk-alert-success&#34; uk-alert&gt;&#xA;    &lt;span uk-icon=&#34;icon: info ; ratio:2&#34;&gt;&lt;/span&gt;&#xA;    &lt;a class=&#34;uk-alert-close&#34; uk-close&gt;&lt;/a&gt;&#xA;    &lt;p class=&#34;bandeau&#34;&gt;Maj 15/05/2023: Ajout des icones personalisées des bandeaux.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;p&gt;La syntaxe Markdown a des limites, Hugo utilise des « bouts de code » pour passer ces limites.&lt;/p&gt;&#xA;&lt;p&gt;L’inconvénient c’est de retenir les balises.&lt;/p&gt;&#xA;&lt;p&gt;L&amp;rsquo;avantage est d&amp;rsquo;intégrer des fonctions au sein même du contenu, sans toucher au template.&lt;/p&gt;&#xA;&lt;h2 id=&#34;shortcode-interne&#34;&gt;Shortcode interne&lt;/h2&gt;&#xA;&lt;p&gt;Vous trouverez pleins d&amp;rsquo;exemple sur le site officiel.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;https://gohugo.io/content-management/shortcodes/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;shortcodes-personnalisés&#34;&gt;shortcodes personnalisés&lt;/h2&gt;&#xA;&lt;h3 id=&#34;des-icônes&#34;&gt;Des icônes&lt;/h3&gt;&#xA;&lt;p&gt;On va se servir des icônes du framework du site.&#xA;&lt;a href=&#34;https://getuikit.com/docs/icon&#34;&gt;https://getuikit.com/docs/icon&lt;/a&gt;&#xA;Pour afficher une icône en HTML c est:&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;uk-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;icon: check&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Re-organisation du site</title>
-      <link>http://localhost:1313/posts/2023/05/reorganisation-du--site/</link>
-      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/reorganisation-du--site/</guid>
-      <description>&lt;p&gt;Je commençais à me mêler les pinceaux avec tous les articles, j&amp;rsquo;ai décider de changer l&amp;rsquo;organisation du site.&lt;/p&gt;&#xA;&lt;p&gt;Je voulais aussi des URL &lt;em&gt;lisibles&lt;/em&gt;&lt;/p&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/reorganisation-du--site/site-hierarchy.webp&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;nouvelle-organisation&#34;&gt;Nouvelle organisation&lt;/h2&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai organisé mon dossier &lt;em&gt;content&lt;/em&gt; comme sur le diagramme dessous, les articles seront rangés par date (année, mois).&lt;/p&gt;&#xA;&lt;div class=&#34;mermaid&#34;&gt;&#xA;&#xA;    &#xA; flowchart LR&#xA;    A[Schrek.fr]--&gt;B(Pages)&#xA;    B--&gt;F[About]&#xA;    B--&gt;G[search]&#xA;    A--&gt;C[Posts]&#xA;    D--&gt;K[Pages]&#xA;    C--&gt;E[2023]&#xA;    E--&gt;H(01)&#xA;    E--&gt;I(02)&#xA;    E--&gt;J(03) &#xA;    A--&gt;D[Wiki]&#xA;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;script type=&#34;application/javascript&#34; src=&#34;http://localhost:1313/js/mermaid.min.min.1e7e5b9d4c8acb893fab3cbf54de057c59f7ecaff89afb3e239a9f8be53cca99.js&#34; defer&gt;&lt;/script&gt;&#xA;&#xA;&lt;script type=&#34;module&#34;&gt;&#xA;&#xA;    mermaid.initialize({});&#xA;&#xA;&lt;/script&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;h1 id=&#34;les-urls&#34;&gt;Les URLs&lt;/h1&gt;&#xA;&lt;p&gt;Dans mon ficher &lt;em&gt;config.toml&lt;/em&gt;, j&amp;rsquo;ai rajouté:&lt;/p&gt;&#xA;&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;permalinks&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/:year/:month/:title/&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;a href=&#34;https://gohugo.io/content-management/urls/#permalinks-examples&#34;&gt;&lt;em&gt;Source Hugo&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hugo - Création d’un menu</title>
-      <link>http://localhost:1313/posts/2023/05/hugo_menu/</link>
-      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/hugo_menu/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/hugo_menu/hugo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;On va rajouter un menu a notre template.&lt;/p&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;On pourrait passer par le HTML en ajoutant dans le &lt;em&gt;header&lt;/em&gt; ou dans un fichier &lt;em&gt;partial/nav.html&lt;/em&gt; et en l&amp;rsquo;ajoutant dans le &lt;em&gt;base_of.html&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;nav&lt;/span&gt;&amp;gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&amp;gt;Home&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/about&amp;#34;&lt;/span&gt;&amp;gt;About&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/contact&amp;#34;&lt;/span&gt;&amp;gt;Contact&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;nav&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;p&gt;Mais Hugo permet de faire plus efficace.&#xA;il faut créer dans &lt;em&gt;themes/MONTHEME/layouts/partials/&lt;/em&gt; un fichier &lt;em&gt;nav.html&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;nav&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  {{ range .Site.Menus.main }}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ .URL }}&amp;#34;&lt;/span&gt;&amp;gt;{{ .Name }}&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  {{ end }}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;nav&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;explication&#34;&gt;Explication&lt;/h2&gt;&#xA;&lt;p&gt;On demande a Hugo de regarder dans le fichier de configuration &lt;em&gt;config.toml&lt;/em&gt;, s&amp;rsquo;il y a un &lt;em&gt;Menus.main&lt;/em&gt; et de lister ce qu&amp;rsquo;il y a en argument.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Silo - Hugh Howey</title>
-      <link>http://localhost:1313/posts/2023/05/silo-hugh_howey/</link>
-      <pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/silo-hugh_howey/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/silo-hugh_howey/silo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Une série post-apocalyptique écrite par &lt;a href=&#34;https://fr.wikipedia.org/wiki/Hugh_Howey&#34;&gt;Hugh Howey&lt;/a&gt;.&#xA;On suit la vie dans un silo isolé du monde, avec un système de caste et beaucoup d&amp;rsquo;intrigues.&lt;/p&gt;&#xA;&lt;p&gt;Pour la lecture des romans, il faut suivre l&amp;rsquo;ordre de publication:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Silo (2011)&lt;/li&gt;&#xA;&lt;li&gt;Silo: Origine (2013)&lt;/li&gt;&#xA;&lt;li&gt;Silo: Génération (2016)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Une série existe &lt;a href=&#34;https://www.allocine.fr/series/ficheserie_gen_cserie=29245.html&#34;&gt;Allociné&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&#xA;    &#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/bBMajXwi6Cs?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;Silo — Official Teaser&#34;&#xA;      &gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;résumé&#34;&gt;Résumé&lt;/h2&gt;&#xA;&lt;p&gt;Dans un futur post-apocalyptique indéterminé, quelques milliers de survivants ont établi une société dans un silo souterrain de 144 étages.&#xA;Les règles de vie sont strictes. Pour avoir le droit de faire un enfant, les couples doivent s’inscrire à une loterie.&#xA;Mais les tickets de naissance des uns ne sont redistribués qu’en fonction de la mort des autres.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hugo - Création d’un thème</title>
-      <link>http://localhost:1313/posts/2023/05/hugo_creation_theme/</link>
-      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/hugo_creation_theme/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/hugo_creation_theme/hugo.webp&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Après l’article sur l&amp;rsquo;installation d&amp;rsquo;Hugo et la mise en place d’un thème, on va créer notre thème perso.&lt;/p&gt;&#xA;&lt;p&gt;On se place dans le dossier de notre projet.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ hugo new theme christophe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cd themes/christophe/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ tree&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── archetypes&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── default.md &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;modeles pour les articles et les pages&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── layouts&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── 404.html&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── _default&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   │   ├── baseof.html &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;page qui structure les autres pages&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   │   ├── list.html &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; exemple la liste des articles&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   │   └── single.html &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;un article &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── index.html &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;page d&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;accueil)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;│   └── partials&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;│       ├── footer.html (pied de page)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;│       ├── header.html (haut de page)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;│       └── head.html (entete html)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;├── LICENSE&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;├── static  ( dossier ou l&amp;#39;&lt;/span&gt;on met les images/css/java&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── css&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── js&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└── theme.toml&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;p&gt;Hugo a créé une organisation minimale pour un projet.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mai 2023 on Schrek.fr</title><link>https://schrek.fr/posts/2023/05/</link><description>Recent content in Mai 2023 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/posts/2023/05/index.xml" rel="self" type="application/rss+xml"/><item><title>Jimmy Somerville-Smalltown Boy</title><link>https://schrek.fr/posts/2023/05/jimmy-somerville--smalltown-boy/</link><pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/jimmy-somerville--smalltown-boy/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/jimmy-somerville--smalltown-boy/somerville.webp" width="200px">
+&lt;/figure>
+
+
+
+
+&lt;div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+ &lt;p>"
+Run away, turn away, run away, turn away, run away.
+Sauve-toi, détourne-toi, sauve-toi, détourne-toi, sauve-toi.
+
+"&lt;/p>
+ &lt;div class="uk-text-right uk-text-muted">&lt;/div>
+&lt;/div>
+
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/CNhLOfUPHa8?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="liens">Liens&lt;/h2>
+&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/Smalltown_Boy">https://fr.wikipedia.org/wiki/Smalltown_Boy&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/Bronski_Beat">https://fr.wikipedia.org/wiki/Bronski_Beat&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.lacoccinelle.net/255473-bronski-beat-smalltown-boy.html">https://www.lacoccinelle.net/255473-bronski-beat-smalltown-boy.html&lt;/a>&lt;/p></description></item><item><title>Shortcode Codepen</title><link>https://schrek.fr/posts/2023/05/hugo_shortcode_codepen/</link><pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/hugo_shortcode_codepen/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/hugo_shortcode_codepen/codepen-logo-8.png" width="200px">
+&lt;/figure>
+
+&lt;p>On va creer notre shortcode pour le site &lt;a href="https://codepen.io/">Codepen&lt;/a>, ca qui va nous permetre l&amp;rsquo;afficher dans Hugo.&lt;/p>
+&lt;h2 id="le-code">Le code&lt;/h2>
+&lt;p>Sur le site de Codepen, dans l&amp;rsquo;onglet embeb on va trouver le code Html pour l&amp;rsquo;integrer sur un site.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">p&lt;/span> &lt;span style="color:#a6e22e">class&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;codepen&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">data-height&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;300&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">data-theme-id&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;light&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">data-default-tab&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;html,result&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">data-slug-hash&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;YzObPmg&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">data-user&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;christ0phe&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">style&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">span&lt;/span>&amp;gt;See the Pen &amp;lt;&lt;span style="color:#f92672">a&lt;/span> &lt;span style="color:#a6e22e">href&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://codepen.io/christ0phe/pen/YzObPmg&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Purecss&amp;lt;/&lt;span style="color:#f92672">a&lt;/span>&amp;gt; by christophe (&amp;lt;&lt;span style="color:#f92672">a&lt;/span> &lt;span style="color:#a6e22e">href&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://codepen.io/christ0phe&amp;#34;&lt;/span>&amp;gt;@christ0phe&amp;lt;/&lt;span style="color:#f92672">a&lt;/span>&amp;gt;)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> on &amp;lt;&lt;span style="color:#f92672">a&lt;/span> &lt;span style="color:#a6e22e">href&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://codepen.io&amp;#34;&lt;/span>&amp;gt;CodePen&amp;lt;/&lt;span style="color:#f92672">a&lt;/span>&amp;gt;.&amp;lt;/&lt;span style="color:#f92672">span&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">p&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">script&lt;/span> &lt;span style="color:#a6e22e">async&lt;/span> &lt;span style="color:#a6e22e">src&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://cpwebassets.codepen.io/assets/embed/ei.js&amp;#34;&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">script&lt;/span>&amp;gt;&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="le-shortcode">Le Shortcode&lt;/h2>
+&lt;p>Dans le lien de Codepen on a l&amp;rsquo;identifiant a la fin &lt;em>YzObPmg&lt;/em>&lt;/p></description></item><item><title>Hugo et les commentaires</title><link>https://schrek.fr/posts/2023/05/hugo_les_commentaires/</link><pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/hugo_les_commentaires/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/hugo_les_commentaires/cactus.wepb" width="200px">
+&lt;/figure>
+
+&lt;p>Pas facile de choisir un systeme de commentaire pour &lt;a href="https://gohugo.io/content-management/comments/">Hugo&lt;/a>, la facilitée c est &lt;a href="https://disqus.com/">Disqus&lt;/a> avec un template &lt;a href="https://gohugo.io/content-management/comments/#add-disqus">interne&lt;/a>.&lt;/p>
+&lt;h2 id="cactus">Cactus&lt;/h2>
+&lt;p>Mon choix c&amp;rsquo;est dirigé vers &lt;a href="https://cactus.chat/">cactus.chat&lt;/a>, déjà pour la doc qui est facile d&amp;rsquo;accés et pour &lt;a href="https://matrix.org/">Matrix&lt;/a> qui utilise un protocole ouvert (&lt;a href="https://fr.wikipedia.org/wiki/Matrix_(protocole)">Wikipedia&lt;/a>).&lt;/p>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;p>C&amp;rsquo;est bien indiqué &lt;a href="https://cactus.chat/docs/integrations/hugo/">ici&lt;/a>.
+&lt;em>The shortcode chat.html must be added to layouts/shortcodes/ and looks like this&lt;/em>&lt;/p>
+
+
+
+
+
+
+
+
+
+
+&lt;div class="uk-alert-warning" uk-alert>
+ &lt;span uk-icon="icon: warning ; ratio:2">&lt;/span>
+ &lt;a class="uk-alert-close" uk-close>&lt;/a>
+ &lt;p class="bandeau">YOUR-SITE-NAME Bien changer cette variable avec le nom de votre site&lt;/p></description></item><item><title>Alias Emma - Ava Glass</title><link>https://schrek.fr/posts/2023/05/alias-emma---ava-glass/</link><pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/alias-emma---ava-glass/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/alias-emma---ava-glass/aliasemma.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Un livre plein d&amp;rsquo;action, une histoire qui tient la route. On decouvre Londre a travers differents quartier et des lieux insolites.&lt;/p>
+&lt;h2 id="résumé">Résumé&lt;/h2>
+&lt;p>Agente surdouée du MI6 britannique, Emma Makepeace doit exfiltrer en catastrophe un jeune médecin russe qui travaille dans un hôpital de Londres. Michael Primalov ignore que cette inconnue de vingt-cinq ans a pour mission de le soustraire à une équipe d&amp;rsquo;assassins diligentée par Moscou.&lt;br>
+Les Russes ont envoyé leurs meilleurs agents et ils ont piraté les caméras de Londres, la capitale la plus surveillée du monde. Dans la ville endormie commence une folle course poursuite. Emma se bat pour garder Michael en vie, mais les Russes ont toujours une longueur d&amp;rsquo;avance.&lt;/p></description></item><item><title>Cible une - Jack Mars</title><link>https://schrek.fr/posts/2023/05/cible-une---jack-mars/</link><pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/cible-une---jack-mars/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/cible-une---jack-mars/cibleune.jpg" width="200px">
+&lt;/figure>
+
+&lt;p>Un livre d&amp;rsquo;aventure et d&amp;rsquo;espionnage sans surprise, un hero a &amp;ldquo;l&amp;rsquo;americaine&amp;rdquo; indestructible mais avec ces petites failles.
+Un 007 façon guerrier.&lt;/p>
+&lt;h2 id="résumé">Résumé&lt;/h2>
+&lt;p>Jacob Snow – soldat d’élite recruté par la CIA et hanté par son passé torturé – est l’un des meilleurs atouts de l’Agence, c’est pourquoi il est envoyé sur place lorsque les enjeux sont des plus élevés. Quand une ancienne relique égyptienne disparaît dans des circonstances mystérieuses, Jacob sait qu’il ne s’agit pas d’un vol ordinaire : la relique renferme un secret – un secret qui pourrait tout anéantir.&lt;/p></description></item><item><title>Les signaux SNCF avec Draw.IO</title><link>https://schrek.fr/posts/2023/05/drawio_signauxsncf/</link><pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/drawio_signauxsncf/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/drawio_signauxsncf/drawnio.webp" width="200px">
+&lt;/figure>
+
+&lt;p>&lt;a href="https://github.com/nicolaswurtz">Nicolas Wurtz&lt;/a> un agent SNCF ,qui développe aussi &lt;a href="https://graou.info/apropos/index.html">Graou&lt;/a> un outil métier qui permet aux agents de s&amp;rsquo;organiser, a ajouté les signaux SNCF sur &lt;a href="https://www.drawio.com/">Drawn.IO&lt;/a>.
+&lt;blockquote class="twitter-tweet">&lt;p lang="fr" dir="ltr">Hey la &lt;a href="https://twitter.com/hashtag/teamSNCF?src=hash&amp;amp;ref_src=twsrc%5Etfw">#teamSNCF&lt;/a> ! Besoin de tracer des voies avec des signaux/pancartes et des trains ? c&amp;#39;est galère ? Bon ben j&amp;#39;ai créé une librairie pour draw io !&lt;a href="https://t.co/WwHn1Vtb41">https://t.co/WwHn1Vtb41&lt;/a>&lt;br>&lt;br>Et tout est opensource sur &lt;a href="https://t.co/g21l5UpgkI">https://t.co/g21l5UpgkI&lt;/a> (les trains viennent de &lt;a href="https://t.co/EEcKybvFDN">https://t.co/EEcKybvFDN&lt;/a>). 💚 &lt;a href="https://t.co/OZ6BZ9AJHC">pic.twitter.com/OZ6BZ9AJHC&lt;/a>&lt;/p>&amp;mdash; Nicolas Wurtz (@NicolasW_GRAOU) &lt;a href="https://twitter.com/NicolasW_GRAOU/status/1657310776909000704?ref_src=twsrc%5Etfw">May 13, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+
+&lt;/p>
+&lt;p>Cela va permettre aux agents de préparer leurs études de ligne.&lt;/p></description></item><item><title>Hugo shortcode</title><link>https://schrek.fr/posts/2023/05/hugo_shortcode/</link><pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/hugo_shortcode/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/hugo_shortcode/hugo.webp" width="200px">
+&lt;/figure>
+
+
+
+
+
+
+
+ 
+
+
+
+&lt;div class="uk-alert-success" uk-alert>
+ &lt;span uk-icon="icon: info ; ratio:2">&lt;/span>
+ &lt;a class="uk-alert-close" uk-close>&lt;/a>
+ &lt;p class="bandeau">Maj 15/05/2023: Ajout des icones personalisées des bandeaux.&lt;/p>
+&lt;/div>
+
+
+&lt;p>La syntaxe Markdown a des limites, Hugo utilise des « bouts de code » pour passer ces limites.&lt;/p>
+&lt;p>L’inconvénient c’est de retenir les balises.&lt;/p>
+&lt;p>L&amp;rsquo;avantage est d&amp;rsquo;intégrer des fonctions au sein même du contenu, sans toucher au template.&lt;/p>
+&lt;h2 id="shortcode-interne">Shortcode interne&lt;/h2>
+&lt;p>Vous trouverez pleins d&amp;rsquo;exemple sur le site officiel.&lt;/p>
+&lt;p>&lt;a href="https://gohugo.io/content-management/shortcodes/">https://gohugo.io/content-management/shortcodes/&lt;/a>&lt;/p>
+&lt;h2 id="shortcodes-personnalisés">shortcodes personnalisés&lt;/h2>
+&lt;h3 id="des-icônes">Des icônes&lt;/h3>
+&lt;p>On va se servir des icônes du framework du site.
+&lt;a href="https://getuikit.com/docs/icon">https://getuikit.com/docs/icon&lt;/a>
+Pour afficher une icône en HTML c est:
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">span&lt;/span> &lt;span style="color:#a6e22e">uk-icon&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;icon: check&amp;#34;&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">span&lt;/span>&amp;gt;&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/p></description></item><item><title>Re-organisation du site</title><link>https://schrek.fr/posts/2023/05/reorganisation-du--site/</link><pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/reorganisation-du--site/</guid><description>&lt;p>Je commençais à me mêler les pinceaux avec tous les articles, j&amp;rsquo;ai décider de changer l&amp;rsquo;organisation du site.&lt;/p>
+&lt;p>Je voulais aussi des URL &lt;em>lisibles&lt;/em>&lt;/p>
+&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/reorganisation-du--site/site-hierarchy.webp" width="600px">
+&lt;/figure>
+
+&lt;h2 id="nouvelle-organisation">Nouvelle organisation&lt;/h2>
+&lt;p>J&amp;rsquo;ai organisé mon dossier &lt;em>content&lt;/em> comme sur le diagramme dessous, les articles seront rangés par date (année, mois).&lt;/p>
+&lt;div class="mermaid">
+
+ 
+ flowchart LR
+ A[Schrek.fr]-->B(Pages)
+ B-->F[About]
+ B-->G[search]
+ A-->C[Posts]
+ D-->K[Pages]
+ C-->E[2023]
+ E-->H(01)
+ E-->I(02)
+ E-->J(03) 
+ A-->D[Wiki]
+
+
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+&lt;script type="application/javascript" src="https://schrek.fr/js/mermaid.min.min.1e7e5b9d4c8acb893fab3cbf54de057c59f7ecaff89afb3e239a9f8be53cca99.js" defer>&lt;/script>
+
+&lt;script type="module">
+
+ mermaid.initialize({});
+
+&lt;/script>
+
+
+
+
+&lt;h1 id="les-urls">Les URLs&lt;/h1>
+&lt;p>Dans mon ficher &lt;em>config.toml&lt;/em>, j&amp;rsquo;ai rajouté:&lt;/p>
+&lt;p>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-toml" data-lang="toml">&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#a6e22e">permalinks&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#e6db74">&amp;#39;/&amp;#39;&lt;/span> = &lt;span style="color:#e6db74">&amp;#39;/:year/:month/:title/&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;a href="https://gohugo.io/content-management/urls/#permalinks-examples">&lt;em>Source Hugo&lt;/em>&lt;/a>&lt;/p></description></item><item><title>Hugo - Création d’un menu</title><link>https://schrek.fr/posts/2023/05/hugo_menu/</link><pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/hugo_menu/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/hugo_menu/hugo.webp" width="200px">
+&lt;/figure>
+
+&lt;p>On va rajouter un menu a notre template.&lt;/p>
+&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>On pourrait passer par le HTML en ajoutant dans le &lt;em>header&lt;/em> ou dans un fichier &lt;em>partial/nav.html&lt;/em> et en l&amp;rsquo;ajoutant dans le &lt;em>base_of.html&lt;/em>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">nav&lt;/span>&amp;gt; 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">ul&lt;/span>&amp;gt; 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">li&lt;/span>&amp;gt;&amp;lt;&lt;span style="color:#f92672">a&lt;/span> &lt;span style="color:#a6e22e">href&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/&amp;#34;&lt;/span>&amp;gt;Home&amp;lt;/&lt;span style="color:#f92672">a&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">li&lt;/span>&amp;gt; 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">li&lt;/span>&amp;gt;&amp;lt;&lt;span style="color:#f92672">a&lt;/span> &lt;span style="color:#a6e22e">href&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/about&amp;#34;&lt;/span>&amp;gt;About&amp;lt;/&lt;span style="color:#f92672">a&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">li&lt;/span>&amp;gt; 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">li&lt;/span>&amp;gt;&amp;lt;&lt;span style="color:#f92672">a&lt;/span> &lt;span style="color:#a6e22e">href&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/contact&amp;#34;&lt;/span>&amp;gt;Contact&amp;lt;/&lt;span style="color:#f92672">a&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">li&lt;/span>&amp;gt; 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">ul&lt;/span>&amp;gt; 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">nav&lt;/span>&amp;gt;&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>Mais Hugo permet de faire plus efficace.
+il faut créer dans &lt;em>themes/MONTHEME/layouts/partials/&lt;/em> un fichier &lt;em>nav.html&lt;/em>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">nav&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">ul&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ range .Site.Menus.main }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">li&lt;/span>&amp;gt;&amp;lt;&lt;span style="color:#f92672">a&lt;/span> &lt;span style="color:#a6e22e">href&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;{{ .URL }}&amp;#34;&lt;/span>&amp;gt;{{ .Name }}&amp;lt;/&lt;span style="color:#f92672">a&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">li&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ end }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">ul&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">nav&lt;/span>&amp;gt;&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="explication">Explication&lt;/h2>
+&lt;p>On demande a Hugo de regarder dans le fichier de configuration &lt;em>config.toml&lt;/em>, s&amp;rsquo;il y a un &lt;em>Menus.main&lt;/em> et de lister ce qu&amp;rsquo;il y a en argument.&lt;/p></description></item><item><title>Silo - Hugh Howey</title><link>https://schrek.fr/posts/2023/05/silo-hugh_howey/</link><pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/silo-hugh_howey/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/silo-hugh_howey/silo.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Une série post-apocalyptique écrite par &lt;a href="https://fr.wikipedia.org/wiki/Hugh_Howey">Hugh Howey&lt;/a>.
+On suit la vie dans un silo isolé du monde, avec un système de caste et beaucoup d&amp;rsquo;intrigues.&lt;/p>
+&lt;p>Pour la lecture des romans, il faut suivre l&amp;rsquo;ordre de publication:&lt;/p>
+&lt;ul>
+&lt;li>Silo (2011)&lt;/li>
+&lt;li>Silo: Origine (2013)&lt;/li>
+&lt;li>Silo: Génération (2016)&lt;/li>
+&lt;/ul>
+&lt;p>Une série existe &lt;a href="https://www.allocine.fr/series/ficheserie_gen_cserie=29245.html">Allociné&lt;/a>&lt;/p>
+
+
+ 
+ &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bBMajXwi6Cs?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="Silo — Official Teaser"
+ >&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="résumé">Résumé&lt;/h2>
+&lt;p>Dans un futur post-apocalyptique indéterminé, quelques milliers de survivants ont établi une société dans un silo souterrain de 144 étages.
+Les règles de vie sont strictes. Pour avoir le droit de faire un enfant, les couples doivent s’inscrire à une loterie.
+Mais les tickets de naissance des uns ne sont redistribués qu’en fonction de la mort des autres.&lt;/p></description></item><item><title>Hugo - Création d’un thème</title><link>https://schrek.fr/posts/2023/05/hugo_creation_theme/</link><pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/hugo_creation_theme/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/hugo_creation_theme/hugo.webp" width="600px">
+&lt;/figure>
+
+&lt;p>Après l’article sur l&amp;rsquo;installation d&amp;rsquo;Hugo et la mise en place d’un thème, on va créer notre thème perso.&lt;/p>
+&lt;p>On se place dans le dossier de notre projet.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ hugo new theme christophe
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ cd themes/christophe/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ tree
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── archetypes
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   └── default.md &lt;span style="color:#f92672">(&lt;/span>modeles pour les articles et les pages&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── layouts
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   ├── 404.html
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   ├── _default
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   │   ├── baseof.html &lt;span style="color:#f92672">(&lt;/span>page qui structure les autres pages&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   │   ├── list.html &lt;span style="color:#f92672">(&lt;/span> exemple la liste des articles&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   │   └── single.html &lt;span style="color:#f92672">(&lt;/span>un article &lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   ├── index.html &lt;span style="color:#f92672">(&lt;/span>page d&lt;span style="color:#e6db74">&amp;#39;accueil)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">│   └── partials
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">│   ├── footer.html (pied de page)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">│   ├── header.html (haut de page)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">│   └── head.html (entete html)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">├── LICENSE
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">├── static ( dossier ou l&amp;#39;&lt;/span>on met les images/css/java&lt;span style="color:#f92672">)&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   ├── css
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   └── js
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── theme.toml&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>Hugo a créé une organisation minimale pour un projet.&lt;/p></description></item></channel></rss>

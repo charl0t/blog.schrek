@@ -1,19 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ssd1306 on Schrek.fr</title>
-    <link>http://localhost:1313/tags/ssd1306/</link>
-    <description>Recent content in Ssd1306 on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Sat, 14 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ssd1306/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Un ecran oled pour Esp32</title>
-      <link>http://localhost:1313/posts/2023/10/esp32-et-un-ecran-oled/</link>
-      <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/10/esp32-et-un-ecran-oled/</guid>
-      <description>&lt;p&gt;On va utiliser un petit ecran OLED a tous petit prix et au doux nom de SSD1306, il a une diagonale de 0,96&amp;quot;, mais il est très lisible. L&amp;rsquo;écran est composé de 128x64 pixels OLED bleu sur fond noir (on peut choisir d&amp;rsquo;autres couleurs).&lt;/p&gt;&#xA;&lt;p&gt;Le contrôleur SSD1306 permet de dialoguer en &lt;a href=&#34;https://fr.wikipedia.org/wiki/I2C&#34;&gt;I2C&lt;/a&gt; ou en SPI. L&amp;rsquo;afficheur dispose de son propre régulateur 3,3V (compatible 5V et 3,3V).&lt;/p&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/10/esp32-et-un-ecran-oled/ssd1306.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;branchements&#34;&gt;Branchements&lt;/h2&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/10/esp32-et-un-ecran-oled/esp_ssd.webp&#34; width=&#34;400px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;ESP32&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;SSD1306&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;3.3v&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Vcc&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;+&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;GDN&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;GDN&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;D21&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;SDA&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Data&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;D22&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;SCL&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Clock&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;les-scripts&#34;&gt;Les scripts&lt;/h2&gt;&#xA;&lt;p&gt;Pour discuter avec l&amp;rsquo;ecran, il va falloir creer un fichier &lt;em&gt;ssd1306.py&lt;/em&gt; avec &lt;a href=&#34;https://thonny.org/&#34;&gt;Thonny&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ssd1306 on Schrek.fr</title><link>https://schrek.fr/tags/ssd1306/</link><description>Recent content in Ssd1306 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sat, 14 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/ssd1306/index.xml" rel="self" type="application/rss+xml"/><item><title>Un ecran oled pour Esp32</title><link>https://schrek.fr/posts/2023/10/esp32-et-un-ecran-oled/</link><pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/10/esp32-et-un-ecran-oled/</guid><description>&lt;p>On va utiliser un petit ecran OLED a tous petit prix et au doux nom de SSD1306, il a une diagonale de 0,96&amp;quot;, mais il est très lisible. L&amp;rsquo;écran est composé de 128x64 pixels OLED bleu sur fond noir (on peut choisir d&amp;rsquo;autres couleurs).&lt;/p>
+&lt;p>Le contrôleur SSD1306 permet de dialoguer en &lt;a href="https://fr.wikipedia.org/wiki/I2C">I2C&lt;/a> ou en SPI. L&amp;rsquo;afficheur dispose de son propre régulateur 3,3V (compatible 5V et 3,3V).&lt;/p>
+&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/10/esp32-et-un-ecran-oled/ssd1306.webp" width="200px">
+&lt;/figure>
+
+&lt;h2 id="branchements">Branchements&lt;/h2>
+&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/10/esp32-et-un-ecran-oled/esp_ssd.webp" width="400px">
+&lt;/figure>
+
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">ESP32&lt;/th>
+ &lt;th style="text-align: center">SSD1306&lt;/th>
+ &lt;th style="text-align: center">Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">3.3v&lt;/td>
+ &lt;td style="text-align: center">Vcc&lt;/td>
+ &lt;td style="text-align: center">+&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">GDN&lt;/td>
+ &lt;td style="text-align: center">GDN&lt;/td>
+ &lt;td style="text-align: center">-&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">D21&lt;/td>
+ &lt;td style="text-align: center">SDA&lt;/td>
+ &lt;td style="text-align: center">Data&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">D22&lt;/td>
+ &lt;td style="text-align: center">SCL&lt;/td>
+ &lt;td style="text-align: center">Clock&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="les-scripts">Les scripts&lt;/h2>
+&lt;p>Pour discuter avec l&amp;rsquo;ecran, il va falloir creer un fichier &lt;em>ssd1306.py&lt;/em> avec &lt;a href="https://thonny.org/">Thonny&lt;/a>.&lt;/p></description></item></channel></rss>

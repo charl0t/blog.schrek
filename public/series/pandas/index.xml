@@ -1,54 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pandas on Schrek.fr</title>
-    <link>http://localhost:1313/series/pandas/</link>
-    <description>Recent content in Pandas on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Sat, 15 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/series/pandas/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Pandas- nettoyage des données</title>
-      <link>http://localhost:1313/posts/2024/6/pandas_nettoyage/</link>
-      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/6/pandas_nettoyage/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2024/6/pandas_nettoyage/pandas.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Le nettoyage des données est une étapes cruciale dans le processus d&amp;rsquo;analyse de données, car les données brutes peuvent contenir des erreurs, des valeurs manquantes et d&amp;rsquo;autres problèmes qui peuvent affecter les résultats de l&amp;rsquo;analyse.&lt;/p&gt;&#xA;&lt;p&gt;La bibliothèque Pandas en Python est un outils puissant pour le nettoyage des données, offrant de nombreuses méthodes utiles pour préparer les données pour l&amp;rsquo;analyse.&lt;/p&gt;&#xA;&lt;h2 id=&#34;limport-des-données&#34;&gt;L&amp;rsquo;import des données&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data.csv&amp;#34;&lt;/span&gt;,skiprows&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, skipfooter&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;skiprows: va permettre de ne pas tenir compte des premières ligne du fichier.&lt;/li&gt;&#xA;&lt;li&gt;skifooter: ne pa tenir compte des dernières ligne.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;affichage-des-infos&#34;&gt;Affichage des infos&lt;/h2&gt;&#xA;&lt;p&gt;La methode .info(), va nous retourner toutes les information du dataframe.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Les fichiers Parquet</title>
-      <link>http://localhost:1313/posts/2024/5/parquet/</link>
-      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/5/parquet/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2024/5/parquet/parquet.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Les fichiers Parquet sont un format de stockage de données colonnaires open source, souvent utilisé dans le domaine du Big Data et de l&amp;rsquo;analyse de données. Ils sont conçus pour être efficaces en termes de stockage et de traitement, ce qui les rend adaptés à des volumes de données importants. Voici quelques points clés sur les fichiers Parquet :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Compression&lt;/strong&gt;: Les fichiers Parquet utilisent des techniques de compression pour réduire la taille des données, ce qui permet d&amp;rsquo;économiser de l&amp;rsquo;espace de stockage et de réduire les temps de transfert sur le réseau.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pandas, importer un fichier csv</title>
-      <link>http://localhost:1313/posts/2024/5/pandas_import/</link>
-      <pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/5/pandas_import/</guid>
-      <description>&lt;p&gt;J’avais besoin de traiter des fichiers CSV pour en extraire des données. J’ai commencé à faire cela avec un tableur, mais comme je suis feignant,je voulais automatiser tout cela.&lt;/p&gt;&#xA;&lt;h2 id=&#34;le-csv&#34;&gt;Le csv&lt;/h2&gt;&#xA;&lt;p&gt;Je dois:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Importer le fichier CSV&lt;/li&gt;&#xA;&lt;li&gt;Nettoyer des données inutiles&lt;/li&gt;&#xA;&lt;li&gt;Mettre en forme des colonnes&lt;/li&gt;&#xA;&lt;li&gt;Extraire des données&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Pandas et les series</title>
-      <link>http://localhost:1313/posts/2024/5/pandas_serie/</link>
-      <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/5/pandas_serie/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2024/5/pandas_serie/pandas.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Les &amp;ldquo;séries&amp;rdquo; sur pandas se réfèrent à des objets de données unidimensionnels dans la bibliothèque Python pandas.&lt;/p&gt;&#xA;&lt;p&gt;Ils sont similaires aux tableaux unidimensionnels en Python (comme les listes ou les tableaux NumPy), mais avec des fonctionnalités supplémentaires.&lt;/p&gt;&#xA;&lt;p&gt;Les séries pandas sont indexées, ce qui signifie que chaque élément a une étiquette ou un identifiant associé, et elles peuvent contenir différents types de données, comme des entiers, des flottants, des chaînes, etc.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pandas et les structures</title>
-      <link>http://localhost:1313/posts/2024/5/pandas_structures/</link>
-      <pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/5/pandas_structures/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2024/5/pandas_structures/pandas.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;La bibliothèque Pandas fournit deux structures de données principales pour manipuler des données structurées : les séries et les dataframes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;les-séries&#34;&gt;Les séries&lt;/h2&gt;&#xA;&lt;p&gt;Une série est un tableau unidimensionnel de données homogènes, indexé par des étiquettes. Les étiquettes peuvent être de n&amp;rsquo;importe quel type (chaînes de caractères, entiers, dates, etc.), ce qui permet de manipuler des données de manière flexible. Les séries peuvent être créées à partir de listes, de tableaux NumPy, de dictionnaires ou d&amp;rsquo;autres structures de données.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pandas</title>
-      <link>http://localhost:1313/posts/2024/5/pandas/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/5/pandas/</guid>
-      <description>&lt;p&gt;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2024/5/pandas/pandas.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;La bibliothèque Pandas est une bibliothèque open-source pour la manipulation et l&amp;rsquo;analyse de données en Python. Elle fournit des structures de données hautes performances et flexibles pour manipuler des données structurées, telles que des tableaux et des séries temporelles.&lt;/p&gt;&#xA;&lt;p&gt;Les principales fonctionnalités de Pandas comprennent la lecture et l&amp;rsquo;écriture de données à partir de divers formats de fichiers, la manipulation et le nettoyage de données, la fusion et la jointure de données, l&amp;rsquo;agrégation et le regroupement de données, ainsi que la visualisation de données.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pandas on Schrek.fr</title><link>https://schrek.fr/series/pandas/</link><description>Recent content in Pandas on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sat, 15 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/series/pandas/index.xml" rel="self" type="application/rss+xml"/><item><title>Pandas- nettoyage des données</title><link>https://schrek.fr/posts/2024/6/pandas_nettoyage/</link><pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/6/pandas_nettoyage/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2024/6/pandas_nettoyage/pandas.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Le nettoyage des données est une étapes cruciale dans le processus d&amp;rsquo;analyse de données, car les données brutes peuvent contenir des erreurs, des valeurs manquantes et d&amp;rsquo;autres problèmes qui peuvent affecter les résultats de l&amp;rsquo;analyse.&lt;/p>
+&lt;p>La bibliothèque Pandas en Python est un outils puissant pour le nettoyage des données, offrant de nombreuses méthodes utiles pour préparer les données pour l&amp;rsquo;analyse.&lt;/p>
+&lt;h2 id="limport-des-données">L&amp;rsquo;import des données&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>df &lt;span style="color:#f92672">=&lt;/span> pd&lt;span style="color:#f92672">.&lt;/span>read_csv(&lt;span style="color:#e6db74">&amp;#34;data.csv&amp;#34;&lt;/span>,skiprows&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">3&lt;/span>, skipfooter&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">2&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>skiprows: va permettre de ne pas tenir compte des premières ligne du fichier.&lt;/li>
+&lt;li>skifooter: ne pa tenir compte des dernières ligne.&lt;/li>
+&lt;/ul>
+&lt;h2 id="affichage-des-infos">Affichage des infos&lt;/h2>
+&lt;p>La methode .info(), va nous retourner toutes les information du dataframe.&lt;/p></description></item><item><title>Les fichiers Parquet</title><link>https://schrek.fr/posts/2024/5/parquet/</link><pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/parquet/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2024/5/parquet/parquet.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Les fichiers Parquet sont un format de stockage de données colonnaires open source, souvent utilisé dans le domaine du Big Data et de l&amp;rsquo;analyse de données. Ils sont conçus pour être efficaces en termes de stockage et de traitement, ce qui les rend adaptés à des volumes de données importants. Voici quelques points clés sur les fichiers Parquet :&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Compression&lt;/strong>: Les fichiers Parquet utilisent des techniques de compression pour réduire la taille des données, ce qui permet d&amp;rsquo;économiser de l&amp;rsquo;espace de stockage et de réduire les temps de transfert sur le réseau.&lt;/p></description></item><item><title>Pandas, importer un fichier csv</title><link>https://schrek.fr/posts/2024/5/pandas_import/</link><pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas_import/</guid><description>&lt;p>J’avais besoin de traiter des fichiers CSV pour en extraire des données. J’ai commencé à faire cela avec un tableur, mais comme je suis feignant,je voulais automatiser tout cela.&lt;/p>
+&lt;h2 id="le-csv">Le csv&lt;/h2>
+&lt;p>Je dois:&lt;/p>
+&lt;ul>
+&lt;li>Importer le fichier CSV&lt;/li>
+&lt;li>Nettoyer des données inutiles&lt;/li>
+&lt;li>Mettre en forme des colonnes&lt;/li>
+&lt;li>Extraire des données&lt;/li>
+&lt;/ul></description></item><item><title>Pandas et les series</title><link>https://schrek.fr/posts/2024/5/pandas_serie/</link><pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas_serie/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2024/5/pandas_serie/pandas.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Les &amp;ldquo;séries&amp;rdquo; sur pandas se réfèrent à des objets de données unidimensionnels dans la bibliothèque Python pandas.&lt;/p>
+&lt;p>Ils sont similaires aux tableaux unidimensionnels en Python (comme les listes ou les tableaux NumPy), mais avec des fonctionnalités supplémentaires.&lt;/p>
+&lt;p>Les séries pandas sont indexées, ce qui signifie que chaque élément a une étiquette ou un identifiant associé, et elles peuvent contenir différents types de données, comme des entiers, des flottants, des chaînes, etc.&lt;/p></description></item><item><title>Pandas et les structures</title><link>https://schrek.fr/posts/2024/5/pandas_structures/</link><pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas_structures/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2024/5/pandas_structures/pandas.webp" width="200px">
+&lt;/figure>
+
+&lt;p>La bibliothèque Pandas fournit deux structures de données principales pour manipuler des données structurées : les séries et les dataframes.&lt;/p>
+&lt;h2 id="les-séries">Les séries&lt;/h2>
+&lt;p>Une série est un tableau unidimensionnel de données homogènes, indexé par des étiquettes. Les étiquettes peuvent être de n&amp;rsquo;importe quel type (chaînes de caractères, entiers, dates, etc.), ce qui permet de manipuler des données de manière flexible. Les séries peuvent être créées à partir de listes, de tableaux NumPy, de dictionnaires ou d&amp;rsquo;autres structures de données.&lt;/p></description></item><item><title>Pandas</title><link>https://schrek.fr/posts/2024/5/pandas/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/5/pandas/</guid><description>&lt;p>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2024/5/pandas/pandas.webp" width="200px">
+&lt;/figure>
+
+La bibliothèque Pandas est une bibliothèque open-source pour la manipulation et l&amp;rsquo;analyse de données en Python. Elle fournit des structures de données hautes performances et flexibles pour manipuler des données structurées, telles que des tableaux et des séries temporelles.&lt;/p>
+&lt;p>Les principales fonctionnalités de Pandas comprennent la lecture et l&amp;rsquo;écriture de données à partir de divers formats de fichiers, la manipulation et le nettoyage de données, la fusion et la jointure de données, l&amp;rsquo;agrégation et le regroupement de données, ainsi que la visualisation de données.&lt;/p></description></item></channel></rss>

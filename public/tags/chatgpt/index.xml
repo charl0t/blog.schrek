@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ChatGpt on Schrek.fr</title>
-    <link>http://localhost:1313/tags/chatgpt/</link>
-    <description>Recent content in ChatGpt on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ChatGPT dans un terminal</title>
-      <link>http://localhost:1313/posts/2023/03/chatgpt/</link>
-      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/chatgpt/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/chatgpt/chatgpt_logo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/ChatGPT&#34;&gt;ChatGPT&lt;/a&gt;, le célèbre générateur de texte contrôlé par une intelligence artificielle , peut être utilisé dans un terminal.&lt;/p&gt;&#xA;&lt;p&gt;##API key:&lt;/p&gt;&#xA;&lt;p&gt;Il faut créer un compte et générer une API KEY &lt;a href=&#34;https://platform.openai.com/account/api-keys&#34;&gt;ici&lt;/a&gt;.&#xA;ça sera sur la forme.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; sk-qUP3OL6jQ95cXJbxsxyPT3BlbkFJzf3ypT6djfo2ZsjcZwME2&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;le-script&#34;&gt;Le script&lt;/h2&gt;&#xA;&lt;p&gt;Tout ce trouve sur ce &lt;a href=&#34;https://github.com/0xacx/chatGPT-shell-cli&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ wget https://github.com/0xacx/chatGPT-shell-cli/blob/main/chatgpt.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ chmod +x chatgpt.sh &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ export OPENAI_KEY&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sk-qUP3OL6jdkdlQ95cXJbxsxyPT3Bldkkkff3ypT6Rn1gZsjcZwME2&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;p&gt;Remplacez OPENAI_KEY par votre clef.&lt;/p&gt;&#xA;&lt;p&gt;Le script a besoin de jq.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo apt install jq&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;p&gt;et pour finir:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ChatGpt on Schrek.fr</title><link>https://schrek.fr/tags/chatgpt/</link><description>Recent content in ChatGpt on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/chatgpt/index.xml" rel="self" type="application/rss+xml"/><item><title>ChatGPT dans un terminal</title><link>https://schrek.fr/posts/2023/03/chatgpt/</link><pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/chatgpt/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/chatgpt/chatgpt_logo.webp" width="200px">
+&lt;/figure>
+
+&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/ChatGPT">ChatGPT&lt;/a>, le célèbre générateur de texte contrôlé par une intelligence artificielle , peut être utilisé dans un terminal.&lt;/p>
+&lt;p>##API key:&lt;/p>
+&lt;p>Il faut créer un compte et générer une API KEY &lt;a href="https://platform.openai.com/account/api-keys">ici&lt;/a>.
+ça sera sur la forme.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span> sk-qUP3OL6jQ95cXJbxsxyPT3BlbkFJzf3ypT6djfo2ZsjcZwME2&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="le-script">Le script&lt;/h2>
+&lt;p>Tout ce trouve sur ce &lt;a href="https://github.com/0xacx/chatGPT-shell-cli">github&lt;/a>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ wget https://github.com/0xacx/chatGPT-shell-cli/blob/main/chatgpt.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ chmod +x chatgpt.sh 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ export OPENAI_KEY&lt;span style="color:#f92672">=&lt;/span>sk-qUP3OL6jdkdlQ95cXJbxsxyPT3Bldkkkff3ypT6Rn1gZsjcZwME2&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>Remplacez OPENAI_KEY par votre clef.&lt;/p>
+&lt;p>Le script a besoin de jq.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ sudo apt install jq&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>et pour finir:&lt;/p></description></item></channel></rss>

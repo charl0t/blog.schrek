@@ -1,26 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sncf on Schrek.fr</title>
-    <link>http://localhost:1313/tags/sncf/</link>
-    <description>Recent content in Sncf on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sncf/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Les signaux SNCF avec Draw.IO</title>
-      <link>http://localhost:1313/posts/2023/05/drawio_signauxsncf/</link>
-      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/drawio_signauxsncf/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/drawio_signauxsncf/drawnio.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/nicolaswurtz&#34;&gt;Nicolas Wurtz&lt;/a&gt; un agent SNCF ,qui développe aussi &lt;a href=&#34;https://graou.info/apropos/index.html&#34;&gt;Graou&lt;/a&gt; un outil métier qui permet aux agents de s&amp;rsquo;organiser, a ajouté les signaux SNCF sur &lt;a href=&#34;https://www.drawio.com/&#34;&gt;Drawn.IO&lt;/a&gt;.&#xA;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;fr&#34; dir=&#34;ltr&#34;&gt;Hey la &lt;a href=&#34;https://twitter.com/hashtag/teamSNCF?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#teamSNCF&lt;/a&gt; ! Besoin de tracer des voies avec des signaux/pancartes et des trains ? c&amp;#39;est galère ? Bon ben j&amp;#39;ai créé une librairie pour draw io !&lt;a href=&#34;https://t.co/WwHn1Vtb41&#34;&gt;https://t.co/WwHn1Vtb41&lt;/a&gt;&lt;br&gt;&lt;br&gt;Et tout est opensource sur &lt;a href=&#34;https://t.co/g21l5UpgkI&#34;&gt;https://t.co/g21l5UpgkI&lt;/a&gt; (les trains viennent de &lt;a href=&#34;https://t.co/EEcKybvFDN&#34;&gt;https://t.co/EEcKybvFDN&lt;/a&gt;). 💚 &lt;a href=&#34;https://t.co/OZ6BZ9AJHC&#34;&gt;pic.twitter.com/OZ6BZ9AJHC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Nicolas Wurtz (@NicolasW_GRAOU) &lt;a href=&#34;https://twitter.com/NicolasW_GRAOU/status/1657310776909000704?ref_src=twsrc%5Etfw&#34;&gt;May 13, 2023&lt;/a&gt;&lt;/blockquote&gt;&#xA;&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Cela va permettre aux agents de préparer leurs études de ligne.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>La Signalisation SNCF avec Latex</title>
-      <link>http://localhost:1313/posts/2023/03/signaux_sncf/</link>
-      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/signaux_sncf/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/signaux_sncf/signal_sncf_carre.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Pour jouer avec &lt;a href=&#34;https://tikz.dev/&#34;&gt;tikz&lt;/a&gt; qui permet de générer des images, j’ai fait des signaux SNCF.&lt;/p&gt;&#xA;&lt;p&gt;C’est perfectible aux niveaux des couleurs et des formes mais ca rend bien.&#xA;Un cheminot Nicolas Wurtz a fait aussi ce travail mais sous une autre forme, son dépôt &lt;a href=&#34;https://github.com/nicolaswurtz/signalisation-rfn-svg&#34;&gt;git&lt;/a&gt;&#xA;Un autre projet &lt;a href=&#34;https://geillon.pagesperso-orange.fr/trains/signaux/index.html&#34;&gt;ici&lt;/a&gt; à base de gif.&lt;/p&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/signaux_sncf/signal5-03315.gif&#34; width=&#34;50px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;mes-sources-latex&#34;&gt;Mes sources latex&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;signaux_sncf.pdf&#34;&gt;Fichier pdf&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;signaux_sncf.tex&#34;&gt;Fichier Latex&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;a class=&#34;uk-button uk-button-default uk-box-shadow-medium&#34; target=&#34;_blank&#34; href=&#34;https://www.overleaf.com/read/yykmgbndgsqt&#34;&gt;&lt;span uk-icon=&#34;icon: forward&#34;&gt;&lt;/span&gt; Voir sur overleaf&lt;/a&gt;&#xA;&#xA;&lt;h2 id=&#34;lien&#34;&gt;Lien&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France&#34;&gt;https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sncf on Schrek.fr</title><link>https://schrek.fr/tags/sncf/</link><description>Recent content in Sncf on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/sncf/index.xml" rel="self" type="application/rss+xml"/><item><title>Les signaux SNCF avec Draw.IO</title><link>https://schrek.fr/posts/2023/05/drawio_signauxsncf/</link><pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/drawio_signauxsncf/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/drawio_signauxsncf/drawnio.webp" width="200px">
+&lt;/figure>
+
+&lt;p>&lt;a href="https://github.com/nicolaswurtz">Nicolas Wurtz&lt;/a> un agent SNCF ,qui développe aussi &lt;a href="https://graou.info/apropos/index.html">Graou&lt;/a> un outil métier qui permet aux agents de s&amp;rsquo;organiser, a ajouté les signaux SNCF sur &lt;a href="https://www.drawio.com/">Drawn.IO&lt;/a>.
+&lt;blockquote class="twitter-tweet">&lt;p lang="fr" dir="ltr">Hey la &lt;a href="https://twitter.com/hashtag/teamSNCF?src=hash&amp;amp;ref_src=twsrc%5Etfw">#teamSNCF&lt;/a> ! Besoin de tracer des voies avec des signaux/pancartes et des trains ? c&amp;#39;est galère ? Bon ben j&amp;#39;ai créé une librairie pour draw io !&lt;a href="https://t.co/WwHn1Vtb41">https://t.co/WwHn1Vtb41&lt;/a>&lt;br>&lt;br>Et tout est opensource sur &lt;a href="https://t.co/g21l5UpgkI">https://t.co/g21l5UpgkI&lt;/a> (les trains viennent de &lt;a href="https://t.co/EEcKybvFDN">https://t.co/EEcKybvFDN&lt;/a>). 💚 &lt;a href="https://t.co/OZ6BZ9AJHC">pic.twitter.com/OZ6BZ9AJHC&lt;/a>&lt;/p>&amp;mdash; Nicolas Wurtz (@NicolasW_GRAOU) &lt;a href="https://twitter.com/NicolasW_GRAOU/status/1657310776909000704?ref_src=twsrc%5Etfw">May 13, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+
+&lt;/p>
+&lt;p>Cela va permettre aux agents de préparer leurs études de ligne.&lt;/p></description></item><item><title>La Signalisation SNCF avec Latex</title><link>https://schrek.fr/posts/2023/03/signaux_sncf/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/signaux_sncf/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/signaux_sncf/signal_sncf_carre.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Pour jouer avec &lt;a href="https://tikz.dev/">tikz&lt;/a> qui permet de générer des images, j’ai fait des signaux SNCF.&lt;/p>
+&lt;p>C’est perfectible aux niveaux des couleurs et des formes mais ca rend bien.
+Un cheminot Nicolas Wurtz a fait aussi ce travail mais sous une autre forme, son dépôt &lt;a href="https://github.com/nicolaswurtz/signalisation-rfn-svg">git&lt;/a>
+Un autre projet &lt;a href="https://geillon.pagesperso-orange.fr/trains/signaux/index.html">ici&lt;/a> à base de gif.&lt;/p>
+&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/signaux_sncf/signal5-03315.gif" width="50px">
+&lt;/figure>
+
+&lt;h2 id="mes-sources-latex">Mes sources latex&lt;/h2>
+&lt;p>&lt;a href="signaux_sncf.pdf">Fichier pdf&lt;/a>&lt;/p>
+&lt;p>&lt;a href="signaux_sncf.tex">Fichier Latex&lt;/a>&lt;/p>
+
+
+
+
+
+
+&lt;a class="uk-button uk-button-default uk-box-shadow-medium" target="_blank" href="https://www.overleaf.com/read/yykmgbndgsqt">&lt;span uk-icon="icon: forward">&lt;/span> Voir sur overleaf&lt;/a>
+
+&lt;h2 id="lien">Lien&lt;/h2>
+&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France">https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France&lt;/a>&lt;/p></description></item></channel></rss>

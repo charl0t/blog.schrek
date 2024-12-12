@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Recherche on Schrek.fr</title>
-    <link>http://localhost:1313/tags/recherche/</link>
-    <description>Recent content in Recherche on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/recherche/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Recherche dans Hugo</title>
-      <link>http://localhost:1313/posts/2023/06/hugo-recherche/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/06/hugo-recherche/</guid>
-      <description>&lt;div class=&#34;uk-alert-warning&#34; uk-alert&gt;&#xA;    &lt;span uk-icon=&#34;icon: warning ; ratio:2&#34;&gt;&lt;/span&gt;&#xA;    &lt;a class=&#34;uk-alert-close&#34; uk-close&gt;&lt;/a&gt;&#xA;    &lt;p class=&#34;bandeau&#34;&gt;J&amp;rsquo;ai desactivé la recherche sur le site. Mais ça marche.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;p&gt;Il me manquait la recherche sur Hugo, &lt;em&gt;j&amp;rsquo;en est chié&lt;/em&gt; une histoire de Jquery.&lt;/p&gt;&#xA;&lt;h2 id=&#34;configtoml&#34;&gt;config.toml&lt;/h2&gt;&#xA;&lt;p&gt;On va demander a Hugo de générer un fichier JSON, pour récupérer les données du site.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;outputs&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;home&lt;/span&gt; = [ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;HTML&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;JSON&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;RSS&amp;#34;&lt;/span&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;p&gt;Quand on lance Hugo, on a droit a une erreur.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Change of config file detected, rebuilding site.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2023-05-02 11:39:09.348 +0200&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;WARN 2023/05/02 11:39:09 found no layout file &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;JSON&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; kind &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;home&amp;#34;&lt;/span&gt;: You should create a template file which matches Hugo Layouts Lookup Rules &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; this combination.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Rebuilt in &lt;span style=&#34;color:#ae81ff&#34;&gt;205&lt;/span&gt; ms&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;indexjson&#34;&gt;Index.json&lt;/h2&gt;&#xA;&lt;p&gt;il faut créer le fichier &lt;em&gt;index.json&lt;/em&gt; dans notre theme &lt;em&gt;themes/schrek/layouts&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recherche on Schrek.fr</title><link>https://schrek.fr/tags/recherche/</link><description>Recent content in Recherche on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/recherche/index.xml" rel="self" type="application/rss+xml"/><item><title>Recherche dans Hugo</title><link>https://schrek.fr/posts/2023/06/hugo-recherche/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/06/hugo-recherche/</guid><description>&lt;div class="uk-alert-warning" uk-alert>
+ &lt;span uk-icon="icon: warning ; ratio:2">&lt;/span>
+ &lt;a class="uk-alert-close" uk-close>&lt;/a>
+ &lt;p class="bandeau">J&amp;rsquo;ai desactivé la recherche sur le site. Mais ça marche.&lt;/p>
+&lt;/div>
+
+
+&lt;p>Il me manquait la recherche sur Hugo, &lt;em>j&amp;rsquo;en est chié&lt;/em> une histoire de Jquery.&lt;/p>
+&lt;h2 id="configtoml">config.toml&lt;/h2>
+&lt;p>On va demander a Hugo de générer un fichier JSON, pour récupérer les données du site.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-toml" data-lang="toml">&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#a6e22e">outputs&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">home&lt;/span> = [ &lt;span style="color:#e6db74">&amp;#34;HTML&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;JSON&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;RSS&amp;#34;&lt;/span>]&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>Quand on lance Hugo, on a droit a une erreur.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>Change of config file detected, rebuilding site.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>2023-05-02 11:39:09.348 +0200
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>WARN 2023/05/02 11:39:09 found no layout file &lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#e6db74">&amp;#34;JSON&amp;#34;&lt;/span> &lt;span style="color:#66d9ef">for&lt;/span> kind &lt;span style="color:#e6db74">&amp;#34;home&amp;#34;&lt;/span>: You should create a template file which matches Hugo Layouts Lookup Rules &lt;span style="color:#66d9ef">for&lt;/span> this combination.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Rebuilt in &lt;span style="color:#ae81ff">205&lt;/span> ms&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="indexjson">Index.json&lt;/h2>
+&lt;p>il faut créer le fichier &lt;em>index.json&lt;/em> dans notre theme &lt;em>themes/schrek/layouts&lt;/em>&lt;/p></description></item></channel></rss>

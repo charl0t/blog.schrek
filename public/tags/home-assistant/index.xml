@@ -1,19 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Home-Assistant on Schrek.fr</title>
-    <link>http://localhost:1313/tags/home-assistant/</link>
-    <description>Recent content in Home-Assistant on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/home-assistant/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MQTT</title>
-      <link>http://localhost:1313/posts/2023/10/mqtt/</link>
-      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/10/mqtt/</guid>
-      <description>&lt;p&gt;Créé par Andy Stanford-Clark et Arlen Nipper en 1999, MQTT est un protocole de messagerie qui permet aux objets connectés d’échanger les informations en toutes sécurité et avec une faible bande passante.&lt;/p&gt;&#xA;&lt;h2 id=&#34;les-termes-utilisés&#34;&gt;Les termes utilisés&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Broker: c&amp;rsquo;est le programme qui centralise les informations, il reçoit et envoie des messages comme la température d&amp;rsquo;un capteur. Le broker de référence sous Linux s’appelle &lt;a href=&#34;https://mosquitto.org/&#34;&gt;Mosquitto&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Publish: c&amp;rsquo;est l&amp;rsquo;action d&amp;rsquo;envoyer l&amp;rsquo;information du capteur vers le Broker( programme).&lt;/li&gt;&#xA;&lt;li&gt;Subscribe: c&amp;rsquo;est quand un programme s&amp;rsquo;abonne a un broker pour recuperer des informations.&lt;/li&gt;&#xA;&lt;li&gt;Topic: c&amp;rsquo;est les rubriques ou sont classés les données par exemple &lt;em&gt;esp32/maison/chambre&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;qos-quality-of-service-&#34;&gt;QoS (Quality Of Service )&lt;/h2&gt;&#xA;&lt;p&gt;MQTT possede 3 niveau de qualité de service:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home-Assistant on Schrek.fr</title><link>https://schrek.fr/tags/home-assistant/</link><description>Recent content in Home-Assistant on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/home-assistant/index.xml" rel="self" type="application/rss+xml"/><item><title>MQTT</title><link>https://schrek.fr/posts/2023/10/mqtt/</link><pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/10/mqtt/</guid><description>&lt;p>Créé par Andy Stanford-Clark et Arlen Nipper en 1999, MQTT est un protocole de messagerie qui permet aux objets connectés d’échanger les informations en toutes sécurité et avec une faible bande passante.&lt;/p>
+&lt;h2 id="les-termes-utilisés">Les termes utilisés&lt;/h2>
+&lt;ul>
+&lt;li>Broker: c&amp;rsquo;est le programme qui centralise les informations, il reçoit et envoie des messages comme la température d&amp;rsquo;un capteur. Le broker de référence sous Linux s’appelle &lt;a href="https://mosquitto.org/">Mosquitto&lt;/a>.&lt;/li>
+&lt;li>Publish: c&amp;rsquo;est l&amp;rsquo;action d&amp;rsquo;envoyer l&amp;rsquo;information du capteur vers le Broker( programme).&lt;/li>
+&lt;li>Subscribe: c&amp;rsquo;est quand un programme s&amp;rsquo;abonne a un broker pour recuperer des informations.&lt;/li>
+&lt;li>Topic: c&amp;rsquo;est les rubriques ou sont classés les données par exemple &lt;em>esp32/maison/chambre&lt;/em>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="qos-quality-of-service-">QoS (Quality Of Service )&lt;/h2>
+&lt;p>MQTT possede 3 niveau de qualité de service:&lt;/p></description></item></channel></rss>

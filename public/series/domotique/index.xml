@@ -1,26 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Domotique on Schrek.fr</title>
-    <link>http://localhost:1313/series/domotique/</link>
-    <description>Recent content in Domotique on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/series/domotique/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MQTT</title>
-      <link>http://localhost:1313/posts/2023/10/mqtt/</link>
-      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/10/mqtt/</guid>
-      <description>&lt;p&gt;Créé par Andy Stanford-Clark et Arlen Nipper en 1999, MQTT est un protocole de messagerie qui permet aux objets connectés d’échanger les informations en toutes sécurité et avec une faible bande passante.&lt;/p&gt;&#xA;&lt;h2 id=&#34;les-termes-utilisés&#34;&gt;Les termes utilisés&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Broker: c&amp;rsquo;est le programme qui centralise les informations, il reçoit et envoie des messages comme la température d&amp;rsquo;un capteur. Le broker de référence sous Linux s’appelle &lt;a href=&#34;https://mosquitto.org/&#34;&gt;Mosquitto&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Publish: c&amp;rsquo;est l&amp;rsquo;action d&amp;rsquo;envoyer l&amp;rsquo;information du capteur vers le Broker( programme).&lt;/li&gt;&#xA;&lt;li&gt;Subscribe: c&amp;rsquo;est quand un programme s&amp;rsquo;abonne a un broker pour recuperer des informations.&lt;/li&gt;&#xA;&lt;li&gt;Topic: c&amp;rsquo;est les rubriques ou sont classés les données par exemple &lt;em&gt;esp32/maison/chambre&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;qos-quality-of-service-&#34;&gt;QoS (Quality Of Service )&lt;/h2&gt;&#xA;&lt;p&gt;MQTT possede 3 niveau de qualité de service:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Tasmota</title>
-      <link>http://localhost:1313/posts/2023/10/tasmota/</link>
-      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/10/tasmota/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://tasmota.github.io/docs/&#34;&gt;Tasmota&lt;/a&gt; est un firmware OpenSource pour des appareils basé sur des ESP8266.&#xA;Il va permetre de faire communiquer facilement vos projets domotiques.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Il existe plusieurs façon de &lt;a href=&#34;https://tasmota.github.io/docs/Getting-Started/&#34;&gt;flasher&lt;/a&gt;, on va choisir la plus simple.&lt;/p&gt;&#xA;&lt;p&gt;On va prendre un simple &lt;a href=&#34;https://amzn.to/44DoB1W&#34;&gt;Wemos d1 mini&lt;/a&gt; pour l&amp;rsquo;exemple.&lt;/p&gt;&#xA;&lt;p&gt;Il faut brancher en Usb sur le pc et on ouvre la page &lt;a href=&#34;https://tasmota.github.io/install/&#34;&gt;https://tasmota.github.io/install/&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;uk-alert-warning&#34; uk-alert&gt;&#xA;    &lt;span uk-icon=&#34;icon: warning ; ratio:2&#34;&gt;&lt;/span&gt;&#xA;    &lt;a class=&#34;uk-alert-close&#34; uk-close&gt;&lt;/a&gt;&#xA;    &lt;p class=&#34;bandeau&#34;&gt;Il faut utiliser Chrome comme navigateur pour etablir la liaison.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Domotique on Schrek.fr</title><link>https://schrek.fr/series/domotique/</link><description>Recent content in Domotique on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/series/domotique/index.xml" rel="self" type="application/rss+xml"/><item><title>MQTT</title><link>https://schrek.fr/posts/2023/10/mqtt/</link><pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/10/mqtt/</guid><description>&lt;p>Créé par Andy Stanford-Clark et Arlen Nipper en 1999, MQTT est un protocole de messagerie qui permet aux objets connectés d’échanger les informations en toutes sécurité et avec une faible bande passante.&lt;/p>
+&lt;h2 id="les-termes-utilisés">Les termes utilisés&lt;/h2>
+&lt;ul>
+&lt;li>Broker: c&amp;rsquo;est le programme qui centralise les informations, il reçoit et envoie des messages comme la température d&amp;rsquo;un capteur. Le broker de référence sous Linux s’appelle &lt;a href="https://mosquitto.org/">Mosquitto&lt;/a>.&lt;/li>
+&lt;li>Publish: c&amp;rsquo;est l&amp;rsquo;action d&amp;rsquo;envoyer l&amp;rsquo;information du capteur vers le Broker( programme).&lt;/li>
+&lt;li>Subscribe: c&amp;rsquo;est quand un programme s&amp;rsquo;abonne a un broker pour recuperer des informations.&lt;/li>
+&lt;li>Topic: c&amp;rsquo;est les rubriques ou sont classés les données par exemple &lt;em>esp32/maison/chambre&lt;/em>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="qos-quality-of-service-">QoS (Quality Of Service )&lt;/h2>
+&lt;p>MQTT possede 3 niveau de qualité de service:&lt;/p></description></item><item><title>Tasmota</title><link>https://schrek.fr/posts/2023/10/tasmota/</link><pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/10/tasmota/</guid><description>&lt;p>&lt;a href="https://tasmota.github.io/docs/">Tasmota&lt;/a> est un firmware OpenSource pour des appareils basé sur des ESP8266.
+Il va permetre de faire communiquer facilement vos projets domotiques.&lt;/p>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;p>Il existe plusieurs façon de &lt;a href="https://tasmota.github.io/docs/Getting-Started/">flasher&lt;/a>, on va choisir la plus simple.&lt;/p>
+&lt;p>On va prendre un simple &lt;a href="https://amzn.to/44DoB1W">Wemos d1 mini&lt;/a> pour l&amp;rsquo;exemple.&lt;/p>
+&lt;p>Il faut brancher en Usb sur le pc et on ouvre la page &lt;a href="https://tasmota.github.io/install/">https://tasmota.github.io/install/&lt;/a>&lt;/p>
+
+
+
+
+
+
+
+
+
+
+&lt;div class="uk-alert-warning" uk-alert>
+ &lt;span uk-icon="icon: warning ; ratio:2">&lt;/span>
+ &lt;a class="uk-alert-close" uk-close>&lt;/a>
+ &lt;p class="bandeau">Il faut utiliser Chrome comme navigateur pour etablir la liaison.&lt;/p></description></item></channel></rss>

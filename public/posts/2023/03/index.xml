@@ -1,138 +1,278 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Mars 2023 on Schrek.fr</title>
-    <link>http://localhost:1313/posts/2023/03/</link>
-    <description>Recent content in Mars 2023 on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/2023/03/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ChatGPT dans un terminal</title>
-      <link>http://localhost:1313/posts/2023/03/chatgpt/</link>
-      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/chatgpt/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/chatgpt/chatgpt_logo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/ChatGPT&#34;&gt;ChatGPT&lt;/a&gt;, le célèbre générateur de texte contrôlé par une intelligence artificielle , peut être utilisé dans un terminal.&lt;/p&gt;&#xA;&lt;p&gt;##API key:&lt;/p&gt;&#xA;&lt;p&gt;Il faut créer un compte et générer une API KEY &lt;a href=&#34;https://platform.openai.com/account/api-keys&#34;&gt;ici&lt;/a&gt;.&#xA;ça sera sur la forme.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; sk-qUP3OL6jQ95cXJbxsxyPT3BlbkFJzf3ypT6djfo2ZsjcZwME2&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;le-script&#34;&gt;Le script&lt;/h2&gt;&#xA;&lt;p&gt;Tout ce trouve sur ce &lt;a href=&#34;https://github.com/0xacx/chatGPT-shell-cli&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ wget https://github.com/0xacx/chatGPT-shell-cli/blob/main/chatgpt.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ chmod +x chatgpt.sh &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ export OPENAI_KEY&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sk-qUP3OL6jdkdlQ95cXJbxsxyPT3Bldkkkff3ypT6Rn1gZsjcZwME2&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;p&gt;Remplacez OPENAI_KEY par votre clef.&lt;/p&gt;&#xA;&lt;p&gt;Le script a besoin de jq.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo apt install jq&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;p&gt;et pour finir:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lettre sous latex</title>
-      <link>http://localhost:1313/posts/2023/03/latex-une_lettre/</link>
-      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/latex-une_lettre/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/latex-une_lettre/latex_logo-1ee3e.svg&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Utilisation de la classe lettre avec LaTex.&lt;/p&gt;&#xA;&lt;p&gt;J’ai commenté le code pour plus de clarté.&lt;/p&gt;&#xA;&lt;p&gt;Petit rajout du tampon fait dans cet article Tampon encreur sous Gimp&lt;/p&gt;&#xA;&lt;p&gt;En cas d’erreur babel:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install texlive-lang-french&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;le-code&#34;&gt;Le code&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\documentclass&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[12pt]&lt;/span&gt;{lettre} &lt;span style=&#34;color:#75715e&#34;&gt;%12p taille lettres (10 et 11 possible), déclaration classe lettre&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;     &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[utf8]&lt;/span&gt;{inputenc} &lt;span style=&#34;color:#75715e&#34;&gt;% Encodage  &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[T1]&lt;/span&gt;{fontenc} &lt;span style=&#34;color:#75715e&#34;&gt;% Les mots accentués&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;{lmodern} &lt;span style=&#34;color:#75715e&#34;&gt;% Type de police&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;{eurosym} &lt;span style=&#34;color:#75715e&#34;&gt;% Pouvoir écrire le symbole &amp;#34;€&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[french]&lt;/span&gt;{babel} &lt;span style=&#34;color:#75715e&#34;&gt;% Utilisation du français&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;{numprint} &lt;span style=&#34;color:#75715e&#34;&gt;% Séparateur décimal&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\usepackage&lt;/span&gt;{graphicx} &lt;span style=&#34;color:#75715e&#34;&gt;% Pour inclure des images&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\begin&lt;/span&gt;{document}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\begin&lt;/span&gt;{letter}{Service des râleurs&lt;span style=&#34;color:#66d9ef&#34;&gt;\\&lt;/span&gt;66, rue du train&lt;span style=&#34;color:#66d9ef&#34;&gt;\\&lt;/span&gt;13200 Arles} &lt;span style=&#34;color:#75715e&#34;&gt;% Destinataire&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\basdepage&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;\pagetotalname&lt;/span&gt;{1}}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\name&lt;/span&gt;{Prénom nom}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\signature&lt;/span&gt;{Nom Prénom &lt;span style=&#34;color:#66d9ef&#34;&gt;\includegraphics&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;[width=75px, angle=-45]&lt;/span&gt;{tampon.png}} &lt;span style=&#34;color:#75715e&#34;&gt;% Si different de l&amp;#39;expediteur a commenter sinon, ajout du tampon&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\location&lt;/span&gt;{htextei}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\address&lt;/span&gt;{Prenom Nom &lt;span style=&#34;color:#66d9ef&#34;&gt;\\&lt;/span&gt;13, rue du cheval&lt;span style=&#34;color:#66d9ef&#34;&gt;\\&lt;/span&gt;13200 Arles}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\lieu&lt;/span&gt;{Arles}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\date&lt;/span&gt; {le 10 mai 2023}                   &lt;span style=&#34;color:#75715e&#34;&gt;% Sinon  \nodate&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\lieu&lt;/span&gt;{lieu envoi}                       &lt;span style=&#34;color:#75715e&#34;&gt;% Sinon \nolieu&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\telephone&lt;/span&gt;{01 02 03 04 05}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\email&lt;/span&gt;{prenom.nom@fai.fr}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\nofax&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;% Pas de fax sinon fax{}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\Vref&lt;/span&gt;{3456678} &lt;span style=&#34;color:#75715e&#34;&gt;% Reference du destinataire a commenter sinon&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\Nref&lt;/span&gt;{6654334} &lt;span style=&#34;color:#75715e&#34;&gt;% Reference de l&amp;#39;envoyeur a commenter sinon&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;     &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\def\concname&lt;/span&gt;{Objet :~} &lt;span style=&#34;color:#75715e&#34;&gt;% On définit  l’objet&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\conc&lt;/span&gt;{rétractation}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\opening&lt;/span&gt;{Madame, Monsieur,}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum &lt;span style=&#34;color:#66d9ef&#34;&gt;\numprint&lt;/span&gt;{2000}~&lt;span style=&#34;color:#66d9ef&#34;&gt;\euro&lt;/span&gt;.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\closing&lt;/span&gt;{Je vous prie d’agréer, Madame, Monsieur,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    mes salutations distinguées.}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\ps&lt;/span&gt;{PS :}{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\cc&lt;/span&gt;{Nom des autres destinataires}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\encl&lt;/span&gt;{Pièces jointes}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\end&lt;/span&gt;{letter}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;\end&lt;/span&gt;{document}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;a class=&#34;uk-button uk-button-default uk-box-shadow-medium&#34; target=&#34;_blank&#34; href=&#34;https://www.overleaf.com/read/rtfknsbdvxnt&#34;&gt;&lt;span uk-icon=&#34;icon: forward&#34;&gt;&lt;/span&gt; Voir sur overleaf&lt;/a&gt;&#xA;&#xA;&lt;p&gt;Le tampon qui va bien&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lier Framacarte a Framacalc</title>
-      <link>http://localhost:1313/posts/2023/03/framacarte/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/framacarte/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/framacarte/umap_logo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Il peut être pratique de lier une feuille de tableur avec une carte pour mieux gérer les points .&#xA;Avec &lt;a href=&#34;https://framacarte.org&#34;&gt;Framacarte&lt;/a&gt; et &lt;a href=&#34;https://lite.framacalc.org&#34;&gt;Framacalc&lt;/a&gt; c’est possible.&#xA;Sur le &lt;a href=&#34;https://wiki.cartocite.fr/doku.php?id=umap:tutoriel_umap&#34;&gt;Wiki&lt;/a&gt; de Cartocité on trouve plein de ressource sur le sujet.&lt;/p&gt;&#xA;&lt;h2 id=&#34;créer-et-configurer-le-tableur&#34;&gt;Créer et configurer le tableur&lt;/h2&gt;&#xA;&lt;p&gt;On va sur &lt;a href=&#34;https://lite.framacalc.org&#34;&gt;Framacalc&lt;/a&gt; pour créer notre tableur.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sur la 1ᵉʳ colonne on va mettre la latitude en ajoutant &amp;ldquo;lat&amp;rdquo; (case A1 sans les guillemets)&lt;/li&gt;&#xA;&lt;li&gt;2ᵉ colonne, la longitude  &amp;ldquo;lon&amp;rdquo;  (case B1 sans les guillemets)&lt;/li&gt;&#xA;&lt;li&gt;3ᵉ colonne, le nom  &amp;ldquo;nom&amp;rdquo;  (case C1 sans les guillemets)&lt;/li&gt;&#xA;&lt;li&gt;4ᵉ colonne, description &amp;ldquo;description&amp;rdquo;  (case D1 sans les guillemets)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Pour l’exemple on va prendre les arènes d’Arles.&#xA;&lt;a href=&#34;https://www.openstreetmap.org/#map=19/43.67773/4.63103&#34;&gt;https://www.openstreetmap.org/#map=19/43.67773/4.63103&lt;/a&gt;&#xA;L’URL nous indique le niveau de zoom, la latitude et la longitude. On récupère les données pour remplir notre tableau.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Nano</title>
-      <link>http://localhost:1313/posts/2023/03/linux-nano/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/linux-nano/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/linux-nano/nano.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Un éditeur de fichier très simple.&lt;/p&gt;&#xA;&lt;h2 id=&#34;pour-ouvrir-un-fichier&#34;&gt;Pour ouvrir un fichier&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ nano  index.html&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;créer-un-fichier&#34;&gt;Créer un fichier&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ nano  fichier.txt&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;les-raccourcis-courants&#34;&gt;Les raccourcis courants&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + G ...... Appeler le menu d’aide&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + X ...... Fermer et, le cas échéant, quitter nano&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + O ...... Écrire le fichier en cours sur le disque&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + J ...... Justifier le paragraphe courant&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + R ...... Insérer un autre fichier dans le fichier en cours&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + W ...... Rechercher une chaîne dans l’éditeur&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + Y ...... Aller à l’écran précédent&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + V...... Aller à l’écran suivant&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + K ...... Couper la ligne courante vers le presse-papiers&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + U ...... Coller le presse-papiers à partir de la ligne courante&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + C ...... Indiquer la position du curseur&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;coloration-syntaxique&#34;&gt;Coloration syntaxique&lt;/h2&gt;&#xA;&lt;p&gt;J’ai trouvé un petit script sympa &lt;a href=&#34;https://github.com/scopatz/nanorc&#34;&gt;ici&lt;/a&gt;  qui modifie le nanorc(fichier de configuration) pour avoir un peu de couleurs .&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Nego et L’Organisation - Laurent Combalbert</title>
-      <link>http://localhost:1313/posts/2023/03/nego-laurent-combalbert/</link>
-      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/nego-laurent-combalbert/</guid>
-      <description>&lt;p&gt;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/nego-laurent-combalbert/nego-1d734.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/nego-laurent-combalbert/l-organisation-67248.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;2 livres d’un coup. Les tomes 1 et tomes 2 de la série Stanislas Monville.&#xA;Un mélange de James bond, Jack Ryan avec une intrigue internationale sur fond d’écologie.&lt;/p&gt;&#xA;&lt;h2 id=&#34;résumé&#34;&gt;Résumé&lt;/h2&gt;&#xA;&lt;p&gt;Stanislas Monville est négociateur professionnel. Il intervient dans les kidnappings, les séquestrations, les extorsions… Ses années de service dans les forces spéciales comme les missions privées qu’il conduit désormais lui ont donné un instinct très sûr pour repérer les situations à risque.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lykaia - DOA</title>
-      <link>http://localhost:1313/posts/2023/03/lykaia---doa/</link>
-      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/lykaia---doa/</guid>
-      <description>&lt;p&gt;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/lykaia---doa/lykaia.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&amp;ldquo;Dans la Grèce antique, les lykaia  sont une fête archaïque avec un rituel secret sur les pentes du mont Lykaion (« montagne du loup ») ou mont Lycée, le plus haut sommet d&amp;rsquo;Arcadie. &amp;quot; Wikipedia&lt;/p&gt;&#xA;&lt;p&gt;Livre hyper violent quand meme, ou on decouvre le mileux SM.&lt;/p&gt;&#xA;&lt;h2 id=&#34;résumé&#34;&gt;Résumé&lt;/h2&gt;&#xA;&lt;p&gt;Berlin Ouest. Le BUNK&amp;rsquo;R est un club discret et sélectif où se pratiquent des séances de sadomasochisme chics et sophistiquées. Un client s&amp;rsquo;apprête à être livré aux mains expertes du narrateur, un ancien chirurgien de haut vol, qui s&amp;rsquo;est reconverti dans la pratique du bondage high-tech, après un grave accident qui le laissa défiguré. Telle est la laideur de son visage qu&amp;rsquo;il doit porter un masque en latex : parfois il aime se recouvrir la tête d&amp;rsquo;un postiche de Loup, dont il ne se sépare jamais vraiment.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Tampon encreur sous Gimp</title>
-      <link>http://localhost:1313/posts/2023/03/tampon-encreur/</link>
-      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/tampon-encreur/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/tampon-encreur/tampon-20450.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;C&amp;rsquo;est toujours sympa d&amp;rsquo;avoir une petite image pour simuler un tampon sur un document, une photo.&lt;/p&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai listé quelques tuto sous  [Gimp-&amp;gt;https://www.gimp.org/]&lt;/p&gt;&#xA;&lt;p&gt;C&amp;rsquo;est pas bien compliqué et ça permet de jouer avec les calques et les filtres.&#xA;Il faut penser à bien enregistrer au format PNG pour garder la transparence.&lt;/p&gt;&#xA;&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.1point2vue.com/tampon-encre-gimp/&#34;&gt;http://www.1point2vue.com/tampon-encre-gimp/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://abcdugimp.free.fr/gimp/realiser/tutoriels/tampon/tampon.php&#34;&gt;http://abcdugimp.free.fr/gimp/realiser/tutoriels/tampon/tampon.php&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Le Joueur d’échecs - Stefan Zweig</title>
-      <link>http://localhost:1313/posts/2023/03/le-joueur-dchecs-stefan-zweig/</link>
-      <pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/le-joueur-dchecs-stefan-zweig/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/le-joueur-dchecs-stefan-zweig/le_joueur_dechecs.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Un des plus beau livre que j&amp;rsquo;ai lu. Un roman court mais intense.&lt;/p&gt;&#xA;&lt;h2 id=&#34;résumé&#34;&gt;Résumé&lt;/h2&gt;&#xA;&lt;p&gt;Czentowic, champion d&amp;rsquo;échecs arrogant, esprit borné à outrance, inculte et étonnamment stupide, occupe le premier plan jusqu&amp;rsquo;à l&amp;rsquo;entrée en scène de Monsieur B. Dès lors que cet aristocrate autrichien s&amp;rsquo;intéresse à la partie livrée entre le champion et les passagers amateurs, la direction du texte bascule.&lt;/p&gt;&#xA;&lt;h2 id=&#34;détails&#34;&gt;Détails&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Langue : Français&lt;/li&gt;&#xA;&lt;li&gt;Broché : 128 pages&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;téléchargement&#34;&gt;Téléchargement&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;zweig-le_joueur_d_echecs.epub&#34;&gt;Epub libre de droit&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Rétiaire(s) - DOA</title>
-      <link>http://localhost:1313/posts/2023/03/r%C3%A9tiaires_doa/</link>
-      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/r%C3%A9tiaires_doa/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/r%C3%A9tiaires_doa/doa.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Un bon &lt;a href=&#34;https://fr.wikipedia.org/wiki/DOA_(auteur)&#34;&gt;DOA&lt;/a&gt; bien glauque.&lt;/p&gt;&#xA;&lt;h2 id=&#34;résumé&#34;&gt;Résumé&lt;/h2&gt;&#xA;&lt;p&gt;Une enquêtrice de l’Office anti-stupéfiants, l’élite de la lutte anti-drogue, qui a tout à prouver. Un policier des Stups borderline qui n’a plus rien à perdre. Un clan manouche qui lutte pour son honneur et sa survie. Avec la rigueur qu’on lui connaît, DOA immerge son lecteur dans le quotidien des acteurs du trafic de came ; son indiscutable talent de romancier nous arrime à la destinée de ses personnages, à leurs relations complexes et fragiles ; son style, d’une précision presque brutale, colle au plus près de cet univers de violence et de solitude.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Socca</title>
-      <link>http://localhost:1313/posts/2023/03/socca/</link>
-      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/socca/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/socca/socca2.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Socca est le nom donné à une spécialité culinaire à base de farine de pois chiche !&lt;/p&gt;&#xA;&lt;h2 id=&#34;ingrédients&#34;&gt;Ingrédients&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;250 g de farine de pois chiches&lt;/li&gt;&#xA;&lt;li&gt;50 cl d’eau&lt;/li&gt;&#xA;&lt;li&gt;4 cuillères à soupe d’huile d’olive&lt;/li&gt;&#xA;&lt;li&gt;1 cuillère à café de sel fin&lt;/li&gt;&#xA;&lt;li&gt;poivre&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;préparation&#34;&gt;Préparation&lt;/h2&gt;&#xA;&lt;p&gt;Mélanger la farine de pois chiche et l’eau. Ajouter l’huile d’olive et le sel. La préparation est liquide&#xA;Laisser reposer 1 heure.&lt;/p&gt;&#xA;&lt;p&gt;Faire chauffer le four au maximum, le mieux c’est un four à pizza ou au pire une machine a croque monsieur.&#xA;Huiler un plat de type a paella et mettre au four pour qu’il prenne la température.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Poulets grillés - Sophie Hénaff</title>
-      <link>http://localhost:1313/posts/2023/03/poulets-grill%C3%A9s---sophie-h%C3%A9naff/</link>
-      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/poulets-grill%C3%A9s---sophie-h%C3%A9naff/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/poulets-grill%C3%A9s---sophie-h%C3%A9naff/poulets-grille.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Un roman drôle qui se lit tout seul.&#xA;Une brigade constituée de bras cassés, quand les pires de la PJ mènent une enquête.&lt;/p&gt;&#xA;&lt;p&gt;Il y a 4 tomes dans la série :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Poulets grillés&lt;/li&gt;&#xA;&lt;li&gt;Rester groupés&lt;/li&gt;&#xA;&lt;li&gt;Art et Décès&lt;/li&gt;&#xA;&lt;li&gt;Drame de pique&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;résumé&#34;&gt;Résumé&lt;/h2&gt;&#xA;&lt;p&gt;Lorsque le divisionnaire Buron décide de faire briller les statistiques du 36, il regroupe dans une brigade dont il confie le commandement à la commissaire Anne Capestan, reine notoire de la bavure, tout ce que la police judiciaire compte d’alcoolos, d’homos, de porte-poisse, d’écrivains, de crétins&amp;hellip; Pour élucider des affaires classées. Mais voilà, Capestan aime enquêter, travailler en équipe et, surtout, contrarier sa hiérarchie&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>BRouter Web Client</title>
-      <link>http://localhost:1313/posts/2023/03/brouter/</link>
-      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/brouter/</guid>
-      <description>&lt;p&gt;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/brouter/velo1.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;BRouter Web Client  est un service WEB pour Planifier un itinéraire.&#xA;Le client s’appuie sur &lt;a href=&#34;https://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt;&#xA;Brouter est très complet en plus de calculer les itinéraires, les importer, les exporter, on peut ajouter des calques pour visualiser d’autres données comme les campings, hôtels…&lt;/p&gt;&#xA;&lt;!-- more --&gt;&#xA;&lt;p&gt;Bonne découverte.&lt;/p&gt;&#xA;&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://brouter.de/brouter-web/&#34;&gt;http://brouter.de/brouter-web/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://brouter.m11n.de&#34;&gt;https://brouter.m11n.de&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-ordinateur/&#34;&gt;https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-ordinateur/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que&#34;&gt;https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Z-Library</title>
-      <link>http://localhost:1313/posts/2023/03/zlibrary/</link>
-      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/zlibrary/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/zlibrary/library_z.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Z-Library&#34;&gt;Z-Library&lt;/a&gt; est une bibliothèque numérique qui vous permet de télécharger des e-books, des livres, des revues scientifiques en ligne.&lt;/p&gt;&#xA;&lt;p&gt;Mais pour y accéder, il va falloir passer par [Tor-&amp;gt;https://fr.wikipedia.org/wiki/Tor_(r%C3%A9seau)], rien de bien compliqué.&#xA;Il suffit d’installer &lt;a href=&#34;https://www.torproject.org/download/&#34;&gt;Tor browser&lt;/a&gt;. Âpres avoir lancé le navigateur, il suffît de copier ce lien dans le navigateur.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion/&lt;/code&gt;&lt;/p&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/zlibrary/capture.webp&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Il existe aussi des miroirs qui permettent un accès direct.&lt;/p&gt;&#xA;&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://singlelogin.me/&#34;&gt;https://singlelogin.me/&lt;/a&gt;&#xA;&lt;a href=&#34;https://fr.annas-archive.org/&#34;&gt;https://fr.annas-archive.org/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Le Problème à trois corps - Liu Cixin</title>
-      <link>http://localhost:1313/posts/2023/03/trois-corps/</link>
-      <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/trois-corps/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/trois-corps/probleme.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;J’ai demandé à &lt;a href=&#34;https://fr.wikipedia.org/wiki/ChatGPT&#34;&gt;chatgpt&lt;/a&gt; de me conseiller un livre de SF, je suis pas déçu du choix de l’IA.&#xA;L’écologie est au cœur du livre, on se retrouve dans le désespoir de l’humanité et des conséquences des choix humains.&lt;/p&gt;&#xA;&lt;p&gt;C’est le tome 1 d’une trilogie:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Le Problème à trois corps&lt;/li&gt;&#xA;&lt;li&gt;La Forêt sombre&lt;/li&gt;&#xA;&lt;li&gt;La Mort immortelle&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;résumé&#34;&gt;Résumé&lt;/h2&gt;&#xA;&lt;p&gt;En pleine Révolution culturelle, le pouvoir chinois construit la base militaire secrète de Côte Rouge, destinée à développer une arme de grand calibre. Ye Wenjie, une jeune astrophysicienne en cours de “rééducation”, intègre l’équipe de recherche. Dans ce lieu isolé où elle croit devoir passer le restant de sa vie, elle est amenée à travailler sur un système de télétransmissions dirigé vers l’espace et découvre peu à peu la véritable mission de Côte Rouge…&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sorbet basilic</title>
-      <link>http://localhost:1313/posts/2023/03/sorbet_basilic/</link>
-      <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/sorbet_basilic/</guid>
-      <description>&lt;p&gt;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/sorbet_basilic/logo_basilic.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;Un super sorbet pour, 4 personnes pour finir vos repas d’été.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ingrédients&#34;&gt;Ingrédients&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1/2 litre d’eau ;&lt;/li&gt;&#xA;&lt;li&gt;1 grosse cuillère de crème fraîche ;&lt;/li&gt;&#xA;&lt;li&gt;12 plans de basilic ;&lt;/li&gt;&#xA;&lt;li&gt;2 petits citrons ou 1,5 gros.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;basilic.webp&#34; width=&#34;400px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;préparation&#34;&gt;Préparation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Faire un sirop en portant à ébullition  l’eau froide avec le sucre et laisser un peu refroidir.&lt;/li&gt;&#xA;&lt;li&gt;Mixer le basilic effeuillé et infuser le 30min.&lt;/li&gt;&#xA;&lt;li&gt;Passer a L’étamine pour filtrer, ajouter le jus de citron et la crème. Mettre ensorbetière.&lt;/li&gt;&#xA;&lt;li&gt;Vous servirez en boule dans des verres givrés, le sorbet doit rester moelleux.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Fabrication d&#39;un savon d&#39;Alep</title>
-      <link>http://localhost:1313/posts/2023/03/savon_alep/</link>
-      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/savon_alep/</guid>
-      <description>&lt;p&gt;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/savon_alep/logo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;Ici je vais vous décrire rapidement la fabrication maison du savon d’Alep. C’est un savon simple à base d’huile d’olive et d’huile de baie de laurier et d’huile de ricin.&#xA;J’utilise la technique de la saponification a froid.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>La Signalisation SNCF avec Latex</title>
-      <link>http://localhost:1313/posts/2023/03/signaux_sncf/</link>
-      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/signaux_sncf/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/signaux_sncf/signal_sncf_carre.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Pour jouer avec &lt;a href=&#34;https://tikz.dev/&#34;&gt;tikz&lt;/a&gt; qui permet de générer des images, j’ai fait des signaux SNCF.&lt;/p&gt;&#xA;&lt;p&gt;C’est perfectible aux niveaux des couleurs et des formes mais ca rend bien.&#xA;Un cheminot Nicolas Wurtz a fait aussi ce travail mais sous une autre forme, son dépôt &lt;a href=&#34;https://github.com/nicolaswurtz/signalisation-rfn-svg&#34;&gt;git&lt;/a&gt;&#xA;Un autre projet &lt;a href=&#34;https://geillon.pagesperso-orange.fr/trains/signaux/index.html&#34;&gt;ici&lt;/a&gt; à base de gif.&lt;/p&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/signaux_sncf/signal5-03315.gif&#34; width=&#34;50px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;mes-sources-latex&#34;&gt;Mes sources latex&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;signaux_sncf.pdf&#34;&gt;Fichier pdf&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;signaux_sncf.tex&#34;&gt;Fichier Latex&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;a class=&#34;uk-button uk-button-default uk-box-shadow-medium&#34; target=&#34;_blank&#34; href=&#34;https://www.overleaf.com/read/yykmgbndgsqt&#34;&gt;&lt;span uk-icon=&#34;icon: forward&#34;&gt;&lt;/span&gt; Voir sur overleaf&lt;/a&gt;&#xA;&#xA;&lt;h2 id=&#34;lien&#34;&gt;Lien&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France&#34;&gt;https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Le style Latex</title>
-      <link>http://localhost:1313/posts/2023/03/css-style_latex/</link>
-      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/css-style_latex/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/css-style_latex/latex_logo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;style-latex-en-css&#34;&gt;Style LaTex en CSS&lt;/h2&gt;&#xA;&lt;p&gt;Latex le célèbre système de composition de document, qui permet de générer de “belles pages”, a un style bien à lui.&#xA;Vincent Dörig a créé un style CSS pour l’intégrer facilement dans un site. On y retrouve aussi l’intégration des formules mathématique avec MathJax.&lt;/p&gt;&#xA;&lt;p&gt;La page de test &lt;a href=&#34;https://latex.vercel.app/elements&#34;&gt;https://latex.vercel.app/elements&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://latex.vercel.app/&#34;&gt;https://latex.vercel.app/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/vincentdoerig/latex-css&#34;&gt;https://github.com/vincentdoerig/latex-css&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.mathjax.org/&#34;&gt;https://www.mathjax.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.latex-project.org/&#34;&gt;https://www.latex-project.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://fr.wikibooks.org/wiki/LaTeX&#34;&gt;https://fr.wikibooks.org/wiki/LaTeX&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mars 2023 on Schrek.fr</title><link>https://schrek.fr/posts/2023/03/</link><description>Recent content in Mars 2023 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/posts/2023/03/index.xml" rel="self" type="application/rss+xml"/><item><title>ChatGPT dans un terminal</title><link>https://schrek.fr/posts/2023/03/chatgpt/</link><pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/chatgpt/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/chatgpt/chatgpt_logo.webp" width="200px">
+&lt;/figure>
+
+&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/ChatGPT">ChatGPT&lt;/a>, le célèbre générateur de texte contrôlé par une intelligence artificielle , peut être utilisé dans un terminal.&lt;/p>
+&lt;p>##API key:&lt;/p>
+&lt;p>Il faut créer un compte et générer une API KEY &lt;a href="https://platform.openai.com/account/api-keys">ici&lt;/a>.
+ça sera sur la forme.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span> sk-qUP3OL6jQ95cXJbxsxyPT3BlbkFJzf3ypT6djfo2ZsjcZwME2&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="le-script">Le script&lt;/h2>
+&lt;p>Tout ce trouve sur ce &lt;a href="https://github.com/0xacx/chatGPT-shell-cli">github&lt;/a>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ wget https://github.com/0xacx/chatGPT-shell-cli/blob/main/chatgpt.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ chmod +x chatgpt.sh 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ export OPENAI_KEY&lt;span style="color:#f92672">=&lt;/span>sk-qUP3OL6jdkdlQ95cXJbxsxyPT3Bldkkkff3ypT6Rn1gZsjcZwME2&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>Remplacez OPENAI_KEY par votre clef.&lt;/p>
+&lt;p>Le script a besoin de jq.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ sudo apt install jq&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>et pour finir:&lt;/p></description></item><item><title>Lettre sous latex</title><link>https://schrek.fr/posts/2023/03/latex-une_lettre/</link><pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/latex-une_lettre/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/latex-une_lettre/latex_logo-1ee3e.svg" width="200px">
+&lt;/figure>
+
+&lt;p>Utilisation de la classe lettre avec LaTex.&lt;/p>
+&lt;p>J’ai commenté le code pour plus de clarté.&lt;/p>
+&lt;p>Petit rajout du tampon fait dans cet article Tampon encreur sous Gimp&lt;/p>
+&lt;p>En cas d’erreur babel:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo apt-get install texlive-lang-french&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="le-code">Le code&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-tex" data-lang="tex">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\documentclass&lt;/span>&lt;span style="color:#a6e22e">[12pt]&lt;/span>{lettre} &lt;span style="color:#75715e">%12p taille lettres (10 et 11 possible), déclaration classe lettre
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\usepackage&lt;/span>&lt;span style="color:#a6e22e">[utf8]&lt;/span>{inputenc} &lt;span style="color:#75715e">% Encodage 
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\usepackage&lt;/span>&lt;span style="color:#a6e22e">[T1]&lt;/span>{fontenc} &lt;span style="color:#75715e">% Les mots accentués
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\usepackage&lt;/span>{lmodern} &lt;span style="color:#75715e">% Type de police
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\usepackage&lt;/span>{eurosym} &lt;span style="color:#75715e">% Pouvoir écrire le symbole &amp;#34;€&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\usepackage&lt;/span>&lt;span style="color:#a6e22e">[french]&lt;/span>{babel} &lt;span style="color:#75715e">% Utilisation du français
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\usepackage&lt;/span>{numprint} &lt;span style="color:#75715e">% Séparateur décimal
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\usepackage&lt;/span>{graphicx} &lt;span style="color:#75715e">% Pour inclure des images
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\begin&lt;/span>{document}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\begin&lt;/span>{letter}{Service des râleurs&lt;span style="color:#66d9ef">\\&lt;/span>66, rue du train&lt;span style="color:#66d9ef">\\&lt;/span>13200 Arles} &lt;span style="color:#75715e">% Destinataire
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\basdepage&lt;/span>{&lt;span style="color:#66d9ef">\pagetotalname&lt;/span>{1}}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\name&lt;/span>{Prénom nom}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\signature&lt;/span>{Nom Prénom &lt;span style="color:#66d9ef">\includegraphics&lt;/span>&lt;span style="color:#a6e22e">[width=75px, angle=-45]&lt;/span>{tampon.png}} &lt;span style="color:#75715e">% Si different de l&amp;#39;expediteur a commenter sinon, ajout du tampon
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\location&lt;/span>{htextei}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\address&lt;/span>{Prenom Nom &lt;span style="color:#66d9ef">\\&lt;/span>13, rue du cheval&lt;span style="color:#66d9ef">\\&lt;/span>13200 Arles}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\lieu&lt;/span>{Arles}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\date&lt;/span> {le 10 mai 2023} &lt;span style="color:#75715e">% Sinon \nodate
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\lieu&lt;/span>{lieu envoi} &lt;span style="color:#75715e">% Sinon \nolieu
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\telephone&lt;/span>{01 02 03 04 05}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\email&lt;/span>{prenom.nom@fai.fr}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\nofax&lt;/span> &lt;span style="color:#75715e">% Pas de fax sinon fax{}
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\Vref&lt;/span>{3456678} &lt;span style="color:#75715e">% Reference du destinataire a commenter sinon
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\Nref&lt;/span>{6654334} &lt;span style="color:#75715e">% Reference de l&amp;#39;envoyeur a commenter sinon
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\def\concname&lt;/span>{Objet :~} &lt;span style="color:#75715e">% On définit l’objet
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">\conc&lt;/span>{rétractation}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\opening&lt;/span>{Madame, Monsieur,}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum &lt;span style="color:#66d9ef">\numprint&lt;/span>{2000}~&lt;span style="color:#66d9ef">\euro&lt;/span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\closing&lt;/span>{Je vous prie d’agréer, Madame, Monsieur,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mes salutations distinguées.}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\ps&lt;/span>{PS :}{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\cc&lt;/span>{Nom des autres destinataires}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\encl&lt;/span>{Pièces jointes}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\end&lt;/span>{letter}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">\end&lt;/span>{document}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+
+
+
+
+
+
+&lt;a class="uk-button uk-button-default uk-box-shadow-medium" target="_blank" href="https://www.overleaf.com/read/rtfknsbdvxnt">&lt;span uk-icon="icon: forward">&lt;/span> Voir sur overleaf&lt;/a>
+
+&lt;p>Le tampon qui va bien&lt;/p></description></item><item><title>Lier Framacarte a Framacalc</title><link>https://schrek.fr/posts/2023/03/framacarte/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/framacarte/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/framacarte/umap_logo.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Il peut être pratique de lier une feuille de tableur avec une carte pour mieux gérer les points .
+Avec &lt;a href="https://framacarte.org">Framacarte&lt;/a> et &lt;a href="https://lite.framacalc.org">Framacalc&lt;/a> c’est possible.
+Sur le &lt;a href="https://wiki.cartocite.fr/doku.php?id=umap:tutoriel_umap">Wiki&lt;/a> de Cartocité on trouve plein de ressource sur le sujet.&lt;/p>
+&lt;h2 id="créer-et-configurer-le-tableur">Créer et configurer le tableur&lt;/h2>
+&lt;p>On va sur &lt;a href="https://lite.framacalc.org">Framacalc&lt;/a> pour créer notre tableur.&lt;/p>
+&lt;ul>
+&lt;li>Sur la 1ᵉʳ colonne on va mettre la latitude en ajoutant &amp;ldquo;lat&amp;rdquo; (case A1 sans les guillemets)&lt;/li>
+&lt;li>2ᵉ colonne, la longitude &amp;ldquo;lon&amp;rdquo; (case B1 sans les guillemets)&lt;/li>
+&lt;li>3ᵉ colonne, le nom &amp;ldquo;nom&amp;rdquo; (case C1 sans les guillemets)&lt;/li>
+&lt;li>4ᵉ colonne, description &amp;ldquo;description&amp;rdquo; (case D1 sans les guillemets)&lt;/li>
+&lt;/ul>
+&lt;p>Pour l’exemple on va prendre les arènes d’Arles.
+&lt;a href="https://www.openstreetmap.org/#map=19/43.67773/4.63103">https://www.openstreetmap.org/#map=19/43.67773/4.63103&lt;/a>
+L’URL nous indique le niveau de zoom, la latitude et la longitude. On récupère les données pour remplir notre tableau.&lt;/p></description></item><item><title>Nano</title><link>https://schrek.fr/posts/2023/03/linux-nano/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/linux-nano/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/linux-nano/nano.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Un éditeur de fichier très simple.&lt;/p>
+&lt;h2 id="pour-ouvrir-un-fichier">Pour ouvrir un fichier&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ nano index.html&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="créer-un-fichier">Créer un fichier&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ nano fichier.txt&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="les-raccourcis-courants">Les raccourcis courants&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span> ctrl + G ...... Appeler le menu d’aide
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + X ...... Fermer et, le cas échéant, quitter nano
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + O ...... Écrire le fichier en cours sur le disque
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + J ...... Justifier le paragraphe courant
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + R ...... Insérer un autre fichier dans le fichier en cours
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + W ...... Rechercher une chaîne dans l’éditeur
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + Y ...... Aller à l’écran précédent
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + V...... Aller à l’écran suivant
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + K ...... Couper la ligne courante vers le presse-papiers
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + U ...... Coller le presse-papiers à partir de la ligne courante
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + C ...... Indiquer la position du curseur&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="coloration-syntaxique">Coloration syntaxique&lt;/h2>
+&lt;p>J’ai trouvé un petit script sympa &lt;a href="https://github.com/scopatz/nanorc">ici&lt;/a> qui modifie le nanorc(fichier de configuration) pour avoir un peu de couleurs .&lt;/p></description></item><item><title>Nego et L’Organisation - Laurent Combalbert</title><link>https://schrek.fr/posts/2023/03/nego-laurent-combalbert/</link><pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/nego-laurent-combalbert/</guid><description>&lt;p>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/nego-laurent-combalbert/nego-1d734.webp" width="200px">
+&lt;/figure>
+&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/nego-laurent-combalbert/l-organisation-67248.webp" width="200px">
+&lt;/figure>
+&lt;/p>
+&lt;p>2 livres d’un coup. Les tomes 1 et tomes 2 de la série Stanislas Monville.
+Un mélange de James bond, Jack Ryan avec une intrigue internationale sur fond d’écologie.&lt;/p>
+&lt;h2 id="résumé">Résumé&lt;/h2>
+&lt;p>Stanislas Monville est négociateur professionnel. Il intervient dans les kidnappings, les séquestrations, les extorsions… Ses années de service dans les forces spéciales comme les missions privées qu’il conduit désormais lui ont donné un instinct très sûr pour repérer les situations à risque.&lt;/p></description></item><item><title>Lykaia - DOA</title><link>https://schrek.fr/posts/2023/03/lykaia---doa/</link><pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/lykaia---doa/</guid><description>&lt;p>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/lykaia---doa/lykaia.webp" width="200px">
+&lt;/figure>
+
+&amp;ldquo;Dans la Grèce antique, les lykaia sont une fête archaïque avec un rituel secret sur les pentes du mont Lykaion (« montagne du loup ») ou mont Lycée, le plus haut sommet d&amp;rsquo;Arcadie. &amp;quot; Wikipedia&lt;/p>
+&lt;p>Livre hyper violent quand meme, ou on decouvre le mileux SM.&lt;/p>
+&lt;h2 id="résumé">Résumé&lt;/h2>
+&lt;p>Berlin Ouest. Le BUNK&amp;rsquo;R est un club discret et sélectif où se pratiquent des séances de sadomasochisme chics et sophistiquées. Un client s&amp;rsquo;apprête à être livré aux mains expertes du narrateur, un ancien chirurgien de haut vol, qui s&amp;rsquo;est reconverti dans la pratique du bondage high-tech, après un grave accident qui le laissa défiguré. Telle est la laideur de son visage qu&amp;rsquo;il doit porter un masque en latex : parfois il aime se recouvrir la tête d&amp;rsquo;un postiche de Loup, dont il ne se sépare jamais vraiment.&lt;/p></description></item><item><title>Tampon encreur sous Gimp</title><link>https://schrek.fr/posts/2023/03/tampon-encreur/</link><pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/tampon-encreur/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/tampon-encreur/tampon-20450.webp" width="200px">
+&lt;/figure>
+
+&lt;p>C&amp;rsquo;est toujours sympa d&amp;rsquo;avoir une petite image pour simuler un tampon sur un document, une photo.&lt;/p>
+&lt;p>J&amp;rsquo;ai listé quelques tuto sous [Gimp-&amp;gt;https://www.gimp.org/]&lt;/p>
+&lt;p>C&amp;rsquo;est pas bien compliqué et ça permet de jouer avec les calques et les filtres.
+Il faut penser à bien enregistrer au format PNG pour garder la transparence.&lt;/p>
+&lt;h2 id="liens">Liens&lt;/h2>
+&lt;p>&lt;a href="http://www.1point2vue.com/tampon-encre-gimp/">http://www.1point2vue.com/tampon-encre-gimp/&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://abcdugimp.free.fr/gimp/realiser/tutoriels/tampon/tampon.php">http://abcdugimp.free.fr/gimp/realiser/tutoriels/tampon/tampon.php&lt;/a>&lt;/p></description></item><item><title>Le Joueur d’échecs - Stefan Zweig</title><link>https://schrek.fr/posts/2023/03/le-joueur-dchecs-stefan-zweig/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/le-joueur-dchecs-stefan-zweig/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/le-joueur-dchecs-stefan-zweig/le_joueur_dechecs.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Un des plus beau livre que j&amp;rsquo;ai lu. Un roman court mais intense.&lt;/p>
+&lt;h2 id="résumé">Résumé&lt;/h2>
+&lt;p>Czentowic, champion d&amp;rsquo;échecs arrogant, esprit borné à outrance, inculte et étonnamment stupide, occupe le premier plan jusqu&amp;rsquo;à l&amp;rsquo;entrée en scène de Monsieur B. Dès lors que cet aristocrate autrichien s&amp;rsquo;intéresse à la partie livrée entre le champion et les passagers amateurs, la direction du texte bascule.&lt;/p>
+&lt;h2 id="détails">Détails&lt;/h2>
+&lt;ul>
+&lt;li>Langue : Français&lt;/li>
+&lt;li>Broché : 128 pages&lt;/li>
+&lt;/ul>
+&lt;h2 id="téléchargement">Téléchargement&lt;/h2>
+&lt;p>&lt;a href="zweig-le_joueur_d_echecs.epub">Epub libre de droit&lt;/a>&lt;/p></description></item><item><title>Rétiaire(s) - DOA</title><link>https://schrek.fr/posts/2023/03/r%C3%A9tiaires_doa/</link><pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/r%C3%A9tiaires_doa/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/r%C3%A9tiaires_doa/doa.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Un bon &lt;a href="https://fr.wikipedia.org/wiki/DOA_(auteur)">DOA&lt;/a> bien glauque.&lt;/p>
+&lt;h2 id="résumé">Résumé&lt;/h2>
+&lt;p>Une enquêtrice de l’Office anti-stupéfiants, l’élite de la lutte anti-drogue, qui a tout à prouver. Un policier des Stups borderline qui n’a plus rien à perdre. Un clan manouche qui lutte pour son honneur et sa survie. Avec la rigueur qu’on lui connaît, DOA immerge son lecteur dans le quotidien des acteurs du trafic de came ; son indiscutable talent de romancier nous arrime à la destinée de ses personnages, à leurs relations complexes et fragiles ; son style, d’une précision presque brutale, colle au plus près de cet univers de violence et de solitude.&lt;/p></description></item><item><title>Socca</title><link>https://schrek.fr/posts/2023/03/socca/</link><pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/socca/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/socca/socca2.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Socca est le nom donné à une spécialité culinaire à base de farine de pois chiche !&lt;/p>
+&lt;h2 id="ingrédients">Ingrédients&lt;/h2>
+&lt;ul>
+&lt;li>250 g de farine de pois chiches&lt;/li>
+&lt;li>50 cl d’eau&lt;/li>
+&lt;li>4 cuillères à soupe d’huile d’olive&lt;/li>
+&lt;li>1 cuillère à café de sel fin&lt;/li>
+&lt;li>poivre&lt;/li>
+&lt;/ul>
+&lt;h2 id="préparation">Préparation&lt;/h2>
+&lt;p>Mélanger la farine de pois chiche et l’eau. Ajouter l’huile d’olive et le sel. La préparation est liquide
+Laisser reposer 1 heure.&lt;/p>
+&lt;p>Faire chauffer le four au maximum, le mieux c’est un four à pizza ou au pire une machine a croque monsieur.
+Huiler un plat de type a paella et mettre au four pour qu’il prenne la température.&lt;/p></description></item><item><title>Poulets grillés - Sophie Hénaff</title><link>https://schrek.fr/posts/2023/03/poulets-grill%C3%A9s---sophie-h%C3%A9naff/</link><pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/poulets-grill%C3%A9s---sophie-h%C3%A9naff/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/poulets-grill%C3%A9s---sophie-h%C3%A9naff/poulets-grille.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Un roman drôle qui se lit tout seul.
+Une brigade constituée de bras cassés, quand les pires de la PJ mènent une enquête.&lt;/p>
+&lt;p>Il y a 4 tomes dans la série :&lt;/p>
+&lt;ul>
+&lt;li>Poulets grillés&lt;/li>
+&lt;li>Rester groupés&lt;/li>
+&lt;li>Art et Décès&lt;/li>
+&lt;li>Drame de pique&lt;/li>
+&lt;/ul>
+&lt;h2 id="résumé">Résumé&lt;/h2>
+&lt;p>Lorsque le divisionnaire Buron décide de faire briller les statistiques du 36, il regroupe dans une brigade dont il confie le commandement à la commissaire Anne Capestan, reine notoire de la bavure, tout ce que la police judiciaire compte d’alcoolos, d’homos, de porte-poisse, d’écrivains, de crétins&amp;hellip; Pour élucider des affaires classées. Mais voilà, Capestan aime enquêter, travailler en équipe et, surtout, contrarier sa hiérarchie&lt;/p></description></item><item><title>BRouter Web Client</title><link>https://schrek.fr/posts/2023/03/brouter/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/brouter/</guid><description>&lt;p>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/brouter/velo1.webp" width="200px">
+&lt;/figure>
+
+BRouter Web Client est un service WEB pour Planifier un itinéraire.
+Le client s’appuie sur &lt;a href="https://www.openstreetmap.org/">OpenStreetMap&lt;/a>
+Brouter est très complet en plus de calculer les itinéraires, les importer, les exporter, on peut ajouter des calques pour visualiser d’autres données comme les campings, hôtels…&lt;/p>
+&lt;!-- more -->
+&lt;p>Bonne découverte.&lt;/p>
+&lt;h2 id="liens">Liens&lt;/h2>
+&lt;p>&lt;a href="http://brouter.de/brouter-web/">http://brouter.de/brouter-web/&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://brouter.m11n.de">https://brouter.m11n.de&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-ordinateur/">https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-ordinateur/&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que">https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que&lt;/a>&lt;/p></description></item><item><title>Z-Library</title><link>https://schrek.fr/posts/2023/03/zlibrary/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/zlibrary/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/zlibrary/library_z.webp" width="200px">
+&lt;/figure>
+
+&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/Z-Library">Z-Library&lt;/a> est une bibliothèque numérique qui vous permet de télécharger des e-books, des livres, des revues scientifiques en ligne.&lt;/p>
+&lt;p>Mais pour y accéder, il va falloir passer par [Tor-&amp;gt;https://fr.wikipedia.org/wiki/Tor_(r%C3%A9seau)], rien de bien compliqué.
+Il suffit d’installer &lt;a href="https://www.torproject.org/download/">Tor browser&lt;/a>. Âpres avoir lancé le navigateur, il suffît de copier ce lien dans le navigateur.&lt;/p>
+&lt;p>&lt;code>http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion/&lt;/code>&lt;/p>
+&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/zlibrary/capture.webp" width="600px">
+&lt;/figure>
+
+&lt;p>Il existe aussi des miroirs qui permettent un accès direct.&lt;/p>
+&lt;h2 id="liens">Liens&lt;/h2>
+&lt;p>&lt;a href="https://singlelogin.me/">https://singlelogin.me/&lt;/a>
+&lt;a href="https://fr.annas-archive.org/">https://fr.annas-archive.org/&lt;/a>&lt;/p></description></item><item><title>Le Problème à trois corps - Liu Cixin</title><link>https://schrek.fr/posts/2023/03/trois-corps/</link><pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/trois-corps/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/trois-corps/probleme.webp" width="200px">
+&lt;/figure>
+
+&lt;p>J’ai demandé à &lt;a href="https://fr.wikipedia.org/wiki/ChatGPT">chatgpt&lt;/a> de me conseiller un livre de SF, je suis pas déçu du choix de l’IA.
+L’écologie est au cœur du livre, on se retrouve dans le désespoir de l’humanité et des conséquences des choix humains.&lt;/p>
+&lt;p>C’est le tome 1 d’une trilogie:&lt;/p>
+&lt;ul>
+&lt;li>Le Problème à trois corps&lt;/li>
+&lt;li>La Forêt sombre&lt;/li>
+&lt;li>La Mort immortelle&lt;/li>
+&lt;/ul>
+&lt;h2 id="résumé">Résumé&lt;/h2>
+&lt;p>En pleine Révolution culturelle, le pouvoir chinois construit la base militaire secrète de Côte Rouge, destinée à développer une arme de grand calibre. Ye Wenjie, une jeune astrophysicienne en cours de “rééducation”, intègre l’équipe de recherche. Dans ce lieu isolé où elle croit devoir passer le restant de sa vie, elle est amenée à travailler sur un système de télétransmissions dirigé vers l’espace et découvre peu à peu la véritable mission de Côte Rouge…&lt;/p></description></item><item><title>Sorbet basilic</title><link>https://schrek.fr/posts/2023/03/sorbet_basilic/</link><pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/sorbet_basilic/</guid><description>&lt;p>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/sorbet_basilic/logo_basilic.webp" width="200px">
+&lt;/figure>
+
+Un super sorbet pour, 4 personnes pour finir vos repas d’été.&lt;/p>
+&lt;h2 id="ingrédients">Ingrédients&lt;/h2>
+&lt;ul>
+&lt;li>1/2 litre d’eau ;&lt;/li>
+&lt;li>1 grosse cuillère de crème fraîche ;&lt;/li>
+&lt;li>12 plans de basilic ;&lt;/li>
+&lt;li>2 petits citrons ou 1,5 gros.&lt;/li>
+&lt;/ul>
+&lt;figure class="imagearticle">&lt;img src="basilic.webp" width="400px">
+&lt;/figure>
+
+&lt;h2 id="préparation">Préparation&lt;/h2>
+&lt;ul>
+&lt;li>Faire un sirop en portant à ébullition l’eau froide avec le sucre et laisser un peu refroidir.&lt;/li>
+&lt;li>Mixer le basilic effeuillé et infuser le 30min.&lt;/li>
+&lt;li>Passer a L’étamine pour filtrer, ajouter le jus de citron et la crème. Mettre ensorbetière.&lt;/li>
+&lt;li>Vous servirez en boule dans des verres givrés, le sorbet doit rester moelleux.&lt;/li>
+&lt;/ul></description></item><item><title>Fabrication d'un savon d'Alep</title><link>https://schrek.fr/posts/2023/03/savon_alep/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/savon_alep/</guid><description>&lt;p>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/savon_alep/logo.webp" width="200px">
+&lt;/figure>
+
+Ici je vais vous décrire rapidement la fabrication maison du savon d’Alep. C’est un savon simple à base d’huile d’olive et d’huile de baie de laurier et d’huile de ricin.
+J’utilise la technique de la saponification a froid.&lt;/p></description></item><item><title>La Signalisation SNCF avec Latex</title><link>https://schrek.fr/posts/2023/03/signaux_sncf/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/signaux_sncf/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/signaux_sncf/signal_sncf_carre.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Pour jouer avec &lt;a href="https://tikz.dev/">tikz&lt;/a> qui permet de générer des images, j’ai fait des signaux SNCF.&lt;/p>
+&lt;p>C’est perfectible aux niveaux des couleurs et des formes mais ca rend bien.
+Un cheminot Nicolas Wurtz a fait aussi ce travail mais sous une autre forme, son dépôt &lt;a href="https://github.com/nicolaswurtz/signalisation-rfn-svg">git&lt;/a>
+Un autre projet &lt;a href="https://geillon.pagesperso-orange.fr/trains/signaux/index.html">ici&lt;/a> à base de gif.&lt;/p>
+&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/signaux_sncf/signal5-03315.gif" width="50px">
+&lt;/figure>
+
+&lt;h2 id="mes-sources-latex">Mes sources latex&lt;/h2>
+&lt;p>&lt;a href="signaux_sncf.pdf">Fichier pdf&lt;/a>&lt;/p>
+&lt;p>&lt;a href="signaux_sncf.tex">Fichier Latex&lt;/a>&lt;/p>
+
+
+
+
+
+
+&lt;a class="uk-button uk-button-default uk-box-shadow-medium" target="_blank" href="https://www.overleaf.com/read/yykmgbndgsqt">&lt;span uk-icon="icon: forward">&lt;/span> Voir sur overleaf&lt;/a>
+
+&lt;h2 id="lien">Lien&lt;/h2>
+&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France">https://fr.wikipedia.org/wiki/Signalisation_ferroviaire_en_France&lt;/a>&lt;/p></description></item><item><title>Le style Latex</title><link>https://schrek.fr/posts/2023/03/css-style_latex/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/css-style_latex/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/css-style_latex/latex_logo.webp" width="200px">
+&lt;/figure>
+
+&lt;h2 id="style-latex-en-css">Style LaTex en CSS&lt;/h2>
+&lt;p>Latex le célèbre système de composition de document, qui permet de générer de “belles pages”, a un style bien à lui.
+Vincent Dörig a créé un style CSS pour l’intégrer facilement dans un site. On y retrouve aussi l’intégration des formules mathématique avec MathJax.&lt;/p>
+&lt;p>La page de test &lt;a href="https://latex.vercel.app/elements">https://latex.vercel.app/elements&lt;/a>&lt;/p>
+&lt;h2 id="liens">Liens&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://latex.vercel.app/">https://latex.vercel.app/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/vincentdoerig/latex-css">https://github.com/vincentdoerig/latex-css&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.mathjax.org/">https://www.mathjax.org/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.latex-project.org/">https://www.latex-project.org/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fr.wikibooks.org/wiki/LaTeX">https://fr.wikibooks.org/wiki/LaTeX&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,308 +1,38 @@
-<!DOCTYPE html>
-
-<html lang="fr">
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
-	<meta name="generator" content="Hugo 0.139.3">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Blog qui parle de lecture et de web" />
-    <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
-    <title>Schrek.fr</title>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-<link rel="manifest" href="/manifest.json">
-
-<meta name="mobile-web-app-capable" content="yes" />
-
-<meta name="apple-mobile-web-app-title" content="My PWA" />
-
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-<script>
-
-if ('serviceWorker' in navigator) {
-
-navigator.serviceWorker.register('/sw.js');
-
-};
-
-</script>
-
-    <meta property="og:url" content="http://localhost:1313/">
-  <meta property="og:site_name" content="Schrek.fr">
-  <meta property="og:title" content="Schrek.fr">
-  <meta property="og:description" content="Mon super blog :)">
-  <meta property="og:locale" content="fr_fr">
-  <meta property="og:type" content="website">
-
-    
-    <link  href="/css/uikit.min.min.74065b0cc0cc771b6d0c8cdd1571f95022330dbe057cfe7f5c22ddf003313c6715e6047ab88bb5766ca27342b6d7b572f78f0fa2110438c5a0edeb269788d553.css" rel="stylesheet"  integrity="sha512-dAZbDMDMdxttDIzdFXH5UCIzDb4FfP5/XCLd8AMxPGcV5gR6uIu1dmyic0K217Vy948PohEEOMWg7esml4jVUw==" crossorigin="anonymous">
-    
-    <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Schrek.fr" />
-    <link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="Schrek.fr" />
-    </head>
-<body>
-<header>
-    <div class="uk-container uk-container-xsmall uk-padding-small">
-        <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
-        <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
-    </div>
-
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-    <div class="uk-navbar-center ">
-        <ul class="uk-navbar-nav">
-            
-            <li class="uk-active"><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/notes/"><span uk-icon="icon:pencil; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
-            
-        </ul>
-    </div>
-</nav>
-<hr class="uk-divider-icon">
-</header>
-<main>
-
-
-<div class="uk-container ">
-<div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
-
-
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/latex-et-les-liens//lien.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/latex-et-les-liens/">Latex et les liens</a></h1>
-                                    <p class="uk-article-meta">2023-08-20
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Le module hyperref permet de créer des liens externes et interne sur un PDF.
-On peut changer les couleurs et ajouter des métadonnées
-Son utilisation est facile.
-Utilisation Pour un lien simple: \url{https://wikipedia.fr}
-Pour un un liens dans le texte: \href{https://wikipedia.fr}{Wikipedia.fr} Pour un email: \href{mailto:madame@michu.fr}{madame@michu.fr}
-Pour un document (Attention au chemin): \href{run:./xcolor.pdf}{Voir ce PDF}
-Les exemples \documentclass[a4paper,10pt]{scrartcl} % koma-script \usepackage{graphicx} % Module images \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[T1]{fontenc} \usepackage{parskip} \usepackage[french]{babel} % En francais \usepackage{hyperref} % Module hyperref \hypersetup{colorlinks=true, linkcolor=blue, % Couleurs des liens filecolor=magenta, % Couleur des liens de fichier urlcolor=cyan,% Couleur des Urls pdftitle={Hyperref},% Meta titre pdfauthor={Christophe},% Meta auteur pdfsubject={Les liens avec Latex},% Meta sujet pdfkeywords={Latex,Hyperref},% Meta mots clefs pdfproducer = Latex}% Meta generateur du pdf \urlstyle{same} % Meme police pour les urls \title{Hyperref} \author{Christophe } \date{Juin 2023} \begin{document} \maketitle \section*{Liens simples} \href{https://wikipedia.fr}{Wikipedia.fr} \par \url{https://wikipedia.fr} \par \href{mailto:madame@michu.fr}{madame@michu.fr} \par \href{run:./xcolor.pdf}{Voir ce PDF} \end{document} Lien dans un document Pour créer le lien: \hyperlink{ID}{TEXT}
-</p>
-                            <a href="/posts/2023/08/latex-et-les-liens/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/latex-et-xcolor//xcolor.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/latex-et-xcolor/">Latex et xcolor</a></h1>
-                                    <p class="uk-article-meta">2023-08-15
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Le paquetage xcolor fait partie des indispensables de Latex pour coloriser les textes.
-Préambule On appelle les couleurs de base de xcolor,
-\usepackage{xcolor} % import des couleurs dans les textes Il y a aussi d’autres palettes de couleurs:
-dvipsnames: 68 couleurs (CMYK); svgnames: 151 couleurs (RGB); x11names: 317 couleurs (RGB). \usepackage[dvipsnames]{xcolor} % import des couleurs dans les textes Tous est bien indiqué dans la documentation (page 39).
-Personnalisation des couleurs On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.
-</p>
-                            <a href="/posts/2023/08/latex-et-xcolor/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton//lien.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/">Shortcode bouton</a></h1>
-                                    <p class="uk-article-meta">2023-08-12
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>J’avais besoin d&#34;un bouton pour ouvrir des liens.
-Le shortcode A déposer dans /themes/VOTRETHEME/layouts/shortcodes/bouton.html.
-On peut personaliser l’icône grace a Uikit
-{{ $url := .Get &#34;url&#34; }} {{ $titre := .Get &#34;titre&#34; }} {{ $icone := .Get &#34;icone&#34; | default &#34;link&#34;}} &lt;a class=&#34;uk-button uk-button-default uk-box-shadow-medium&#34; target=&#34;_blank&#34; href=&#34;{{ $url }}&#34;&gt;&lt;span uk-icon=&#34;icon: {{ $icone }}&#34;&gt;&lt;/span&gt; {{ $titre }}&lt;/a&gt; Exemples {{&lt; bouton titre=&#34;Voir sur overleaf&#34; url=&#34;https://www.overleaf.com/read/dgnpzyngzbqk&#34; icone=&#34;forward&#34; &gt;}} Voir sur overleaf {{&lt; bouton titre=&#34;Uikit&#34; url=&#34;https://getuikit.com&#34; icone=&#34;uikit&#34; &gt;}} Uikit Liens https://getuikit.com/docs/button
-https://getuikit.com/docs/icon
-</p>
-                            <a href="/posts/2023/08/hugo-shortcode-bouton/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/latex-pdf-editable//latex_logo.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/latex-pdf-editable/">Latex, PDF éditable</a></h1>
-                                    <p class="uk-article-meta">2023-08-10
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Avec la classe hyperref, on peut facilement créer des documents PDF éditable.
-J’ai fait un petit exemple avec un attestation d’hébergement.
-La documentation est bien faite.
-Exemple \documentclass[12pt,a4paper]{article} \usepackage[right=2cm,left=2cm,top=2cm,bottom=2cm]{geometry} \usepackage[french]{babel} \usepackage[default]{lato} \usepackage{xcolor} \usepackage{hyperref} \hypersetup{ colorlinks=true, linkcolor=black, } \usepackage{fancyhdr} \pagestyle{empty} \setlength\parindent{0pt} \begin{document} \begin{Form} \begin{center} \textbf{\uppercase{ATTESTATION D&#39;HÉBERGEMENT}} \\ \end{center} \vspace{5mm} Je soussigné(e), \\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \TextField[width=14cm,borderwidth=0pt]{Demeurant :} \\ \vspace{5mm} déclare sur l&#39;honneur héberger à mon domicile,\\ \vspace{5mm} \TextField[width=5cm,borderwidth=0pt]{Mme/M. :} \\ \TextField[width=5cm,borderwidth=0pt]{Né(e) le :} \\ \TextField[width=5cm,borderwidth=0pt]{À :} \\ \vspace{5mm} depuis le\\ \vspace{5mm} \TextField[width=8cm,borderwidth=0pt]{Date de début d&#39;hébergement:}\\ \vspace{5mm} \TextField[width=14cm,borderwidth=0pt]{à l&#39;adresse suivante :} \TextField[width=8cm,borderwidth=0pt]{Fait à :} \\ \\ \TextField[width=4cm,borderwidth=0pt]{Le :} \TextField[width=1cm,borderwidth=0pt,maxlen=2]{à} \TextField[width=1cm,borderwidth=0pt,maxlen=2]{h} \\ \TextField[width=14cm,borderwidth=0pt]{Signature :} \end{Form} \end{document} Voir sur overleaf Explications On ouvre le formulaire avec la balise \begin{Form} \TextField[width=4cm,borderwidth=0pt]{Le :} Ajoute la partie à completer On ferme le formulaire avec la balise \end{Form} En vrac Voir en bas dans les liens de téléchargements.
-</p>
-                            <a href="/posts/2023/08/latex-pdf-editable/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/la-griffe-du-chien//griffe.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/la-griffe-du-chien/">La Griffe du chien - Don Winslow</a></h1>
-                                    <p class="uk-article-meta">2023-08-07
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/lecture">Lecture</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Don Winslow retraçe un demi-siècle de lutte contre la drogue aux Etats-Unis et au Mexique.
-3 gros pavets que l’on devore facilement. Les personnages s’entrecroisent, on append beaucoup sur les dessous du trafics de drogue.
-Serie Art Keller Résumé Seigneur de la frontière américano-mexicaine, Art Keller, agent de la DEA, l’a juré sur la tombe de son adjoint : il emploiera tous les moyens, légaux ou illégaux, pour mettre un terme au trafic qui inonde son pays. Face à lui, Adán Barrera règne sans partage sur les sicarios.
-</p>
-                            <a href="/posts/2023/08/la-griffe-du-chien/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-<div>
-            <div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom">
-                        <article class="uk-article">
-                            
-                                    <img class="uk-align-right uk-margin-medium-right"  width="100" height="100" src="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags//cloud.webp" alt="logo">
-                            
-                                    <h1 class="uk-article-title"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/hugo-et-nuages-de-tags/">Nuage de tags</a></h1>
-                                    <p class="uk-article-meta">2023-08-05
-                            
-                                    <span class="labelcat uk-label"><a href="/categories/web">Web</a></span>
-                                                         
-                                    </p>
-                            <p class="uk-text-lead"></p>
-                            <p>Dans la barre des menus, j’avais trop de tags cela devenait pas trop lisible.
-J’ai choisi de déporter les tags dans une page et d’utiliser que du CSS pour le visuel.
-Il y a la possibilité de bibliothèques JavaScript mais je veux rester light.
-</p>
-                            <a href="/posts/2023/08/hugo-et-nuages-de-tags/">Lire plus...</a>
-                    </article>
-              </div>
-</div>
-        
-    </div>
-
-
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/page/8/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/page/7/" aria-label="Page 7" class="page-link" role="button">7</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/8/" aria-label="Page 8" class="page-link" role="button">8</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 9" class="page-link" role="button">9</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/10/" aria-label="Page 10" class="page-link" role="button">10</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/11/" aria-label="Page 11" class="page-link" role="button">11</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/10/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/page/20/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-<article class="uk-comment uk-comment-primary">
-<h4 class="uk-comment-title"><span uk-icon="bell"></span> Notes</h4>
-
-   
-
-   
-	  </a> <h2 id="decembre-2025">Decembre 2025</h2>
-<ul>
-<li>Guide de survie Hugo: <a href="https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81">https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81</a></li>
-<li>Analyse de fichiers Mardown avec Python: <a href="https://github.com/yannbanas/mrkdwn_analysis">https://github.com/yannbanas/mrkdwn_analysis</a></li>
-<li>Générer des stats sur Hugo: <a href="https://bacardi55.io/2024/03/07/generating-basic-content-statistics-for-static-site-generator/">https://bacardi55.io/2024/03/07/generating-basic-content-statistics-for-static-site-generator/</a></li>
-<li>« Il n’y a qu’un problème philosophique vraiment sérieux : c’est le suicide. Juger que la vie vaut ou ne vaut pas la peine d’être vécue, c’est répondre à la question fondamentale de la philosophie. » – Camus</li>
-<li>Lecture: Sanderson, Brandon - Vers les étoiles (Skyward 1)</li>
-<li>Illustration pour médiation numérique <a href="https://grisebouille.net/illustrations-pour-mediation-numerique/">https://grisebouille.net/illustrations-pour-mediation-numerique/</a></li>
-<li>Boost rasp 5 <a href="https://korben.info/raspberry-pi-5-optimisation-performances-sdram.html">https://korben.info/raspberry-pi-5-optimisation-performances-sdram.html</a></li>
-</ul> </p>
-   
-
-</article>
-</div>
-
-
-        </main>
-<footer>
-    <div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
-        2024 - Construit avec <a class="uk-link-muted" href="https://gohugo.io/">Hugo</a> et de <a class="uk-link-muted" href="https://getuikit.com/">UiKit</a> 
-    </div>
-</footer>
-
-
-    <script src="/js/uikit.min.min.b795e52a95a6766546e08686e5d002243ef20e0fb3c22c860b7bd2adb02129b7.js" integrity="sha256-t5XlKpWmdmVG4IaG5dACJD7yDg&#43;zwiyGC3vSrbAhKbc=" crossorigin="anonymous"></script>
-
-    <script defer src="/js/uikit-icons.min.min.992015e15d0a403b809bb04d0599e2873818150584953ed5864664037c6b4333.js" integrity="sha256-mSAV4V0KQDuAm7BNBZnihzgYFQWElT7VhkZkA3xrQzM=" crossorigin="anonymous"></script>
-
-
-  
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-<script>
-  MathJax = {
-    tex: {
-      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
-      inlineMath: [['\\(', '\\)']]                  
-    }
-  };
-</script>
-
-
-
-  
-
-</body>
-</html>
+<!doctype html><html lang=fr><html><head><meta name=generator content="Hugo 0.139.3"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Blog qui parle de lecture et de web"><meta name=keywords content="hugo,html,lecture,web,shortcode"><title>Schrek.fr</title>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-title content="My PWA"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js")</script><meta property="og:url" content="https://schrek.fr/"><meta property="og:site_name" content="Schrek.fr"><meta property="og:title" content="Schrek.fr"><meta property="og:description" content="Mon super blog :)"><meta property="og:locale" content="fr_fr"><meta property="og:type" content="website"><link href=/css/uikit.min.min.74065b0cc0cc771b6d0c8cdd1571f95022330dbe057cfe7f5c22ddf003313c6715e6047ab88bb5766ca27342b6d7b572f78f0fa2110438c5a0edeb269788d553.css rel=stylesheet integrity="sha512-dAZbDMDMdxttDIzdFXH5UCIzDb4FfP5/XCLd8AMxPGcV5gR6uIu1dmyic0K217Vy948PohEEOMWg7esml4jVUw==" crossorigin=anonymous><link href=/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css rel=stylesheet integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp+8kDvTq4rdsbpi6rWUJnq68ImIF+mScfMdRrPd7mRCOJAPMg==" crossorigin=anonymous><link rel=alternate type=application/rss+xml href=https://schrek.fr/index.xml title=Schrek.fr><link rel=alternate type=application/json href=https://schrek.fr/index.json title=Schrek.fr></head><body><header><div class="uk-container uk-container-xsmall uk-padding-small"><a href=https://schrek.fr/><h1 classe=uk-heading-small>Schrek.fr</h1></a><a href=https://schrek.fr/><h2>Mon super blog :)</h2></a></div><nav class="uk-navbar-container uk-navbar-transparent" uk-navbar><div class=uk-navbar-center><ul class=uk-navbar-nav><li class=uk-active><a href=/><span uk-icon="icon:home; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/apropos/><span uk-icon="icon:info; ratio: 2"></span></a></li><li class=uk-active><a href=/wiki/><span uk-icon="icon:database; ratio: 2"></span></a></li><li class=uk-active><a href=/notes/><span uk-icon="icon:pencil; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/tagscloud/><span uk-icon="icon:hashtag; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/search/><span uk-icon="icon:search; ratio: 2"></span></a></li><li class=uk-active><a href=/index.xml><span uk-icon="icon:rss; ratio: 2"></span></a></li></ul></div></nav><hr class=uk-divider-icon></header><main><div class=uk-container><div class="uk-child-width-1-2@s uk-grid-match" uk-grid><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2023/07/hugo-minify//minifycss.webp alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2023/07/hugo-minify/>Hugo minification</a></h1><p class=uk-article-meta>2023-07-20
+<span class="labelcat uk-label"><a href=/categories/web>Web</a></span></p><p class=uk-text-lead></p><p>Hugo est rapide, mais on peut améliorer le chargement des ressources.
+Les images Il faut utiliser des formats modernes comme webp et avoir un bon redimensionnement. J’utilise Gimps pour changer la taille et le format.
+Sinon en ligne de commande:
+$ cwebp -q 90 minifycss.png -o minifycss.webp Les CSS Les fichiers CSS sont placés directement dans /themes/VOTRETHEME/assets/css.
+Dans mon partials/head.html, j ai:
+{{ $css := resources.Get "css/uikit.min.css" | minify | resources.Fingerprint "sha512" }} &lt;link href="{{ $css.RelPermalink }}" rel="stylesheet" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous"> {{ $css := resources.Get "css/styles.css" | minify | resources.Fingerprint "sha512" }} &lt;link href="{{ $css.RelPermalink }}" rel="stylesheet" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous"> Récupère le fichier CSS, compresse(minify) et créer une empreinte pour vérifier les changements (ca évite de recharger dans le cache si c’est le même fichier)</p><a href=/posts/2023/07/hugo-minify/>Lire plus...</a></article></div></div><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2023/07/latex_liens//latex_logo.webp alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2023/07/latex_liens/>Ressources pour Latex</a></h1><p class=uk-article-meta>2023-07-15
+<span class="labelcat uk-label"><a href=/categories/latex>Latex</a></span></p><p class=uk-text-lead></p><p>Une liste de ressources Latex pour apprendre et comprendre
+Francais https://zestedesavoir.com/bibliotheque/?tag=latex
+https://www.learnlatex.org/fr/
+https://fr.wikibooks.org/wiki/LaTeX
+https://framalibre.org/tags/latex
+https://www.gutenberg-asso.fr/
+Anglais https://www.overleaf.com/
+https://www.latex-project.org/
+https://www.ctan.org/
+https://github.com/egeerardyn/awesome-LaTeX</p><a href=/posts/2023/07/latex_liens/>Lire plus...</a></article></div></div><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2023/07/fichier//paper.webp alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2023/07/fichier/>Shortcode les fichiers</a></h1><p class=uk-article-meta>2023-07-15
+<span class="labelcat uk-label"><a href=/categories/web>Web</a></span></p><p class=uk-text-lead></p><p>Ce shortcode liste les fichiers dans une dossier pour permettre leurs téléchargements.
+Dans le dossier de l’article, il faut creer un dossier files/ pour y deposer les fichiers.
+Attention, le shortcode ne marche pas si il y a des espaces dans le nom du dossier de l’article
+&lt;–more–>
+Le shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier pj.html
+pj.html {{ $_hugo_config := `{ "version": 1 }` -}} &lt;div class="attachments-files uk-card uk-card-small uk-width-1-3@m uk-padding"> &lt;h3 class="attachments-files-titre">Téléchargement &lt;span uk-icon="icon: cloud-download;ratio:2">&lt;/span>&lt;/h3> &lt;div class="attachments-files"> {{- $filesName := "files" }} {{- if ne .Page.File.BaseFileName "index" }} {{- $filesName = printf "%s.files" .Page.File.BaseFileName }} {{- end}} {{- $fileDir := replace .Page.File.Dir "\\" "/" }} {{- $pattern := .Get "pattern" | default "" }} {{- range (readDir (printf "content/%s%s" .Page.File.Dir $filesName) ) }} &lt;li> &lt;a href="{{ (printf "%s%s/%s" $fileDir $filesName .Name) | relLangURL }}">{{.Name}}&lt;/a> &lt;/li> {{- end}} &lt;/div> {{- .Inner}} &lt;/div> le CSS pour uikit .attachments-files{ background-color: #dbe6eb; } Résultat {{&lt; pj />}} Téléchargement pj.txt Émile_Zola_(Maupassant).epub Émile_Zola_(Maupassant).mobi Émile_Zola_(Maupassant).pdf Liens http://oostens.me/posts/hugo-attachment-shortcode/</p><a href=/posts/2023/07/fichier/>Lire plus...</a></article></div></div><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2023/07/hugo-lesimages//image.webp alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2023/07/hugo-lesimages/>Hugo et les images</a></h1><p class=uk-article-meta>2023-07-10
+<span class="labelcat uk-label"><a href=/categories/web>Web</a></span></p><p class=uk-text-lead></p><p>Minimal {{&lt; figure src="image.webp" width=200px >}} Grande taille {{/*&lt; figure src="image.webp" title="Anita Austvika" caption="Photo de [Anita Austvika](https://unsplash.com/ko/@anitaaustvika) sur [Unsplash](https://unsplash.com/)" width=800px alt="Anita Austvika" class="imagecenter" attrlink="https://unsplash.com/fr/photos/u9ZFCP8VuvU"*/>}} Anita AustvikaPhoto de Anita Austvika sur Unsplash Images centrée {{&lt; figure src="image.webp" title="Anita Austvika" caption="Photo de [Anita Austvika](https://unsplash.com/ko/@anitaaustvika) sur [Unsplash](https://unsplash.com/)" width=400px alt="Anita Austvika" class="imagecenter" >}} Anita AustvikaPhoto de Anita Austvika sur Unsplash
+Images à droite Anita AustvikaPhoto de Anita Austvika sur Unsplash
+" {{&lt; figure src="image.webp" title="Anita Austvika" caption="Photo de [Anita Austvika](https://unsplash.com/ko/@anitaaustvika) sur [Unsplash](https://unsplash.com/)" width=400px alt="Anita Austvika" class="imageright" >}}
+Le CSS .imagecenter { display: grid; align-items: center; justify-content: center; text-align: center; } .imageright { display: grid; align-items: right; justify-content: right; text-align: center; } .imageleft { display: grid; align-items: left; justify-content: left; text-align: center; } lien https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes</p><a href=/posts/2023/07/hugo-lesimages/>Lire plus...</a></article></div></div><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2023/07/hugo-shortcode-html//peertube.webp alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2023/07/hugo-shortcode-html/>Shortcode pour integrer le HTML</a></h1><p class=uk-article-meta>2023-07-05
+<span class="labelcat uk-label"><a href=/categories/web>Web</a></span></p><p class=uk-text-lead></p><p>On pourrait ecrire des milliers de shorcode pour integrer du html, mais il y a plus facile.
+Pour l’exemple, on va prendre des videos diffusé sur Peertube.fr
+Le code original &lt;iframe title="GoGoCarto - 1 - Personnalisation du site" src="https://www.peertube.fr/videos/embed/54509567-9116-4264-ba86-6c2d20cd360b" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0">&lt;/iframe> Des idées sur l’iframe en mode Hugo ici.
+Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes, un fichier rawhtml.html. Avec seulement ca.
+{{.Inner}} Exemple Il suffit de coller l’iframe entre nos 2 balises.</p><a href=/posts/2023/07/hugo-shortcode-html/>Lire plus...</a></article></div></div><div><div class="uk-container uk-container-xsmall uk-background-muted uk-padding-small uk-box-shadow-medium uk-margin uk-margin-medium-bottom"><article class=uk-article><img class="uk-align-right uk-margin-medium-right" width=100 height=100 src=https://schrek.fr/posts/2023/07/hugo-shortcode-pad//pad.wepb alt=logo><h1 class=uk-article-title><a class=uk-link-heading href=https://schrek.fr/posts/2023/07/hugo-shortcode-pad/>Shortcode Framapad</a></h1><p class=uk-article-meta>2023-07-01
+<span class="labelcat uk-label"><a href=/categories/web>Web</a></span></p><p class=uk-text-lead></p><p>Framapad Un « pad » est un éditeur de texte collaboratif en ligne géré par Framasoft.
+Le code original &lt;iframe name="embed_readwrite" src="https://hebdo.framapad.org/p/fygijewtbk-a0wa?showControls=true&amp;showChat=true&amp;showLineNumbers=true&amp;useMonospaceFont=false" width="100%" height="600" frameborder="0">&lt;/iframe> On peut utiliser l’import de l’iframe.
+Des idées sur l’iframe en mode Hugo ici.
+Sinon il y a les shortcodes.
+Le Shortcode On va créer dans le dossier des shortcodes /themes/VOTRETHEME/layouts/shortcodes un fichier pad.html {{ $PadName := .Get "PadName" }} {{ $showControls := .Get "showControls" | default "false" }} {{ $showChat := .Get "showChat" | default "false" }} {{ $showLineNumbers := .Get "showLineNumbers" | default "true" }} {{ $width := .Get "width" | default "100%" }} {{ $height := .Get "height" | default "600" }} {{ $height := .Get "height" | default "600" }} {{ $useMonospaceFont := .Get "useMonospaceFont" | default "false" }} &lt;iframe name="embed_readwrite" src="https://hebdo.framapad.org/p/{{- $PadName -}}?showControls={{- $showControls -}}&amp;showChat={{- $showChat -}}&amp;showLineNumbers={{- $showLineNumbers -}}&amp;useMonospaceFont=false" width="{{- $width -}}" height="{{- $height -}}" frameborder="0">&lt;/iframe></p><a href=/posts/2023/07/hugo-shortcode-pad/>Lire plus...</a></article></div></div></div><ul class="pagination pagination-default"><li class=page-item><a href=/ aria-label=First class=page-link role=button><span aria-hidden=true>&#171;&#171;</span></a></li><li class=page-item><a href=/page/8/ aria-label=Previous class=page-link role=button><span aria-hidden=true>&#171;</span></a></li><li class=page-item><a href=/page/7/ aria-label="Page 7" class=page-link role=button>7</a></li><li class=page-item><a href=/page/8/ aria-label="Page 8" class=page-link role=button>8</a></li><li class="page-item active"><a aria-current=page aria-label="Page 9" class=page-link role=button>9</a></li><li class=page-item><a href=/page/10/ aria-label="Page 10" class=page-link role=button>10</a></li><li class=page-item><a href=/page/11/ aria-label="Page 11" class=page-link role=button>11</a></li><li class=page-item><a href=/page/10/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a></li><li class=page-item><a href=/page/18/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a></li></ul><article class="uk-comment uk-comment-primary"><h4 class=uk-comment-title><span uk-icon=bell></span> Notes</h4></a><h2 id=decembre-2025>Decembre 2025</h2><ul><li>Guide de survie Hugo: <a href=https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81>https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81</a></li><li>Analyse de fichiers Mardown avec Python: <a href=https://github.com/yannbanas/mrkdwn_analysis>https://github.com/yannbanas/mrkdwn_analysis</a></li><li>Générer des stats sur Hugo: <a href=https://bacardi55.io/2024/03/07/generating-basic-content-statistics-for-static-site-generator/>https://bacardi55.io/2024/03/07/generating-basic-content-statistics-for-static-site-generator/</a></li><li>« Il n’y a qu’un problème philosophique vraiment sérieux : c’est le suicide. Juger que la vie vaut ou ne vaut pas la peine d’être vécue, c’est répondre à la question fondamentale de la philosophie. » – Camus</li><li>Lecture: Sanderson, Brandon - Vers les étoiles (Skyward 1)</li><li>Illustration pour médiation numérique <a href=https://grisebouille.net/illustrations-pour-mediation-numerique/>https://grisebouille.net/illustrations-pour-mediation-numerique/</a></li><li>Boost rasp 5 <a href=https://korben.info/raspberry-pi-5-optimisation-performances-sdram.html>https://korben.info/raspberry-pi-5-optimisation-performances-sdram.html</a></li></ul></p></article></div></main><footer><div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">2024 - Construit avec <a class=uk-link-muted href=https://gohugo.io/>Hugo</a> et de <a class=uk-link-muted href=https://getuikit.com/>UiKit</a></div></footer><script src=/js/uikit.min.min.b795e52a95a6766546e08686e5d002243ef20e0fb3c22c860b7bd2adb02129b7.js integrity="sha256-t5XlKpWmdmVG4IaG5dACJD7yDg+zwiyGC3vSrbAhKbc=" crossorigin=anonymous></script><script defer src=/js/uikit-icons.min.min.992015e15d0a403b809bb04d0599e2873818150584953ed5864664037c6b4333.js integrity="sha256-mSAV4V0KQDuAm7BNBZnihzgYFQWElT7VhkZkA3xrQzM=" crossorigin=anonymous></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script><script>MathJax={tex:{displayMath:[["\\[","\\]"],["$$","$$"]],inlineMath:[["\\(","\\)"]]}}</script></body></html>

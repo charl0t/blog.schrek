@@ -1,19 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Gimp on Schrek.fr</title>
-    <link>http://localhost:1313/tags/gimp/</link>
-    <description>Recent content in Gimp on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Wed, 15 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/gimp/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tampon encreur sous Gimp</title>
-      <link>http://localhost:1313/posts/2023/03/tampon-encreur/</link>
-      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/tampon-encreur/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/tampon-encreur/tampon-20450.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;C&amp;rsquo;est toujours sympa d&amp;rsquo;avoir une petite image pour simuler un tampon sur un document, une photo.&lt;/p&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai listé quelques tuto sous  [Gimp-&amp;gt;https://www.gimp.org/]&lt;/p&gt;&#xA;&lt;p&gt;C&amp;rsquo;est pas bien compliqué et ça permet de jouer avec les calques et les filtres.&#xA;Il faut penser à bien enregistrer au format PNG pour garder la transparence.&lt;/p&gt;&#xA;&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.1point2vue.com/tampon-encre-gimp/&#34;&gt;http://www.1point2vue.com/tampon-encre-gimp/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://abcdugimp.free.fr/gimp/realiser/tutoriels/tampon/tampon.php&#34;&gt;http://abcdugimp.free.fr/gimp/realiser/tutoriels/tampon/tampon.php&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gimp on Schrek.fr</title><link>https://schrek.fr/tags/gimp/</link><description>Recent content in Gimp on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Wed, 15 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/gimp/index.xml" rel="self" type="application/rss+xml"/><item><title>Tampon encreur sous Gimp</title><link>https://schrek.fr/posts/2023/03/tampon-encreur/</link><pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/tampon-encreur/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/tampon-encreur/tampon-20450.webp" width="200px">
+&lt;/figure>
+
+&lt;p>C&amp;rsquo;est toujours sympa d&amp;rsquo;avoir une petite image pour simuler un tampon sur un document, une photo.&lt;/p>
+&lt;p>J&amp;rsquo;ai listé quelques tuto sous [Gimp-&amp;gt;https://www.gimp.org/]&lt;/p>
+&lt;p>C&amp;rsquo;est pas bien compliqué et ça permet de jouer avec les calques et les filtres.
+Il faut penser à bien enregistrer au format PNG pour garder la transparence.&lt;/p>
+&lt;h2 id="liens">Liens&lt;/h2>
+&lt;p>&lt;a href="http://www.1point2vue.com/tampon-encre-gimp/">http://www.1point2vue.com/tampon-encre-gimp/&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://abcdugimp.free.fr/gimp/realiser/tutoriels/tampon/tampon.php">http://abcdugimp.free.fr/gimp/realiser/tutoriels/tampon/tampon.php&lt;/a>&lt;/p></description></item></channel></rss>

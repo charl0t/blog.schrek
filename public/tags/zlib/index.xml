@@ -1,19 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Zlib on Schrek.fr</title>
-    <link>http://localhost:1313/tags/zlib/</link>
-    <description>Recent content in Zlib on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/zlib/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Z-Library</title>
-      <link>http://localhost:1313/posts/2023/03/zlibrary/</link>
-      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/zlibrary/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/zlibrary/library_z.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Z-Library&#34;&gt;Z-Library&lt;/a&gt; est une bibliothèque numérique qui vous permet de télécharger des e-books, des livres, des revues scientifiques en ligne.&lt;/p&gt;&#xA;&lt;p&gt;Mais pour y accéder, il va falloir passer par [Tor-&amp;gt;https://fr.wikipedia.org/wiki/Tor_(r%C3%A9seau)], rien de bien compliqué.&#xA;Il suffit d’installer &lt;a href=&#34;https://www.torproject.org/download/&#34;&gt;Tor browser&lt;/a&gt;. Âpres avoir lancé le navigateur, il suffît de copier ce lien dans le navigateur.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion/&lt;/code&gt;&lt;/p&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/zlibrary/capture.webp&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Il existe aussi des miroirs qui permettent un accès direct.&lt;/p&gt;&#xA;&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://singlelogin.me/&#34;&gt;https://singlelogin.me/&lt;/a&gt;&#xA;&lt;a href=&#34;https://fr.annas-archive.org/&#34;&gt;https://fr.annas-archive.org/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zlib on Schrek.fr</title><link>https://schrek.fr/tags/zlib/</link><description>Recent content in Zlib on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/zlib/index.xml" rel="self" type="application/rss+xml"/><item><title>Z-Library</title><link>https://schrek.fr/posts/2023/03/zlibrary/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/zlibrary/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/zlibrary/library_z.webp" width="200px">
+&lt;/figure>
+
+&lt;p>&lt;a href="https://fr.wikipedia.org/wiki/Z-Library">Z-Library&lt;/a> est une bibliothèque numérique qui vous permet de télécharger des e-books, des livres, des revues scientifiques en ligne.&lt;/p>
+&lt;p>Mais pour y accéder, il va falloir passer par [Tor-&amp;gt;https://fr.wikipedia.org/wiki/Tor_(r%C3%A9seau)], rien de bien compliqué.
+Il suffit d’installer &lt;a href="https://www.torproject.org/download/">Tor browser&lt;/a>. Âpres avoir lancé le navigateur, il suffît de copier ce lien dans le navigateur.&lt;/p>
+&lt;p>&lt;code>http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion/&lt;/code>&lt;/p>
+&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/zlibrary/capture.webp" width="600px">
+&lt;/figure>
+
+&lt;p>Il existe aussi des miroirs qui permettent un accès direct.&lt;/p>
+&lt;h2 id="liens">Liens&lt;/h2>
+&lt;p>&lt;a href="https://singlelogin.me/">https://singlelogin.me/&lt;/a>
+&lt;a href="https://fr.annas-archive.org/">https://fr.annas-archive.org/&lt;/a>&lt;/p></description></item></channel></rss>

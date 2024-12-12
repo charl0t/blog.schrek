@@ -1,19 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Nano on Schrek.fr</title>
-    <link>http://localhost:1313/tags/nano/</link>
-    <description>Recent content in Nano on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/nano/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Nano</title>
-      <link>http://localhost:1313/posts/2023/03/linux-nano/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/linux-nano/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/linux-nano/nano.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Un éditeur de fichier très simple.&lt;/p&gt;&#xA;&lt;h2 id=&#34;pour-ouvrir-un-fichier&#34;&gt;Pour ouvrir un fichier&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ nano  index.html&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;créer-un-fichier&#34;&gt;Créer un fichier&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ nano  fichier.txt&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;les-raccourcis-courants&#34;&gt;Les raccourcis courants&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + G ...... Appeler le menu d’aide&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + X ...... Fermer et, le cas échéant, quitter nano&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + O ...... Écrire le fichier en cours sur le disque&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + J ...... Justifier le paragraphe courant&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + R ...... Insérer un autre fichier dans le fichier en cours&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + W ...... Rechercher une chaîne dans l’éditeur&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + Y ...... Aller à l’écran précédent&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + V...... Aller à l’écran suivant&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + K ...... Couper la ligne courante vers le presse-papiers&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + U ...... Coller le presse-papiers à partir de la ligne courante&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ctrl + C ...... Indiquer la position du curseur&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;h2 id=&#34;coloration-syntaxique&#34;&gt;Coloration syntaxique&lt;/h2&gt;&#xA;&lt;p&gt;J’ai trouvé un petit script sympa &lt;a href=&#34;https://github.com/scopatz/nanorc&#34;&gt;ici&lt;/a&gt;  qui modifie le nanorc(fichier de configuration) pour avoir un peu de couleurs .&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nano on Schrek.fr</title><link>https://schrek.fr/tags/nano/</link><description>Recent content in Nano on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/nano/index.xml" rel="self" type="application/rss+xml"/><item><title>Nano</title><link>https://schrek.fr/posts/2023/03/linux-nano/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/linux-nano/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/linux-nano/nano.webp" width="200px">
+&lt;/figure>
+
+&lt;p>Un éditeur de fichier très simple.&lt;/p>
+&lt;h2 id="pour-ouvrir-un-fichier">Pour ouvrir un fichier&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ nano index.html&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="créer-un-fichier">Créer un fichier&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ nano fichier.txt&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="les-raccourcis-courants">Les raccourcis courants&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span> ctrl + G ...... Appeler le menu d’aide
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + X ...... Fermer et, le cas échéant, quitter nano
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + O ...... Écrire le fichier en cours sur le disque
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + J ...... Justifier le paragraphe courant
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + R ...... Insérer un autre fichier dans le fichier en cours
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + W ...... Rechercher une chaîne dans l’éditeur
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + Y ...... Aller à l’écran précédent
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + V...... Aller à l’écran suivant
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + K ...... Couper la ligne courante vers le presse-papiers
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + U ...... Coller le presse-papiers à partir de la ligne courante
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ctrl + C ...... Indiquer la position du curseur&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="coloration-syntaxique">Coloration syntaxique&lt;/h2>
+&lt;p>J’ai trouvé un petit script sympa &lt;a href="https://github.com/scopatz/nanorc">ici&lt;/a> qui modifie le nanorc(fichier de configuration) pour avoir un peu de couleurs .&lt;/p></description></item></channel></rss>

@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Caja on Schrek.fr</title>
-    <link>http://localhost:1313/tags/caja/</link>
-    <description>Recent content in Caja on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/caja/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Gestionnaire de fichier Caja</title>
-      <link>http://localhost:1313/posts/2024/3/caja/</link>
-      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2024/3/caja/</guid>
-      <description>&lt;p&gt;Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.&lt;/p&gt;&#xA;&lt;h2 id=&#34;script&#34;&gt;Script&lt;/h2&gt;&#xA;&lt;p&gt;Je voulais ajouter des possibilités de click droit via des scripts.&lt;/p&gt;&#xA;&lt;p&gt;C’est assez simple, il suffit de placer une exécutable dans le dossier &lt;em&gt;./config/caja/script&lt;/em&gt; de votre répertoire &lt;em&gt;/home&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Caja on Schrek.fr</title><link>https://schrek.fr/tags/caja/</link><description>Recent content in Caja on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/caja/index.xml" rel="self" type="application/rss+xml"/><item><title>Gestionnaire de fichier Caja</title><link>https://schrek.fr/posts/2024/3/caja/</link><pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2024/3/caja/</guid><description>&lt;p>Caja est le gestionnaire de fichiers officiel de l&amp;rsquo;environnement MATE.&lt;/p>
+&lt;h2 id="script">Script&lt;/h2>
+&lt;p>Je voulais ajouter des possibilités de click droit via des scripts.&lt;/p>
+&lt;p>C’est assez simple, il suffit de placer une exécutable dans le dossier &lt;em>./config/caja/script&lt;/em> de votre répertoire &lt;em>/home&lt;/em>.&lt;/p></description></item></channel></rss>

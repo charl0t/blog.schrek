@@ -1,19 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Minted on Schrek.fr</title>
-    <link>http://localhost:1313/tags/minted/</link>
-    <description>Recent content in Minted on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/minted/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Latex de la couleur dans vos codes</title>
-      <link>http://localhost:1313/posts/2023/09/latex-et-les-codes/</link>
-      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/09/latex-et-les-codes/</guid>
-      <description>&lt;p&gt;Le module &lt;a href=&#34;https://ctan.org/pkg/minted&#34;&gt;&lt;em&gt;minted&lt;/em&gt;&lt;/a&gt; permet de coloriser vos codes.&lt;/p&gt;&#xA;&lt;p&gt;Minted utilise &lt;a href=&#34;https://pygments.org/languages/&#34;&gt;Pygments&lt;/a&gt; pour ajouter de la couleurs, vous trouverez la liste des codes supportés sur le site.&lt;/p&gt;&#xA;&lt;p&gt;Il y a aussi différents &lt;a href=&#34;https://pygments.org/styles/&#34;&gt;styles&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minted on Schrek.fr</title><link>https://schrek.fr/tags/minted/</link><description>Recent content in Minted on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/minted/index.xml" rel="self" type="application/rss+xml"/><item><title>Latex de la couleur dans vos codes</title><link>https://schrek.fr/posts/2023/09/latex-et-les-codes/</link><pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/09/latex-et-les-codes/</guid><description>&lt;p>Le module &lt;a href="https://ctan.org/pkg/minted">&lt;em>minted&lt;/em>&lt;/a> permet de coloriser vos codes.&lt;/p>
+&lt;p>Minted utilise &lt;a href="https://pygments.org/languages/">Pygments&lt;/a> pour ajouter de la couleurs, vous trouverez la liste des codes supportés sur le site.&lt;/p>
+&lt;p>Il y a aussi différents &lt;a href="https://pygments.org/styles/">styles&lt;/a>&lt;/p></description></item></channel></rss>

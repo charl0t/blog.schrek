@@ -1,19 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Chatons on Schrek.fr</title>
-    <link>http://localhost:1313/tags/chatons/</link>
-    <description>Recent content in Chatons on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Sat, 29 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/chatons/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Les Chatons</title>
-      <link>http://localhost:1313/posts/2023/04/les_chatons/</link>
-      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/04/les_chatons/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/04/les_chatons/logo_chatons.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;libre&#34;&gt;Libre&lt;/h2&gt;&#xA;&lt;p&gt;J’ai toujours été attiré par le logiciel libre (plus de 20 ans sous Linux) et la protection de mes données.&#xA;Voulant sortir de Google pour mes courriels et le stockage de mes données je me suis un serveur &lt;a href=&#34;https://www.kimsufi.com/fr/&#34;&gt;Kimsufi&lt;/a&gt;, mais je me suis vite rendu compte de la difficulté de gérer un serveur (mise a jour, sécurité, configuration).&lt;/p&gt;&#xA;&lt;p&gt;Je me suis tourné vers des gens qui savent faire et j’ai découvert les &lt;a href=&#34;https://www.chatons.org&#34;&gt;CHATONS&lt;/a&gt;: pour des services libres et alternatifs.&#xA;c’est là que j’ai découvert  &lt;a href=&#34;https://www.zaclys.com/&#34;&gt;la mère Zaclys&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Chatons on Schrek.fr</title><link>https://schrek.fr/tags/chatons/</link><description>Recent content in Chatons on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sat, 29 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/chatons/index.xml" rel="self" type="application/rss+xml"/><item><title>Les Chatons</title><link>https://schrek.fr/posts/2023/04/les_chatons/</link><pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/les_chatons/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/04/les_chatons/logo_chatons.webp" width="200px">
+&lt;/figure>
+
+&lt;h2 id="libre">Libre&lt;/h2>
+&lt;p>J’ai toujours été attiré par le logiciel libre (plus de 20 ans sous Linux) et la protection de mes données.
+Voulant sortir de Google pour mes courriels et le stockage de mes données je me suis un serveur &lt;a href="https://www.kimsufi.com/fr/">Kimsufi&lt;/a>, mais je me suis vite rendu compte de la difficulté de gérer un serveur (mise a jour, sécurité, configuration).&lt;/p>
+&lt;p>Je me suis tourné vers des gens qui savent faire et j’ai découvert les &lt;a href="https://www.chatons.org">CHATONS&lt;/a>: pour des services libres et alternatifs.
+c’est là que j’ai découvert &lt;a href="https://www.zaclys.com/">la mère Zaclys&lt;/a>&lt;/p></description></item></channel></rss>

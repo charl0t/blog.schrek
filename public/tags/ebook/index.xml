@@ -1,19 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ebook on Schrek.fr</title>
-    <link>http://localhost:1313/tags/ebook/</link>
-    <description>Recent content in Ebook on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Fri, 03 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ebook/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ecrire un ebook avec Latex</title>
-      <link>http://localhost:1313/posts/2023/02/ebook-avec-latex/</link>
-      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/02/ebook-avec-latex/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/02/ebook-avec-latex/epub.wepb&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;uk-alert-success&#34; uk-alert&gt;&#xA;    &lt;span uk-icon=&#34;icon: info ; ratio:2&#34;&gt;&lt;/span&gt;&#xA;    &lt;a class=&#34;uk-alert-close&#34; uk-close&gt;&lt;/a&gt;&#xA;    &lt;p class=&#34;bandeau&#34;&gt;MaJ 29/05/2023 Ajout d&amp;rsquo;un livre &amp;ldquo;LaTeX pour litteraires&amp;rdquo;(Éric Guichard), bouton overleaf.com&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;p&gt;J’avais l’idée d’écrire un petit livre sur la Rome antique, une histoire d’un soldat romain qui devient un pirate.&#xA;Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourné vers Latex.&#xA;Pour organiser mes idées et structurer le document j’ai utilisé cette structure.&#xA;Vous trouverez les sources en bas de l’article.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ebook on Schrek.fr</title><link>https://schrek.fr/tags/ebook/</link><description>Recent content in Ebook on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Fri, 03 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/ebook/index.xml" rel="self" type="application/rss+xml"/><item><title>Ecrire un ebook avec Latex</title><link>https://schrek.fr/posts/2023/02/ebook-avec-latex/</link><pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/ebook-avec-latex/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/02/ebook-avec-latex/epub.wepb" width="200px">
+&lt;/figure>
+
+
+
+
+
+
+
+ 
+
+
+
+&lt;div class="uk-alert-success" uk-alert>
+ &lt;span uk-icon="icon: info ; ratio:2">&lt;/span>
+ &lt;a class="uk-alert-close" uk-close>&lt;/a>
+ &lt;p class="bandeau">MaJ 29/05/2023 Ajout d&amp;rsquo;un livre &amp;ldquo;LaTeX pour litteraires&amp;rdquo;(Éric Guichard), bouton overleaf.com&lt;/p>
+&lt;/div>
+
+
+&lt;p>J’avais l’idée d’écrire un petit livre sur la Rome antique, une histoire d’un soldat romain qui devient un pirate.
+Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourné vers Latex.
+Pour organiser mes idées et structurer le document j’ai utilisé cette structure.
+Vous trouverez les sources en bas de l’article.&lt;/p></description></item></channel></rss>

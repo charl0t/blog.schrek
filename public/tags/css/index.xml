@@ -1,26 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>CSS on Schrek.fr</title>
-    <link>http://localhost:1313/tags/css/</link>
-    <description>Recent content in CSS on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Sat, 22 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/css/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Les framework CSS</title>
-      <link>http://localhost:1313/posts/2023/04/css_framework/</link>
-      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/04/css_framework/</guid>
-      <description>&lt;p&gt;Les frameworks CSS aident les développeurs Web et autres web-designers à structurer rapidement leurs sites, leur permettant de se concentrer davantage sur les différentes fonctionnalités, plutôt que de passer du temps sur les éléments de style.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Le style Latex</title>
-      <link>http://localhost:1313/posts/2023/03/css-style_latex/</link>
-      <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/css-style_latex/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/css-style_latex/latex_logo.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;style-latex-en-css&#34;&gt;Style LaTex en CSS&lt;/h2&gt;&#xA;&lt;p&gt;Latex le célèbre système de composition de document, qui permet de générer de “belles pages”, a un style bien à lui.&#xA;Vincent Dörig a créé un style CSS pour l’intégrer facilement dans un site. On y retrouve aussi l’intégration des formules mathématique avec MathJax.&lt;/p&gt;&#xA;&lt;p&gt;La page de test &lt;a href=&#34;https://latex.vercel.app/elements&#34;&gt;https://latex.vercel.app/elements&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://latex.vercel.app/&#34;&gt;https://latex.vercel.app/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/vincentdoerig/latex-css&#34;&gt;https://github.com/vincentdoerig/latex-css&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.mathjax.org/&#34;&gt;https://www.mathjax.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.latex-project.org/&#34;&gt;https://www.latex-project.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://fr.wikibooks.org/wiki/LaTeX&#34;&gt;https://fr.wikibooks.org/wiki/LaTeX&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CSS on Schrek.fr</title><link>https://schrek.fr/tags/css/</link><description>Recent content in CSS on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sat, 22 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/css/index.xml" rel="self" type="application/rss+xml"/><item><title>Les framework CSS</title><link>https://schrek.fr/posts/2023/04/css_framework/</link><pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/04/css_framework/</guid><description>&lt;p>Les frameworks CSS aident les développeurs Web et autres web-designers à structurer rapidement leurs sites, leur permettant de se concentrer davantage sur les différentes fonctionnalités, plutôt que de passer du temps sur les éléments de style.&lt;/p></description></item><item><title>Le style Latex</title><link>https://schrek.fr/posts/2023/03/css-style_latex/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/css-style_latex/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/css-style_latex/latex_logo.webp" width="200px">
+&lt;/figure>
+
+&lt;h2 id="style-latex-en-css">Style LaTex en CSS&lt;/h2>
+&lt;p>Latex le célèbre système de composition de document, qui permet de générer de “belles pages”, a un style bien à lui.
+Vincent Dörig a créé un style CSS pour l’intégrer facilement dans un site. On y retrouve aussi l’intégration des formules mathématique avec MathJax.&lt;/p>
+&lt;p>La page de test &lt;a href="https://latex.vercel.app/elements">https://latex.vercel.app/elements&lt;/a>&lt;/p>
+&lt;h2 id="liens">Liens&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://latex.vercel.app/">https://latex.vercel.app/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/vincentdoerig/latex-css">https://github.com/vincentdoerig/latex-css&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.mathjax.org/">https://www.mathjax.org/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.latex-project.org/">https://www.latex-project.org/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://fr.wikibooks.org/wiki/LaTeX">https://fr.wikibooks.org/wiki/LaTeX&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

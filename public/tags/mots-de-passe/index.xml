@@ -1,19 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Mots De Passe on Schrek.fr</title>
-    <link>http://localhost:1313/tags/mots-de-passe/</link>
-    <description>Recent content in Mots De Passe on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/mots-de-passe/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Diceware</title>
-      <link>http://localhost:1313/posts/2023/02/diceware/</link>
-      <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/02/diceware/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/02/diceware/one-red-dice-01-a9bf3.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;C est fini les mots de passe, il faut passer aux phrases de passe.&#xA;Plus facile à retenir plus compliquer à casser.&#xA;Pour les mots de passe, l’avantage est que l’on peut décomplexifier un mot de passe avec tous les caractères&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MaisonBananeRougeMystereBiere &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;AhdikeJeujenksKjnskodnKshjkskk&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;&#xA;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/02/diceware/diceware.png-369a6.webp&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Pour générer une phrase de passe il faut un outil qui crée du « hasard » et un dictionnaire de mot qui va bien.&lt;/p&gt;&#xA;&lt;h2 id=&#34;quest-ce-que--diceware-&#34;&gt;Qu’est-ce que  Diceware ?&lt;/h2&gt;&#xA;&lt;p&gt;Diceware est une méthode pour construire une phrase de passe qui utilise des dés pour choisir au hasard des mots parmi une liste.&#xA;Chaque mot de la liste est précédé par un nombre à cinq chiffres.&#xA;On lance un dé cinq fois ou une fois cinq dés, le résultat donne un mot dans la liste.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mots De Passe on Schrek.fr</title><link>https://schrek.fr/tags/mots-de-passe/</link><description>Recent content in Mots De Passe on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/mots-de-passe/index.xml" rel="self" type="application/rss+xml"/><item><title>Diceware</title><link>https://schrek.fr/posts/2023/02/diceware/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/02/diceware/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/02/diceware/one-red-dice-01-a9bf3.webp" width="200px">
+&lt;/figure>
+
+&lt;p>C est fini les mots de passe, il faut passer aux phrases de passe.
+Plus facile à retenir plus compliquer à casser.
+Pour les mots de passe, l’avantage est que l’on peut décomplexifier un mot de passe avec tous les caractères
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>MaisonBananeRougeMystereBiere 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>AhdikeJeujenksKjnskodnKshjkskk&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/p>
+&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/02/diceware/diceware.png-369a6.webp" width="600px">
+&lt;/figure>
+
+&lt;p>Pour générer une phrase de passe il faut un outil qui crée du « hasard » et un dictionnaire de mot qui va bien.&lt;/p>
+&lt;h2 id="quest-ce-que--diceware-">Qu’est-ce que Diceware ?&lt;/h2>
+&lt;p>Diceware est une méthode pour construire une phrase de passe qui utilise des dés pour choisir au hasard des mots parmi une liste.
+Chaque mot de la liste est précédé par un nombre à cinq chiffres.
+On lance un dé cinq fois ou une fois cinq dés, le résultat donne un mot dans la liste.&lt;/p></description></item></channel></rss>

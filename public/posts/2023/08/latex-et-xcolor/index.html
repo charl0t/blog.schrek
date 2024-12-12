@@ -1,337 +1,67 @@
-<!DOCTYPE html>
-
-<html lang="fr">
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Blog qui parle de lecture et de web" />
-    <meta name="keywords" content="hugo, html, lecture, web, shortcode" />
-    <title>Schrek.fr</title>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-<link rel="manifest" href="/manifest.json">
-
-<meta name="mobile-web-app-capable" content="yes" />
-
-<meta name="apple-mobile-web-app-title" content="My PWA" />
-
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-<script>
-
-if ('serviceWorker' in navigator) {
-
-navigator.serviceWorker.register('/sw.js');
-
-};
-
-</script>
-
-    <meta property="og:url" content="http://localhost:1313/posts/2023/08/latex-et-xcolor/">
-  <meta property="og:site_name" content="Schrek.fr">
-  <meta property="og:title" content="Latex et xcolor">
-  <meta property="og:description" content="Le paquetage xcolor fait partie des indispensables de Latex pour coloriser les textes.
+<!doctype html><html lang=fr><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Blog qui parle de lecture et de web"><meta name=keywords content="hugo,html,lecture,web,shortcode"><title>Schrek.fr</title>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-title content="My PWA"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js")</script><meta property="og:url" content="https://schrek.fr/posts/2023/08/latex-et-xcolor/"><meta property="og:site_name" content="Schrek.fr"><meta property="og:title" content="Latex et xcolor"><meta property="og:description" content="Le paquetage xcolor fait partie des indispensables de Latex pour coloriser les textes.
 Préambule On appelle les couleurs de base de xcolor,
 \usepackage{xcolor} % import des couleurs dans les textes Il y a aussi d’autres palettes de couleurs:
 dvipsnames: 68 couleurs (CMYK); svgnames: 151 couleurs (RGB); x11names: 317 couleurs (RGB). \usepackage[dvipsnames]{xcolor} % import des couleurs dans les textes Tous est bien indiqué dans la documentation (page 39).
-Personnalisation des couleurs On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.">
-  <meta property="og:locale" content="fr_fr">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2023-08-15T00:00:00+00:00">
-    <meta property="article:modified_time" content="2023-08-15T00:00:00+00:00">
-    <meta property="article:tag" content="Latex">
-    <meta property="article:tag" content="Xcolor">
-      <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/latex-icones/">
-      <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/latex-publipostage/">
-      <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/koma-script/">
-      <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/markdown-to-latex/">
-      <meta property="og:see_also" content="http://localhost:1313/posts/2023/09/latex-et-les-codes/">
-      <meta property="og:see_also" content="http://localhost:1313/posts/2023/08/latex-et-les-liens/">
-
-    
-    <link  href="/css/uikit.min.min.74065b0cc0cc771b6d0c8cdd1571f95022330dbe057cfe7f5c22ddf003313c6715e6047ab88bb5766ca27342b6d7b572f78f0fa2110438c5a0edeb269788d553.css" rel="stylesheet"  integrity="sha512-dAZbDMDMdxttDIzdFXH5UCIzDb4FfP5/XCLd8AMxPGcV5gR6uIu1dmyic0K217Vy948PohEEOMWg7esml4jVUw==" crossorigin="anonymous">
-    
-    <link  href="/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css" rel="stylesheet"  integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp&#43;8kDvTq4rdsbpi6rWUJnq68ImIF&#43;mScfMdRrPd7mRCOJAPMg==" crossorigin="anonymous">
-    </head>
-<body>
-<header>
-    <div class="uk-container uk-container-xsmall uk-padding-small">
-        <a href="http://localhost:1313/"><h1 classe="uk-heading-small">Schrek.fr</h1></a>
-        <a href="http://localhost:1313/"><h2>Mon super blog :)</h2></a>
-    </div>
-
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-    <div class="uk-navbar-center ">
-        <ul class="uk-navbar-nav">
-            
-            <li class="uk-active"><a href="/"><span uk-icon="icon:home; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/apropos/"><span uk-icon="icon:info; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/wiki/"><span uk-icon="icon:database; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/notes/"><span uk-icon="icon:pencil; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/tagscloud/"><span uk-icon="icon:hashtag; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/pages/search/"><span uk-icon="icon:search; ratio: 2"></span></a></li>
-            
-            <li class="uk-active"><a href="/index.xml"><span uk-icon="icon:rss; ratio: 2"></span></a></li>
-            
-        </ul>
-    </div>
-</nav>
-<hr class="uk-divider-icon">
-</header>
-<main>
-
-
-<div class="uk-container uk-background-muted  uk-box-shadow-large uk-padding">
-
-
-
-<ol class="uk-breadcrumb">
-  <li><a href="/">home</a></li>
-  
-    
-      
-      <li><a href='http://localhost:1313/posts'>posts</a></li>
-      
-      
-  
-    
-      
-      <li><a href='http://localhost:1313/posts/2023'>2023</a></li>
-      
-      
-  
-    
-      
-      <li><a href='http://localhost:1313/posts/2023/08'>08</a></li>
-      
-      
-  
-    
-      
-      <li><a href='http://localhost:1313/posts/2023/08/latex-et-xcolor'>latex-et-xcolor</a></li>
-      
-      
-  
-    
-      
-  
-
-</ol>
-
-
-    <article class="uk-article">
-        <h1 class="uk-article-title">Latex et xcolor</h1>
-            <p class="uk-article-meta">2023-08-15 
-            
-            <span class="labelcat uk-label"><a href="/categories/latex">Latex</a></span>
-              <br>
-            <i>Temps de lecture: 1 minutes.</i>
-            </p>
-            
-                
-                
-                
-                <p>Cet article fait partie de la série: <a href="http://localhost:1313//series/latex">Latex</a></p>
-                 
-                <br/>
-            <p class="uk-text-lead">
-                
-                
-                <div class="uk-section uk-align-right">
-                    <div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
-                       <h3 class="uk-card-title">Table des matières</h3> 
-                       <p class="toc uk-text-small"> <nav id="TableOfContents">
-  <ul>
-    <li><a href="#préambule">Préambule</a></li>
-    <li><a href="#personnalisation-des-couleurs">Personnalisation des couleurs</a></li>
-    <li><a href="#exemples">Exemples</a></li>
-    <li><a href="#liens">Liens</a></li>
-  </ul>
-</nav></p>
-                    </div>
-                </div>
-                   
-                    <p>Le paquetage <em>xcolor</em> fait partie des indispensables de Latex pour coloriser les textes.</p>
-<h2 id="préambule">Préambule</h2>
-<p>On appelle les couleurs de base de <em>xcolor</em>,</p>
-<figure class="imagearticle"><img src="/posts/2023/08/latex-et-xcolor/xcolor1.webp" width="500px">
-</figure>
-
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{xcolor} <span style="color:#960050;background-color:#1e0010">%</span> import des couleurs dans les textes</span></span></code></pre></div>
-<p>Il y a aussi d&rsquo;autres palettes de couleurs:</p>
-<ul>
-<li>dvipsnames: 68 couleurs (CMYK);</li>
-<li>svgnames: 151 couleurs (RGB);</li>
-<li>x11names: 317 couleurs (RGB).</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[dvipsnames]</span>{xcolor} <span style="color:#960050;background-color:#1e0010">%</span> import des couleurs dans les textes</span></span></code></pre></div>
-<p>Tous est bien indiqué dans la <a href="https://www.ctan.org/pkg/xcolor">documentation (page 39)</a>.</p>
-<h2 id="personnalisation-des-couleurs">Personnalisation des couleurs</h2>
-<p>On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.</p>
-<p>Une palette pour aider à choisir sur <a href="https://www.w3schools.com/colors/colors_picker.asp">W3schools.com</a>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#75715e">% Les couleurs
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\definecolor</span>{violet}{RGB}{110,30,120}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\definecolor</span>{prune}{RGB}{161,0,107}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\definecolor</span>{framboise}{RGB}{205,0,55}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\definecolor</span>{orange}{RGB}{224,82,6}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\definecolor</span>{jaune_safran}{RGB}{255,182,18}</span></span></code></pre></div>
-<h2 id="exemples">Exemples</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\documentclass</span><span style="color:#a6e22e">[a4paper,10pt]</span>{scrartcl} <span style="color:#75715e">% Koma-script
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[T1]</span>{fontenc}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[french]</span>{babel} <span style="color:#75715e">% En francais
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span>{xcolor} <span style="color:#75715e">% Import des couleurs dans les textes
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[left=2cm,right=2cm,top=2cm,bottom=2cm]</span>{geometry} <span style="color:#75715e">% Marges
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span>{parskip} <span style="color:#75715e">% Saut de ligne
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\definecolor</span>{violet}{RGB}{110,30,120} <span style="color:#75715e">% Mes couleurs perso
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\definecolor</span>{prune}{RGB}{161,0,107}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\definecolor</span>{framboise}{RGB}{205,0,55}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\definecolor</span>{orange}{RGB}{224,82,6}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\definecolor</span>{jaune_safran}{RGB}{255,182,18}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\title</span>{xcolor<span style="color:#66d9ef">\\</span> schrek.fr}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\author</span>{Christophe }
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\date</span>{Juin 2023}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{document}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\maketitle</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\section*</span>{Introduction}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\color</span>{red}
-</span></span><span style="display:flex;"><span>Texte en rouge.
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\color</span>{blue}
-</span></span><span style="display:flex;"><span>Texte en bleu.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\color</span>{black}
-</span></span><span style="display:flex;"><span>Texte en noir.
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\section*</span>{Dans un texte}
-</span></span><span style="display:flex;"><span>Lorem ipsum dolor sit amet, <span style="color:#66d9ef">\textcolor</span>{framboise}{consectetur adipiscing elit}, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\section*</span>{Surlignage}
-</span></span><span style="display:flex;"><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute <span style="color:#66d9ef">\colorbox</span>{jaune_safran}{irure dolor in reprehenderit} in voluptate velit esse  <span style="color:#66d9ef">\colorbox</span>{violet}{<span style="color:#66d9ef">\textcolor</span>{white}{cillum dolore eu fugiat nulla pariatur.}}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\section*</span>{Boites}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\fcolorbox</span>{red}{white}{<span style="color:#e6db74">$</span> \sqrt<span style="color:#f92672">[</span><span style="color:#ae81ff">4</span><span style="color:#f92672">]</span>{x^<span style="color:#ae81ff">3</span>} <span style="color:#f92672">=</span> |x| <span style="color:#e6db74">$</span>} <span style="color:#66d9ef">\par</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\fcolorbox</span>{red}{white}{
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\parbox</span>{0.2<span style="color:#66d9ef">\textwidth</span>}{
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{itemize}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\item</span> Pommes
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\item</span> Poires
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\item</span> Abricots
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{itemize}}
-</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">\par</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\fcolorbox</span>{blue}{white}{
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\parbox</span>{0.2<span style="color:#66d9ef">\textwidth</span>}{ <span style="color:#75715e">%parbox pour faire une boite
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\begin</span>{enumerate}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\item</span> Voitures
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\item</span> Trains
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\item</span> Vélos
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{enumerate}}
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{document}</span></span></code></pre></div>
-
-
-
-
-
-
-<a class="uk-button uk-button-default uk-box-shadow-medium" target="_blank" href="https://www.overleaf.com/read/cdcjpcgykysq"><span uk-icon="icon: forward"></span> Voir sur overleaf</a>
-
-
-
-
-
-
-
-    
-
-
-
-<div class="uk-alert-success" uk-alert>
-    <span uk-icon="icon: info ; ratio:2"></span>
-    <a class="uk-alert-close" uk-close></a>
-    <p class="bandeau">Pour changer la couleur de la page <em>\pagecolor{black}</em> (à placer dans l&rsquo;entête).</p>
-</div>
-
-
-<h2 id="liens">Liens</h2>
-<p><a href="https://www.ctan.org/pkg/xcolor">https://www.ctan.org/pkg/xcolor</a></p>
-<p><a href="https://www.lesfichesabebert.fr/TeX/latex/Couleur.html">https://www.lesfichesabebert.fr/TeX/latex/Couleur.html</a></p>
-<p><a href="https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX">https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX</a></p>
-
-            </p>
-    </article>
-    
-    <ul class="uk-pagination">
-    
-        <li><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/latex-et-les-liens/"><span class="uk-margin-small-right" uk-pagination-previous></span> Latex et les liens</a></li>
-    
-    
-        <li class="uk-margin-auto-left"><a class="uk-link-heading" href="http://localhost:1313/posts/2023/08/hugo-shortcode-bouton/">Shortcode bouton<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-    
-</ul>
-
-                    <hr class="uk-divider-icon">
-                    
-            <div class="uk-grid-small uk-child-width-auto " uk-grid>
-                <div>
-                    <p class="uk-text-light"><span uk-icon="icon:hashtag"></span>TAGS</p>
-                        <ul class="uk-list uk-display-inline-block">
-                            
-                            <li>
-                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/latex/">Latex</a>
-                            </li>
-                            
-                            <li>
-                                <a class="uk-button uk-button-default" href="http://localhost:1313/tags/xcolor/">Xcolor</a>
-                            </li>
-                            
-                        </ul>
-                    <br>
-<a href='https://ko-fi.com/Q5Q7LH0AN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Beer at ko-fi.com' /></a>
-</div>
-
-            </div>
-        </div>
-
-
-        </main>
-<footer>
-    <div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">
-        2024 - Construit avec <a class="uk-link-muted" href="https://gohugo.io/">Hugo</a> et de <a class="uk-link-muted" href="https://getuikit.com/">UiKit</a> 
-    </div>
-</footer>
-
-
-    <script src="/js/uikit.min.min.b795e52a95a6766546e08686e5d002243ef20e0fb3c22c860b7bd2adb02129b7.js" integrity="sha256-t5XlKpWmdmVG4IaG5dACJD7yDg&#43;zwiyGC3vSrbAhKbc=" crossorigin="anonymous"></script>
-
-    <script defer src="/js/uikit-icons.min.min.992015e15d0a403b809bb04d0599e2873818150584953ed5864664037c6b4333.js" integrity="sha256-mSAV4V0KQDuAm7BNBZnihzgYFQWElT7VhkZkA3xrQzM=" crossorigin="anonymous"></script>
-
-
-  
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-<script>
-  MathJax = {
-    tex: {
-      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
-      inlineMath: [['\\(', '\\)']]                  
-    }
-  };
-</script>
-
-
-
-  
-
-</body>
-</html>
+Personnalisation des couleurs On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule."><meta property="og:locale" content="fr_fr"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-08-15T00:00:00+00:00"><meta property="article:modified_time" content="2023-08-15T00:00:00+00:00"><meta property="article:tag" content="Latex"><meta property="article:tag" content="Xcolor"><meta property="og:see_also" content="https://schrek.fr/posts/2023/09/latex-icones/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/09/latex-publipostage/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/09/koma-script/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/09/markdown-to-latex/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/09/latex-et-les-codes/"><meta property="og:see_also" content="https://schrek.fr/posts/2023/08/latex-et-les-liens/"><link href=/css/uikit.min.min.74065b0cc0cc771b6d0c8cdd1571f95022330dbe057cfe7f5c22ddf003313c6715e6047ab88bb5766ca27342b6d7b572f78f0fa2110438c5a0edeb269788d553.css rel=stylesheet integrity="sha512-dAZbDMDMdxttDIzdFXH5UCIzDb4FfP5/XCLd8AMxPGcV5gR6uIu1dmyic0K217Vy948PohEEOMWg7esml4jVUw==" crossorigin=anonymous><link href=/css/styles.min.c8d7b0257c6b4bd9eee28e099cdc9010c078e8211022eb81adb460c29fbc903bd3ab8addb1ba62eab594267abaf0898817e99271f31d46b3ddee644238900f32.css rel=stylesheet integrity="sha512-yNewJXxrS9nu4o4JnNyQEMB46CEQIuuBrbRgwp+8kDvTq4rdsbpi6rWUJnq68ImIF+mScfMdRrPd7mRCOJAPMg==" crossorigin=anonymous></head><body><header><div class="uk-container uk-container-xsmall uk-padding-small"><a href=https://schrek.fr/><h1 classe=uk-heading-small>Schrek.fr</h1></a><a href=https://schrek.fr/><h2>Mon super blog :)</h2></a></div><nav class="uk-navbar-container uk-navbar-transparent" uk-navbar><div class=uk-navbar-center><ul class=uk-navbar-nav><li class=uk-active><a href=/><span uk-icon="icon:home; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/apropos/><span uk-icon="icon:info; ratio: 2"></span></a></li><li class=uk-active><a href=/wiki/><span uk-icon="icon:database; ratio: 2"></span></a></li><li class=uk-active><a href=/notes/><span uk-icon="icon:pencil; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/tagscloud/><span uk-icon="icon:hashtag; ratio: 2"></span></a></li><li class=uk-active><a href=/pages/search/><span uk-icon="icon:search; ratio: 2"></span></a></li><li class=uk-active><a href=/index.xml><span uk-icon="icon:rss; ratio: 2"></span></a></li></ul></div></nav><hr class=uk-divider-icon></header><main><div class="uk-container uk-background-muted uk-box-shadow-large uk-padding"><ol class=uk-breadcrumb><li><a href=/>home</a></li><li><a href=https://schrek.fr/posts>posts</a></li><li><a href=https://schrek.fr/posts/2023>2023</a></li><li><a href=https://schrek.fr/posts/2023/08>08</a></li><li><a href=https://schrek.fr/posts/2023/08/latex-et-xcolor>latex-et-xcolor</a></li></ol><article class=uk-article><h1 class=uk-article-title>Latex et xcolor</h1><p class=uk-article-meta>2023-08-15
+<span class="labelcat uk-label"><a href=/categories/latex>Latex</a></span><br><i>Temps de lecture: 1 minutes.</i></p><p>Cet article fait partie de la série: <a href=https://schrek.fr//series/latex>Latex</a></p><br><p class=uk-text-lead><div class="uk-section uk-align-right"><div class="uk-card-small uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: false"><h3 class=uk-card-title>Table des matières</h3><p class="toc uk-text-small"><nav id=TableOfContents><ul><li><a href=#préambule>Préambule</a></li><li><a href=#personnalisation-des-couleurs>Personnalisation des couleurs</a></li><li><a href=#exemples>Exemples</a></li><li><a href=#liens>Liens</a></li></ul></nav></p></div></div><p>Le paquetage <em>xcolor</em> fait partie des indispensables de Latex pour coloriser les textes.</p><h2 id=préambule>Préambule</h2><p>On appelle les couleurs de base de <em>xcolor</em>,</p><figure class=imagearticle><img src=/posts/2023/08/latex-et-xcolor/xcolor1.webp width=500px></figure><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span>{xcolor} <span style=color:#960050;background-color:#1e0010>%</span> import des couleurs dans les textes</span></span></code></pre></div><p>Il y a aussi d&rsquo;autres palettes de couleurs:</p><ul><li>dvipsnames: 68 couleurs (CMYK);</li><li>svgnames: 151 couleurs (RGB);</li><li>x11names: 317 couleurs (RGB).</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span><span style=color:#a6e22e>[dvipsnames]</span>{xcolor} <span style=color:#960050;background-color:#1e0010>%</span> import des couleurs dans les textes</span></span></code></pre></div><p>Tous est bien indiqué dans la <a href=https://www.ctan.org/pkg/xcolor>documentation (page 39)</a>.</p><h2 id=personnalisation-des-couleurs>Personnalisation des couleurs</h2><p>On peut aussi créer notre propre palette de couleurs, il suffit de les décrire dans le préambule.</p><p>Une palette pour aider à choisir sur <a href=https://www.w3schools.com/colors/colors_picker.asp>W3schools.com</a>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#75715e>% Les couleurs
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\definecolor</span>{violet}{RGB}{110,30,120}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\definecolor</span>{prune}{RGB}{161,0,107}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\definecolor</span>{framboise}{RGB}{205,0,55}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\definecolor</span>{orange}{RGB}{224,82,6}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\definecolor</span>{jaune_safran}{RGB}{255,182,18}</span></span></code></pre></div><h2 id=exemples>Exemples</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tex data-lang=tex><span style=display:flex><span><span style=color:#66d9ef>\documentclass</span><span style=color:#a6e22e>[a4paper,10pt]</span>{scrartcl} <span style=color:#75715e>% Koma-script
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\usepackage</span><span style=color:#a6e22e>[T1]</span>{fontenc}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\usepackage</span><span style=color:#a6e22e>[french]</span>{babel} <span style=color:#75715e>% En francais
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\usepackage</span>{xcolor} <span style=color:#75715e>% Import des couleurs dans les textes
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\usepackage</span><span style=color:#a6e22e>[left=2cm,right=2cm,top=2cm,bottom=2cm]</span>{geometry} <span style=color:#75715e>% Marges
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\usepackage</span>{parskip} <span style=color:#75715e>% Saut de ligne
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\definecolor</span>{violet}{RGB}{110,30,120} <span style=color:#75715e>% Mes couleurs perso
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\definecolor</span>{prune}{RGB}{161,0,107}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\definecolor</span>{framboise}{RGB}{205,0,55}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\definecolor</span>{orange}{RGB}{224,82,6}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\definecolor</span>{jaune_safran}{RGB}{255,182,18}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\title</span>{xcolor<span style=color:#66d9ef>\\</span> schrek.fr}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\author</span>{Christophe }
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\date</span>{Juin 2023}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{document}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\maketitle</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\section*</span>{Introduction}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\color</span>{red}
+</span></span><span style=display:flex><span>Texte en rouge.
+</span></span><span style=display:flex><span> 
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\color</span>{blue}
+</span></span><span style=display:flex><span>Texte en bleu.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\color</span>{black}
+</span></span><span style=display:flex><span>Texte en noir.
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\section*</span>{Dans un texte}
+</span></span><span style=display:flex><span>Lorem ipsum dolor sit amet, <span style=color:#66d9ef>\textcolor</span>{framboise}{consectetur adipiscing elit}, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\section*</span>{Surlignage}
+</span></span><span style=display:flex><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute <span style=color:#66d9ef>\colorbox</span>{jaune_safran}{irure dolor in reprehenderit} in voluptate velit esse  <span style=color:#66d9ef>\colorbox</span>{violet}{<span style=color:#66d9ef>\textcolor</span>{white}{cillum dolore eu fugiat nulla pariatur.}}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\section*</span>{Boites}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\fcolorbox</span>{red}{white}{<span style=color:#e6db74>$</span> \sqrt<span style=color:#f92672>[</span><span style=color:#ae81ff>4</span><span style=color:#f92672>]</span>{x^<span style=color:#ae81ff>3</span>} <span style=color:#f92672>=</span> |x| <span style=color:#e6db74>$</span>} <span style=color:#66d9ef>\par</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\fcolorbox</span>{red}{white}{
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\parbox</span>{0.2<span style=color:#66d9ef>\textwidth</span>}{
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\begin</span>{itemize}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\item</span> Pommes
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\item</span> Poires
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\item</span> Abricots
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{itemize}}
+</span></span><span style=display:flex><span>} <span style=color:#66d9ef>\par</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\fcolorbox</span>{blue}{white}{
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\parbox</span>{0.2<span style=color:#66d9ef>\textwidth</span>}{ <span style=color:#75715e>%parbox pour faire une boite
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>\begin</span>{enumerate}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\item</span> Voitures
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\item</span> Trains
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\item</span> Vélos
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{enumerate}}
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>\end</span>{document}</span></span></code></pre></div><a class="uk-button uk-button-default uk-box-shadow-medium" target=_blank href=https://www.overleaf.com/read/cdcjpcgykysq><span uk-icon="icon: forward"></span> Voir sur overleaf</a><div class=uk-alert-success uk-alert><span uk-icon="icon: info ; ratio:2"></span>
+<a class=uk-alert-close uk-close></a><p class=bandeau>Pour changer la couleur de la page <em>\pagecolor{black}</em> (à placer dans l&rsquo;entête).</p></div><h2 id=liens>Liens</h2><p><a href=https://www.ctan.org/pkg/xcolor>https://www.ctan.org/pkg/xcolor</a></p><p><a href=https://www.lesfichesabebert.fr/TeX/latex/Couleur.html>https://www.lesfichesabebert.fr/TeX/latex/Couleur.html</a></p><p><a href=https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX>https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX</a></p></p></article><ul class=uk-pagination><li><a class=uk-link-heading href=https://schrek.fr/posts/2023/08/latex-et-les-liens/><span class=uk-margin-small-right uk-pagination-previous></span> Latex et les liens</a></li><li class=uk-margin-auto-left><a class=uk-link-heading href=https://schrek.fr/posts/2023/08/hugo-shortcode-bouton/>Shortcode bouton<span class=uk-margin-small-left uk-pagination-next></span></a></li></ul><hr class=uk-divider-icon><div class="uk-grid-small uk-child-width-auto" uk-grid><div><p class=uk-text-light><span uk-icon=icon:hashtag></span>TAGS</p><ul class="uk-list uk-display-inline-block"><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/latex/>Latex</a></li><li><a class="uk-button uk-button-default" href=https://schrek.fr/tags/xcolor/>Xcolor</a></li></ul><br><a href=https://ko-fi.com/Q5Q7LH0AN target=_blank><img height=36 style=border:0;height:36px src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border=0 alt='Buy Me a Beer at ko-fi.com'></a></div></div></div></main><footer><div class="uk-container uk-container-small uk-background-muted uk-margin-small-top uk-padding-small">2024 - Construit avec <a class=uk-link-muted href=https://gohugo.io/>Hugo</a> et de <a class=uk-link-muted href=https://getuikit.com/>UiKit</a></div></footer><script src=/js/uikit.min.min.b795e52a95a6766546e08686e5d002243ef20e0fb3c22c860b7bd2adb02129b7.js integrity="sha256-t5XlKpWmdmVG4IaG5dACJD7yDg+zwiyGC3vSrbAhKbc=" crossorigin=anonymous></script><script defer src=/js/uikit-icons.min.min.992015e15d0a403b809bb04d0599e2873818150584953ed5864664037c6b4333.js integrity="sha256-mSAV4V0KQDuAm7BNBZnihzgYFQWElT7VhkZkA3xrQzM=" crossorigin=anonymous></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script><script>MathJax={tex:{displayMath:[["\\[","\\]"],["$$","$$"]],inlineMath:[["\\(","\\)"]]}}</script></body></html>

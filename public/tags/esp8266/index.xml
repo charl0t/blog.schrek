@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Esp8266 on Schrek.fr</title>
-    <link>http://localhost:1313/tags/esp8266/</link>
-    <description>Recent content in Esp8266 on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/esp8266/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tasmota</title>
-      <link>http://localhost:1313/posts/2023/10/tasmota/</link>
-      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/10/tasmota/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://tasmota.github.io/docs/&#34;&gt;Tasmota&lt;/a&gt; est un firmware OpenSource pour des appareils basé sur des ESP8266.&#xA;Il va permetre de faire communiquer facilement vos projets domotiques.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Il existe plusieurs façon de &lt;a href=&#34;https://tasmota.github.io/docs/Getting-Started/&#34;&gt;flasher&lt;/a&gt;, on va choisir la plus simple.&lt;/p&gt;&#xA;&lt;p&gt;On va prendre un simple &lt;a href=&#34;https://amzn.to/44DoB1W&#34;&gt;Wemos d1 mini&lt;/a&gt; pour l&amp;rsquo;exemple.&lt;/p&gt;&#xA;&lt;p&gt;Il faut brancher en Usb sur le pc et on ouvre la page &lt;a href=&#34;https://tasmota.github.io/install/&#34;&gt;https://tasmota.github.io/install/&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;uk-alert-warning&#34; uk-alert&gt;&#xA;    &lt;span uk-icon=&#34;icon: warning ; ratio:2&#34;&gt;&lt;/span&gt;&#xA;    &lt;a class=&#34;uk-alert-close&#34; uk-close&gt;&lt;/a&gt;&#xA;    &lt;p class=&#34;bandeau&#34;&gt;Il faut utiliser Chrome comme navigateur pour etablir la liaison.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Esp8266 on Schrek.fr</title><link>https://schrek.fr/tags/esp8266/</link><description>Recent content in Esp8266 on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/esp8266/index.xml" rel="self" type="application/rss+xml"/><item><title>Tasmota</title><link>https://schrek.fr/posts/2023/10/tasmota/</link><pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/10/tasmota/</guid><description>&lt;p>&lt;a href="https://tasmota.github.io/docs/">Tasmota&lt;/a> est un firmware OpenSource pour des appareils basé sur des ESP8266.
+Il va permetre de faire communiquer facilement vos projets domotiques.&lt;/p>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;p>Il existe plusieurs façon de &lt;a href="https://tasmota.github.io/docs/Getting-Started/">flasher&lt;/a>, on va choisir la plus simple.&lt;/p>
+&lt;p>On va prendre un simple &lt;a href="https://amzn.to/44DoB1W">Wemos d1 mini&lt;/a> pour l&amp;rsquo;exemple.&lt;/p>
+&lt;p>Il faut brancher en Usb sur le pc et on ouvre la page &lt;a href="https://tasmota.github.io/install/">https://tasmota.github.io/install/&lt;/a>&lt;/p>
+
+
+
+
+
+
+
+
+
+
+&lt;div class="uk-alert-warning" uk-alert>
+ &lt;span uk-icon="icon: warning ; ratio:2">&lt;/span>
+ &lt;a class="uk-alert-close" uk-close>&lt;/a>
+ &lt;p class="bandeau">Il faut utiliser Chrome comme navigateur pour etablir la liaison.&lt;/p></description></item></channel></rss>

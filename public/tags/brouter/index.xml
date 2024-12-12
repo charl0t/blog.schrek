@@ -1,19 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Brouter on Schrek.fr</title>
-    <link>http://localhost:1313/tags/brouter/</link>
-    <description>Recent content in Brouter on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/brouter/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>BRouter Web Client</title>
-      <link>http://localhost:1313/posts/2023/03/brouter/</link>
-      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/brouter/</guid>
-      <description>&lt;p&gt;&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/03/brouter/velo1.webp&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;BRouter Web Client  est un service WEB pour Planifier un itinéraire.&#xA;Le client s’appuie sur &lt;a href=&#34;https://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt;&#xA;Brouter est très complet en plus de calculer les itinéraires, les importer, les exporter, on peut ajouter des calques pour visualiser d’autres données comme les campings, hôtels…&lt;/p&gt;&#xA;&lt;!-- more --&gt;&#xA;&lt;p&gt;Bonne découverte.&lt;/p&gt;&#xA;&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://brouter.de/brouter-web/&#34;&gt;http://brouter.de/brouter-web/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://brouter.m11n.de&#34;&gt;https://brouter.m11n.de&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-ordinateur/&#34;&gt;https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-ordinateur/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que&#34;&gt;https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brouter on Schrek.fr</title><link>https://schrek.fr/tags/brouter/</link><description>Recent content in Brouter on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/brouter/index.xml" rel="self" type="application/rss+xml"/><item><title>BRouter Web Client</title><link>https://schrek.fr/posts/2023/03/brouter/</link><pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/03/brouter/</guid><description>&lt;p>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/03/brouter/velo1.webp" width="200px">
+&lt;/figure>
+
+BRouter Web Client est un service WEB pour Planifier un itinéraire.
+Le client s’appuie sur &lt;a href="https://www.openstreetmap.org/">OpenStreetMap&lt;/a>
+Brouter est très complet en plus de calculer les itinéraires, les importer, les exporter, on peut ajouter des calques pour visualiser d’autres données comme les campings, hôtels…&lt;/p>
+&lt;!-- more -->
+&lt;p>Bonne découverte.&lt;/p>
+&lt;h2 id="liens">Liens&lt;/h2>
+&lt;p>&lt;a href="http://brouter.de/brouter-web/">http://brouter.de/brouter-web/&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://brouter.m11n.de">https://brouter.m11n.de&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-ordinateur/">https://biclousetbidouilles.com/faire-ses-itineraires-avec-brouter-depuis-son-ordinateur/&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que">https://linuxfr.org/news/brouter-un-calcul-d-itineraire-libre-pour-velo-mais-pas-que&lt;/a>&lt;/p></description></item></channel></rss>

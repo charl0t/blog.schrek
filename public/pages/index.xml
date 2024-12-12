@@ -1,40 +1,85 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pages on Schrek.fr</title>
-    <link>http://localhost:1313/pages/</link>
-    <description>Recent content in Pages on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Fri, 07 Apr 2023 14:38:35 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>A propos</title>
-      <link>http://localhost:1313/pages/apropos/</link>
-      <pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate>
-      <guid>http://localhost:1313/pages/apropos/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/pages/apropos/hugo-logo.webp&#34; width=&#34;100px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;pour-me-contacter&#34;&gt;Pour me contacter&lt;/h2&gt;&#xA;&lt;p&gt;XMPP : &lt;a href=&#34;mailto:christ0phe@chapril.org&#34;&gt;christ0phe@chapril.org&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Telegram : &lt;a href=&#34;https://t.me/Christ0phe&#34;&gt;https://t.me/Christ0phe&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;le-site&#34;&gt;Le site&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Moteur du blog &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, generateur de site statique.&lt;/li&gt;&#xA;&lt;li&gt;Framework Css &lt;a href=&#34;https://getuikit.com/&#34;&gt;UiKit&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Les sources &lt;a href=&#34;https://github.com/charl0t/blog.schrek&#34;&gt;Github&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/pages/apropos/uikit.webp&#34; width=&#34;100px&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Uikit&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;organisation-du-site&#34;&gt;Organisation du site&lt;/h2&gt;&#xA;&lt;div class=&#34;mermaid&#34;&gt;&#xA;&#xA;    &#xA;flowchart TD&#xA;    A[Schrek.fr] --&gt; B[Blog]&#xA;    A --&gt; C[Wiki]&#xA;    A --&gt; F[A propos]&#xA;    A --&gt; H[Nuage de tags]&#xA;    A -.-&gt; J(Flux Rss)&#xA;    B --&gt; D[2023]&#xA;    D --&gt; E[Fevrier]&#xA;    D --&gt; I[Mars]&#xA;    D --&gt; K[Avril]&#xA;    K --&gt; L[Article]&#xA;    K --&gt; L1[Article]&#xA;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;script type=&#34;application/javascript&#34; src=&#34;http://localhost:1313/js/mermaid.min.min.1e7e5b9d4c8acb893fab3cbf54de057c59f7ecaff89afb3e239a9f8be53cca99.js&#34; defer&gt;&lt;/script&gt;&#xA;&#xA;&lt;script type=&#34;module&#34;&gt;&#xA;&#xA;    mermaid.initialize({});&#xA;&#xA;&lt;/script&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;h2 id=&#34;licence&#34;&gt;Licence&lt;/h2&gt;&#xA;&#xA;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;Licence Creative Commons&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;Ce(tte) œuvre est mise à disposition selon les termes de la &lt;br&gt;&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International&lt;/a&gt;.</description>
-    </item>
-    <item>
-      <title>Hors ligne</title>
-      <link>http://localhost:1313/pages/hors_ligne/</link>
-      <pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate>
-      <guid>http://localhost:1313/pages/hors_ligne/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hors ligne&lt;/strong&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/pages/hors_ligne/wifi.png&#34; width=&#34;100px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Nuage de tags</title>
-      <link>http://localhost:1313/pages/tagscloud/</link>
-      <pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate>
-      <guid>http://localhost:1313/pages/tagscloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Recherche</title>
-      <link>http://localhost:1313/pages/search/</link>
-      <pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate>
-      <guid>http://localhost:1313/pages/search/</guid>
-      <description>&lt;!--Recherche--&gt;&#xA;&lt;script src=&#34;http://localhost:1313/pagefind/pagefind-ui.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;&#xA;&lt;script&gt;&#xA;  window.addEventListener(&#39;DOMContentLoaded&#39;, (event) =&gt; {&#xA;    new PagefindUI({&#xA;      baseUrl: &#34;/&#34;,&#xA;      // search element id&#xA;      element: &#34;#search&#34;,&#xA;      // do not show images&#xA;      showImages: false,&#xA;      // I want to use my own CSS&#xA;      resetStyles: true,&#xA;      // do not show subresults of the same page&#xA;      showSubResults: false,&#xA;    excerptLength: 15,&#xA;&#xA;    });&#xA;  });&#xA;&lt;/script&gt;&#xA;&lt;div class=&#34;uk-container-large&#34;&gt;&#xA;&#x9;&lt;div id=&#34;search&#34; &lt;/div&gt; &#xA;&lt;/div&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Schrek.fr</title><link>https://schrek.fr/pages/</link><description>Recent content in Pages on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Fri, 07 Apr 2023 14:38:35 +0200</lastBuildDate><atom:link href="https://schrek.fr/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>A propos</title><link>https://schrek.fr/pages/apropos/</link><pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate><guid>https://schrek.fr/pages/apropos/</guid><description>&lt;figure>&lt;img src="https://schrek.fr/pages/apropos/hugo-logo.webp" width="100px">
+&lt;/figure>
+
+&lt;h2 id="pour-me-contacter">Pour me contacter&lt;/h2>
+&lt;p>XMPP : &lt;a href="mailto:christ0phe@chapril.org">christ0phe@chapril.org&lt;/a>&lt;/p>
+&lt;p>Telegram : &lt;a href="https://t.me/Christ0phe">https://t.me/Christ0phe&lt;/a>&lt;/p>
+&lt;h2 id="le-site">Le site&lt;/h2>
+&lt;ul>
+&lt;li>Moteur du blog &lt;a href="https://gohugo.io/">Hugo&lt;/a>, generateur de site statique.&lt;/li>
+&lt;li>Framework Css &lt;a href="https://getuikit.com/">UiKit&lt;/a>.&lt;/li>
+&lt;li>Les sources &lt;a href="https://github.com/charl0t/blog.schrek">Github&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;figure>&lt;img src="https://schrek.fr/pages/apropos/uikit.webp" width="100px">&lt;figcaption>
+ &lt;h4>Uikit&lt;/h4>
+ &lt;/figcaption>
+&lt;/figure>
+
+&lt;h2 id="organisation-du-site">Organisation du site&lt;/h2>
+&lt;div class="mermaid">
+
+ 
+flowchart TD
+ A[Schrek.fr] --> B[Blog]
+ A --> C[Wiki]
+ A --> F[A propos]
+ A --> H[Nuage de tags]
+	A --> M[Notes]
+ A -.-> J(Flux Rss)
+ B --> D[2023]
+ D --> E[Fevrier]
+ D --> I[Mars]
+ D --> K[Avril]
+ K --> L[Article]
+ K --> L1[Article]
+
+
+&lt;/div>
+
+
+
+
+
+
+
+
+
+
+&lt;script type="application/javascript" src="https://schrek.fr/js/mermaid.min.min.1e7e5b9d4c8acb893fab3cbf54de057c59f7ecaff89afb3e239a9f8be53cca99.js" defer>&lt;/script>
+
+&lt;script type="module">
+
+ mermaid.initialize({});
+
+&lt;/script>
+
+
+
+
+&lt;h2 id="licence">Licence&lt;/h2>
+
+&lt;a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">&lt;img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />&lt;/a>&lt;br />Ce(tte) œuvre est mise à disposition selon les termes de la &lt;br>&lt;a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International&lt;/a>.</description></item><item><title>Hors ligne</title><link>https://schrek.fr/pages/hors_ligne/</link><pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate><guid>https://schrek.fr/pages/hors_ligne/</guid><description>&lt;p>&lt;strong>Hors ligne&lt;/strong>
+&lt;figure>&lt;img src="https://schrek.fr/pages/hors_ligne/wifi.png" width="100px">
+&lt;/figure>
+&lt;/p></description></item><item><title>Nuage de tags</title><link>https://schrek.fr/pages/tagscloud/</link><pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate><guid>https://schrek.fr/pages/tagscloud/</guid><description/></item><item><title>Recherche</title><link>https://schrek.fr/pages/search/</link><pubDate>Fri, 07 Apr 2023 14:38:35 +0200</pubDate><guid>https://schrek.fr/pages/search/</guid><description>&lt;!--Recherche-->
+&lt;script src="https://schrek.fr/pagefind/pagefind-ui.js" type="text/javascript">&lt;/script>
+&lt;script>
+ window.addEventListener('DOMContentLoaded', (event) => {
+ new PagefindUI({
+ baseUrl: "/",
+ // search element id
+ element: "#search",
+ // do not show images
+ showImages: false,
+ // I want to use my own CSS
+ resetStyles: true,
+ // do not show subresults of the same page
+ showSubResults: false,
+ excerptLength: 15,
+
+ });
+ });
+&lt;/script>
+&lt;div class="uk-container-large">
+	&lt;div id="search" &lt;/div> 
+&lt;/div></description></item></channel></rss>

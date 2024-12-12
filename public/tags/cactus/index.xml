@@ -1,19 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Cactus on Schrek.fr</title>
-    <link>http://localhost:1313/tags/cactus/</link>
-    <description>Recent content in Cactus on Schrek.fr</description>
-    <generator>Hugo</generator>
-    <language>fr-fr</language>
-    <lastBuildDate>Sat, 20 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cactus/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugo et les commentaires</title>
-      <link>http://localhost:1313/posts/2023/05/hugo_les_commentaires/</link>
-      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/05/hugo_les_commentaires/</guid>
-      <description>&lt;figure class=&#34;imagearticle&#34;&gt;&lt;img src=&#34;http://localhost:1313/posts/2023/05/hugo_les_commentaires/cactus.wepb&#34; width=&#34;200px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Pas facile de choisir un systeme de commentaire pour &lt;a href=&#34;https://gohugo.io/content-management/comments/&#34;&gt;Hugo&lt;/a&gt;, la facilitée c est &lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt; avec un template &lt;a href=&#34;https://gohugo.io/content-management/comments/#add-disqus&#34;&gt;interne&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cactus&#34;&gt;Cactus&lt;/h2&gt;&#xA;&lt;p&gt;Mon choix c&amp;rsquo;est dirigé vers &lt;a href=&#34;https://cactus.chat/&#34;&gt;cactus.chat&lt;/a&gt;, déjà pour la doc qui est facile d&amp;rsquo;accés et pour &lt;a href=&#34;https://matrix.org/&#34;&gt;Matrix&lt;/a&gt; qui utilise un protocole ouvert (&lt;a href=&#34;https://fr.wikipedia.org/wiki/Matrix_(protocole)&#34;&gt;Wikipedia&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;C&amp;rsquo;est bien indiqué &lt;a href=&#34;https://cactus.chat/docs/integrations/hugo/&#34;&gt;ici&lt;/a&gt;.&#xA;&lt;em&gt;The shortcode chat.html must be added to layouts/shortcodes/ and looks like this&lt;/em&gt;&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;uk-alert-warning&#34; uk-alert&gt;&#xA;    &lt;span uk-icon=&#34;icon: warning ; ratio:2&#34;&gt;&lt;/span&gt;&#xA;    &lt;a class=&#34;uk-alert-close&#34; uk-close&gt;&lt;/a&gt;&#xA;    &lt;p class=&#34;bandeau&#34;&gt;YOUR-SITE-NAME Bien changer cette variable avec le nom de votre site&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cactus on Schrek.fr</title><link>https://schrek.fr/tags/cactus/</link><description>Recent content in Cactus on Schrek.fr</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Sat, 20 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://schrek.fr/tags/cactus/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo et les commentaires</title><link>https://schrek.fr/posts/2023/05/hugo_les_commentaires/</link><pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate><guid>https://schrek.fr/posts/2023/05/hugo_les_commentaires/</guid><description>&lt;figure class="imagearticle">&lt;img src="https://schrek.fr/posts/2023/05/hugo_les_commentaires/cactus.wepb" width="200px">
+&lt;/figure>
+
+&lt;p>Pas facile de choisir un systeme de commentaire pour &lt;a href="https://gohugo.io/content-management/comments/">Hugo&lt;/a>, la facilitée c est &lt;a href="https://disqus.com/">Disqus&lt;/a> avec un template &lt;a href="https://gohugo.io/content-management/comments/#add-disqus">interne&lt;/a>.&lt;/p>
+&lt;h2 id="cactus">Cactus&lt;/h2>
+&lt;p>Mon choix c&amp;rsquo;est dirigé vers &lt;a href="https://cactus.chat/">cactus.chat&lt;/a>, déjà pour la doc qui est facile d&amp;rsquo;accés et pour &lt;a href="https://matrix.org/">Matrix&lt;/a> qui utilise un protocole ouvert (&lt;a href="https://fr.wikipedia.org/wiki/Matrix_(protocole)">Wikipedia&lt;/a>).&lt;/p>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;p>C&amp;rsquo;est bien indiqué &lt;a href="https://cactus.chat/docs/integrations/hugo/">ici&lt;/a>.
+&lt;em>The shortcode chat.html must be added to layouts/shortcodes/ and looks like this&lt;/em>&lt;/p>
+
+
+
+
+
+
+
+
+
+
+&lt;div class="uk-alert-warning" uk-alert>
+ &lt;span uk-icon="icon: warning ; ratio:2">&lt;/span>
+ &lt;a class="uk-alert-close" uk-close>&lt;/a>
+ &lt;p class="bandeau">YOUR-SITE-NAME Bien changer cette variable avec le nom de votre site&lt;/p></description></item></channel></rss>
