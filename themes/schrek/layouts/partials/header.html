@@ -1,15 +1,15 @@
 <!--Header: recherche desactivé (probleme avec script), tags deplacé dans page nuage de tags -->
 <header>
-    <div class="uk-container uk-container-xsmall uk-padding-small">
+   <!-- <div class="uk-container uk-container-xsmall uk-padding-small">
         <a href="{{ .Site.BaseURL }}"><h1 classe="uk-heading-small">{{ .Site.Title }}</h1></a>
         <a href="{{ .Site.BaseURL }}"><h2>{{ .Site.Params.description }}</h2></a>
-    </div>
-
+    </div>-->
 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
     <div class="uk-navbar-center ">
+        <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}"><h1 classe="uk-heading-small">{{ .Site.Title }}</h1></a>
         <ul class="uk-navbar-nav">
             {{ range .Site.Menus.main }}
-            <li class="uk-active"><a href="{{ .URL }}"><span uk-icon="icon:{{ .Pre }}; ratio: 2"></span></a></li>
+            <li><a href="{{ .URL }}"><span uk-icon="icon:{{ .Pre }}; ratio: 2"></span></a><div class="uk-navbar-subtitle">{{ .Name }}</div></li>
             {{ end }}
         </ul>
     </div>

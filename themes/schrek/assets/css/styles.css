@@ -20,9 +20,9 @@ main {
 	flex: 1;	
 }
 
-header {
+/*header {
      background-image: url("Wallpaper.webp");
-}
+}*/
 
 nav li::before {
      content: ""; 

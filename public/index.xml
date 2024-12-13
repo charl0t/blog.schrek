@@ -1023,11 +1023,11 @@ Les idéaux sont Pacifiques l’histoire est Violente.
 
 
 &lt;div style="width: 90%;height: 200px;margin: 0 auto">
- &lt;canvas id="4f814e45bffcdceda6d4ccccda82cb58">&lt;/canvas>
+ &lt;canvas id="a2bcddc8c644f5ac4ec854bcddf18ecf">&lt;/canvas>
 &lt;/div>
 &lt;script src="https://cdn.jsdelivr.net/npm/chart.js">&lt;/script>
 &lt;script type="text/javascript">
- var ctx = document.getElementById('4f814e45bffcdceda6d4ccccda82cb58').getContext('2d');
+ var ctx = document.getElementById('a2bcddc8c644f5ac4ec854bcddf18ecf').getContext('2d');
  var options = 
 {
  type: 'bar',
@@ -2262,11 +2262,11 @@ Au début j’étais partie sur LibreOffice Writer, mais je me suis vite retourn
 Pour organiser mes idées et structurer le document j’ai utilisé cette structure.
 Vous trouverez les sources en bas de l’article.&lt;/p></description></item><item><title>2024/12/15</title><link>https://schrek.fr/notes/2024/12/</link><pubDate>Sun, 23 Aug 1970 07:33:35 +0100</pubDate><guid>https://schrek.fr/notes/2024/12/</guid><description>&lt;h2 id="decembre-2025">Decembre 2025&lt;/h2>
 &lt;ul>
-&lt;li>Guide de survie Hugo: &lt;a href="https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81">https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81&lt;/a>&lt;/li>
-&lt;li>Analyse de fichiers Mardown avec Python: &lt;a href="https://github.com/yannbanas/mrkdwn_analysis">https://github.com/yannbanas/mrkdwn_analysis&lt;/a>&lt;/li>
-&lt;li>Générer des stats sur Hugo: &lt;a href="https://bacardi55.io/2024/03/07/generating-basic-content-statistics-for-static-site-generator/">https://bacardi55.io/2024/03/07/generating-basic-content-statistics-for-static-site-generator/&lt;/a>&lt;/li>
+&lt;li>Guide de survie Hugo: &lt;a href="https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81">Github&lt;/a>&lt;/li>
+&lt;li>Analyse de fichiers Mardown avec Python: &lt;a href="https://github.com/yannbanas/mrkdwn_analysis">Github&lt;/a>&lt;/li>
+&lt;li>Générer des stats sur Hugo: &lt;a href="https://bacardi55.io/2024/03/07/generating-basic-content-statistics-for-static-site-generator/">bacardi55.io&lt;/a>&lt;/li>
 &lt;li>« Il n’y a qu’un problème philosophique vraiment sérieux : c’est le suicide. Juger que la vie vaut ou ne vaut pas la peine d’être vécue, c’est répondre à la question fondamentale de la philosophie. » – Camus&lt;/li>
 &lt;li>Lecture: Sanderson, Brandon - Vers les étoiles (Skyward 1)&lt;/li>
-&lt;li>Illustration pour médiation numérique &lt;a href="https://grisebouille.net/illustrations-pour-mediation-numerique/">https://grisebouille.net/illustrations-pour-mediation-numerique/&lt;/a>&lt;/li>
-&lt;li>Boost rasp 5 &lt;a href="https://korben.info/raspberry-pi-5-optimisation-performances-sdram.html">https://korben.info/raspberry-pi-5-optimisation-performances-sdram.html&lt;/a>&lt;/li>
+&lt;li>Illustration pour médiation numérique: &lt;a href="https://grisebouille.net/illustrations-pour-mediation-numerique/">grisebouille.net&lt;/a>&lt;/li>
+&lt;li>Boost rasp 5 &lt;a href="https://korben.info/raspberry-pi-5-optimisation-performances-sdram.html">korben.info&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>

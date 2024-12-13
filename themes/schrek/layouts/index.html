@@ -29,7 +29,7 @@
 <!-- Pagination -->
 {{ template "_internal/pagination.html" . }}
 <article class="uk-comment uk-comment-primary">
-<h4 class="uk-comment-title"><span uk-icon="bell"></span> Notes</h4>
+<a class="uk-link-toggle" href="https://schrek.fr/notes/"><span class="uk-link-heading"><h4 class="uk-comment-title"><span uk-icon="bell"></span> Notes</h4></span><a>
 {{ range (where .Site.Pages "Section" "notes") }}
    {{ range .Pages }}
 	  </a> {{ .Summary }} </p>

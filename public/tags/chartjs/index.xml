@@ -88,11 +88,11 @@
 
 
 &lt;div style="width: 90%;height: 200px;margin: 0 auto">
- &lt;canvas id="4f814e45bffcdceda6d4ccccda82cb58">&lt;/canvas>
+ &lt;canvas id="a2bcddc8c644f5ac4ec854bcddf18ecf">&lt;/canvas>
 &lt;/div>
 &lt;script src="https://cdn.jsdelivr.net/npm/chart.js">&lt;/script>
 &lt;script type="text/javascript">
- var ctx = document.getElementById('4f814e45bffcdceda6d4ccccda82cb58').getContext('2d');
+ var ctx = document.getElementById('a2bcddc8c644f5ac4ec854bcddf18ecf').getContext('2d');
  var options = 
 {
  type: 'bar',
