@@ -1,6 +1,6 @@
 ---
 title: "Hugo et les recherches"
-date: 2024-12-25
+date: 2024-12-19
 draft: false
 tags: ["Markdown", "Html","Hugo","Pagefind"]
 categories: ["Web"]
@@ -9,12 +9,12 @@ image: "hugo.webp"
 toc: true
 ---
 
-Pour faciliter les recherches sur mon site, j'ai ajouté Pagefind
+Pour faciliter les recherches sur mon site, j'ai ajouté [Pagefind](https://pagefind.app/)
 
 Pagefind est un outil de recherche rapide et efficace conçu pour les sites web statiques. Contrairement aux solutions classiques qui nécessitent un serveur ou une base de données, Pagefind indexe les contenus directement lors de la compilation du site et permet une recherche instantanée via JavaScript, sans dépendance serveur.
 
 <!--more-->
-
+.
 ## Caractéristiques principales
 
 - Léger et rapide : Le fichier d’index est compressé et ne charge que les parties nécessaires, garantissant des performances élevées même sur des sites volumineux.
@@ -23,8 +23,7 @@ Pagefind est un outil de recherche rapide et efficace conçu pour les sites web 
 - Accessibilité : Les résultats sont rendus en HTML, assurant une compatibilité avec les lecteurs d’écran et autres outils d'accessibilité.
 
 ## Installation 
-Bien documenté sur le site de Pagefind
-
+L'installation est bien documentée sur le site de Pagefind
 
 {{< highlight bash  >}}
 $ python3 -m pip install 'pagefind[extended]'

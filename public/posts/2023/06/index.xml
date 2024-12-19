@@ -169,11 +169,11 @@ Les idéaux sont Pacifiques l’histoire est Violente.
 
 
 &lt;div style="width: 90%;height: 200px;margin: 0 auto">
- &lt;canvas id="a2bcddc8c644f5ac4ec854bcddf18ecf">&lt;/canvas>
+ &lt;canvas id="ac484fdfdcdec58ccacbd8b6f4c145e2">&lt;/canvas>
 &lt;/div>
 &lt;script src="https://cdn.jsdelivr.net/npm/chart.js">&lt;/script>
 &lt;script type="text/javascript">
- var ctx = document.getElementById('a2bcddc8c644f5ac4ec854bcddf18ecf').getContext('2d');
+ var ctx = document.getElementById('ac484fdfdcdec58ccacbd8b6f4c145e2').getContext('2d');
  var options = 
 {
  type: 'bar',

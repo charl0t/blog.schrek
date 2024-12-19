@@ -1,6 +1,6 @@
 ---
 title: "2024/12/15"
-date: 2024_12_15
+date: 2024-12-01
 categories: ["NOTES"]
 layout: notes
 toc: false

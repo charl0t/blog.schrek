@@ -3,6 +3,18 @@
 <!-- pagination et listes des derniers articles -->
 
 <div class="uk-container ">
+<!-- <a class="uk-link-toggle" href="https://schrek.fr/notes/"><span class="uk-link-heading"><h4 class="uk-comment-title"><span uk-icon="bell"></span> Notes</h4></span><a> -->
+<h1 class="uk-heading-small">Notes/Liens</h1>
+<article class="uk-comment uk-comment-primary">
+
+{{ range (where .Site.Pages "Section" "notes") }}
+   {{ range .Pages }}
+<p class="uk-article-meta">{{ .PublishDate.Format "2006-01-02" }} 
+	 <p> {{ .Summary }}</p> 
+   {{ end }}
+{{ end }}
+</article>
+<h1 class="uk-heading-small">Articles</h1>
 <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
 {{ $p := where site.RegularPages "Type" "posts" }}
 {{ range (.Paginate $p).Pages }}
@@ -28,14 +40,7 @@
     </div>
 <!-- Pagination -->
 {{ template "_internal/pagination.html" . }}
-<article class="uk-comment uk-comment-primary">
-<a class="uk-link-toggle" href="https://schrek.fr/notes/"><span class="uk-link-heading"><h4 class="uk-comment-title"><span uk-icon="bell"></span> Notes</h4></span><a>
-{{ range (where .Site.Pages "Section" "notes") }}
-   {{ range .Pages }}
-	  </a> {{ .Summary }} </p>
-   {{ end }}
-{{ end }}
-</article>
+
 </div>
 
 {{ end }}

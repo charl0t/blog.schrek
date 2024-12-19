@@ -20,16 +20,16 @@ Les fichiers Parquet sont un format de stockage de données colonnaires open sou
 
 - **Schéma**: Les fichiers Parquet incluent un schéma intégré qui spécifie la structure des données stockées dans le fichier. Cela permet de garantir l'intégrité des données et facilite la lecture des données sans avoir besoin d'informations externes sur la structure.
 
-En résumé, les fichiers Parquet sont un format de stockage de données efficace, conçu pour répondre aux besoins des applications analytiques sur des ensembles de données volumineux.
+Les fichiers Parquet sont un format de stockage de données efficace, conçu pour répondre aux besoins des applications analytiques sur des ensembles de données volumineux.
 
-# Installation 
+## Installation 
 
 ```python
 $ pip install  pyarrow
 
 ```
 
-'''
+
 
 ## Exemple 
 
@@ -37,6 +37,7 @@ $ pip install  pyarrow
 
 
 ## Liens 
+
 https://parquet.apache.org/
 
 https://fr.wikipedia.org/wiki/Apache_Parquet
